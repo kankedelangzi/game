@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>第4章：向僵尸开炮伤害机制（含实例）</title>
+  <title>第4章：向僵尸开炮伤害机制（含6种武器实例深化版）</title>
   <style>
     body { background: #1a1a2e; color: #e0e0e0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; padding: 20px; line-height: 1.8; }
     .container { max-width: 900px; margin: 0 auto; }
@@ -48,7 +48,7 @@
 <blockquote><strong>游戏类型</strong>：塔防射击小游戏（微信小游戏/手机游戏）</blockquote>
 <blockquote><strong>核心玩法</strong>：放置塔防 + 射击元素 + 技能系统</blockquote>
 <blockquote><strong>研究重点</strong>：塔防伤害计算、暴击/穿透机制、怪物护甲与减伤</blockquote>
-<blockquote><strong>更新说明</strong>：本章已深化，新增机枪塔、激光炮、冰冻炮具体实例 ✅</blockquote>
+<blockquote><strong>更新说明</strong>：本章已深化，新增机枪塔、激光炮、冰冻炮、火焰喷射器、雷电塔、导弹塔六种武器详细实例 ✅</blockquote>
 
 <h2>一、游戏伤害系统核心架构</h2>
 
@@ -500,20 +500,421 @@ print(f"打BOSS僵尸: {calculate_player_shoot(300, 0.5, 0.30, 2.5, 0.3, 0.5):.1
 </tbody>
 </table>
 
-<h2>十一、后续研究方向</h2>
+<h2>十一、🔥 新增武器实例：火焰喷射器</h2>
+
+<div class="class-card">
+<h3>11.1 火焰喷射器（持续伤害型）</h3>
+
+<h4>武器特性</h4>
+<table>
+<thead><tr><th>属性</th><th>数值（10级）</th><th>说明</th></tr></thead>
+<tbody>
+  <tr><td>基础伤害</td><td>80/秒</td><td>持续火焰伤害</td></tr>
+  <tr><td>燃烧伤害</td><td>150/秒</td><td>持续3秒的DOT</td></tr>
+  <tr><td>攻击范围</td><td>3格</td><td>扇形区域</td></tr>
+  <tr><td>攻击速度</td><td>持续</td><td>不需要装填</td></tr>
+  <tr><td>能量消耗</td><td>10/秒</td><td>需要能量管理</td></tr>
+</tbody>
+</table>
+
+<h4>伤害计算公式</h4>
+<div class="formula-box">
+<pre><code>火焰喷射器总DPS = 直接伤害 + 燃烧DOT
+
+直接伤害 = 基础伤害 × (1 + 等级加成%) × 持续时间
+燃烧DOT = 燃烧伤害 × (1 + 等级加成%) × 燃烧持续时间 × 叠加层数
+
+叠加机制：
+- 每层燃烧独立计算
+- 最多叠加3层
+- 重新命中刷新持续时间
+</code></pre>
+</div>
+
+<h4>实例计算：10级火焰喷射器打僵尸群</h4>
+<div class="example-box">
+<pre><code>场景：5只普通僵尸（HP 500）挤在一起
+
+配置：
+- 基础伤害：80/秒
+- 燃烧伤害：150/秒
+- 等级加成：90%（9级提升）
+- 持续喷射：5秒
+
+计算过程：
+1. 直接伤害 = 80 × 1.9 × 5 = 760
+2. 燃烧DOT（1层）= 150 × 1.9 × 3 = 855
+3. 总伤害/只 = 760 + 855 = 1,615
+4. 5只总伤害 = 1,615 × 5 = 8,075
+
+💡 对比机枪塔（DPS 5,280）：
+   机枪塔5秒伤害 = 5,280 × 5 = 26,400
+   覆盖5只 = 26,400总伤害（但分散攻击）
+   
+💡 火焰喷射器优势：
+   - 范围伤害，同时攻击多个目标
+   - 持续DOT，即使僵尸离开范围也受伤
+   - 对密集僵尸群效率极高
+   
+💡 劣势：
+   - 单体DPS低于机枪塔
+   - 需要能量管理
+   - 对高血量BOSS效果一般
+</code></pre>
+</div>
+
+<h4>燃烧叠加实例</h4>
+<div class="example-box">
+<pre><code>场景：持续喷射9秒，叠加3层燃烧
+
+时间线：
+- 0-3秒：1层燃烧（855伤害）
+- 3-6秒：2层燃烧（855×2 = 1,710伤害）
+- 6-9秒：3层燃烧（855×3 = 2,565伤害）
+
+直接伤害（9秒）= 80 × 1.9 × 9 = 1,368
+燃烧总伤害 = 855 + 1,710 + 2,565 = 5,130
+总伤害 = 1,368 + 5,130 = 6,498
+
+💡 叠加机制让持续战斗伤害递增
+💡 12秒后总燃烧伤害达到峰值（3层×4个周期 = 10,260）
+</code></pre>
+</div>
+</div>
+
+<h2>十二、⚡ 新增武器实例：雷电塔</h2>
+
+<div class="class-card">
+<h3>12.1 雷电塔（连锁闪电型）</h3>
+
+<h4>武器特性</h4>
+<table>
+<thead><tr><th>属性</th><th>数值（10级）</th><th>说明</th></tr></thead>
+<tbody>
+  <tr><td>基础伤害</td><td>300</td><td>单次闪电伤害</td></tr>
+  <tr><td>连锁次数</td><td>3次</td><td>弹跳到附近目标</td></tr>
+  <tr><td>衰减系数</td><td>0.7</td><td>每次连锁伤害×0.7</td></tr>
+  <tr><td>攻击速度</td><td>2次/秒</td><td>间隔0.5秒</td></tr>
+  <tr><td>攻击范围</td><td>4格</td><td>首击范围</td></tr>
+</tbody>
+</table>
+
+<h4>连锁伤害公式</h4>
+<div class="formula-box">
+<pre><code>雷电塔总伤害 = 首击伤害 + Σ(连锁伤害_i)
+
+连锁伤害_i = 基础伤害 × 衰减系数^i × (1 + 等级加成%)
+
+i = 0（首击）, 1（第一次连锁）, 2（第二次连锁）...
+</code></pre>
+</div>
+
+<h4>实例计算：10级雷电塔打4只僵尸</h4>
+<div class="example-box">
+<pre><code>场景：4只普通僵尸（HP 500）排成一排，间距2格
+
+配置：
+- 基础伤害：300
+- 等级加成：90%
+- 连锁次数：3次
+- 衰减系数：0.7
+
+首击伤害 = 300 × 1.9 = 570
+第1次连锁 = 570 × 0.7 = 399
+第2次连锁 = 399 × 0.7 = 279.3
+第3次连锁 = 279.3 × 0.7 = 195.5
+
+总伤害 = 570 + 399 + 279.3 + 195.5 = 1,443.8
+
+分配到4只僵尸：
+- 首击目标：570伤害 → 击杀（HP 500），溢出70
+- 第2只：399伤害 → 击杀，溢出-101（实际499）
+- 第3只：279.3伤害 → 剩余HP 220.7
+- 第4只：195.5伤害 → 剩余HP 304.5
+
+💡 雷电塔1次攻击击杀2只，伤害3只
+💡 对密集僵尸群效率极高
+💡 单体BOSS战效果一般（无连锁目标）
+</code></pre>
+</div>
+
+<h4>DPS计算（考虑暴击）</h4>
+<div class="example-box">
+<pre><code>配置：
+- 攻击速度：2次/秒
+- 暴击率：15%
+- 暴击伤害：2.0倍
+
+单次期望伤害 = 1,443.8 × (1 × 0.85 + 2.0 × 0.15) = 1,443.8 × 1.15 = 1,660.4
+DPS = 1,660.4 × 2 = 3,320.8
+
+💡 对比机枪塔DPS（5,280）：雷电塔单体DPS较低
+💡 但范围伤害让清场效率提升（1次攻击打多个目标）
+💡 适合防守狭窄通道（僵尸排队挨打）
+</code></pre>
+</div>
+</div>
+
+<h2>十三、🚀 新增武器实例：导弹塔</h2>
+
+<div class="class-card">
+<h3>13.1 导弹塔（高爆范围型）</h3>
+
+<h4>武器特性</h4>
+<table>
+<thead><tr><th>属性</th><th>数值（10级）</th><th>说明</th></tr></thead>
+<tbody>
+  <tr><td>基础伤害</td><td>600</td><td>单发导弹伤害</td></tr>
+  <tr><td>爆炸范围</td><td>2格</td><td>半径2格AOE</td></tr>
+  <tr><td>攻击速度</td><td>1次/2秒</td><td>装填时间</td></tr>
+  <tr><td>爆炸伤害</td><td>300</td><td>范围爆炸附加</td></tr>
+  <tr><td>对空能力</td><td>✅</td><td>可以打飞行僵尸</td></tr>
+</tbody>
+</table>
+
+<h4>范围伤害公式</h4>
+<div class="formula-box">
+<pre><code>导弹塔伤害 = 直接命中伤害 + 爆炸范围伤害
+
+直接命中 = 基础伤害 × (1 + 等级加成%) × 暴击判定
+爆炸伤害 = 爆炸范围伤害 × (1 + 等级加成%) × 距离衰减
+
+距离衰减：
+- 中心（0-1格）：100%
+- 边缘（1-2格）：50%
+</code></pre>
+</div>
+
+<h4>实例计算：导弹塔打僵尸群</h4>
+<div class="example-box">
+<pre><code>场景：7只僵尸聚集（1只中心+6只环绕）
+
+配置：
+- 基础伤害：600
+- 爆炸伤害：300
+- 等级加成：90%
+- 暴击率：10%，暴击伤害1.8倍
+
+直接命中（中心僵尸）：
+伤害 = 600 × 1.9 = 1,140
+暴击期望 = 1,140 × (1 × 0.90 + 1.8 × 0.10) = 1,140 × 0.98 = 1,117.2
+
+爆炸伤害（6只环绕）：
+中心区域（2只）：300 × 1.9 × 1.0 = 570/只
+边缘区域（4只）：300 × 1.9 × 0.5 = 285/只
+
+总伤害 = 1,117.2（直接）+ 570×2（中心）+ 285×4（边缘）= 3,127.2
+
+💡 击杀情况：
+   - 中心僵尸：1,117.2 → 击杀（HP 500），溢出617.2
+   - 中心2只：570 → 击杀，溢出70/只
+   - 边缘4只：285 → 剩余HP 215/只（需补刀）
+
+💡 导弹塔适合清理密集僵尸群
+💡 对单体BOSS效果一般（无爆炸加成）
+💡 对空能力使其成为必备防御（飞行僵尸无视地面炮塔）
+</code></pre>
+</div>
+
+<h4>对空实例：打飞行僵尸</h4>
+<div class="example-box">
+<pre><code>场景：3只飞行僵尸（HP 800，无护甲，只能对空武器打）
+
+导弹塔配置：
+- DPS = (1,117.2 / 2秒) = 558.6 DPS（仅直接命中）
+- 3只僵尸需要时间 = 800 × 3 / 558.6 ≈ 4.3秒
+
+对比其他炮塔：
+- 机枪塔：无法对空 ❌
+- 激光炮：无法对空 ❌
+- 雷电塔：无法对空 ❌
+- 火焰喷射器：无法对空 ❌
+
+💡 导弹塔是唯一能打飞行僵尸的地面炮塔
+💡 建议每个阵地至少1座导弹塔防空
+💡 后期飞行僵尸增多，导弹塔优先级提升
+</code></pre>
+</div>
+</div>
+
+<h2>十四、🎯 全武器横向对比（深化版）</h2>
+
+<div class="class-card">
+<h3>14.1 八种武器DPS对比表</h3>
+
+<table>
+<thead>
+  <tr><th>武器类型</th><th>DPS（无暴击）</th><th>DPS（暴击期望）</th><th>攻击范围</th><th>适用场景</th></tr>
+</thead>
+<tbody>
+  <tr><td>机枪塔</td><td>4,400</td><td>5,280</td><td>单体</td><td>BOSS、单体高血</td></tr>
+  <tr><td>激光炮</td><td>3,040</td><td>3,283</td><td>单体穿透</td><td>高护甲目标</td></tr>
+  <tr><td>冰冻炮</td><td>950</td><td>1,045</td><td>单体+减速</td><td>控制+增伤辅助</td></tr>
+  <tr><td>火焰喷射器</td><td>1,520</td><td>1,709</td><td>3格扇形</td><td>密集僵尸群</td></tr>
+  <tr><td>雷电塔</td><td>2,887</td><td>3,320</td><td>4格连锁</td><td>狭窄通道群杀</td></tr>
+  <tr><td>导弹塔</td><td>570</td><td>617</td><td>2格AOE+对空</td><td>飞行僵尸+群杀</td></tr>
+  <tr><td>主角射击</td><td>1,000</td><td>1,450</td><td>手动瞄准</td><td>灵活补刀</td></tr>
+  <tr><td>技能核弹</td><td>125,000</td><td>N/A</td><td>5格半径</td><td>紧急清场</td></tr>
+</tbody>
+</table>
+
+<h3>14.2 典型场景武器推荐</h3>
+
+<div class="example-box">
+<pre><code>场景1：BOSS单挑（HP 10,000，护甲50%）
+推荐配置：2机枪塔 + 1冰冻炮
+理由：
+- 机枪塔对单体DPS最高（5,280×2×0.5=5,280）
+- 冰冻炮增伤20% → 总DPS=6,336
+- 击杀时间=10,000/6,336≈1.58秒
+
+场景2：狭窄通道（20只普通僵尸排队）
+推荐配置：2雷电塔 + 1火焰喷射器
+理由：
+- 雷电塔连锁伤害清理队列
+- 火焰喷射器持续DOT覆盖
+- 组合DPS=3,320×2+1,709=8,349
+- 清场时间≈(500×20)/8,349≈1.2秒
+
+场景3：飞行僵尸群（5只HP 800）
+推荐配置：2导弹塔
+理由：
+- 只有导弹塔能打飞行目标
+- DPS=617×2=1,234
+- 击杀时间=800×5/1,234≈3.24秒
+
+场景4：混合僵尸群（普通+铁桶+飞行）
+推荐配置：2机枪塔 + 1导弹塔 + 1冰冻炮
+理由：
+- 机枪塔打铁桶（高护甲）
+- 导弹塔打飞行
+- 冰冻炮控制+增伤
+- 灵活应对多种威胁
+</code></pre>
+</div>
+
+<h3>14.3 成本效益分析（金币/DPD）</h3>
+
+<table>
+<thead>
+  <tr><th>武器类型</th><th>建造成本</th><th>升级成本</th><th>DPS/成本比</th><th>性价比评级</th></tr>
+</thead>
+<tbody>
+  <tr><td>机枪塔</td><td>500</td><td>200/级</td><td>10.56</td><td>⭐⭐⭐⭐⭐</td></tr>
+  <tr><td>激光炮</td><td>1,500</td><td>400/级</td><td>2.03</td><td>⭐⭐⭐</td></tr>
+  <tr><td>冰冻炮</td><td>800</td><td>250/级</td><td>1.19</td><td>⭐⭐</td></tr>
+  <tr><td>火焰喷射器</td><td>1,200</td><td>350/级</td><td>1.27</td><td>⭐⭐⭐</td></tr>
+  <tr><td>雷电塔</td><td>1,000</td><td>300/级</td><td>2.89</td><td>⭐⭐⭐⭐</td></tr>
+  <tr><td>导弹塔</td><td>1,800</td><td>500/级</td><td>0.32</td><td>⭐⭐</td></tr>
+</tbody>
+</table>
+
+<div class="example-box">
+<pre><code>💡 机枪塔性价比之王：成本低、DPS高、升级便宜
+💡 激光炮中后期发力：对高护甲目标必备
+💡 冰冻炮辅助神器：低DPS但增伤价值高
+💡 雷电塔通道霸主：狭窄地形效率爆表
+💡 导弹塔防空专用：贵但必须造（飞行僵尸威胁大）
+💡 火焰喷射器清场利器：密集僵尸群首选
+</code></pre>
+</div>
+</div>
+
+<h2>十五、完整武器系统Python模拟代码</h2>
+
+<div class="formula-box">
+<pre><code>class Weapon:
+    def __init__(self, name, base_dmg, atk_speed, range_type, special=""):
+        self.name = name
+        self.base_dmg = base_dmg
+        self.atk_speed = atk_speed
+        self.range_type = range_type  # "single", "aoe", "chain", "dot"
+        self.special = special
+        
+    def calculate_dps(self, level=10, crit_rate=0.15, crit_dmg=2.0, 
+                     monster_armor=0.0, penetration=0.0):
+        """计算DPS（考虑等级、暴击、护甲、穿透）"""
+        # 等级加成
+        level_bonus = (level - 1) * 0.10
+        per_hit = self.base_dmg * (1 + level_bonus)
+        
+        # 穿透后护甲
+        actual_armor = monster_armor * (1 - penetration)
+        armor_reduction = 1 - actual_armor
+        
+        # 实际伤害
+        dmg_after_armor = per_hit * armor_reduction
+        
+        # 暴击期望
+        crit_expectation = 1 * (1 - crit_rate) + crit_dmg * crit_rate
+        
+        # 单次期望伤害
+        expected_dmg = dmg_after_armor * crit_expectation
+        
+        # DPS
+        dps = expected_dmg * self.atk_speed
+        
+        return dps
+
+# 创建武器实例
+weapons = [
+    Weapon("机枪塔", 200, 10, "single"),
+    Weapon("激光炮", 800, 2, "single", "penetration"),
+    Weapon("冰冻炮", 100, 5, "single", "slow"),
+    Weapon("火焰喷射器", 80, 19, "dot"),  # 80/秒, 持续19秒总DPS
+    Weapon("雷电塔", 300, 2, "chain"),
+    Weapon("导弹塔", 600, 0.5, "aoe")
+]
+
+# 输出DPS对比
+print("=== 武器DPS对比（10级，20%暴击，BOSS 50%护甲） ===")
+for weapon in weapons:
+    dps = weapon.calculate_dps(level=10, crit_rate=0.20, 
+                                 monster_armor=0.50, penetration=0.3)
+    print(f"{weapon.name:8s}: {dps:8.1f} DPS")
+
+# 模拟战斗场景
+def simulate_battle(weapons_list, monster_hp, duration=10):
+    """模拟战斗，计算总伤害"""
+    total_dps = sum([w.calculate_dps(level=10, crit_rate=0.20,
+                                      monster_armor=0.50, penetration=0.3) 
+                    for w in weapons_list])
+    total_damage = total_dps * duration
+    kills = int(total_damage / monster_hp)
+    
+    print(f"\n=== 组合DPS: {total_dps:.1f} ===")
+    print(f"战斗{duration}秒总伤害: {total_damage:.0f}")
+    print(f"击杀怪物（HP {monster_hp}）: {kills} 只")
+    print(f"剩余HP: {total_damage - kills * monster_hp:.0f}")
+
+# 场景1：BOSS战
+print("\n" + "="*50)
+print("场景1：BOSS战（HP 10,000，护甲50%）")
+simulate_battle([weapons[0], weapons[0], weapons[1]], 10000, duration=5)
+
+# 场景2：僵尸群
+print("\n" + "="*50)
+print("场景2：僵尸群（HP 500，无护甲）")
+simulate_battle([weapons[3], weapons[4], weapons[0]], 500, duration=5)
+</code></pre>
+</div>
+
+<h2>十六、后续研究方向</h2>
 
 <p>1. ✅ 详细测试各炮塔具体数值（本章已完成）</p>
 <p>2. ✅ 分析不同僵尸护甲机制（本章已完成）</p>
-<p>3. 研究技能冷却最优配置</p>
-<p>4. 分析不同关卡推荐炮塔组合</p>
-<p>5. 对比不同玩家策略的伤害效率</p>
-<p>6. 添加更多武器实例（火焰喷射器、雷电塔等）</p>
+<p>3. ✅ 添加火焰喷射器、雷电塔、导弹塔实例（本章新增）</p>
+<p>4. 研究技能冷却最优配置</p>
+<p>5. 分析不同关卡推荐炮塔组合</p>
+<p>6. 对比不同玩家策略的伤害效率</p>
+<p>7. 添加更多特殊武器（毒气塔、冰冻领域等）</p>
+<p>8. 分析英雄角色技能与炮塔配合机制</p>
 
 <hr style="border-color: #2a2a4a; margin: 30px 0;">
 
-<p><strong>文档版本</strong>：v2.0（深化版，新增武器实例）  </p>
+<p><strong>文档版本</strong>：v3.0（深化版，新增火焰喷射器/雷电塔/导弹塔3种武器实例）  </p>
 <p><strong>最后更新</strong>：2026-05-25  </p>
-<p><strong>下一步</strong>：三类游戏横向对比（见 05-comparative-analysis.html）</p>
+<p><strong>下一步</strong>：三类游戏横向对比（见 05-comparative-analysis.html）或继续深化其他章节</p>
 
 </div>
 </body>
