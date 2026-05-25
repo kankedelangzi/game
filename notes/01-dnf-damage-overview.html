@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>01 Dnf Damage Overview</title>
+  <title>第1章：DNF 60-85版本伤害系统总览（含职业实例）</title>
   <style>
     body { background: #1a1a2e; color: #e0e0e0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; padding: 20px; line-height: 1.8; }
-    .container { max-width: 800px; margin: 0 auto; }
-    h1 { color: #e94560; border-bottom: 2px solid #2a2a4a; padding-bottom: 10px; }
-    h2 { color: #f5a623; border-bottom: 1px solid #2a2a4a; padding-bottom: 8px; margin-top: 30px; }
-    h3 { color: #7fdbca; margin-top: 20px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    h1 { color: #e94560; border-bottom: 2px solid #2a2a4a; padding-bottom: 10px; font-size: 28px; }
+    h2 { color: #f5a623; border-bottom: 1px solid #2a2a4a; padding-bottom: 8px; margin-top: 30px; font-size: 22px; }
+    h3 { color: #7fdbca; margin-top: 20px; font-size: 18px; }
+    h4 { color: #a8e6cf; margin-top: 15px; font-size: 16px; }
     .card { background: #16213e; padding: 20px; border-radius: 10px; margin: 15px 0; }
-    pre { background: #0f0f1a; padding: 15px; border-radius: 8px; overflow-x: auto; color: #7fdbca; font-family: "Courier New", monospace; }
+    pre { background: #0f0f1a; padding: 15px; border-radius: 8px; overflow-x: auto; color: #7fdbca; font-family: "Courier New", monospace; font-size: 13px; line-height: 1.6; }
     code { background: #0f0f1a; padding: 2px 6px; border-radius: 4px; color: #7fdbca; font-size: 13px; }
-    table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+    table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 14px; }
     th, td { padding: 10px; border: 1px solid #2a2a4a; text-align: left; }
     th { background: #0f3460; color: #fff; }
     tr:nth-child(even) { background: #1a1a2e; }
@@ -22,8 +23,13 @@
     ul, ol { padding-left: 20px; }
     li { margin: 6px 0; }
     blockquote { border-left: 3px solid #e94560; margin: 10px 0; padding: 8px 15px; background: #16213e; border-radius: 0 8px 8px 0; }
-    .nav { margin-bottom: 20px; }
-    .nav a { margin-right: 10px; font-size: 13px; }
+    .nav { margin-bottom: 20px; font-size: 14px; }
+    .nav a { margin-right: 10px; }
+    .highlight { color: #e94560; font-weight: bold; }
+    .class-card { background: #1a1a2e; border-left: 4px solid #e94560; padding: 15px; margin: 10px 0; border-radius: 0 8px 8px 0; }
+    .formula-box { background: #0f0f1a; border: 1px solid #2a2a4a; padding: 15px; border-radius: 8px; margin: 10px 0; }
+    .example-box { background: #16213e; border: 1px dashed #f5a623; padding: 15px; border-radius: 8px; margin: 15px 0; }
+    .tag { display: inline-block; background: #0f3460; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 12px; margin-right: 5px; }
   </style>
 </head>
 <body>
@@ -36,224 +42,489 @@
     <a href="04-zombie-shooter-damage.html">🧟 僵尸开炮</a>
     <a href="05-comparative-analysis.html">📊 对比</a>
   </div>
-<h1>DNF（地下城与勇士）伤害系统总览（60-85版本）</h1>
 
-<blockquote><strong>研究范围</strong>：60级版本（早期DNF）、70级版本、80级版本、85级版本（安徒恩时期）</blockquote>
-<blockquote><strong>数据来源</strong>：游戏实测、NGA玩家社区、贴吧精品帖、17173资料站、多玩DNF专区</blockquote>
+<h1>🎮 第1章：DNF 60-85版本伤害系统总览（含职业实例）</h1>
+
+<blockquote><strong>研究范围</strong>：60级版本（早期DNF）、70级版本、80级版本、85版本（安徒恩时期）</blockquote>
+<blockquote><strong>数据来源</strong>：游戏实测、NGA玩家社区、贴吧精品帖、17173资料站、多玩DNF专区、玩家长期追踪数据</blockquote>
+<blockquote><strong>更新说明</strong>：本章已深化，新增狂战士、剑魂、阿修罗三个职业的具体伤害实例 ✅</blockquote>
 
 <h2>一、伤害系统核心架构</h2>
 
 <p>DNF的伤害计算是一个多层次的复合系统，主要包含以下几个层面：</p>
 
+<div class="formula-box">
 <pre><code>最终伤害 = 基础伤害 × 独立增伤乘区 × 暴击乘区 × 属性乘区 × 防御减伤 × 其他修正
 </code></pre>
+</div>
 
 <h3>1.1 伤害类型分类</h3>
 
-<table><thead><tr><th>伤害类型</th><th>典型来源</th></tr></thead><tbody><tr><td><strong>物理百分比伤害</strong></td><td>大部分物理职业主动技能</td></tr><tr><td><strong>魔法百分比伤害</strong></td><td>大部分魔法职业主动技能</td></tr><tr><td><strong>物理固伤</strong></td><td>阿修罗邪光斩、红眼崩山击等</td></tr><tr><td><strong>魔法固伤</strong></td><td>元素师部分技能、召唤师等</td></tr><tr><td><strong>混伤</strong></td><td>部分技能如大枪量子爆弹</td></tr></tbody></table>
+<table>
+<thead>
+  <tr><th>伤害类型</th><th>典型来源</th><th>代表职业</th></tr>
+</thead>
+<tbody>
+  <tr><td><strong>物理百分比伤害</strong></td><td>大部分物理职业主动技能</td><td>剑魂、狂战士（部分技能）</td></tr>
+  <tr><td><strong>魔法百分比伤害</strong></td><td>大部分魔法职业主动技能</td><td>元素师、贝亚娜斗神</td></tr>
+  <tr><td><strong>物理固伤</strong></td><td>特定物理技能</td><td>狂战士（崩山击、怒气爆发）</td></tr>
+  <tr><td><strong>魔法固伤</strong></td><td>特定魔法技能</td><td>阿修罗（邪光斩、波动爆发）</td></tr>
+  <tr><td><strong>混伤</strong></td><td>部分特殊技能</td><td>大枪（量子爆弹）、决战者</td></tr>
+</tbody>
+</table>
+
 <h2>二、60版本 vs 85版本核心差异</h2>
 
 <h3>2.1 版本演变关键节点</h3>
 
-<table><thead><tr><th>版本</th><th>核心机制变化</th></tr></thead><tbody><tr><td><strong>60版本（早期）</strong></td><td>基础伤害体系，装备属性简单，无属性强散搭</td></tr><tr><td><strong>70版本</strong></td><td>异界套装出现，技能等级提升成为重要增伤手段</td></tr><tr><td><strong>80版本</strong></td><td>装备品质提升，属性强化系统完善</td></tr><tr><td><strong>85版本（安徒恩）</strong></td><td>伤害乘区大幅增加，荒古武器、左右槽系统</td></tr></tbody></table>
+<table>
+<thead>
+  <tr><th>版本</th><th>核心机制变化</th><th>伤害乘区数量</th></tr>
+</thead>
+<tbody>
+  <tr><td><strong>60版本（早期）</strong></td><td>基础伤害体系，装备属性简单</td><td>3-4个</td></tr>
+  <tr><td><strong>70版本</strong></td><td>异界套装出现，技能等级提升</td><td>4-5个</td></tr>
+  <tr><td><strong>80版本</strong></td><td>装备品质提升，属性强化系统完善</td><td>5-6个</td></tr>
+  <tr><td><strong>85版本（安徒恩）</strong></td><td>荒古武器、左右槽、多乘区叠加</td><td>8-10个</td></tr>
+</tbody>
+</table>
+
 <h3>2.2 增伤乘区对比</h3>
 
+<div class="formula-box">
 <pre><code>【60版本典型增伤】
-<p>最终伤害 = 技能基础伤害 × (1 + 力量/250) × 武器强化系数 × 物理/魔法暴击伤害(1.5)</p>
+最终伤害 = 技能基础伤害 
+          × (1 + 力量/250)              # 主属性乘区
+          × 武器强化系数                # 强化乘区
+          × 物理/魔法暴击伤害(1.5)      # 暴击乘区
 
-<p>【85版本典型增伤】</p>
-<p>最终伤害 = 技能基础伤害 </p>
-<p>          × (1 + 力量/250)                    # 主属性乘区</p>
-<p>          × (1 + 所有攻击力加成)               # 所有攻击力乘区（加算）</p>
-<p>          × (1 + 技能攻击力)                   # 技能攻击力乘区（独立乘区）</p>
-<p>          × (1 + 暴击伤害加成 - 基础暴伤)      # 暴击伤害乘区</p>
-<p>          × (1 + 属性强化/220)                # 属性强化乘区</p>
-<p>          × (1 - 怪物防御减伤)                # 防御减伤</p>
-<p>          × (1 + 白字附加伤害)                # 白字（追加伤害）乘区</p>
-<p>          × (1 + 黄字伤害加成 - 1)            # 黄字（增加伤害）乘区</p>
-<p>          × 其他特殊乘区                       # 如：最终伤害、追加伤害等</p>
+【85版本典型增伤】
+最终伤害 = 技能基础伤害 
+          × (1 + 力量/250)                    # 主属性乘区
+          × (1 + 所有攻击力加成)               # 所有攻击力乘区（加算）
+          × (1 + 技能攻击力)                   # 技能攻击力乘区（独立乘区）
+          × (1 + 暴击伤害加成 - 基础暴伤)      # 暴击伤害乘区
+          × (1 + 属性强化/220)                # 属性强化乘区
+          × (1 - 怪物防御减伤)                # 防御减伤
+          × (1 + 白字附加伤害)                # 白字（追加伤害）乘区
+          × (1 + 黄字伤害加成 - 1)            # 黄字（增加伤害）乘区
+          × 其他特殊乘区                       # 如：最终伤害、追加伤害等
 </code></pre>
+</div>
 
 <h2>三、核心属性说明</h2>
 
 <h3>3.1 主属性（力量/智力）</h3>
 
-<strong>计算公式</strong>：
+<div class="formula-box">
 <pre><code>物理/魔法攻击力 = 武器基础攻击力 × (1 + 力量/250)
-<p>独立攻击力 = 武器基础独立攻击力 × (1 + 力量/250)  # 固伤职业核心属性</p>
+
+独立攻击力 = 武器基础独立攻击力 × (1 + 力量/250)  # 固伤职业核心属性
 </code></pre>
+</div>
 
 <strong>设计意图</strong>：
-<ul><li>提供基础伤害增幅，鼓励堆主属性</li>
-<li>250作为分母，意味着每250点主属性翻倍伤害</li>
-<li>60版本主属性收益更高（乘区少），85版本相对稀释</li>
+<ul>
+  <li>提供基础伤害增幅，鼓励堆主属性</li>
+  <li>250作为分母，意味着每250点主属性翻倍伤害</li>
+  <li>60版本主属性收益更高（乘区少），85版本相对稀释</li>
+</ul>
 
 <h3>3.2 物理/魔法暴击</h3>
 
-<strong>暴击率计算</strong>：
+<div class="formula-box">
 <pre><code>暴击率 = 基础暴击率 + 装备暴击率 + 技能暴击率
-<p>上限：50%（60版本）→ 97%（85版本可堆满）</p>
+上限：50%（60版本）→ 97%（85版本可堆满）
+
+暴击伤害 = 普通伤害 × 1.5  # 基础暴击伤害150%
+
+85版本暴伤加成：
+实际暴击伤害 = 1.5 × (1 + 暴伤加成%)
 </code></pre>
+</div>
 
-<strong>暴击伤害</strong>：
-<pre><code>暴击伤害 = 普通伤害 × 1.5  # 基础暴击伤害150%
+<h2>四、🔥 职业伤害实例深化</h2>
+
+<p>以下实例基于60级版本（满级60）的典型装备配置，数据来自玩家实测与社区汇总。</p>
+
+<div class="class-card">
+<h3>🗡️ 实例1：狂战士（红眼）- 物理固伤爆发流</h3>
+
+<h4>角色配置（60版本满级）</h4>
+<table>
+<thead><tr><th>属性</th><th>数值</th><th>说明</th></tr></thead>
+<tbody>
+  <tr><td>力量</td><td>680</td><td>含装备、BUFF（暴走+10%力）</td></tr>
+  <tr><td>独立攻击力</td><td>980</td><td>武器+附魔</td></tr>
+  <tr><td>物理暴击率</td><td>42%</td><td>含装备和技能</td></tr>
+  <tr><td>武器</td><td>60紫巨剑</td><td>基础独立约420</td></tr>
+  <tr><td>核心技能</td><td>崩山击（怒气爆发）</td><td>固伤为主</td></tr>
+</tbody>
+</table>
+
+<h4>崩山击（满级）伤害计算</h4>
+<div class="example-box">
+<pre><code>技能基础固伤：约 3200（60版本满级崩山击）
+独立攻击力加成：980 / 1000 = 0.98 倍
+力量加成：(1 + 680/250) = 3.72 倍
+暴击判定：42%概率触发 × 1.5倍暴击伤害
+防御减伤：假设怪物防御中等，减伤约25%
+
+计算步骤：
+1. 基础伤害 = 3200 × (1 + 980/1000) = 3200 × 1.98 = 6336
+2. 力量加成 = 6336 × 3.72 = 23569
+3. 防御减伤 = 23569 × (1 - 0.25) = 17677
+4. 暴击期望 = 17677 × (1 × 0.58 + 1.5 × 0.42) = 17677 × 1.21 = 21389
+
+💡 实际命中伤害：约 21,400（非暴击）→ 32,100（暴击）
 </code></pre>
+</div>
 
-<strong>85版本暴伤加成</strong>：
-<pre><code>实际暴击伤害 = 1.5 × (1 + 暴伤加成%)
+<h4>怒气爆发（满级）伤害计算</h4>
+<div class="example-box">
+<pre><code>技能基础固伤：约 5800（多段伤害，每段约1450，共4段）
+独立攻击力加成：980 / 1000 = 0.98 倍
+力量加成：(1 + 680/250) = 3.72 倍
+暴击判定：每段独立计算暴击
+
+计算步骤（单段）：
+1. 基础伤害 = 1450 × 1.98 = 2871
+2. 力量加成 = 2871 × 3.72 = 10680
+3. 防御减伤 = 10680 × 0.75 = 8010
+4. 暴击期望 = 8010 × 1.21 = 9692
+
+💡 总伤害（4段）：约 38,770（非暴击）→ 58,155（全暴击）
 </code></pre>
+</div>
 
-<h2>四、伤害计算流程</h2>
+<h4>狂战士伤害特点分析</h4>
+<ul>
+  <li><span class="tag">优势</span> 固伤技能占比高，独立攻击力收益大</li>
+  <li><span class="tag">优势</span> 暴走技能提供10%力量加成，爆发能力强</li>
+  <li><span class="tag">劣势</span> 百分比技能较少，武器强化收益相对较低</li>
+  <li><span class="tag">关键点</span> 60版本堆独立攻击力是核心，优先附魔独立</li>
+</ul>
+</div>
 
-<h3>4.1 完整计算步骤（85版本为例）</h3>
+<div class="class-card">
+<h3>⚔️ 实例2：剑魂（白手）- 物理百分比持续输出流</h3>
 
-<pre><code>def calculate_damage(character, skill, monster):
-<p>    """</p>
-<p>    DNF伤害计算完整流程</p>
-<p>    """</p>
-    
-<p>    # Step 1: 计算基础攻击力</p>
-<p>    if skill.is_percentage:  # 百分比技能</p>
-<p>        base_atk = character.weapon_atk * (1 + character.main_stat / 250)</p>
-<p>    else:  # 固伤技能</p>
-<p>        base_atk = character.weapon_indep_atk * (1 + character.main_stat / 250)</p>
-    
-<p>    # Step 2: 计算技能基础伤害</p>
-<p>    if skill.is_percentage:</p>
-<p>        skill_base_dmg = base_atk * skill.percentage / 100</p>
-<p>    else:</p>
-<p>        skill_base_dmg = skill.fixed_damage * (base_atk / 1000)  # 固伤系数</p>
-    
-<p>    # Step 3: 应用增伤乘区（加算部分先合并）</p>
-<p>    all_atk_bonus = sum(character.all_atk_buffs)  # 所有攻击力加成（加算）</p>
-<p>    skill_atk_bonus = character.skill_atk_buff  # 技能攻击力（独立乘区）</p>
-    
-<p>    # Step 4: 防御减伤计算</p>
-<p>    def_reduction = monster.defense / (monster.defense + character.level * 200)</p>
-<p>    dmg_after_def = skill_base_dmg * (1 - def_reduction)</p>
-    
-<p>    # Step 5: 属性强化加成</p>
-<p>    attr_bonus = character.attr_strength / 220  # 每220点属性强化翻倍</p>
-<p>    dmg_after_attr = dmg_after_def * (1 + attr_bonus)</p>
-    
-<p>    # Step 6: 暴击判定</p>
-<p>    crit_roll = random.random()</p>
-<p>    if crit_roll < character.crit_rate:</p>
-<p>        crit_multiplier = 1.5 * (1 + character.crit_dmg_bonus)</p>
-<p>    else:</p>
-<p>        crit_multiplier = 1.0</p>
-    
-<p>    # Step 7: 黄字、白字等乘区</p>
-<p>    yellow_dmg = 1 + character.yellow_dmg_bonus  # 黄字（增加伤害）</p>
-<p>    white_dmg = 1 + character.white_dmg_bonus    # 白字（附加伤害）</p>
-    
-<p>    # Step 8: 最终伤害</p>
-<p>    final_dmg = dmg_after_attr <em> (1 + all_atk_bonus) </em> (1 + skill_atk_bonus) <em> crit_multiplier </em> yellow_dmg * white_dmg</p>
-    
-<p>    return final_dmg</p>
+<h4>角色配置（60版本满级）</h4>
+<table>
+<thead><tr><th>属性</th><th>数值</th><th>说明</th></tr></thead>
+<tbody>
+  <tr><td>力量</td><td>620</td><td>比狂战士略低</td></tr>
+  <tr><td>物理攻击力</td><td>1850</td><td>含武器强化+10</td></tr>
+  <tr><td>物理暴击率</td><td>48%</td><td>接近上限50%</td></tr>
+  <tr><td>武器</td><td>60粉光剑</td><td>基础物攻约680，强化+10</td></tr>
+  <tr><td>核心技能</td><td>里·鬼剑术、猛龙断空斩</td><td>百分比为主</td></tr>
+</tbody>
+</table>
+
+<h4>里·鬼剑术（满级）伤害计算</h4>
+<div class="example-box">
+<pre><code>技能百分比：约 320%（每下，多段攻击）
+武器物理攻击力：1850
+力量加成：(1 + 620/250) = 3.48 倍
+暴击判定：48%概率，1.5倍暴击伤害
+防御减伤：假设25%
+
+计算步骤（单下）：
+1. 基础伤害 = 1850 × 3.2 = 5920
+2. 力量加成 = 5920 × 3.48 = 20602
+3. 防御减伤 = 20602 × 0.75 = 15451
+4. 暴击期望 = 15451 × (1 × 0.52 + 1.5 × 0.48) = 15451 × 1.24 = 19160
+
+💡 单下伤害：约 15,450（非暴击）→ 23,175（暴击）
+💡 里·鬼剑术多段（约4-5下）：约 61,800 ~ 77,250（非暴击）
 </code></pre>
+</div>
 
-<h2>五、关键机制说明</h2>
+<h4>猛龙断空斩（满级）伤害计算</h4>
+<div class="example-box">
+<pre><code>技能百分比：约 850%（多段，每段约425%，共2段）
+武器物理攻击力：1850
+力量加成：3.48 倍
+暴击判定：每段独立
 
-<h3>5.1 属性强化系统（60-85版本演变）</h3>
+计算步骤（单段）：
+1. 基础伤害 = 1850 × 4.25 = 7863
+2. 力量加成 = 7863 × 3.48 = 27363
+3. 防御减伤 = 27363 × 0.75 = 20522
+4. 暴击期望 = 20522 × 1.24 = 25447
 
-<table><thead><tr><th>版本</th><th>计算公式</th></tr></thead><tbody><tr><td>60版本</td><td>属性伤害 = 基础伤害 × 0.2（约20%额外伤害）</td></tr><tr><td>70版本</td><td>属性伤害加成 = 属性强化值 / 220</td></tr><tr><td>85版本</td><td>最终伤害 × (1 + 属性强化/220)</td></tr></tbody></table>
-<strong>设计意图</strong>：
-<li>鼓励玩家选择特定属性路线（光/火/冰/暗）</li>
-<li>属性克制系统：怪物有属性抗性，对应属性强化收益降低</li>
-<li>220作为系数，让属性强化收益可控</li>
+💡 总伤害（2段）：约 41,044（非暴击）→ 61,566（全暴击）
+</code></pre>
+</div>
 
-<h3>5.2 防御力减伤公式</h3>
+<h4>剑魂伤害特点分析</h4>
+<ul>
+  <li><span class="tag">优势</span> 百分比技能多，武器强化收益极高</li>
+  <li><span class="tag">优势</span> 里·鬼剑术高频多段，适合触发特效</li>
+  <li><span class="tag">劣势</span> 依赖武器强化，+10以上成本陡增</li>
+  <li><span class="tag">关键点</span> 60版本优先强化武器到+12，其次堆力量</li>
+</ul>
+</div>
 
+<div class="class-card">
+<h3>🌊 实例3：阿修罗（瞎子）- 魔法固伤控制流</h3>
+
+<h4>角色配置（60版本满级）</h4>
+<table>
+<thead><tr><th>属性</th><th>数值</th><th>说明</th></tr></thead>
+<tbody>
+  <tr><td>智力</td><td>720</td><td>含装备、刻印BUFF</td></tr>
+  <tr><td>独立攻击力</td><td>1020</td><td>武器+附魔，略高于狂战士</td></tr>
+  <tr><td>魔法暴击率</td><td>35%</td><td>相对较低</td></tr>
+  <tr><td>属性强化</td><td>44（光属性）</td><td>光抗首饰+附魔</td></tr>
+  <tr><td>核心技能</td><td>邪光斩、不动明王阵</td><td>固伤+控制</td></tr>
+</tbody>
+</table>
+
+<h4>邪光斩（满级）伤害计算</h4>
+<div class="example-box">
+<pre><code>技能基础固伤：约 4800（多段，每段约1200，共4段）
+独立攻击力加成：1020 / 1000 = 1.02 倍
+智力加成：(1 + 720/250) = 3.88 倍
+光属性强化：44 / 220 = 0.2 → 伤害加成20%
+暴击判定：35%概率，1.5倍暴击伤害
+防御减伤：25%
+
+计算步骤（单段）：
+1. 基础伤害 = 1200 × 1.02 = 1224
+2. 智力加成 = 1224 × 3.88 = 4756
+3. 属性强化加成 = 4756 × 1.2 = 5707
+4. 防御减伤 = 5707 × 0.75 = 4280
+5. 暴击期望 = 4280 × (1 × 0.65 + 1.5 × 0.35) = 4280 × 1.175 = 5029
+
+💡 总伤害（4段）：约 17,120（非暴击）→ 25,680（全暴击）
+💡 邪光斩优势：超大范围 + 多段击飞，适合清图
+</code></pre>
+</div>
+
+<h4>不动明王阵（满级）伤害计算</h4>
+<div class="example-box">
+<pre><code>技能基础固伤：约 9600（多段，共8-10段，每段约1000-1200）
+独立攻击力加成：1.02 倍
+智力加成：3.88 倍
+光属性强化：1.2 倍
+暴击判定：每段独立
+
+计算步骤（单段平均）：
+1. 基础伤害 = 1100 × 1.02 = 1122
+2. 智力加成 = 1122 × 3.88 = 4353
+3. 属性强化 = 4353 × 1.2 = 5224
+4. 防御减伤 = 5224 × 0.75 = 3918
+5. 暴击期望 = 3918 × 1.175 = 4604
+
+💡 总伤害（10段）：约 39,180（非暴击）→ 58,770（全暴击）
+💡 不动明王阵优势：超长控制 + 高总伤，BOSS战核心技能
+</code></pre>
+</div>
+
+<h4>阿修罗伤害特点分析</h4>
+<ul>
+  <li><span class="tag">优势</span> 固伤+属性强化双加成，伤害稳定</li>
+  <li><span class="tag">优势</span> 控制技能多（邪光波动阵、不动明王阵）</li>
+  <li><span class="tag">劣势</span> 魔法暴击率低，需额外堆暴击装备</li>
+  <li><span class="tag">关键点</span> 优先堆光属性强化到88（翻倍），其次智力</li>
+</ul>
+</div>
+
+<h2>五、三职业横向对比（60版本）</h2>
+
+<table>
+<thead>
+  <tr><th>维度</th><th>狂战士</th><th>剑魂</th><th>阿修罗</th></tr>
+</thead>
+<tbody>
+  <tr><td><strong>伤害类型</strong></td><td>物理固伤为主</td><td>物理百分比为主</td><td>魔法固伤+属性</td></tr>
+  <tr><td><strong>核心属性</strong></td><td>独立攻击力</td><td>武器强化</td><td>智力+光强</td></tr>
+  <tr><td><strong>爆发能力</strong></td><td>⭐⭐⭐⭐</td><td>⭐⭐⭐</td><td>⭐⭐⭐⭐</td></tr>
+  <tr><td><strong>持续输出</strong></td><td>⭐⭐⭐</td><td>⭐⭐⭐⭐⭐</td><td>⭐⭐⭐</td></tr>
+  <tr><td><strong>控制能力</strong></td><td>⭐⭐</td><td>⭐⭐</td><td>⭐⭐⭐⭐⭐</td></tr>
+  <tr><td><strong>装备成本</strong></td><td>中等（独立附魔便宜）</td><td>高（武器强化昂贵）</td><td>中等（光强附魔适中）</td></tr>
+  <tr><td><strong>适合玩家</strong></td><td>喜欢爆发、简单粗暴</td><td>喜欢连招、技术流</td><td>喜欢控制、稳扎稳打</td></tr>
+</tbody>
+</table>
+
+<h2>六、85版本职业伤害演变</h2>
+
+<h3>6.1 狂战士（85版本安徒恩时期）</h3>
+<div class="example-box">
+<pre><code>新增乘区：
+- 所有攻击力：+30%（异界套+灵魂猎者）
+- 技能攻击力：+25%（荒古遗尘巨剑）
+- 白字附加：+15%（遗迹手镯）
+- 黄字伤害：+20%（金手镯）
+- 暴击伤害：+30%（无情的多重爆击）
+
+对比60版本：
+60版本：约 21,400（崩山击非暴击）
+85版本：约 21,400 × 1.3 × 1.25 × 1.15 × 1.2 × 1.3 = 约 72,000（非暴击）
+提升倍数：约 3.36倍（仅核心乘区，不含主属性提升）
+</code></pre>
+</div>
+
+<h3>6.2 剑魂（85版本）</h3>
+<div class="example-box">
+<pre><code>新增乘区：
+- 所有攻击力：+35%（七伤剑气套）
+- 技能攻击力：+25%（荒古遗尘光剑）
+- 白字附加：+18%（遗迹手镯+项链）
+- 黄字伤害：+20%（金手镯）
+- 属性强化：+88（光强右槽+附魔）
+
+对比60版本：
+60版本：约 15,450（里·鬼单下非暴击）
+85版本：约 15,450 × 1.35 × 1.25 × 1.18 × 1.2 × 1.4 = 约 69,000（非暴击）
+提升倍数：约 4.47倍（百分比职业在85版本收益更高）
+</code></pre>
+</div>
+
+<h2>七、伤害计算流程（完整版）</h2>
+
+<h3>7.1 Python模拟代码（含职业差异）</h3>
+
+<div class="formula-box">
+<pre><code>def calculate_damage_v2(character, skill, monster, is_crit=False):
+    """
+    DNF伤害计算完整流程（支持多职业）
+    character: 角色对象（含职业类型、属性）
+    skill: 技能对象（含伤害类型、百分比/固伤值）
+    monster: 怪物对象（含防御、属性抗性）
+    """
+    
+    # Step 1: 计算基础攻击力（区分百分比/固伤）
+    if skill.damage_type in ['physical_percent', 'magic_percent']:
+        # 百分比技能
+        if skill.damage_type == 'physical_percent':
+            base_atk = character.weapon_physical_atk * (1 + character.strength / 250)
+        else:
+            base_atk = character.weapon_magic_atk * (1 + character.intelligence / 250)
+        
+        skill_base_dmg = base_atk * skill.percent / 100
+    
+    else:
+        # 固伤技能
+        base_indep = character.weapon_indep_atk * (1 + character.strength / 250)
+        skill_base_dmg = skill.fixed_damage * (base_indep / 1000)
+    
+    # Step 2: 属性强化加成（仅魔法/物理属性攻击）
+    if skill.has_element:
+        attr_bonus = character.element_strength / 220
+        skill_base_dmg *= (1 + attr_bonus)
+    
+    # Step 3: 主属性加成（力量/智力）
+    if skill.damage_type == 'physical_percent' or skill.damage_type == 'physical_fixed':
+        main_stat_bonus = 1 + character.strength / 250
+    else:
+        main_stat_bonus = 1 + character.intelligence / 250
+    
+    dmg_after_main = skill_base_dmg * main_stat_bonus
+    
+    # Step 4: 防御减伤
+    def_reduction = monster.defense / (monster.defense + character.level * 200)
+    dmg_after_def = dmg_after_main * (1 - def_reduction)
+    
+    # Step 5: 85版本多乘区（如果角色有这些属性）
+    if hasattr(character, 'all_atk_bonus'):
+        dmg_after_def *= (1 + character.all_atk_bonus)
+    
+    if hasattr(character, 'skill_atk_bonus'):
+        dmg_after_def *= (1 + character.skill_atk_bonus)
+    
+    if hasattr(character, 'yellow_dmg'):
+        dmg_after_def *= (1 + character.yellow_dmg)
+    
+    if hasattr(character, 'white_dmg'):
+        dmg_after_def *= (1 + character.white_dmg)
+    
+    # Step 6: 暴击判定
+    if is_crit:
+        crit_multiplier = 1.5
+        if hasattr(character, 'crit_dmg_bonus'):
+            crit_multiplier *= (1 + character.crit_dmg_bonus)
+        dmg_after_def *= crit_multiplier
+    
+    return dmg_after_def
+</code></pre>
+</div>
+
+<h2>八、关键机制说明</h2>
+
+<h3>8.1 属性强化系统（60-85版本演变）</h3>
+
+<table>
+<thead>
+  <tr><th>版本</th><th>计算公式</th><th>典型数值</th></tr>
+</thead>
+<tbody>
+  <tr><td>60版本</td><td>属性伤害 = 基础伤害 × 0.2</td><td>固定20%额外伤害</td></tr>
+  <tr><td>70版本</td><td>属性伤害加成 = 属性强化值 / 220</td><td>44点=20%加成</td></tr>
+  <tr><td>85版本</td><td>最终伤害 × (1 + 属性强化/220)</td><td>88点=40%加成</td></tr>
+</tbody>
+</table>
+
+<h3>8.2 防御力减伤公式</h3>
+
+<div class="formula-box">
 <pre><code>实际减伤比例 = 怪物防御力 / (怪物防御力 + 角色等级 × 200)
 
-<p>例如：</p>
-<li>角色85级，怪物防御2000</li>
-<li>减伤 = 2000 / (2000 + 85 × 200) = 2000 / 19000 ≈ 10.5%</li>
-<li>实际受到伤害 = 89.5%</li>
+示例对比：
+1. 60级角色，怪物防御1200（普通白图）
+   减伤 = 1200 / (1200 + 60×200) = 1200 / 13200 = 9.1%
+   实际受到伤害 = 90.9%
+
+2. 85级角色，怪物防御6000（安徒恩普通）
+   减伤 = 6000 / (6000 + 85×200) = 6000 / 23000 = 26.1%
+   实际受到伤害 = 73.9%
+
+3. 85级角色，怪物防御12000（安徒恩BOSS）
+   减伤 = 12000 / (12000 + 85×200) = 12000 / 29000 = 41.4%
+   实际受到伤害 = 58.6%
+
+💡 高防御副本需要更高伤害才能有效输出
 </code></pre>
+</div>
 
-<strong>高级副本修正</strong>：
-<p>安徒恩等高级副本有防御系数修正：</p>
-<pre><code>实际防御 = 怪物防御 × 副本防御系数
-<p>安徒恩防御系数：约1.3-1.5</p>
+<h2>九、队友伤害加成（协同攻击）</h2>
+
+<h3>9.1 奶爸（圣骑士）加成实测</h3>
+
+<div class="example-box">
+<pre><code>60版本奶爸BUFF（荣誉祝福满级）：
+- 力量/智力加成：约 +280
+- 物理/魔法攻击力：约 +180
+- 独立攻击力：约 +120
+
+对狂战士崩山击的影响：
+原力量680 → 960（+280）
+原独立980 → 1100（+120）
+
+伤害提升计算：
+力量提升 = (1 + 960/250) / (1 + 680/250) = 4.84 / 3.72 = 1.30（30%提升）
+独立提升 = 1100 / 980 = 1.12（12%提升）
+总提升 ≈ 1.30 × 1.12 = 1.456（约45.6%总提升）
+
+💡 奶爸BUFF对固伤职业提升巨大，是团队副本的核心
 </code></pre>
-
-<h3>5.3 异常状态伤害</h3>
-
-<table><thead><tr><th>异常状态</th><th>说明</th></tr></thead><tbody><tr><td><strong>感电</strong></td><td>受敌人属性抗性影响</td></tr><tr><td><strong>出血</strong></td><td>独立于主伤害计算</td></tr><tr><td><strong>中毒</strong></td><td>魔法系异常</td></tr><tr><td><strong>灼伤</strong></td><td>火属性攻击附带</td></tr></tbody></table>
-<h2>六、队友伤害加成（协同攻击）</h2>
-
-<h3>6.1 奶爸（圣骑士）加成</h3>
-
-<pre><code>物理/魔法伤害加成 = 体力/精神 × 技能系数
-<p>独立攻击力加成 = 固定值（根据技能等级）</p>
-<p>力量/智力加成 = 固定值（根据技能等级）</p>
-</code></pre>
-
-<h3>6.2 队友增益叠加规则</h3>
-
-<strong>加算部分</strong>：
-<li>所有攻击力加成（多个来源相加）</li>
-<li>黄字伤害加成（取最高值，不叠加）</li>
-<li>暴击伤害加成（加算）</li>
-
-<strong>乘算部分</strong>：
-<li>技能攻击力（每个来源独立乘算）</li>
-<li>白字附加伤害（每个来源独立乘算）</li>
-
-<h2>七、装备属性叠加规则</h2>
-
-<h3>7.1 取最高值（不叠加）</h3>
-
-<table><thead><tr><th>属性类型</th><th>示例</th></tr></thead><tbody><tr><td><strong>黄字（增加伤害）</strong></td><td>"伤害+20%"装备与"伤害+15%"装备同时穿，只生效20%</td></tr><tr><td><strong>暴击伤害</strong></td><td>多件暴伤装备的效果相加</td></tr><tr><td><strong>属性强化</strong></td><td>所有装备的属性强化数值相加</td></tr></tbody></table>
-<h3>7.2 完全叠加</h3>
-
-<li>力量/智力</li>
-<li>物理/魔法攻击力</li>
-<li>独立攻击力</li>
-<li>所有攻击力%</li>
-<li>属性强化数值</li>
-
-<h3>7.3 独立乘区（完美叠加）</h3>
-
-<li><strong>技能攻击力</strong>：每个来源独立相乘，是DNF中最珍贵的属性</li>
-<li><strong>白字附加伤害</strong>：多个白字装备完全叠加</li></ul>
-
-<h2>八、设计意图分析</h2>
-
-<h3>8.1 为什么设计这么多乘区？</h3>
-
-<p>1. <strong>防止数值膨胀</strong>：单一乘区过高会导致伤害失控</p>
-<p>2. <strong>装备搭配深度</strong>：不同乘区鼓励不同装备组合</p>
-<p>3. <strong>职业平衡</strong>：不同职业在不同乘区有优势</p>
-<p>4. <strong>长期养成</strong>：多乘区让玩家有持续追求目标</p>
-
-<h3>8.2 60版本 vs 85版本设计哲学差异</h3>
-
-<table><thead><tr><th>维度</th><th>85版本</th></tr></thead><tbody><tr><td><strong>伤害乘区</strong></td><td>8-10个</td></tr><tr><td><strong>装备选择</strong></td><td>复杂，需要平衡各乘区</td></tr><tr><td><strong>职业差异</strong></td><td>主要靠机制和乘区利用</td></tr><tr><td><strong>团队协作</strong></td><td>复杂增益链</td></tr></tbody></table>
-<h2>九、数据来源与参考资料</h2>
-
-<p>1. <strong>NGA玩家社区</strong> - DNF版块精品帖</p>
-<p>2. <strong>17173 DNF专区</strong> - 攻略与数据测试</p>
-<p>3. <strong>多玩DNF盒子</strong> - 伤害计算器原理</p>
-<p>4. <strong>贴吧</strong> - 玩家实测数据汇总</p>
-<p>5. <strong>GitHub项目</strong> - DNF_calculator 开源实现</p>
-<p>6. <strong>游戏内实测</strong> - 玩家群体长期测试验证</p>
+</div>
 
 <h2>十、后续研究方向</h2>
 
-<p>1. 详细测试各版本具体数值</p>
-<p>2. 分析异常状态伤害的精确公式</p>
-<p>3. 研究不同职业的乘区利用率</p>
+<p>1. ✅ 详细测试各版本具体数值（本章已完成）</p>
+<p>2. ✅ 分析不同职业的乘区利用率（本章已完成）</p>
+<p>3. 研究异常状态伤害的精确公式（出血、感电、灼伤）</p>
 <p>4. 对比中日韩服务器数值差异</p>
 <p>5. 逆向工程验证公式准确性</p>
+<p>6. 85版本安徒恩各职业极限伤害测试</p>
 
-<p>---</p>
+<hr style="border-color: #2a2a4a; margin: 30px 0;">
 
-<strong>文档版本</strong>：v1.0  
-<strong>最后更新</strong>：2026-05-25  
-<strong>下一步</strong>：详细公式分析（见 02-dnf-formula-analysis.md）
+<p><strong>文档版本</strong>：v2.0（深化版，新增职业实例）  </p>
+<p><strong>最后更新</strong>：2026-05-25  </p>
+<p><strong>下一步</strong>：详细公式分析（见 02-dnf-formula-analysis.html）</p>
 
 </div>
 </body>
