@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>02 Dnf Formula Analysis</title>
+  <title>第2章：DNF核心公式详细分析（含6职业实例）</title>
   <style>
     body { background: #1a1a2e; color: #e0e0e0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; padding: 20px; line-height: 1.8; }
     .container { max-width: 800px; margin: 0 auto; }
@@ -24,6 +24,9 @@
     blockquote { border-left: 3px solid #e94560; margin: 10px 0; padding: 8px 15px; background: #16213e; border-radius: 0 8px 8px 0; }
     .nav { margin-bottom: 20px; }
     .nav a { margin-right: 10px; font-size: 13px; }
+    .example-box { background: #16213e; border: 1px dashed #f5a623; padding: 15px; border-radius: 8px; margin: 15px 0; }
+    .tag { display: inline-block; background: #0f3460; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 12px; margin-right: 5px; }
+    .class-card { background: #1a1a2e; border-left: 4px solid #e94560; padding: 15px; margin: 10px 0; border-radius: 0 8px 8px 0; }
   </style>
 </head>
 <body>
@@ -591,6 +594,201 @@
 <strong>最后更新</strong>：2026-05-25  
 <strong>关联文档</strong>：01-dnf-damage-overview.md  
 <strong>下一步</strong>：拳皇伤害系统分析（见 03-kof-damage-system.md）
+
+</div>
+
+<!-- 新增：职业实例深化部分 -->
+<div class="class-card">
+<h2>十三、职业伤害计算实例深化（新增3职业）</h2>
+<blockquote>本章新增元素师、漫游枪手、柔道三个职业的具体伤害计算实例，验证核心公式的实际应用。</blockquote>
+
+<h3>13.1 元素师（魔法百分比职业）伤害实例</h3>
+<p><span class="tag">魔法百分比</span><span class="tag">属性强化</span><span class="tag">蓄力机制</span></p>
+
+<pre><code># 场景：85版本元素师，使用「杰克爆弹」+「湮灭黑洞」连招
+# 角色面板：
+magic_atk = 9800          # 魔法攻击力（含武器+附魔+BUFF）
+intelligence = 2200        # 智力
+elemental_strength = 168   # 火属性强化（杰克爆弹为火属性）
+skill_pct = 12500          # 杰克爆弹百分比（蓄力满：12500%）
+indep_atk = 2100           # 独立攻击力（影响固伤部分）
+enemy_fire_res = 12        # 怪物火抗
+enemy_def = 55000          # 怪物物理/魔法防御力
+player_level = 85
+
+# 步骤1：主属性乘区
+main_stat_multi = 1 + intelligence / 250
+                = 1 + 2200/250 = 9.8
+
+# 步骤2：技能基础伤害
+base_dmg = magic_atk * main_stat_multi * skill_pct / 100
+         = 9800 * 9.8 * 125
+         = 12,005,000
+
+# 步骤3：属性强化乘区（需减去怪物抗性）
+net_elemental = elemental_strength - enemy_fire_res
+effective_elemental = max(0, net_elemental)  # 最低为0
+elemental_multi = 1 + effective_elemental / 220
+                = 1 + (168-12)/220 = 1.709
+
+# 步骤4：防御减伤（85版本公式）
+def_reduction = enemy_def / (enemy_def + 200 * player_level - 20)
+              = 55000 / (55000 + 200*85 - 20)
+              = 55000 / 71980 ≈ 0.764
+# 实际受到伤害 = 1 - def_reduction = 0.236（即怪物减免76.4%，玩家只造成23.6%伤害）
+
+# 步骤5：假设有黄字+28%、白字+15%、暴击伤害+46%
+yellow_multi = 1.28    # 黄字取最高
+white_multi = 1.15      # 白字乘算
+crit_dmg_multi = 1.46   # 暴击时
+
+# 最终暴击伤害：
+final_dmg = base_dmg * elemental_multi * (1 - def_reduction) * yellow_multi * white_multi * crit_dmg_multi
+          = 12,005,000 * 1.709 * 0.236 * 1.28 * 1.15 * 1.46
+          ≈ 4,370,000
+
+# 对比：无暴击伤害
+final_dmg_no_crit = 12,005,000 * 1.709 * 0.236 * 1.28 * 1.15
+                  ≈ 2,990,000
+</code></pre>
+
+<div class="example-box">
+<strong>💡 元素师设计要点：</strong>
+<ul>
+  <li>属性强化收益极高，168点属强带来70.9%增伤</li>
+  <li>防御减伤是最大伤害衰减源（85版本高防怪物减免超75%）</li>
+  <li>蓄力机制让杰克爆弹百分比从6500%→12500%，接近翻倍</li>
+  <li>魔法攻击力是基础，高强武器对元素师提升巨大</li>
+</ul>
+</div>
+
+<h3>13.2 漫游枪手（物理百分比职业）伤害实例</h3>
+<p><span class="tag">物理百分比</span><span class="tag">暴击流</span><span class="tag">移动射击</span></p>
+
+<pre><code># 场景：85版本漫游枪手，使用「移动射击」+「多重爆头」连招
+# 角色面板：
+physical_atk = 11200         # 物理攻击力（左轮枪+13）
+strength = 1850              # 力量
+skill_pct = 32000            # 移动射击总百分比（多段伤害合计）
+crit_rate = 88               # 暴击率（含死左BUFF）
+crit_dmg_bonus = 52          # 暴击伤害加成（含装备）
+enemy_def = 48000            # 怪物防御
+player_level = 85
+
+# 步骤1：主属性乘区
+main_stat_multi = 1 + strength / 250
+                = 1 + 1850/250 = 8.4
+
+# 步骤2：技能基础伤害
+base_dmg = physical_atk * main_stat_multi * skill_pct / 100
+         = 11200 * 8.4 * 320
+         = 30,105,600
+
+# 步骤3：防御减伤
+def_reduction = 48000 / (48000 + 200*85 - 20)
+              = 48000 / 64980 ≈ 0.739
+# 实际受到伤害比例 = 1 - 0.739 = 0.261
+
+# 步骤4：暴击计算（漫游核心）
+# 假设开启「死亡左轮」BUFF，暴击伤害额外+40%
+effective_crit_dmg = (1 + crit_dmg_bonus/100) * 1.4  # 死左BUFF
+                   = 1.52 * 1.4 = 2.128
+# 期望伤害（考虑暴击率88%）：
+expected_dmg = base_dmg * (1 - def_reduction) * ((1-0.88)*1.0 + 0.88*effective_crit_dmg)
+             = 30,105,600 * 0.261 * ((0.12*1) + (0.88*2.128))
+             = 30,105,600 * 0.261 * 1.995
+             ≈ 15,670,000
+
+# 对比：无死左BUFF时
+expected_dmg_no_buff = 30,105,600 * 0.261 * ((0.12*1) + (0.88*1.52))
+                    ≈ 12,540,000
+# 死左BUFF提升约25%
+</code></pre>
+
+<div class="example-box">
+<strong>💡 漫游枪手设计要点：</strong>
+<ul>
+  <li>暴击率是核心属性，88%暴击率接近实战全覆盖</li>
+  <li>死亡左轮BUFF提供40%暴击伤害加成，是爆发核心</li>
+  <li>移动射击多段伤害合计32000%，持续输出能力强</li>
+  <li>物理攻击力依赖高强左轮，+13武器是基础门槛</li>
+</ul>
+</div>
+
+<h3>13.3 柔道（物理固伤职业）伤害实例</h3>
+<p><span class="tag">物理固伤</span><span class="tag">独立攻击</span><span class="tag">摔技强化</span></p>
+
+<pre><code># 场景：85版本柔道，使用「裂石破天」+「末日摇篮」连招
+# 角色面板：
+skill_fixed_dmg = 85000      # 裂石破天固伤值（技能面板显示）
+indep_atk = 2400             # 独立攻击力（固伤职业核心属性）
+strength = 2100              # 力量
+enemy_def = 52000            # 怪物防御
+player_level = 85
+grab_bonus = 1.35            # 摔技强化BUFF（柔道专属）
+
+# 步骤1：固伤基础伤害公式
+base_dmg = skill_fixed_dmg * (1 + indep_atk / 1000) * (1 + strength / 250)
+         = 85000 * (1 + 2400/1000) * (1 + 2100/250)
+         = 85000 * 3.4 * 9.4
+         = 2,716,600
+
+# 步骤2：摔技强化BUFF（柔道专属乘区）
+base_dmg_with_grab = base_dmg * grab_bonus
+                   = 2,716,600 * 1.35 = 3,667,410
+
+# 步骤3：防御减伤
+def_reduction = 52000 / (52000 + 200*85 - 20)
+              = 52000 / 68980 ≈ 0.754
+# 实际受到伤害比例 = 1 - 0.754 = 0.246
+
+# 步骤4：假设有黄字+35%、白字+20%
+final_dmg = base_dmg_with_grab * (1 - def_reduction) * 1.35 * 1.20
+          = 3,667,410 * 0.246 * 1.35 * 1.20
+          ≈ 1,465,000
+
+# 对比：独立攻击力从2400→1800时
+base_dmg_lower = 85000 * (1 + 1800/1000) * 9.4
+               = 85000 * 2.8 * 9.4 = 2,237,200
+final_dmg_lower = 2,237,200 * 1.35 * 0.246 * 1.35 * 1.20
+                ≈ 1,206,000
+# 独立攻击力600点差距导致伤害降低约17.7%
+</code></pre>
+
+<div class="example-box">
+<strong>💡 柔道设计要点：</strong>
+<ul>
+  <li>独立攻击力是固伤职业第一优先级，每1000点独立提升100%基础伤害</li>
+  <li>摔技强化BUFF提供35%专属增伤，是柔道核心机制</li>
+  <li>力量收益与独立攻击力叠加，形成双重乘区</li>
+  <li>固伤职业不依赖武器强化，但武器锻造（提升独立）至关重要</li>
+</ul>
+</div>
+
+<h3>13.4 六职业伤害公式横向对比</h3>
+<table>
+<thead>
+  <tr><th>职业</th><th>伤害类型</th><th>核心属性</th><th>关键BUFF</th><th>防御减伤影响</th><th>典型爆发伤害</th></tr>
+</thead>
+<tbody>
+  <tr><td>狂战士</td><td>物理固伤+百分比混合</td><td>独立攻击+力量</td><td>暴走（+75%攻速/释放/移速）</td><td>高（约75%）</td><td>400-600万</td></tr>
+  <tr><td>剑魂</td><td>物理百分比</td><td>武器物攻+力量</td><td>破极兵刃（+85%物理攻击力）</td><td>高（约76%）</td><td>350-550万</td></tr>
+  <tr><td>阿修罗</td><td>魔法固伤+百分比混合</td><td>独立攻击+智力</td><td>杀意波动（+45%暴击率）</td><td>高（约77%）</td><td>380-580万</td></tr>
+  <tr><td>元素师</td><td>魔法百分比</td><td>武器魔攻+智力</td><td>元素点燃（+60%属强）</td><td>高（约76%）</td><td>300-500万</td></tr>
+  <tr><td>漫游枪手</td><td>物理百分比</td><td>武器物攻+力量</td><td>死亡左轮（+40%暴击伤害）</td><td>高（约74%）</td><td>450-700万</td></tr>
+  <tr><td>柔道</td><td>物理固伤</td><td>独立攻击+力量</td><td>摔技强化（+35%摔技伤害）</td><td>高（约75%）</td><td>280-450万</td></tr>
+</tbody>
+</table>
+
+<div class="example-box">
+<strong>📊 核心发现：</strong>
+<ul>
+  <li>85版本所有职业防御减伤均在74-77%区间，高防怪物是伤害天花板</li>
+  <li>固伤职业（狂战/阿修罗/柔道）依赖独立攻击力，百分比职业（剑魂/元素/漫游）依赖武器强化</li>
+  <li>漫游枪手因暴击流+死左BUFF，爆发伤害最高（450-700万）</li>
+  <li>柔道作为纯固伤职业，伤害上限最低但稳定性最高（无武器强化波动）</li>
+</ul>
+</div>
 
 </div>
 </body>
