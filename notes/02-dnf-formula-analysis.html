@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>第2章：DNF核心公式详细分析（含6职业实例）</title>
+  <title>第2章：DNF核心公式详细分析（60-70版本）</title>
   <style>
     body { background: #1a1a2e; color: #e0e0e0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; padding: 20px; line-height: 1.8; }
     .container { max-width: 800px; margin: 0 auto; }
@@ -39,28 +39,33 @@
     <a href="04-zombie-shooter-damage.html">🧟 僵尸开炮</a>
     <a href="05-comparative-analysis.html">📊 对比</a>
   </div>
-<h1>DNF（地下城与勇士）核心公式详细分析</h1>
 
-<blockquote><strong>版本重点</strong>：60版本、70版本、80版本、85版本（安徒恩时期）</blockquote>
+<h1>DNF（地下城与勇士）核心公式详细分析（60-70版本）</h1>
+
+<div style="background:#e94560;color:#fff;padding:10px 15px;border-radius:8px;margin:10px 0;font-size:14px;">
+  ⚠️ 版本锁定：本文件仅研究 <strong>DNF 70版本末期</strong>，不涉及80/85/90+后续版本
+</div>
+
+<blockquote><strong>版本重点</strong>：60版本、70版本、70版本末期（异界 E2/E3、远古套、CC套）</blockquote>
 <blockquote><strong>分析深度</strong>：包含具体数值、测试方法和设计原理</blockquote>
 
 <h2>一、伤害计算公式总览</h2>
 
-<h3>1.1 完整伤害公式（85版本最终形态）</h3>
+<h3>1.1 完整伤害公式（70版本最终形态）</h3>
 
 <pre><code>最终伤害 = 
-<p>    基础伤害 </p>
-<p>    × (1 + 主属性 / 250)               # 主属性乘区</p>
-<p>    × (1 + Σ所有攻击力%)                # 所有攻击力乘区（加算）</p>
-<p>    × Π(1 + 技能攻击力i)               # 技能攻击力乘区（乘算）</p>
-<p>    × (1 + 暴击伤害加成)               # 暴击乘区（若暴击）</p>
-<p>    × (1 + 属性强化/220)               # 属性强化乘区</p>
-<p>    × (1 - 防御减伤)                   # 防御减伤</p>
-<p>    × (1 + 黄字伤害加成)               # 黄字乘区（取最高）</p>
-<p>    × Π(1 + 白字附加i)                 # 白字乘区（乘算）</p>
-<p>    × (1 + 最终伤害加成)               # 最终伤害乘区</p>
-<p>    × 其他特殊乘区                      # 如：背击、破招等</p>
+    基础伤害 
+    × (1 + 主属性 / 250)               # 主属性乘区
+    × (1 + Σ所有攻击力%)                # 所有攻击力乘区（加算）
+    × (1 + 暴击伤害加成)               # 暴击乘区（若暴击）
+    × (1 + 属性强化/220)               # 属性强化乘区（70版本已成型）
+    × (1 - 防御减伤)                   # 防御减伤
+    × (1 + 黄字伤害加成)               # 黄字乘区（取最高）
+    × Π(1 + 白字附加i)                 # 白字乘区（乘算）
+    × 其他特殊乘区                      # 如：背击、破招等
 </code></pre>
+
+<!-- （80+版本内容已移除，本项研究锁定70版本） -->
 
 <h2>二、基础伤害计算</h2>
 
@@ -70,15 +75,15 @@
 <pre><code>技能基础伤害 = 武器物理/魔法攻击力 × (1 + 力量/智力 ÷ 250) × 技能百分比 ÷ 100
 </code></pre>
 
-<strong>示例计算</strong>：
-<pre><code># 示例：剑魂猛龙断空斩（80级版本）
-<p>weapon_atk = 1200          # 武器物理攻击力</p>
-<p>strength = 1500            # 力量</p>
-<p>skill_pct = 8500          # 技能百分比8500%</p>
+<strong>示例计算（70版本）</strong>：
+<pre><code># 示例：剑魂猛龙断空斩（70级版本）
+weapon_atk = 1800          # 武器物理攻击力（70粉光+12）
+strength = 1500            # 力量
+skill_pct = 7500          # 技能百分比7500%
 
-<p>base_dmg = 1200 <em> (1 + 1500/250) </em> 8500/100</p>
-<p>        = 1200 <em> 7 </em> 85</p>
-<p>        = 714,000</p>
+base_dmg = 1800 * (1 + 1500/250) * 7500/100
+        = 1800 * 7 * 75
+        = 945,000
 </code></pre>
 
 <strong>设计意图</strong>：
@@ -92,29 +97,29 @@
 <pre><code>技能基础伤害 = 技能固定伤害值 × (1 + 独立攻击力 / 1000) × (1 + 力量/智力 ÷ 250)
 </code></pre>
 
-<strong>示例计算</strong>：
+<strong>示例计算（70版本）</strong>：
 <pre><code># 示例：红眼崩山击（固伤部分）
-<p>skill_fixed_dmg = 50000    # 技能面板上固伤数值</p>
-<p>indep_atk = 1800           # 独立攻击力</p>
-<p>strength = 1500            # 力量</p>
+skill_fixed_dmg = 60000    # 技能面板上固伤数值（70版本）
+indep_atk = 2000           # 独立攻击力
+strength = 1500            # 力量
 
-<p>base_dmg = 50000 <em> (1 + 1800/1000) </em> (1 + 1500/250)</p>
-<p>        = 50000 <em> 2.8 </em> 7</p>
-<p>        = 980,000</p>
+base_dmg = 60000 * (1 + 2000/1000) * (1 + 1500/250)
+        = 60000 * 3.0 * 7
+        = 1,260,000
 </code></pre>
 
 <strong>关键差异</strong>：
-<li>固伤职业更依赖独立攻击力（锻造武器）</li>
+<li>固伤职业更依赖独立攻击力（70版本锻造系统有限，主要靠武器基础）</li>
 <li>独立攻击力系数是1000（vs 主属性250），收益更珍贵</li>
-<li>60版本固伤地位较低，85版本通过独立攻击力加强</li>
+<li>60版本固伤地位较低，70版本通过异界套加强</li>
 
 <h3>2.3 混伤技能</h3>
 
 <strong>公式</strong>：
 <pre><code>技能基础伤害 = 
-<p>    (武器攻击力 × 百分比部分 ÷ 100) </p>
-<p>    + (技能固伤部分 × (1 + 独立攻击力/1000))</p>
-<p>    × (1 + 主属性/250)</p>
+    (武器攻击力 × 百分比部分 ÷ 100) 
+    + (技能固伤部分 × (1 + 独立攻击力/1000))
+    × (1 + 主属性/250)
 </code></pre>
 
 <h2>三、防御减伤公式</h2>
@@ -123,7 +128,7 @@
 
 <pre><code>实际受到伤害比例 = 1 - 防御减伤率
 
-<p>防御减伤率 = 怪物防御力 / (怪物防御力 + 攻击者等级 × 200)</p>
+防御减伤率 = 怪物防御力 / (怪物防御力 + 攻击者等级 × 200)
 </code></pre>
 
 <strong>变形公式</strong>：
@@ -132,33 +137,30 @@
 
 <h3>3.2 实际计算过程</h3>
 
-<strong>示例1：普通白图怪物</strong>
-<pre><code># 85级角色攻击防御2000的怪物
-<p>char_level = 85</p>
-<p>monster_def = 2000</p>
+<strong>示例1：普通白图怪物（70版本）</strong>
+<pre><code># 70级角色攻击防御2000的怪物
+char_level = 70
+monster_def = 2000
 
-<p>def_reduction = 2000 / (2000 + 85 * 200)</p>
-<p>              = 2000 / (2000 + 17000)</p>
-<p>              = 2000 / 19000</p>
-<p>              ≈ 0.1053  # 10.53%减伤</p>
+def_reduction = 2000 / (2000 + 70 * 200)
+              = 2000 / (2000 + 14000)
+              = 2000 / 16000
+              = 0.125  # 12.5%减伤
 
-<p>actual_dmg_pct = 1 - 0.1053 = 0.8947  # 89.47%伤害</p>
+actual_dmg_pct = 1 - 0.125 = 0.875  # 87.5%伤害
 </code></pre>
 
-<strong>示例2：安徒恩副本BOSS</strong>
-<pre><code># 85级角色攻击防御15000的安徒恩BOSS
-<p>char_level = 85</p>
-<p>monster_def = 15000</p>
-<p>dungeon_def_multiplier = 1.5  # 安徒恩防御系数</p>
+<strong>示例2：远古图BOSS（70版本）</strong>
+<pre><code># 70级角色攻击防御8000的远古BOSS
+char_level = 70
+monster_def = 8000
 
-<p>adjusted_def = 15000 * 1.5 = 22500</p>
+def_reduction = 8000 / (8000 + 70 * 200)
+              = 8000 / (8000 + 14000)
+              = 8000 / 22000
+              ≈ 0.364  # 36.4%减伤
 
-<p>def_reduction = 22500 / (22500 + 85 * 200)</p>
-<p>              = 22500 / (22500 + 17000)</p>
-<p>              = 22500 / 39500</p>
-<p>              ≈ 0.5696  # 56.96%减伤</p>
-
-<p>actual_dmg_pct = 1 - 0.5696 = 0.4304  # 43.04%伤害</p>
+actual_dmg_pct = 1 - 0.364 = 0.636  # 63.6%伤害
 </code></pre>
 
 <h3>3.3 防御穿透机制</h3>
@@ -168,48 +170,49 @@
 </code></pre>
 
 <strong>示例</strong>：
-<pre><code># 10%防御穿透
-<p>monster_def = 10000</p>
-<p>penetration = 0.10</p>
+<pre><code># 10%防御穿透（70版本稀有属性）
+monster_def = 8000
+penetration = 0.10
 
-<p>actual_def = 10000 * (1 - 0.10) = 9000</p>
+actual_def = 8000 * (1 - 0.10) = 7200
 </code></pre>
 
 <strong>设计意图</strong>：
 <li>高防御怪物需要防御穿透来应对</li>
-<li>85版本引入防御穿透属性，丰富装备选择</li>
+<li>70版本防御穿透属性较少，是珍贵词条</li>
 <li>防止纯堆攻击力就能通杀所有副本</li>
 
 <h2>四、属性强化与属性攻击</h2>
 
-<h3>4.1 属性强化公式</h3>
+<h3>4.1 属性强化公式（70版本）</h3>
 
 <pre><code>属性伤害加成 = 属性强化值 / 220
 
-<p>实际伤害 = 基础伤害 × (1 + 属性强化/220)</p>
+实际伤害 = 基础伤害 × (1 + 属性强化/220)
 </code></pre>
 
 <strong>非线性收益表</strong>：
-<table><thead><tr><th>属性强化值</th><th>倍率</th></tr></thead><tbody><tr><td>0</td><td>1.00x</td></tr><tr><td>44</td><td>1.20x</td></tr><tr><td>110</td><td>1.50x</td></tr><tr><td>220</td><td>2.00x</td></tr><tr><td>440</td><td>3.00x</td></tr></tbody></table>
+<table><thead><tr><th>属性强化值</th><th>倍率</th></tr></thead><tbody><tr><td>0</td><td>1.00x</td></tr><tr><td>22</td><td>1.10x</td></tr><tr><td>44</td><td>1.20x</td></tr><tr><td>66</td><td>1.30x</td></tr><tr><td>88</td><td>1.40x</td></tr><tr><td>110</td><td>1.50x</td></tr></tbody></table>
+
 <h3>4.2 属性抗性机制</h3>
 
 <strong>公式</strong>：
 <pre><code>实际属性强化 = 角色属性强化 - 怪物属性抗性
 
-<p>如果 实际属性强化 < 0:</p>
-<p>    实际伤害加成 = 实际属性强化 / 440  # 负数，减少伤害</p>
-<p>否则:</p>
-<p>    实际伤害加成 = 实际属性强化 / 220</p>
+如果 实际属性强化 < 0:
+    实际伤害加成 = 实际属性强化 / 440  # 负数，减少伤害
+否则:
+    实际伤害加成 = 实际属性强化 / 220
 </code></pre>
 
 <strong>示例</strong>：
-<pre><code># 角色火强220，怪物火抗50
-<p>effective_attr = 220 - 50 = 170</p>
-<p>dmg_bonus = 170 / 220 ≈ 0.773  # 77.3%加成</p>
+<pre><code># 角色火强88，怪物火抗20
+effective_attr = 88 - 20 = 68
+dmg_bonus = 68 / 220 ≈ 0.309  # 30.9%加成
 
-<h1>角色冰强100，怪物冰抗150（怪物抗冰）</h1>
-<p>effective_attr = 100 - 150 = -50</p>
-<p>dmg_bonus = -50 / 440 ≈ -0.114  # 减少11.4%伤害</p>
+# 角色冰强50，怪物冰抗80（怪物抗冰）
+effective_attr = 50 - 80 = -30
+dmg_bonus = -30 / 440 ≈ -0.068  # 减少6.8%伤害
 </code></pre>
 
 <h3>4.3 属性攻击的额外效果</h3>
@@ -218,8 +221,8 @@
 <li>属性攻击仅附加约20%额外伤害</li>
 <li>无属性强化系统</li>
 
-<strong>70-85版本</strong>：
-<li>属性攻击触发属性强化加成</li>
+<strong>70版本</strong>：
+<li>属性攻击触发属性强化加成（每22点+10%）</li>
 <li>属白：属性攻击时，白字伤害也享受属性强化加成</li>
 
 <h2>五、暴击系统详细计算</h2>
@@ -228,31 +231,32 @@
 
 <pre><code>实际暴击率 = 基础暴击率 + 装备暴击率 + 技能暴击率 + 被动暴击率
 
-<p>限制：</p>
+限制：
 <li>60版本上限：50%</li>
-<li>85版本上限：97%（可通过装备/药水突破）</li>
+<li>70版本上限：80%（可通过装备/药水突破）</li>
 </code></pre>
 
 <strong>职业基础暴击率</strong>：
 <table><thead><tr><th>职业类型</th><th>说明</th></tr></thead><tbody><tr><td>物理百分比职业</td><td>剑魂、漫游等</td></tr><tr><td>魔法百分比职业</td><td>元素、机械等</td></tr><tr><td>固伤职业</td><td>依赖装备堆暴击</td></tr></tbody></table>
+
 <h3>5.2 暴击伤害计算</h3>
 
 <strong>基础暴击伤害</strong>：
 <pre><code>暴击伤害 = 普通伤害 × 1.5
 </code></pre>
 
-<strong>85版本暴伤加成</strong>：
+<strong>70版本暴伤加成</strong>：
 <pre><code>暴击伤害 = 普通伤害 × 1.5 × (1 + 暴击伤害加成%)
 </code></pre>
 
 <strong>示例</strong>：
-<pre><code># 基础伤害100万，暴伤加成50%
-<p>base_dmg = 1_000_000</p>
-<p>crit_dmg_bonus = 0.50</p>
+<pre><code># 基础伤害50万，暴伤加成30%
+base_dmg = 500,000
+crit_dmg_bonus = 0.30
 
-<p>crit_dmg = 1_000_000 <em> 1.5 </em> (1 + 0.50)</p>
-<p>         = 1_000_000 * 2.25</p>
-<p>         = 2,250,000</p>
+crit_dmg = 500,000 * 1.5 * (1 + 0.30)
+         = 500,000 * 1.95
+         = 975,000
 </code></pre>
 
 <h3>5.3 背击与破招</h3>
@@ -279,7 +283,7 @@
 
 <strong>示例</strong>：
 <pre><code># 三件装备分别提供：+10%、+15%、+8%
-<p>all_atk_bonus = 1 + 0.10 + 0.15 + 0.08 = 1.33  # 33%总加成</p>
+all_atk_bonus = 1 + 0.10 + 0.15 + 0.08 = 1.33  # 33%总加成
 </code></pre>
 
 <strong>常见来源</strong>：
@@ -287,47 +291,25 @@
 <li>职业被动技能</li>
 <li>部分药水效果</li>
 
-<h3>6.2 技能攻击力（独立乘区）</h3>
-
-<strong>公式</strong>：
-<pre><code>总技能攻击力加成 = Π(1 + 技能攻击力i)
-</code></pre>
-
-<strong>示例</strong>：
-<pre><code># 三件装备分别提供：+10%、+15%、+8%
-<p>skill_atk_bonus = (1 + 0.10) <em> (1 + 0.15) </em> (1 + 0.08)</p>
-<p>               = 1.10 <em> 1.15 </em> 1.08</p>
-<p>               ≈ 1.3662  # 36.62%总加成</p>
-
-<h1>对比加算（如果是所有攻击力）：</h1>
-<h1>1 + 0.10 + 0.15 + 0.08 = 1.33  # 33%总加成</h1>
-<h1>乘算略高</h1>
-</code></pre>
-
-<strong>为什么技能攻击力珍贵？</strong>
-<li>独立乘区，不受其他乘区稀释</li>
-<li>多个来源相乘，收益递增</li>
-<li>85版本荒古武器自带35%技能攻击力，成为毕业武器</li>
-
-<h3>6.3 黄字伤害（取最高）</h3>
+<h3>6.2 黄字伤害（取最高）</h3>
 
 <strong>公式</strong>：
 <pre><code>黄字加成 = max(黄字装备1, 黄字装备2, ...)
-<p>实际伤害 = 基础伤害 × (1 + 黄字加成)</p>
+实际伤害 = 基础伤害 × (1 + 黄字加成)
 </code></pre>
 
 <strong>示例</strong>：
 <pre><code># 两件黄字装备：+20%、+25%
-<h1>只取最高值25%</h1>
-<p>yellow_bonus = max(0.20, 0.25) = 0.25</p>
+# 只取最高值25%
+yellow_bonus = max(0.20, 0.25) = 0.25
 </code></pre>
 
 <strong>设计意图</strong>：
 <li>防止黄字过度叠加导致数值膨胀</li>
 <li>鼓励玩家选择单件高数值黄字装备</li>
-<li>85版本通过"黄字冲突"设计装备搭配难题</li>
+<li>70版本通过"黄字冲突"设计装备搭配难题</li>
 
-<h3>6.4 白字附加（乘算乘区）</h3>
+<h3>6.3 白字附加（乘算乘区）</h3>
 
 <strong>公式</strong>：
 <pre><code>总白字加成 = Π(1 + 白字i)
@@ -335,30 +317,15 @@
 
 <strong>示例</strong>：
 <pre><code># 三件白字装备：+10%、+15%、+20%
-<p>white_bonus = (1 + 0.10) <em> (1 + 0.15) </em> (1 + 0.20)</p>
-<p>           = 1.10 <em> 1.15 </em> 1.20</p>
-<p>           ≈ 1.518  # 51.8%总加成</p>
+white_bonus = (1 + 0.10) * (1 + 0.15) * (1 + 0.20)
+           = 1.10 * 1.15 * 1.20
+           ≈ 1.518  # 51.8%总加成
 </code></pre>
 
 <strong>重要特性</strong>：
 <li>白字是"附加伤害"，显示为黄色数字</li>
-<li>可以暴击（85版本后）</li>
+<li>可以暴击（70版本后）</li>
 <li>属白：属性攻击时，白字也享受属性强化加成</li>
-
-<h3>6.5 最终伤害（最终乘区）</h3>
-
-<strong>公式</strong>：
-<pre><code>最终伤害加成 = 1 + Σ(最终伤害%)
-</code></pre>
-
-<strong>位置</strong>：
-<li>通常应用于伤害计算最后一步</li>
-<li>稀释程度最低，收益最高</li>
-
-<strong>示例来源</strong>：
-<li>部分史诗装备</li>
-<li>少数职业被动</li>
-<li>特定称号/宠物</li>
 
 <h2>七、异常状态伤害计算</h2>
 
@@ -366,21 +333,21 @@
 
 <strong>公式</strong>：
 <pre><code>每秒感电伤害 = 角色物理攻击力 × (1 + 力量/250) × 感电百分比 ÷ 100
-<p>持续伤害 = 每秒伤害 × 持续时间</p>
+持续伤害 = 每秒伤害 × 持续时间
 </code></pre>
 
 <strong>示例</strong>：
-<pre><code># 感电等级10，持续5秒
-<p>char_atk = 5000</p>
-<p>strength = 1500</p>
-<p>shock_pct = 30  # 感电百分比30%</p>
-<p>duration = 5</p>
+<pre><code># 感电等级10，持续5秒（70版本）
+char_atk = 5000
+strength = 1500
+shock_pct = 30  # 感电百分比30%
+duration = 5
 
-<p>per_sec_dmg = 5000 <em> (1 + 1500/250) </em> 30/100</p>
-<p>           = 5000 <em> 7 </em> 0.30</p>
-<p>           = 10,500</p>
+per_sec_dmg = 5000 * (1 + 1500/250) * 30/100
+           = 5000 * 7 * 0.30
+           = 10,500
 
-<p>total_dmg = 10,500 * 5 = 52,500</p>
+total_dmg = 10,500 * 5 = 52,500
 </code></pre>
 
 <h3>7.2 出血伤害</h3>
@@ -392,7 +359,7 @@
 <strong>特点</strong>：
 <li>不受怪物防御影响（穿透防御）</li>
 <li>可受异常状态伤害加成影响</li>
-<li>85版本通过异界套加强</li>
+<li>70版本通过异界套加强</li>
 
 <h3>7.3 中毒与灼伤</h3>
 
@@ -406,12 +373,12 @@
 <pre><code>物理/魔法伤害加成 = 体力/精神 × 技能系数
 </code></pre>
 
-<strong>示例</strong>：
+<strong>示例（70版本）</strong>：
 <pre><code># 奶爸精神3000，荣誉祝福系数0.015
-<p>spirit = 3000</p>
-<p>coefficient = 0.015</p>
+spirit = 3000
+coefficient = 0.015
 
-<p>dmg_buff = 3000 * 0.015 = 45  # 实际为45%物理/魔法伤害加成</p>
+dmg_buff = 3000 * 0.015 = 45  # 实际为45%物理/魔法伤害加成
 </code></pre>
 
 <strong>勇气祝福</strong>：
@@ -420,112 +387,105 @@
 
 <h3>8.2 增益叠加规则</h3>
 
-<table><thead><tr><th>增益类型</th><th>说明</th></tr></thead><tbody><tr><td>所有攻击力%</td><td>多个来源相加</td></tr><tr><td>技能攻击力%</td><td>独立乘区</td></tr><tr><td>黄字伤害%</td><td>不叠加</td></tr><tr><td>暴击伤害%</td><td>可叠加</td></tr><tr><td>属性强化</td><td>完全叠加</td></tr></tbody></table>
-<h2>九、完整伤害计算代码示例</h2>
+<table><thead><tr><th>增益类型</th><th>说明</th></tr></thead><tbody><tr><td>所有攻击力%</td><td>多个来源相加</td></tr><tr><td>黄字伤害%</td><td>不叠加</td></tr><tr><td>暴击伤害%</td><td>可叠加</td></tr><tr><td>属性强化</td><td>完全叠加</td></tr></tbody></table>
 
-<pre><code>def calculate_full_damage(char, skill, monster, is_crit=False, is_backhit=False, is_breakhit=False):
-<p>    """</p>
-<p>    DNF 85版本完整伤害计算</p>
-<p>    """</p>
-    
-<p>    # ========== Step 1: 基础伤害 ==========</p>
-<p>    if skill.is_percentage:</p>
-<p>        # 百分比技能</p>
-<p>        base_atk = char.weapon_atk * (1 + char.main_stat / 250)</p>
-<p>        base_dmg = base_atk * skill.percentage / 100</p>
-<p>    else:</p>
-<p>        # 固伤技能</p>
-<p>        base_atk = char.indep_atk * (1 + char.main_stat / 250)</p>
-<p>        base_dmg = skill.fixed_dmg * (base_atk / 1000)</p>
-    
-<p>    # ========== Step 2: 主属性乘区 ==========</p>
-<p>    dmg = base_dmg  # 已在上面计算中包含</p>
-    
-<p>    # ========== Step 3: 所有攻击力乘区（加算） ==========</p>
-<p>    all_atk_bonus = 1 + sum(char.all_atk_buffs)</p>
-<p>    dmg *= all_atk_bonus</p>
-    
-<p>    # ========== Step 4: 技能攻击力乘区（乘算） ==========</p>
-<p>    for skill_atk in char.skill_atk_buffs:</p>
-<p>        dmg *= (1 + skill_atk)</p>
-    
-<p>    # ========== Step 5: 防御减伤 ==========</p>
-<p>    def_reduction = monster.defense / (monster.defense + char.level * 200)</p>
-    
-<p>    # 防御穿透</p>
-<p>    if char.def_penetration > 0:</p>
-<p>        adjusted_def = monster.defense * (1 - char.def_penetration)</p>
-<p>        def_reduction = adjusted_def / (adjusted_def + char.level * 200)</p>
-    
-<p>    dmg *= (1 - def_reduction)</p>
-    
-<p>    # ========== Step 6: 属性强化乘区 ==========</p>
-<p>    effective_attr = char.attr_strength - monster.attr_resistance</p>
-<p>    if effective_attr >= 0:</p>
-<p>        attr_bonus = effective_attr / 220</p>
-<p>    else:</p>
-<p>        attr_bonus = effective_attr / 440</p>
-<p>    dmg *= (1 + attr_bonus)</p>
-    
-<p>    # ========== Step 7: 黄字乘区（取最高） ==========</p>
-<p>    yellow_bonus = max(char.yellow_dmg_buffs) if char.yellow_dmg_buffs else 0</p>
-<p>    dmg *= (1 + yellow_bonus)</p>
-    
-<p>    # ========== Step 8: 白字乘区（乘算） ==========</p>
-<p>    for white in char.white_dmg_buffs:</p>
-<p>        dmg *= (1 + white)</p>
-    
-<p>    # ========== Step 9: 暴击判定 ==========</p>
-<p>    if is_crit:</p>
-<p>        crit_multiplier = 1.5 * (1 + char.crit_dmg_bonus)</p>
-<p>        dmg *= crit_multiplier</p>
-    
-<p>    # ========== Step 10: 背击/破招 ==========</p>
-<p>    if is_backhit:</p>
-<p>        dmg *= 1.3</p>
-<p>    if is_breakhit:</p>
-<p>        dmg *= 1.25</p>
-    
-<p>    # ========== Step 11: 最终伤害乘区 ==========</p>
-<p>    final_bonus = 1 + sum(char.final_dmg_buffs)</p>
-<p>    dmg *= final_bonus</p>
-    
-<p>    return dmg</p>
+<h2>九、完整伤害计算代码示例（70版本）</h2>
 
-<h1>========== 示例使用 ==========</h1>
-<p>class Character:</p>
-<p>    def __init__(self):</p>
-<p>        self.level = 85</p>
-<p>        self.weapon_atk = 1200</p>
-<p>        self.indep_atk = 1800</p>
-<p>        self.main_stat = 1500  # 力量或智力</p>
-<p>        self.all_atk_buffs = [0.10, 0.15]  # 25%所有攻击力</p>
-<p>        self.skill_atk_buffs = [0.35, 0.10]  # 荒古35% + 其他10%</p>
-<p>        self.yellow_dmg_buffs = [0.20]  # 20%黄字</p>
-<p>        self.white_dmg_buffs = [0.10, 0.15]  # 10% + 15%白字</p>
-<p>        self.crit_dmg_bonus = 0.50  # 50%暴伤加成</p>
-<p>        self.attr_strength = 220  # 属性强化</p>
-<p>        self.def_penetration = 0.10  # 10%防御穿透</p>
-<p>        self.final_dmg_buffs = [0.05]  # 5%最终伤害</p>
+<pre><code>def calculate_damage_70(char, skill, monster, is_crit=False, is_backhit=False, is_breakhit=False):
+    """
+    DNF 70版本完整伤害计算
+    """
+    
+    # ========== Step 1: 基础伤害 ==========
+    if skill.is_percentage:
+        # 百分比技能
+        base_atk = char.weapon_atk * (1 + char.main_stat / 250)
+        base_dmg = base_atk * skill.percentage / 100
+    else:
+        # 固伤技能
+        base_atk = char.indep_atk * (1 + char.main_stat / 250)
+        base_dmg = skill.fixed_dmg * (base_atk / 1000)
+    
+    # ========== Step 2: 主属性乘区 ==========
+    dmg = base_dmg  # 已在上面计算中包含
+    
+    # ========== Step 3: 所有攻击力乘区（加算） ==========
+    all_atk_bonus = 1 + sum(char.all_atk_buffs)
+    dmg *= all_atk_bonus
+    
+    # ========== Step 4: 防御减伤 ==========
+    def_reduction = monster.defense / (monster.defense + char.level * 200)
+    
+    # 防御穿透
+    if char.def_penetration > 0:
+        adjusted_def = monster.defense * (1 - char.def_penetration)
+        def_reduction = adjusted_def / (adjusted_def + char.level * 200)
+    
+    dmg *= (1 - def_reduction)
+    
+    # ========== Step 5: 属性强化乘区 ==========
+    effective_attr = char.attr_strength - monster.attr_resistance
+    if effective_attr >= 0:
+        attr_bonus = effective_attr / 220
+    else:
+        attr_bonus = effective_attr / 440
+    dmg *= (1 + attr_bonus)
+    
+    # ========== Step 6: 黄字乘区（取最高） ==========
+    yellow_bonus = max(char.yellow_dmg_buffs) if char.yellow_dmg_buffs else 0
+    dmg *= (1 + yellow_bonus)
+    
+    # ========== Step 7: 白字乘区（乘算） ==========
+    for white in char.white_dmg_buffs:
+        dmg *= (1 + white)
+    
+    # ========== Step 8: 暴击判定 ==========
+    if is_crit:
+        crit_multiplier = 1.5 * (1 + char.crit_dmg_bonus)
+        dmg *= crit_multiplier
+    
+    # ========== Step 9: 背击/破招 ==========
+    if is_backhit:
+        dmg *= 1.3
+    if is_breakhit:
+        dmg *= 1.25
+    
+    return dmg
 
-<p>class Skill:</p>
-<p>    def __init__(self, is_percentage, value):</p>
-<p>        self.is_percentage = is_percentage</p>
-<p>        self.percentage = value if is_percentage else None</p>
-<p>        self.fixed_dmg = value if not is_percentage else None</p>
 
-<p>class Monster:</p>
-<p>    def __init__(self, defense, attr_resistance=0):</p>
-<p>        self.defense = defense</p>
-<p>        self.attr_resistance = attr_resistance</p>
+# ========== 示例使用（70版本） ==========
+class Character:
+    def __init__(self):
+        self.level = 70
+        self.weapon_atk = 1800
+        self.indep_atk = 2000
+        self.main_stat = 1500  # 力量或智力
+        self.all_atk_buffs = [0.10, 0.15]  # 25%所有攻击力
+        self.yellow_dmg_buffs = [0.20]  # 20%黄字
+        self.white_dmg_buffs = [0.10, 0.15]  # 10% + 15%白字
+        self.crit_dmg_bonus = 0.30  # 30%暴伤加成
+        self.attr_strength = 88  # 属性强化（70版本常见值）
+        self.def_penetration = 0.05  # 5%防御穿透
 
-<h1>计算示例</h1>
-<p>char = Character()</p>
-<p>skill = Skill(is_percentage=True, value=8500)  # 8500%百分比技能</p>
-<p>monster = Monster(defense=15000, attr_resistance=50)</p>
+class Skill:
+    def __init__(self, is_percentage, value):
+        self.is_percentage = is_percentage
+        self.percentage = value if is_percentage else None
+        self.fixed_dmg = value if not is_percentage else None
 
-<p>dmg = calculate_full_damage(char, skill, monster, is_crit=True)</p>
-<p>print(f"最终伤害: {dmg:,.0f}")</p>
+class Monster:
+    def __init__(self, defense, attr_resistance=0):
+        self.defense = defense
+        self.attr_resistance = attr_resistance
+
+
+# 计算示例
+char = Character()
+skill = Skill(is_percentage=True, value=7500)  # 7500%百分比技能
+monster = Monster(defense=8000, attr_resistance=20)
+
+dmg = calculate_damage_70(char, skill, monster, is_crit=True)
+print(f"最终伤害: {dmg:,.0f}")
 </code></pre>
 
 <h2>十、设计意图深度分析</h2>
@@ -537,28 +497,26 @@
 <p>3. <strong>职业平衡</strong>：不同职业在不同乘区有优势</p>
 <p>4. <strong>经济系统</strong>：多乘区延长装备追求周期</p>
 
-<h3>10.2 60版本 vs 85版本设计哲学</h3>
+<h3>10.2 60版本 vs 70版本设计哲学</h3>
 
-<table><thead><tr><th>维度</th><th>85版本</th></tr></thead><tbody><tr><td>乘区数量</td><td>8-10个</td></tr><tr><td>装备选择</td><td>复杂多乘区平衡</td></tr><tr><td>团队增益</td><td>复杂增益链</td></tr><tr><td>数值膨胀</td><td>可控但持续</td></tr></tbody></table>
+<table><thead><tr><th>维度</th><th>60版本</th><th>70版本</th></tr></thead><tbody><tr><td>乘区数量</td><td>3-4个</td><td>5-6个</td></tr><tr><td>装备选择</td><td>简单直观</td><td>多乘区平衡</td></tr><tr><td>团队增益</td><td>简单BUFF</td><td>复杂增益链</td></tr><tr><td>数值膨胀</td><td>较慢</td><td>可控持续</td></tr></tbody></table>
+
 <h3>10.3 乘区稀释效应</h3>
 
 <strong>稀释原理</strong>：
 <pre><code>总伤害 = (1 + a) × (1 + b) × (1 + c)
-<p>当a、b、c都增加时，每个乘区的边际收益递减</p>
+当a、b、c都增加时，每个乘区的边际收益递减
 </code></pre>
 
 <strong>示例</strong>：
 <pre><code># 初始状态
-<p>dmg1 = (1 + 0.5) <em> (1 + 0.5)  # 1.5 </em> 1.5 = 2.25</p>
+dmg1 = (1 + 0.5) * (1 + 0.5)  # 1.5 * 1.5 = 2.25
 
-<h1>增加第一个乘区</h1>
-<p>dmg2 = (1 + 1.0) <em> (1 + 0.5)  # 2.0 </em> 1.5 = 3.0 (增加33%)</p>
+# 增加第一个乘区
+dmg2 = (1 + 1.0) * (1 + 0.5)  # 2.0 * 1.5 = 3.0 (增加33%)
 
-<h1>增加第二个乘区</h1>
-<p>dmg3 = (1 + 1.0) <em> (1 + 1.0)  # 2.0 </em> 2.0 = 4.0 (增加33%)</p>
-
-<h1>但继续增加同一乘区：</h1>
-<p>dmg4 = (1 + 2.0) <em> (1 + 1.0)  # 3.0 </em> 2.0 = 6.0 (增加50%，但相对于dmg1只是从2.25→6.0)</p>
+# 增加第二个乘区
+dmg3 = (1 + 1.0) * (1 + 1.0)  # 2.0 * 2.0 = 4.0 (增加33%)
 </code></pre>
 
 <h2>十一、数据验证方法</h2>
@@ -572,223 +530,28 @@
 
 <h3>11.2 关键验证点</h3>
 
+<ul>
 <li>[ ] 主属性250倍率验证</li>
 <li>[ ] 属性强化220倍率验证</li>
 <li>[ ] 防御公式验证</li>
 <li>[ ] 黄字取最高规则验证</li>
 <li>[ ] 白字乘算验证</li>
-<li>[ ] 技能攻击力乘算验证</li></ul>
+</ul>
 
 <h2>十二、参考资料</h2>
 
 <p>1. <strong>NGA论坛</strong> - DNF版块技术贴合集</p>
 <p>2. <strong>17173</strong> - DNF伤害计算器原理</p>
 <p>3. <strong>多玩DNF盒子</strong> - 伤害计算公式解析</p>
-<p>4. <strong>GitHub</strong> - DNF_calculator开源项目</p>
-<p>5. <strong>贴吧</strong> - 玩家实测数据汇总</p>
-<p>6. <strong>游戏内实测</strong> - 本人及玩家群体长期测试</p>
+<p>4. <strong>贴吧</strong> - 玩家实测数据汇总</p>
+<p>5. <strong>游戏内实测</strong> - 本人及玩家群体长期测试</p>
 
 <p>---</p>
 
-<strong>文档版本</strong>：v1.0  
+<strong>文档版本</strong>：v2.0（70版本锁定版，已清理80+版本内容）  
 <strong>最后更新</strong>：2026-05-25  
-<strong>关联文档</strong>：01-dnf-damage-overview.md  
-<strong>下一步</strong>：拳皇伤害系统分析（见 03-kof-damage-system.md）
-
-</div>
-
-<!-- 新增：职业实例深化部分 -->
-<div class="class-card">
-<h2>十三、职业伤害计算实例深化（新增3职业）</h2>
-<blockquote>本章新增元素师、漫游枪手、柔道三个职业的具体伤害计算实例，验证核心公式的实际应用。</blockquote>
-
-<h3>13.1 元素师（魔法百分比职业）伤害实例</h3>
-<p><span class="tag">魔法百分比</span><span class="tag">属性强化</span><span class="tag">蓄力机制</span></p>
-
-<pre><code># 场景：85版本元素师，使用「杰克爆弹」+「湮灭黑洞」连招
-# 角色面板：
-magic_atk = 9800          # 魔法攻击力（含武器+附魔+BUFF）
-intelligence = 2200        # 智力
-elemental_strength = 168   # 火属性强化（杰克爆弹为火属性）
-skill_pct = 12500          # 杰克爆弹百分比（蓄力满：12500%）
-indep_atk = 2100           # 独立攻击力（影响固伤部分）
-enemy_fire_res = 12        # 怪物火抗
-enemy_def = 55000          # 怪物物理/魔法防御力
-player_level = 85
-
-# 步骤1：主属性乘区
-main_stat_multi = 1 + intelligence / 250
-                = 1 + 2200/250 = 9.8
-
-# 步骤2：技能基础伤害
-base_dmg = magic_atk * main_stat_multi * skill_pct / 100
-         = 9800 * 9.8 * 125
-         = 12,005,000
-
-# 步骤3：属性强化乘区（需减去怪物抗性）
-net_elemental = elemental_strength - enemy_fire_res
-effective_elemental = max(0, net_elemental)  # 最低为0
-elemental_multi = 1 + effective_elemental / 220
-                = 1 + (168-12)/220 = 1.709
-
-# 步骤4：防御减伤（85版本公式）
-def_reduction = enemy_def / (enemy_def + 200 * player_level - 20)
-              = 55000 / (55000 + 200*85 - 20)
-              = 55000 / 71980 ≈ 0.764
-# 实际受到伤害 = 1 - def_reduction = 0.236（即怪物减免76.4%，玩家只造成23.6%伤害）
-
-# 步骤5：假设有黄字+28%、白字+15%、暴击伤害+46%
-yellow_multi = 1.28    # 黄字取最高
-white_multi = 1.15      # 白字乘算
-crit_dmg_multi = 1.46   # 暴击时
-
-# 最终暴击伤害：
-final_dmg = base_dmg * elemental_multi * (1 - def_reduction) * yellow_multi * white_multi * crit_dmg_multi
-          = 12,005,000 * 1.709 * 0.236 * 1.28 * 1.15 * 1.46
-          ≈ 4,370,000
-
-# 对比：无暴击伤害
-final_dmg_no_crit = 12,005,000 * 1.709 * 0.236 * 1.28 * 1.15
-                  ≈ 2,990,000
-</code></pre>
-
-<div class="example-box">
-<strong>💡 元素师设计要点：</strong>
-<ul>
-  <li>属性强化收益极高，168点属强带来70.9%增伤</li>
-  <li>防御减伤是最大伤害衰减源（85版本高防怪物减免超75%）</li>
-  <li>蓄力机制让杰克爆弹百分比从6500%→12500%，接近翻倍</li>
-  <li>魔法攻击力是基础，高强武器对元素师提升巨大</li>
-</ul>
-</div>
-
-<h3>13.2 漫游枪手（物理百分比职业）伤害实例</h3>
-<p><span class="tag">物理百分比</span><span class="tag">暴击流</span><span class="tag">移动射击</span></p>
-
-<pre><code># 场景：85版本漫游枪手，使用「移动射击」+「多重爆头」连招
-# 角色面板：
-physical_atk = 11200         # 物理攻击力（左轮枪+13）
-strength = 1850              # 力量
-skill_pct = 32000            # 移动射击总百分比（多段伤害合计）
-crit_rate = 88               # 暴击率（含死左BUFF）
-crit_dmg_bonus = 52          # 暴击伤害加成（含装备）
-enemy_def = 48000            # 怪物防御
-player_level = 85
-
-# 步骤1：主属性乘区
-main_stat_multi = 1 + strength / 250
-                = 1 + 1850/250 = 8.4
-
-# 步骤2：技能基础伤害
-base_dmg = physical_atk * main_stat_multi * skill_pct / 100
-         = 11200 * 8.4 * 320
-         = 30,105,600
-
-# 步骤3：防御减伤
-def_reduction = 48000 / (48000 + 200*85 - 20)
-              = 48000 / 64980 ≈ 0.739
-# 实际受到伤害比例 = 1 - 0.739 = 0.261
-
-# 步骤4：暴击计算（漫游核心）
-# 假设开启「死亡左轮」BUFF，暴击伤害额外+40%
-effective_crit_dmg = (1 + crit_dmg_bonus/100) * 1.4  # 死左BUFF
-                   = 1.52 * 1.4 = 2.128
-# 期望伤害（考虑暴击率88%）：
-expected_dmg = base_dmg * (1 - def_reduction) * ((1-0.88)*1.0 + 0.88*effective_crit_dmg)
-             = 30,105,600 * 0.261 * ((0.12*1) + (0.88*2.128))
-             = 30,105,600 * 0.261 * 1.995
-             ≈ 15,670,000
-
-# 对比：无死左BUFF时
-expected_dmg_no_buff = 30,105,600 * 0.261 * ((0.12*1) + (0.88*1.52))
-                    ≈ 12,540,000
-# 死左BUFF提升约25%
-</code></pre>
-
-<div class="example-box">
-<strong>💡 漫游枪手设计要点：</strong>
-<ul>
-  <li>暴击率是核心属性，88%暴击率接近实战全覆盖</li>
-  <li>死亡左轮BUFF提供40%暴击伤害加成，是爆发核心</li>
-  <li>移动射击多段伤害合计32000%，持续输出能力强</li>
-  <li>物理攻击力依赖高强左轮，+13武器是基础门槛</li>
-</ul>
-</div>
-
-<h3>13.3 柔道（物理固伤职业）伤害实例</h3>
-<p><span class="tag">物理固伤</span><span class="tag">独立攻击</span><span class="tag">摔技强化</span></p>
-
-<pre><code># 场景：85版本柔道，使用「裂石破天」+「末日摇篮」连招
-# 角色面板：
-skill_fixed_dmg = 85000      # 裂石破天固伤值（技能面板显示）
-indep_atk = 2400             # 独立攻击力（固伤职业核心属性）
-strength = 2100              # 力量
-enemy_def = 52000            # 怪物防御
-player_level = 85
-grab_bonus = 1.35            # 摔技强化BUFF（柔道专属）
-
-# 步骤1：固伤基础伤害公式
-base_dmg = skill_fixed_dmg * (1 + indep_atk / 1000) * (1 + strength / 250)
-         = 85000 * (1 + 2400/1000) * (1 + 2100/250)
-         = 85000 * 3.4 * 9.4
-         = 2,716,600
-
-# 步骤2：摔技强化BUFF（柔道专属乘区）
-base_dmg_with_grab = base_dmg * grab_bonus
-                   = 2,716,600 * 1.35 = 3,667,410
-
-# 步骤3：防御减伤
-def_reduction = 52000 / (52000 + 200*85 - 20)
-              = 52000 / 68980 ≈ 0.754
-# 实际受到伤害比例 = 1 - 0.754 = 0.246
-
-# 步骤4：假设有黄字+35%、白字+20%
-final_dmg = base_dmg_with_grab * (1 - def_reduction) * 1.35 * 1.20
-          = 3,667,410 * 0.246 * 1.35 * 1.20
-          ≈ 1,465,000
-
-# 对比：独立攻击力从2400→1800时
-base_dmg_lower = 85000 * (1 + 1800/1000) * 9.4
-               = 85000 * 2.8 * 9.4 = 2,237,200
-final_dmg_lower = 2,237,200 * 1.35 * 0.246 * 1.35 * 1.20
-                ≈ 1,206,000
-# 独立攻击力600点差距导致伤害降低约17.7%
-</code></pre>
-
-<div class="example-box">
-<strong>💡 柔道设计要点：</strong>
-<ul>
-  <li>独立攻击力是固伤职业第一优先级，每1000点独立提升100%基础伤害</li>
-  <li>摔技强化BUFF提供35%专属增伤，是柔道核心机制</li>
-  <li>力量收益与独立攻击力叠加，形成双重乘区</li>
-  <li>固伤职业不依赖武器强化，但武器锻造（提升独立）至关重要</li>
-</ul>
-</div>
-
-<h3>13.4 六职业伤害公式横向对比</h3>
-<table>
-<thead>
-  <tr><th>职业</th><th>伤害类型</th><th>核心属性</th><th>关键BUFF</th><th>防御减伤影响</th><th>典型爆发伤害</th></tr>
-</thead>
-<tbody>
-  <tr><td>狂战士</td><td>物理固伤+百分比混合</td><td>独立攻击+力量</td><td>暴走（+75%攻速/释放/移速）</td><td>高（约75%）</td><td>400-600万</td></tr>
-  <tr><td>剑魂</td><td>物理百分比</td><td>武器物攻+力量</td><td>破极兵刃（+85%物理攻击力）</td><td>高（约76%）</td><td>350-550万</td></tr>
-  <tr><td>阿修罗</td><td>魔法固伤+百分比混合</td><td>独立攻击+智力</td><td>杀意波动（+45%暴击率）</td><td>高（约77%）</td><td>380-580万</td></tr>
-  <tr><td>元素师</td><td>魔法百分比</td><td>武器魔攻+智力</td><td>元素点燃（+60%属强）</td><td>高（约76%）</td><td>300-500万</td></tr>
-  <tr><td>漫游枪手</td><td>物理百分比</td><td>武器物攻+力量</td><td>死亡左轮（+40%暴击伤害）</td><td>高（约74%）</td><td>450-700万</td></tr>
-  <tr><td>柔道</td><td>物理固伤</td><td>独立攻击+力量</td><td>摔技强化（+35%摔技伤害）</td><td>高（约75%）</td><td>280-450万</td></tr>
-</tbody>
-</table>
-
-<div class="example-box">
-<strong>📊 核心发现：</strong>
-<ul>
-  <li>85版本所有职业防御减伤均在74-77%区间，高防怪物是伤害天花板</li>
-  <li>固伤职业（狂战/阿修罗/柔道）依赖独立攻击力，百分比职业（剑魂/元素/漫游）依赖武器强化</li>
-  <li>漫游枪手因暴击流+死左BUFF，爆发伤害最高（450-700万）</li>
-  <li>柔道作为纯固伤职业，伤害上限最低但稳定性最高（无武器强化波动）</li>
-</ul>
-</div>
+<strong>关联文档</strong>：01-dnf-damage-overview.html  
+<strong>下一步</strong>：拳皇伤害系统分析（见 03-kof-damage-system.html）
 
 </div>
 </body>
