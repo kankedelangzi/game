@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>番外篇：开源游戏核心机制研究索引</title>
+  <style>
+    body { background: #1a1a2e; color: #e0e0e0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; padding: 20px; line-height: 1.8; }
+    .container { max-width: 800px; margin: 0 auto; }
+    h1 { color: #e94560; border-bottom: 2px solid #2a2a4a; padding-bottom: 10px; }
+    h2 { color: #f5a623; border-bottom: 1px solid #2a2a4a; padding-bottom: 8px; margin-top: 30px; }
+    h3 { color: #7fdbca; margin-top: 20px; }
+    .nav { margin-bottom: 20px; }
+    .nav a { margin-right: 10px; font-size: 13px; color: #e94560; text-decoration: none; }
+    .nav a:hover { text-decoration: underline; }
+    .card { background: #16213e; padding: 20px; border-radius: 10px; margin: 15px 0; border-left: 4px solid #e94560; }
+    .card h3 { margin-top: 0; }
+    .tag { display: inline-block; background: #2a2a4a; color: #a0a0c0; padding: 3px 8px; border-radius: 6px; font-size: 12px; margin: 2px; }
+    .star { color: #f5a623; }
+    table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+    th, td { padding: 10px; border: 1px solid #2a2a4a; text-align: left; }
+    th { background: #0f3460; color: #fff; }
+    tr:nth-child(even) { background: #1a1a2e; }
+    a { color: #e94560; }
+    .status-todo { color: #e94560; font-weight: bold; }
+    .status-later { color: #f5a623; }
+    .note { background: #0f3460; padding: 12px 16px; border-radius: 8px; margin: 10px 0; font-size: 13px; color: #a0a0c0; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="nav">
+    <a href="00-index.html">📋 主索引</a>
+    <a href="01-dnf-damage-overview.html">🎯 DNF总览</a>
+    <a href="02-dnf-formula-analysis.html">📐 DNF公式</a>
+    <a href="03-kof-damage-system.html">👊 拳皇</a>
+    <a href="04-zombie-shooter-damage.html">🧟 僵尸开炮</a>
+    <a href="05-comparative-analysis.html">📊 对比</a>
+  </div>
+
+  <h1>🎮 番外篇：开源游戏核心机制研究索引</h1>
+
+  <div class="note">
+    📌 <strong>说明：</strong>本章收录值得研究的开源/逆向工程项目，用于扩展伤害机制的研究视野。<br>
+    当前优先级：<strong>先完成 DNF / 拳皇 / 向僵尸开炮</strong> 三大主线，再逐一对番外篇进行深入研究。<br>
+    你尚未玩过这些游戏，建议先通过主线建立伤害研究的方法论，再以此为基础分析这些项目。
+  </div>
+
+  <h2>🗡️ RPG / 战斗类（最接近 DNF 研究）</h2>
+
+  <div class="card">
+    <h3>⭐ DevilutionX <span class="star">★★★★★</span> 推荐指数</h3>
+    <p><strong>项目：</strong><a href="https://github.com/diasurgical/DevilutionX" target="_blank">github.com/diasurgical/DevilutionX</a></p>
+    <p><strong>语言：</strong> C++ ｜ <strong>★ Stars：</strong> 9.5k</p>
+    <p><strong>原作：</strong>暗黑破坏神1 开源重制版</p>
+    <p><strong>可研究机制：</strong></p>
+    <span class="tag">武器伤害公式</span><span class="tag">护甲减伤</span><span class="tag">魔法伤害</span>
+    <span class="tag">抗性系统</span><span class="tag">掉落系统</span><span class="tag">属性加成</span>
+    <p style="margin-top:10px;"><strong>伤害公式（已知）：</strong></p>
+    <pre style="background:#0f0f1a;padding:15px;border-radius:8px;color:#7fdbca;overflow-x:auto;">
+// 暗黑1 武器伤害计算（简化）
+finalDamage = baseMin + random(baseMax - baseMin) - armor;
+if (finalDamage < 1) finalDamage = 1;
+
+// 魔法伤害
+magicDamage = spellBase + (spellLevel * spellPerLevel) - magicResist;
+
+// 抗性减免
+resistReduction = damage * (resistPercent / 100);</pre>
+    <p><strong>研究价值：</strong>装备系统/技能伤害/属性加成的教科书级实现，最接近 DNF 的参考对象。</p>
+    <p class="status-todo">状态：⏳ 待研究（主线完成后启动）</p>
+  </div>
+
+  <div class="card">
+    <h3>⭐ OpenMW <span class="star">★★★★☆</span></h3>
+    <p><strong>项目：</strong><a href="https://github.com/OpenMW/openmw" target="_blank">github.com/OpenMW/openmw</a></p>
+    <p><strong>语言：</strong> C++ ｜ <strong>★ Stars：</strong> 6.2k</p>
+    <p><strong>原作：</strong>上古卷轴3：晨风 开源重制</p>
+    <p><strong>可研究机制：</strong></p>
+    <span class="tag">疲劳度影响</span><span class="tag">运气值命中</span><span class="tag">魔法抗性</span>
+    <span class="tag">武器技能加成</span><span class="tag">护甲类型</span><span class="tag">生命值/耐力</span>
+    <p style="margin-top:10px;"><strong>特色：</strong>含疲劳度、运气值对命中和伤害的影响，是 DNF 没有的维度。</p>
+    <p class="status-todo">状态：⏳ 待研究</p>
+  </div>
+
+  <div class="card">
+    <h3>⭐ Freeablo <span class="star">★★★☆☆</span></h3>
+    <p><strong>项目：</strong><a href="https://github.com/wheybags/freeablo" target="_blank">github.com/wheybags/freeablo</a></p>
+    <p><strong>语言：</strong> C++ ｜ <strong>★ Stars：</strong> 1.8k</p>
+    <p><strong>原作：</strong>暗黑破坏神1 轻量重制版</p>
+    <p><strong>可研究机制：</strong>暗黑1 伤害系统简化版，适合入门阅读源码。</p>
+    <p class="status-todo">状态：⏳ 待研究</p>
+  </div>
+
+  <div class="card">
+    <h3>⭐ RPG Paper Maker <span class="star">★★★☆☆</span></h3>
+    <p><strong>项目：</strong><a href="https://github.com/RPG-Paper-Maker/RPG-Paper-Maker" target="_blank">github.com/RPG-Paper-Maker/RPG-Paper-Maker</a></p>
+    <p><strong>语言：</strong> JavaScript ｜ <strong>★ Stars：</strong> 1.2k</p>
+    <p><strong>可研究机制：</strong>完整 RPG 战斗公式系统，JS 实现，阅读门槛低。</p>
+    <p class="status-todo">状态：⏳ 待研究</p>
+  </div>
+
+  <h2>👊 格斗 / 动作类（继承拳皇研究）</h2>
+
+  <div class="card">
+    <h3>⭐ Mugen <span class="star">★★★☆☆</span></h3>
+    <p><strong>项目：</strong><a href="https://github.com/mugenauthors/mugen" target="_blank">github.com/mugenauthors/mugen</a></p>
+    <p><strong>语言：</strong> C ｜ <strong>★ Stars：</strong> 800+</p>
+    <p><strong>说明：</strong>经典 2D 格斗引擎，帧数/连招/伤害衰减的权威参考实现。</p>
+    <p><strong>可研究机制：</strong></p>
+    <span class="tag">帧数数据</span><span class="tag">连招衰减</span><span class="tag">能量槽</span>
+    <span class="tag">破防值</span><span class="tag">Hitstun</span><span class="tag">碰撞框</span>
+    <p class="status-todo">状态：⏳ 待研究</p>
+  </div>
+
+  <div class="card">
+    <h3>⭐ PixelFighter <span class="star">★★☆☆☆</span></h3>
+    <p><strong>项目：</strong><a href="https://github.com/HenrySmith/PixelFighter" target="_blank">github.com/HenrySmith/PixelFighter</a></p>
+    <p><strong>语言：</strong> GDScript (Godot) ｜ <strong>★ Stars：</strong> 300+</p>
+    <p><strong>说明：</strong>Godot 格斗游戏模板，含帧数/连招/能量槽系统，代码清晰易读。</p>
+    <p class="status-todo">状态：⏳ 待研究</p>
+  </div>
+
+  <h2>🏰 塔防 / RTS 类（继承僵尸开炮研究）</h2>
+
+  <div class="card">
+    <h3>⭐ OpenRA <span class="star">★★★★★</span> 推荐指数</h3>
+    <p><strong>项目：</strong><a href="https://github.com/OpenRA/OpenRA" target="_blank">github.com/OpenRA/OpenRA</a></p>
+    <p><strong>语言：</strong> C# ｜ <strong>★ Stars：</strong> 15.3k</p>
+    <p><strong>原作：</strong>红色警戒/泰伯利亚黎明 开源重制</p>
+    <p><strong>可研究机制：</strong></p>
+    <span class="tag">伤害类型（Pierce/Normal/Siege/Magic）</span>
+    <span class="tag">护甲克制表</span><span class="tag">武器射程</span>
+    <span class="tag">建筑护甲</span><span class="tag">单位碰撞</span>
+    <pre style="background:#0f0f1a;padding:15px;border-radius:8px;color:#7fdbca;overflow-x:auto;">
+// OpenRA 伤害计算（简化）
+damage = weapon.Damage;
+damage * = 1.0 + attacker.Modifiers.Damage;
+// 护甲克制
+vsArmor = weapon.Warheads[0].VersusArmor[target.ArmorType];
+damage * = vsArmor;
+// 最小伤害保护
+if (damage < weapon.MinDamage) damage = weapon.MinDamage;</pre>
+    <p><strong>研究价值：</strong>塔防/RTS 伤害类型克制系统最完善的参考，向僵尸开炮可借鉴。</p>
+    <p class="status-todo">状态：⏳ 待研究（主线完成后启动）</p>
+  </div>
+
+  <h2>🔫 射击 / 坦克类（90坦克原型参考）</h2>
+
+  <div class="card">
+    <h3>⭐ Unvanquished <span class="star">★★★☆☆</span></h3>
+    <p><strong>项目：</strong><a href="https://github.com/Unvanquished/Unvanquished" target="_blank">github.com/Unvanquished/Unvanquished</a></p>
+    <p><strong>语言：</strong> C++ ｜ <strong>★ Stars：</strong> 1.8k</p>
+    <p><strong>说明：</strong>科幻FPS，护甲类型/武器伤害衰减/移动速度影响。</p>
+    <p class="status-todo">状态：⏳ 待研究</p>
+  </div>
+
+  <div class="card">
+    <h3>⭐ Warsow <span class="star">★★☆☆☆</span></h3>
+    <p><strong>项目：</strong><a href="https://github.com/Warsow/warsow" target="_blank">github.com/Warsow/warsow</a></p>
+    <p><strong>语言：</strong> C++ ｜ <strong>★ Stars：</strong> 700+</p>
+    <p><strong>说明：</strong>快节奏FPS，武器伤害/连击机制，适合研究射击手感。</p>
+    <p class="status-todo">状态：⏳ 待研究</p>
+  </div>
+
+  <h2>📊 番外篇研究优先级总表</h2>
+  <table>
+    <thead>
+      <tr><th>优先级</th><th>项目</th><th>关联主线</th><th>研究难度</th><th>状态</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>🔥 P0</td><td>DevilutionX（暗黑1）</td><td>DNF 装备/伤害系统</td><td>⭐⭐⭐</td><td class="status-todo">待研究</td></tr>
+      <tr><td>🔥 P0</td><td>OpenRA（红警）</td><td>僵尸开炮 克制系统</td><td>⭐⭐⭐</td><td class="status-todo">待研究</td></tr>
+      <tr><td>⚡ P1</td><td>OpenMW（上古卷轴）</td><td>DNF 属性/抗性</td><td>⭐⭐⭐⭐</td><td class="status-todo">待研究</td></tr>
+      <tr><td>⚡ P1</td><td>Mugen（格斗引擎）</td><td>拳皇 帧数/连招</td><td>⭐⭐</td><td class="status-todo">待研究</td></tr>
+      <tr><td>📖 P2</td><td>Freeablo</td><td>DNF 装备系统</td><td>⭐⭐</td><td class="status-todo">待研究</td></tr>
+      <tr><td>📖 P2</td><td>RPG Paper Maker</td><td>通用RPG公式</td><td>⭐</td><td class="status-todo">待研究</td></tr>
+      <tr><td>📖 P2</td><td>PixelFighter</td><td>拳皇 格斗机制</td><td>⭐</td><td class="status-todo">待研究</td></tr>
+      <tr><td>📖 P3</td><td>Unvanquished</td><td>90坦克 射击机制</td><td>⭐⭐⭐</td><td class="status-todo">待研究</td></tr>
+      <tr><td>📖 P3</td><td>Warsow</td><td>90坦克 射击手感</td><td>⭐⭐</td><td class="status-todo">待研究</td></tr>
+    </tbody>
+  </table>
+
+  <div class="note" style="margin-top:20px;">
+    📅 <strong>研究路线图：</strong><br>
+    阶段一（当前）：DNF 60-85 → 拳皇 → 向僵尸开炮（主线完成）<br>
+    阶段二：DevilutionX + OpenRA（P0番外，建立装备/克制系统认知）<br>
+    阶段三：OpenMW + Mugen（P1番外，扩展属性/格斗维度）<br>
+    阶段四：其余项目（P2/P3，查漏补缺）
+  </div>
+
+</div>
+</body>
+</html>
