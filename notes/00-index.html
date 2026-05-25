@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>00 Index</title>
+  <style>
+    body { background: #1a1a2e; color: #e0e0e0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; padding: 20px; line-height: 1.8; }
+    .container { max-width: 800px; margin: 0 auto; }
+    h1 { color: #e94560; border-bottom: 2px solid #2a2a4a; padding-bottom: 10px; }
+    h2 { color: #f5a623; border-bottom: 1px solid #2a2a4a; padding-bottom: 8px; margin-top: 30px; }
+    h3 { color: #7fdbca; margin-top: 20px; }
+    .card { background: #16213e; padding: 20px; border-radius: 10px; margin: 15px 0; }
+    pre { background: #0f0f1a; padding: 15px; border-radius: 8px; overflow-x: auto; color: #7fdbca; font-family: "Courier New", monospace; }
+    code { background: #0f0f1a; padding: 2px 6px; border-radius: 4px; color: #7fdbca; font-size: 13px; }
+    table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+    th, td { padding: 10px; border: 1px solid #2a2a4a; text-align: left; }
+    th { background: #0f3460; color: #fff; }
+    tr:nth-child(even) { background: #1a1a2e; }
+    a { color: #e94560; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul, ol { padding-left: 20px; }
+    li { margin: 6px 0; }
+    blockquote { border-left: 3px solid #e94560; margin: 10px 0; padding: 8px 15px; background: #16213e; border-radius: 0 8px 8px 0; }
+    .nav { margin-bottom: 20px; }
+    .nav a { margin-right: 10px; font-size: 13px; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="nav">
+    <a href="00-index.html">📋 索引</a>
+    <a href="01-dnf-damage-overview.html">🎯 DNF总览</a>
+    <a href="02-dnf-formula-analysis.html">📐 DNF公式</a>
+    <a href="03-kof-damage-system.html">👊 拳皇</a>
+    <a href="04-zombie-shooter-damage.html">🧟 僵尸开炮</a>
+    <a href="05-comparative-analysis.html">📊 对比</a>
+  </div>
+<h1>游戏伤害原理研究 - 索引</h1>
+
+<blockquote>研究目标：系统分析 DNF（60-85版本）、拳皇 KOF、向僵尸开炮 三类2D游戏的底层伤害计算机制。</blockquote>
+
+<h2>📋 章节列表</h2>
+
+<table><thead><tr><th>#</th><th>内容</th></tr></thead><tbody><tr><td>00</td><td>本索引文件</td></tr><tr><td>01</td><td>DNF 60-85 伤害系统总览</td></tr><tr><td>02</td><td>DNF 核心公式详细分析</td></tr><tr><td>03</td><td>拳皇 KOF 伤害系统分析</td></tr><tr><td>04</td><td>向僵尸开炮伤害机制</td></tr><tr><td>05</td><td>三类游戏横向对比分析</td></tr></tbody></table>
+<h2>🎯 各章节核心要点</h2>
+
+<h3>01 - DNF 伤害系统总览</h3>
+<ul><li>伤害四大分类：物理百分比 / 魔法百分比 / 物理固伤 / 魔法固伤</li>
+<li>伤害计算基本流程：基础值 → 独立攻击 → 属强 → 减伤 → 暴击 → 最终输出</li>
+<li>异常状态体系：感电、出血、中毒、灼伤的机制差异</li>
+<li>60-85版本特色机制：异界装备、E2/E3套装效果</li>
+
+<h3>02 - DNF 核心公式详细分析</h3>
+<li><strong>防御减伤公式</strong>：`最终伤害 = 基础伤害 × 300 / (300 + 防御力)`</li>
+<li><strong>属性强化公式</strong>：每 22 点属强提升约 10% 对应属性伤害</li>
+<li><strong>暴击伤害</strong>：基础 150%，受暴击伤害加成装备影响</li>
+<li><strong>技能百分比</strong>：`技能伤害 = 攻击力 × 技能百分比 × (1 + 武器精通加成)`</li>
+<li><strong>固定伤害</strong>：`固伤 = 技能固伤值 × (1 + 独立攻击力/300) × 其他加成`</li>
+<li><strong>异常状态伤害计算公式</strong>（感电、出血、中毒、灼伤）</li>
+
+<h3>03 - 拳皇 KOF 伤害系统分析</h3>
+<li>连招伤害衰减机制：同一连段中后续攻击伤害递减</li>
+<li>破防值（Guard Crush）计算方式</li>
+<li>能量槽（Power Gauge）对伤害和防御的影响</li>
+<li>帧数数据（Frame Data）与伤害判定的关系</li>
+<li>MAX模式下的伤害倍率变化</li>
+
+<h3>04 - 向僵尸开炮伤害机制</h3>
+<li>塔防伤害计算：基础攻击 × 塔等级倍率 × 技能加成</li>
+<li>暴击机制：概率触发 + 暴击伤害倍率</li>
+<li>穿透机制：无视部分/全部护甲</li>
+<li>怪物护甲减伤：不同怪物类型（普通/精英/BOSS）的护甲差异</li>
+<li>元素克制关系（火/冰/雷/毒）</li>
+
+<h3>05 - 三类游戏横向对比分析</h3>
+<li>伤害公式复杂度对比：DNF（最复杂）> KOF（中等）> 向僵尸开炮（简单）</li>
+<li>随机性机制对比：DNF（浮动10%）vs KOF（固定值）vs 向僵尸开炮（暴击随机）</li>
+<li>成长系统对伤害的影响方式差异</li>
+<li>多人协作/组队伤害加成机制对比</li>
+
+<h2>📊 研究进度</h2>
+
+<pre><code>总进度: ████████████████████░░░  5/6 章 (83%)
+</code></pre>
+
+<li>[x] DNF 60-85 伤害系统总览</li>
+<li>[x] DNF 核心公式详细分析</li>
+<li>[x] 拳皇 KOF 伤害系统分析</li>
+<li>[x] 向僵尸开炮伤害机制</li>
+<li>[x] 三类游戏横向对比</li>
+<li>[ ] 图表整理 & 可视化（diagrams/）</li>
+
+<h2>📚 数据来源</h2>
+
+<li>NGA 游戏论坛（DNF专区、KOF专区）</li>
+<li>百度贴吧（dnf吧、拳皇吧）</li>
+<li>游民星空、知乎游戏专栏</li>
+<li>GitHub 逆向工程分析项目</li>
+<li>游戏官方设定集 & 玩家实测数据</li>
+
+<h2>🔗 相关链接</h2>
+
+<li>GitHub 仓库：https://github.com/kankedelangzi/game</li>
+<li>DNF 官方 wiki：https://dnf.huijiwiki.com/</li>
+<li>KOF 帧数数据：https://dreamcancel.com/</li>
+<li>向僵尸开炮 攻略站：各大小游戏平台攻略区</li></ul>
+
+<p>---</p>
+
+<blockquote>由龙虾 🦞 研究整理，大鱼指定课题。</blockquote>
+<blockquote>最后更新：2026-05-25</blockquote>
+
+</div>
+</body>
+</html>

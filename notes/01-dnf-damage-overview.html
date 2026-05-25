@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>01 Dnf Damage Overview</title>
+  <style>
+    body { background: #1a1a2e; color: #e0e0e0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; padding: 20px; line-height: 1.8; }
+    .container { max-width: 800px; margin: 0 auto; }
+    h1 { color: #e94560; border-bottom: 2px solid #2a2a4a; padding-bottom: 10px; }
+    h2 { color: #f5a623; border-bottom: 1px solid #2a2a4a; padding-bottom: 8px; margin-top: 30px; }
+    h3 { color: #7fdbca; margin-top: 20px; }
+    .card { background: #16213e; padding: 20px; border-radius: 10px; margin: 15px 0; }
+    pre { background: #0f0f1a; padding: 15px; border-radius: 8px; overflow-x: auto; color: #7fdbca; font-family: "Courier New", monospace; }
+    code { background: #0f0f1a; padding: 2px 6px; border-radius: 4px; color: #7fdbca; font-size: 13px; }
+    table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+    th, td { padding: 10px; border: 1px solid #2a2a4a; text-align: left; }
+    th { background: #0f3460; color: #fff; }
+    tr:nth-child(even) { background: #1a1a2e; }
+    a { color: #e94560; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul, ol { padding-left: 20px; }
+    li { margin: 6px 0; }
+    blockquote { border-left: 3px solid #e94560; margin: 10px 0; padding: 8px 15px; background: #16213e; border-radius: 0 8px 8px 0; }
+    .nav { margin-bottom: 20px; }
+    .nav a { margin-right: 10px; font-size: 13px; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="nav">
+    <a href="00-index.html">📋 索引</a>
+    <a href="01-dnf-damage-overview.html">🎯 DNF总览</a>
+    <a href="02-dnf-formula-analysis.html">📐 DNF公式</a>
+    <a href="03-kof-damage-system.html">👊 拳皇</a>
+    <a href="04-zombie-shooter-damage.html">🧟 僵尸开炮</a>
+    <a href="05-comparative-analysis.html">📊 对比</a>
+  </div>
+<h1>DNF（地下城与勇士）伤害系统总览（60-85版本）</h1>
+
+<blockquote><strong>研究范围</strong>：60级版本（早期DNF）、70级版本、80级版本、85级版本（安徒恩时期）</blockquote>
+<blockquote><strong>数据来源</strong>：游戏实测、NGA玩家社区、贴吧精品帖、17173资料站、多玩DNF专区</blockquote>
+
+<h2>一、伤害系统核心架构</h2>
+
+<p>DNF的伤害计算是一个多层次的复合系统，主要包含以下几个层面：</p>
+
+<pre><code>最终伤害 = 基础伤害 × 独立增伤乘区 × 暴击乘区 × 属性乘区 × 防御减伤 × 其他修正
+</code></pre>
+
+<h3>1.1 伤害类型分类</h3>
+
+<table><thead><tr><th>伤害类型</th><th>典型来源</th></tr></thead><tbody><tr><td><strong>物理百分比伤害</strong></td><td>大部分物理职业主动技能</td></tr><tr><td><strong>魔法百分比伤害</strong></td><td>大部分魔法职业主动技能</td></tr><tr><td><strong>物理固伤</strong></td><td>阿修罗邪光斩、红眼崩山击等</td></tr><tr><td><strong>魔法固伤</strong></td><td>元素师部分技能、召唤师等</td></tr><tr><td><strong>混伤</strong></td><td>部分技能如大枪量子爆弹</td></tr></tbody></table>
+<h2>二、60版本 vs 85版本核心差异</h2>
+
+<h3>2.1 版本演变关键节点</h3>
+
+<table><thead><tr><th>版本</th><th>核心机制变化</th></tr></thead><tbody><tr><td><strong>60版本（早期）</strong></td><td>基础伤害体系，装备属性简单，无属性强散搭</td></tr><tr><td><strong>70版本</strong></td><td>异界套装出现，技能等级提升成为重要增伤手段</td></tr><tr><td><strong>80版本</strong></td><td>装备品质提升，属性强化系统完善</td></tr><tr><td><strong>85版本（安徒恩）</strong></td><td>伤害乘区大幅增加，荒古武器、左右槽系统</td></tr></tbody></table>
+<h3>2.2 增伤乘区对比</h3>
+
+<pre><code>【60版本典型增伤】
+<p>最终伤害 = 技能基础伤害 × (1 + 力量/250) × 武器强化系数 × 物理/魔法暴击伤害(1.5)</p>
+
+<p>【85版本典型增伤】</p>
+<p>最终伤害 = 技能基础伤害 </p>
+<p>          × (1 + 力量/250)                    # 主属性乘区</p>
+<p>          × (1 + 所有攻击力加成)               # 所有攻击力乘区（加算）</p>
+<p>          × (1 + 技能攻击力)                   # 技能攻击力乘区（独立乘区）</p>
+<p>          × (1 + 暴击伤害加成 - 基础暴伤)      # 暴击伤害乘区</p>
+<p>          × (1 + 属性强化/220)                # 属性强化乘区</p>
+<p>          × (1 - 怪物防御减伤)                # 防御减伤</p>
+<p>          × (1 + 白字附加伤害)                # 白字（追加伤害）乘区</p>
+<p>          × (1 + 黄字伤害加成 - 1)            # 黄字（增加伤害）乘区</p>
+<p>          × 其他特殊乘区                       # 如：最终伤害、追加伤害等</p>
+</code></pre>
+
+<h2>三、核心属性说明</h2>
+
+<h3>3.1 主属性（力量/智力）</h3>
+
+<strong>计算公式</strong>：
+<pre><code>物理/魔法攻击力 = 武器基础攻击力 × (1 + 力量/250)
+<p>独立攻击力 = 武器基础独立攻击力 × (1 + 力量/250)  # 固伤职业核心属性</p>
+</code></pre>
+
+<strong>设计意图</strong>：
+<ul><li>提供基础伤害增幅，鼓励堆主属性</li>
+<li>250作为分母，意味着每250点主属性翻倍伤害</li>
+<li>60版本主属性收益更高（乘区少），85版本相对稀释</li>
+
+<h3>3.2 物理/魔法暴击</h3>
+
+<strong>暴击率计算</strong>：
+<pre><code>暴击率 = 基础暴击率 + 装备暴击率 + 技能暴击率
+<p>上限：50%（60版本）→ 97%（85版本可堆满）</p>
+</code></pre>
+
+<strong>暴击伤害</strong>：
+<pre><code>暴击伤害 = 普通伤害 × 1.5  # 基础暴击伤害150%
+</code></pre>
+
+<strong>85版本暴伤加成</strong>：
+<pre><code>实际暴击伤害 = 1.5 × (1 + 暴伤加成%)
+</code></pre>
+
+<h2>四、伤害计算流程</h2>
+
+<h3>4.1 完整计算步骤（85版本为例）</h3>
+
+<pre><code>def calculate_damage(character, skill, monster):
+<p>    """</p>
+<p>    DNF伤害计算完整流程</p>
+<p>    """</p>
+    
+<p>    # Step 1: 计算基础攻击力</p>
+<p>    if skill.is_percentage:  # 百分比技能</p>
+<p>        base_atk = character.weapon_atk * (1 + character.main_stat / 250)</p>
+<p>    else:  # 固伤技能</p>
+<p>        base_atk = character.weapon_indep_atk * (1 + character.main_stat / 250)</p>
+    
+<p>    # Step 2: 计算技能基础伤害</p>
+<p>    if skill.is_percentage:</p>
+<p>        skill_base_dmg = base_atk * skill.percentage / 100</p>
+<p>    else:</p>
+<p>        skill_base_dmg = skill.fixed_damage * (base_atk / 1000)  # 固伤系数</p>
+    
+<p>    # Step 3: 应用增伤乘区（加算部分先合并）</p>
+<p>    all_atk_bonus = sum(character.all_atk_buffs)  # 所有攻击力加成（加算）</p>
+<p>    skill_atk_bonus = character.skill_atk_buff  # 技能攻击力（独立乘区）</p>
+    
+<p>    # Step 4: 防御减伤计算</p>
+<p>    def_reduction = monster.defense / (monster.defense + character.level * 200)</p>
+<p>    dmg_after_def = skill_base_dmg * (1 - def_reduction)</p>
+    
+<p>    # Step 5: 属性强化加成</p>
+<p>    attr_bonus = character.attr_strength / 220  # 每220点属性强化翻倍</p>
+<p>    dmg_after_attr = dmg_after_def * (1 + attr_bonus)</p>
+    
+<p>    # Step 6: 暴击判定</p>
+<p>    crit_roll = random.random()</p>
+<p>    if crit_roll < character.crit_rate:</p>
+<p>        crit_multiplier = 1.5 * (1 + character.crit_dmg_bonus)</p>
+<p>    else:</p>
+<p>        crit_multiplier = 1.0</p>
+    
+<p>    # Step 7: 黄字、白字等乘区</p>
+<p>    yellow_dmg = 1 + character.yellow_dmg_bonus  # 黄字（增加伤害）</p>
+<p>    white_dmg = 1 + character.white_dmg_bonus    # 白字（附加伤害）</p>
+    
+<p>    # Step 8: 最终伤害</p>
+<p>    final_dmg = dmg_after_attr <em> (1 + all_atk_bonus) </em> (1 + skill_atk_bonus) <em> crit_multiplier </em> yellow_dmg * white_dmg</p>
+    
+<p>    return final_dmg</p>
+</code></pre>
+
+<h2>五、关键机制说明</h2>
+
+<h3>5.1 属性强化系统（60-85版本演变）</h3>
+
+<table><thead><tr><th>版本</th><th>计算公式</th></tr></thead><tbody><tr><td>60版本</td><td>属性伤害 = 基础伤害 × 0.2（约20%额外伤害）</td></tr><tr><td>70版本</td><td>属性伤害加成 = 属性强化值 / 220</td></tr><tr><td>85版本</td><td>最终伤害 × (1 + 属性强化/220)</td></tr></tbody></table>
+<strong>设计意图</strong>：
+<li>鼓励玩家选择特定属性路线（光/火/冰/暗）</li>
+<li>属性克制系统：怪物有属性抗性，对应属性强化收益降低</li>
+<li>220作为系数，让属性强化收益可控</li>
+
+<h3>5.2 防御力减伤公式</h3>
+
+<pre><code>实际减伤比例 = 怪物防御力 / (怪物防御力 + 角色等级 × 200)
+
+<p>例如：</p>
+<li>角色85级，怪物防御2000</li>
+<li>减伤 = 2000 / (2000 + 85 × 200) = 2000 / 19000 ≈ 10.5%</li>
+<li>实际受到伤害 = 89.5%</li>
+</code></pre>
+
+<strong>高级副本修正</strong>：
+<p>安徒恩等高级副本有防御系数修正：</p>
+<pre><code>实际防御 = 怪物防御 × 副本防御系数
+<p>安徒恩防御系数：约1.3-1.5</p>
+</code></pre>
+
+<h3>5.3 异常状态伤害</h3>
+
+<table><thead><tr><th>异常状态</th><th>说明</th></tr></thead><tbody><tr><td><strong>感电</strong></td><td>受敌人属性抗性影响</td></tr><tr><td><strong>出血</strong></td><td>独立于主伤害计算</td></tr><tr><td><strong>中毒</strong></td><td>魔法系异常</td></tr><tr><td><strong>灼伤</strong></td><td>火属性攻击附带</td></tr></tbody></table>
+<h2>六、队友伤害加成（协同攻击）</h2>
+
+<h3>6.1 奶爸（圣骑士）加成</h3>
+
+<pre><code>物理/魔法伤害加成 = 体力/精神 × 技能系数
+<p>独立攻击力加成 = 固定值（根据技能等级）</p>
+<p>力量/智力加成 = 固定值（根据技能等级）</p>
+</code></pre>
+
+<h3>6.2 队友增益叠加规则</h3>
+
+<strong>加算部分</strong>：
+<li>所有攻击力加成（多个来源相加）</li>
+<li>黄字伤害加成（取最高值，不叠加）</li>
+<li>暴击伤害加成（加算）</li>
+
+<strong>乘算部分</strong>：
+<li>技能攻击力（每个来源独立乘算）</li>
+<li>白字附加伤害（每个来源独立乘算）</li>
+
+<h2>七、装备属性叠加规则</h2>
+
+<h3>7.1 取最高值（不叠加）</h3>
+
+<table><thead><tr><th>属性类型</th><th>示例</th></tr></thead><tbody><tr><td><strong>黄字（增加伤害）</strong></td><td>"伤害+20%"装备与"伤害+15%"装备同时穿，只生效20%</td></tr><tr><td><strong>暴击伤害</strong></td><td>多件暴伤装备的效果相加</td></tr><tr><td><strong>属性强化</strong></td><td>所有装备的属性强化数值相加</td></tr></tbody></table>
+<h3>7.2 完全叠加</h3>
+
+<li>力量/智力</li>
+<li>物理/魔法攻击力</li>
+<li>独立攻击力</li>
+<li>所有攻击力%</li>
+<li>属性强化数值</li>
+
+<h3>7.3 独立乘区（完美叠加）</h3>
+
+<li><strong>技能攻击力</strong>：每个来源独立相乘，是DNF中最珍贵的属性</li>
+<li><strong>白字附加伤害</strong>：多个白字装备完全叠加</li></ul>
+
+<h2>八、设计意图分析</h2>
+
+<h3>8.1 为什么设计这么多乘区？</h3>
+
+<p>1. <strong>防止数值膨胀</strong>：单一乘区过高会导致伤害失控</p>
+<p>2. <strong>装备搭配深度</strong>：不同乘区鼓励不同装备组合</p>
+<p>3. <strong>职业平衡</strong>：不同职业在不同乘区有优势</p>
+<p>4. <strong>长期养成</strong>：多乘区让玩家有持续追求目标</p>
+
+<h3>8.2 60版本 vs 85版本设计哲学差异</h3>
+
+<table><thead><tr><th>维度</th><th>85版本</th></tr></thead><tbody><tr><td><strong>伤害乘区</strong></td><td>8-10个</td></tr><tr><td><strong>装备选择</strong></td><td>复杂，需要平衡各乘区</td></tr><tr><td><strong>职业差异</strong></td><td>主要靠机制和乘区利用</td></tr><tr><td><strong>团队协作</strong></td><td>复杂增益链</td></tr></tbody></table>
+<h2>九、数据来源与参考资料</h2>
+
+<p>1. <strong>NGA玩家社区</strong> - DNF版块精品帖</p>
+<p>2. <strong>17173 DNF专区</strong> - 攻略与数据测试</p>
+<p>3. <strong>多玩DNF盒子</strong> - 伤害计算器原理</p>
+<p>4. <strong>贴吧</strong> - 玩家实测数据汇总</p>
+<p>5. <strong>GitHub项目</strong> - DNF_calculator 开源实现</p>
+<p>6. <strong>游戏内实测</strong> - 玩家群体长期测试验证</p>
+
+<h2>十、后续研究方向</h2>
+
+<p>1. 详细测试各版本具体数值</p>
+<p>2. 分析异常状态伤害的精确公式</p>
+<p>3. 研究不同职业的乘区利用率</p>
+<p>4. 对比中日韩服务器数值差异</p>
+<p>5. 逆向工程验证公式准确性</p>
+
+<p>---</p>
+
+<strong>文档版本</strong>：v1.0  
+<strong>最后更新</strong>：2026-05-25  
+<strong>下一步</strong>：详细公式分析（见 02-dnf-formula-analysis.md）
+
+</div>
+</body>
+</html>
