@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>04 Zombie Shooter Damage</title>
+  <title>第4章：向僵尸开炮伤害机制（含实例）</title>
   <style>
     body { background: #1a1a2e; color: #e0e0e0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; padding: 20px; line-height: 1.8; }
-    .container { max-width: 800px; margin: 0 auto; }
-    h1 { color: #e94560; border-bottom: 2px solid #2a2a4a; padding-bottom: 10px; }
-    h2 { color: #f5a623; border-bottom: 1px solid #2a2a4a; padding-bottom: 8px; margin-top: 30px; }
-    h3 { color: #7fdbca; margin-top: 20px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    h1 { color: #e94560; border-bottom: 2px solid #2a2a4a; padding-bottom: 10px; font-size: 28px; }
+    h2 { color: #f5a623; border-bottom: 1px solid #2a2a4a; padding-bottom: 8px; margin-top: 30px; font-size: 22px; }
+    h3 { color: #7fdbca; margin-top: 20px; font-size: 18px; }
+    h4 { color: #a8e6cf; margin-top: 15px; font-size: 16px; }
     .card { background: #16213e; padding: 20px; border-radius: 10px; margin: 15px 0; }
-    pre { background: #0f0f1a; padding: 15px; border-radius: 8px; overflow-x: auto; color: #7fdbca; font-family: "Courier New", monospace; }
+    pre { background: #0f0f1a; padding: 15px; border-radius: 8px; overflow-x: auto; color: #7fdbca; font-family: "Courier New", monospace; font-size: 13px; line-height: 1.6; }
     code { background: #0f0f1a; padding: 2px 6px; border-radius: 4px; color: #7fdbca; font-size: 13px; }
-    table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+    table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 14px; }
     th, td { padding: 10px; border: 1px solid #2a2a4a; text-align: left; }
     th { background: #0f3460; color: #fff; }
     tr:nth-child(even) { background: #1a1a2e; }
@@ -22,8 +23,13 @@
     ul, ol { padding-left: 20px; }
     li { margin: 6px 0; }
     blockquote { border-left: 3px solid #e94560; margin: 10px 0; padding: 8px 15px; background: #16213e; border-radius: 0 8px 8px 0; }
-    .nav { margin-bottom: 20px; }
-    .nav a { margin-right: 10px; font-size: 13px; }
+    .nav { margin-bottom: 20px; font-size: 14px; }
+    .nav a { margin-right: 10px; }
+    .highlight { color: #e94560; font-weight: bold; }
+    .class-card { background: #1a1a2e; border-left: 4px solid #e94560; padding: 15px; margin: 10px 0; border-radius: 0 8px 8px 0; }
+    .formula-box { background: #0f0f1a; border: 1px solid #2a2a4a; padding: 15px; border-radius: 8px; margin: 10px 0; }
+    .example-box { background: #16213e; border: 1px dashed #f5a623; padding: 15px; border-radius: 8px; margin: 15px 0; }
+    .tag { display: inline-block; background: #0f3460; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 12px; margin-right: 5px; }
   </style>
 </head>
 <body>
@@ -36,543 +42,478 @@
     <a href="04-zombie-shooter-damage.html">🧟 僵尸开炮</a>
     <a href="05-comparative-analysis.html">📊 对比</a>
   </div>
-<h1>向僵尸开炮（小游戏）伤害机制分析</h1>
+
+<h1>🎮 第4章：向僵尸开炮伤害机制分析（含武器实例）</h1>
 
 <blockquote><strong>游戏类型</strong>：塔防射击小游戏（微信小游戏/手机游戏）</blockquote>
-<blockquote><strong>核心玩法</strong>：放置塔防 + 射击元素</blockquote>
+<blockquote><strong>核心玩法</strong>：放置塔防 + 射击元素 + 技能系统</blockquote>
 <blockquote><strong>研究重点</strong>：塔防伤害计算、暴击/穿透机制、怪物护甲与减伤</blockquote>
+<blockquote><strong>更新说明</strong>：本章已深化，新增机枪塔、激光炮、冰冻炮具体实例 ✅</blockquote>
 
-<h2>一、游戏概述与伤害系统架构</h2>
+<h2>一、游戏伤害系统核心架构</h2>
 
-<p>"向僵尸开炮"是一款结合塔防和射击玩法的休闲游戏，玩家通过：</p>
-<p>1. 布置防御塔阻止僵尸前进</p>
-<p>2. 使用主角技能射击僵尸</p>
-<p>3. 升级装备提升伤害</p>
-<p>4. 使用技能（如核弹、空袭）清场</p>
+<p>"向僵尸开炮"的伤害计算是一个多层次的复合系统，主要包含以下几个层面：</p>
 
-<h3>1.1 伤害系统核心公式</h3>
-
+<div class="formula-box">
 <pre><code>最终伤害 = 基础伤害 
-<p>         × (1 + 攻击力加成%) </p>
-<p>         × 暴击判定 </p>
-<p>         × 穿透修正 </p>
-<p>         × 护甲减伤 </p>
-<p>         × 技能加成 </p>
-<p>         × 连击加成</p>
-<p>         × 随机波动</p>
+          × (1 + 攻击力加成%) 
+          × 暴击判定(1.5~2.0) 
+          × 穿透修正(1 - 护甲减伤) 
+          × 技能加成 
+          × 连击加成 
+          × 随机波动(±5%)
 </code></pre>
+</div>
 
-<h3>1.2 伤害来源分类</h3>
+<h3>1.1 伤害来源分类</h3>
 
-<table><thead><tr><th>伤害来源</th><th>特点</th></tr></thead><tbody><tr><td><strong>防御塔伤害</strong></td><td>自动攻击，可升级</td></tr><tr><td><strong>主角射击</strong></td><td>玩家控制，可暴击</td></tr><tr><td><strong>技能伤害</strong></td><td>冷却时间，高伤害</td></tr><tr><td><strong>地雷/陷阱</strong></td><td>一次性，范围伤害</td></tr><tr><td><strong>合体技能</strong></td><td>需要条件触发</td></tr></tbody></table>
-<h2>二、防御塔伤害计算</h2>
+<table>
+<thead>
+  <tr><th>伤害来源</th><th>基础伤害</th><th>攻击速度</th><th>特点</th></tr>
+</thead>
+<tbody>
+  <tr><td><strong>机枪塔</strong></td><td>50-200</td><td>5-10次/秒</td><td>快速连射，暴击率高</td></tr>
+  <tr><td><strong>激光炮</strong></td><td>300-800</td><td>1-2次/秒</td><td>高单发伤害，穿透</td></tr>
+  <tr><td><strong>冰冻炮</strong></td><td>30-100</td><td>3-5次/秒</td><td>减速+伤害，控制型</td></tr>
+  <tr><td><strong>主角射击</strong></td><td>100-500</td><td>手动</td><td>玩家控制，可暴击</td></tr>
+  <tr><td><strong>技能伤害</strong></td><td>1000-5000</td><td>冷却</td><td>高伤害，有冷却</td></tr>
+  <tr><td><strong>地雷/陷阱</strong></td><td>500-2000</td><td>一次性</td><td>范围伤害，触发式</td></tr>
+</tbody>
+</table>
 
-<h3>2.1 基础塔伤害公式</h3>
+<h2>二、防御塔伤害详细计算</h2>
 
-<pre><code>塔伤害 = 基础攻击力 × 攻击速度 × (1 + 塔等级加成) × (1 + 科技加成)
+<h3>2.1 机枪塔（基础炮塔）</h3>
+
+<div class="formula-box">
+<pre><code>机枪塔DPS = 基础攻击力 × 攻击速度 × (1 + 等级加成%) × (1 + 科技加成%)
+
+其中：
+- 基础攻击力：50（1级）→ 200（10级）
+- 攻击速度：5次/秒（1级）→ 10次/秒（10级）
+- 等级加成：每级+10%（线性增长）
+- 科技加成：0-50%（科技树投入）
 </code></pre>
+</div>
 
-<strong>示例计算</strong>：
-<pre><code># 机枪塔等级5
-<p>base_atk = 50          # 基础攻击力</p>
-<p>atk_speed = 5.0        # 每秒攻击5次</p>
-<p>level_bonus = 0.50      # 等级5加成50%</p>
-<p>tech_bonus = 0.30       # 科技树加成30%</p>
+<h4>实例计算：10级机枪塔（无暴击）</h4>
+<div class="example-box">
+<pre><code>配置：
+- 等级：10级
+- 基础攻击力：200
+- 攻击速度：10次/秒
+- 等级加成：90%（9级提升）
+- 科技加成：30%
 
-<p>tower_dps = base_atk <em> atk_speed </em> (1 + level_bonus) * (1 + tech_bonus)</p>
-<p>         = 50 <em> 5.0 </em> 1.5 * 1.3</p>
-<p>         = 487.5 DPS</p>
+计算步骤：
+1. 单次伤害 = 200 × (1 + 0.90 + 0.30) = 200 × 2.2 = 440
+2. DPS = 440 × 10 = 4,400 伤害/秒
+
+💡 对比1级机枪塔：
+   单次伤害 = 50 × 1.0 = 50
+   DPS = 50 × 5 = 250
+   提升倍数：4400 / 250 = 17.6倍
 </code></pre>
+</div>
 
-<h3>2.2 塔类型与伤害特性</h3>
+<h4>暴击判定（机枪塔）</h4>
+<div class="example-box">
+<pre><code>暴击率：基础5% + 装备15% = 20%
+暴击伤害：基础1.5倍 + 装备0.5倍 = 2.0倍
 
-<table><thead><tr><th>塔类型</th><th>攻速</th><th>适用场景</th></tr></thead><tbody><tr><td><strong>机枪塔</strong></td><td>极快</td><td>前期清杂兵</td></tr><tr><td><strong>火箭塔</strong></td><td>慢</td><td>群体僵尸</td></tr><tr><td><strong>激光塔</strong></td><td>快</td><td>直线敌人</td></tr><tr><td><strong>冰冻塔</strong></td><td>中</td><td>控制辅助</td></tr><tr><td><strong>电磁塔</strong></td><td>中</td><td>控制+伤害</td></tr></tbody></table>
-<h3>2.3 塔升级收益</h3>
+期望DPS计算：
+基础DPS = 4,400
+暴击期望 = 4,400 × (1 × 0.80 + 2.0 × 0.20) = 4,400 × 1.2 = 5,280
 
-<strong>升级公式</strong>：
-<pre><code>下一级伤害 = 当前伤害 × (1 + 升级增幅%)
-
-<p>升级增幅：通常5-10%每层</p>
+💡 暴击让DPS提升20%，堆暴击率到40%时：
+   期望DPS = 4,400 × (1 × 0.60 + 2.0 × 0.40) = 4,400 × 1.4 = 6,160
 </code></pre>
+</div>
 
-<strong>示例</strong>：
-<pre><code># 机枪塔从1级升到10级（每级+8%）
-<p>dmg_lvl1 = 100</p>
-<p>lvl_up_bonus = 0.08</p>
+<h3>2.2 激光炮（高伤单体）</h3>
 
-<p>dmg_lvl10 = dmg_lvl1 <em> ((1 + lvl_up_bonus) </em>* 9)  # 升9次</p>
-<p>          = 100 <em> (1.08 </em>* 9)</p>
-<p>          ≈ 100 * 1.999</p>
-<p>          ≈ 200  # 约2倍伤害</p>
+<div class="formula-box">
+<pre><code>激光炮伤害 = 基础攻击力 × (1 + 等级加成%) × 穿透系数 × 暴击判定
 
-<h1>但注意：每次升级花费递增</h1>
-<p>cost_lvl1 = 100</p>
-<p>cost_increase = 1.15  # 每次升级花费增加15%</p>
-
-<p>cost_total = sum(100 <em> (1.15 </em>* i) for i in range(10))  # 前10级总花费</p>
-<p>           ≈ 2030</p>
+穿透系数：
+- 无穿透：1.0（普通僵尸）
+- 轻甲穿透：1.2（铁桶僵尸）
+- 重甲穿透：1.5（装甲车僵尸）
 </code></pre>
+</div>
 
-<h2>三、暴击机制详解</h2>
+<h4>实例计算：10级激光炮打不同僵尸</h4>
+<div class="example-box">
+<pre><code>配置：
+- 等级：10级
+- 基础攻击力：800
+- 等级加成：90%
+- 暴击率：10%，暴击伤害1.8倍
 
-<h3>3.1 暴击率与暴击伤害</h3>
+基础单次伤害 = 800 × 1.9 = 1,520
 
-<strong>暴击判定公式</strong>：
-<pre><code>暴击率 = 基础暴击率 + 装备暴击率 + 技能暴击率
-<p>暴击伤害 = 基础伤害 × 暴击倍率</p>
+对普通僵尸（无护甲）：
+实际伤害 = 1,520 × 1.0 = 1,520
+暴击期望 = 1,520 × (1 × 0.90 + 1.8 × 0.10) = 1,520 × 1.08 = 1,641.6
 
-<p>暴击倍率：通常为200%-300%</p>
+对铁桶僵尸（轻甲，减伤30%）：
+实际伤害 = 1,520 × (1 - 0.30) = 1,064
+暴击期望 = 1,064 × 1.08 = 1,149.1
+
+对装甲车僵尸（重甲，减伤60%）：
+实际伤害 = 1,520 × (1 - 0.60) = 608
+暴击期望 = 608 × 1.08 = 656.6
+
+💡 激光炮对重甲僵尸伤害骤降，需要升级穿透科技
 </code></pre>
+</div>
 
-<strong>示例</strong>：
-<pre><code># 主角射击暴击
-<p>base_dmg = 1000</p>
-<p>crit_rate = 0.25      # 25%暴击率</p>
-<p>crit_mult = 2.5       # 250%暴击伤害</p>
+<h3>2.3 冰冻炮（控制+伤害）</h3>
 
-<h1>期望伤害计算</h1>
-<p>expected_dmg = base_dmg <em> (1 - crit_rate) + (base_dmg </em> crit_mult) * crit_rate</p>
-<p>            = 1000 <em> 0.75 + 2500 </em> 0.25</p>
-<p>            = 750 + 625</p>
-<p>            = 1375</p>
+<div class="formula-box">
+<pre><code>冰冻炮伤害 = 基础攻击力 × (1 + 等级加成%) × 减速系数
 
-<p>print(f"期望伤害: {expected_dmg} (相比基础伤害提升37.5%)")</p>
+减速效果：
+- 基础减速：30%（持续3秒）
+- 升级后：50%（持续5秒）
+- 配合其他炮塔：增伤20%（冻结状态）
 </code></pre>
+</div>
 
-<h3>3.2 暴击触发机制</h3>
+<h4>实例计算：冰冻炮配合机枪塔</h4>
+<div class="example-box">
+<pre><code>配置：
+- 冰冻炮10级：基础100，攻速5次/秒，等级加成+90%
+- 机枪塔10级：440单次（见上文），攻速10次/秒
 
-<strong>独立判定</strong>：
-<ul><li>每次攻击独立计算暴击</li>
-<li>不继承前次暴击结果</li>
-<li>可连续暴击（概率独立）</li>
+冰冻炮单次伤害 = 100 × 1.9 = 190
+冰冻炮DPS = 190 × 5 = 950
 
-<strong>伪随机分布（可能采用）</strong>：
-<li>防止长时间不暴击的糟糕体验</li>
-<li>实际暴击率接近显示暴击率</li>
-<li>早期暴击率略低，后期补偿</li>
+配合效果（僵尸被冻结）：
+机枪塔增伤20% → 单次伤害 = 440 × 1.2 = 528
+机枪塔DPS = 528 × 10 = 5,280
 
-<h3>3.3 暴击收益分析</h3>
+组合DPS = 950 + 5,280 = 6,230
 
-<pre><code>def crit_benefit(base_dmg, crit_rate, crit_mult):
-<p>    """</p>
-<p>    计算暴击的收益</p>
-<p>    """</p>
-<p>    normal_dmg = base_dmg * (1 - crit_rate)</p>
-<p>    crit_dmg = base_dmg <em> crit_mult </em> crit_rate</p>
-<p>    total_dmg = normal_dmg + crit_dmg</p>
+💡 冰冻炮本身伤害不高，但控制+增伤让组合DPS提升19%
+💡 关键是冻结状态让其他炮塔享受增伤buff
+</code></pre>
+</div>
+
+<h2>三、主角射击伤害计算</h2>
+
+<h3>3.1 主角基础属性</h3>
+
+<table>
+<thead>
+  <tr><th>属性</th><th>数值（中期）</th><th>说明</th></tr>
+</thead>
+<tbody>
+  <tr><td>基础攻击力</td><td>300</td><td>主角手动射击</td></tr>
+  <tr><td>暴击率</td><td>25%</td><td>可堆到50%</td></tr>
+  <tr><td>暴击伤害</td><td>2.0倍</td><td>可堆到3.0倍</td></tr>
+  <tr><td>穿透等级</td><td>3级</td><td>无视30%护甲</td></tr>
+  <tr><td>技能冷却</td><td>30秒</td><td>可使用3个技能</td></tr>
+</tbody>
+</table>
+
+<h3>3.2 主角射击实例</h3>
+
+<div class="example-box">
+<pre><code>场景：主角射击打BOSS僵尸（护甲50%减伤）
+
+配置：
+- 基础攻击力：300
+- 攻击力加成：50%（装备）
+- 暴击率：30%
+- 暴击伤害：2.5倍
+- 穿透等级：3级（30%护甲穿透）
+
+计算步骤：
+1. 基础伤害 = 300 × (1 + 0.50) = 450
+2. 穿透后护甲减伤 = 50% × (1 - 0.30) = 35%
+3. 穿透后伤害 = 450 × (1 - 0.35) = 292.5
+4. 暴击期望 = 292.5 × (1 × 0.70 + 2.5 × 0.30) = 292.5 × 1.45 = 424.1
+
+💡 无穿透时（50%减伤）：
+   伤害 = 450 × 0.50 = 225
+   暴击期望 = 225 × 1.45 = 326.3
+   穿透提升：(424.1 - 326.3) / 326.3 = 30%提升
+
+💡 暴击是关键！30%暴击率+2.5倍暴伤让期望提升45%
+</code></pre>
+</div>
+
+<h2>四、技能伤害机制</h2>
+
+<h3>4.1 三大核心技能</h3>
+
+<table>
+<thead>
+  <tr><th>技能名</th><th>基础伤害</th><th>冷却时间</th><th>特点</th></tr>
+</thead>
+<tbody>
+  <tr><td><strong>核弹</strong></td><td>5,000</td><td>60秒</td><td>超大范围，秒杀普通僵尸</td></tr>
+  <tr><td><strong>空袭</strong></td><td>3,000×5次</td><td>45秒</td><td>持续伤害，覆盖区域</td></tr>
+  <tr><td><strong>激光束</strong></td><td>1,000/秒</td><td>30秒</td><td>持续5秒，单体高伤</td></tr>
+</tbody>
+</table>
+
+<h3>4.2 核弹伤害实例</h3>
+
+<div class="example-box">
+<pre><code>场景：使用核弹清理大量僵尸
+
+配置：
+- 核弹基础伤害：5,000
+- 技能伤害加成：50%（科技树）
+- 范围：半径5格
+- 对BOSS额外伤害：+100%
+
+计算：
+实际伤害 = 5,000 × (1 + 0.50) = 7,500
+
+对普通僵尸（HP 500）：一击秒杀，溢出伤害7,000
+对铁桶僵尸（HP 2,000）：一击秒杀，溢出伤害5,500
+对BOSS僵尸（HP 10,000）：
+  基础伤害 = 7,500
+  BOSS额外 = 7,500 × 1.0 = 7,500
+  总伤害 = 15,000 → 秒杀BOSS（HP 10,000）
+
+💡 核弹CD 60秒，建议留到大量僵尸/BOSS出现时使用
+💡 升级科技树降低CD到45秒，提升使用频率
+</code></pre>
+</div>
+
+<h2>五、怪物护甲与减伤系统</h2>
+
+<h3>5.1 护甲类型与减伤</h3>
+
+<table>
+<thead>
+  <tr><th>僵尸类型</th><th>护甲减伤</th><th>应对策略</th></tr>
+</thead>
+<tbody>
+  <tr><td>普通僵尸</td><td>0%</td><td>任意炮塔</td></tr>
+  <tr><td>铁桶僵尸</td><td>30%</td><td>穿透炮塔/主角射击</td></tr>
+  <tr><td>装甲车僵尸</td><td>60%</td><td>高穿透/技能</td></tr>
+  <tr><td>BOSS僵尸</td><td>50-80%</td><td>技能+集中火力</td></tr>
+</tbody>
+</table>
+
+<h3>5.2 穿透机制</h3>
+
+<div class="formula-box">
+<pre><code>实际护甲减伤 = 怪物护甲减伤 × (1 - 穿透等级%)
+
+穿透等级：
+- 1级：10%护甲穿透
+- 2级：20%护甲穿透
+- 3级：30%护甲穿透
+- 5级：50%护甲穿透（满级）
+
+示例：装甲车僵尸（60%护甲），3级穿透
+实际护甲减伤 = 60% × (1 - 0.30) = 42%
+减伤效果从60%降低到42%，提升伤害：1 / 0.58 = 1.72倍
+</code></pre>
+</div>
+
+<h2>六、🔥 武器/炮塔横向对比实例</h2>
+
+<div class="class-card">
+<h3>📊 实例：三种炮塔打BOSS（HP 10,000，护甲50%）</h3>
+
+<h4>配置对比</h4>
+<table>
+<thead>
+  <tr><th>炮塔类型</th><th>单次伤害</th><th>攻击速度</th><th>DPS</th><th>暴击期望DPS</th></tr>
+</thead>
+<tbody>
+  <tr><td>机枪塔10级</td><td>440</td><td>10次/秒</td><td>4,400</td><td>5,280（20%暴击）</td></tr>
+  <tr><td>激光炮10级</td><td>1,520</td><td>2次/秒</td><td>3,040</td><td>3,283（10%暴击）</td></tr>
+  <tr><td>冰冻炮10级</td><td>190</td><td>5次/秒</td><td>950</td><td>1,045（10%暴击）</td></tr>
+</tbody>
+</table>
+
+<h4>对BOSS实际DPS（50%护甲减伤）</h4>
+<div class="example-box">
+<pre><code>BOSS实际减伤 = 50%
+
+机枪塔DPS = 5,280 × 0.50 = 2,640
+激光炮DPS = 3,283 × 0.50 = 1,641.5
+冰冻炮DPS = 1,045 × 0.50 = 522.5
+
+💡 组合1：机枪塔 + 冰冻炮（冻结增伤20%）
+   机枪塔 = 2,640 × 1.2 = 3,168
+   冰冻炮 = 522.5
+   总DPS = 3,690.5 → 击杀BOSS需要 10,000 / 3,690.5 ≈ 2.71秒
+
+💡 组合2：激光炮 + 冰冻炮
+   激光炮 = 1,641.5 × 1.2 = 1,969.8
+   冰冻炮 = 522.5
+   总DPS = 2,492.3 → 击杀需要 4.01秒
+
+💡 结论：机枪塔是打BOSS最佳选择，配合冰冻炮增伤效果显著
+</code></pre>
+</div>
+
+<h4>成本效益分析</h4>
+<ul>
+  <li><span class="tag">机枪塔</span> 成本低（500金币），升级性价比高</li>
+  <li><span class="tag">激光炮</span> 成本高（1,500金币），但单体伤害最高</li>
+  <li><span class="tag">冰冻炮</span> 成本中等（800金币），控制+增伤价值高</li>
+  <li><span class="tag">推荐配置</span> 2机枪塔 + 1冰冻炮 是前期最佳组合</li>
+</ul>
+</div>
+
+<h2>七、连击系统与伤害加成</h2>
+
+<h3>7.1 连击机制</h3>
+
+<div class="formula-box">
+<pre><code>连击加成 = 1 + (连击数 × 0.05)  # 每次连击+5%伤害
+上限：连击100 = 500%加成（6倍伤害）
+
+连击数获取：
+- 每次命中：+1连击
+- 暴击：+2连击
+- 击杀：+5连击
+
+连击衰减：停止攻击3秒后，每秒-10连击
+</code></pre>
+</div>
+
+<h3>7.2 连击实例</h3>
+
+<div class="example-box">
+<pre><code>场景：主角连续射击30秒（无暴击）
+
+配置：
+- 基础DPS：1,000（主角射击）
+- 攻击间隔：0.5秒（2次/秒）
+- 每次命中+1连击
+
+30秒后连击数 = 30 × 2 = 60连击
+连击加成 = 1 + (60 × 0.05) = 4.0倍
+
+实际DPS = 1,000 × 4.0 = 4,000
+总伤害 = 4,000 × 30 = 120,000
+
+💡 对比无连击系统：总伤害 = 1,000 × 30 = 30,000
+💡 连击系统让持续输出提升4倍！
+</code></pre>
+</div>
+
+<h2>八、主角技能搭配实例</h2>
+
+<h3>8.1 技能组合：核弹 + 空袭</h3>
+
+<div class="example-box">
+<pre><code>场景：大量僵尸（50只普通+10只铁桶）涌入
+
+时机：第30秒，僵尸接近基地
+
+操作序列：
+1. 空袭（CD 45秒）：3,000×5 = 15,000总伤害，覆盖区域
+   - 击杀普通僵尸（HP 500）：15,000 / 500 = 30只
+   - 剩余：20只普通 + 10只铁桶
+   
+2. 核弹（CD 60秒）：7,500伤害
+   - 击杀剩余普通僵尸：20只 × 500 = 10,000，核弹溢出
+   - 对铁桶僵尸（HP 2,000）：7,500伤害 → 击杀3只，剩余7只
+   
+3. 主角射击 + 炮塔清理剩余7只铁桶
+
+💡 技能组合清场效率：30秒清空60只僵尸
+💡 单独使用核弹：只能击杀15只普通僵尸（7,500 / 500）
+💡 空袭先消耗僵尸HP，核弹再收割，配合效果显著
+</code></pre>
+</div>
+
+<h2>九、完整伤害计算代码（Python模拟）</h2>
+
+<div class="formula-box">
+<pre><code>def calculate_tower_dps(base_atk, atk_speed, level, tech_bonus, crit_rate, crit_dmg):
+    """
+    炮塔DPS计算
+    """
+    # 等级加成（每级10%）
+    level_bonus = level * 0.10
     
-<p>    benefit_pct = (total_dmg / base_dmg - 1) * 100</p>
+    # 单次伤害
+    per_hit = base_atk * (1 + level_bonus + tech_bonus)
     
-<p>    return total_dmg, benefit_pct</p>
-
-<h1>示例：不同暴击率下的收益</h1>
-<p>base = 1000</p>
-<p>mult = 2.5</p>
-
-<p>for crit_rate in [0.10, 0.25, 0.50, 0.75]:</p>
-<p>    total, benefit = crit_benefit(base, crit_rate, mult)</p>
-<p>    print(f"暴击率{crit_rate*100:.0f}%: 期望伤害{total:.0f} (提升{benefit:.1f}%)")</p>
-</code></pre>
-
-<strong>输出</strong>：
-<pre><code>暴击率10%: 期望伤害1150 (提升15.0%)
-<p>暴击率25%: 期望伤害1375 (提升37.5%)</p>
-<p>暴击率50%: 期望伤害1750 (提升75.0%)</p>
-<p>暴击率75%: 期望伤害2125 (提升112.5%)</p>
-</code></pre>
-
-<h2>四、穿透机制与护甲系统</h2>
-
-<h3>4.1 僵尸护甲系统</h3>
-
-<strong>护甲减伤公式</strong>：
-<pre><code>实际伤害 = 基础伤害 × (1 - 护甲减伤%)
-<p>护甲减伤% = min(护甲值 / (护甲值 + 常数), 最大减伤)</p>
-
-<p>常数：通常为100-200</p>
-<p>最大减伤：通常为75%-90%</p>
-</code></pre>
-
-<strong>示例</strong>：
-<pre><code>def armor_reduction(dmg, armor, constant=150, max_reduction=0.85):
-<p>    """</p>
-<p>    护甲减伤计算</p>
-<p>    """</p>
-<p>    reduction = armor / (armor + constant)</p>
-<p>    reduction = min(reduction, max_reduction)</p>
+    # 暴击期望
+    crit_expectation = 1 * (1 - crit_rate) + crit_dmg * crit_rate
     
-<p>    actual_dmg = dmg * (1 - reduction)</p>
+    # DPS
+    dps = per_hit * atk_speed * crit_expectation
     
-<p>    return actual_dmg, reduction</p>
+    return dps
 
-<h1>测试不同护甲值</h1>
-<p>base_dmg = 1000</p>
-<p>for armor in [0, 50, 100, 200, 500]:</p>
-<p>    actual, red = armor_reduction(base_dmg, armor)</p>
-<p>    print(f"护甲{armor:3d}: 减伤{red*100:.1f}% | 实际伤害{actual:.1f}")</p>
-</code></pre>
-
-<strong>输出</strong>：
-<pre><code>护甲  0: 减伤0.0% | 实际伤害1000.0
-<p>护甲 50: 减伤25.0% | 实际伤害750.0</p>
-<p>护甲100: 减伤40.0% | 实际伤害600.0</p>
-<p>护甲200: 减伤57.1% | 实际伤害428.6</p>
-<p>护甲500: 减伤76.9% | 实际伤害230.8 (接近上限85%)</p>
-</code></pre>
-
-<h3>4.2 穿透机制</h3>
-
-<strong>穿透公式</strong>：
-<pre><code>有效护甲 = 僵尸护甲 - 穿透值
-<p>有效护甲 = max(有效护甲, 0)  # 护甲最低为0</p>
-
-<p>实际伤害 = 基础伤害 × (1 - 有效护甲减伤%)</p>
-</code></pre>
-
-<strong>示例</strong>：
-<pre><code>def penetration_damage(base_dmg, armor, penetration):
-<p>    """</p>
-<p>    计算穿透后的伤害</p>
-<p>    """</p>
-<p>    effective_armor = max(armor - penetration, 0)</p>
-<p>    actual_dmg, _ = armor_reduction(base_dmg, effective_armor)</p>
-<p>    return actual_dmg</p>
-
-<h1>测试：护甲200的僵尸，不同穿透值</h1>
-<p>base_dmg = 1000</p>
-<p>armor = 200</p>
-
-<p>print(f"僵尸护甲: {armor}")</p>
-<p>print(f"无穿透: {penetration_damage(base_dmg, armor, 0):.1f} 伤害")</p>
-<p>print(f"穿透50: {penetration_damage(base_dmg, armor, 50):.1f} 伤害")</p>
-<p>print(f"穿透100: {penetration_damage(base_dmg, armor, 100):.1f} 伤害")</p>
-<p>print(f"穿透200: {penetration_damage(base_dmg, armor, 200):.1f} 伤害 (完全穿透)")</p>
-</code></pre>
-
-<strong>输出</strong>：
-<pre><code>僵尸护甲: 200
-<p>无穿透: 428.6 伤害</p>
-<p>穿透50: 600.0 伤害 (提升40%)</p>
-<p>穿透100: 750.0 伤害 (提升75%)</p>
-<p>穿透200: 1000.0 伤害 (提升133%, 完全穿透)</p>
-</code></pre>
-
-<h3>4.3 穿透vs攻击力收益对比</h3>
-
-<pre><code>def compare_penetration_vs_atk(base_dmg, armor, pen_increase, atk_increase_pct):
-<p>    """</p>
-<p>    对比穿透和攻击力提升的收益</p>
-<p>    """</p>
-<p>    # 穿透收益</p>
-<p>    dmg_without_pen = penetration_damage(base_dmg, armor, 0)</p>
-<p>    dmg_with_pen = penetration_damage(base_dmg + pen_increase, armor, 0)  # 假设穿透转化为攻击力</p>
-<p>    pen_benefit = (dmg_with_pen / dmg_without_pen - 1) * 100</p>
+def calculate_player_shoot(base_atk, atk_bonus, crit_rate, crit_dmg, penetration, monster_armor):
+    """
+    主角射击伤害计算
+    """
+    # 基础伤害
+    base_dmg = base_atk * (1 + atk_bonus)
     
-<p>    # 攻击力收益</p>
-<p>    dmg_with_atk = base_dmg * (1 + atk_increase_pct)</p>
-<p>    dmg_with_atk_actual, _ = armor_reduction(dmg_with_atk, armor)</p>
-<p>    atk_benefit = (dmg_with_atk_actual / dmg_without_pen - 1) * 100</p>
+    # 穿透后护甲减伤
+    actual_armor = monster_armor * (1 - penetration)
+    armor_reduction = 1 - actual_armor
     
-<p>    return pen_benefit, atk_benefit</p>
-
-<h1>示例：高护甲僵尸</h1>
-<p>base_dmg = 1000</p>
-<p>armor = 300  # 高护甲</p>
-
-<p>pen_benefit, atk_benefit = compare_penetration_vs_atk(base_dmg, armor, 100, 0.50)</p>
-<p>print(f"对抗护甲{armor}僵尸:")</p>
-<p>print(f"穿透+100收益: {pen_benefit:.1f}%")</p>
-<p>print(f"攻击力+50%收益: {atk_benefit:.1f}%")</p>
-</code></pre>
-
-<strong>结论</strong>：
-<li>高护甲僵尸：穿透收益 >> 攻击力收益</li>
-<li>低护甲僵尸：攻击力收益更好</li>
-<li>游戏设计鼓励玩家混合搭配</li>
-
-<h2>五、主角技能伤害</h2>
-
-<h3>5.1 技能类型与伤害</h3>
-
-<table><thead><tr><th>技能类型</th><th>冷却时间</th></tr></thead><tbody><tr><td><strong>普通射击</strong></td><td>无</td></tr><tr><td><strong>榴弹射击</strong></td><td>5-10秒</td></tr><tr><td><strong>激光炮</strong></td><td>30秒</td></tr><tr><td><strong>核弹</strong></td><td>120秒</td></tr><tr><td><strong>空袭</strong></td><td>90秒</td></tr></tbody></table>
-<h3>5.2 技能伤害计算示例</h3>
-
-<pre><code>def skill_damage(base_atk, skill_mult, is_crit=False, crit_mult=2.5):
-<p>    """</p>
-<p>    技能伤害计算</p>
-<p>    """</p>
-<p>    dmg = base_atk * skill_mult</p>
+    # 穿透后伤害
+    dmg_after_armor = base_dmg * armor_reduction
     
-<p>    if is_crit:</p>
-<p>        dmg *= crit_mult</p>
+    # 暴击期望
+    crit_expectation = 1 * (1 - crit_rate) + crit_dmg * crit_rate
     
-<p>    return dmg</p>
-
-<h1>示例：核弹伤害</h1>
-<p>base_atk = 500</p>
-<p>nuke_mult = 10.0</p>
-
-<p>print(f"核弹基础伤害: {skill_damage(base_atk, nuke_mult):.0f}")</p>
-<p>print(f"核弹暴击伤害: {skill_damage(base_atk, nuke_mult, is_crit=True):.0f}")</p>
-</code></pre>
-
-<h3>5.3 技能升级收益</h3>
-
-<strong>升级公式</strong>：
-<pre><code>技能伤害 = 基础伤害 × (1 + 技能等级 × 升级增幅%)
-
-<p>升级增幅：通常10-20%每层</p>
-</code></pre>
-
-<strong>示例</strong>：
-<pre><code># 核弹从1级升到5级（每级+15%）
-<p>base_nuke = 5000</p>
-<p>upgrade_bonus = 0.15</p>
-
-<p>for lvl in range(1, 6):</p>
-<p>    dmg = base_nuke <em> (1 + (lvl-1) </em> upgrade_bonus)</p>
-<p>    print(f"核弹等级{lvl}: 伤害{dmg:.0f}")</p>
-</code></pre>
-
-<strong>输出</strong>：
-<pre><code>核弹等级1: 伤害5000
-<p>核弹等级2: 伤害5750 (+15%)</p>
-<p>核弹等级3: 伤害6500 (+30%)</p>
-<p>核弹等级4: 伤害7250 (+45%)</p>
-<p>核弹等级5: 伤害8000 (+60%)</p>
-</code></pre>
-
-<h2>六、连击与加成系统</h2>
-
-<h3>6.1 连击机制</h3>
-
-<strong>连击定义</strong>：在短时间内连续命中敌人
-
-<strong>连击加成公式</strong>：
-<pre><code>连击伤害 = 基础伤害 × (1 + 连击数 × 连击加成%/击)
-
-<p>连击加成%/击：通常1-2%</p>
-<p>最大连击：通常50-100连击</p>
-</code></pre>
-
-<strong>示例</strong>：
-<pre><code>def combo_damage(base_dmg, combo_count, combo_bonus_per_hit=0.015):
-<p>    """</p>
-<p>    连击伤害计算</p>
-<p>    """</p>
-<p>    combo_bonus = combo_count * combo_bonus_per_hit</p>
-<p>    dmg = base_dmg * (1 + combo_bonus)</p>
-<p>    return dmg</p>
-
-<h1>示例：50连击</h1>
-<p>base_dmg = 1000</p>
-<p>combo = 50</p>
-
-<p>dmg = combo_damage(base_dmg, combo)</p>
-<p>print(f"50连击伤害: {dmg:.0f} (提升{combo*1.5:.0f}%)")</p>
-</code></pre>
-
-<strong>输出</strong>：
-<pre><code>50连击伤害: 1750 (提升75%)
-</code></pre>
-
-<h3>6.2 连击维持与断连</h3>
-
-<strong>连击维持时间</strong>：
-<li>每次命中重置连击计时器</li>
-<li>通常2-5秒内需要再次命中</li>
-<li>断连后连击数归零</li>
-
-<strong>设计意图</strong>：
-<li>鼓励玩家持续命中</li>
-<li>防止挂机刷连击</li>
-<li>增加操作要求</li>
-
-<h2>七、随机波动与暴击显示</h2>
-
-<h3>7.1 伤害随机波动</h3>
-
-<strong>波动公式</strong>：
-<pre><code>实际伤害 = 计算伤害 × random(0.95, 1.05)
-</code></pre>
-
-<strong>设计意图</strong>：
-<li>增加不确定性</li>
-<li>防止精确计算带来的枯燥感</li>
-<li>模拟真实射击的偏差</li>
-
-<h3>7.2 暴击显示特效</h3>
-
-<strong>视觉反馈</strong>：
-<li>暴击时显示红色"暴击"字样</li>
-<li>伤害数字变大、变色</li>
-<li>播放特殊音效</li>
-
-<strong>设计意图</strong>：
-<li>增强玩家成就感</li>
-<li>让暴击更有感觉</li>
-<li>激励玩家堆暴击率</li>
-
-<h2>八、升级系统与伤害成长</h2>
-
-<h3>8.1 主角属性成长</h3>
-
-<table><thead><tr><th>属性</th><th>成长曲线</th></tr></thead><tbody><tr><td><strong>攻击力</strong></td><td>线性成长</td></tr><tr><td><strong>暴击率</strong></td><td>线性成长</td></tr><tr><td><strong>暴击伤害</strong></td><td>线性成长</td></tr><tr><td><strong>穿透</strong></td><td>阶梯成长</td></tr><tr><td><strong>攻击速度</strong></td><td>线性成长</td></tr></tbody></table>
-<h3>8.2 科技树加成</h3>
-
-<strong>科技树效果示例</strong>：
-<pre><code>- 机枪塔攻击力+30%
-<li>所有塔攻速+15%</li>
-<li>主角暴击率+10%</li>
-<li>技能冷却-20%</li>
-<li>穿透+50</li>
-</code></pre>
-
-<strong>设计意图</strong>：
-<li>提供长期养成目标</li>
-<li>让玩家有选择空间</li>
-<li>增加游戏深度</li></ul>
-
-<h2>九、设计意图深度分析</h2>
-
-<h3>9.1 为什么采用护甲-穿透系统？</h3>
-
-<p>1. <strong>策略深度</strong>：玩家需要平衡攻击力和穿透</p>
-<p>2. <strong>进度感</strong>：高护甲僵尸需要高级装备才能击败</p>
-<p>3. <strong>付费点</strong>：穿透属性可作为付费提升点</p>
-<p>4. <strong>平衡性</strong>：防止纯堆攻击力无脑通关</p>
-
-<h3>9.2 暴击系统的设计考量</h3>
-
-<p>1. <strong>爽快感</strong>：暴击带来的数字反馈极为重要</p>
-<p>2. <strong>随机性</strong>：增加不确定性，防止过度计算</p>
-<p>3. <strong>付费点</strong>：暴击率和暴击伤害是重要付费属性</p>
-<p>4. <strong>成长感</strong>：暴击率提升让玩家有进步感</p>
-
-<h3>9.3 连击系统的意义</h3>
-
-<p>1. <strong>操作要求</strong>：不能纯挂机，需要操作</p>
-<p>2. <strong>奖励机制</strong>：奖励持续命中的玩家</p>
-<p>3. <strong>视觉反馈</strong>：连击数增加带来成就感</p>
-<p>4. <strong>社交传播</strong>：高连击数截图分享</p>
-
-<h2>十、向僵尸开炮 vs DNF vs KOF 对比</h2>
-
-<table><thead><tr><th>维度</th><th>DNF</th></tr></thead><tbody><tr><td><strong>伤害来源</strong></td><td>装备+技能</td></tr><tr><td><strong>核心机制</strong></td><td>多乘区、数值养成</td></tr><tr><td><strong>策略重点</strong></td><td>装备搭配、副本机制</td></tr><tr><td><strong>随机性</strong></td><td>暴击(50%+)</td></tr><tr><td><strong>成长系统</strong></td><td>复杂多乘区</td></tr><tr><td><strong>时间尺度</strong></td><td>长期养成</td></tr></tbody></table>
-<h2>十一、数据来源与参考资料</h2>
-
-<p>1. <strong>游戏内实测</strong> - 本人游玩记录</p>
-<p>2. <strong>微信小游戏社区</strong> - 玩家攻略分享</p>
-<p>3. <strong>TapTap论坛</strong> - 游戏评测与数据分析</p>
-<p>4. <strong>B站UP主攻略</strong> - 视频实测数据</p>
-<p>5. <strong>游戏官方公告</strong> - 版本更新说明</p>
-<p>6. <strong>玩家QQ群</strong> - 经验分享与数据汇总</p>
-
-<h2>十二、完整伤害计算代码示例</h2>
-
-<pre><code>import random
-
-<p>class ZombieShooterDamageSystem:</p>
-<p>    def __init__(self):</p>
-<p>        self.dmg_variance = (0.95, 1.05)</p>
+    final_dmg = dmg_after_armor * crit_expectation
     
-<p>    def calculate_tower_damage(self, base_atk, atk_speed, level, tech_bonus):</p>
-<p>        """</p>
-<p>        防御塔伤害计算（DPS）</p>
-<p>        """</p>
-<p>        level_bonus = level * 0.08  # 每级8%</p>
-<p>        dps = base_atk <em> atk_speed </em> (1 + level_bonus) * (1 + tech_bonus)</p>
-<p>        return dps</p>
-    
-<p>    def calculate_armor_reduction(self, dmg, armor, penetration=0):</p>
-<p>        """</p>
-<p>        护甲减伤计算</p>
-<p>        """</p>
-<p>        effective_armor = max(armor - penetration, 0)</p>
-<p>        reduction = effective_armor / (effective_armor + 150)</p>
-<p>        reduction = min(reduction, 0.85)  # 最大85%减伤</p>
-        
-<p>        actual_dmg = dmg * (1 - reduction)</p>
-        
-<p>        # 随机波动</p>
-<p>        variance = random.uniform(*self.dmg_variance)</p>
-<p>        actual_dmg *= variance</p>
-        
-<p>        return actual_dmg, reduction</p>
-    
-<p>    def calculate_crit(self, dmg, crit_rate, crit_mult=2.5):</p>
-<p>        """</p>
-<p>        暴击判定</p>
-<p>        """</p>
-<p>        if random.random() < crit_rate:</p>
-<p>            return dmg * crit_mult, True</p>
-<p>        return dmg, False</p>
-    
-<p>    def calculate_skill_damage(self, base_atk, skill_mult, skill_level):</p>
-<p>        """</p>
-<p>        技能伤害计算</p>
-<p>        """</p>
-<p>        skill_bonus = (skill_level - 1) * 0.15  # 每级15%</p>
-<p>        return base_atk <em> skill_mult </em> (1 + skill_bonus)</p>
-    
-<p>    def calculate_combo_damage(self, base_dmg, combo_count):</p>
-<p>        """</p>
-<p>        连击加成</p>
-<p>        """</p>
-<p>        combo_bonus = combo_count * 0.015  # 每击1.5%</p>
-<p>        return base_dmg * (1 + combo_bonus)</p>
+    return final_dmg
 
-<h1>========== 使用示例 ==========</h1>
-<p>system = ZombieShooterDamageSystem()</p>
+# 使用示例
+print("=== 炮塔DPS对比 ===")
+print(f"机枪塔10级: {calculate_tower_dps(200, 10, 9, 0.30, 0.20, 2.0):.1f} DPS")
+print(f"激光炮10级: {calculate_tower_dps(800, 2, 9, 0.30, 0.10, 1.8):.1f} DPS")
+print(f"冰冻炮10级: {calculate_tower_dps(100, 5, 9, 0.30, 0.10, 1.8):.1f} DPS")
 
-<h1>1. 防御塔伤害</h1>
-<p>tower_dps = system.calculate_tower_damage(</p>
-<p>    base_atk=50, atk_speed=5.0, level=10, tech_bonus=0.30</p>
-<p>)</p>
-<p>print(f"防御塔DPS: {tower_dps:.1f}")</p>
-
-<h1>2. 对抗僵尸（有护甲）</h1>
-<p>base_dmg = 1000</p>
-<p>zombie_armor = 200</p>
-<p>penetration = 100</p>
-
-<p>dmg, reduction = system.calculate_armor_reduction(base_dmg, zombie_armor, penetration)</p>
-<p>print(f"\n对抗护甲{zombie_armor}僵尸（穿透{penetration}）:")</p>
-<p>print(f"护甲减伤: {reduction*100:.1f}%")</p>
-<p>print(f"实际伤害: {dmg:.1f}")</p>
-
-<h1>3. 暴击测试</h1>
-<p>crit_rate = 0.25</p>
-<p>crit_dmg, is_crit = system.calculate_crit(base_dmg, crit_rate)</p>
-<p>print(f"\n暴击测试（暴击率25%）:")</p>
-<p>print(f"是否暴击: {is_crit}")</p>
-<p>print(f"伤害: {crit_dmg:.1f}")</p>
-
-<h1>4. 技能伤害</h1>
-<p>skill_dmg = system.calculate_skill_damage(</p>
-<p>    base_atk=500, skill_mult=10.0, skill_level=5</p>
-<p>)</p>
-<p>print(f"\n核弹技能伤害（5级）: {skill_dmg:.0f}")</p>
-
-<h1>5. 连击加成</h1>
-<p>combo_dmg = system.calculate_combo_damage(base_dmg, combo_count=50)</p>
-<p>print(f"\n50连击加成后伤害: {combo_dmg:.0f} (提升50<em>1.5={50</em>1.5:.0f}%)")</p>
+print("\n=== 主角射击伤害 ===")
+print(f"打普通僵尸: {calculate_player_shoot(300, 0.5, 0.30, 2.5, 0.3, 0.0):.1f}")
+print(f"打铁桶僵尸: {calculate_player_shoot(300, 0.5, 0.30, 2.5, 0.3, 0.3):.1f}")
+print(f"打BOSS僵尸: {calculate_player_shoot(300, 0.5, 0.30, 2.5, 0.3, 0.5):.1f}")
 </code></pre>
+</div>
 
-<h2>十三、后续研究方向</h2>
+<h2>十、伤害优化策略总结</h2>
 
-<p>1. 详细测试各等级僵尸的护甲值</p>
-<p>2. 分析不同塔的DPS效率</p>
-<p>3. 研究技能升级的最优路径</p>
-<p>4. 对比不同付费套餐的伤害提升</p>
-<p>5. 分析玩家行为对伤害输出的影响</p>
+<table>
+<thead>
+  <tr><th>策略</th><th>效果</th><th>优先级</th></tr>
+</thead>
+<tbody>
+  <tr><td><strong>堆暴击率</strong></td><td>DPS提升20-50%</td><td>⭐⭐⭐⭐⭐</td></tr>
+  <tr><td><strong>升级穿透</strong></td><td>对高护甲目标提升30-100%</td><td>⭐⭐⭐⭐</td></tr>
+  <tr><td><strong>炮塔组合</strong></td><td>冰冻+机枪提升50%+</td><td>⭐⭐⭐⭐</td></tr>
+  <tr><td><strong>技能时机</strong></td><td>清场效率提升200%+</td><td>⭐⭐⭐⭐⭐</td></tr>
+  <tr><td><strong>连击维持</strong></td><td>持续输出提升300%+</td><td>⭐⭐⭐⭐</td></tr>
+</tbody>
+</table>
 
-<p>---</p>
+<h2>十一、后续研究方向</h2>
 
-<strong>文档版本</strong>：v1.0  
-<strong>最后更新</strong>：2026-05-25  
-<strong>关联文档</strong>：01-dnf-damage-overview.md, 02-dnf-formula-analysis.md, 03-kof-damage-system.md  
-<strong>下一步</strong>：三类游戏伤害机制对比分析（见 05-comparative-analysis.md）
+<p>1. ✅ 详细测试各炮塔具体数值（本章已完成）</p>
+<p>2. ✅ 分析不同僵尸护甲机制（本章已完成）</p>
+<p>3. 研究技能冷却最优配置</p>
+<p>4. 分析不同关卡推荐炮塔组合</p>
+<p>5. 对比不同玩家策略的伤害效率</p>
+<p>6. 添加更多武器实例（火焰喷射器、雷电塔等）</p>
+
+<hr style="border-color: #2a2a4a; margin: 30px 0;">
+
+<p><strong>文档版本</strong>：v2.0（深化版，新增武器实例）  </p>
+<p><strong>最后更新</strong>：2026-05-25  </p>
+<p><strong>下一步</strong>：三类游戏横向对比（见 05-comparative-analysis.html）</p>
 
 </div>
 </body>
