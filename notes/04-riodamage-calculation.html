@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>第4章：DNF 70版本柔道（暴风眼）伤害计算实例</title>
+  <style>
+    body { background: #1a1a2e; color: #e0e0e0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; padding: 20px; line-height: 1.8; }
+    .container { max-width: 950px; margin: 0 auto; }
+    h1 { color: #e94560; border-bottom: 2px solid #2a2a4a; padding-bottom: 10px; font-size: 28px; }
+    h2 { color: #f5a623; border-bottom: 1px solid #2a2a4a; padding-bottom: 8px; margin-top: 30px; font-size: 22px; }
+    h3 { color: #7fdbca; margin-top: 20px; font-size: 18px; }
+    h4 { color: #a8e6cf; margin-top: 15px; font-size: 16px; }
+    .card { background: #16213e; padding: 20px; border-radius: 10px; margin: 15px 0; }
+    pre { background: #0f0f1a; padding: 15px; border-radius: 8px; overflow-x: auto; color: #7fdbca; font-family: "Courier New", monospace; font-size: 13px; line-height: 1.6; }
+    code { background: #0f0f1a; padding: 2px 6px; border-radius: 4px; color: #7fdbca; font-size: 13px; }
+    table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 14px; }
+    th, td { padding: 10px; border: 1px solid #2a2a4a; text-align: left; }
+    th { background: #0f3460; color: #fff; }
+    tr:nth-child(even) { background: #1a1a2e; }
+    a { color: #e94560; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul, ol { padding-left: 20px; }
+    li { margin: 6px 0; }
+    blockquote { border-left: 3px solid #e94560; margin: 10px 0; padding: 8px 15px; background: #16213e; border-radius: 0 8px 8px 0; }
+    .nav { margin-bottom: 20px; font-size: 14px; }
+    .nav a { margin-right: 10px; }
+    .highlight { color: #e94560; font-weight: bold; }
+    .class-card { background: #1a1a2e; border-left: 4px solid #e94560; padding: 15px; margin: 10px 0; border-radius: 0 8px 8px 0; }
+    .formula-box { background: #0f0f1a; border: 1px solid #2a2a4a; padding: 15px; border-radius: 8px; margin: 10px 0; }
+    .example-box { background: #16213e; border: 1px dashed #f5a623; padding: 15px; border-radius: 8px; margin: 15px 0; }
+    .tag { display: inline-block; background: #0f3460; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 12px; margin-right: 5px; }
+    .version-banner { background: #e94560; color: #fff; padding: 10px 15px; border-radius: 8px; margin: 10px 0; font-size: 14px; }
+    .damage-highlight { color: #e94560; font-weight: bold; font-size: 15px; }
+    .combo-arrow { color: #f5a623; font-weight: bold; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="nav">
+    <a href="00-index.html">📋 索引</a>
+    <a href="01-dnf-damage-overview.html">🎯 DNF总览</a>
+    <a href="02-dnf-formula-analysis.html">📐 DNF公式</a>
+    <a href="03-ashura-damage-calculation.html">👁️ 阿修罗</a>
+    <a href="04-riodamage-calculation.html">🥋 柔道实例</a>
+    <a href="03-kof-damage-system.html">👊 拳皇</a>
+    <a href="04-zombie-shooter-damage.html">🧟 僵尸开炮</a>
+    <a href="05-comparative-analysis.html">📊 对比</a>
+  </div>
+
+<h1>🥋 第4章：DNF 70版本柔道（暴风眼）伤害计算实例</h1>
+
+<div class="version-banner">
+  ⚠️ 版本锁定：本文件仅研究 <strong>DNF 70版本末期</strong>，不涉及60/80/85/90+后续版本<br>
+  📌 柔道 = 格斗家女转职（Lv18），以<strong>物理固伤抓取</strong>为核心输出方式
+</div>
+
+<h2>一、柔道职业定位</h2>
+
+<div class="card">
+  <p><strong>转职路线</strong>：格斗家（女） → 柔道（Lv18转职）</p>
+  <p><strong>输出类型</strong>：物理固伤为主 + 物理百分比为辅</p>
+  <p><strong>70版本特色</strong></p>
+  <ul>
+    <li><strong>抓取机制</strong>：抓取技能无视防御、无视无敌（部分），是柔道核心特色</li>
+    <li><strong>摔技连招</strong>：背摔→折颈→抛投→螺旋彗星落，70版本柔道连招体系成熟</li>
+    <li><strong>异界E2「疾风追击」</strong>：抛投等级+2，螺旋彗星落等级+1</li>
+    <li><strong>异界E3「死亡之握」</strong>：死亡之握等级+1，抓取成功率+10%</li>
+    <li><strong>武器多样性</strong>：法杖（固伤高）、棍棒（百分比高）、拳套（攻速快）</li>
+  </ul>
+</div>
+
+<h2>二、柔道核心技能分类</h2>
+
+<div class="card">
+<h3>🔴 物理固伤技能（核心输出）</h3>
+<table>
+<thead><tr><th>技能</th><th>类型</th><th>70版本固伤基数</th><th>说明</th></tr></thead>
+<tbody>
+  <tr><td><strong>抛投</strong></td><td>主动</td><td>8500×1.18=10,030</td><td>Lv18+E2+2=20级，抓取后抛掷，固伤核心</td></tr>
+  <tr><td><strong>螺旋彗星落</strong></td><td>主动</td><td>12000×1.18=14,160（多段）</td><td>Lv20+，抓取后旋转摔打，多段固伤</td></tr>
+  <tr><td><strong>背摔</strong></td><td>主动</td><td>4200×1.18=4,956</td><td>Lv18，基础抓取技能，连招起手</td></tr>
+  <tr><td><strong>折颈术</strong></td><td>主动</td><td>5600×1.18=6,608</td><td>Lv18，抓取+眩晕，控制核心</td></tr>
+  <tr><td><strong>死亡之握</strong></td><td>主动</td><td>15000×1.18=17,700</td><td>Lv18，大范围抓取+固伤，E3核心</td></tr>
+  <tr><td><strong>空斩打</strong></td><td>被动</td><td>被动：抓取技能伤害+5%/级</td><td>满级Lv10=+50%抓取技能伤害</td></tr>
+  <tr><td><strong>强力肘击</strong></td><td>主动</td><td>3800×1.18=4,484</td><td>Lv18，短CD固伤补刀</td></tr>
+</tbody>
+</table>
+
+<h3>🔵 物理百分比技能</h3>
+<table>
+<thead><tr><tr><th>技能</th><th>类型</th><th>70版本倍率</th><th>说明</th></tr></thead>
+<tbody>
+  <tr><td><strong>雷霆膝击</strong></td><td>主动</td><td>450%</td><td>Lv18，膝击百分比，可触发感电</td></tr>
+  <tr><td><strong>抛投（第二段）</strong></td><td>主动</td><td>200%</td><td>抛投落地后的百分比追加伤害</td></tr>
+  <tr><td><strong>螺旋彗星落（落地）</strong></td><td>主动</td><td>300%</td><td>旋转结束落地时的百分比伤害</td></tr>
+  <tr><td><strong>碎骨</strong></td><td>主动</td><td>380%</td><td>Lv18，百分比摔技</td></tr>
+</tbody>
+</table>
+
+<h3>🟡 辅助/控制技能</h3>
+<table>
+<thead><tr><th>技能</th><th>作用</th></tr></thead>
+<tbody>
+  <tr><td><strong>抓取强化</strong></td><td>被动：抓取成功率+15%，抓取范围+20%</td></tr>
+  <tr><td><strong>摔技强化</strong></td><td>被动：摔技伤害+10%/级，满级+50%</td></tr>
+  <tr><td><strong>暴风眼</strong></td><td>觉醒被动：抓取技能CD-10%，伤害+10%</td></tr>
+  <tr><td><strong>狂风</strong></td><td>觉醒主动：大范围抓取+百分比，CD长</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>三、70版本柔道核心机制详解</h2>
+
+<div class="card">
+<h3>🎯 抓取机制原理</h3>
+<blockquote>
+  <p>柔道的抓取技能在70版本具有<strong>无视防御</strong>的特性：</p>
+  <ul>
+    <li><strong>无视物理防御</strong>：抓取技能伤害不受目标物理防御减伤影响</li>
+    <li><strong>无视部分无敌</strong>：部分抓取技能可穿透无敌状态（如死亡之握）</li>
+    <li><strong>强制抓取</strong>：对可抓取目标100%命中（抓取强化被动加成）</li>
+    <li><strong>抓取状态</strong>：被抓取目标无法行动、无法使用技能、无法闪避</li>
+  </ul>
+</blockquote>
+
+<h3>📐 抓取技能伤害公式</h3>
+<pre><code>抓取技能最终伤害 = 基础固伤 × (1 + 独立/1000) × (1 + 力量/250) × 技能加成 × 空斩打加成 × 摔技强化加成
+
+关键区别：
+- 抓取技能<strong>不计算防御减伤</strong>（无视防御）
+- 固伤技能正常计算独立攻击力
+- 百分比技能正常计算物理攻击力
+</code></pre>
+
+<h3>⚡ 摔技连招系统</h3>
+<pre><code>经典连招：背摔 → 折颈术 → 抛投 → 螺旋彗星落
+
+1. 背摔（起手抓取）：4,956固伤 + 抓取状态
+2. 折颈术（控制）：6,608固伤 + 眩晕3秒
+3. 抛投（核心输出）：10,030固伤 + 200%百分比追加
+4. 螺旋彗星落（爆发）：14,160固伤（多段）+ 300%百分比落地
+
+连招总伤害 ≈ 各技能伤害之和（抓取状态下无缝衔接）
+</code></pre>
+</div>
+
+<h2>四、70版本柔道典型面板配置</h2>
+
+<div class="card">
+<h3>⚙️ 法杖流（固伤爆发）</h3>
+<table>
+<thead><tr><th>属性</th><th>数值</th><th>来源</th></tr></thead>
+<tbody>
+  <tr><td><strong>力量</strong></td><td>950</td><td>基础500 + 远古套（200）+ 附魔（100）+ 粉首饰（80）+ 技能加成（70）</td></tr>
+  <tr><td><strong>独立攻击力</strong></td><td>1150</td><td>70粉法杖「龙纹」+12（950）+ 附魔独立（200）</td></tr>
+  <tr><td><strong>物理攻击力</strong></td><td>1800</td><td>影响百分比技能（雷霆膝击、碎骨）</td></tr>
+  <tr><td><strong>物理暴击率</strong></td><td>55%</td><td>基础3% + 暴击鞋（5%）+ 暴击项链（5%）+ 技能暴击（42%）</td></tr>
+  <tr><td><strong>武器强化</strong></td><td>+12</td><td>70粉法杖「龙纹」，强化+12</td></tr>
+  <tr><td><strong>异界套装</strong></td><td>E2「疾风追击」6件</td><td>抛投+2，螺旋彗星落+1，死亡之握+1</td></tr>
+</tbody>
+</table>
+
+<h3>⚙️ 棍棒流（百分比爆发）</h3>
+<table>
+<thead><tr><th>属性</th><th>数值</th><th>来源</th></tr></thead>
+<tbody>
+  <tr><td><strong>力量</strong></td><td>900</td><td>略低于法杖流</td></tr>
+  <tr><td><strong>独立攻击力</strong></td><td>1050</td><td>70粉棍棒+12</td></tr>
+  <tr><td><strong>物理攻击力</strong></td><td>2200</td><td>棍棒物理攻击力高于法杖</td></tr>
+  <tr><td><strong>物理暴击率</strong></td><td>55%</td><td>同法杖流</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>五、伤害计算实例</h2>
+
+<h3>实例1：抛投（抓取固伤核心）- 完整计算</h3>
+
+<div class="example-box">
+<pre><code>【技能参数（70版本，E2+2后Lv20）】
+- 技能固伤基数：8500 × 1.18 = 10,030
+- 第二段百分比：200%（抛投落地追加）
+- 抓取特性：无视防御
+- CD：约12秒
+
+【角色面板（法杖流）】
+- 力量：950
+- 独立攻击力：1150
+- 物理暴击率：55%
+- 空斩打被动：+50%抓取技能伤害
+- 摔技强化被动：+30%摔技伤害（Lv6）
+
+【逐步计算】
+1. 基础固伤 = 10,030
+
+2. 独立攻击力加成：
+   独立系数 = 1 + 独立/1000 = 1 + 1150/1000 = 2.15
+   独立后伤害 = 10,030 × 2.15 = 21,565
+
+3. 力量加成：
+   力量系数 = 1 + 力量/250 = 1 + 950/250 = 4.8
+   力量后伤害 = 21,565 × 4.8 = 103,512
+
+4. 空斩打加成（抓取技能+50%）：
+   空斩打后伤害 = 103,512 × 1.50 = 155,268
+
+5. 摔技强化加成（+30%）：
+   摔技后伤害 = 155,268 × 1.30 = 201,848
+
+   ⚠️ 抓取技能无视防御，无需计算防御减伤！
+
+6. 暴击期望：
+   暴击倍率 = 150%（70版本无额外暴伤装备）
+   暴击期望系数 = (1 - 0.55) × 1.0 + 0.55 × 1.5 = 1.325
+   暴击期望伤害 = 201,848 × 1.325 = 267,449
+
+7. 第二段百分比追加（200%）：
+   基础百分比 = 1800 × 200% = 3,600
+   力量加成 = 3,600 × 4.8 = 17,280
+   暴击期望 = 17,280 × 1.325 = 22,896
+
+💡 抛投第一发暴击期望：267,449
+💡 抛投第二段暴击期望：22,896
+💡 抛投总伤害（暴击期望）：267,449 + 22,896 = 290,345
+
+【结论】
+抛投是柔道70版本核心输出技能，单发约29万暴击期望。
+抓取无视防御，对高防BOSS收益极高。
+</code></pre>
+</div>
+
+<h3>实例2：螺旋彗星落（多段固伤爆发）</h3>
+
+<div class="example-box">
+<pre><code>【技能参数（70版本，Lv20）】
+- 技能固伤基数：12000 × 1.18 = 14,160
+- 段数：约6段（旋转摔打）
+- 每段固伤：约2,360
+- 落地百分比：300%
+- CD：约15秒
+
+【逐步计算（固伤部分）】
+1. 基础固伤 = 14,160
+
+2. 独立加成 = 14,160 × 2.15 = 30,444
+
+3. 力量加成 = 30,444 × 4.8 = 146,131
+
+4. 空斩打加成 = 146,131 × 1.50 = 219,197
+
+5. 摔技强化加成 = 219,197 × 1.30 = 284,956
+
+6. 暴击期望 = 284,956 × 1.325 = 377,567
+
+💡 螺旋彗星落固伤部分暴击期望：377,567
+
+【落地百分比追加】
+1. 基础百分比 = 1800 × 300% = 5,400
+2. 力量加成 = 5,400 × 4.8 = 25,920
+3. 暴击期望 = 25,920 × 1.325 = 34,344
+
+💡 螺旋彗星落总伤害（暴击期望）：377,567 + 34,344 = 411,911
+
+【结论】
+螺旋彗星落是柔道单体爆发天花板，约41万暴击期望。
+多段击打适合触发武器特效，大范围适合群怪。
+</code></pre>
+</div>
+
+<h3>实例3：死亡之握（大范围抓取）</h3>
+
+<div class="example-box">
+<pre><code>【技能参数（70版本，E3+1后Lv19）】
+- 技能固伤基数：15000 × 1.18 = 17,700
+- 范围：超大（全屏抓取）
+- 特性：穿透无敌、100%抓取率
+- CD：约30秒（觉醒技能级别）
+
+【逐步计算】
+1. 基础固伤 = 17,700
+
+2. 独立加成 = 17,700 × 2.15 = 38,055
+
+3. 力量加成 = 38,055 × 4.8 = 182,664
+
+4. 空斩打加成 = 182,664 × 1.50 = 273,996
+
+5. 摔技强化加成 = 273,996 × 1.30 = 356,195
+
+6. 暴击期望 = 356,195 × 1.325 = 471,958
+
+💡 死亡之握暴击期望：471,958
+
+【战术价值】
+- 死亡之握是柔道70版本最强控制技能
+- 全屏抓取+无视无敌，可用于打断BOSS技能
+- E3「死亡之握」套装是柔道毕业装之一
+</code></pre>
+</div>
+
+<h3>实例4：雷霆膝击（百分比技能）</h3>
+
+<div class="example-box">
+<pre><code>【技能参数（70版本，Lv18）】
+- 技能倍率：450%
+- 属性：物理百分比
+- 特性：可触发感电
+- CD：约10秒
+
+【逐步计算】
+1. 基础百分比 = 1800 × 450% = 8,100
+
+2. 力量加成 = 8,100 × 4.8 = 38,880
+
+3. 暴击期望 = 38,880 × 1.325 = 51,516
+
+💡 雷霆膝击暴击期望：51,516
+
+【感电追加】
+- 雷霆膝击可触发感电（类似阿修罗）
+- 感电伤害约800/次，持续3秒（6次）
+- 感电总追加：约800 × 6 × 1.325 = 6,360
+
+💡 雷霆膝击+感电总伤害：51,516 + 6,360 = 57,876
+</code></pre>
+</div>
+
+<h3>实例5：摔技连招完整计算（背摔→折颈→抛投→螺旋）</h3>
+
+<div class="example-box">
+<pre><code>【连招：背摔 → 折颈术 → 抛投 → 螺旋彗星落】
+
+1. 背摔（Lv18）：
+   基础固伤 = 4,200 × 1.18 = 4,956
+   独立加成 = 4,956 × 2.15 = 10,655
+   力量加成 = 10,655 × 4.8 = 51,144
+   空斩打 = 51,144 × 1.50 = 76,716
+   摔技强化 = 76,716 × 1.30 = 99,731
+   暴击期望 = 99,731 × 1.325 = 132,144
+
+2. 折颈术（Lv18）：
+   基础固伤 = 5,600 × 1.18 = 6,608
+   独立加成 = 6,608 × 2.15 = 14,207
+   力量加成 = 14,207 × 4.8 = 68,194
+   空斩打 = 68,194 × 1.50 = 102,291
+   摔技强化 = 102,291 × 1.30 = 132,978
+   暴击期望 = 132,978 × 1.325 = 176,196
+
+3. 抛投（Lv20，含E2+2）：
+   暴击期望 = 267,449（见实例1）
+
+4. 抛投第二段百分比：
+   暴击期望 = 22,896（见实例1）
+
+5. 螺旋彗星落（Lv20）：
+   暴击期望 = 411,911（见实例2）
+
+【连招总伤害】
+总伤害 = 132,144 + 176,196 + 267,449 + 22,896 + 411,911
+       = 1,010,596
+
+💡 摔技连招总暴击期望：约101万
+💡 连招时间约5-8秒，是柔道单体爆发核心套路
+</code></pre>
+</div>
+
+<h2>六、70版本柔道装备搭配推荐</h2>
+
+<div class="card">
+<h3>🏆 法杖流毕业装备</h3>
+<table>
+<thead><tr><th>部位</th><th>推荐装备</th><th>作用</th></tr></thead>
+<tbody>
+  <tr><td><strong>武器</strong></td><td>70粉法杖「龙纹」+12/+13</td><td>高独立+力量附魔槽</td></tr>
+  <tr><td><strong>头盔</strong></td><td>远古套「幻影之怒」或CC套</td><td>力量/暴击</td></tr>
+  <tr><td><strong>项链</strong></td><td>远古套「幻影之怒」或「悲鸣项链」</td><td>力量/暴击</td></tr>
+  <tr><td><strong>手镯</strong></td><td>远古套「幻影之怒」或「灵犀之心」</td><td>力量</td></tr>
+  <tr><td><strong>戒指</strong></td><td>远古套「幻影之怒」或「艾尔文防线」</td><td>力量</td></tr>
+  <tr><td><strong>耳环</strong></td><td>粉耳环「力量之源」</td><td>力量+15</td></tr>
+  <tr><td><strong>衣服/裤子/上衣</strong></td><td>E2「疾风追击」</td><td>抛投+2，彗星落+1</td></tr>
+  <tr><td><strong>鞋子</strong></td><td>E2「疾风追击」+ 暴击附魔</td><td>暴击+移动</td></tr>
+  <tr><td><strong>腰带</strong></td><td>E2「疾风追击」</td><td>体力/回避</td></tr>
+</tbody>
+</table>
+
+<h3>🔥 附魔推荐</h3>
+<table>
+<thead><tr><th>部位</th><th>附魔</th><th>来源</th></tr></thead>
+<tbody>
+  <tr><td>武器</td><td>力量 +25</td><td>春节宝珠/活动</td></tr>
+  <tr><td>首饰</td><td>力量 +12~15</td><td>春节宝珠</td></tr>
+  <tr><td>独立</td><td>独立攻击力 +200</td><td>春节宝珠</td></tr>
+  <tr><td>鞋子</td><td>物理暴击 +5%</td><td>春节宝珠</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>七、柔道70版本伤害特点总结</h2>
+
+<div class="card">
+<ol>
+  <li><strong>抓取无视防御</strong>：柔道最大优势，对高防BOSS收益远超其他职业</li>
+  <li><strong>固伤为主，百分比为辅</strong>：抛投、彗星落、死亡之握为核心，雷霆膝击/碎骨为补刀</li>
+  <li><strong>连招体系成熟</strong>：背摔→折颈→抛投→彗星落是70版本柔道标准连招</li>
+  <li><strong>控制能力强</strong>：折颈眩晕、死亡之握全屏抓取，副本控制需求高</li>
+  <li><strong>异界套装依赖</strong>：E2「疾风追击」是抛投流核心，E3「死亡之握」是控制流核心</li>
+  <li><strong>空斩打被动关键</strong>：满级+50%抓取技能伤害，是柔道伤害计算的核心乘区</li>
+</ol>
+
+<h3>💡 伤害计算公式速查</h3>
+<pre><code>抓取固伤最终伤害 = 基础固伤 × (1 + 独立/1000) × (1 + 力量/250) × 空斩打加成 × 摔技强化加成
+
+注意：抓取技能<strong>无视防御减伤</strong>！
+
+百分比最终伤害 = 基础倍率 × 物理攻击 × (1 + 力量/250) × 防御减伤 × 暴击期望
+
+防御减伤 = 300 / (300 + 目标防御)
+暴击期望系数 = (1 - 暴击率) + 暴击率 × 1.5
+</code></pre>
+</div>
+
+<hr style="border-color: #2a2a4a; margin: 30px 0;">
+<p style="color: #7fdbca; font-size: 13px;">
+  📌 文档版本：v1.0（70版本柔道完整伤害实例）<br>
+  📅 创建日期：2026-05-28<br>
+  🔗 关联文档：<a href="01-dnf-damage-overview.html">DNF总览</a> | <a href="02-dnf-formula-analysis.html">公式分析</a> | <a href="03-ashura-damage-calculation.html">阿修罗</a>
+</p>
+</div>
+</body>
+</html>
