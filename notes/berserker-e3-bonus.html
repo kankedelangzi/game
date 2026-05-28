@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>狂战士·异界E3套装（血染江山）加成数值表</title>
+<style>
+  :root { --bg: #1a1a2e; --card: #16213e; --accent: #e94560; --text: #e0e0e0; --muted: #888; --green: #4ecca3; --yellow: #f39c12; --blue: #3498db; --purple: #9b59b6; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; padding: 2rem; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  h1 { font-size: 1.8rem; color: var(--accent); margin-bottom: .25rem; }
+  .subtitle { color: var(--muted); font-size: .9rem; margin-bottom: 2rem; }
+  h2 { font-size: 1.3rem; color: var(--green); margin: 2rem 0 1rem; padding-bottom: .3rem; border-bottom: 1px solid #333; }
+  h3 { font-size: 1.1rem; color: var(--yellow); margin: 1.5rem 0 .75rem; }
+  .card { background: var(--card); border-radius: 8px; padding: 1.25rem; margin: 1rem 0; border-left: 3px solid var(--accent); }
+  .card.green { border-left-color: var(--green); }
+  .card.yellow { border-left-color: var(--yellow); }
+  .card.blue { border-left-color: var(--blue); }
+  .card.purple { border-left-color: var(--purple); }
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: .9rem; }
+  th, td { padding: .6rem .8rem; text-align: left; border-bottom: 1px solid #333; }
+  th { background: #0f3460; color: var(--accent); }
+  tr:hover { background: #1f4068; }
+  .formula { background: #0f3460; padding: 1rem 1.25rem; border-radius: 6px; font-family: 'Consolas', monospace; font-size: .95rem; margin: 1rem 0; border: 1px solid #333; }
+  .formula code { color: var(--yellow); }
+  .badge { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: .75rem; font-weight: bold; margin-right: 6px; }
+  .badge-ok { background: #1a5c2e; color: var(--green); }
+  .badge-warn { background: #5c4a1a; color: var(--yellow); }
+  .badge-danger { background: #5c1a1a; color: var(--accent); }
+  .badge-purple { background: #4a1a4a; color: var(--purple); }
+  .highlight { color: var(--accent); font-weight: bold; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1rem 0; }
+  .stat { background: var(--card); padding: 1rem; border-radius: 6px; text-align: center; }
+  .stat .num { font-size: 1.8rem; font-weight: bold; color: var(--accent); }
+  .stat .label { font-size: .8rem; color: var(--muted); }
+  ul { padding-left: 1.5rem; margin: .5rem 0; }
+  li { margin: .3rem 0; }
+  .note { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: .5rem; }
+  .progress-bar { height: 8px; background: #333; border-radius: 4px; overflow: hidden; margin: .5rem 0; }
+  .progress-fill { height: 100%; border-radius: 4px; }
+  .compare-table { display: flex; gap: 1rem; margin: 1rem 0; }
+  .compare-item { flex: 1; }
+  .compare-item h4 { color: var(--yellow); margin-bottom: .5rem; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>🩸 狂战士·异界E3套装（血染江山）加成数值表</h1>
+<p class="subtitle">DNF 70版本末期 | 任务14 | 2026-05-28 | <span class="badge badge-purple">加成分析</span></p>
+
+<!-- ========== 核心结论 ========== -->
+<h2>📊 核心结论速览</h2>
+<div class="grid">
+  <div class="stat">
+    <div class="num">+30%</div>
+    <div class="label">核心技能加成</div>
+  </div>
+  <div class="stat">
+    <div class="num">+15%</div>
+    <div class="label">出血加成</div>
+  </div>
+  <div class="stat">
+    <div class="num">6件</div>
+    <div class="label">激活阈值</div>
+  </div>
+  <div class="stat">
+    <div class="num">E2 > E3</div>
+    <div class="label">技能加成对比</div>
+  </div>
+</div>
+
+<!-- ========== E3套装基础属性 ========== -->
+<h2>📦 E3血染江山套装基础属性</h2>
+<div class="card purple">
+  <table>
+    <tr><th>部位</th><th>名称</th><th>物理攻击</th><th>力量</th><th>独立攻击</th><th>暴击率</th></tr>
+    <tr><td>武器</td><td>血染战斧</td><td>+156</td><td>+62</td><td>+18</td><td>+1%</td></tr>
+    <tr><td>上衣</td><td>血染战甲</td><td>+88</td><td>+45</td><td>+12</td><td>+1%</td></tr>
+    <tr><td>下装</td><td>血染战裤</td><td>+88</td><td>+45</td><td>+12</td><td>+1%</td></tr>
+    <tr><td>头肩</td><td>血染护肩</td><td>+52</td><td>+28</td><td>+8</td><td>+1%</td></tr>
+    <tr><td>腰带</td><td>血染腰带</td><td>+36</td><td>+18</td><td>+5</td><td>+1%</td></tr>
+    <tr><td>鞋子</td><td>血染战靴</td><td>+36</td><td>+18</td><td>+5</td><td>+1%</td></tr>
+    <tr><td><b>套装合计</b></td><td></td><td><b>+456</b></td><td><b>+216</b></td><td><b>+60</b></td><td><b>+6%</b></td></tr>
+  </table>
+  <p class="note">注：以上为70版本末期E3套装基础属性，不含强化/增幅加成</p>
+</div>
+
+<!-- ========== 套装技能加成表 ========== -->
+<h2>⚔️ E3血染江山套装技能加成表</h2>
+<div class="card">
+  <table>
+    <thead>
+      <tr>
+        <th>技能名称</th>
+        <th>技能类型</th>
+        <th>E3加成</th>
+        <th>E2加成</th>
+        <th>对比结论</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>十字斩</td>
+        <td>物理固伤</td>
+        <td class="highlight">+30%</td>
+        <td>+35%</td>
+        <td>E2优先</td>
+      </tr>
+      <tr>
+        <td>崩山击</td>
+        <td>物理固伤</td>
+        <td class="highlight">+30%</td>
+        <td>+35%</td>
+        <td>E2优先</td>
+      </tr>
+      <tr>
+        <td>血气之刃</td>
+        <td>物理固伤</td>
+        <td class="highlight">+30%</td>
+        <td>+35%</td>
+        <td>E2优先</td>
+      </tr>
+      <tr>
+        <td>怒气爆发</td>
+        <td>物理固伤</td>
+        <td class="highlight">+30%</td>
+        <td>+35%</td>
+        <td>E2优先</td>
+      </tr>
+      <tr>
+        <td>嗜魂之手</td>
+        <td>物理固伤</td>
+        <td class="highlight">+30%</td>
+        <td>+35%</td>
+        <td>E2优先</td>
+      </tr>
+      <tr>
+        <td>崩山裂地斩</td>
+        <td>觉醒百分比</td>
+        <td class="highlight">+30%</td>
+        <td>+35%</td>
+        <td>E2优先</td>
+      </tr>
+      <tr>
+        <td>嗜魂封魔斩</td>
+        <td>觉醒百分比</td>
+        <td class="highlight">+30%</td>
+        <td>+35%</td>
+        <td>E2优先</td>
+      </tr>
+      <tr>
+        <td>死亡左眼</td>
+        <td>被动</td>
+        <td class="highlight">+30%</td>
+        <td>+35%</td>
+        <td>E2优先</td>
+      </tr>
+      <tr>
+        <td>血气分流</td>
+        <td>被动</td>
+        <td class="highlight">+30%</td>
+        <td>+35%</td>
+        <td>E2优先</td>
+      </tr>
+      <tr>
+        <td>暴走</td>
+        <td>增益</td>
+        <td class="highlight">+30%</td>
+        <td>+35%</td>
+        <td>E2优先</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="note">⚠️ 所有核心技能统一+30%加成，与E2的+35%相比略低</p>
+</div>
+
+<!-- ========== 出血加成对比 ========== -->
+<h2>🩸 E3出血加成 vs E2出血加成</h2>
+<div class="card green">
+  <table>
+    <thead>
+      <tr>
+        <th>加成来源</th>
+        <th>加成数值</th>
+        <th>叠加方式</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>出血精通（Lv10）</td>
+        <td>+10%</td>
+        <td>加法叠加</td>
+      </tr>
+      <tr>
+        <td>血气爆发（Lv10）</td>
+        <td>+20%</td>
+        <td>加法叠加</td>
+      </tr>
+      <tr>
+        <td>E2血之狂暴（6件）</td>
+        <td>+10%</td>
+        <td>加法叠加</td>
+      </tr>
+      <tr>
+        <td>E3血染江山（6件）</td>
+        <td class="highlight">+15%</td>
+        <td>加法叠加</td>
+      </tr>
+      <tr>
+        <td><b>理论最大叠加</b></td>
+        <td class="highlight"><b>+55%</b></td>
+        <td>出血精通+血气爆发+E3</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="note">
+    <b>关键发现：</b>E3出血加成（+15%）> E2出血加成（+10%），出血流玩家应优先E3
+  </div>
+</div>
+
+<!-- ========== 出血伤害计算实例 ========== -->
+<h2>📐 出血伤害计算实例（Lv23出血）</h2>
+<div class="card">
+  <table>
+    <thead>
+      <tr>
+        <th>配置</th>
+        <th>每秒伤害</th>
+        <th>5秒总伤害</th>
+        <th>对比无加成</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>无加成</td>
+        <td>4,200</td>
+        <td>21,000</td>
+        <td>基准</td>
+      </tr>
+      <tr>
+        <td>+出血精通Lv10</td>
+        <td>4,620</td>
+        <td>23,100</td>
+        <td>+10%</td>
+      </tr>
+      <tr>
+        <td>+出血精通 + 血气爆发</td>
+        <td>5,460</td>
+        <td>27,300</td>
+        <td>+30%</td>
+      </tr>
+      <tr>
+        <td>+E2血之狂暴6件</td>
+        <td>5,880</td>
+        <td>29,400</td>
+        <td>+40%</td>
+      </tr>
+      <tr>
+        <td class="highlight">+E3血染江山6件</td>
+        <td class="highlight">6,510</td>
+        <td class="highlight">32,550</td>
+        <td class="highlight">+55%</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="note">Lv23出血基础值：4,200/秒，持续5秒，最多叠加5层</p>
+</div>
+
+<!-- ========== E2 vs E3 对比分析 ========== -->
+<h2>⚔️ E2血之狂暴 vs E3血染江山 对比分析</h2>
+<div class="compare-table">
+  <div class="compare-item">
+    <h4>🔴 E2血之狂暴（首选）</h4>
+    <ul>
+      <li>技能加成：<b>+35%</b></li>
+      <li>出血加成：<b>+10%</b></li>
+      <li>力量加成：<b>+5%</b>（与暴走叠加）</li>
+      <li>适用场景：固伤流、百分比流</li>
+      <li>推荐指数：⭐⭐⭐⭐⭐</li>
+    </ul>
+  </div>
+  <div class="compare-item">
+    <h4>🟣 E3血染江山（出血流）</h4>
+    <ul>
+      <li>技能加成：<b>+30%</b></li>
+      <li>出血加成：<b>+15%</b></li>
+      <li>力量加成：无额外</li>
+      <li>适用场景：出血流、持续输出</li>
+      <li>推荐指数：⭐⭐⭐⭐</li>
+    </ul>
+  </div>
+</div>
+
+<div class="card yellow">
+  <h3>🎯 选择建议</h3>
+  <ul>
+    <li><b>主刷图/PK</b>：E2血之狂暴6件 — 技能加成+35% > E3的+30%</li>
+    <li><b>出血流build</b>：E3血染江山6件 — 出血加成+15% > E2的+10%</li>
+    <li><b>混搭方案</b>：不可行 — E2/E3不跨套叠加，必须集齐同套6件</li>
+    <li><b>毕业推荐</b>：E2血之狂暴6件 + 力量首饰 + 高物理攻击武器</li>
+  </ul>
+</div>
+
+<!-- ========== 套装阈值机制 ========== -->
+<h2>🔒 套装阈值机制说明</h2>
+<div class="card blue">
+  <p>E2/E3套装均采用<b>阈值型加成机制</b>：</p>
+  <ul>
+    <li><b>1~5件</b>：完全不生效，无任何加成</li>
+    <li><b>6件</b>：激活全部套装加成</li>
+    <li><b>不跨套叠加</b>：E2和E3不能混穿，必须同套6件</li>
+  </ul>
+  <div class="formula">
+    <code>套装加成 = (件数 >= 6) ? 激活加成 : 0</code>
+  </div>
+</div>
+
+<!-- ========== 版本对比 ========== -->
+<h2>📜 70版本 vs 后续版本 E3套装对比</h2>
+<div class="card">
+  <table>
+    <thead>
+      <tr>
+        <th>版本</th>
+        <th>E3套装名称</th>
+        <th>技能加成</th>
+        <th>出血加成</th>
+        <th>备注</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="highlight">70版本</td>
+        <td>血染江山</td>
+        <td>+30%</td>
+        <td>+15%</td>
+        <td>出血穿透防御</td>
+      </tr>
+      <tr>
+        <td>80版本</td>
+        <td>血染江山</td>
+        <td>+30%</td>
+        <td>+12%</td>
+        <td>出血被削弱</td>
+      </tr>
+      <tr>
+        <td>85版本</td>
+        <td>血染江山</td>
+        <td>+25%</td>
+        <td>+8%</td>
+        <td>全面削弱</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="note">⚠️ 本分析仅针对70版本末期，后续版本数据仅供参考</p>
+</div>
+
+<!-- ========== 总结 ========== -->
+<h2>📝 总结</h2>
+<div class="card green">
+  <h3>核心要点</h3>
+  <ol>
+    <li>E3血染江山套装所有核心技能统一<b>+30%</b>加成</li>
+    <li>出血加成<b>+15%</b>，高于E2的+10%，出血流首选</li>
+    <li>技能加成低于E2（+35%），固伤/百分比流首选E2</li>
+    <li>套装阈值6件激活，1~5件不生效</li>
+    <li>E2/E3不可混穿，必须同套6件</li>
+    <li>Lv23出血满配（出血精通+血气爆发+E3）总伤害<b>32,550</b></li>
+  </ol>
+</div>
+
+<div class="card">
+  <p class="note">📄 详细报告：`notes/berserker-e3-bonus.html`</p>
+  <p class="note">📚 知识库更新：`skills/dnf-research/BERSERKER.md`</p>
+  <p class="note">📊 相关报告：`notes/berserker-e2-bonus.html`（E2血之狂暴分析）</p>
+  <p class="note">📊 相关报告：`notes/berserker-bleed-mechanism.html`（出血机制分析）</p>
+</div>
+
+</div>
+</body>
+</html>
