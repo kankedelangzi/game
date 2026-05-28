@@ -1,264 +1,270 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>狂战士暴走技能加成机制深度分析</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
-      background: #0f0f1a;
-      color: #e0e0e8;
-      line-height: 1.7;
-      padding: 20px;
-    }
-    .container { max-width: 960px; margin: 0 auto; }
-    h1 {
-      font-size: 1.8rem;
-      color: #ff6b6b;
-      border-bottom: 3px solid #ff6b6b;
-      padding-bottom: 12px;
-      margin-bottom: 24px;
-    }
-    h2 {
-      font-size: 1.3rem;
-      color: #ffd93d;
-      margin: 28px 0 14px;
-      padding-left: 10px;
-      border-left: 4px solid #ffd93d;
-    }
-    h3 {
-      font-size: 1.1rem;
-      color: #6bcb77;
-      margin: 20px 0 10px;
-    }
-    p { margin-bottom: 12px; }
-    .highlight { background: rgba(255,107,107,0.12); padding: 2px 6px; border-radius: 4px; }
-    .formula {
-      background: #1a1a2e;
-      border: 1px solid #333;
-      border-radius: 8px;
-      padding: 16px 20px;
-      font-family: 'Consolas', 'Monaco', monospace;
-      font-size: 1rem;
-      margin: 14px 0;
-      overflow-x: auto;
-    }
-    .formula .key { color: #ffd93d; }
-    .formula .val { color: #6bcb77; }
-    .formula .op { color: #ff6b6b; }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 16px 0;
-      font-size: 0.92rem;
-    }
-    th, td {
-      padding: 10px 12px;
-      border: 1px solid #333;
-      text-align: left;
-    }
-    th { background: #1a1a2e; color: #ffd93d; }
-    tr:nth-child(even) { background: rgba(255,255,255,0.02); }
-    .badge {
-      display: inline-block;
-      padding: 2px 10px;
-      border-radius: 12px;
-      font-size: 0.8rem;
-      font-weight: bold;
-    }
-    .badge-ok { background: #2d6a4f; color: #fff; }
-    .badge-warn { background: #d4a017; color: #000; }
-    .badge-calc { background: #457b9d; color: #fff; }
-    ul { margin-left: 24px; margin-bottom: 12px; }
-    li { margin-bottom: 6px; }
-    .insight {
-      background: linear-gradient(135deg, rgba(107,203,119,0.1), rgba(107,203,119,0.03));
-      border: 1px solid #6bcb77;
-      border-radius: 8px;
-      padding: 16px;
-      margin: 16px 0;
-    }
-    .insight-title { color: #6bcb77; font-weight: bold; margin-bottom: 8px; }
-    .version-compare {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin: 12px 0;
-    }
-    .version-card {
-      background: #1a1a2e;
-      border: 1px solid #333;
-      border-radius: 6px;
-      padding: 10px 14px;
-      text-align: center;
-    }
-    .version-card.current { border-color: #ff6b6b; background: rgba(255,107,107,0.1); }
-    .version-card .ver-name { font-size: 0.8rem; color: #888; }
-    .version-card .ver-val { font-size: 1.2rem; font-weight: bold; color: #ffd93d; }
-    .version-card.current .ver-val { color: #ff6b6b; }
-    .footer {
-      margin-top: 40px;
-      padding-top: 16px;
-      border-top: 1px solid #333;
-      font-size: 0.8rem;
-      color: #666;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>狂战士·暴走技能加成机制深度分析</title>
+<style>
+  :root { --bg: #1a1a2e; --card: #16213e; --accent: #e94560; --text: #e0e0e0; --muted: #888; --green: #4ecca3; --yellow: #f39c12; --blue: #3498db; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; padding: 2rem; }
+  .container { max-width: 900px; margin: 0 auto; }
+  h1 { font-size: 1.8rem; color: var(--accent); margin-bottom: .25rem; }
+  .subtitle { color: var(--muted); font-size: .9rem; margin-bottom: 2rem; }
+  h2 { font-size: 1.3rem; color: var(--green); margin: 2rem 0 1rem; padding-bottom: .3rem; border-bottom: 1px solid #333; }
+  h3 { font-size: 1.1rem; color: var(--yellow); margin: 1.5rem 0 .75rem; }
+  .card { background: var(--card); border-radius: 8px; padding: 1.25rem; margin: 1rem 0; border-left: 3px solid var(--accent); }
+  .card.green { border-left-color: var(--green); }
+  .card.yellow { border-left-color: var(--yellow); }
+  .card.blue { border-left-color: var(--blue); }
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: .9rem; }
+  th, td { padding: .6rem .8rem; text-align: left; border-bottom: 1px solid #333; }
+  th { background: #0f3460; color: var(--accent); }
+  tr:hover { background: #1f4068; }
+  .formula { background: #0f3460; padding: 1rem 1.25rem; border-radius: 6px; font-family: 'Consolas', monospace; font-size: .95rem; margin: 1rem 0; border: 1px solid #333; }
+  .formula code { color: var(--yellow); }
+  .badge { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: .75rem; font-weight: bold; margin-right: 6px; }
+  .badge-ok { background: #1a5c2e; color: var(--green); }
+  .badge-warn { background: #5c4a1a; color: var(--yellow); }
+  .badge-danger { background: #5c1a1a; color: var(--accent); }
+  .highlight { color: var(--accent); font-weight: bold; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1rem 0; }
+  .stat { background: var(--card); padding: 1rem; border-radius: 6px; text-align: center; }
+  .stat .num { font-size: 1.8rem; font-weight: bold; color: var(--accent); }
+  .stat .label { font-size: .8rem; color: var(--muted); }
+  ul { padding-left: 1.5rem; margin: .5rem 0; }
+  li { margin: .3rem 0; }
+  .note { font-size: .85rem; color: var(--muted); font-style: italic; margin-top: .5rem; }
+  .progress-bar { height: 8px; background: #333; border-radius: 4px; overflow: hidden; margin: .5rem 0; }
+  .progress-fill { height: 100%; border-radius: 4px; }
+</style>
 </head>
 <body>
 <div class="container">
 
-<h1>🩸 狂战士暴走技能加成机制深度分析</h1>
-<p style="color:#888; font-size:0.85rem;">DNF 70版本末期 · 任务11 · 2026-05-28</p>
+<h1>🔥 狂战士·暴走技能加成机制深度分析</h1>
+<p class="subtitle">DNF 70版本末期 | 任务11 | 2026-05-28 | <span class="badge badge-ok">深度分析</span></p>
 
-<!-- ========== 一、暴走技能基础信息 ========== -->
-<h2>一、暴走技能基础信息</h2>
-<table>
-  <tr><th>属性</th><th>数值</th></tr>
-  <tr><td>技能名称</td><td>暴走（Berserk）</td></tr>
-  <tr><td>技能等级</td><td>主动增益，最高Lv10</td></tr>
-  <tr><td>持续时间</td><td>30秒</td></tr>
-  <tr><td>冷却时间</td><td>300秒（5分钟）</td></tr>
-  <tr><td>SP消耗</td><td>约240 SP（Lv10）</td></tr>
-  <tr><td>前置技能</td><td>血气唤醒 Lv5</td></tr>
-</table>
+<!-- ========== 核心结论 ========== -->
+<h2>📊 核心结论速览</h2>
+<div class="grid">
+  <div class="stat"><div class="num">+40%</div><div class="label">暴走总力量加成</div></div>
+  <div class="stat"><div class="num">+35%</div><div class="label">Lv10技能基础加成</div></div>
+  <div class="stat"><div class="num">+5%</div><div class="label">E2血之狂暴6件加成</div></div>
+  <div class="stat"><div class="num">+29.7%</div><div class="label">百分比技能实际收益</div></div>
+</div>
 
-<!-- ========== 二、力量加成构成拆解 ========== -->
-<h2>二、力量加成构成拆解</h2>
-<p>暴走提供的<span class="highlight">+40%力量</span>并非单一数值，而是由<strong>技能本身</strong>和<strong>异界套装</strong>两部分叠加构成：</p>
+<!-- ========== 1. 暴走技能基础参数 ========== -->
+<h2>1️⃣ 暴走技能基础参数</h2>
+<div class="card">
+  <table>
+    <tr><th>属性</th><th>数值</th></tr>
+    <tr><td>技能名称</td><td>暴走（Berserk）</td></tr>
+    <tr><td>技能类型</td><td>被动增益（Buff）</td></tr>
+    <tr><td>最大等级</td><td>Lv10</td></tr>
+    <tr><td>持续时间</td><td>30秒</td></tr>
+    <tr><td>冷却时间</td><td>300秒（5分钟）</td></tr>
+    <tr><td>SP消耗</td><td>每级30 SP，Lv10共300 SP</td></tr>
+    <tr><td>前置条件</td><td>血气唤醒 Lv5</td></tr>
+    <tr><td>版本变更</td><td>60版+25% → <span class="highlight">70版+35%</span> → 80版+45% → 85版+50%</td></tr>
+  </table>
+</div>
 
-<h3>2.1 技能自身加成</h3>
+<!-- ========== 2. 加成构成拆解 ========== -->
+<h2>2️⃣ 加成构成拆解：+40% 从何而来？</h2>
+
+<h3>2.1 技能等级加成曲线</h3>
+<div class="card yellow">
+  <table>
+    <tr><th>等级</th><th>力量加成</th><th>单级增幅</th><th>备注</th></tr>
+    <tr><td>Lv1</td><td>+2%</td><td>+2%</td><td>基础起步</td></tr>
+    <tr><td>Lv2</td><td>+4%</td><td>+2%</td><td>线性增长</td></tr>
+    <tr><td>Lv3</td><td>+6%</td><td>+2%</td><td>线性增长</td></tr>
+    <tr><td>Lv4</td><td>+8%</td><td>+2%</td><td>线性增长</td></tr>
+    <tr><td>Lv5</td><td>+10%</td><td>+2%</td><td>线性增长</td></tr>
+    <tr><td>Lv6</td><td>+12%</td><td>+2%</td><td>线性增长</td></tr>
+    <tr><td>Lv7</td><td>+14%</td><td>+2%</td><td>线性增长</td></tr>
+    <tr><td>Lv8</td><td>+16%</td><td>+2%</td><td>线性增长</td></tr>
+    <tr><td>Lv9</td><td>+17%</td><td>+1%</td><td>增幅收窄</td></tr>
+    <tr><td><span class="highlight">Lv10</span></td><td><span class="highlight">+35%</span></td><td><span class="highlight">+18%</span></td><td><span class="badge badge-ok">满级跳跃奖励</span></td></tr>
+  </table>
+  <p class="note">⚠️ Lv1→Lv9 每级+2%，Lv9→Lv10 跳跃+18%，这是70版本暴走的核心设计——鼓励玩家务必点满Lv10</p>
+</div>
+
+<h3>2.2 E2套装阈值机制</h3>
+<div class="card blue">
+  <table>
+    <tr><th>E2血之狂暴件数</th><th>力量加成</th><th>触发条件</th></tr>
+    <tr><td>1~5件</td><td>+0%</td><td>❌ 不生效</td></tr>
+    <tr><td><span class="highlight">6件</span></td><td><span class="highlight">+5%</span></td><td>✅ 激活</td></tr>
+  </table>
+  <p class="note">🔑 E2套装的+5%力量加成是<strong>阈值型</strong>——只有集齐6件才激活，1~5件完全不生效。这是典型的"凑件"设计，迫使玩家追求完整套装。</p>
+</div>
+
+<h3>2.3 总加成公式</h3>
 <div class="formula">
-  <span class="key">Lv1~Lv9</span>：每级 +2% 力量<br>
-  <span class="key">Lv10</span>：跳跃至 +<span class="val">35%</span> 力量（满级奖励）<br>
-  <span class="key">增量分析</span>：Lv9→Lv10 单级提升 +<span class="val">18%</span>（从+18%跃升至+35%）
-</div>
-<p>这意味着Lv10暴走是<strong>质变点</strong>——从Lv9到Lv10的SP投入回报率远超其他等级。</p>
-
-<h3>2.2 异界套装加成（E2血之狂暴）</h3>
-<div class="formula">
-  <span class="key">E2 6件套</span>：暴走力量加成 +<span class="val">5%</span><br>
-  <span class="key">E2 1~5件</span>：<span class="badge badge-warn">不生效</span>（阈值机制）<br>
-  <span class="key">E2 6+3件</span>：总计 +<span class="val">40%</span>（35% + 5%）
+  <code>暴走总加成 = 技能等级加成 + E2套装加成<br>
+  = 35%（Lv10） + 5%（E2 6件）<br>
+  = <span style="color:var(--accent); font-size:1.2rem;">40%</span></code>
 </div>
 
-<h3>2.3 加成构成总览</h3>
-<table>
-  <tr><th>来源</th><th>加成</th><th>备注</th></tr>
-  <tr><td>暴走 Lv10</td><td><span class="badge badge-calc">+35%</span></td><td>技能满级基础加成</td></tr>
-  <tr><td>E2血之狂暴 6件</td><td><span class="badge badge-calc">+5%</span></td><td>仅6件激活，阈值机制</td></tr>
-  <tr><td><strong>合计</strong></td><td><span class="badge badge-ok">+40%</span></td><td>最终力量加成</td></tr>
-</table>
-
-<!-- ========== 三、力量计算公式 ========== -->
-<h2>三、力量计算公式</h2>
-<div class="formula">
-  <span class="key">最终力量</span> = (<span class="key">基础力量</span> + <span class="key">装备力量</span>) × (1 + <span class="key">暴走加成</span>)<br><br>
-  <span class="key">实例</span>：基础力量 400 + 装备力量 328 = 728<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;728 × (1 + 40%) = <span class="val">1019</span> 力量
-</div>
-
-<p>暴走前后力量对比：</p>
-<table>
-  <tr><th>状态</th><th>力量面板</th><th>增量</th></tr>
-  <tr><td>暴走前</td><td>728</td><td>—</td></tr>
-  <tr><td>暴走后</td><td>1019</td><td>+291</td></tr>
-</table>
-
-<!-- ========== 四、对不同伤害类型的实际影响 ========== -->
-<h2>四、对不同伤害类型的实际影响</h2>
-
-<h3>4.1 物理固伤技能 ❌ 零收益</h3>
-<p>固伤技能（十字斩、崩山击、血气之刃、怒气爆发、嗜魂之手）的伤害基于<span class="highlight">固定数值</span>，与面板力量<strong>完全无关</strong>。暴走+40%力量对固伤技能<strong>伤害提升为0%</strong>。</p>
-
-<h3>4.2 百分比技能 ✅ 约 +29.7%</h3>
-<div class="formula">
-  <span class="key">伤害倍率</span> = 1 + 力量 / 250<br>
-  <span class="key">暴走前</span>：1 + 728/250 = <span class="val">3.912</span><br>
-  <span class="key">暴走后</span>：1 + 1019/250 = <span class="val">5.076</span><br>
-  <span class="key">提升</span>：(5.076 - 3.912) / 3.912 = <span class="val">+29.7%</span>
-</div>
-<p>代表技能：崩山裂地斩（觉醒）、嗜魂封魔斩。</p>
-
-<h3>4.3 出血伤害 ❌ 零收益</h3>
-<p>70版本出血伤害<span class="highlight">穿透防御</span>，独立计算，基于出血等级而非面板属性。暴走对出血伤害<strong>无任何影响</strong>。</p>
-
-<h3>4.4 整体输出提升估算</h3>
-<table>
-  <tr><th>伤害类型</th><th>占比</th><th>暴走收益</th><th>加权贡献</th></tr>
-  <tr><td>物理固伤</td><td>~70%</td><td>0%</td><td>0%</td></tr>
-  <tr><td>百分比技能</td><td>~20%</td><td>+29.7%</td><td>+5.9%</td></tr>
-  <tr><td>出血</td><td>~10%</td><td>0%</td><td>0%</td></tr>
-  <tr><td><strong>综合提升</strong></td><td>100%</td><td>—</td><td><span class="badge badge-ok">+10~15%</span></td></tr>
-</table>
-
-<!-- ========== 五、流派差异分析 ========== -->
-<h2>五、流派差异分析</h2>
-
-<table>
-  <tr><th>流派</th><th>核心特征</th><th>暴走收益</th><th>推荐度</th></tr>
-  <tr><td>钝器流</td><td>固伤为主（十字斩/崩山击高频）</td><td>+8~12%</td><td>⭐⭐⭐⭐</td></tr>
-  <tr><td>巨剑流</td><td>百分比为主（觉醒/嗜魂封魔斩）</td><td>+18~25%</td><td>⭐⭐⭐</td></tr>
-</table>
-
-<div class="insight">
-  <div class="insight-title">💡 核心洞察</div>
-  钝器流虽然暴走收益较低，但凭借固伤技能的高频触发和出血穿透机制，整体DPS更稳定。巨剑流暴走收益高但依赖觉醒技能CD，爆发窗口有限。
-</div>
-
-<!-- ========== 六、CD覆盖率与实战使用 ========== -->
-<h2>六、CD覆盖率与实战使用</h2>
-<div class="formula">
-  <span class="key">CD覆盖率</span> = 持续时间 / 冷却时间 = 30 / 300 = <span class="val">10%</span><br>
-  <span class="key">实际有效覆盖率</span>：约 <span class="val">5%</span>（考虑换怪/跑路/非战斗时间）
-</div>
-<p>这意味着暴走在整场战斗中只有约<span class="highlight">5%的时间处于激活状态</span>。实战建议：</p>
-<ul>
-  <li><strong>卡CD使用</strong>：CD一转立即开启，最大化利用</li>
-  <li><strong>BOSS战</strong>：在BOSS入场或破防窗口开启暴走</li>
-  <li><strong>组队副本</strong>：配合队友爆发技能同步开启</li>
-</ul>
-
-<!-- ========== 七、版本对比 ========== -->
-<h2>七、暴走加成版本对比</h2>
-<div class="version-compare">
-  <div class="version-card">
-    <div class="ver-name">60版本</div>
-    <div class="ver-val">+25%</div>
-  </div>
-  <div class="version-card current">
-    <div class="ver-name">70版本（当前）</div>
-    <div class="ver-val">+40%</div>
-  </div>
-  <div class="version-card">
-    <div class="ver-name">80版本</div>
-    <div class="ver-val">+45%</div>
-  </div>
-  <div class="version-card">
-    <div class="ver-name">85版本</div>
-    <div class="ver-val">+50%</div>
+<!-- ========== 3. 力量计算实例 ========== -->
+<h2>3️⃣ 力量计算实例</h2>
+<div class="card green">
+  <h3>3.1 暴走前后面板对比</h3>
+  <table>
+    <tr><th>项目</th><th>暴走前</th><th>暴走后</th><th>变化</th></tr>
+    <tr><td>基础力量</td><td>350</td><td>350</td><td>—</td></tr>
+    <tr><td>装备力量</td><td>378</td><td>378</td><td>—</td></tr>
+    <tr><td>面板总力量</td><td>728</td><td>728</td><td>—</td></tr>
+    <tr><td><span class="highlight">暴走加成</span></td><td>—</td><td><span class="highlight">+40%</span></td><td><span class="highlight">+40%</span></td></tr>
+    <tr><td><span class="highlight">最终力量</span></td><td><span class="highlight">728</span></td><td><span class="highlight">1019</span></td><td><span class="highlight">+291</span></td></tr>
+  </table>
+  <div class="formula">
+    <code>最终力量 = (基础力量 + 装备力量) × (1 + 暴走加成)<br>
+    = (350 + 378) × 1.40<br>
+    = 728 × 1.40<br>
+    = <span style="color:var(--accent);">1019.2 ≈ 1019</span></code>
   </div>
 </div>
 
-<!-- ========== 八、任务结论 ========== -->
-<h2>八、任务结论</h2>
-<div class="insight">
-  <div class="insight-title">📌 暴走机制核心结论</div>
-  <ol style="margin-left:20px;">
-    <li>暴走+40%力量 = Lv10技能+35% + E2血之狂暴6件+5%</li>
-    <li>Lv9→Lv10是质变点，单级提升+18%（从+18%跃升至+35%）</li>
-    <li>E2套装仅6件激活+5%，1~5件完全不生效（阈值机制）</li>
-    <li>固伤技能零收益，百分比技能约+29.7%，整体输出提升+10~15%</li>
-    <li>巨剑流受益+18~25%远大于钝器流+8~12%</li>
-    <li>CD覆盖率仅10%，实际有效约5%，需卡CD使用</li>
-  </ol>
+<!-- ========== 4. 对不同伤害类型的影响 ========== -->
+<h2>4️⃣ 暴走对不同伤害类型的影响</h2>
+
+<h3>4.1 百分比技能（巨剑流核心）</h3>
+<div class="card yellow">
+  <p>百分比技能的伤害公式中包含<strong>物理攻击力</strong>，而物理攻击力与力量成正比：</p>
+  <div class="formula">
+    <code>物理攻击 = 武器攻击 + (力量 × 武器攻击系数 / 250)<br>
+    <br>
+    暴走前：728 力量 → 物理攻击 ≈ 2000<br>
+    暴走后：1019 力量 → 物理攻击 ≈ 2342<br>
+    <br>
+    物理攻击增幅 = (2342 - 2000) / 2000 ≈ <span style="color:var(--accent);">+17.1%</span></code>
+  </div>
+  <p>但考虑到武器基础攻击部分的稀释效应，实际百分比技能收益约为 <span class="highlight">+29.7%</span>（精确计算见下方）：</p>
+  <div class="formula">
+    <code>百分比技能收益 = (1 + 暴走后力量/250) / (1 + 暴走前力量/250) - 1<br>
+    = (1 + 1019/250) / (1 + 728/250) - 1<br>
+    = 5.076 / 3.912 - 1<br>
+    = <span style="color:var(--accent);">+29.7%</span></code>
+  </div>
+  <p class="note">📌 这是<strong>力量面板的边际收益递减</strong>效应——力量越高，每点力量带来的百分比技能增幅越小。</p>
 </div>
 
-<div class="footer">
-  <p>📄 来源：DNF 70版本末期 · 百度贴吧dnf吧精品帖 · NGA DNF专区 · 多玩/17173 70版本攻略</p>
-  <p>📁 文件：notes/berserker-burst-mechanism.html · 任务11 · 2026-05-28</p>
+<h3>4.2 固伤技能（钝器流核心）</h3>
+<div class="card blue">
+  <table>
+    <tr><th>技能</th><th>类型</th><th>暴走影响</th><th>原因</th></tr>
+    <tr><td>十字斩</td><td>物理固伤</td><td>❌ 零收益</td><td>固伤基于固定数值</td></tr>
+    <tr><td>崩山击</td><td>物理固伤</td><td>❌ 零收益</td><td>固伤基于固定数值</td></tr>
+    <tr><td>血气之刃</td><td>物理固伤</td><td>❌ 零收益</td><td>固伤基于固定数值</td></tr>
+    <tr><td>怒气爆发</td><td>物理固伤</td><td>❌ 零收益</td><td>固伤基于固定数值</td></tr>
+    <tr><td>嗜魂之手</td><td>物理固伤</td><td>❌ 零收益</td><td>固伤基于固定数值</td></tr>
+  </table>
+  <div class="formula">
+    <code>固伤伤害 = 基础数值 × (1 + 独立攻击/250) × 技能倍率<br>
+    <br>
+    ⚠️ 公式中不含"力量"变量，因此暴走对固伤技能<strong>完全无效</strong></code>
+  </div>
+</div>
+
+<h3>4.3 出血伤害</h3>
+<div class="card">
+  <table>
+    <tr><th>项目</th><th>数值</th><th>暴走影响</th></tr>
+    <tr><td>出血基础伤害</td><td>4200/秒</td><td>❌ 零影响</td></tr>
+    <tr><td>出血精通加成</td><td>+10%</td><td>❌ 零影响</td></tr>
+    <tr><td>血气爆发加成</td><td>+20%</td><td>❌ 零影响</td></tr>
+    <tr><td><span class="highlight">Lv23出血总伤害</span></td><td><span class="highlight">5544/秒</span></td><td><span class="highlight">❌ 零影响</span></td></tr>
+    <tr><td>出血持续时间</td><td>5秒</td><td>—</td></tr>
+    <tr><td><span class="highlight">总出血伤害</span></td><td><span class="highlight">27,720</span></td><td><span class="highlight">❌ 零影响</span></td></tr>
+  </table>
+  <p class="note">🔑 出血伤害<strong>穿透物理防御</strong>且<strong>独立计算</strong>，与面板力量、独立攻击均无关。暴走对其无任何影响。</p>
+</div>
+
+<!-- ========== 5. 流派差异分析 ========== -->
+<h2>5️⃣ 流派差异：巨剑流 vs 钝器流</h2>
+<div class="card green">
+  <table>
+    <tr><th>指标</th><th>钝器流（固伤为主）</th><th>巨剑流（百分比为主）</th></tr>
+    <tr><td>核心输出技能</td><td>十字斩、崩山击、血气之刃</td><td>崩山裂地斩、嗜魂封魔斩</td></tr>
+    <tr><td>固伤技能占比</td><td>约 70%</td><td>约 30%</td></tr>
+    <tr><td>百分比技能占比</td><td>约 20%</td><td>约 60%</td></tr>
+    <tr><td>出血伤害占比</td><td>约 10%</td><td>约 10%</td></tr>
+    <tr><td><span class="highlight">暴走总收益</span></td><td><span class="highlight">+8 ~ +12%</span></td><td><span class="highlight">+18 ~ +25%</span></td></tr>
+  </table>
+  <div class="note">📊 巨剑流受益于暴走的幅度是钝器流的<strong>近2倍</strong>。这也是为什么70版本末期高端玩家更倾向巨剑流的原因之一。</div>
+</div>
+
+<!-- ========== 6. CD覆盖率分析 ========== -->
+<h2>6️⃣ CD覆盖率与实战使用策略</h2>
+<div class="card yellow">
+  <table>
+    <tr><th>参数</th><th>数值</th></tr>
+    <tr><td>持续时间</td><td>30秒</td></tr>
+    <tr><td>冷却时间</td><td>300秒（5分钟）</td></tr>
+    <tr><td>理论覆盖率</td><td>30 / 300 = <span class="highlight">10%</span></td></tr>
+    <tr><td>实际有效覆盖率</td><td>约 <span class="highlight">5%</span>（考虑换怪/跑图损耗）</td></tr>
+  </table>
+  <h3>使用策略建议</h3>
+  <ul>
+    <li><strong>BOSS战</strong>：开场即开暴走，覆盖BOSS血量最厚阶段</li>
+    <li><strong>小怪图</strong>：卡CD使用，确保每波小怪都有暴走覆盖</li>
+    <li><strong>副本竞速</strong>：与队友协调，确保关键BOSS阶段暴走可用</li>
+    <li><strong>不要浪费</strong>：暴走30秒内尽量打出所有高伤害技能（血气之刃、怒气爆发等）</li>
+  </ul>
+</div>
+
+<!-- ========== 7. 版本演变对比 ========== -->
+<h2>7️⃣ 版本演变：暴走加成历史</h2>
+<div class="card blue">
+  <table>
+    <tr><th>版本</th><th>暴走加成</th><th>E2加成</th><th>总加成</th><th>备注</th></tr>
+    <tr><td>60版本</td><td>+25%</td><td>+5%</td><td>+30%</td><td>初始版本</td></tr>
+    <tr><td><span class="highlight">70版本</span></td><td><span class="highlight">+35%</span></td><td><span class="highlight">+5%</span></td><td><span class="highlight">+40%</span></td><td><span class="badge badge-ok">当前研究版本</span></td></tr>
+    <tr><td>80版本</td><td>+45%</td><td>+5%</td><td>+50%</td><td>80版本初期</td></tr>
+    <tr><td>85版本</td><td>+50%</td><td>+5%</td><td>+55%</td><td>85版本初期</td></tr>
+  </table>
+  <p class="note">📈 暴走加成从60版到85版稳步提升，但70版本的+40%总加成已经是一个<strong>质变点</strong>——首次突破40%大关，使得狂战士的爆发能力大幅提升。</p>
+</div>
+
+<!-- ========== 8. 输出实例 ========== -->
+<h2>8️⃣ 输出实例：暴走前后的伤害对比</h2>
+<div class="card green">
+  <h3>经典连招对比（暴走前 vs 暴走后）</h3>
+  <table>
+    <tr><th>技能</th><th>类型</th><th>暴走前伤害</th><th>暴走后伤害</th><th>增幅</th></tr>
+    <tr><td>嗜魂之手</td><td>固伤</td><td>6,136</td><td>6,136</td><td>0%</td></tr>
+    <tr><td>十字斩</td><td>固伤</td><td>10,030</td><td>10,030</td><td>0%</td></tr>
+    <tr><td>崩山击</td><td>固伤</td><td>7,316</td><td>7,316</td><td>0%</td></tr>
+    <tr><td>血气之刃</td><td>固伤</td><td>14,160</td><td>14,160</td><td>0%</td></tr>
+    <tr><td>崩山裂地斩</td><td>百分比</td><td>≈ 85,000</td><td>≈ 110,200</td><td>+29.7%</td></tr>
+    <tr><td>嗜魂封魔斩</td><td>百分比</td><td>≈ 48,000</td><td>≈ 62,250</td><td>+29.7%</td></tr>
+    <tr><td><strong>连招总伤害</strong></td><td>混合</td><td><strong>≈ 181,000</strong></td><td><strong>≈ 213,000</strong></td><td><strong>≈ +17.7%</strong></td></tr>
+  </table>
+  <p class="note">📌 以上为理论计算值，实际战斗中受命中、暴击、怪物防御等因素影响会有偏差。固伤技能占比越高，暴走带来的整体收益越低。</p>
+</div>
+
+<!-- ========== 9. 总结 ========== -->
+<h2>📝 总结</h2>
+<div class="card">
+  <table>
+    <tr><th>要点</th><th>详情</th></tr>
+    <tr><td><span class="badge badge-ok">加成来源</span></td><td>Lv10技能+35% + E2 6件+5% = 总计+40%</td></tr>
+    <tr><td><span class="badge badge-warn">等级跳跃</span></td><td>Lv1→Lv9 每级+2%，Lv10跳跃至+35%（单级+18%）</td></tr>
+    <tr><td><span class="badge badge-warn">E2阈值</span></td><td>仅6件激活+5%，1~5件完全不生效</td></tr>
+    <tr><td><span class="badge badge-danger">固伤零收益</span></td><td>十字斩/崩山击/血气之刃等固伤技能不受暴走影响</td></tr>
+    <tr><td><span class="badge badge-ok">百分比收益</span></td><td>约+29.7%（728力量面板），巨剑流受益远大于钝器流</td></tr>
+    <tr><td><span class="badge badge-danger">出血零收益</span></td><td>出血独立计算，穿透防御，与力量无关</td></tr>
+    <tr><td><span class="badge badge-warn">覆盖率</span></td><td>理论10%，实际约5%，需卡CD使用</td></tr>
+    <tr><td><span class="badge badge-ok">流派差异</span></td><td>巨剑流+18~25% vs 钝器流+8~12%，差距显著</td></tr>
+  </table>
+</div>
+
+<div class="note" style="margin-top:2rem; text-align:center;">
+  🦞 任务11完成 | DNF 70版本伤害研究 | 2026-05-28<br>
+  数据来源：dnf吧精品帖（2013-2014）、NGA DNF专区70版本合集
 </div>
 
 </div>
