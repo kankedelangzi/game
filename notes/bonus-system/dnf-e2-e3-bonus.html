@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>第4章：DNF 70版本异界套装加成系统研究</title>
+  <style>
+    body { background: #1a1a2e; color: #e0e0e0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; padding: 20px; line-height: 1.8; }
+    .container { max-width: 950px; margin: 0 auto; }
+    h1 { color: #e94560; border-bottom: 2px solid #2a2a4a; padding-bottom: 10px; font-size: 28px; }
+    h2 { color: #f5a623; border-bottom: 1px solid #2a2a4a; padding-bottom: 8px; margin-top: 30px; font-size: 22px; }
+    h3 { color: #7fdbca; margin-top: 20px; font-size: 18px; }
+    h4 { color: #a8e6cf; margin-top: 15px; font-size: 16px; }
+    .card { background: #16213e; padding: 20px; border-radius: 10px; margin: 15px 0; }
+    pre { background: #0f0f1a; padding: 15px; border-radius: 8px; overflow-x: auto; color: #7fdbca; font-family: "Courier New", monospace; font-size: 13px; line-height: 1.6; }
+    code { background: #0f0f1a; padding: 2px 6px; border-radius: 4px; color: #7fdbca; font-size: 13px; }
+    table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 14px; }
+    th, td { padding: 10px; border: 1px solid #2a2a4a; text-align: left; }
+    th { background: #0f3460; color: #fff; }
+    tr:nth-child(even) { background: #1a1a2e; }
+    a { color: #e94560; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul, ol { padding-left: 20px; }
+    li { margin: 6px 0; }
+    blockquote { border-left: 3px solid #e94560; margin: 10px 0; padding: 8px 15px; background: #16213e; border-radius: 0 8px 8px 0; }
+    .nav { margin-bottom: 20px; font-size: 14px; }
+    .nav a { margin-right: 10px; }
+    .highlight { color: #e94560; font-weight: bold; }
+    .class-card { background: #1a1a2e; border-left: 4px solid #e94560; padding: 15px; margin: 10px 0; border-radius: 0 8px 8px 0; }
+    .formula-box { background: #0f0f1a; border: 1px solid #2a2a4a; padding: 15px; border-radius: 8px; margin: 10px 0; }
+    .example-box { background: #16213e; border: 1px dashed #f5a623; padding: 15px; border-radius: 8px; margin: 15px 0; }
+    .tag { display: inline-block; background: #0f3460; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 12px; margin-right: 5px; }
+    .version-banner { background: #e94560; color: #fff; padding: 10px 15px; border-radius: 8px; margin: 10px 0; font-size: 14px; }
+    .damage-highlight { color: #e94560; font-weight: bold; font-size: 15px; }
+    .set-badge { display: inline-block; background: #e94560; color: #fff; padding: 3px 8px; border-radius: 4px; font-size: 12px; margin: 0 5px; }
+    .e2-badge { background: #f5a623; }
+    .e3-badge { background: #7fdbca; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="nav">
+    <a href="00-index.html">📋 索引</a>
+    <a href="01-dnf-damage-overview.html">🎯 DNF总览</a>
+    <a href="02-dnf-formula-analysis.html">📐 DNF公式</a>
+    <a href="bonus-system/dnf-e2-e3-bonus.html">🔮 异界套装</a>
+  </div>
+
+<h1>🔮 第4章：DNF 70版本异界套装加成系统研究</h1>
+
+<div class="version-banner">
+  ⚠️ 版本锁定：本文件仅研究 <strong>DNF 70版本末期</strong>，不涉及80/85/90+后续版本<br>
+  📌 异界套装 = 70版本核心装备系统，提供<strong>技能等级加成</strong>和<strong>伤害加成</strong>
+</div>
+
+<h2>一、异界套装概述</h2>
+
+<div class="card">
+<p><strong>异界套装来源</strong>：安特贝鲁峡谷（E2）、格拉西亚家族遗物（E3）</p>
+<p><strong>套装构成</strong>：每件装备独立掉落，可自由搭配</p>
+<p><strong>70版本特色</strong></p>
+<ul>
+  <li><strong>E2套装</strong>：侧重技能等级加成，适合特定技能流派</li>
+  <li><strong>E3套装</strong>：侧重伤害加成，适合通用输出</li>
+  <li><strong>自由搭配</strong>：可混搭E2/E3，实现最优配置</li>
+  <li><strong>无黄白字</strong>：70版本无装备黄白字系统，加成独立计算</li>
+</ul>
+</div>
+
+<h2>二、E2套装（安特贝鲁峡谷）</h2>
+
+<div class="card">
+<h3>🔶 E2套装各职业加成</h3>
+
+<h4>狂战士（红眼）</h4>
+<table>
+<thead><tr><th>部位</th><th>加成效果</th><th>推荐度</th></tr></thead>
+<tbody>
+  <tr><td>头部「血之印记」</td><td>十字斩 +2级，崩山击 +2级</td><td>★★★★★</td></tr>
+  <tr><td>肩部「血之狂暴」</td><td>暴走 +2级，力量 +3%</td><td>★★★★★</td></tr>
+  <tr><td>胸部「血之觉醒」</td><td>血气之刃 +2级，怒气爆发 +2级</td><td>★★★★☆</td></tr>
+  <tr><td>腰部「血之守护」</td><td>嗜魂之手 +2级，HP +5%</td><td>★★★★☆</td></tr>
+  <tr><td>腿部「血之守护」</td><td>死亡左眼 +2级，独立攻击 +3%</td><td>★★★★★</td></tr>
+  <tr><td>鞋子「血之速度」</td><td>血气唤醒 +2级，移动速度 +3%</td><td>★★★☆☆</td></tr>
+</tbody>
+</table>
+
+<h4>阿修罗（瞎子）</h4>
+<table>
+<thead><tr><th>部位</th><th>加成效果</th><th>推荐度</th></tr></thead>
+<tbody>
+  <tr><td>头部「地裂波动」</td><td>地裂波动剑 +2级，范围 +10%</td><td>★★★★★</td></tr>
+  <tr><td>肩部「波动爆发」</td><td>波动爆发 +2级，眩晕时间 +20%</td><td>★★★★☆</td></tr>
+  <tr><td>胸部「冰刃波动」</td><td>冰刃波动剑 +2级，冰伤 +15%</td><td>★★★★★</td></tr>
+  <tr><td>腰部「火刃波动」</td><td>火刃波动剑 +2级，火伤 +15%</td><td>★★★★★</td></tr>
+  <tr><td>腿部「波动刻印」</td><td>波动刻印 +2级，智力 +5%</td><td>★★★★★</td></tr>
+  <tr><td>鞋子「神怒波动」</td><td>神怒波动剑 +2级，范围 +20%</td><td>★★★★☆</td></tr>
+</tbody>
+</table>
+
+<h4>机械师（漫游枪手）</h4>
+<table>
+<thead><tr><th>部位</th><th>加成效果</th><th>推荐度</th></tr></thead>
+<tbody>
+  <tr><td>头部「机械陷阱」</td><td>机械陷阱 +2级，眩晕时间 +20%</td><td>★★★★★</td></tr>
+  <tr><td>肩部「机械炮塔」</td><td>机械炮塔 +1级，攻击频率 +10%</td><td>★★★★☆</td></tr>
+  <tr><td>胸部「机械人偶」</td><td>机械人偶 +2级，HP +30%</td><td>★★★★★</td></tr>
+  <tr><td>腰部「机械手雷」</td><td>机械手雷 +2级，爆炸范围 +15%</td><td>★★★★★</td></tr>
+  <tr><td>腿部「机械炸弹」</td><td>机械炸弹 +2级，伤害 +20%</td><td>★★★★★</td></tr>
+  <tr><td>鞋子「机械速度」</td><td>机械精通 +2级，施放速度 +5%</td><td>★★★★☆</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>三、E3套装（格拉西亚家族遗物）</h2>
+
+<div class="card">
+<h3>🔷 E3套装各职业加成</h3>
+
+<h4>狂战士（红眼）</h4>
+<table>
+<thead><tr><th>部位</th><th>加成效果</th><th>推荐度</th></tr></thead>
+<tbody>
+  <tr><td>头部「血之狂暴」</td><td>十字斩伤害 +15%，暴击率 +5%</td><td>★★★★★</td></tr>
+  <tr><td>肩部「血之狂暴」</td><td>崩山击伤害 +15%，范围 +10%</td><td>★★★★★</td></tr>
+  <tr><td>胸部「血之狂暴」</td><td>暴走持续时间 +5秒，力量 +5%</td><td>★★★★★</td></tr>
+  <tr><td>腰部「血之狂暴」</td><td>怒气爆发伤害 +15%，范围 +10%</td><td>★★★★☆</td></tr>
+  <tr><td>腿部「血之狂暴」</td><td>嗜魂之手伤害 +15%，抓取范围 +10%</td><td>★★★★☆</td></tr>
+  <tr><td>鞋子「血之狂暴」</td><td>血气之刃伤害 +15%，移动速度 +3%</td><td>★★★★☆</td></tr>
+</tbody>
+</table>
+
+<h4>阿修罗（瞎子）</h4>
+<table>
+<thead><tr><th>部位</th><th>加成效果</th><th>推荐度</th></tr></thead>
+<tbody>
+  <tr><td>头部「波动之怒」</td><td>地裂波动剑伤害 +15%，范围 +15%</td><td>★★★★★</td></tr>
+  <tr><td>肩部「波动之怒」</td><td>波动爆发伤害 +15%，眩晕时间 +30%</td><td>★★★★★</td></tr>
+  <tr><td>胸部「波动之怒」</td><td>冰刃波动剑伤害 +15%，冰冻时间 +20%</td><td>★★★★★</td></tr>
+  <tr><td>腰部「波动之怒」</td><td>火刃波动剑伤害 +15%，火伤 +20%</td><td>★★★★★</td></tr>
+  <tr><td>腿部「波动之怒」</td><td>波动刻印伤害 +15%，智力 +8%</td><td>★★★★★</td></tr>
+  <tr><td>鞋子「波动之怒」</td><td>神怒波动剑伤害 +15%，范围 +25%</td><td>★★★★☆</td></tr>
+</tbody>
+</table>
+
+<h4>机械师（漫游枪手）</h4>
+<table>
+<thead><tr><th>部位</th><th>加成效果</th><th>推荐度</th></tr></thead>
+<tbody>
+  <tr><td>头部「机械之怒」</td><td>机械陷阱伤害 +15%，眩晕时间 +30%</td><td>★★★★★</td></tr>
+  <tr><td>肩部「机械之怒」</td><td>机械炮塔伤害 +15%，攻击频率 +15%</td><td>★★★★★</td></tr>
+  <tr><td>胸部「机械之怒」</td><td>机械人偶伤害 +15%，HP +40%</td><td>★★★★★</td></tr>
+  <tr><td>腰部「机械之怒」</td><td>机械手雷伤害 +15%，爆炸范围 +20%</td><td>★★★★★</td></tr>
+  <tr><td>腿部「机械之怒」</td><td>机械炸弹伤害 +15%，伤害 +25%</td><td>★★★★★</td></tr>
+  <tr><td>鞋子「机械之怒」</td><td>机械精通伤害 +15%，施放速度 +8%</td><td>★★★★☆</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>四、异界套装加成计算</h2>
+
+<div class="formula-box">
+<h3>📐 技能等级加成计算</h3>
+<pre>
+技能等级加成 = 基础等级 + 异界加成
+
+伤害倍率提升 = (1 + 等级加成 × 技能成长率)
+
+示例：
+- 十字斩基础Lv18，E2头部+2级 = Lv20
+- 20级倍率 = 1.18（18级）× 1.08（每级成长）≈ 1.27
+- 伤害提升 = 1.27 ÷ 1.18 ≈ 1.076（+7.6%）
+</pre>
+
+<h3>📐 伤害加成计算</h3>
+<pre>
+最终伤害 = 基础伤害 × (1 + 异界伤害加成)
+
+示例：
+- 十字斩基础伤害 10,000
+- E3头部伤害加成 +15%
+- 最终伤害 = 10,000 × 1.15 = 11,500
+</pre>
+
+<h3>📐 套装效果叠加</h3>
+<pre>
+多件装备加成 = 各部位加成相乘（不同乘区）
+
+示例：
+- E2头部十字斩 +2级（+7.6%伤害）
+- E3头部十字斩伤害 +15%
+- 总加成 = 1.076 × 1.15 ≈ 1.237（+23.7%）
+</pre>
+</div>
+
+<h2>五、异界套装搭配实例</h2>
+
+<h3>实例1：狂战士十字斩流</h3>
+
+<div class="example-box">
+<p><strong>目标</strong>：最大化十字斩伤害</p>
+
+<table>
+<thead><tr><th>部位</th><th>选择</th><th>加成</th></tr></thead>
+<tbody>
+  <tr><td>头部</td><td>E2「血之印记」</td><td>十字斩 +2级</td></tr>
+  <tr><td>肩部</td><td>E3「血之狂暴」</td><td>十字斩伤害 +15%</td></tr>
+  <tr><td>胸部</td><td>E2「血之觉醒」</td><td>血气之刃 +2级</td></tr>
+  <tr><td>腰部</td><td>E3「血之狂暴」</td><td>怒气爆发伤害 +15%</td></tr>
+  <tr><td>腿部</td><td>E2「血之守护」</td><td>死亡左眼 +2级</td></tr>
+  <tr><td>鞋子</td><td>E3「血之狂暴」</td><td>血气之刃伤害 +15%</td></tr>
+</tbody>
+</table>
+
+<pre>
+十字斩伤害计算：
+- 基础Lv18倍率：1.18
+- E2头部+2级 → Lv20倍率：1.27
+- E3肩部伤害+15%
+- 总倍率：1.27 × 1.15 = 1.4605
+
+对比无异界：
+- 提升：1.4605 ÷ 1.18 ≈ 1.237（+23.7%）
+</pre>
+
+<p class="damage-highlight">🎯 十字斩总伤害提升：+23.7%</p>
+</div>
+
+<h3>实例2：阿修罗波动流</h3>
+
+<div class="example-box">
+<p><strong>目标</strong>：最大化波动技能伤害</p>
+
+<table>
+<thead><tr><th>部位</th><th>选择</th><th>加成</th></tr></thead>
+<tbody>
+  <tr><td>头部</td><td>E2「地裂波动」</td><td>地裂波动剑 +2级</td></tr>
+  <tr><td>肩部</td><td>E3「波动之怒」</td><td>波动爆发伤害 +15%</td></tr>
+  <tr><td>胸部</td><td>E2「冰刃波动」</td><td>冰刃波动剑 +2级</td></tr>
+  <tr><td>腰部</td><td>E2「火刃波动」</td><td>火刃波动剑 +2级</td></tr>
+  <tr><td>腿部</td><td>E3「波动之怒」</td><td>波动刻印伤害 +15%，智力 +8%</td></tr>
+  <tr><td>鞋子</td><td>E2「神怒波动」</td><td>神怒波动剑 +2级</td></tr>
+</tbody>
+</table>
+
+<pre>
+波动技能伤害计算：
+- 地裂波动：E2头部+2级 → +7.6%伤害
+- 波动爆发：E3肩部伤害+15%
+- 冰刃波动：E2胸部+2级 → +7.6%伤害
+- 火刃波动：E2腰部+2级 → +7.6%伤害
+- 波动刻印：E3腿部伤害+15% + 智力+8%
+- 神怒波动：E2鞋子+2级 → +7.6%伤害
+
+总提升（平均）：约 +20%~25%
+</pre>
+
+<p class="damage-highlight">🎯 波动技能平均提升：+20%~25%</p>
+</div>
+
+<h3>实例3：机械师装置流</h3>
+
+<div class="example-box">
+<p><strong>目标</strong>：最大化机械装置协同输出</p>
+
+<table>
+<thead><tr><th>部位</th><th>选择</th><th>加成</th></tr></thead>
+<tbody>
+  <tr><td>头部</td><td>E2「机械陷阱」</td><td>机械陷阱 +2级</td></tr>
+  <tr><td>肩部</td><td>E3「机械之怒」</td><td>机械炮塔伤害 +15%</td></tr>
+  <tr><td>胸部</td><td>E2「机械人偶」</td><td>机械人偶 +2级</td></tr>
+  <tr><td>腰部</td><td>E2「机械手雷」</td><td>机械手雷 +2级</td></tr>
+  <tr><td>腿部</td><td>E3「机械之怒」</td><td>机械炸弹伤害 +15%</td></tr>
+  <tr><td>鞋子</td><td>E2「机械速度」</td><td>机械精通 +2级</td></tr>
+</tbody>
+</table>
+
+<pre>
+装置伤害计算：
+- 机械陷阱：E2头部+2级 → +7.6%伤害
+- 机械炮塔：E3肩部伤害+15%
+- 机械人偶：E2胸部+2级 → +7.6%伤害
+- 机械手雷：E2腰部+2级 → +7.6%伤害
+- 机械炸弹：E3腿部伤害+15%
+- 机械精通：E2鞋子+2级 → 所有装置+7.6%
+
+总提升（平均）：约 +22%~28%
+</pre>
+
+<p class="damage-highlight">🎯 机械装置平均提升：+22%~28%</p>
+</div>
+
+<h2>六、异界套装搭配策略</h2>
+
+<div class="card">
+<h3>🎯 搭配原则</h3>
+<ol>
+  <li><strong>核心技能优先</strong>：选择对核心技能加成最高的部位</li>
+  <li><strong>E2+E3混搭</strong>：E2提供技能等级，E3提供伤害加成</li>
+  <li><strong>被动技能考虑</strong>：部分部位提供被动技能加成（如死亡左眼）</li>
+  <li><strong>属性加成补充</strong>：部分部位提供力量/智力/暴击等属性</li>
+</ol>
+
+<h3>🎯 推荐搭配方案</h3>
+<table>
+<thead><tr><th>流派</th><th>头部</th><th>肩部</th><th>胸部</th><th>腰部</th><th>腿部</th><th>鞋子</th></tr></thead>
+<tbody>
+  <tr><td>爆发流</td><td>E3</td><td>E3</td><td>E3</td><td>E3</td><td>E3</td><td>E3</td></tr>
+  <tr><td>持续流</td><td>E2</td><td>E2</td><td>E2</td><td>E2</td><td>E2</td><td>E2</td></tr>
+  <tr><td>混搭流</td><td>E2</td><td>E3</td><td>E2</td><td>E3</td><td>E2</td><td>E3</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>七、总结</h2>
+
+<div class="card">
+<p><strong>异界套装核心价值</strong></p>
+<ul>
+  <li><strong>E2套装</strong>：技能等级加成，适合特定技能流派</li>
+  <li><strong>E3套装</strong>：伤害加成，适合通用输出</li>
+  <li><strong>混搭搭配</strong>：可实现最优伤害提升（+20%~30%）</li>
+  <li><strong>自由搭配</strong>：每件装备独立掉落，可自由组合</li>
+</ul>
+
+<p><strong>70版本加成特点</strong></p>
+<ul>
+  <li>无黄白字叠加，加成独立计算</li>
+  <li>技能等级加成和伤害加成可叠加</li>
+  <li>不同乘区加成相乘，同类加成相加</li>
+  <li>异界套装是70版本核心装备系统</li>
+</ul>
+</div>
+
+<div class="nav" style="margin-top: 40px; border-top: 1px solid #2a2a4a; padding-top: 15px;">
+  <a href="00-index.html">📋 索引</a> | 
+  <a href="01-dnf-damage-overview.html">🎯 DNF总览</a> | 
+  <a href="02-dnf-formula-analysis.html">📐 DNF公式</a> | 
+  <a href="02-berserker-damage-calculation.html">🩸 狂战士</a> | 
+  <a href="03-ashura-damage-calculation.html">👁️ 阿修罗</a> | 
+  <a href="04-riodamage-calculation.html">🥋 柔道</a> | 
+  <a href="05-gunner-damage-calculation.html">🔫 枪炮师</a> | 
+  <a href="06-mechanic-damage-calculation.html">🤖 漫游枪手</a>
+</div>
+</div>
+</body>
+</html>

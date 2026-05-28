@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>第6章：DNF 70版本漫游枪手（机械师）伤害计算实例</title>
+  <style>
+    body { background: #1a1a2e; color: #e0e0e0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; padding: 20px; line-height: 1.8; }
+    .container { max-width: 950px; margin: 0 auto; }
+    h1 { color: #e94560; border-bottom: 2px solid #2a2a4a; padding-bottom: 10px; font-size: 28px; }
+    h2 { color: #f5a623; border-bottom: 1px solid #2a2a4a; padding-bottom: 8px; margin-top: 30px; font-size: 22px; }
+    h3 { color: #7fdbca; margin-top: 20px; font-size: 18px; }
+    h4 { color: #a8e6cf; margin-top: 15px; font-size: 16px; }
+    .card { background: #16213e; padding: 20px; border-radius: 10px; margin: 15px 0; }
+    pre { background: #0f0f1a; padding: 15px; border-radius: 8px; overflow-x: auto; color: #7fdbca; font-family: "Courier New", monospace; font-size: 13px; line-height: 1.6; }
+    code { background: #0f0f1a; padding: 2px 6px; border-radius: 4px; color: #7fdbca; font-size: 13px; }
+    table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 14px; }
+    th, td { padding: 10px; border: 1px solid #2a2a4a; text-align: left; }
+    th { background: #0f3460; color: #fff; }
+    tr:nth-child(even) { background: #1a1a2e; }
+    a { color: #e94560; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul, ol { padding-left: 20px; }
+    li { margin: 6px 0; }
+    blockquote { border-left: 3px solid #e94560; margin: 10px 0; padding: 8px 15px; background: #16213e; border-radius: 0 8px 8px 0; }
+    .nav { margin-bottom: 20px; font-size: 14px; }
+    .nav a { margin-right: 10px; }
+    .highlight { color: #e94560; font-weight: bold; }
+    .class-card { background: #1a1a2e; border-left: 4px solid #e94560; padding: 15px; margin: 10px 0; border-radius: 0 8px 8px 0; }
+    .formula-box { background: #0f0f1a; border: 1px solid #2a2a4a; padding: 15px; border-radius: 8px; margin: 10px 0; }
+    .example-box { background: #16213e; border: 1px dashed #f5a623; padding: 15px; border-radius: 8px; margin: 15px 0; }
+    .tag { display: inline-block; background: #0f3460; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 12px; margin-right: 5px; }
+    .version-banner { background: #e94560; color: #fff; padding: 10px 15px; border-radius: 8px; margin: 10px 0; font-size: 14px; }
+    .damage-highlight { color: #e94560; font-weight: bold; font-size: 15px; }
+    .mechanic-bar { background: linear-gradient(90deg, #2a2a4a, #4a4a6a); padding: 10px; border-radius: 5px; margin: 10px 0; }
+    .robot-icon { color: #f5a623; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="nav">
+    <a href="00-index.html">📋 索引</a>
+    <a href="01-dnf-damage-overview.html">🎯 DNF总览</a>
+    <a href="02-dnf-formula-analysis.html">📐 DNF公式</a>
+    <a href="02-berserker-damage-calculation.html">🩸 狂战士</a>
+    <a href="03-ashura-damage-calculation.html">👁️ 阿修罗</a>
+    <a href="04-riodamage-calculation.html">🥋 柔道</a>
+    <a href="05-gunner-damage-calculation.html">🔫 枪炮师</a>
+    <a href="06-mechanic-damage-calculation.html">🤖 漫游枪手</a>
+  </div>
+
+<h1>🤖 第6章：DNF 70版本漫游枪手（机械师）伤害计算实例</h1>
+
+<div class="version-banner">
+  ⚠️ 版本锁定：本文件仅研究 <strong>DNF 70版本末期</strong>，不涉及60/80/85/90+后续版本<br>
+  📌 漫游枪手 = 枪手转职（Lv18），以<strong>机械装置+固伤</strong>为核心输出方式
+</div>
+
+<h2>一、漫游枪手职业定位</h2>
+
+<div class="card">
+  <p><strong>转职路线</strong>：枪手 → 机械师（Lv18转职）</p>
+  <p><strong>输出类型</strong>：智力固伤为主 + 机械装置持续伤害</p>
+  <p><strong>70版本特色</strong></p>
+  <ul>
+    <li><strong>机械装置</strong>：陷阱、炮塔、机器人、手雷等装置构成核心输出体系</li>
+    <li><strong>智力加成</strong>：所有机械技能均为固伤，智力是核心属性</li>
+    <li><strong>装置协同</strong>：多个装置同时存在，形成持续输出压力</li>
+    <li><strong>控制能力</strong>：陷阱类技能具备强控效果（眩晕、减速）</li>
+    <li><strong>异界E2「机械战甲」</strong>：机械人偶等级+2，炮塔等级+1</li>
+    <li><strong>武器选择</strong>：法杖（智力高）、魔杖（魔攻高）、手炮（物理攻击）</li>
+  </ul>
+</div>
+
+<h2>二、漫游枪手核心技能分类</h2>
+
+<div class="card">
+<h3>🔴 机械陷阱类（固伤+控制）</h3>
+<table>
+<thead><tr><th>技能</th><th>类型</th><th>70版本固伤基数</th><th>说明</th></tr></thead>
+<tbody>
+  <tr><td><strong>机械陷阱</strong></td><td>主动</td><td>4200×1.18=4,956</td><td>Lv18+E2+2=20级，基础陷阱，固伤+眩晕</td></tr>
+  <tr><td><strong>机械炮塔</strong></td><td>主动</td><td>3800×1.18=4,484</td><td>Lv18+E2+1=19级，持续炮击，范围输出</td></tr>
+  <tr><td><strong>机械手雷</strong></td><td>主动</td><td>5600×1.18=6,608</td><td>Lv18，爆炸伤害，范围固伤</td></tr>
+  <tr><td><strong>机械人偶</strong></td><td>主动</td><td>6800×1.18=8,024</td><td>Lv18+E2+2=20级，召唤机器人，持续输出</td></tr>
+  <tr><td><strong>机械炸弹</strong></td><td>主动</td><td>7200×1.18=8,496</td><td>Lv18，高倍率爆炸，爆发核心</td></tr>
+</tbody>
+</table>
+
+<h3>🟡 增益/被动技能</h3>
+<table>
+<thead><tr><th>技能</th><th>作用</th></tr></thead>
+<tbody>
+  <tr><td><strong>机械精通</strong></td><td>被动：所有机械技能等级+2（Lv18=+36%伤害）</td></tr>
+  <tr><td><strong>机械改造</strong></td><td>被动：智力+5%/级，满级Lv18=+90%智力</td></tr>
+  <tr><td><strong>机械战甲</strong></td><td>被动：机械人偶HP+30%，防御+20%</td></tr>
+  <tr><td><strong>机械觉醒</strong></td><td>觉醒被动：机械装置伤害+25%</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>三、漫游枪手伤害计算公式</h2>
+
+<div class="formula-box">
+<h3>📐 智力固伤公式（漫游枪手核心）</h3>
+<pre>
+最终伤害 = 技能固伤基数 × (1 + 智力 ÷ 250) × (1 + 独立攻击 ÷ 250) × 技能倍率
+
+其中：
+- 技能固伤基数：技能本身的固定伤害值
+- 智力：角色智力属性（含装备、BUFF加成）
+- 独立攻击：独立攻击力（含武器、装备）
+- 技能倍率：技能等级对应的倍率（70版本无后续版本加成）
+</pre>
+
+<h3>📐 装置持续伤害公式</h3>
+<pre>
+装置总伤害 = 装置单次伤害 × 攻击次数 × 持续时间
+
+装置单次伤害 = 技能固伤基数 × (1 + 智力 ÷ 250) × (1 + 独立攻击 ÷ 250)
+</pre>
+
+<h3>📐 防御减伤公式</h3>
+<pre>
+最终伤害 = 基础伤害 × 300 ÷ (300 + 防御)
+</pre>
+</div>
+
+<h2>四、漫游枪手伤害计算实例</h2>
+
+<h3>实例1：机械陷阱基础伤害计算</h3>
+
+<div class="example-box">
+<p><strong>场景设定</strong>：Lv70 漫游枪手，面对Lv70 怪物（防御约800）</p>
+
+<table>
+<thead><tr><th>属性</th><th>数值</th><th>说明</th></tr></thead>
+<tbody>
+  <tr><td>智力</td><td>1200</td><td>装备+BUFF后总智力</td></tr>
+  <tr><td>独立攻击</td><td>1000</td><td>武器+装备独立攻击</td></tr>
+  <tr><td>技能等级</td><td>Lv20</td><td>Lv18 + 机械精通+2</td></tr>
+  <tr><td>固伤基数</td><td>4200</td><td>机械陷阱Lv18基础值</td></tr>
+  <tr><td>技能倍率</td><td>1.18</td><td>20级倍率</td></tr>
+</tbody>
+</table>
+
+<pre>
+步骤1：计算智力加成
+  智力加成 = 1 + 1200 ÷ 250 = 1 + 4.8 = 5.8
+
+步骤2：计算独立攻击加成
+  独立攻击加成 = 1 + 1000 ÷ 250 = 1 + 4 = 5
+
+步骤3：计算基础伤害
+  基础伤害 = 4200 × 1.18 × 5.8 × 5
+           = 4956 × 5.8 × 5
+           = 28,744.8 × 5
+           = 143,724
+
+步骤4：计算防御减伤
+  防御减伤 = 300 ÷ (300 + 800) = 300 ÷ 1100 = 0.2727
+
+步骤5：最终伤害
+  最终伤害 = 143,724 × 0.2727 ≈ 39,193
+</pre>
+
+<p class="damage-highlight">🎯 机械陷阱单次伤害：约 39,193</p>
+</div>
+
+<h3>实例2：机械炮塔持续伤害计算</h3>
+
+<div class="example-box">
+<p><strong>场景设定</strong>：Lv70 漫游枪手，机械炮塔持续攻击10秒</p>
+
+<table>
+<thead><tr><th>属性</th><th>数值</th><th>说明</th></tr></thead>
+<tbody>
+  <tr><td>智力</td><td>1200</td><td>装备+BUFF后总智力</td></tr>
+  <tr><td>独立攻击</td><td>1000</td><td>武器+装备独立攻击</td></tr>
+  <tr><td>技能等级</td><td>Lv19</td><td>Lv18 + 机械精通+1</td></tr>
+  <tr><td>固伤基数</td><td>3800</td><td>机械炮塔Lv18基础值</td></tr>
+  <tr><td>技能倍率</td><td>1.12</td><td>19级倍率</td></tr>
+  <tr><td>攻击频率</td><td>2次/秒</td><td>炮塔攻击间隔0.5秒</td></tr>
+  <tr><td>持续时间</td><td>10秒</td><td>炮塔存在时间</td></tr>
+</tbody>
+</table>
+
+<pre>
+步骤1：计算智力加成
+  智力加成 = 1 + 1200 ÷ 250 = 5.8
+
+步骤2：计算独立攻击加成
+  独立攻击加成 = 1 + 1000 ÷ 250 = 5
+
+步骤3：计算单次伤害
+  单次伤害 = 3800 × 1.12 × 5.8 × 5
+           = 4256 × 5.8 × 5
+           = 24,684.8 × 5
+           = 123,424
+
+步骤4：计算防御减伤
+  防御减伤 = 300 ÷ (300 + 800) = 0.2727
+
+步骤5：单次实际伤害
+  单次实际 = 123,424 × 0.2727 ≈ 33,658
+
+步骤6：计算总攻击次数
+  总次数 = 2次/秒 × 10秒 = 20次
+
+步骤7：炮塔总伤害
+  总伤害 = 33,658 × 20 = 673,160
+</pre>
+
+<p class="damage-highlight">🎯 机械炮塔10秒总伤害：约 673,160</p>
+</div>
+
+<h3>实例3：机械人偶协同输出计算</h3>
+
+<div class="example-box">
+<p><strong>场景设定</strong>：Lv70 漫游枪手，机械人偶+机械炮塔+机械陷阱同时存在</p>
+
+<table>
+<thead><tr><th>装置</th><th>单次伤害</th><th>攻击频率</th><th>持续时间</th><th>总伤害</th></tr></thead>
+<tbody>
+  <tr><td>机械人偶</td><td>38,000</td><td>1次/秒</td><td>15秒</td><td>570,000</td></tr>
+  <tr><td>机械炮塔</td><td>33,658</td><td>2次/秒</td><td>10秒</td><td>673,160</td></tr>
+  <tr><td>机械陷阱</td><td>39,193</td><td>1次</td><td>即时</td><td>39,193</td></tr>
+</tbody>
+</table>
+
+<pre>
+协同总伤害 = 570,000 + 673,160 + 39,193 = 1,282,353
+
+注意：
+- 机械人偶和炮塔可叠加存在，形成持续输出压力
+- 陷阱为即时伤害，用于爆发和控场
+- 三者协同可实现「持续+爆发」双重输出模式
+</pre>
+
+<p class="damage-highlight">🎯 三装置协同总伤害：约 1,282,353</p>
+</div>
+
+<h3>实例4：机械手雷爆发伤害计算</h3>
+
+<div class="example-box">
+<p><strong>场景设定</strong>：Lv70 漫游枪手，机械手雷满级爆发</p>
+
+<table>
+<thead><tr><tr><th>属性</th><th>数值</th><th>说明</th></tr></thead>
+<tbody>
+  <tr><td>智力</td><td>1400</td><td>开启暴走/智力BUFF后</td></tr>
+  <tr><td>独立攻击</td><td>1200</td><td>武器+装备独立攻击</td></tr>
+  <tr><td>技能等级</td><td>Lv18</td><td>机械手雷Lv18</td></tr>
+  <tr><td>固伤基数</td><td>5600</td><td>机械手雷Lv18基础值</td></tr>
+  <tr><td>技能倍率</td><td>1.0</td><td>18级倍率</td></tr>
+  <tr><td>防御</td><td>800</td><td>Lv70 怪物防御</td></tr>
+</tbody>
+</table>
+
+<pre>
+步骤1：计算智力加成
+  智力加成 = 1 + 1400 ÷ 250 = 1 + 5.6 = 6.6
+
+步骤2：计算独立攻击加成
+  独立攻击加成 = 1 + 1200 ÷ 250 = 1 + 4.8 = 5.8
+
+步骤3：计算基础伤害
+  基础伤害 = 5600 × 1.0 × 6.6 × 5.8
+           = 5600 × 6.6 × 5.8
+           = 36,960 × 5.8
+           = 214,368
+
+步骤4：计算防御减伤
+  防御减伤 = 300 ÷ (300 + 800) = 0.2727
+
+步骤5：最终伤害
+  最终伤害 = 214,368 × 0.2727 ≈ 58,458
+</pre>
+
+<p class="damage-highlight">🎯 机械手雷单次爆发伤害：约 58,458</p>
+</div>
+
+<h3>实例5：机械炸弹终极爆发计算</h3>
+
+<div class="example-box">
+<p><strong>场景设定</strong>：Lv70 漫游枪手，机械炸弹满级+异界套装加成</p>
+
+<table>
+<thead><tr><th>属性</th><th>数值</th><th>说明</th></tr></thead>
+<tbody>
+  <tr><td>智力</td><td>1500</td><td>满BUFF智力</td></tr>
+  <tr><td>独立攻击</td><td>1300</td><td>武器+装备独立攻击</td></tr>
+  <tr><td>技能等级</td><td>Lv18</td><td>机械炸弹Lv18</td></tr>
+  <tr><td>固伤基数</td><td>7200</td><td>机械炸弹Lv18基础值</td></tr>
+  <tr><td>技能倍率</td><td>1.0</td><td>18级倍率</td></tr>
+  <tr><td>异界加成</td><td>+15%</td><td>E2套装技能伤害加成</td></tr>
+  <tr><td>防御</td><td>800</td><td>Lv70 怪物防御</td></tr>
+</tbody>
+</table>
+
+<pre>
+步骤1：计算智力加成
+  智力加成 = 1 + 1500 ÷ 250 = 1 + 6 = 7
+
+步骤2：计算独立攻击加成
+  独立攻击加成 = 1 + 1300 ÷ 250 = 1 + 5.2 = 6.2
+
+步骤3：计算基础伤害
+  基础伤害 = 7200 × 1.0 × 7 × 6.2
+           = 7200 × 7 × 6.2
+           = 50,400 × 6.2
+           = 312,480
+
+步骤4：异界套装加成
+  异界加成后 = 312,480 × 1.15 = 359,352
+
+步骤5：计算防御减伤
+  防御减伤 = 300 ÷ (300 + 800) = 0.2727
+
+步骤6：最终伤害
+  最终伤害 = 359,352 × 0.2727 ≈ 97,995
+</pre>
+
+<p class="damage-highlight">🎯 机械炸弹终极爆发伤害：约 97,995</p>
+</div>
+
+<h2>五、漫游枪手输出循环分析</h2>
+
+<div class="card">
+<h3>🔄 标准输出循环</h3>
+<ol>
+  <li><strong>起手</strong>：机械陷阱（控场+伤害）</li>
+  <li><strong>持续</strong>：机械炮塔（持续输出）</li>
+  <li><strong>爆发</strong>：机械炸弹（高伤害爆发）</li>
+  <li><strong>补充</strong>：机械手雷（范围清理）</li>
+  <li><strong>持续</strong>：机械人偶（持续输出补充）</li>
+</ol>
+
+<h3>⏱️ 循环时间轴</h3>
+<table>
+<thead><tr><th>时间</th><th>动作</th><th>伤害类型</th></tr></thead>
+<tbody>
+  <tr><td>0s</td><td>机械陷阱</td><td>即时固伤+眩晕</td></tr>
+  <tr><td>1s</td><td>机械炮塔</td><td>持续输出开始</td></tr>
+  <tr><td>3s</td><td>机械人偶</td><td>持续输出补充</td></tr>
+  <tr><td>5s</td><td>机械炸弹</td><td>爆发伤害</td></tr>
+  <tr><td>8s</td><td>机械手雷</td><td>范围清理</td></tr>
+  <tr><td>10s+</td><td>炮塔/人偶持续</td><td>持续输出</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>六、漫游枪手装备推荐（70版本）</h2>
+
+<div class="card">
+<h3>🎒 武器选择</h3>
+<table>
+<thead><tr><th>武器</th><th>智力</th><th>独立攻击</th><th>推荐度</th></tr></thead>
+<tbody>
+  <tr><td>法杖「死亡之舞」</td><td>高</td><td>中</td><td>★★★★★</td></tr>
+  <tr><td>魔杖「机械之心」</td><td>中</td><td>高</td><td>★★★★☆</td></tr>
+  <tr><td>手炮「机械炮」</td><td>低</td><td>高</td><td>★★★☆☆</td></tr>
+</tbody>
+</table>
+
+<h3>🎒 异界套装推荐</h3>
+<table>
+<thead><tr><th>套装</th><th>效果</th><th>推荐度</th></tr></thead>
+<tbody>
+  <tr><td>E2「机械战甲」</td><td>机械人偶+2级，炮塔+1级</td><td>★★★★★</td></tr>
+  <tr><td>E3「机械战甲」</td><td>机械技能伤害+15%</td><td>★★★★☆</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>七、总结</h2>
+
+<div class="card">
+<p><strong>漫游枪手核心特点</strong></p>
+<ul>
+  <li><strong>智力固伤</strong>：所有机械技能均为固伤，智力是核心属性</li>
+  <li><strong>装置协同</strong>：多装置同时存在，形成持续输出压力</li>
+  <li><strong>控制能力</strong>：陷阱类技能具备强控效果</li>
+  <li><strong>爆发能力</strong>：机械炸弹为最高爆发技能</li>
+  <li><strong>持续输出</strong>：炮塔和人偶提供稳定持续伤害</li>
+</ul>
+
+<p><strong>伤害计算要点</strong></p>
+<ul>
+  <li>固伤公式：基础 × (1 + 智力÷250) × (1 + 独立攻击÷250)</li>
+  <li>防御减伤：300 ÷ (300 + 防御)</li>
+  <li>装置持续伤害需计算攻击次数和持续时间</li>
+  <li>异界套装可提供额外技能等级和伤害加成</li>
+</ul>
+</div>
+
+<div class="nav" style="margin-top: 40px; border-top: 1px solid #2a2a4a; padding-top: 15px;">
+  <a href="00-index.html">📋 索引</a> | 
+  <a href="01-dnf-damage-overview.html">🎯 DNF总览</a> | 
+  <a href="02-dnf-formula-analysis.html">📐 DNF公式</a> | 
+  <a href="02-berserker-damage-calculation.html">🩸 狂战士</a> | 
+  <a href="03-ashura-damage-calculation.html">👁️ 阿修罗</a> | 
+  <a href="04-riodamage-calculation.html">🥋 柔道</a> | 
+  <a href="05-gunner-damage-calculation.html">🔫 枪炮师</a>
+</div>
+</div>
+</body>
+</html>
