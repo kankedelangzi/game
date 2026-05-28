@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>第2章（续）：DNF 70版本剑魂（白手）伤害计算实例</title>
+  <style>
+    body { background: #1a1a2e; color: #e0e0e0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; padding: 20px; line-height: 1.8; }
+    .container { max-width: 950px; margin: 0 auto; }
+    h1 { color: #e94560; border-bottom: 2px solid #2a2a4a; padding-bottom: 10px; font-size: 28px; }
+    h2 { color: #f5a623; border-bottom: 1px solid #2a2a4a; padding-bottom: 8px; margin-top: 30px; font-size: 22px; }
+    h3 { color: #7fdbca; margin-top: 20px; font-size: 18px; }
+    h4 { color: #a8e6cf; margin-top: 15px; font-size: 16px; }
+    .card { background: #16213e; padding: 20px; border-radius: 10px; margin: 15px 0; }
+    pre { background: #0f0f1a; padding: 15px; border-radius: 8px; overflow-x: auto; color: #7fdbca; font-family: "Courier New", monospace; font-size: 13px; line-height: 1.6; }
+    code { background: #0f0f1a; padding: 2px 6px; border-radius: 4px; color: #7fdbca; font-size: 13px; }
+    table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 14px; }
+    th, td { padding: 10px; border: 1px solid #2a2a4a; text-align: left; }
+    th { background: #0f3460; color: #fff; }
+    tr:nth-child(even) { background: #1a1a2e; }
+    a { color: #e94560; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul, ol { padding-left: 20px; }
+    li { margin: 6px 0; }
+    blockquote { border-left: 3px solid #e94560; margin: 10px 0; padding: 8px 15px; background: #16213e; border-radius: 0 8px 8px 0; }
+    .nav { margin-bottom: 20px; font-size: 14px; }
+    .nav a { margin-right: 10px; }
+    .highlight { color: #e94560; font-weight: bold; }
+    .class-card { background: #1a1a2e; border-left: 4px solid #e94560; padding: 15px; margin: 10px 0; border-radius: 0 8px 8px 0; }
+    .formula-box { background: #0f0f1a; border: 1px solid #2a2a4a; padding: 15px; border-radius: 8px; margin: 10px 0; }
+    .example-box { background: #16213e; border: 1px dashed #f5a623; padding: 15px; border-radius: 8px; margin: 15px 0; }
+    .tag { display: inline-block; background: #0f3460; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 12px; margin-right: 5px; }
+    .version-banner { background: #e94560; color: #fff; padding: 10px 15px; border-radius: 8px; margin: 10px 0; font-size: 14px; }
+    .damage-highlight { color: #e94560; font-weight: bold; font-size: 15px; }
+    .sword-bar { background: linear-gradient(90deg, #003366, #0066cc); padding: 10px; border-radius: 5px; margin: 10px 0; }
+    .weapon-card { background: #1a1a2e; border-left: 4px solid #f5a623; padding: 15px; margin: 10px 0; border-radius: 0 8px 8px 0; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="nav">
+    <a href="00-index.html">📋 索引</a>
+    <a href="01-dnf-damage-overview.html">🎯 DNF总览</a>
+    <a href="02-dnf-formula-analysis.html">📐 DNF公式</a>
+    <a href="02-berserker-damage-calculation.html">🩸 狂战士</a>
+    <a href="02-swordsman-damage-calculation.html">⚔️ 剑魂</a>
+    <a href="03-ashura-damage-calculation.html">👁️ 阿修罗</a>
+    <a href="04-riodamage-calculation.html">🥋 柔道</a>
+    <a href="05-gunner-damage-calculation.html">🔫 枪炮师</a>
+    <a href="06-mechanic-damage-calculation.html">🤖 漫游枪手</a>
+  </div>
+
+<h1>⚔️ 第2章（续）：DNF 70版本剑魂（白手）伤害计算实例</h1>
+
+<div class="version-banner">
+  ⚠️ 版本锁定：本文件仅研究 <strong>DNF 70版本末期</strong>，不涉及60/80/85/90+后续版本<br>
+  📌 剑魂 = 鬼剑士转职（Lv18），以<strong>百分比技能+武器精通</strong>为核心输出方式
+</div>
+
+<h2>一、剑魂职业定位</h2>
+
+<div class="card">
+  <p><strong>转职路线</strong>：鬼剑士 → 剑魂（Lv18转职）</p>
+  <p><strong>输出类型</strong>：物理百分比技能为主</p>
+  <p><strong>70版本特色</strong></p>
+  <ul>
+    <li><strong>武器精通</strong>：巨剑/短剑/太刀/手剑四种选择，影响技能伤害</li>
+    <li><strong>破极兵刃</strong>：核心BUFF，增加物理攻击力+30%</li>
+    <li><strong>拔刀斩</strong>：范围百分比技能，清图核心</li>
+    <li><strong>裂波斩</strong>：抓取+百分比，单体爆发</li>
+    <li><strong>上挑</strong>：浮空+百分比，连招核心</li>
+    <li><strong>武器强化</strong>：对百分比技能收益极高（+13提升42%物理攻击）</li>
+    <li><strong>异界E2「剑魂」</strong>：裂波斩/上挑/拔刀等级+2~3</li>
+  </ul>
+</div>
+
+<h2>二、剑魂核心技能分类</h2>
+
+<div class="card">
+<h3>🔵 物理百分比技能（核心输出）</h3>
+<table>
+<thead><tr><th>技能</th><th>类型</th><th>70版本倍率</th><th>说明</th></tr></thead>
+<tbody>
+  <tr><td><strong>上挑</strong></td><td>主动</td><td>300%</td><td>Lv18，浮空+百分比，连招核心</td></tr>
+  <tr><td><strong>裂波斩</strong></td><td>主动</td><td>420%</td><td>Lv18，抓取+百分比，单体爆发</td></tr>
+  <tr><td><strong>拔刀斩</strong></td><td>主动</td><td>380%</td><td>Lv18，范围百分比，清图核心</td></tr>
+  <tr><td><strong>破极兵刃</strong></td><td>BUFF</td><td>物理攻击+30%</td><td>Lv10，核心爆发技能</td></tr>
+  <tr><td><strong>崩山裂地斩</strong></td><td>觉醒</td><td>750%</td><td>觉醒技能，超大范围百分比</td></tr>
+  <tr><td><strong>极·鬼剑术（暴风式）</strong></td><td>觉醒</td><td>1200%</td><td>觉醒被动，多段攻击</td></tr>
+</tbody>
+</table>
+
+<h3>🟡 增益/被动技能</h3>
+<table>
+<thead><tr><th>技能</th><th>作用</th></tr></thead>
+<tbody>
+  <tr><td><strong>破极兵刃</strong></td><td>主动BUFF：物理攻击力+30%，持续30秒，核心爆发技能</td></tr>
+  <tr><td><strong>武器精通</strong></td><td>被动：巨剑/短剑/太刀/手剑，影响技能伤害倍率</td></tr>
+  <tr><td><strong>格挡</strong></td><td>主动：格挡攻击，增加暴击率</td></tr>
+  <tr><td><strong>武器 mastery</strong></td><td>被动：根据武器类型增加物理攻击力</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>三、70版本剑魂武器精通详解</h2>
+
+<div class="sword-bar">
+  <h3>🗡️ 四种武器精通对比</h3>
+</div>
+
+<div class="weapon-card">
+<h4>巨剑精通（推荐）</h4>
+<table>
+<thead><tr><th>属性</th><th>数值</th><th>说明</th></tr></thead>
+<tbody>
+  <tr><td><strong>物理攻击力</strong></td><td>最高</td><td>巨剑物理攻击力最高，百分比技能收益最大</td></tr>
+  <tr><td><strong>攻击速度</strong></td><td>慢</td><td>攻击前摇长，需要预判</td></tr>
+  <tr><td><strong>技能倍率加成</strong></td><td>+10%</td><td>所有技能伤害+10%</td></tr>
+  <tr><td><strong>推荐度</strong></td><td>★★★★★</td><td>70版本主流选择，伤害最高</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="weapon-card">
+<h4>短剑精通</h4>
+<table>
+<thead><tr><th>属性</th><th>数值</th><th>说明</th></tr></thead>
+<tbody>
+  <tr><td><strong>物理攻击力</strong></td><td>中等</td><td>物理攻击力低于巨剑</td></tr>
+  <tr><td><strong>攻击速度</strong></td><td>快</td><td>攻击前摇短，连招流畅</td></tr>
+  <tr><td><strong>技能倍率加成</strong></td><td>+5%</td><td>所有技能伤害+5%</td></tr>
+  <tr><td><strong>推荐度</strong></td><td>★★★☆☆</td><td>适合追求连招速度的玩家</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="weapon-card">
+<h4>太刀精通</h4>
+<table>
+<thead><tr><th>属性</th><th>数值</th><th>说明</th></tr></thead>
+<tbody>
+  <tr><td><strong>物理攻击力</strong></td><td>中等</td><td>物理攻击力低于巨剑</td></tr>
+  <tr><td><strong>攻击速度</strong></td><td>最快</td><td>攻击前摇最短，连招最流畅</td></tr>
+  <tr><td><strong>技能倍率加成</strong></td><td>+5%</td><td>所有技能伤害+5%</td></tr>
+  <tr><td><strong>推荐度</strong></td><td>★★★☆☆</td><td>适合追求极致连招速度的玩家</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="weapon-card">
+<h4>手剑精通</h4>
+<table>
+<thead><tr><th>属性</th><th>数值</th><th>说明</th></tr></thead>
+<tbody>
+  <tr><td><strong>物理攻击力</strong></td><td>中等</td><td>物理攻击力低于巨剑</td></tr>
+  <tr><td><strong>攻击速度</strong></td><td>中等</td><td>攻击前摇中等</td></tr>
+  <tr><td><strong>技能倍率加成</strong></td><td>+5%</td><td>所有技能伤害+5%</td></tr>
+  <tr><td><strong>推荐度</strong></td><td>★★☆☆☆</td><td>70版本使用较少</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>⚔️ 武器精通选择建议</h3>
+<blockquote>
+  <p><strong>70版本主流：巨剑精通</strong></p>
+  <p>原因：</p>
+  <ul>
+    <li>巨剑物理攻击力最高，百分比技能收益最大</li>
+    <li>技能倍率加成+10%，高于其他武器</li>
+    <li>70版本无攻速装备限制，巨剑可用</li>
+    <li>拔刀斩/裂波斩等核心技能伤害最高</li>
+  </ul>
+</blockquote>
+
+<h2>四、70版本剑魂核心机制详解</h2>
+
+<div class="card">
+<h3>⚔️ 破极兵刃技能机制</h3>
+<pre><code>破极兵刃（Lv10）：
+- 物理攻击力加成：+30%
+- 持续时间：30秒
+- CD：约60秒
+- 开启后：物理攻击 = 基础物理攻击 × 1.30
+
+示例：基础物理攻击2000 → 破极兵刃后 = 2000 × 1.30 = 2,600
+
+⚠️ 破极兵刃是剑魂核心爆发BUFF，伤害计算的核心乘区！
+</code></pre>
+
+<h3>🗡️ 武器强化收益</h3>
+<pre><code>武器强化对百分比技能的收益：
+
+| 强化等级 | 攻击力加成 | 伤害提升 |
+|----------|-----------|---------|
+| +0       | 0%        | 基准    |
+| +10      | 26%       | +26%    |
+| +12      | 36%       | +36%    |
+| +13      | 42%       | +42%    |
+
+示例：
+- 巨剑+12：物理攻击力提升36%
+- 基础物理攻击2000 → +12后 = 2000 × 1.36 = 2,720
+- 对比+0：伤害提升36%
+
+⚠️ 武器强化是剑魂最重要的投资！
+</code></pre>
+</div>
+
+<h2>五、70版本剑魂典型面板配置</h2>
+
+<div class="card">
+<h3>⚙️ 巨剑流（主流）</h3>
+<table>
+<thead><tr><th>属性</th><th>数值</th><th>来源</th></tr></thead>
+<tbody>
+  <tr><td><strong>力量</strong></td><td>600</td><td>基础400 + 远古套（120）+ 附魔（80）</td></tr>
+  <tr><td><strong>物理攻击力（破极兵刃后）</strong></td><td>2,600</td><td>基础2000 × 1.30（破极兵刃+30%）</td></tr>
+  <tr><td><strong>物理攻击力（破极兵刃前）</strong></td><td>2,000</td><td>70粉巨剑+12（物理攻击高）+ 附魔</td></tr>
+  <tr><td><strong>物理暴击率</strong></td><td>50%</td><td>基础3% + 技能暴击（22%）+ 装备（25%）</td></tr>
+  <tr><td><strong>武器强化</strong></td><td>+12</td><td>70粉巨剑「逐风者」+12，强化系数1.36</td></tr>
+  <tr><td><strong>异界套装</strong></td><td>E2「剑魂」6件</td><td>裂波斩+2，上挑+2，拔刀斩+2</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>六、伤害计算实例</h2>
+
+<h3>实例1：裂波斩（单体爆发）- 完整计算</h3>
+
+<div class="example-box">
+<pre><code>【技能参数（70版本，E2+2后Lv20）】
+- 技能倍率：420%
+- 范围：单体（抓取）
+- CD：约10秒
+
+【角色面板（巨剑流，破极兵刃状态）】
+- 力量：600
+- 物理攻击力（破极兵刃后）：2,600
+- 物理暴击率：50%
+- 武器强化：+12（系数1.36）
+
+【逐步计算】
+1. 基础百分比 = 2,600 × 420% = 10,920
+
+2. 力量加成：
+   力量系数 = 1 + 力量/250 = 1 + 600/250 = 3.4
+   力量后伤害 = 10,920 × 3.4 = 37,128
+
+3. 防御减伤（假设目标防御1000）：
+   减伤系数 = 300 / (300 + 1000) = 0.231
+   减伤后伤害 = 37,128 × 0.231 = 8,577
+
+4. 暴击期望：
+   暴击倍率 = 150%（70版本无额外暴伤装备）
+   暴击期望系数 = (1 - 0.50) × 1.0 + 0.50 × 1.5 = 1.25
+   暴击期望伤害 = 8,577 × 1.25 = 10,721
+
+💡 裂波斩暴击期望：10,721
+
+【结论】
+裂波斩是剑魂单体爆发核心技能，约1万暴击期望。
+</code></pre>
+</div>
+
+<h3>实例2：拔刀斩（范围清图）</h3>
+
+<div class="example-box">
+<pre><code>【技能参数（70版本，E2+2后Lv20）】
+- 技能倍率：380%
+- 范围：大（扇形）
+- CD：约12秒
+
+【逐步计算】
+1. 基础百分比 = 2,600 × 380% = 9,880
+
+2. 力量加成 = 9,880 × 3.4 = 33,592
+
+3. 防御减伤 = 33,592 × 0.231 = 7,759
+
+4. 暴击期望 = 7,759 × 1.25 = 9,699
+
+💡 拔刀斩暴击期望：9,699
+
+【结论】
+拔刀斩是剑魂清图核心技能，范围大+高伤害。
+</code></pre>
+</div>
+
+<h3>实例3：上挑（连招核心）</h3>
+
+<div class="example-box">
+<pre><code>【技能参数（70版本，E2+2后Lv20）】
+- 技能倍率：300%
+- 范围：单体（浮空）
+- CD：约8秒
+
+【逐步计算】
+1. 基础百分比 = 2,600 × 300% = 7,800
+
+2. 力量加成 = 7,800 × 3.4 = 26,520
+
+3. 防御减伤 = 26,520 × 0.231 = 6,126
+
+4. 暴击期望 = 6,126 × 1.25 = 7,658
+
+💡 上挑暴击期望：7,658
+
+【结论】
+上挑是剑魂连招核心技能，浮空+百分比。
+</code></pre>
+</div>
+
+<h3>实例4：觉醒「崩山裂地斩」- 百分比爆发</h3>
+
+<div class="example-box">
+<pre><code>【技能参数（70版本，Lv1）】
+- 技能倍率：750%
+- 范围：超大（全屏）
+- CD：约90秒（觉醒技能）
+
+【逐步计算】
+1. 基础百分比 = 2,600 × 750% = 19,500
+
+2. 力量加成 = 19,500 × 3.4 = 66,300
+
+3. 防御减伤 = 66,300 × 0.231 = 15,315
+
+4. 暴击期望 = 15,315 × 1.25 = 19,144
+
+💡 崩山裂地斩暴击期望：19,144
+
+【结论】
+觉醒技能范围超大，适合群怪和BOSS战开场。
+</code></pre>
+</div>
+
+<h3>实例5：连招计算（上挑→裂波斩→拔刀斩）</h3>
+
+<div class="example-box">
+<pre><code>【连招：上挑 → 裂波斩 → 拔刀斩】
+
+1. 上挑（Lv20）：
+   暴击期望 = 7,658（见实例3）
+
+2. 裂波斩（Lv20）：
+   暴击期望 = 10,721（见实例1）
+
+3. 拔刀斩（Lv20）：
+   暴击期望 = 9,699（见实例2）
+
+【连招总伤害】
+总伤害 = 7,658 + 10,721 + 9,699
+       = 28,078
+
+💡 连招总暴击期望：约2.8万
+💡 连招时间约6-8秒，是剑魂单体爆发核心套路
+</code></pre>
+</div>
+
+<h2>七、70版本剑魂装备搭配推荐</h2>
+
+<div class="card">
+<h3>🏆 巨剑流毕业装备</h3>
+<table>
+<thead><tr><th>部位</th><th>推荐装备</th><th>作用</th></tr></thead>
+<tbody>
+  <tr><td><strong>武器</strong></td><td>70粉巨剑「逐风者」+12/+13</td><td>高物理攻击+力量附魔槽</td></tr>
+  <tr><td><strong>头盔</strong></td><td>远古套「幻影之怒」或CC套</td><td>力量/暴击</td></tr>
+  <tr><td><strong>项链</strong></td><td>远古套「幻影之怒」或「悲鸣项链」</td><td>力量/暴击</td></tr>
+  <tr><td><strong>手镯</strong></td><td>远古套「幻影之怒」或「灵犀之心」</td><td>力量</td></tr>
+  <tr><td><strong>戒指</strong></td><td>远古套「幻影之怒」或「艾尔文防线」</td><td>力量</td></tr>
+  <tr><td><strong>耳环</strong></td><td>粉耳环「力量之源」</td><td>力量+15</td></tr>
+  <tr><td><strong>衣服/裤子/上衣</strong></td><td>E2「剑魂」</td><td>裂波斩+2，上挑+2</td></tr>
+  <tr><td><strong>鞋子</strong></td><td>E2「剑魂」+ 暴击附魔</td><td>暴击+移动</td></tr>
+  <tr><td><strong>腰带</strong></td><td>E2「剑魂」</td><td>体力/回避</td></tr>
+</tbody>
+</table>
+
+<h3>🔥 附魔推荐</h3>
+<table>
+<thead><tr><th>部位</th><th>附魔</th><th>来源</th></tr></thead>
+<tbody>
+  <tr><td>武器</td><td>物理攻击 +25</td><td>春节宝珠/活动</td></tr>
+  <tr><td>首饰</td><td>力量 +12~15</td><td>春节宝珠</td></tr>
+  <tr><td>武器</td><td>物理暴击 +5%</td><td>春节宝珠</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>八、剑魂70版本伤害特点总结</h2>
+
+<div class="card">
+<ol>
+  <li><strong>百分比技能为主</strong>：裂波斩、拔刀斩、上挑为核心，依赖物理攻击力</li>
+  <li><strong>破极兵刃核心BUFF</strong>：破极兵刃+30%物理攻击，是剑魂伤害计算的核心乘区</li>
+  <li><strong>武器强化收益极高</strong>：+13提升42%物理攻击，是剑魂最重要的投资</li>
+  <li><strong>巨剑精通主流</strong>：物理攻击力最高+技能倍率+10%，伤害最高</li>
+  <li><strong>异界E2毕业装</strong>：「剑魂」6件是剑魂核心毕业装（裂波斩+2，上挑+2，拔刀斩+2）</li>
+  <li><strong>连招体系成熟</strong>：上挑→裂波斩→拔刀斩是70版本剑魂标准连招</li>
+</ol>
+
+<h3>💡 伤害计算公式速查</h3>
+<pre><code>百分比最终伤害 = 物理攻击 × 技能倍率 × (1 + 力量/250) × 防御减伤 × 暴击期望
+
+破极兵刃加成 = 基础物理攻击 × (1 + 30%) = 基础物理攻击 × 1.30
+
+武器强化加成：
+- +12：物理攻击 × 1.36
+- +13：物理攻击 × 1.42
+
+防御减伤 = 300 / (300 + 目标防御)
+暴击期望系数 = (1 - 暴击率) + 暴击率 × 1.5
+</code></pre>
+</div>
+
+<hr style="border-color: #2a2a4a; margin: 30px 0;">
+<p style="color: #7fdbca; font-size: 13px;">
+  📌 文档版本：v1.0（70版本剑魂完整伤害实例）<br>
+  📅 创建日期：2026-05-28<br>
+  🔗 关联文档：<a href="01-dnf-damage-overview.html">DNF总览</a> | <a href="02-dnf-formula-analysis.html">公式分析</a> | <a href="02-berserker-damage-calculation.html">狂战士</a>
+</p>
+</div>
+</body>
+</html>
