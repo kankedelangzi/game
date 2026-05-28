@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>第2章：DNF核心公式详细分析（60-70版本）</title>
+  <title>第2章：DNF 70版本末期核心公式详细分析</title>
   <style>
     body { background: #1a1a2e; color: #e0e0e0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; padding: 20px; line-height: 1.8; }
     .container { max-width: 800px; margin: 0 auto; }
@@ -46,7 +46,7 @@
   ⚠️ 版本锁定：本文件仅研究 <strong>DNF 70版本末期</strong>，不涉及80/85/90+后续版本
 </div>
 
-<blockquote><strong>版本重点</strong>：60版本、70版本、70版本末期（异界 E2/E3、远古套、CC套）</blockquote>
+<blockquote><strong>版本锁定</strong>：70版本末期（异界 E2/E3、远古套、CC套、属强系统成型）</blockquote>
 <blockquote><strong>分析深度</strong>：包含具体数值、测试方法和设计原理</blockquote>
 
 <h2>一、伤害计算公式总览</h2>
@@ -107,9 +107,9 @@ base_dmg = 60000 * (1 + 2000/1000) * (1 + 1500/250)
 </code></pre>
 
 <strong>关键差异</strong>：
-<li>固伤职业更依赖独立攻击力（70版本锻造系统有限，主要靠武器基础）</li>
+<li>固伤职业更依赖独立攻击力（70版本锻造系统有限，主要靠武器基础独立值）</li>
 <li>独立攻击力系数是1000（vs 主属性250），收益更珍贵</li>
-<li>60版本固伤地位较低，70版本通过异界套加强</li>
+<li>70版本通过异界套大幅加强固伤技能地位</li>
 
 <h3>2.3 混伤技能</h3>
 
@@ -313,13 +313,7 @@ dmg_bonus = -30 / 440 ≈ -0.068  # 减少6.8%伤害
 
 <h3>4.3 属性攻击的额外效果</h3>
 
-<strong>60版本</strong>：
-<li>属性攻击仅附加约20%额外伤害</li>
-<li>无属性强化系统</li>
-
-<strong>70版本</strong>：
-<li>属性攻击触发属性强化加成（每22点+10%）</li>
-<li>属白：属性攻击时，白字伤害也享受属性强化加成</li>
+<p>70版本属性攻击触发属性强化加成（每22点+10%），属白：属性攻击时，白字伤害也享受属性强化加成。</p>
 
 <h2>五、暴击系统详细计算</h2>
 
@@ -328,7 +322,6 @@ dmg_bonus = -30 / 440 ≈ -0.068  # 减少6.8%伤害
 <pre><code>实际暴击率 = 基础暴击率 + 装备暴击率 + 技能暴击率 + 被动暴击率
 
 限制：
-<li>60版本上限：50%</li>
 <li>70版本上限：80%（可通过装备/药水突破）</li>
 </code></pre>
 
@@ -571,9 +564,14 @@ print(f"最终伤害: {dmg:,.0f}")
 <p>3. <strong>职业平衡</strong>：不同职业在不同乘区有优势</p>
 <p>4. <strong>经济系统</strong>：多乘区延长装备追求周期</p>
 
-<h3>10.2 60版本 vs 70版本设计哲学</h3>
+<h3>10.2 70版本设计哲学</h3>
 
-<table><thead><tr><th>维度</th><th>60版本</th><th>70版本</th></tr></thead><tbody><tr><td>乘区数量</td><td>3-4个</td><td>5-6个</td></tr><tr><td>装备选择</td><td>简单直观</td><td>多乘区平衡</td></tr><tr><td>团队增益</td><td>简单BUFF</td><td>复杂增益链</td></tr><tr><td>数值膨胀</td><td>较慢</td><td>可控持续</td></tr></tbody></table>
+<table><thead><tr><th>维度</th><th>70版本末期</th></tr></thead><tbody>
+<tr><td>乘区数量</td><td>5-6个（主属性、独立/强化、所有攻击力、暴击、属强、防御）</td></tr>
+<tr><td>装备选择</td><td>多乘区平衡，需综合考虑</td></tr>
+<tr><td>团队增益</td><td>复杂增益链（奶爸、奶妈等）</td></tr>
+<tr><td>数值膨胀</td><td>可控持续，尚未爆炸</td></tr>
+</tbody></table>
 
 <h3>10.3 乘区稀释效应</h3>
 
@@ -622,8 +620,8 @@ dmg3 = (1 + 1.0) * (1 + 1.0)  # 2.0 * 2.0 = 4.0 (增加33%)
 
 <p>---</p>
 
-<strong>文档版本</strong>：v3.0（70版本锁定版，已清理80+版本内容，新增弹药专家混伤实例）
-<strong>最后更新</strong>：2026-05-25 18:14 
+<strong>文档版本</strong>：v4.0（70版本锁定版，已清理60版本历史对比内容，纯70版本末期公式分析）
+<strong>最后更新</strong>：2026-05-28 11:33
 <strong>关联文档</strong>：01-dnf-damage-overview.html  
 <strong>下一步</strong>：拳皇伤害系统分析（见 03-kof-damage-system.html）
 
