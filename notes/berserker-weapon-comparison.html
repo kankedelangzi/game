@@ -119,11 +119,17 @@
 
   <h3>4.2 百分比技能对比</h3>
   <table>
-    <tr><th>技能</th><th>技能基数</th><th>钝器流伤害</th><th>巨剑流伤害</th><th>差异</th><th>说明</th></tr>
+    <tr><th>技能</th><th>参考伤害<br><span class="source">(巨剑流)</span></th><th>钝器流伤害</th><th>巨剑流伤害</th><th>差异</th><th>说明</th></tr>
     <tr><td>崩山裂地斩</td><td>85,000</td><td>114,800</td><td>135,755</td><td class="highlight">巨剑 +18.3%</td><td>觉醒全屏</td></tr>
     <tr><td>嗜魂封魔斩</td><td>45,000</td><td>64,400</td><td>76,335</td><td class="highlight">巨剑 +18.5%</td><td>百分比+吸血</td></tr>
   </table>
   <p class="note">💡 百分比技能受物理攻击和武器精通影响，巨剑物理攻击更高（712 vs 650）且精通加成更高（+25% vs +20%），因此百分比技能巨剑流大幅领先</p>
+  <div class="formula">
+    理论计算验证：<br>
+    巨剑因子 = (1+982.8/250)×(1+712/2200)×(1+1180/250)×1.25 = 28.86<br>
+    钝器因子 = (1+982.8/250)×(1+650/2200)×(1+1200/250)×1.20 = 24.47<br>
+    比率 = 28.86/24.47 = <strong>1.183</strong> → 巨剑领先<strong>+18.3%</strong>
+  </div>
 
   <h3>4.3 连招总伤害对比</h3>
   <div class="result-box">
