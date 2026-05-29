@@ -49,8 +49,8 @@
 <h2>📊 核心结论速览</h2>
 <div class="grid">
   <div class="stat"><div class="num">5秒</div><div class="label">出血持续时间</div></div>
-  <div class="stat"><div class="num">5544</div><div class="label">Lv23出血/秒伤害</div></div>
-  <div class="stat"><div class="num">27,720</div><div class="label">出血总伤害</div></div>
+  <div class="stat"><div class="num">4,940</div><div class="label">Lv21出血/秒伤害（无装备）</div></div>
+  <div class="stat"><div class="num">24,700</div><div class="label">出血总伤害（无装备）</div></div>
   <div class="stat"><div class="num">0%</div><div class="label">防御减伤</div></div>
 </div>
 
@@ -91,8 +91,8 @@
   <p>这意味着无论目标防御力是 0 还是 10,000，出血伤害<strong>完全一致</strong>。这是70版本狂战士面对高防BOSS时的核心优势。</p>
 </div>
 
-<!-- ========== 3. Lv23出血详细计算 ========== -->
-<h2>3️⃣ Lv23出血伤害完整计算</h2>
+<!-- ========== 3. Lv21出血详细计算 ========== -->
+<h2>3️⃣ Lv21出血伤害完整计算</h2>
 
 <h3>3.1 出血等级基础值</h3>
 <div class="card yellow">
@@ -101,9 +101,9 @@
     <tr><td>Lv1</td><td>280</td><td>技能初始值</td></tr>
     <tr><td>Lv10</td><td>1,820</td><td>技能升级</td></tr>
     <tr><td>Lv20</td><td>3,640</td><td>技能升级</td></tr>
-    <tr><td><span class="highlight">Lv23</span></td><td><span class="highlight">4,200</span></td><td>技能满级 + 血气分流Lv10</td></tr>
+    <tr><td><span class="highlight">Lv21</span></td><td><span class="highlight">3,800</span></td><td>十字斩Lv18 + 出血精通(+2) + 血气爆发(+1)</td></tr>
   </table>
-  <p class="note">Lv23出血 = 技能Lv13（基础3,640）+ 血气分流Lv10（+5级）= Lv23，基础4,200/秒</p>
+  <p class="note">Lv21出血 = 十字斩Lv18 + 出血精通(+2) + 血气爆发(+1) = Lv21，E2血之狂暴+3作用于十字斩等级使出血同步为Lv21，基础3,800/秒</p>
 </div>
 
 <h3>3.2 加成来源拆解</h3>
@@ -121,29 +121,29 @@
 
 <h3>3.3 无装备加成时的出血伤害</h3>
 <div class="formula">
-  <code>基础出血/秒 = 4,200 × (1 + 10% + 20%)<br>
-  = 4,200 × 1.30<br>
-  = <span style="color:var(--accent); font-size:1.2rem;">5,460/秒</span><br>
+  <code>基础出血/秒 = 3,800 × (1 + 10% + 20%)<br>
+  = 3,800 × 1.30<br>
+  = <span style="color:var(--accent); font-size:1.2rem;">4,940/秒</span><br>
   <br>
-  总出血伤害 = 5,460 × 5 = <span style="color:var(--accent); font-size:1.2rem;">27,300</span></code>
+  总出血伤害 = 4,940 × 5 = <span style="color:var(--accent); font-size:1.2rem;">24,700</span></code>
 </div>
 
 <h3>3.4 装备E2 6件后的出血伤害</h3>
 <div class="formula">
-  <code>出血/秒 = 4,200 × (1 + 10% + 20% + 10%)<br>
-  = 4,200 × 1.40<br>
-  = <span style="color:var(--accent); font-size:1.2rem;">5,880/秒</span><br>
+  <code>出血/秒 = 3,800 × (1 + 10% + 20% + 10%)<br>
+  = 3,800 × 1.40<br>
+  = <span style="color:var(--accent); font-size:1.2rem;">5,320/秒</span><br>
   <br>
-  总出血伤害 = 5,880 × 5 = <span style="color:var(--accent); font-size:1.2rem;">29,400</span></code>
+  总出血伤害 = 5,320 × 5 = <span style="color:var(--accent); font-size:1.2rem;">26,600</span></code>
 </div>
 
 <h3>3.5 装备E2+E3 12件后的出血伤害</h3>
 <div class="formula">
-  <code>出血/秒 = 4,200 × (1 + 10% + 20% + 10% + 15%)<br>
-  = 4,200 × 1.55<br>
-  = <span style="color:var(--accent); font-size:1.2rem;">6,510/秒</span><br>
+  <code>出血/秒 = 3,800 × (1 + 10% + 20% + 10% + 15%)<br>
+  = 3,800 × 1.55<br>
+  = <span style="color:var(--accent); font-size:1.2rem;">5,890/秒</span><br>
   <br>
-  总出血伤害 = 6,510 × 5 = <span style="color:var(--accent); font-size:1.2rem;">32,550</span></code>
+  总出血伤害 = 5,890 × 5 = <span style="color:var(--accent); font-size:1.2rem;">29,450</span></code>
 </div>
 
 <!-- ========== 4. 穿透防御验证 ========== -->
@@ -153,12 +153,12 @@
   <p>以下对比同一技能对低防小怪 vs 高防BOSS的伤害差异：</p>
   <table>
     <tr><th>目标</th><th>防御力</th><th>防御减伤</th><th>物理技能伤害</th><th>出血伤害</th></tr>
-    <tr><td>普通小怪</td><td>500</td><td>300/(300+500) = 37.5%</td><td>10,000 × 0.625 = 6,250</td><td>5,460 × 5 = 27,300</td></tr>
-    <tr><td>精英怪</td><td>2,000</td><td>300/(300+2000) = 13.0%</td><td>10,000 × 0.870 = 8,700</td><td>5,460 × 5 = 27,300</td></tr>
-    <tr><td>普通BOSS</td><td>5,000</td><td>300/(300+5000) = 5.7%</td><td>10,000 × 0.943 = 9,430</td><td>5,460 × 5 = 27,300</td></tr>
-    <tr><td><span class="highlight">高防BOSS</span></td><td><span class="highlight">10,000</span></td><td><span class="highlight">300/(300+10000) = 2.9%</span></td><td>10,000 × 0.971 = 9,710</td><td><span class="highlight">5,460 × 5 = 27,300</span></td></tr>
+    <tr><td>普通小怪</td><td>500</td><td>300/(300+500) = 37.5%</td><td>10,000 × 0.625 = 6,250</td><td>4,940 × 5 = 24,700</td></tr>
+    <tr><td>精英怪</td><td>2,000</td><td>300/(300+2000) = 13.0%</td><td>10,000 × 0.870 = 8,700</td><td>4,940 × 5 = 24,700</td></tr>
+    <tr><td>普通BOSS</td><td>5,000</td><td>300/(300+5000) = 5.7%</td><td>10,000 × 0.943 = 9,430</td><td>4,940 × 5 = 24,700</td></tr>
+    <tr><td><span class="highlight">高防BOSS</span></td><td><span class="highlight">10,000</span></td><td><span class="highlight">300/(300+10000) = 2.9%</span></td><td>10,000 × 0.971 = 9,710</td><td><span class="highlight">4,940 × 5 = 24,700</span></td></tr>
   </table>
-  <p class="note">🔑 物理技能伤害受防御影响从 6,250 → 9,710（差距 55%），而出血伤害<strong>始终恒定 27,300</strong>，不受任何防御影响。</p>
+  <p class="note">🔑 物理技能伤害受防御影响从 6,250 → 9,710（差距 55%），而出血伤害<strong>始终恒定 24,700</strong>，不受任何防御影响。</p>
 </div>
 
 <!-- ========== 5. 出血 vs 固伤对比 ========== -->
@@ -186,10 +186,10 @@
     <code>防御10,000时，物理减伤 = 300/(300+10000) = 2.9%<br>
     即物理伤害被削减至 97.1%<br>
     <br>
-    出血伤害：27,300（不变）<br>
+    出血伤害：24,700（不变）<br>
     物理技能：10,000 × 97.1% = 9,710<br>
     <br>
-    出血/物理技能比值 = 27,300 / 9,710 = <span style="color:var(--accent);">2.81倍</span></code>
+    出血/物理技能比值 = 24,700 / 9,710 = <span style="color:var(--accent);">2.54倍</span></code>
   </div>
   <p>在高防BOSS面前，出血的总伤害是单次物理技能的<strong>近3倍</strong>。</p>
 </div>
@@ -198,7 +198,7 @@
 <div class="card blue">
   <p>出血可叠加（最多5层），多怪场景下收益更高：</p>
   <div class="formula">
-    <code>5层出血叠加 = 5 × 27,300 = 136,500（总持续伤害）<br>
+    <code>5层出血叠加 = 5 × 24,700 = 123,500（总持续伤害）<br>
     <br>
     配合十字斩（90%触发出血）+ 崩山击（80%触发出血）<br>
     清图时出血总伤害远超直接击杀</code>
@@ -211,12 +211,12 @@
 <div class="card green">
   <table>
     <tr><th>配置</th><th>出血/秒</th><th>5秒总伤害</th><th>对比无加成</th></tr>
-    <tr><td>基础（无Buff/无装备）</td><td>4,200</td><td>21,000</td><td>基准</td></tr>
-    <tr><td>+出血精通Lv10</td><td>4,620</td><td>23,100</td><td>+10%</td></tr>
-    <tr><td>+出血精通 + 血气爆发</td><td>5,460</td><td>27,300</td><td>+30%</td></tr>
-    <tr><td>+E2血之狂暴6件</td><td>5,880</td><td>29,400</td><td>+40%</td></tr>
-    <tr><td>+E2 + E3血染江山6件</td><td>6,510</td><td>32,550</td><td>+55%</td></tr>
-    <tr><td><span class="highlight">满配（E2+E3+全Buff）</span></td><td><span class="highlight">6,510</span></td><td><span class="highlight">32,550</span></td><td><span class="highlight">+55%</span></td></tr>
+    <tr><td>基础（无Buff/无装备）</td><td>3,800</td><td>19,000</td><td>基准</td></tr>
+    <tr><td>+出血精通Lv10</td><td>4,180</td><td>20,900</td><td>+10%</td></tr>
+    <tr><td>+出血精通 + 血气爆发</td><td>4,940</td><td>24,700</td><td>+30%</td></tr>
+    <tr><td>+E2血之狂暴6件</td><td>5,320</td><td>26,600</td><td>+40%</td></tr>
+    <tr><td>+E2 + E3血染江山6件</td><td>5,890</td><td>29,450</td><td>+55%</td></tr>
+    <tr><td><span class="highlight">满配（E2+E3+全Buff）</span></td><td><span class="highlight">5,890</span></td><td><span class="highlight">29,450</span></td><td><span class="highlight">+55%</span></td></tr>
   </table>
 </div>
 
@@ -228,7 +228,7 @@
     <tr><td><span class="badge badge-ok">穿透防御</span></td><td>出血伤害完全不受目标物理防御影响，70版本核心机制</td></tr>
     <tr><td><span class="badge badge-ok">独立计算</span></td><td>与力量、独立攻击、暴击、属强均无关</td></tr>
     <tr><td><span class="badge badge-warn">加成来源</span></td><td>仅受出血精通(+10%)、血气爆发(+20%)、E2(+10%)、E3(+15%)影响</td></tr>
-    <tr><td><span class="badge badge-ok">Lv23出血</span></td><td>基础4,200/秒，满配6,510/秒，5秒总伤害32,550</td></tr>
+    <tr><td><span class="badge badge-ok">Lv21出血</span></td><td>基础3,800/秒，满配5,890/秒，5秒总伤害29,450</td></tr>
     <tr><td><span class="badge badge-info">战术价值</span></td><td>高防BOSS战中出血收益远超物理技能，清图时叠加收益更高</td></tr>
     <tr><td><span class="badge badge-warn">不可叠加Buff</span></td><td>出血精通与血气爆发为加法叠加，非乘法</td></tr>
     <tr><td><span class="badge badge-ok">版本特性</span></td><td>70版本出血机制最为强势，80版本后削弱为受防御影响</td></tr>
