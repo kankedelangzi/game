@@ -45,9 +45,9 @@
 
   <div class="result-box">
     <h3>📊 核心结论</h3>
-    <p><span class="winner">巨剑流综合伤害领先约 5.1%</span>（590,556 vs 561,710）</p>
-    <p>钝器流固伤技能领先 +1.5%，巨剑流百分比技能领先 +18.3%</p>
-    <p style="color:#f39c12; margin-top:8px;">⚠️ v58 审核修正：固伤技能已应用 E2 血之狂暴 +35% 技能加成</p>
+    <p><span class="winner">巨剑流综合伤害领先约 2.1%</span>（607,792 vs 594,973）</p>
+    <p>固伤技能两者持平，巨剑流百分比技能领先 +6.4%</p>
+    <p style="color:#f39c12; margin-top:8px;">⚠️ v59 审核重大修正：固伤技能使用面板独立攻击（两者相同），百分比公式已移除独立攻击因子</p>
     <p>场景化推荐：<strong>日常刷图/竞速 → 巨剑流</strong> | <strong>高防BOSS/PK → 钝器流</strong></p>
   </div>
 
@@ -100,9 +100,11 @@
 
   <h3>百分比技能公式</h3>
   <div class="formula">
-    伤害 = 技能基数 × (1 + 力量/250) × (1 + 物理攻击/2200) × (1 + 独立攻击/250) × 武器精通加成 × E2加成 × 防御减伤 × 暴击期望<br>
+    伤害 = 技能基数 × (1 + 力量/250) × (1 + 物理攻击/2200) × 武器精通加成 × E2加成 × 防御减伤 × 暴击期望<br>
     <span class="source">来源：[DNF Wiki](https://dnf.wiki/) + NGA DNF专区验证</span>
   </div>
+  <p class="note">⚠️ 百分比技能不受力量、物理攻击、属性强化影响</p>
+  <p class="note">⚠️ <strong>v59审核重大修正</strong>：百分比技能【不受独立攻击影响】！原公式错误包含独立攻击因子，已移除。</p>
 
   <h2>四、伤害计算实例（E2血之狂暴6件，暴走中）</h2>
   <p>假设面板：基础力量728，暴走后982.8，独立攻击1250，物理攻击2000，暴击率55%</p>
@@ -110,14 +112,14 @@
   <h3>4.1 固伤技能对比</h3>
   <table>
     <tr><th>技能</th><th>技能基数</th><th>钝器流伤害</th><th>巨剑流伤害</th><th>差异</th><th>说明</th></tr>
-    <tr><td>十字斩</td><td>10,030</td><td>78,535</td><td>77,452</td><td class="highlight">钝器 +1.4%</td><td>90%触发出血</td></tr>
-    <tr><td>崩山击</td><td>7,316</td><td>57,284</td><td>56,494</td><td class="highlight">钝器 +1.4%</td><td>80%触发出血</td></tr>
-    <tr><td>血气之刃</td><td>14,160</td><td>110,873</td><td>109,344</td><td class="highlight">钝器 +1.4%</td><td>单体爆发</td></tr>
-    <tr><td>怒气爆发</td><td>11,210</td><td>87,774</td><td>86,564</td><td class="highlight">钝器 +1.4%</td><td>超大范围</td></tr>
-    <tr><td>嗜魂之手</td><td>6,136</td><td>48,045</td><td>47,382</td><td class="highlight">钝器 +1.4%</td><td>抓取起手</td></tr>
-    <tr class="highlight"><td><strong>固伤合计</strong></td><td>—</td><td><strong>382,511</strong></td><td><strong>376,836</strong></td><td><strong>钝器 +1.5%</strong></td><td>E2技能加成×1.35</td></tr>
+    <tr><td>十字斩</td><td>10,030</td><td>81,243</td><td>81,243</td><td class="highlight">持平</td><td>90%触发出血</td></tr>
+    <tr><td>崩山击</td><td>7,316</td><td>59,260</td><td>59,260</td><td class="highlight">持平</td><td>80%触发出血</td></tr>
+    <tr><td>血气之刃</td><td>14,160</td><td>114,696</td><td>114,696</td><td class="highlight">持平</td><td>单体爆发</td></tr>
+    <tr><td>怒气爆发</td><td>11,210</td><td>90,801</td><td>90,801</td><td class="highlight">持平</td><td>超大范围</td></tr>
+    <tr><td>嗜魂之手</td><td>6,136</td><td>49,702</td><td>49,702</td><td class="highlight">持平</td><td>抓取起手</td></tr>
+    <tr class="highlight"><td><strong>固伤合计</strong></td><td>—</td><td><strong>395,702</strong></td><td><strong>395,702</strong></td><td><strong>持平</strong></td><td>面板独立攻击相同(1250)</td></tr>
   </table>
-  <p class="note">💡 固伤技能受独立攻击影响，钝器独立攻击略高（1200 vs 1180），因此固伤技能钝器流略优 +1.4%。以上数值已应用 E2 血之狂暴 6 件 +35% 技能加成。</p>
+  <p class="note">💡 <strong>v59审核重大修正</strong>：固伤技能使用【面板独立攻击】（两者均为1250），因此钝器流与巨剑流固伤伤害完全相同。武器基础独立攻击（钝器1200/巨剑1180）仅作为武器属性参考，不参与伤害计算。</p>
 
   <h3>4.2 百分比技能对比</h3>
   <table>
