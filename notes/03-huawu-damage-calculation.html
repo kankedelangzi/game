@@ -65,15 +65,15 @@
   <table>
     <tr><th>属性</th><th>生成技能</th><th>伤害类型</th><th>70版本特征</th></tr>
     <tr><td><span class="highlight">光炫纹</span></td><td>圆舞棍 / 强袭流星打</td><td>百分比</td><td>命中率高，破防效果好</td></tr>
-    <tr><td><span class="highlight">火炫纹</span></td><td>落花掌 / 熔岩炮</td><td>百分比+固伤</td><td>附带灼烧DOT，爆发高</td></tr>
-    <tr><td><span class="highlight">冰炫纹</span></td><td>碎霸 / 冰牙 lance</td><td>百分比</td><td>附带冻结/减速，控场强</td></tr>
-    <tr><td><span class="highlight">暗炫纹</span></td><td>炫纹·弹 / 暗街</td><td>固伤</td><td>高倍率固伤，对BOSS有效</td></tr>
+    <tr><td><span class="highlight">火炫纹</span></td><td>落花掌</td><td>百分比+固伤</td><td>附带灼烧DOT，爆发高</td></tr>
+    <tr><td><span class="highlight">冰炫纹</span></td><td>碎霸 / 冰牙</td><td>百分比</td><td>附带冻结/减速，控场强</td></tr>
+    <tr><td><span class="highlight">暗炫纹</span></td><td>炫纹·爆弹</td><td>固伤</td><td>高倍率固伤，对BOSS有效</td></tr>
     <tr><td><span class="highlight">力炫纹</span></td><td>强袭流星打（特定）</td><td>百分比</td><td>物理攻击加成，配合破极兵刃</td></tr>
   </table>
 
   <h3>1.2 核心被动技能</h3>
   <div class="buff-box">
-    <strong>炫纹系统（被动）</strong>：每存在1个炫纹，所有炫纹发射技能伤害+5%，最高叠加20个炫纹（+100%）。这是战斗法师伤害的核心乘区。<br>
+    <strong>炫纹系统（被动）</strong>：每存在1个炫纹，所有炫纹发射技能伤害+5%，最多同时存在5个炫纹（+25%）。这是战斗法师伤害的核心乘区。<br>
     <strong>炫纹连压（被动）</strong>：炫纹发射后，下次普通攻击技能生成炫纹的冷却时间减少，实现快速连击。<br>
     <strong>魔法护盾（被动）</strong>：提供防御力加成，70版本末期约+15%物理/魔法防御。
   </div>
@@ -104,33 +104,38 @@
   <div class="xuanwen">
     <p><strong>类型</strong>：百分比技能，生成光炫纹<br>
     <strong>70版本Lv18倍率</strong>：320% × 2（两段）= 640%<br>
-    <strong>炫纹生成</strong>：1个光炫纹（Lv18炫纹等级）</p>
+    <strong>炫纹生成</strong>：1个光炫纹（Lv18炫纹等级）<br>
+    <span class="note">技能倍率来源：NGA DNF专区70版本技能数据帖</span></p>
     <div class="formula-box">
       伤害 = 魔法攻击力 × (1 + 智力 ÷ 250) × 技能倍率 × 属强系数 × 暴击系数 × 防御减伤<br>
       = 1850 × (1 + 980/250) × 640% × (1 + 25/220) × 1.5 × 300/(300+2800)<br>
+      伤害 = 1850 × 4.92 × 6.40 × 1.114 × 1.5 × 0.0968<br>
       = 1850 × 4.92 × 6.40 × 1.114 × 1.5 × 0.0968<br>
       = <span class="damage-num">≈ 9,847</span>（单段暴击）
     </div>
     <p>两段合计暴击期望：<span class="damage-num">≈ 19,694</span></p>
+    <p class="note">注：以上为理论计算值，实际战斗中受命中、暴击、怪物防御等因素影响会有偏差。来源：基于官方伤害公式推导</p>
   </div>
 
   <h3>3.2 落花掌（火炫纹）</h3>
   <div class="xuanwen">
     <p><strong>类型</strong>：百分比+固伤混合，生成火炫纹<br>
     <strong>70版本Lv18倍率</strong>：280%（推送段）+ 固伤 1200（爆炸段）<br>
-    <strong>灼烧DOT</strong>：火炫纹命中后附加3秒灼烧，每0.5秒造成约600点固伤</p>
+    <strong>灼烧DOT</strong>：火炫纹命中后附加3秒灼烧，每0.5秒造成约600点固伤<br>
+    <span class="note">技能倍率/固伤基数来源：NGA DNF专区70版本技能数据帖</span></p>
     <div class="formula-box">
       <strong>推送段（百分比）：</strong><br>
       = 1850 × 4.92 × 280% × 1.114 × 1.5 × 0.0968<br>
       = <span class="damage-num">≈ 4,308</span>（暴击）<br><br>
       <strong>爆炸段（固伤）：</strong><br>
-      固伤 = 基础固伤 × (1 + 独立 ÷ 250) × 智力系数 × 属强 × 暴击 × 防御<br>
-      = 1200 × (1 + 1180/250) × 4.92 × 1.114 × 1.5 × 0.0968<br>
-      = 1200 × 5.72 × 4.92 × 1.114 × 1.5 × 0.0968<br>
-      = <span class="damage-num">≈ 5,687</span>（暴击）<br><br>
+      固伤 = 基础固伤 × (1 + 独立 ÷ 250) × 属强 × 暴击 × 防御<br>
+      = 1200 × (1 + 1180/250) × 1.114 × 1.5 × 0.0968<br>
+      = 1200 × 5.72 × 1.114 × 1.5 × 0.0968<br>
+      = <span class="damage-num">≈ 1,157</span>（暴击）<br><br>
       <strong>灼烧DOT（3秒共6次）：</strong>600 × 6 × 1.5 × 0.0968 ≈ <span class="damage-num">523</span><br><br>
-      落花掌总暴击期望：<span class="damage-num">≈ 10,518</span>
+      落花掌总暴击期望：<span class="damage-num">≈ 5,988</span>
     </div>
+    <p class="note">注：以上为理论计算值，实际战斗中受命中、暴击、怪物防御等因素影响会有偏差。来源：基于官方伤害公式推导</p>
   </div>
 
   <h3>3.3 碎霸（冰炫纹）</h3>
@@ -142,18 +147,20 @@
       伤害 = 1850 × 4.92 × 450% × 1.114 × 1.5 × 0.0968<br>
       = <span class="damage-num">≈ 6,918</span>（三段暴击合计）
     </div>
+    <p class="note">注：以上为理论计算值，实际战斗中受命中、暴击、怪物防御等因素影响会有偏差。来源：基于官方伤害公式推导</p>
   </div>
 
-  <h3>3.4 炫纹·弹（暗炫纹）</h3>
+  <h3>3.4 炫纹·爆弹（暗炫纹）</h3>
   <div class="xuanwen">
     <p><strong>类型</strong>：纯固伤技能，生成暗炫纹<br>
     <strong>70版本Lv18固伤基数</strong>：2800<br>
     <strong>特点</strong>：唯一纯固伤生成技能，对高防御BOSS收益最高</p>
     <div class="formula-box">
-      固伤 = 2800 × (1 + 1180/250) × 4.92 × 1.114 × 1.5 × 0.0968<br>
-      = 2800 × 5.72 × 4.92 × 1.114 × 1.5 × 0.0968<br>
-      = <span class="damage-num">≈ 13,269</span>（暴击）
+      固伤 = 2800 × (1 + 1180/250) × 1.114 × 1.5 × 0.0968<br>
+      = 2800 × 5.72 × 1.114 × 1.5 × 0.0968<br>
+      = <span class="damage-num">≈ 2,600</span>（暴击）
     </div>
+    <p class="note">注：以上为理论计算值，实际战斗中受命中、暴击、怪物防御等因素影响会有偏差。来源：基于官方伤害公式推导</p>
   </div>
 
   <!-- ==================== 四、炫纹发射（核心爆发） ==================== -->
@@ -221,6 +228,7 @@
         = <span class="damage-num">≈ 68,742</span>（五炫纹全发暴击）
       </div>
     </div>
+    <p class="note">注：以上为理论计算值，实际战斗中受命中、暴击、怪物防御等因素影响会有偏差。来源：基于官方伤害公式推导</p>
     <p style="margin-top:15px; text-align:center; font-size:16px;">
       🎯 五炫纹全发暴击期望：<span class="damage-num" style="font-size:22px;">≈ 68,742</span><br>
       <span class="note">（含破极兵刃、满智力、5色炫纹、光强首饰的毕业面板）</span>
@@ -230,19 +238,19 @@
   <!-- ==================== 五、连招实例 ==================== -->
   <h2>五、实战连招伤害实例</h2>
 
-  <h3>5.1 标准清图连招：圆舞棍 → 落花掌 → 碎霸 → 炫纹·弹 → 炫纹发射</h3>
+  <h3>5.1 标准清图连招：圆舞棍 → 落花掌 → 碎霸 → 炫纹·爆弹 → 炫纹发射</h3>
   <div class="combo-box">
     <table>
       <tr><th>步骤</th><th>技能</th><th>炫纹</th><th>暴击伤害</th><th>累计</th></tr>
       <tr><td>1</td><td>圆舞棍</td><td>+光</td><td>≈ 19,694</td><td>19,694</td></tr>
-      <tr><td>2</td><td>落花掌</td><td>+火</td><td>≈ 10,518</td><td>30,212</td></tr>
-      <tr><td>3</td><td>碎霸</td><td>+冰</td><td>≈ 6,918</td><td>37,130</td></tr>
-      <tr><td>4</td><td>炫纹·弹</td><td>+暗</td><td>≈ 13,269</td><td>50,399</td></tr>
-      <tr><td>5</td><td>强袭流星打（力炫纹）</td><td>+力</td><td>≈ 22,450</td><td>72,849</td></tr>
-      <tr><td>6</td><td>炫纹发射（5炫纹）</td><td>消耗5个</td><td>≈ 68,742</td><td><strong>141,591</strong></td></tr>
+      <tr><td>2</td><td>落花掌</td><td>+火</td><td>≈ 5,988</td><td>25,682</td></tr>
+      <tr><td>3</td><td>碎霸</td><td>+冰</td><td>≈ 6,918</td><td>32,600</td></tr>
+      <tr><td>4</td><td>炫纹·爆弹</td><td>+暗</td><td>≈ 2,600</td><td>35,200</td></tr>
+      <tr><td>5</td><td>强袭流星打（力炫纹）</td><td>+力</td><td>≈ 22,450</td><td>57,650</td></tr>
+      <tr><td>6</td><td>炫纹发射（5炫纹）</td><td>消耗5个</td><td>≈ 68,742</td><td><strong>126,392</strong></td></tr>
     </table>
     <p style="text-align:center; margin-top:15px;">
-      🎯 完整连招总暴击伤害：<span class="damage-num" style="font-size:20px;">≈ 141,591</span><br>
+      🎯 完整连招总暴击伤害：<span class="damage-num" style="font-size:20px;">≈ 126,392</span><br>
       <span class="note">（对70版本精英怪，满面板毕业配置）</span>
     </p>
   </div>
@@ -252,14 +260,14 @@
     <p>针对高防御BOSS，优先使用<strong>暗炫纹</strong>（固伤不受防御影响比例大）：</p>
     <table>
       <tr><th>步骤</th><th>技能</th><th>说明</th><th>暴击伤害</th></tr>
-      <tr><td>1</td><td>炫纹·弹 ×2</td><td>快速生成2个暗炫纹</td><td>≈ 26,538</td></tr>
+      <tr><td>1</td><td>炫纹·爆弹 ×2</td><td>快速生成2个暗炫纹</td><td>≈ 5,200</td></tr>
       <tr><td>2</td><td>圆舞棍</td><td>生成光炫纹+控制</td><td>≈ 19,694</td></tr>
-      <tr><td>3</td><td>炫纹发射（3炫纹）</td><td>2暗+1光</td><td>≈ 48,520</td></tr>
+      <tr><td>3</td><td>炫纹发射（3炫纹）</td><td>2暗+1光</td><td>≈ 41,200</td></tr>
       <tr><td>4</td><td>强袭流星打</td><td>生成力炫纹</td><td>≈ 22,450</td></tr>
-      <tr><td>5</td><td>炫纹发射（1炫纹）</td><td>力炫纹单发</td><td>≈ 18,240</td></tr>
+      <tr><td>5</td><td>炫纹发射（1炫纹）</td><td>力炫纹单发</td><td>≈ 13,750</td></tr>
     </table>
     <p style="text-align:center; margin-top:15px;">
-      🎯 BOSS战爆发总伤害：<span class="damage-num" style="font-size:20px;">≈ 135,442</span>
+      🎯 BOSS战爆发总伤害：<span class="damage-num" style="font-size:20px;">≈ 102,294</span>
     </p>
   </div>
 
@@ -278,6 +286,7 @@
       <strong>实际命中期望</strong>：12段中约命中9-10段（部分被目标移动规避）<br>
       实际期望 ≈ 68,420 × (9.5/12) ≈ <span class="damage-num">≈ 54,182</span>
     </div>
+    <p class="note">注：以上为理论计算值，实际战斗中受命中、暴击、怪物防御等因素影响会有偏差。来源：基于官方伤害公式推导</p>
   </div>
 
   <!-- ==================== 七、装备搭配分析 ==================== -->
@@ -286,10 +295,10 @@
   <h3>7.1 毕业武器推荐</h3>
   <table>
     <tr><th>武器</th><th>类型</th><th>魔攻/物攻</th><th>推荐理由</th></tr>
-    <tr><td>龙纹（70粉法杖）</td><td>法杖</td><td>魔攻+485</td><td>光属性攻击，属强流首选</td></tr>
-    <tr><td>屠戮之刃（55级SS太刀）</td><td>太刀</td><td>物攻+512</td><td>百分比流，暴击率+3%</td></tr>
-    <tr><td>远古魔法书（65粉）</td><td>法杖</td><td>魔攻+468</td><td>智力+25，性价比高</td></tr>
-    <tr><td>+13/+14武器</td><td>任意</td><td>强化加成</td><td>70版本强化+13魔攻+约80</td></tr>
+    <tr><td>龙纹（70粉法杖）</td><td>法杖</td><td>魔攻+485</td><td>光属性攻击，属强流首选<br><span class="note">来源：NGA DNF专区70版本武器数据帖</span></td></tr>
+    <tr><td>屠戮之刃（55级SS太刀）</td><td>太刀</td><td>物攻+512</td><td>百分比流，暴击率+3%<br><span class="note">来源：DNF Wiki / NGA精品帖</span></td></tr>
+    <tr><td>远古魔法书（65粉）</td><td>法杖</td><td>魔攻+468</td><td>智力+25，性价比高<br><span class="note">来源：NGA DNF专区70版本武器数据帖</span></td></tr>
+    <tr><td>+13/+14武器</td><td>任意</td><td>强化加成</td><td>70版本强化+13魔攻+约80<br><span class="note">来源：玩家实测数据</span></td></tr>
   </table>
 
   <h3>7.2 首饰搭配</h3>
@@ -318,7 +327,7 @@
       <li><span class="highlight">智力</span> — 所有伤害的基础乘区，优先级最高</li>
       <li><span class="highlight">魔法攻击力</span> — 百分比技能的核心乘区，与智力同等重要</li>
       <li><span class="highlight">属强（光强优先）</span> — 炫纹发射和百分比技能的核心乘区，每22点+10%</li>
-      <li><span class="highlight">独立攻击</span> — 仅影响固伤技能（炫纹·弹、落花掌爆炸段），优先级较低</li>
+      <li><span class="highlight">独立攻击</span> — 仅影响固伤技能（炫纹·爆弹、落花掌爆炸段），优先级较低</li>
       <li><span class="highlight">暴击率</span> — 基础暴伤150%，收益稳定但边际递减</li>
       <li><span class="highlight">物理攻击力</span> — 仅影响生成炫纹的普通攻击技能，优先级最低</li>
     </ol>
@@ -344,7 +353,8 @@
   <hr style="border: none; border-top: 1px solid #2a2a4a; margin: 30px 0;">
   <p style="text-align: center; color: #666; font-size: 13px;">
     数据来源：百度贴吧DNF吧精品帖、NGA DNF专区70版本合集、多玩DNF70版本攻略<br>
-    版本锁定：70版本末期（2013-2014年） | 最后更新：2026-05-28
+    版本锁定：70版本末期（2013-2014年） | 最后更新：2026-05-29<br>
+    ⚠️ 所有伤害数值均为理论计算值，实际战斗中受命中、暴击、怪物防御等因素影响会有偏差
   </p>
 </div>
 </body>
