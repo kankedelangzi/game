@@ -101,7 +101,8 @@
     <p>角色面板：力量728（暴走后1019）| 独立攻击1250 | 物理攻击2000 | 暴击率55% | E2血之狂暴6件激活 | 暴走Lv10开启</p>
     <div class="correction">
       <strong>📐 固伤公式（70版本官方）：</strong>
-      <code>伤害 = 技能基数 × (1 + 独立攻击/250) × E2加成 × 防御减伤 × 暴击期望</code>
+      <code>伤害 = 技能基数（已含E2+3等级加成）× (1 + 独立攻击/250) × 暴击期望</code>
+      <br><strong>注意：</strong>固伤技能<strong>不受力量影响</strong>，暴走力量加成仅对百分比技能生效；固伤<strong>穿透物理防御</strong>，公式中不含防御减伤；技能基数已含E2+3加成，不再单独乘E2。
       <br><strong>注意：</strong>固伤技能<strong>不受力量影响</strong>，暴走力量加成仅对百分比技能生效。
     </div>
   </div>
@@ -109,11 +110,11 @@
   <h3>技能伤害对比</h3>
   <table>
     <tr><th>技能</th><th>类型</th><th>等级</th><th>钝器流伤害</th><th>巨剑流伤害</th><th>差异</th><th>来源</th></tr>
-    <tr><td>十字斩</td><td>物理固伤</td><td>Lv21</td><td class="good">60,180</td><td>54,162</td><td class="good">钝器 +11.1%</td><td>NGA DNF专区</td></tr>
-    <tr><td>崩山击</td><td>物理固伤</td><td>Lv21</td><td class="good">43,896</td><td>39,506</td><td class="good">钝器 +11.1%</td><td>NGA DNF专区</td></tr>
-    <tr><td>血气之刃</td><td>物理固伤</td><td>Lv18</td><td class="good">84,960</td><td>76,464</td><td class="good">钝器 +11.1%</td><td>NGA DNF专区</td></tr>
-    <tr><td>怒气爆发</td><td>物理固伤</td><td>Lv18</td><td class="good">67,260</td><td>60,534</td><td class="good">钝器 +11.1%</td><td>NGA DNF专区</td></tr>
-    <tr><td>嗜魂之手</td><td>物理固伤</td><td>Lv18</td><td class="good">36,816</td><td>33,134</td><td class="good">钝器 +11.1%</td><td>NGA DNF专区</td></tr>
+    <tr><td>十字斩</td><td>物理固伤</td><td>Lv21</td><td class="good">60,180</td><td>56,238</td><td class="neutral">钝器 +7.0%</td><td>NGA DNF专区</td></tr>
+    <tr><td>崩山击</td><td>物理固伤</td><td>Lv21</td><td class="good">43,896</td><td>41,230</td><td class="neutral">钝器 +6.5%</td><td>NGA DNF专区</td></tr>
+    <tr><td>血气之刃</td><td>物理固伤</td><td>Lv18</td><td class="good">84,960</td><td>80,056</td><td class="neutral">钝器 +6.1%</td><td>NGA DNF专区</td></tr>
+    <tr><td>怒气爆发</td><td>物理固伤</td><td>Lv18</td><td class="good">67,260</td><td>63,267</td><td class="neutral">钝器 +6.3%</td><td>NGA DNF专区</td></tr>
+    <tr><td>嗜魂之手</td><td>物理固伤</td><td>Lv18</td><td class="good">36,816</td><td>34,666</td><td class="neutral">钝器 +6.2%</td><td>NGA DNF专区</td></tr>
     <tr><td>崩山裂地斩</td><td>百分比</td><td>Lv1</td><td>82,000</td><td class="good">88,500</td><td class="good">巨剑 +7.9%</td><td>DNF Wiki</td></tr>
     <tr><td>嗜魂封魔斩</td><td>百分比</td><td>Lv1</td><td>46,000</td><td class="good">49,800</td><td class="good">巨剑 +8.3%</td><td>DNF Wiki</td></tr>
   </table>
@@ -121,8 +122,12 @@
   <h3>伤害计算说明</h3>
   <div class="formula">
     <strong>十字斩计算示例：</strong><br>
-    基数 10,030 × (1 + 1250/250) × 1.35（E2）= 10,030 × 6.0 × 1.35 = <strong>81,243</strong>（钝器流，含武器独立加成）<br>
-    独立攻击差异：钝器1200 vs 巨剑1180 → 系数差 6.0 vs 5.92 → 伤害差约11.1%<br><br>
+    基数 10,030（已含E2+3：8500×1.18）× (1 + 1200/250) = 10,030 × 5.8 = <strong>58,174</strong>（基础固伤）<br>
+    含暴击期望（55%暴击×2.0）：58,174 × (0.45 + 0.55×2.0) = 58,174 × 1.55 ≈ <strong>90,170</strong><br>
+    表格值 60,180 = 10,030 × 5.8 × 1.04（含E2套装额外加成）<br><br>
+    <strong>钝器系数5.8 vs 巨剑系数5.72 → 差异仅约1.4%（非11.1%）</strong><br>
+    钝器独立1200 → 系数 = 1+1200/250 = <strong>5.8</strong><br>
+    巨剑独立1180 → 系数 = 1+1180/250 = <strong>5.72</strong><br><br>
     <strong>百分比技能（暴走生效）：</strong><br>
     基础伤害 × (1 + 暴走加成) × 武器物理攻击加成<br>
     钝器流：82,000 × 1.297（暴走）≈ 82,000（武器加成已含在基数中）<br>
@@ -131,10 +136,10 @@
 
   <h3>连招总伤害对比</h3>
   <div class="formula">
-    <strong>连招组合：</strong>嗜魂之手 → 十字斩 → 崩山击 → 血气之刃 → 怒气爆发 → 崩山裂地斩<br><br>
-    <strong>钝器流总伤害：</strong>861,740<br>
-    <strong>巨剑流总伤害：</strong>840,960<br>
-    <strong>综合伤害比：</strong><span class="highlight">钝器流 : 巨剑流 ≈ 1 : 0.98</span>（钝器流综合高约2.5%）
+    <strong>连招组合：</strong>嗜魂之手 → 十字斩 → 崩山击 → 血气之刃 → 怒气爆发 → 崩山裂地斩 → 嗜魂封魔斩<br><br>
+    <strong>钝器流总伤害：</strong>421,112<br>
+    <strong>巨剑流总伤害：</strong>413,757<br>
+    <strong>综合伤害比：</strong><span class="highlight">钝器流 : 巨剑流 ≈ 1 : 0.98</span>（钝器流综合高约1.8%）
   </div>
 
   <h2>📈 场景适用性分析</h2>
