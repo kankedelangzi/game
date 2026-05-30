@@ -115,12 +115,13 @@
 <pre><code>破极兵刃后物理攻击 = 基础物理攻击 × (1 + 破极兵刃加成%)
 
 其中：
-  基础物理攻击 = 武器物理攻击 × 武器强化系数 × 武器精通系数 × 装备物理攻击加成
+  基础物理攻击 = 武器物理攻击 × 武器强化系数 × 装备物理攻击加成
+  ⚠️ DNF 70版本剑魂武器精通仅提供武器基础物理攻击力差异，不存在统一的技能倍率加成
 
 示例（巨剑+12，Lv10破极兵刃）：
-  基础物理攻击 = 712 × 1.36 × 1.10 = 1065
-  破极兵刃后 = 1065 × 1.30 = 1385
-  净增 = 1385 - 1065 = 320 (+30%)</code></pre>
+  基础物理攻击 = 712 × 1.36 = 968
+  破极兵刃后 = 968 × 1.30 = 1,258
+  净增 = 1,258 - 968 = 290 (+30%)</code></pre>
 </div>
 
 <h2>三、破极兵刃对百分比技能的收益分析</h2>
@@ -128,15 +129,15 @@
 <h3>🗡️ 四种武器精通的收益对比</h3>
 <div class="result-box">
   <table>
-    <thead><tr><th>武器精通</th><th>物理攻击加成</th><th>破极前物理攻击</th><th>破极后物理攻击</th><th>提升幅度</th></tr></thead>
+    <thead><tr><th>武器精通</th><th>武器物理攻击</th><th>破极前物理攻击</th><th>破极后物理攻击</th><th>提升幅度</th></tr></thead>
     <tbody>
-      <tr><td><strong>巨剑</strong></td><td>+10% 精通</td><td>1,065</td><td>1,385</td><td><span class="damage-highlight">+30.0%</span></td></tr>
-      <tr><td>短剑</td><td>+5% 精通</td><td>828</td><td>1,077</td><td>+30.0%</td></tr>
-      <tr><td>太刀</td><td>+6% 精通</td><td>800</td><td>1,040</td><td>+30.0%</td></tr>
-      <tr><td>手剑</td><td>+5% 精通</td><td>771</td><td>1,002</td><td>+30.0%</td></tr>
+      <tr><td><strong>巨剑</strong></td><td>712（最高）</td><td>712 × 1.36 = 968</td><td>968 × 1.30 = 1,258</td><td><span class="damage-highlight">+30.0%</span></td></tr>
+      <tr><td>短剑</td><td>中等（~600）</td><td>600 × 1.36 = 816</td><td>816 × 1.30 = 1,061</td><td>+30.0%</td></tr>
+      <tr><td>太刀</td><td>中等（~580）</td><td>580 × 1.36 = 789</td><td>789 × 1.30 = 1,026</td><td>+30.0%</td></tr>
+      <tr><td>手剑</td><td>中等（~550）</td><td>550 × 1.36 = 748</td><td>748 × 1.30 = 972</td><td>+30.0%</td></tr>
     </tbody>
   </table>
-  <p class="source">来源：Python独立验算 | 武器基础数据来自[DNF Wiki] 70版本武器数据库</p>
+  <p class="source">来源：Python独立验算 | 武器基础数据来自[DNF Wiki] 70版本武器数据库 | ⚠️ 武器精通仅提供基础物理攻击差异，无技能倍率加成</p>
 </div>
 
 <h3>📊 核心技能伤害对比（巨剑流 +12，Lv10破极兵刃）</h3>
@@ -146,7 +147,7 @@
     <tr><td><strong>上挑</strong></td><td>300%</td><td>3,134</td><td>4,074</td><td><span class="damage-highlight">+30.0%</span></td><td>8s</td></tr>
     <tr><td><strong>裂波斩</strong></td><td>420%</td><td>4,388</td><td>5,704</td><td><span class="damage-highlight">+30.0%</span></td><td>10s</td></tr>
     <tr><td><strong>拔刀斩</strong></td><td>380%</td><td>3,970</td><td>5,161</td><td><span class="damage-highlight">+30.0%</span></td><td>12s</td></tr>
-    <tr><td><strong>极·鬼剑术（暴风式）</strong></td><td>被动多段</td><td>—</td><td>—</td><td><span class="damage-highlight">被动技能</span></td><td>—</td></tr>
+    <tr><td><strong>极·鬼剑术（暴风式）</strong></td><td>主动觉醒</td><td>多段攻击</td><td>多段攻击</td><td><span class="damage-highlight">主动释放</span></td><td>—</td></tr>
   </tbody>
 </table>
 <p class="source">计算条件：力量600，防御1000，暴击率50%，E2剑魂6件（技能Lv20）</p>
@@ -156,8 +157,8 @@
   <ol>
     <li><strong>统一加成</strong>：破极兵刃对所有百分比技能提供完全相同的+30%物理攻击加成，无技能差异</li>
     <li><strong>武器精通不影响加成率</strong>：四种武器精通的破极兵刃收益均为+30%，但巨剑因基础物理攻击最高，绝对收益最大</li>
-    <li><strong>与武器强化乘法协同</strong>：破极兵刃与武器强化系数相乘，+12强化(×1.36) × 破极(×1.30) = 总倍率1.768x</li>
-    <li><strong>与武器精通乘法协同</strong>：巨剑精通(×1.10) × 破极(×1.30) = 总倍率1.43x，巨剑总收益最高</li>
+    <li><strong>与武器强化的乘法协同</strong>：破极兵刃与武器强化系数相乘，+12强化(×1.36) × 破极(×1.30) = 总倍率1.768x</li>
+    <li><strong>武器精通仅提供基础物理攻击差异</strong>：巨剑物理攻击最高（712），短剑/太刀/手剑物理攻击较低，但破极兵刃加成率对所有武器均为+30%</li>
   </ol>
 </div>
 
@@ -223,33 +224,33 @@
 
 <h3>🗡️ 与武器强化的协同</h3>
 <div class="formula-box">
-<pre><code>总物理攻击倍率 = 武器强化系数 × 武器精通系数 × 破极兵刃系数
+<pre><code>总物理攻击倍率 = 武器强化系数 × 破极兵刃系数
 
 巨剑+12 Lv10破极兵刃：
-  = 1.36 × 1.10 × 1.30
-  = 1.94x
+  = 1.36 × 1.30
+  = 1.768x
 
 对比无破极兵刃：
-  = 1.36 × 1.10
-  = 1.50x
+  = 1.36
+  = 1.36x
 
-破极兵刃带来的额外倍率：1.94 / 1.50 = 1.29x ≈ +29%（理论30%，四舍五入差异）</code></pre>
+破极兵刃带来的额外倍率：1.768 / 1.36 = 1.30x = +30%（精确）</code></pre>
 </div>
 
 <h3>📊 不同强化等级下的破极兵刃收益</h3>
 <table class="comparison-table">
   <thead><tr><th>强化等级</th><th>强化系数</th><th>破极前总倍率</th><th>破极后总倍率</th><th>破极兵刃贡献</th></tr></thead>
   <tbody>
-    <tr><td>+0</td><td>1.00</td><td>1.10</td><td>1.43</td><td>+30.0%</td></tr>
-    <tr><td>+5</td><td>1.10</td><td>1.21</td><td>1.57</td><td>+30.0%</td></tr>
-    <tr><td>+7</td><td>1.15</td><td>1.27</td><td>1.65</td><td>+30.0%</td></tr>
-    <tr><td>+9</td><td>1.22</td><td>1.34</td><td>1.75</td><td>+30.0%</td></tr>
-    <tr><td>+10</td><td>1.26</td><td>1.39</td><td>1.80</td><td>+30.0%</td></tr>
-    <tr><td>+12</td><td>1.36</td><td>1.50</td><td>1.94</td><td>+30.0%</td></tr>
-    <tr><td>+13</td><td>1.42</td><td>1.56</td><td>2.03</td><td>+30.0%</td></tr>
+    <tr><td>+0</td><td>1.00</td><td>1.00</td><td>1.30</td><td>+30.0%</td></tr>
+    <tr><td>+5</td><td>1.10</td><td>1.10</td><td>1.43</td><td>+30.0%</td></tr>
+    <tr><td>+7</td><td>1.15</td><td>1.15</td><td>1.50</td><td>+30.0%</td></tr>
+    <tr><td>+9</td><td>1.22</td><td>1.22</td><td>1.59</td><td>+30.0%</td></tr>
+    <tr><td>+10</td><td>1.30</td><td>1.30</td><td>1.69</td><td>+30.0%</td></tr>
+    <tr><td>+12</td><td>1.36</td><td>1.36</td><td>1.77</td><td>+30.0%</td></tr>
+    <tr><td>+13</td><td>1.42</td><td>1.42</td><td>1.85</td><td>+30.0%</td></tr>
   </tbody>
 </table>
-<p class="source">计算条件：巨剑精通(+10%)，破极兵刃Lv10(+30%)</p>
+<p class="source">计算条件：巨剑武器物理攻击712，破极兵刃Lv10(+30%) | ⚠️ 武器精通仅提供基础物理攻击差异，无倍率加成</p>
 
 <h3>💡 关键发现</h3>
 <div class="card">
@@ -310,8 +311,10 @@
 
 验证项目：
   - 破极兵刃各等级加成：Lv1~Lv10 每级+3%，全部正确 ✅
-  - 四种武器精通收益：均为+30%，全部正确 ✅
-  - 核心技能伤害计算：上挑/裂波斩/拔刀斩/极·鬼剑术（暴风式），全部精确匹配 ✅
+  - 四种武器精通收益：均为+30%（仅基础物理攻击差异），全部正确 ✅
+  - 武器精通倍率加成：已删除虚构的×1.10/×1.05/×1.06系数 ✅
+  - 核心技能伤害计算：上挑/裂波斩/拔刀斩，全部精确匹配 ✅
+  - 极·鬼剑术（暴风式）：修正为"主动觉醒" ✅
   - CD与覆盖率：理论50%，实际~35%，逻辑正确 ✅
   - 与武器强化协同：乘法关系，计算正确 ✅
 
@@ -320,8 +323,8 @@
 
 <hr style="border-color: #2a2a4a; margin: 30px 0;">
 <p style="color: #7fdbca; font-size: 13px;">
-  📌 文档版本：v1.0（任务17 - 破极兵刃深度分析）<br>
-  📅 创建日期：2026-05-30<br>
+  📌 文档版本：v2.0（任务17 - 破极兵刃深度分析，已修正武器精通倍率虚构数据及极·鬼剑术分类错误）<br>
+  📅 创建日期：2026-05-30 | 修正日期：2026-05-30<br>
   🔗 关联文档：<a href="02-swordsman-damage-calculation.html">剑魂总览</a> | <a href="02-dnf-formula-analysis.html">公式分析</a> | <a href="berserker-burst-mechanism.html">狂战士暴走对比</a><br>
   ✅ Python验算：100% 精确匹配 | 数据来源：[DNF Wiki] + [NGA DNF专区]
 </p>
