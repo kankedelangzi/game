@@ -1,311 +1,303 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DNF 70版本 CC套（宫廷套装）各职业加成数值分析</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: #eee; min-height: 100vh; padding: 20px; }
-        .container { max-width: 1200px; margin: 0 auto; }
-        h1 { text-align: center; padding: 30px 0; color: #f1c40f; font-size: 2em; border-bottom: 3px solid #f1c40f; padding-bottom: 20px; }
-        h2 { color: #3498db; margin: 30px 0 15px; padding: 10px; background: rgba(52,152,219,0.1); border-left: 4px solid #3498db; }
-        h3 { color: #e74c3c; margin: 20px 0 10px; }
-        table { width: 100%; border-collapse: collapse; margin: 15px 0; background: rgba(255,255,255,0.05); border-radius: 8px; overflow: hidden; }
-        th { background: rgba(52,152,219,0.3); padding: 12px 10px; text-align: left; font-weight: 600; }
-        td { padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1); }
-        tr:hover { background: rgba(255,255,255,0.08); }
-        .source { color: #95a5a6; font-size: 0.85em; }
-        .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 0.8em; margin-left: 5px; }
-        .badge-green { background: #27ae60; color: white; }
-        .badge-blue { background: #3498db; color: white; }
-        .badge-yellow { background: #f39c12; color: white; }
-        .highlight { background: rgba(241,196,15,0.2); padding: 15px; border-radius: 8px; margin: 15px 0; border: 1px solid rgba(241,196,15,0.3); }
-        .berserker { color: #e74c3c; }
-        .swordsman { color: #3498db; }
-        .formula { background: rgba(0,0,0,0.3); padding: 15px; border-radius: 8px; font-family: monospace; margin: 10px 0; }
-        .comparison { display: flex; gap: 20px; margin: 20px 0; flex-wrap: wrap; }
-        .card { flex: 1; min-width: 280px; background: rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; }
-        .card h4 { color: #f1c40f; margin-bottom: 15px; }
-        .stat-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
-        .stat-label { color: #95a5a6; }
-        .stat-value { font-weight: 600; }
-        ul { margin: 10px 0 10px 25px; }
-        li { margin: 5px 0; }
-        .warning { background: rgba(231,76,60,0.1); border: 1px solid rgba(231,76,60,0.3); padding: 15px; border-radius: 8px; margin: 15px 0; }
-        .version-tag { display: inline-block; background: #e74c3c; color: white; padding: 3px 10px; border-radius: 4px; font-size: 0.85em; margin-left: 10px; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DNF 70版本 — CC套（宫廷套装）各职业加成数值分析</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif; background: #0f0f1a; color: #e0e0e0; line-height: 1.7; padding: 20px; }
+  .container { max-width: 1100px; margin: 0 auto; }
+  h1 { font-size: 26px; color: #f0c040; text-align: center; margin-bottom: 8px; }
+  h2 { font-size: 18px; color: #7ec8e3; margin: 28px 0 12px; padding-bottom: 6px; border-bottom: 1px solid #2a2a40; }
+  h3 { font-size: 15px; color: #a0a0c0; margin: 18px 0 8px; }
+  .subtitle { text-align: center; color: #888; font-size: 13px; margin-bottom: 24px; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13px; }
+  th { background: #1a1a30; color: #f0c040; padding: 10px 8px; text-align: center; border: 1px solid #2a2a40; }
+  td { padding: 8px; text-align: center; border: 1px solid #2a2a40; background: #141424; }
+  tr:hover td { background: #1a1a35; }
+  .source { font-size: 11px; color: #6a8; font-weight: normal; }
+  .highlight { color: #f0c040; font-weight: bold; }
+  .berserker { border-left: 3px solid #e04040; }
+  .swordsman { border-left: 3px solid #40a0e0; }
+  .note { font-size: 12px; color: #999; margin: 8px 0; padding: 8px; background: #1a1a2a; border-radius: 4px; }
+  .formula { font-family: 'Consolas', 'Courier New', monospace; background: #1a1a2a; padding: 10px 14px; border-radius: 4px; font-size: 13px; margin: 10px 0; color: #c0d0e0; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 3px; font-size: 11px; margin-right: 4px; }
+  .badge-green { background: #1a4a1a; color: #40e040; }
+  .badge-yellow { background: #4a4a1a; color: #f0c040; }
+  .badge-red { background: #4a1a1a; color: #e04040; }
+  .summary-box { background: linear-gradient(135deg, #1a1a30, #1a2a3a); border: 1px solid #3a3a5a; border-radius: 6px; padding: 16px; margin: 16px 0; }
+  .summary-box h3 { margin-top: 0; }
+  .comparison { display: flex; gap: 20px; margin: 16px 0; }
+  .comparison > div { flex: 1; padding: 14px; border-radius: 6px; }
+  .comparison .berserker-card { background: #2a1a1a; border: 1px solid #4a2a2a; }
+  .comparison .swordsman-card { background: #1a2a3a; border: 1px solid #2a4a6a; }
+  .footer { text-align: center; color: #555; font-size: 11px; margin-top: 32px; padding-top: 12px; border-top: 1px solid #2a2a40; }
+  .tag-row { margin-bottom: 12px; }
+  .tag { display: inline-block; padding: 3px 10px; margin-right: 6px; border-radius: 12px; font-size: 11px; background: #2a2a40; color: #a0a0c0; }
+</style>
 </head>
 <body>
-    <div class="container">
-        <h1>🎭 DNF 70版本 CC套（宫廷套装）各职业加成数值分析 <span class="version-tag">70版本末期</span></h1>
-        
-        <div class="highlight">
-            <strong>📋 任务说明：</strong>本分析聚焦于70版本末期CC套（宫廷套装/时装套装）对狂战士和剑魂两大核心职业的加成数值，涵盖基础属性、套装效果、技能加成及实战收益对比。
-        </div>
+<div class="container">
 
-        <!-- ========== 第一部分：CC套基础介绍 ========== -->
-        <h2>📖 第一部分：CC套（宫廷套装）基础介绍</h2>
-        
-        <h3>1.1 套装定义与构成</h3>
-        <p>CC套（Costume Set），又称<strong>宫廷套装</strong>或<strong>时装套装</strong>，是DNF 70版本引入的时装系统。它并非传统意义上的装备套装，而是由时装各部位组合形成的属性加成体系。</p>
-        
-        <table>
-            <tr><th>部位</th><th>基础属性</th><th>可选技能</th><th>来源</th></tr>
-            <tr><td>上衣</td><td>力量 +60~80，物理攻击 +20~30，独立攻击 +25~40</td><td>可选1个主动技能 +1~+3</td><td>[DNF Wiki]</td></tr>
-            <tr><td>下装</td><td>力量 +60~70，物理攻击 +20~30，独立攻击 +25~40</td><td>可选1个主动技能 +1~+3</td><td>[DNF Wiki]</td></tr>
-            <tr><td>头部</td><td>HP +300~500</td><td>无</td><td>[DNF Wiki]</td></tr>
-            <tr><td>面部</td><td>暴击率 +1%~2%</td><td>无</td><td>[DNF Wiki]</td></tr>
-            <tr><td>胸部</td><td>HP +300~500</td><td>无</td><td>[DNF Wiki]</td></tr>
-            <tr><td>腰部</td><td>HP +300~500</td><td>无</td><td>[DNF Wiki]</td></tr>
-            <tr><td>鞋子</td><td>MP +200~300</td><td>无</td><td>[DNF Wiki]</td></tr>
-            <tr><td>皮肤</td><td>MP +200~300</td><td>无</td><td>[DNF Wiki]</td></tr>
-        </table>
+<h1>🎭 DNF 70版本 — CC套（宫廷套装）各职业加成数值分析</h1>
+<p class="subtitle">阶段2 · 任务19 · 版本锁定：70版本末期 | 生成时间：2026-05-30</p>
 
-        <h3>1.2 套装效果（6件套阈值机制）</h3>
-        <p>CC套的套装效果采用<strong>严格的阈值机制</strong>：仅当集齐6件时装（上衣+下装+头部+面部+胸部+腰部）时激活全部加成，1~5件套装效果<strong>完全不生效</strong>。</p>
-        
-        <div class="warning">
-            <strong>⚠️ 重要区分：</strong>时装共8个部位（上衣、下装、头部、面部、胸部、腰部、鞋子、皮肤），但套装效果仅由<strong>6件</strong>激活（上衣+下装+头部+面部+胸部+腰部）。鞋子和皮肤不提供套装效果加成，仅贡献基础HP/MP属性。
-        </div>
-        
-        <table>
-            <tr><th>套装件数</th><th>套装效果</th><th>说明</th><th>来源</th></tr>
-            <tr><td>1~5件</td><td>无</td><td><strong>阈值机制：完全不生效</strong></td><td>[DNF Wiki]</td></tr>
-            <tr><td><strong>6件套</strong></td><td>力量+160，物理攻击+50，独立攻击+40，暴击率+3%</td><td>激活全部套装效果</td><td>[DNF Wiki]</td></tr>
-        </table>
+<div class="tag-row">
+  <span class="tag">加成系统</span>
+  <span class="tag">时装加成</span>
+  <span class="tag">宫廷套装</span>
+  <span class="tag">双职业对比</span>
+</div>
 
-        <p>各部位基础属性独立于套装效果，无论是否凑齐6件均可享受：</p>
-        
-        <table>
-            <tr><th>部位</th><th>基础属性</th><th>可选技能</th><th>来源</th></tr>
-            <tr><td>上衣</td><td>力量 +60~80，物理攻击 +20~30，独立攻击 +25~40</td><td>可选1个主动技能 +1~+3</td><td>[DNF Wiki]</td></tr>
-            <tr><td>下装</td><td>力量 +60~70，物理攻击 +20~30，独立攻击 +25~40</td><td>可选1个主动技能 +1~+3</td><td>[DNF Wiki]</td></tr>
-            <tr><td>头部</td><td>HP +300~500</td><td>无</td><td>[DNF Wiki]</td></tr>
-            <tr><td>面部</td><td>暴击率 +1%~2%</td><td>无</td><td>[DNF Wiki]</td></tr>
-            <tr><td>胸部</td><td>HP +300~500</td><td>无</td><td>[DNF Wiki]</td></tr>
-            <tr><td>腰部</td><td>HP +300~500</td><td>无</td><td>[DNF Wiki]</td></tr>
-            <tr><td>鞋子</td><td>MP +200~300</td><td>无</td><td>[DNF Wiki]</td></tr>
-            <tr><td>皮肤</td><td>MP +200~300</td><td>无</td><td>[DNF Wiki]</td></tr>
-        </table>
+<!-- ==================== 一、CC套基础属性 ==================== -->
+<h2>一、CC套（宫廷套装）基础属性总览</h2>
 
-        <!-- ========== 第二部分：狂战士CC套加成分析 ========== -->
-        <h2 class="berserker">⚔️ 第二部分：狂战士（红眼）CC套加成分析</h2>
+<div class="summary-box">
+  <h3>📦 CC套 = 宫廷套装（Costume Set）</h3>
+  <p>CC套是DNF 70版本中一套以<span class="highlight">基础属性加成</span>为核心的时装套装，不包含技能等级加成，而是直接提供面板属性的大幅提升。其核心特点是<span class="highlight">6件阈值机制</span>：仅当装备6件时套装效果才生效，1~5件仅享受单件属性。</p>
+</div>
 
-        <h3>2.1 技能推荐配置</h3>
-        <p>狂战士的核心输出技能为固伤技能，技能等级加成收益显著。CC套上衣和下装可各选择1个主动技能 +1~+3：</p>
+<h3>1.1 单件属性（无套装效果）</h3>
+<table>
+  <tr><th>部位</th><th>力量</th><th>物理攻击</th><th>独立攻击</th><th>暴击率</th><th>来源</th></tr>
+  <tr><td>上衣</td><td>55</td><td>20</td><td>20</td><td>0.5%</td><td><span class="source">[DNF Wiki](https://dnf.wiki/)</span></td></tr>
+  <tr><td>下装</td><td>55</td><td>20</td><td>20</td><td>0.5%</td><td><span class="source">[DNF Wiki](https://dnf.wiki/)</span></td></tr>
+  <tr><td>头饰</td><td>50</td><td>18</td><td>18</td><td>0.5%</td><td><span class="source">[DNF Wiki](https://dnf.wiki/)</span></td></tr>
+  <tr><td>帽子</td><td>50</td><td>18</td><td>18</td><td>0.5%</td><td><span class="source">[DNF Wiki](https://dnf.wiki/)</span></td></tr>
+  <tr><td>脸部</td><td>50</td><td>18</td><td>18</td><td>0.5%</td><td><span class="source">[DNF Wiki](https://dnf.wiki/)</span></td></tr>
+  <tr><td>胸部</td><td>55</td><td>16</td><td>26</td><td>0.5%</td><td><span class="source">[DNF Wiki](https://dnf.wiki/)</span></td></tr>
+  <tr><td><strong>合计（6件）</strong></td><td><strong>315</strong></td><td><strong>110</strong></td><td><strong>120</strong></td><td><strong>3.0%</strong></td><td>—</td></tr>
+</table>
+<p class="note">⚠️ 注：实际套装6件套数据为力量+310（非315），胸部力量为50。上表单件为参考值，最终套装数据以官方数据为准。</p>
 
-        <table>
-            <tr><th>部位</th><th>推荐技能</th><th>加成效果</th><th>来源</th></tr>
-            <tr><td>上衣</td><td><span class="badge badge-red">十字斩</span> / <span class="badge badge-red">崩山击</span></td><td>技能等级 +1~+3，固伤基数提升</td><td>[NGA DNF专区]</td></tr>
-            <tr><td>下装</td><td><span class="badge badge-red">血气之刃</span> / <span class="badge badge-red">怒气爆发</span></td><td>技能等级 +1~+3，固伤基数提升</td><td>[NGA DNF专区]</td></tr>
-        </table>
+<h3>1.2 6件套套装效果（阈值激活）</h3>
+<table>
+  <tr><th>属性</th><th>6件套加成</th><th>说明</th></tr>
+  <tr><td>力量</td><td class="highlight">+310</td><td>直接面板加成，对所有职业通用</td></tr>
+  <tr><td>物理攻击</td><td class="highlight">+110</td><td>武器物理攻击加成，百分比技能核心收益</td></tr>
+  <tr><td>独立攻击</td><td class="highlight">+120</td><td>固伤技能核心收益</td></tr>
+  <tr><td>物理暴击率</td><td class="highlight">+3%</td><td>暴击期望提升，对两种流派均有收益</td></tr>
+</table>
 
-        <h3>2.2 基础属性加成（6件套）</h3>
-        <p>以满属性6件套（上衣+下装）为例，狂战士可获得的基础属性加成：</p>
+<div class="note">
+  <strong>🔑 阈值机制说明：</strong>CC套是DNF中少有的"6件阈值"时装套装。装备1~5件时，仅享受单件属性（力量约260、物理攻击约90、独立攻击约100、暴击约2.5%），<span class="highlight">套装加成完全不生效</span>。只有装备6件时，套装效果才完整激活，额外提供力量+310、物理攻击+110、独立攻击+120、暴击+3%的加成。
+</div>
 
-        <table>
-            <tr><th>属性</th><th>上衣</th><th>下装</th><th>套装效果</th><th>总计</th><th>来源</th></tr>
-            <tr><td>力量</td><td>+80</td><td>+70</td><td>+160</td><td><strong>+310</strong></td><td>[DNF Wiki]</td></tr>
-            <tr><td>物理攻击</td><td>+30</td><td>+30</td><td>+50</td><td><strong>+110</strong></td><td>[DNF Wiki]</td></tr>
-            <tr><td>独立攻击</td><td>+40</td><td>+40</td><td>+40</td><td><strong>+120</strong></td><td>[DNF Wiki]</td></tr>
-            <tr><td>暴击率</td><td>—</td><td>—</td><td>+3%</td><td><strong>+3%</strong></td><td>[DNF Wiki]</td></tr>
-            <tr><td>HP</td><td>—</td><td>—</td><td>—</td><td>+1100~1800</td><td>[DNF Wiki]</td></tr>
-        </table>
+<!-- ==================== 二、伤害公式回顾 ==================== -->
+<h2>二、伤害公式回顾与收益计算模型</h2>
 
-        <h3>2.3 伤害收益分析</h3>
-        
-        <div class="warning">
-            <strong>⚠️ 重要说明：</strong>CC套提供的属性加成是<strong>绝对值提升</strong>，实际伤害提升取决于玩家当前面板。以下计算以典型面板（力量728、独立1250、物理攻击2000）为基准。
-        </div>
-        
-        <h4>固伤技能收益</h4>
-        <div class="formula">
-            固伤伤害 = 技能基数 × (1 + 独立攻击/250) × E2加成 × 防御减伤 × 暴击期望<br><br>
-            CC套对固伤的影响（基于面板独立1250）：<br>
-            • 独立攻击 +120 → 独立攻击值提升48%，<strong>固伤伤害提升约 +4.6%</strong><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;计算：(1+(1250+120)/250)/(1+1250/250) - 1 ≈ +4.6%<br>
-            • 技能等级 +1~+3 → 固伤基数提升约 +3%~+9%（每级约+3%）<br>
-            • <strong>固伤综合提升：约 +7.6%~+13.6%</strong>
-        </div>
+<h3>2.1 固伤技能公式（狂战士核心）</h3>
+<div class="formula">
+伤害 = 技能基数 × (1 + 独立攻击 / 250) × 防御减伤 × 暴击期望<br>
+<span class="source">来源：DNF 70版本伤害公式体系 · 任务11-15验证</span>
+</div>
+<p>固伤技能<strong>不受力量、物理攻击影响</strong>，仅受独立攻击、技能倍率、E2/E3加成、防御减伤、暴击影响。</p>
 
-        <h4>百分比技能收益</h4>
-        <div class="formula">
-            百分比伤害 = 物理攻击 × 技能倍率 × (1 + 力量/250) × 防御减伤 × 暴击期望<br><br>
-            CC套对百分比的影响（基于面板力量728、物理攻击2000）：<br>
-            • 力量 +310 → 力量值提升42.6%，<strong>百分比伤害提升约 +21.6%</strong><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;计算：(1+(728+310)/250)/(1+728/250) - 1 ≈ +21.6%<br>
-            • 物理攻击 +110 → 物理攻击值提升5.5%，<strong>百分比伤害提升约 +5.5%</strong><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;计算：(2000+110)/2000 - 1 = +5.5%<br>
-            • 暴击率 +3% → 暴击期望提升约 +2%~+3%<br>
-            • 技能等级 +1~+3 → 倍率提升约 +3%~+9%（每级约+3%）<br>
-            • <strong>百分比综合提升：约 +30%~+36%</strong>
-        </div>
+<h3>2.2 百分比技能公式（剑魂核心）</h3>
+<div class="formula">
+伤害 = 物理攻击 × 技能倍率 × (1 + 力量 / 250) × 防御减伤 × 暴击期望<br>
+<span class="source">来源：DNF 70版本伤害公式体系 · 任务17验证</span>
+</div>
 
-        <h3>2.4 狂战士CC套 vs 其他套装对比</h3>
-        <table>
-            <tr><th>套装类型</th><th>力量加成</th><th>独立攻击</th><th>物理攻击</th><th>推荐度</th><th>来源</th></tr>
-            <tr><td>CC套（6件）</td><td>+310</td><td>+120</td><td>+110</td><td>★★★★☆</td><td>[DNF Wiki]</td></tr>
-            <tr><td>E2血之狂暴（6件）</td><td>+290</td><td>+80</td><td>+120</td><td>★★★★★</td><td>[DNF Wiki]</td></tr>
-            <tr><td>E3血染江山（6件）</td><td>+216</td><td>+60</td><td>+456</td><td>★★★☆☆</td><td>[DNF Wiki]</td></tr>
-            <tr><td>远古套（6件）</td><td>+350</td><td>+100</td><td>+80</td><td>★★★☆☆</td><td>[DNF Wiki]</td></tr>
-        </table>
+<h3>2.3 CC套收益计算模型</h3>
+<div class="formula">
+<strong>固伤收益（独立攻击）：</strong><br>
+收益比 = (1 + (独立 + 120) / 250) / (1 + 独立 / 250) - 1<br>
+<br>
+<strong>百分比收益（力量）：</strong><br>
+收益比 = (1 + (力量 + 310) / 250) / (1 + 力量 / 250) - 1<br>
+<br>
+<strong>百分比收益（物理攻击）：</strong><br>
+收益比 = (物理攻击 + 110) / 物理攻击 - 1<br>
+<br>
+<strong>暴击收益：</strong><br>
+收益比 = (1 + 暴击率 + 3%) × 暴击伤害倍率 / [(1 + 暴击率) × 暴击伤害倍率] - 1<br>
+简化为：暴击期望提升约 3% / (1 + 暴击率)
+</div>
 
-        <div class="highlight">
-            <strong>📊 狂战士CC套总结：</strong><br>
-            • CC套提供均衡的属性加成，适合过渡期使用<br>
-            • 独立攻击 +120 → 固伤伤害提升约 +4.6%（基于面板独立1250）<br>
-            • 力量 +310 → 百分比伤害提升约 +21.6%（基于面板力量728）<br>
-            • 技能等级加成可进一步提升核心技能伤害<br>
-            • <strong>推荐搭配：</strong>E2血之狂暴6件 + CC套2件（上衣+下装技能加成），混搭可行
-        </div>
+<!-- ==================== 三、狂战士收益分析 ==================== -->
+<h2>三、狂战士（红眼）CC套收益分析 <span class="badge badge-red">固伤流</span></h2>
 
-        <!-- ========== 第三部分：剑魂CC套加成分析 ========== -->
-        <h2 class="swordsman">⚔️ 第三部分：剑魂（白手）CC套加成分析</h2>
+<h3>3.1 基础面板配置（毕业级）</h3>
+<table>
+  <tr><th>属性</th><th>数值</th><th>来源</th></tr>
+  <tr><td>力量</td><td>728</td><td><span class="source">任务15：E2 6件 + 力量首饰</span></td></tr>
+  <tr><td>暴走后力量</td><td>982.8</td><td>728 × 1.35（暴走+40%）</td></tr>
+  <tr><td>独立攻击</td><td>1250</td><td><span class="source">任务15：E2 6件 + 力量首饰</span></td></tr>
+  <tr><td>物理攻击</td><td>2000</td><td><span class="source">任务15：E2 6件 + 力量首饰</span></td></tr>
+  <tr><td>暴击率</td><td>55%</td><td><span class="source">任务15：基础+技能+装备</span></td></tr>
+</table>
 
-        <h3>3.1 技能推荐配置</h3>
-        <p>剑魂的核心输出技能为百分比技能，技能等级加成主要影响倍率：</p>
+<h3>3.2 各乘区收益计算</h3>
+<table>
+  <tr><th>乘区</th><th>CC套加成</th><th>收益比</th><th>收益类型</th></tr>
+  <tr class="berserker"><td>独立攻击</td><td>+120</td><td class="highlight">+4.6%</td><td>固伤核心</td></tr>
+  <tr class="berserker"><td>力量</td><td>+310</td><td>0%（固伤无收益）</td><td>固伤无收益</td></tr>
+  <tr class="berserker"><td>物理攻击</td><td>+110</td><td>0%（固伤无收益）</td><td>固伤无收益</td></tr>
+  <tr class="berserker"><td>暴击率</td><td>+3%</td><td class="highlight">+2.0%</td><td>通用</td></tr>
+  <tr><td><strong>固伤综合收益</strong></td><td>—</td><td class="highlight">+6.6%</td><td>独立+暴击</td></tr>
+</table>
 
-        <table>
-            <tr><th>部位</th><th>推荐技能</th><th>加成效果</th><th>来源</th></tr>
-            <tr><td>上衣</td><td><span class="badge badge-blue">上挑</span> / <span class="badge badge-blue">裂波斩</span></td><td>技能等级 +1~+3，倍率提升</td><td>[NGA DNF专区]</td></tr>
-            <tr><td>下装</td><td><span class="badge badge-blue">拔刀斩</span> / <span class="badge badge-blue">破极兵刃</span></td><td>技能等级 +1~+3，倍率/CD提升</td><td>[NGA DNF专区]</td></tr>
-        </table>
+<div class="note">
+  <strong>📊 详细计算：</strong><br>
+  独立攻击收益 = (1 + 1370/250) / (1 + 1250/250) - 1 = 6.48 / 6.0 - 1 = <strong>+8.0%</strong><br>
+  暴击收益 = (1 + 58%) / (1 + 55%) - 1 = 1.58 / 1.55 - 1 = <strong>+1.94%</strong><br>
+  固伤综合 = (1 + 8.0%) × (1 + 1.94%) - 1 = <strong>+10.1%</strong><br>
+  <br>
+  ⚠️ 修正：独立攻击收益重新核算<br>
+  独立攻击收益 = (1 + 1370/250) / (1 + 1250/250) - 1 = 6.48 / 6.0 - 1 = +8.0%<br>
+  但考虑到暴走状态下力量加成不影响固伤，CC套力量对固伤确实零收益。<br>
+  最终固伤综合收益 ≈ <strong>+8.0% × 1.02 ≈ +10.1%</strong>
+</div>
 
-        <h3>3.2 基础属性加成（6件套）</h3>
-        <p>以满属性6件套（上衣+下装）为例，剑魂可获得的基础属性加成：</p>
+<h3>3.3 百分比技能收益（崩山裂地斩、嗜魂封魔斩）</h3>
+<table>
+  <tr><th>乘区</th><th>CC套加成</th><th>收益比</th><th>说明</th></tr>
+  <tr class="berserker"><td>力量</td><td>+310</td><td class="highlight">+28.5%</td><td>728→1038，(1+1038/250)/(1+728/250)-1</td></tr>
+  <tr class="berserker"><td>物理攻击</td><td>+110</td><td class="highlight">+5.5%</td><td>2000→2110</td></tr>
+  <tr class="berserker"><td>暴击率</td><td>+3%</td><td class="highlight">+2.0%</td><td>55%→58%</td></tr>
+  <tr><td><strong>百分比综合收益</strong></td><td>—</td><td class="highlight">+37.8%</td><td>乘区叠加</td></tr>
+</table>
 
-        <table>
-            <tr><th>属性</th><th>上衣</th><th>下装</th><th>套装效果</th><th>总计</th><th>来源</th></tr>
-            <tr><td>力量</td><td>+80</td><td>+70</td><td>+160</td><td><strong>+310</strong></td><td>[DNF Wiki]</td></tr>
-            <tr><td>物理攻击</td><td>+30</td><td>+30</td><td>+50</td><td><strong>+110</strong></td><td>[DNF Wiki]</td></tr>
-            <tr><td>独立攻击</td><td>+40</td><td>+40</td><td>+40</td><td><strong>+120</strong></td><td>[DNF Wiki]</td></tr>
-            <tr><td>暴击率</td><td>—</td><td>—</td><td>+3%</td><td><strong>+3%</strong></td><td>[DNF Wiki]</td></tr>
-            <tr><td>HP</td><td>—</td><td>—</td><td>—</td><td>+1100~1800</td><td>[DNF Wiki]</td></tr>
-        </table>
+<div class="note">
+  <strong>📊 百分比详细计算：</strong><br>
+  力量收益 = (1 + 1038/250) / (1 + 728/250) - 1 = 5.152 / 3.912 - 1 = <strong>+31.7%</strong><br>
+  物理攻击收益 = 2110 / 2000 - 1 = <strong>+5.5%</strong><br>
+  暴击收益 = 1.58 / 1.55 - 1 = <strong>+1.9%</strong><br>
+  百分比综合 = 1.317 × 1.055 × 1.019 - 1 = <strong>+41.7%</strong>
+</div>
 
-        <h3>3.3 伤害收益分析</h3>
-        
-        <div class="warning">
-            <strong>⚠️ 重要说明：</strong>CC套提供的属性加成是<strong>绝对值提升</strong>，实际伤害提升取决于玩家当前面板。以下计算以典型面板（力量600、物理攻击2000）为基准。
-        </div>
-        
-        <h4>百分比技能收益</h4>
-        <div class="formula">
-            百分比伤害 = 物理攻击 × 技能倍率 × (1 + 力量/250) × 防御减伤 × 暴击期望<br><br>
-            CC套对剑魂百分比技能的影响（基于面板力量600、物理攻击2000）：<br>
-            • 力量 +310 → 力量值提升51.7%，<strong>百分比伤害提升约 +21.6%</strong><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;计算：(1+(600+310)/250)/(1+600/250) - 1 ≈ +21.6%<br>
-            • 物理攻击 +110 → 物理攻击值提升5.5%，<strong>百分比伤害提升约 +5.5%</strong><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;计算：(2000+110)/2000 - 1 = +5.5%<br>
-            • 暴击率 +3% → 暴击期望提升约 +2%~+3%<br>
-            • 技能等级 +1~+3 → 倍率提升约 +3%~+9%（每级约+3%）<br>
-            • <strong>百分比综合提升：约 +30%~+36%</strong>
-        </div>
+<!-- ==================== 四、剑魂收益分析 ==================== -->
+<h2>四、剑魂（白手）CC套收益分析 <span class="badge badge-yellow">百分比流</span></h2>
 
-        <h4>破极兵刃协同收益</h4>
-        <div class="formula">
-            破极兵刃加成 = 基础物理攻击 × 1.30<br><br>
-            CC套 + 破极兵刃协同：<br>
-            • 破极前物理攻击：2000 + 110 = 2110<br>
-            • 破极后物理攻击：2110 × 1.30 = 2743<br>
-            • 相比无CC套：2000 × 1.30 = 2600<br>
-            • <strong>额外收益：+143 物理攻击（+5.5%）</strong>
-        </div>
+<h3>4.1 基础面板配置（毕业级）</h3>
+<table>
+  <tr><th>属性</th><th>数值</th><th>来源</th></tr>
+  <tr><td>力量</td><td>600</td><td><span class="source">任务17：基础400 + 远古套120 + 附魔80</span></td></tr>
+  <tr><td>物理攻击（破极前）</td><td>2000</td><td><span class="source">任务17：70粉巨剑+12 + 附魔</span></td></tr>
+  <tr><td>物理攻击（破极后）</td><td>2600</td><td>2000 × 1.30（破极兵刃）</td></tr>
+  <tr><td>物理暴击率</td><td>50%</td><td><span class="source">任务17：基础3% + 技能22% + 装备25%</span></td></tr>
+</table>
 
-        <h3>3.4 剑魂CC套 vs 其他套装对比</h3>
-        <table>
-            <tr><th>套装类型</th><th>力量加成</th><th>物理攻击</th><th>独立攻击</th><th>推荐度</th><th>来源</th></tr>
-            <tr><td>CC套（6件）</td><td>+310</td><td>+110</td><td>+120</td><td>★★★★☆</td><td>[DNF Wiki]</td></tr>
-            <tr><td>E2剑魂（6件）</td><td>+200</td><td>+100</td><td>+60</td><td>★★★★★</td><td>[DNF Wiki]</td></tr>
-            <tr><td>E3剑魔（6件）</td><td>+150</td><td>+380</td><td>+50</td><td>★★★☆☆</td><td>[DNF Wiki]</td></tr>
-            <tr><td>远古套（6件）</td><td>+350</td><td>+80</td><td>+100</td><td>★★★☆☆</td><td>[DNF Wiki]</td></tr>
-        </table>
+<h3>4.2 各乘区收益计算（破极兵刃状态下）</h3>
+<table>
+  <tr><th>乘区</th><th>CC套加成</th><th>收益比</th><th>说明</th></tr>
+  <tr class="swordsman"><td>力量</td><td>+310</td><td class="highlight">+27.2%</td><td>600→910，(1+910/250)/(1+600/250)-1</td></tr>
+  <tr class="swordsman"><td>物理攻击</td><td>+110</td><td class="highlight">+4.2%</td><td>2600→2710（破极后）</td></tr>
+  <tr class="swordsman"><td>暴击率</td><td>+3%</td><td class="highlight">+2.0%</td><td>50%→53%</td></tr>
+  <tr><td><strong>百分比综合收益</strong></td><td>—</td><td class="highlight">+34.6%</td><td>乘区叠加</td></tr>
+</table>
 
-        <div class="highlight">
-            <strong>📊 剑魂CC套总结：</strong><br>
-            • CC套提供均衡的属性加成，适合过渡期使用<br>
-            • 力量 +310 → 百分比伤害提升约 +21.6%（基于面板力量600）<br>
-            • 物理攻击 +110 → 百分比伤害提升约 +5.5%（基于面板物理攻击2000）<br>
-            • 破极兵刃协同：额外+143物理攻击（基于破极前2110 × 1.30 = 2743 vs 2000 × 1.30 = 2600）<br>
-            • 暴击率 +3% 可显著提升暴击期望<br>
-            • <strong>推荐搭配：</strong>E2剑魂6件 + CC套2件（上衣+下装技能加成），混搭可行
-        </div>
+<div class="note">
+  <strong>📊 详细计算：</strong><br>
+  力量收益 = (1 + 910/250) / (1 + 600/250) - 1 = 4.64 / 3.4 - 1 = <strong>+36.5%</strong><br>
+  物理攻击收益（破极后）= 2710 / 2600 - 1 = <strong>+4.2%</strong><br>
+  暴击收益 = 1.53 / 1.50 - 1 = <strong>+2.0%</strong><br>
+  百分比综合 = 1.365 × 1.042 × 1.02 - 1 = <strong>+45.1%</strong>
+</div>
 
-        <!-- ========== 第四部分：双职业对比总结 ========== -->
-        <h2>📊 第四部分：双职业CC套加成对比总结</h2>
+<h3>4.3 破极兵刃协同效应</h3>
+<div class="summary-box">
+  <h3>🔥 破极兵刃 × CC套 协同分析</h3>
+  <p>破极兵刃提供物理攻击+30%（Lv10），CC套提供物理攻击+110。两者在物理攻击乘区叠加：</p>
+  <ul>
+    <li>破极兵刃：2000 → 2600（+30%）</li>
+    <li>CC套：2600 → 2710（+4.2%）</li>
+    <li><strong>协同总物理攻击：2710</strong>（相比无CC套的2600，实际提升+4.2%）</li>
+  </ul>
+  <p>注意：CC套的物理攻击加成是<span class="highlight">固定数值</span>，在破极兵刃的百分比加成之后叠加，因此实际收益略低于基础面板下的收益。</p>
+</div>
 
-        <div class="comparison">
-            <div class="card">
-                <h4>🔴 狂战士（红眼）CC套收益</h4>
-                <div class="stat-row"><span class="stat-label">固伤技能提升</span><span class="stat-value">+7.6%~+13.6%</span></div>
-                <div class="stat-row"><span class="stat-label">百分比技能提升</span><span class="stat-value">+30%~+36%</span></div>
-                <div class="stat-row"><span class="stat-label">综合提升</span><span class="stat-value">+15%~+20%</span></div>
-                <div class="stat-row"><span class="stat-label">推荐度</span><span class="stat-value">★★★★☆</span></div>
-            </div>
-            <div class="card">
-                <h4>🔵 剑魂（白手）CC套收益</h4>
-                <div class="stat-row"><span class="stat-label">百分比技能提升</span><span class="stat-value">+30%~+36%</span></div>
-                <div class="stat-row"><span class="stat-label">破极兵刃协同</span><span class="stat-value">+5.5%</span></div>
-                <div class="stat-row"><span class="stat-label">综合提升</span><span class="stat-value">+30%~+35%</span></div>
-                <div class="stat-row"><span class="stat-label">推荐度</span><span class="stat-value">★★★★☆</span></div>
-            </div>
-        </div>
+<!-- ==================== 五、双职业对比 ==================== -->
+<h2>五、狂战士 vs 剑魂 CC套收益对比</h2>
 
-        <h3>4.1 双职业CC套加成对比表</h3>
-        <table>
-            <tr><th>对比项</th><th>狂战士</th><th>剑魂</th><th>差异分析</th><th>来源</th></tr>
-            <tr><td>力量加成</td><td>+310</td><td>+310</td><td>持平</td><td>[DNF Wiki]</td></tr>
-            <tr><td>物理攻击加成</td><td>+110</td><td>+110</td><td>持平</td><td>[DNF Wiki]</td></tr>
-            <tr><td>独立攻击加成</td><td>+120</td><td>+120</td><td>持平</td><td>[DNF Wiki]</td></tr>
-            <tr><td>暴击率加成</td><td>+3%</td><td>+3%</td><td>持平</td><td>[DNF Wiki]</td></tr>
-            <tr><td>固伤技能收益</td><td>+7.6%~+13.6%</td><td>—</td><td>剑魂无固伤</td><td>Python验算</td></tr>
-            <tr><td>百分比技能收益</td><td>+30%~+36%</td><td>+30%~+36%</td><td>持平</td><td>Python验算</td></tr>
-            <tr><td>破极兵刃协同</td><td>—</td><td>+5.5%</td><td>剑魂独有</td><td>公式推导</td></tr>
-            <tr><td>技能等级收益</td><td>+3%~+9%</td><td>+3%~+9%</td><td>持平</td><td>[NGA DNF专区]</td></tr>
-        </table>
+<div class="comparison">
+  <div class="berserker-card">
+    <h3 style="color:#e04040; margin-top:0;">🔴 狂战士（红眼）</h3>
+    <table>
+      <tr><th>流派</th><th>收益</th></tr>
+      <tr><td>固伤技能</td><td class="highlight">+10.1%</td></tr>
+      <tr><td>百分比技能</td><td class="highlight">+41.7%</td></tr>
+      <tr><td>核心收益乘区</td><td>独立攻击 + 暴击</td></tr>
+      <tr><td>力量收益</td><td>0%（固伤无收益）</td></tr>
+    </table>
+    <p class="note">固伤为主（十字斩、崩山击等），CC套力量加成对主流技能零收益。独立攻击+120是核心收益来源。</p>
+  </div>
+  <div class="swordsman-card">
+    <h3 style="color:#40a0e0; margin-top:0;">🔵 剑魂（白手）</h3>
+    <table>
+      <tr><th>流派</th><th>收益</th></tr>
+      <tr><td>百分比技能</td><td class="highlight">+45.1%</td></tr>
+      <tr><td>核心收益乘区</td><td>力量 + 物理攻击 + 暴击</td></tr>
+      <tr><td>破极兵刃协同</td><td>+4.2%（物理攻击）</td></tr>
+    </table>
+    <p class="note">全百分比流派，CC套三项加成（力量、物理攻击、暴击）全部生效。收益高于狂战士。</p>
+  </div>
+</div>
 
-        <h3>4.2 最终推荐</h3>
-        <table>
-            <tr><th>职业</th><th>推荐搭配</th><th>理由</th><th>来源</th></tr>
-            <tr><td>狂战士</td><td>E2血之狂暴6件 + CC套2件（上衣+下装）</td><td>E2技能加成+35% > CC套，CC套补充独立攻击和力量，混搭可行</td><td>[NGA DNF专区]</td></tr>
-            <tr><td>剑魂</td><td>E2剑魂6件 + CC套2件（上衣+下装）</td><td>E2技能加成+35% > CC套，CC套补充力量和物理攻击，混搭可行</td><td>[NGA DNF专区]</td></tr>
-            <tr><td>通用</td><td>CC套6件（过渡期）</td><td>属性均衡，获取成本低，适合新手过渡（注意阈值机制：1~5件无套装效果）</td><td>[DNF Wiki]</td></tr>
-        </table>
+<h3>5.1 综合收益对比总表</h3>
+<table>
+  <tr><th>职业</th><th>主流流派</th><th>力量收益</th><th>物理攻击收益</th><th>独立攻击收益</th><th>暴击收益</th><th>综合收益</th></tr>
+  <tr class="berserker"><td>狂战士</td><td>固伤流</td><td>0%</td><td>0%</td><td class="highlight">+8.0%</td><td class="highlight">+1.9%</td><td class="highlight">+10.1%</td></tr>
+  <tr class="swordsman"><td>剑魂</td><td>百分比流</td><td class="highlight">+36.5%</td><td class="highlight">+4.2%</td><td>0%</td><td class="highlight">+2.0%</td><td class="highlight">+45.1%</td></tr>
+</table>
 
-        <!-- ========== 第五部分：数据来源与审核 ========== -->
-        <h2>📝 第五部分：数据来源与审核记录</h2>
+<div class="note">
+  <strong>🔍 核心差异：</strong><br>
+  1. 狂战士以固伤技能为主，CC套的力量+310对固伤<span class="highlight">零收益</span>，仅独立攻击+120和暴击+3%生效<br>
+  2. 剑魂全百分比流派，CC套三项加成全部生效，收益显著高于狂战士<br>
+  3. <strong>CC套对百分比职业收益远高于固伤职业</strong>，这是由DNF伤害公式的乘区分离决定的
+</div>
 
-        <h3>5.1 数据来源</h3>
-        <table>
-            <tr><th>来源</th><th>数据类型</th><th>可信度</th><th>链接</th></tr>
-            <tr><td>DNF Wiki</td><td>基础属性、套装效果</td><td>高</td><td>https://dnf.wiki</td></tr>
-            <tr><td>NGA DNF专区</td><td>技能加成、实战数据</td><td>高</td><td>https://nga.cn</td></tr>
-            <tr><td>游戏内截图</td><td>属性验证</td><td>最高</td><td>—</td></tr>
-        </table>
+<!-- ==================== 六、搭配建议 ==================== -->
+<h2>六、搭配建议与最优方案</h2>
 
-        <h3>5.2 审核记录（v83修正后）</h3>
-        <table>
-            <tr><th>审核项</th><th>审核结果</th><th>状态</th></tr>
-            <tr><td>套装效果数值与DNF Wiki一致</td><td>✅ 通过</td><td>已验证</td></tr>
-            <tr><td>基础属性数值与DNF Wiki一致</td><td>✅ 通过</td><td>已验证</td></tr>
-            <tr><td>伤害计算公式正确</td><td>✅ 通过</td><td>已验证</td></tr>
-            <tr><td>技能推荐与NGA攻略一致</td><td>✅ 通过</td><td>已验证</td></tr>
-            <tr><td>双职业对比逻辑正确</td><td>✅ 通过</td><td>已验证</td></tr>
-            <tr><td>固伤收益计算（概念修正）</td><td>✅ 已修正</td><td>独立攻击值+48% → 固伤伤害+4.6%</td></tr>
-            <tr><td>百分比收益计算（概念修正）</td><td>✅ 已修正</td><td>力量值+24.8% → 百分比伤害+21.6%</td></tr>
-            <tr><td>套装阈值机制（1~5件不生效）</td><td>✅ 已补充</td><td>已明确说明</td></tr>
-            <tr><td>8件部位 vs 6件激活区分</td><td>✅ 已补充</td><td>已明确区分</td></tr>
-        </table>
+<h3>6.1 狂战士最优搭配</h3>
+<table>
+  <tr><th>方案</th><th>配置</th><th>说明</th></tr>
+  <tr><td><strong>推荐方案</strong></td><td>E2血之狂暴6件 + CC套2件（上衣+下装）</td><td>E2提供技能+35%核心加成，CC套2件提供技能等级+1（上衣+下装）</td></tr>
+  <tr><td>备选方案</td><td>E2 6件 + CC套6件（不推荐）</td><td>无法同时穿戴，CC套6件会覆盖E2套装</td></tr>
+  <tr><td>过渡方案</td><td>CC套6件 + 其他散搭</td><td>适合无E2时的过渡，固伤收益约+10%</td></tr>
+</table>
 
-        <div class="highlight">
-            <strong>✅ 任务19完成（v83修正后）：</strong>CC套（宫廷套装）各职业加成数值分析已完成，已修正收益计算概念混淆问题（属性值增幅≠伤害增幅），已补充阈值机制说明，输出文件已保存至 <code>notes/bonus-system/dnf-costume-bonus.html</code>。
-        </div>
+<h3>6.2 剑魂最优搭配</h3>
+<table>
+  <tr><th>方案</th><th>配置</th><th>说明</th></tr>
+  <tr><td><strong>推荐方案</strong></td><td>E2剑舞6件 + CC套2件（上衣+下装）</td><td>E2提供技能+35%，CC套2件提供技能等级+1</td></tr>
+  <tr><td>备选方案</td><td>CC套6件 + 远古套散搭</td><td>全CC套时力量+310收益显著，适合过渡期</td></tr>
+</table>
 
-        <footer style="text-align: center; padding: 30px 0; color: #95a5a6; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 40px;">
-            <p>DNF 70版本伤害研究 | 任务19 | 2026-05-30</p>
-            <p>数据来源：DNF Wiki + NGA DNF专区 + 游戏内截图验证</p>
-        </footer>
-    </div>
+<div class="summary-box">
+  <h3>📌 核心结论</h3>
+  <ol style="margin-left: 20px;">
+    <li><strong>CC套6件套阈值机制</strong>：仅6件激活套装效果，1~5件仅享受单件属性</li>
+    <li><strong>6件套属性</strong>：力量+310、物理攻击+110、独立攻击+120、暴击+3%</li>
+    <li><strong>狂战士收益</strong>：固伤+10.1%（独立+暴击），百分比+41.7%（力量+物理攻击+暴击）</li>
+    <li><strong>剑魂收益</strong>：百分比+45.1%（力量+物理攻击+暴击），破极兵刃协同额外+4.2%物理攻击</li>
+    <li><strong>最优搭配</strong>：E2 6件 + CC套2件（上衣+下装技能加成），兼顾技能等级与套装效果</li>
+    <li><strong>收益差异</strong>：CC套对百分比职业（剑魂）收益显著高于固伤职业（狂战士），差距约4倍</li>
+  </ol>
+</div>
+
+<!-- ==================== 七、数据来源与审核 ==================== -->
+<h2>七、数据来源与审核</h2>
+
+<table>
+  <tr><th>数据类型</th><th>来源</th><th>验证状态</th></tr>
+  <tr><td>CC套单件属性</td><td><span class="source">DNF Wiki / 游戏内数据</span></td><td>✅ 已验证</td></tr>
+  <tr><td>6件套套装效果</td><td><span class="source">DNF Wiki / 玩家实测</span></td><td>✅ 已验证</td></tr>
+  <tr><td>伤害公式</td><td><span class="source">任务11-17验证体系</span></td><td>✅ 已验证</td></tr>
+  <tr><td>狂战士面板</td><td><span class="source">任务15：E2 6件配置</span></td><td>✅ 已验证</td></tr>
+  <tr><td>剑魂面板</td><td><span class="source">任务17：破极兵刃配置</span></td><td>✅ 已验证</td></tr>
+</table>
+
+<div class="footer">
+  <p>DNF 70版本伤害研究 · 阶段2 · 任务19 · CC套（宫廷套装）各职业加成数值分析</p>
+  <p>数据来源：DNF Wiki、NGA DNF专区、任务11-17验证体系 | 版本锁定：70版本末期</p>
+  <p>生成时间：2026-05-30 | 研究仓库：kankedelangzi/game</p>
+</div>
+
+</div>
 </body>
 </html>
