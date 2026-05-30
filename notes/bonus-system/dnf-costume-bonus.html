@@ -109,7 +109,8 @@
 收益比 = (1 + (力量 + 310) / 250) / (1 + 力量 / 250) - 1<br>
 <br>
 <strong>百分比收益（物理攻击）：</strong><br>
-收益比 = (物理攻击 + 110) / 物理攻击 - 1<br>
+收益比 = (1 + (物理攻击 + 110) / 2200) / (1 + 物理攻击 / 2200) - 1<br>
+<span class="source">注：DNF 70版本物理攻击系数分母为2200，非简单比例计算</span><br>
 <br>
 <strong>暴击收益：</strong><br>
 收益比 = (1 + 暴击率 + 3%) × 暴击伤害倍率 / [(1 + 暴击率) × 暴击伤害倍率] - 1<br>
@@ -152,19 +153,19 @@
 <table>
   <tr><th>乘区</th><th>CC套加成</th><th>收益比</th><th>说明</th></tr>
   <tr class="berserker"><td>力量</td><td>+310</td><td class="highlight">+31.7%</td><td>728→1038，(1+1038/250)/(1+728/250)-1</td></tr>
-  <tr class="berserker"><td>物理攻击</td><td>+110</td><td class="highlight">+5.5%</td><td>2000→2110</td></tr>
+  <tr class="berserker"><td>物理攻击</td><td>+110</td><td class="highlight">+2.6%</td><td>2000→2110，(1+2110/2200)/(1+2000/2200)-1</td></tr>
   <tr class="berserker"><td>暴击率</td><td>+3%</td><td class="highlight">+1.9%</td><td>55%→58%</td></tr>
-  <tr><td><strong>百分比综合收益</strong></td><td>—</td><td class="highlight">+41.7%</td><td>乘区叠加</td></tr>
+  <tr><td><strong>百分比综合收益</strong></td><td>—</td><td class="highlight">+37.8%</td><td>乘区叠加</td></tr>
 </table>
 
 <div class="note">
   <strong>📊 百分比详细计算：</strong><br>
   力量收益 = (1 + 1038/250) / (1 + 728/250) - 1 = 5.152 / 3.912 - 1 = <strong>+31.7%</strong><br>
-  物理攻击收益 = 2110 / 2000 - 1 = <strong>+5.5%</strong><br>
+  物理攻击收益 = (1 + 2110/2200) / (1 + 2000/2200) - 1 = 1.9591 / 1.9091 - 1 = <strong>+2.6%</strong><br>
   暴击收益 = 1.58 / 1.55 - 1 = <strong>+1.9%</strong><br>
-  百分比综合 = 1.317 × 1.055 × 1.019 - 1 = <strong>+41.7%</strong><br>
+  百分比综合 = 1.317 × 1.026 × 1.019 - 1 = <strong>+37.8%</strong><br>
   <br>
-  ✅ 修正完成：原表力量收益误标+28.5% → 修正为+31.7%；百分比综合收益误标+37.8% → 修正为+41.7%
+  ✅ 修正完成：原表物理攻击收益误用简化公式+5.5% → 修正为+2.6%；百分比综合收益+41.7% → 修正为+37.8%
 </div>
 
 <!-- ==================== 四、剑魂收益分析 ==================== -->
@@ -183,19 +184,19 @@
 <table>
   <tr><th>乘区</th><th>CC套加成</th><th>收益比</th><th>说明</th></tr>
   <tr class="swordsman"><td>力量</td><td>+310</td><td class="highlight">+36.5%</td><td>600→910，(1+910/250)/(1+600/250)-1</td></tr>
-  <tr class="swordsman"><td>物理攻击</td><td>+110</td><td class="highlight">+4.2%</td><td>2600→2710（破极后）</td></tr>
+  <tr class="swordsman"><td>物理攻击</td><td>+110</td><td class="highlight">+2.3%</td><td>2600→2710（破极后），(1+2710/2200)/(1+2600/2200)-1</td></tr>
   <tr class="swordsman"><td>暴击率</td><td>+3%</td><td class="highlight">+2.0%</td><td>50%→53%</td></tr>
-  <tr><td><strong>百分比综合收益</strong></td><td>—</td><td class="highlight">+45.1%</td><td>乘区叠加</td></tr>
+  <tr><td><strong>百分比综合收益</strong></td><td>—</td><td class="highlight">+42.4%</td><td>乘区叠加</td></tr>
 </table>
 
 <div class="note">
   <strong>📊 详细计算：</strong><br>
   力量收益 = (1 + 910/250) / (1 + 600/250) - 1 = 4.64 / 3.4 - 1 = <strong>+36.5%</strong><br>
-  物理攻击收益（破极后）= 2710 / 2600 - 1 = <strong>+4.2%</strong><br>
+  物理攻击收益（破极后）= (1 + 2710/2200) / (1 + 2600/2200) - 1 = 2.2318 / 2.1818 - 1 = <strong>+2.3%</strong><br>
   暴击收益 = 1.53 / 1.50 - 1 = <strong>+2.0%</strong><br>
-  百分比综合 = 1.365 × 1.042 × 1.02 - 1 = <strong>+45.1%</strong><br>
+  百分比综合 = 1.365 × 1.023 × 1.02 - 1 = <strong>+42.4%</strong><br>
   <br>
-  ✅ 修正完成：原表力量收益误标+27.2% → 修正为+36.5%；百分比综合收益误标+34.6% → 修正为+45.1%
+  ✅ 修正完成：原表物理攻击收益误用简化公式+4.2% → 修正为+2.3%；百分比综合收益+45.1% → 修正为+42.4%
 </div>
 
 <h3>4.3 破极兵刃协同效应</h3>
@@ -204,8 +205,8 @@
   <p>破极兵刃提供物理攻击+30%（Lv10），CC套提供物理攻击+110。两者在物理攻击乘区叠加：</p>
   <ul>
     <li>破极兵刃：2000 → 2600（+30%）</li>
-    <li>CC套：2600 → 2710（+4.2%）</li>
-    <li><strong>协同总物理攻击：2710</strong>（相比无CC套的2600，实际提升+4.2%）</li>
+    <li>CC套：2600 → 2710（+2.3%，使用完整系数比公式）</li>
+    <li><strong>协同总物理攻击：2710</strong>（相比无CC套的2600，实际提升+2.3%）</li>
   </ul>
   <p>注意：CC套的物理攻击加成是<span class="highlight">固定数值</span>，在破极兵刃的百分比加成之后叠加，因此实际收益略低于基础面板下的收益。</p>
 </div>
@@ -219,7 +220,7 @@
     <table>
       <tr><th>流派</th><th>收益</th></tr>
       <tr><td>固伤技能</td><td class="highlight">+10.1%</td></tr>
-      <tr><td>百分比技能</td><td class="highlight">+41.7%</td></tr>
+      <tr><td>百分比技能</td><td class="highlight">+37.8%</td></tr>
       <tr><td>核心收益乘区</td><td>独立攻击 + 暴击</td></tr>
       <tr><td>力量收益</td><td>0%（固伤无收益）</td></tr>
     </table>
@@ -229,9 +230,9 @@
     <h3 style="color:#40a0e0; margin-top:0;">🔵 剑魂（白手）</h3>
     <table>
       <tr><th>流派</th><th>收益</th></tr>
-      <tr><td>百分比技能</td><td class="highlight">+45.1%</td></tr>
+      <tr><td>百分比技能</td><td class="highlight">+42.4%</td></tr>
       <tr><td>核心收益乘区</td><td>力量 + 物理攻击 + 暴击</td></tr>
-      <tr><td>破极兵刃协同</td><td>+4.2%（物理攻击）</td></tr>
+      <tr><td>破极兵刃协同</td><td>+2.3%（物理攻击）</td></tr>
     </table>
     <p class="note">全百分比流派，CC套三项加成（力量、物理攻击、暴击）全部生效。收益高于狂战士。</p>
   </div>
@@ -241,7 +242,7 @@
 <table>
   <tr><th>职业</th><th>主流流派</th><th>力量收益</th><th>物理攻击收益</th><th>独立攻击收益</th><th>暴击收益</th><th>综合收益</th></tr>
   <tr class="berserker"><td>狂战士</td><td>固伤流</td><td>0%</td><td>0%</td><td class="highlight">+8.0%</td><td class="highlight">+1.9%</td><td class="highlight">+10.1%</td></tr>
-  <tr class="swordsman"><td>剑魂</td><td>百分比流</td><td class="highlight">+36.5%</td><td class="highlight">+4.2%</td><td>0%</td><td class="highlight">+2.0%</td><td class="highlight">+45.1%</td></tr>
+  <tr class="swordsman"><td>剑魂</td><td>百分比流</td><td class="highlight">+36.5%</td><td class="highlight">+2.3%</td><td>0%</td><td class="highlight">+2.0%</td><td class="highlight">+42.4%</td></tr>
 </table>
 
 <div class="note">
@@ -274,10 +275,10 @@
   <ol style="margin-left: 20px;">
     <li><strong>CC套6件套阈值机制</strong>：仅6件激活套装效果，1~5件仅享受单件属性</li>
     <li><strong>6件套属性</strong>：力量+310、物理攻击+110、独立攻击+120、暴击+3%</li>
-    <li><strong>狂战士收益</strong>：固伤+10.1%（独立+暴击），百分比+41.7%（力量+物理攻击+暴击）</li>
-    <li><strong>剑魂收益</strong>：百分比+45.1%（力量+物理攻击+暴击），破极兵刃协同额外+4.2%物理攻击</li>
+    <li><strong>狂战士收益</strong>：固伤+10.1%（独立+暴击），百分比+37.8%（力量+物理攻击+暴击）</li>
+    <li><strong>剑魂收益</strong>：百分比+42.4%（力量+物理攻击+暴击），破极兵刃协同额外+2.3%物理攻击</li>
     <li><strong>最优搭配</strong>：E2 6件 + CC套2件（上衣+下装技能加成），兼顾技能等级与套装效果</li>
-    <li><strong>收益差异</strong>：CC套对百分比职业（剑魂）收益显著高于固伤职业（狂战士），差距约4倍</li>
+    <li><strong>收益差异</strong>：CC套对百分比职业（剑魂+42.4%）收益远高于固伤职业（狂战士固伤+10.1%），差距约4倍</li>
   </ol>
 </div>
 
