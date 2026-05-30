@@ -153,12 +153,12 @@
   <p>以下对比同一技能对低防小怪 vs 高防BOSS的伤害差异：</p>
   <table>
     <tr><th>目标</th><th>防御力</th><th>防御减伤</th><th>物理技能伤害</th><th>出血伤害</th></tr>
-    <tr><td>普通小怪</td><td>500</td><td>300/(300+500) = 37.5%</td><td>10,000 × 0.625 = 6,250</td><td>4,940 × 5 = 24,700</td></tr>
-    <tr><td>精英怪</td><td>2,000</td><td>300/(300+2000) = 13.0%</td><td>10,000 × 0.870 = 8,700</td><td>4,940 × 5 = 24,700</td></tr>
-    <tr><td>普通BOSS</td><td>5,000</td><td>300/(300+5000) = 5.7%</td><td>10,000 × 0.943 = 9,430</td><td>4,940 × 5 = 24,700</td></tr>
-    <tr><td><span class="highlight">高防BOSS</span></td><td><span class="highlight">10,000</span></td><td><span class="highlight">300/(300+10000) = 2.9%</span></td><td>10,000 × 0.971 = 9,710</td><td><span class="highlight">4,940 × 5 = 24,700</span></td></tr>
+    <tr><td>普通小怪</td><td>500</td><td>300/(300+500) = 37.5%</td><td>10,000 × 0.375 = 3,750</td><td>4,940 × 5 = 24,700</td></tr>
+    <tr><td>精英怪</td><td>2,000</td><td>300/(300+2000) = 13.0%</td><td>10,000 × 0.130 = 1,304</td><td>4,940 × 5 = 24,700</td></tr>
+    <tr><td>普通BOSS</td><td>5,000</td><td>300/(300+5000) = 5.7%</td><td>10,000 × 0.057 = 566</td><td>4,940 × 5 = 24,700</td></tr>
+    <tr><td><span class="highlight">高防BOSS</span></td><td><span class="highlight">10,000</span></td><td><span class="highlight">300/(300+10000) = 2.9%</span></td><td>10,000 × 0.029 = 291</td><td><span class="highlight">4,940 × 5 = 24,700</span></td></tr>
   </table>
-  <p class="note">🔑 物理技能伤害受防御影响从 6,250 → 9,710（差距 55%），而出血伤害<strong>始终恒定 24,700</strong>，不受任何防御影响。</p>
+  <p class="note">🔑 物理技能伤害受防御影响从 3,750 → 291（差距 92%），而出血伤害<strong>始终恒定 24,700</strong>，不受任何防御影响。</p>
 </div>
 
 <!-- ========== 5. 出血 vs 固伤对比 ========== -->
@@ -184,14 +184,14 @@
   <p>70版本末期高防BOSS（如安图恩 precursor、某些副本BOSS）防御力可达 8,000~15,000：</p>
   <div class="formula">
     <code>防御10,000时，物理减伤 = 300/(300+10000) = 2.9%<br>
-    即物理伤害被削减至 97.1%<br>
+    即物理伤害被削减至 2.9%<br>
     <br>
     出血伤害：24,700（不变）<br>
-    物理技能：10,000 × 97.1% = 9,710<br>
+    物理技能：10,000 × 2.9% = 291<br>
     <br>
-    出血/物理技能比值 = 24,700 / 9,710 = <span style="color:var(--accent);">2.54倍</span></code>
+    出血/物理技能比值 = 24,700 / 291 = <span style="color:var(--accent);">84.8倍</span></code>
   </div>
-  <p>在高防BOSS面前，出血的总伤害是单次物理技能的<strong>近3倍</strong>。</p>
+  <p>在高防BOSS面前，出血的总伤害是单次物理技能的<strong>约85倍</strong>。</p>
 </div>
 
 <h3>6.2 多怪清图</h3>
