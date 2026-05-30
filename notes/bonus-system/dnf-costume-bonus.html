@@ -132,32 +132,29 @@
 <h3>3.2 各乘区收益计算</h3>
 <table>
   <tr><th>乘区</th><th>CC套加成</th><th>收益比</th><th>收益类型</th></tr>
-  <tr class="berserker"><td>独立攻击</td><td>+120</td><td class="highlight">+4.6%</td><td>固伤核心</td></tr>
+  <tr class="berserker"><td>独立攻击</td><td>+120</td><td class="highlight">+8.0%</td><td>固伤核心</td></tr>
   <tr class="berserker"><td>力量</td><td>+310</td><td>0%（固伤无收益）</td><td>固伤无收益</td></tr>
   <tr class="berserker"><td>物理攻击</td><td>+110</td><td>0%（固伤无收益）</td><td>固伤无收益</td></tr>
-  <tr class="berserker"><td>暴击率</td><td>+3%</td><td class="highlight">+2.0%</td><td>通用</td></tr>
-  <tr><td><strong>固伤综合收益</strong></td><td>—</td><td class="highlight">+6.6%</td><td>独立+暴击</td></tr>
+  <tr class="berserker"><td>暴击率</td><td>+3%</td><td class="highlight">+1.9%</td><td>通用</td></tr>
+  <tr><td><strong>固伤综合收益</strong></td><td>—</td><td class="highlight">+10.1%</td><td>独立×暴击</td></tr>
 </table>
 
 <div class="note">
   <strong>📊 详细计算：</strong><br>
   独立攻击收益 = (1 + 1370/250) / (1 + 1250/250) - 1 = 6.48 / 6.0 - 1 = <strong>+8.0%</strong><br>
-  暴击收益 = (1 + 58%) / (1 + 55%) - 1 = 1.58 / 1.55 - 1 = <strong>+1.94%</strong><br>
-  固伤综合 = (1 + 8.0%) × (1 + 1.94%) - 1 = <strong>+10.1%</strong><br>
+  暴击收益 = (1 + 58%) / (1 + 55%) - 1 = 1.58 / 1.55 - 1 = <strong>+1.9%</strong><br>
+  固伤综合 = (1 + 8.0%) × (1 + 1.9%) - 1 = <strong>+10.1%</strong><br>
   <br>
-  ⚠️ 修正：独立攻击收益重新核算<br>
-  独立攻击收益 = (1 + 1370/250) / (1 + 1250/250) - 1 = 6.48 / 6.0 - 1 = +8.0%<br>
-  但考虑到暴走状态下力量加成不影响固伤，CC套力量对固伤确实零收益。<br>
-  最终固伤综合收益 ≈ <strong>+8.0% × 1.02 ≈ +10.1%</strong>
+  ✅ 修正完成：原表独立攻击收益误标+4.6% → 修正为+8.0%；固伤综合收益误标+6.6% → 修正为+10.1%
 </div>
 
 <h3>3.3 百分比技能收益（崩山裂地斩、嗜魂封魔斩）</h3>
 <table>
   <tr><th>乘区</th><th>CC套加成</th><th>收益比</th><th>说明</th></tr>
-  <tr class="berserker"><td>力量</td><td>+310</td><td class="highlight">+28.5%</td><td>728→1038，(1+1038/250)/(1+728/250)-1</td></tr>
+  <tr class="berserker"><td>力量</td><td>+310</td><td class="highlight">+31.7%</td><td>728→1038，(1+1038/250)/(1+728/250)-1</td></tr>
   <tr class="berserker"><td>物理攻击</td><td>+110</td><td class="highlight">+5.5%</td><td>2000→2110</td></tr>
-  <tr class="berserker"><td>暴击率</td><td>+3%</td><td class="highlight">+2.0%</td><td>55%→58%</td></tr>
-  <tr><td><strong>百分比综合收益</strong></td><td>—</td><td class="highlight">+37.8%</td><td>乘区叠加</td></tr>
+  <tr class="berserker"><td>暴击率</td><td>+3%</td><td class="highlight">+1.9%</td><td>55%→58%</td></tr>
+  <tr><td><strong>百分比综合收益</strong></td><td>—</td><td class="highlight">+41.7%</td><td>乘区叠加</td></tr>
 </table>
 
 <div class="note">
@@ -165,7 +162,9 @@
   力量收益 = (1 + 1038/250) / (1 + 728/250) - 1 = 5.152 / 3.912 - 1 = <strong>+31.7%</strong><br>
   物理攻击收益 = 2110 / 2000 - 1 = <strong>+5.5%</strong><br>
   暴击收益 = 1.58 / 1.55 - 1 = <strong>+1.9%</strong><br>
-  百分比综合 = 1.317 × 1.055 × 1.019 - 1 = <strong>+41.7%</strong>
+  百分比综合 = 1.317 × 1.055 × 1.019 - 1 = <strong>+41.7%</strong><br>
+  <br>
+  ✅ 修正完成：原表力量收益误标+28.5% → 修正为+31.7%；百分比综合收益误标+37.8% → 修正为+41.7%
 </div>
 
 <!-- ==================== 四、剑魂收益分析 ==================== -->
@@ -183,10 +182,10 @@
 <h3>4.2 各乘区收益计算（破极兵刃状态下）</h3>
 <table>
   <tr><th>乘区</th><th>CC套加成</th><th>收益比</th><th>说明</th></tr>
-  <tr class="swordsman"><td>力量</td><td>+310</td><td class="highlight">+27.2%</td><td>600→910，(1+910/250)/(1+600/250)-1</td></tr>
+  <tr class="swordsman"><td>力量</td><td>+310</td><td class="highlight">+36.5%</td><td>600→910，(1+910/250)/(1+600/250)-1</td></tr>
   <tr class="swordsman"><td>物理攻击</td><td>+110</td><td class="highlight">+4.2%</td><td>2600→2710（破极后）</td></tr>
   <tr class="swordsman"><td>暴击率</td><td>+3%</td><td class="highlight">+2.0%</td><td>50%→53%</td></tr>
-  <tr><td><strong>百分比综合收益</strong></td><td>—</td><td class="highlight">+34.6%</td><td>乘区叠加</td></tr>
+  <tr><td><strong>百分比综合收益</strong></td><td>—</td><td class="highlight">+45.1%</td><td>乘区叠加</td></tr>
 </table>
 
 <div class="note">
@@ -194,7 +193,9 @@
   力量收益 = (1 + 910/250) / (1 + 600/250) - 1 = 4.64 / 3.4 - 1 = <strong>+36.5%</strong><br>
   物理攻击收益（破极后）= 2710 / 2600 - 1 = <strong>+4.2%</strong><br>
   暴击收益 = 1.53 / 1.50 - 1 = <strong>+2.0%</strong><br>
-  百分比综合 = 1.365 × 1.042 × 1.02 - 1 = <strong>+45.1%</strong>
+  百分比综合 = 1.365 × 1.042 × 1.02 - 1 = <strong>+45.1%</strong><br>
+  <br>
+  ✅ 修正完成：原表力量收益误标+27.2% → 修正为+36.5%；百分比综合收益误标+34.6% → 修正为+45.1%
 </div>
 
 <h3>4.3 破极兵刃协同效应</h3>
