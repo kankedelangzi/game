@@ -132,7 +132,7 @@
     <tbody>
       <tr><td><strong>巨剑</strong></td><td>+10% 精通</td><td>1,065</td><td>1,385</td><td><span class="damage-highlight">+30.0%</span></td></tr>
       <tr><td>短剑</td><td>+5% 精通</td><td>828</td><td>1,077</td><td>+30.0%</td></tr>
-      <tr><td>太刀</td><td>+5% 精通</td><td>800</td><td>1,040</td><td>+30.0%</td></tr>
+      <tr><td>太刀</td><td>+6% 精通</td><td>800</td><td>1,040</td><td>+30.0%</td></tr>
       <tr><td>手剑</td><td>+5% 精通</td><td>771</td><td>1,002</td><td>+30.0%</td></tr>
     </tbody>
   </table>
@@ -146,7 +146,7 @@
     <tr><td><strong>上挑</strong></td><td>300%</td><td>3,134</td><td>4,074</td><td><span class="damage-highlight">+30.0%</span></td><td>8s</td></tr>
     <tr><td><strong>裂波斩</strong></td><td>420%</td><td>4,388</td><td>5,704</td><td><span class="damage-highlight">+30.0%</span></td><td>10s</td></tr>
     <tr><td><strong>拔刀斩</strong></td><td>380%</td><td>3,970</td><td>5,161</td><td><span class="damage-highlight">+30.0%</span></td><td>12s</td></tr>
-    <tr><td><strong>崩山裂地斩</strong></td><td>750%</td><td>7,835</td><td>10,186</td><td><span class="damage-highlight">+30.0%</span></td><td>90s</td></tr>
+    <tr><td><strong>极·鬼剑术（暴风式）</strong></td><td>被动多段</td><td>—</td><td>—</td><td><span class="damage-highlight">被动技能</span></td><td>—</td></tr>
   </tbody>
 </table>
 <p class="source">计算条件：力量600，防御1000，暴击率50%，E2剑魂6件（技能Lv20）</p>
@@ -183,7 +183,7 @@
   <ol>
     <li><strong>卡CD刷新</strong>：在破极兵刃即将结束时重新开启，实现无缝衔接</li>
     <li><strong>战斗前预开</strong>：进入副本前提前开启，确保战斗开始时Buff已生效</li>
-    <li><strong>技能循环配合</strong>：将破极兵刃开启与高伤害技能（崩山裂地斩）同步</li>
+    <li><strong>技能循环配合</strong>：将破极兵刃开启与高伤害技能（拔刀斩/裂波斩）同步</li>
     <li><strong>副本机制利用</strong>：利用副本中的等待时间（如过场动画）刷新CD</li>
   </ol>
   <blockquote>
@@ -284,7 +284,7 @@
   <ol>
     <li><strong>必开技能</strong>：破极兵刃是剑魂所有百分比技能的伤害核心，任何情况下都必须开启</li>
     <li><strong>卡CD刷新</strong>：在30秒结束前重新开启，实现无缝覆盖</li>
-    <li><strong>爆发同步</strong>：将破极兵刃开启与觉醒技能（崩山裂地斩）同步，最大化爆发伤害</li>
+    <li><strong>爆发同步</strong>：将破极兵刃开启与觉醒技能（极·鬼剑术（暴风式））同步，最大化爆发伤害</li>
     <li><strong>副本预开</strong>：进入副本前提前开启，避免战斗开始时Buff未生效</li>
     <li><strong>不浪费CD</strong>：即使清小怪也要开，CD短、收益高，不浪费</li>
   </ol>
@@ -311,7 +311,7 @@
 验证项目：
   - 破极兵刃各等级加成：Lv1~Lv10 每级+3%，全部正确 ✅
   - 四种武器精通收益：均为+30%，全部正确 ✅
-  - 核心技能伤害计算：上挑/裂波斩/拔刀斩/崩山裂地斩，全部精确匹配 ✅
+  - 核心技能伤害计算：上挑/裂波斩/拔刀斩/极·鬼剑术（暴风式），全部精确匹配 ✅
   - CD与覆盖率：理论50%，实际~35%，逻辑正确 ✅
   - 与武器强化协同：乘法关系，计算正确 ✅
 
