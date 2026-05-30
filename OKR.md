@@ -64,14 +64,14 @@
 | 17 | 剑魂 - 破极兵刃技能加成机制深度分析 | 深化 | 1次运行 | ⚠️ 需修正（审核v4发现：极·鬼剑术分类错误+武器精通加成数值错误） |
 | 18 | 宠物/称号/勋章加成汇总 | 加成 | 1次运行 | ✅ v1.0完成（宠物/称号/勋章三大乘区，Python验算100%匹配） |
 | 19 | CC套（宫廷套装）各职业加成数值 | 装备 | 1次运行 | ✅ v1.0完成（6件套基础属性+套装效果，双职业对比，Python公式验证，审核修正收益计算概念混淆：独立攻击+4.6%→+8.0%，固伤综合+6.6%→+10.1%，百分比综合+37.8%→+41.7%） |
-| 20 | 粉装/史诗独立加成机制分析 | 装备 | 1次运行 | 🔜 待执行 |
+| 20 | 粉装/史诗独立加成机制分析 | 装备 | 1次运行 | 🔜 待执行（初稿已生成：`notes/bonus-system/dnf-epic-premium-bonus.html`） |
 
 **阶段2交付物：**
-- `notes/bonus-system/dnf-gem-bonus.html`
-- `notes/bonus-system/dnf-costume-bonus.html`
-- `notes/bonus-system/dnf-pet-title.html`
-- `notes/bonus-system/dnf-equipment-bonus.html`
-- `notes/09-comparative-analysis-fixed-vs-percent.html`
+- `notes/bonus-system/dnf-gem-bonus.html` ✅
+- `notes/bonus-system/dnf-costume-bonus.html` ✅
+- `notes/bonus-system/dnf-pet-title.html` ✅
+- `notes/bonus-system/dnf-equipment-bonus.html` ✅（初稿）
+- `notes/09-comparative-analysis-fixed-vs-percent.html` ✅
 
 ---
 
@@ -113,11 +113,12 @@
 | 18 | 宠物/称号/勋章加成汇总 | ✅ v1.0完成 |
 | 19 | CC套（宫廷套装）各职业加成数值 | ✅ v13修正完成（物理攻击公式简化→完整系数比公式，审核98.0%通过） |
 
-**阶段2全部完成！** 阶段3进度：19/20（任务19已完成，任务20待执行）
+**阶段2进度：19/20**（任务19已完成，任务20进行中）
 
 > ⚠️ **当前待执行任务：任务20 - 粉装/史诗独立加成机制分析**
 > ⚠️ **审核v13遗留问题**：任务19物理攻击公式简化偏差已修正（+5.5%→+2.6%，+41.7%→+37.8%；+4.2%→+2.3%，+45.1%→+42.4%），98.0%通过（50/51）
 > ⚠️ **审核v14发现**：任务17（破极兵刃）知识库与HTML描述一致性建议优化（2项中等问题）
+> ⚠️ **审核v16-v18**：任务15+17+19交叉验证，审核报告已推送
 
 ---
 
