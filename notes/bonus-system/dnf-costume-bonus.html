@@ -186,7 +186,7 @@
   <tr class="swordsman"><td>力量</td><td>+310</td><td class="highlight">+36.5%</td><td>600→910，(1+910/250)/(1+600/250)-1</td></tr>
   <tr class="swordsman"><td>物理攻击</td><td>+110</td><td class="highlight">+2.2%</td><td>2600→2710（破极后），(1+2710/2500)/(1+2600/2500)-1</td></tr>
   <tr class="swordsman"><td>暴击率</td><td>+3%</td><td class="highlight">+1.2%</td><td>50%→53%（期望伤害系数: 1.25→1.265）</td></tr>
-  <tr><td><strong>百分比综合收益</strong></td><td>—</td><td class="highlight">+41.2%</td><td>乘区叠加</td></tr>
+  <tr><td><strong>百分比综合收益</strong></td><td>—</td><td class="highlight">+41.1%</td><td>乘区叠加</td></tr>
 </table>
 
 <div class="note">
@@ -196,7 +196,7 @@
   暴击收益 = 1.265 / 1.25 - 1 = <strong>+1.2%</strong><br>
   百分比综合 = 1.365 × 1.022 × 1.012 - 1 = <strong>+41.1%</strong><br>
   <br>
-  ✅ 修正完成（v29审核）：暴击收益从+2.0%修正为+1.2%（使用期望伤害系数公式），百分比综合收益从+42.3%修正为+41.2%
+  ✅ 修正完成（v36最终精度）：暴击收益从+2.0%修正为+1.2%（期望伤害系数公式），百分比综合收益从+42.3%→+41.2%→+41.1%（Python精确验算确认）
 </div>
 
 <h3>4.3 破极兵刃协同效应</h3>
@@ -230,7 +230,7 @@
     <h3 style="color:#40a0e0; margin-top:0;">🔵 剑魂（白手）</h3>
     <table>
       <tr><th>流派</th><th>收益</th></tr>
-      <tr><td>百分比技能</td><td class="highlight">+41.2%</td></tr>
+      <tr><td>百分比技能</td><td class="highlight">+41.1%</td></tr>
       <tr><td>核心收益乘区</td><td>力量 + 物理攻击 + 暴击</td></tr>
       <tr><td>破极兵刃协同</td><td>+2.2%（物理攻击）</td></tr>
     </table>
@@ -242,7 +242,7 @@
 <table>
   <tr><th>职业</th><th>主流流派</th><th>力量收益</th><th>物理攻击收益</th><th>独立攻击收益</th><th>暴击收益</th><th>综合收益</th></tr>
   <tr class="berserker"><td>狂战士</td><td>固伤流</td><td>0%</td><td>0%</td><td class="highlight">+8.0%</td><td class="highlight">+1.2%</td><td class="highlight">+9.3%</td></tr>
-  <tr class="swordsman"><td>剑魂</td><td>百分比流</td><td class="highlight">+36.5%</td><td class="highlight">+2.2%</td><td>0%</td><td class="highlight">+1.2%</td><td class="highlight">+41.2%</td></tr>
+  <tr class="swordsman"><td>剑魂</td><td>百分比流</td><td class="highlight">+36.5%</td><td class="highlight">+2.2%</td><td>0%</td><td class="highlight">+1.2%</td><td class="highlight">+41.1%</td></tr>
 </table>
 
 <div class="note">
@@ -276,9 +276,9 @@
     <li><strong>CC套6件套阈值机制</strong>：仅6件激活套装效果，1~5件仅享受单件属性</li>
     <li><strong>6件套属性</strong>：力量+310、物理攻击+110、独立攻击+120、暴击+3%</li>
     <li><strong>狂战士收益</strong>：固伤+9.3%（独立+暴击），百分比+36.5%（力量+物理攻击+暴击）</li>
-    <li><strong>剑魂收益</strong>：百分比+41.2%（力量+物理攻击+暴击），破极兵刃协同额外+2.2%物理攻击</li>
+    <li><strong>剑魂收益</strong>：百分比+41.1%（力量+物理攻击+暴击），破极兵刃协同额外+2.2%物理攻击</li>
     <li><strong>最优搭配</strong>：E2 6件 + CC套2件（上衣+下装技能加成），兼顾技能等级与套装效果</li>
-    <li><strong>收益差异</strong>：CC套对百分比职业（剑魂+41.2%）收益远高于固伤职业（狂战士固伤+9.3%），差距约4.4倍</li>
+    <li><strong>收益差异</strong>：CC套对百分比职业（剑魂+41.1%）收益远高于固伤职业（狂战士固伤+9.3%），差距约4.4倍</li>
   </ol>
 </div>
 
