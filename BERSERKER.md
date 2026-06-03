@@ -25,7 +25,7 @@
 
 ## 出血机制（70版本特色）
 
-穿透防御，十字斩Lv18+E2=Lv21出血，基础3,800/秒，最高+55%加成
+穿透防御，十字斩技能Lv18+E2+1=Lv19（技能等级），出血等级Lv21（E2对出血+3级），基础3,800/秒，最高+55%加成
 报告：`notes/berserker-bleed-mechanism.html` | 审核：`REVIEW-2026-05-31-task12-cross-validation-v7.md`
 
 ## 任务成果摘要
