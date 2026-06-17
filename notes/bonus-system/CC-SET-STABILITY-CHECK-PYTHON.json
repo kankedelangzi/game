@@ -1,0 +1,17 @@
+{
+  "check_type": "CC套稳态核查-Python验算",
+  "timestamp": "2026-06-17T22:05:53.498231Z",
+  "cc_set": {
+    "power": 310,
+    "phy_atk": 110,
+    "independent": 120,
+    "crit": 3.0
+  },
+  "berserker": {
+    "fixed_damage_gain": "50.22%",
+    "percent_damage_gain": "139.86%"
+  },
+  "swordsman": {
+    "percent_damage_gain": "60.45%"
+  }
+}
