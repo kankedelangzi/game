@@ -1,0 +1,111 @@
+{
+  "check_id": "v160",
+  "timestamp": "2026-06-18T03:22:24.338562",
+  "items": [
+    {
+      "name": "狂战士固伤-独立攻击收益",
+      "expected": 8.0,
+      "actual": 8.0,
+      "passed": true,
+      "diff": 0.0
+    },
+    {
+      "name": "狂战士固伤-暴击收益",
+      "expected": 1.2,
+      "actual": 1.1765,
+      "passed": true,
+      "diff": -0.0235
+    },
+    {
+      "name": "狂战士固伤-综合收益",
+      "expected": 9.3,
+      "actual": 9.2706,
+      "passed": true,
+      "diff": -0.0294
+    },
+    {
+      "name": "狂战士百分比-力量收益",
+      "expected": 24.42,
+      "actual": 24.4248,
+      "passed": true,
+      "diff": 0.0048
+    },
+    {
+      "name": "狂战士百分比-物理攻击收益",
+      "expected": 2.44,
+      "actual": 2.4444,
+      "passed": true,
+      "diff": 0.0044
+    },
+    {
+      "name": "狂战士百分比-综合收益",
+      "expected": 28.97,
+      "actual": 28.9659,
+      "passed": true,
+      "diff": -0.0041
+    },
+    {
+      "name": "剑魂百分比-力量收益",
+      "expected": 36.5,
+      "actual": 36.4706,
+      "passed": true,
+      "diff": -0.0294
+    },
+    {
+      "name": "剑魂百分比-物理攻击收益",
+      "expected": 2.2,
+      "actual": 2.1569,
+      "passed": true,
+      "diff": -0.0431
+    },
+    {
+      "name": "剑魂百分比-暴击收益",
+      "expected": 1.2,
+      "actual": 1.2,
+      "passed": true,
+      "diff": 0.0
+    },
+    {
+      "name": "剑魂百分比-综合收益",
+      "expected": 41.1,
+      "actual": 41.087,
+      "passed": true,
+      "diff": -0.013
+    },
+    {
+      "name": "CC套-力量",
+      "expected": 310,
+      "actual": 310,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "CC套-物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "CC套-独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "CC套-暴击率",
+      "expected": 3.0,
+      "actual": 3.0,
+      "passed": true,
+      "diff": 0.0
+    }
+  ],
+  "all_passed": true,
+  "summary": {
+    "total": 14,
+    "passed": 14,
+    "failed": 0,
+    "pass_rate": 100.0
+  }
+}
