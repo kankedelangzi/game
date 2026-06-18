@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-06-18T22:16:00+08:00",
+  "version": "v168",
+  "results": {
+    "berserker_fixed": 9.27,
+    "berserker_percent": 28.97,
+    "sword_percent": 41.09,
+    "independent_gain": 8.0,
+    "power_bers": 24.42,
+    "power_sword": 36.47,
+    "phy_bers": 2.44,
+    "phy_sword": 2.16,
+    "crit_gain": 1.18
+  },
+  "expected": {
+    "berserker_fixed": 9.3,
+    "berserker_percent": 28.97,
+    "sword_percent": 41.1,
+    "independent_gain": 8.0,
+    "power_bers": 24.42,
+    "power_sword": 36.5,
+    "phy_bers": 2.44,
+    "phy_sword": 2.2,
+    "crit_gain": 1.2
+  },
+  "all_pass": true
+}
