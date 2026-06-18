@@ -1,0 +1,40 @@
+{
+  "check_type": "CC套稳态核查v170",
+  "check_time": "2026-06-19T03:12:13+08:00",
+  "total": 24,
+  "passed": 24,
+  "failed": 0,
+  "results": [
+    {"check": "CC套-力量", "computed": 310, "expected": 310, "status": "✅"},
+    {"check": "CC套-物理攻击", "computed": 110, "expected": 110, "status": "✅"},
+    {"check": "CC套-独立攻击", "computed": 120, "expected": 120, "status": "✅"},
+    {"check": "CC套-暴击率", "computed": 3.0, "expected": 3.0, "status": "✅"},
+    {"check": "狂战士-独立攻击收益", "computed": "8.00%", "expected": "+8.0%", "status": "✅"},
+    {"check": "狂战士-暴击收益", "computed": "1.18%", "expected": "+1.2%", "status": "✅"},
+    {"check": "狂战士-固伤综合收益", "computed": "9.27%", "expected": "+9.3%", "status": "✅"},
+    {"check": "狂战士-力量收益", "computed": "24.42%", "expected": "+24.42%", "status": "✅"},
+    {"check": "狂战士-物理攻击收益", "computed": "2.44%", "expected": "+2.44%", "status": "✅"},
+    {"check": "狂战士-百分比综合收益", "computed": "28.97%", "expected": "+28.97%", "status": "✅"},
+    {"check": "剑魂-力量收益", "computed": "36.47%", "expected": "+36.5%", "status": "✅"},
+    {"check": "剑魂-物理攻击收益", "computed": "2.16%", "expected": "+2.2%", "status": "✅"},
+    {"check": "剑魂-暴击收益", "computed": "1.20%", "expected": "+1.2%", "status": "✅"},
+    {"check": "剑魂-百分比综合收益", "computed": "41.09%", "expected": "+41.1%", "status": "✅"},
+    {"check": "Python验算-狂战士固伤", "computed": 9.27, "expected": 9.3, "diff": 0.03, "status": "✅"},
+    {"check": "Python验算-狂战士百分比", "computed": 28.97, "expected": 28.97, "diff": 0.0, "status": "✅"},
+    {"check": "Python验算-剑魂百分比", "computed": 41.09, "expected": 41.1, "diff": 0.01, "status": "✅"},
+    {"check": "知识库-BERSERKER.md-固伤", "computed": "+9.3%", "expected": "+9.3%", "status": "✅"},
+    {"check": "知识库-BERSERKER.md-百分比", "computed": "+28.97%", "expected": "+28.97%", "status": "✅"},
+    {"check": "知识库-SWORDSMAN.md-百分比", "computed": "+41.1%", "expected": "+41.1%", "status": "✅"},
+    {"check": "HTML报告-核心数据", "computed": "一致", "expected": "一致", "status": "✅"},
+    {"check": "Git状态", "computed": "clean", "expected": "clean", "status": "✅"},
+    {"check": "Git commit", "computed": "ef00f28", "expected": "ef00f28", "status": "✅"},
+    {"check": "阶段2进度", "computed": "20/20", "expected": "20/20", "status": "✅"}
+  ],
+  "python_verification": {
+    "berserker_fixed": {"expected": 9.3, "actual": 9.27, "diff": 0.03, "pass": true},
+    "berserker_pct": {"expected": 28.97, "actual": 28.97, "diff": 0.0, "pass": true},
+    "swordsman_pct": {"expected": 41.1, "actual": 41.09, "diff": 0.01, "pass": true}
+  },
+  "summary": "✅ 全部通过，数据完全稳态",
+  "next_action": "阶段2已完成，等待阶段3任务启动"
+}
