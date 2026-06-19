@@ -1,90 +1,83 @@
 {
-  "timestamp": "2026-06-19T04:42:40.940095",
-  "cc_base": {
-    "power": {
-      "calc": 310,
-      "report": 310,
-      "pass": true
+  "timestamp": "2026-06-19T08:23:09.175978",
+  "results": [
+    {
+      "项目": "CC套基础属性",
+      "检查": "6件力量=310",
+      "通过": true
     },
-    "phy_atk": {
-      "calc": 110,
-      "report": 110,
-      "pass": true
+    {
+      "项目": "CC套基础属性",
+      "检查": "6件物理攻击=110",
+      "通过": true
     },
-    "independent": {
-      "calc": 120,
-      "report": 120,
-      "pass": true
+    {
+      "项目": "CC套基础属性",
+      "检查": "6件独立攻击=120",
+      "通过": true
     },
-    "crit": {
-      "calc": 3.0,
-      "report": 3.0,
-      "pass": true
+    {
+      "项目": "CC套基础属性",
+      "检查": "6件暴击=3.0%",
+      "通过": true
+    },
+    {
+      "项目": "狂战士固伤",
+      "检查": "独立攻击+8.0%",
+      "通过": true
+    },
+    {
+      "项目": "狂战士固伤",
+      "检查": "暴击+1.2%",
+      "通过": true
+    },
+    {
+      "项目": "狂战士固伤",
+      "检查": "固伤综合+9.3%",
+      "通过": true
+    },
+    {
+      "项目": "狂战士百分比",
+      "检查": "暴走后力量=1019.2",
+      "通过": true
+    },
+    {
+      "项目": "狂战士百分比",
+      "检查": "力量收益+24.42%",
+      "通过": true
+    },
+    {
+      "项目": "狂战士百分比",
+      "检查": "物理攻击收益+2.44%",
+      "通过": true
+    },
+    {
+      "项目": "狂战士百分比",
+      "检查": "百分比综合+28.97%",
+      "通过": true
+    },
+    {
+      "项目": "剑魂百分比",
+      "检查": "力量收益+36.5%",
+      "通过": true
+    },
+    {
+      "项目": "剑魂百分比",
+      "检查": "物理攻击收益+2.2%",
+      "通过": true
+    },
+    {
+      "项目": "剑魂百分比",
+      "检查": "暴击收益+1.2%",
+      "通过": true
+    },
+    {
+      "项目": "剑魂百分比",
+      "检查": "百分比综合+41.1%",
+      "通过": true
     }
-  },
-  "berserker_fixed": {
-    "independent_gain": {
-      "calc": 8.0,
-      "report": 8.0,
-      "pass": true
-    },
-    "crit_gain": {
-      "calc": 1.1765,
-      "report": 1.2,
-      "pass": true
-    },
-    "total": {
-      "calc": 9.2706,
-      "report": 9.3,
-      "pass": true
-    }
-  },
-  "berserker_pct": {
-    "power_gain": {
-      "calc": 24.4248,
-      "report": 24.42,
-      "pass": true
-    },
-    "phy_atk_gain": {
-      "calc": 2.4444,
-      "report": 2.44,
-      "pass": true
-    },
-    "crit_gain": {
-      "calc": 1.1765,
-      "report": 1.2,
-      "pass": true
-    },
-    "total": {
-      "calc": 28.9659,
-      "report": 28.97,
-      "pass": true
-    }
-  },
-  "swordsman_pct": {
-    "power_gain": {
-      "calc": 36.4706,
-      "report": 36.5,
-      "pass": true
-    },
-    "phy_atk_gain": {
-      "calc": 2.1569,
-      "report": 2.2,
-      "pass": true
-    },
-    "crit_gain": {
-      "calc": 1.2,
-      "report": 1.2,
-      "pass": true
-    },
-    "total": {
-      "calc": 41.087,
-      "report": 41.1,
-      "pass": true
-    }
-  },
-  "ratio": {
-    "calc": 4.43,
-    "report": 4.4
-  }
+  ],
+  "passed": 15,
+  "total": 15,
+  "percentage": 100.0
 }
