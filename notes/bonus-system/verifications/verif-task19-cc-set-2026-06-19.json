@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-06-19T19:12:30",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "version": "v182",
+  "total": 15,
+  "passed": 15,
+  "pass_rate": "100.0%",
+  "results": [
+    {"name": "力量合计", "computed": 0.0, "expected": 0, "diff": 0.0, "status": "✅"},
+    {"name": "物理攻击合计", "computed": 0.0, "expected": 0, "diff": 0.0, "status": "✅"},
+    {"name": "独立攻击合计", "computed": 0.0, "expected": 0, "diff": 0.0, "status": "✅"},
+    {"name": "暴击率合计", "computed": 0.0, "expected": 0, "diff": 0.0, "status": "✅"},
+    {"name": "固伤-独立攻击收益", "computed": 8.0, "expected": 8.0, "diff": 0.0, "status": "✅"},
+    {"name": "固伤-暴击收益", "computed": 1.1765, "expected": 1.2, "diff": 0.0235, "status": "✅"},
+    {"name": "固伤-综合收益", "computed": 9.2706, "expected": 9.3, "diff": 0.0294, "status": "✅"},
+    {"name": "百分比-力量收益(暴走后)", "computed": 24.4248, "expected": 24.42, "diff": 0.0048, "status": "✅"},
+    {"name": "百分比-物理攻击收益", "computed": 2.4444, "expected": 2.44, "diff": 0.0044, "status": "✅"},
+    {"name": "百分比-综合收益", "computed": 28.9659, "expected": 28.97, "diff": 0.0041, "status": "✅"},
+    {"name": "力量收益(剑魂)", "computed": 36.4706, "expected": 36.5, "diff": 0.0294, "status": "✅"},
+    {"name": "物理攻击收益(破极后)", "computed": 2.1569, "expected": 2.2, "diff": 0.0431, "status": "✅"},
+    {"name": "暴击收益(剑魂)", "computed": 1.2, "expected": 1.2, "diff": 0.0, "status": "✅"},
+    {"name": "百分比综合收益(剑魂)", "computed": 41.087, "expected": 41.1, "diff": 0.013, "status": "✅"},
+    {"name": "剑魂/狂战士固伤收益比", "computed": 4.432, "expected": 4.4, "diff": 0.032, "status": "✅"}
+  ],
+  "conclusion": "全部15项Python独立验算100%通过，最大差异0.0431pp（物理攻击收益破极后），在可接受精度范围内。数据完全稳态，可定稿。"
+}
