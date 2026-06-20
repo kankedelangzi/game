@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-06-20T23:01:00+08:00",
+  "type": "cron_cross_validation",
+  "total_checks": 15,
+  "passed": 15,
+  "issues": [],
+  "key_results": {
+    "berserker_fixed": "9.27%",
+    "berserker_pct": "32.81%",
+    "swordsman_pct": "43.95%",
+    "ratio": "4.74"
+  }
+}
