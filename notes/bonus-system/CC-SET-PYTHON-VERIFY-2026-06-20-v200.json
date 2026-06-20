@@ -1,0 +1,99 @@
+{
+  "timestamp": "2026-06-20T12:52:51.457712",
+  "version": "v199",
+  "total": 15,
+  "passed": 15,
+  "pass_rate": "100.0%",
+  "results": [
+    {
+      "name": "狂战士-固伤-独立攻击收益",
+      "calculated": "8.0000%",
+      "reported": "8.0%",
+      "passed": true
+    },
+    {
+      "name": "狂战士-固伤-暴击期望收益",
+      "calculated": "1.1765%",
+      "reported": "1.2%",
+      "passed": true
+    },
+    {
+      "name": "狂战士-固伤-综合收益",
+      "calculated": "9.2706%",
+      "reported": "9.3%",
+      "passed": true
+    },
+    {
+      "name": "狂战士-百分比-力量收益",
+      "calculated": "24.4248%",
+      "reported": "24.42%",
+      "passed": true
+    },
+    {
+      "name": "狂战士-百分比-物理攻击收益",
+      "calculated": "5.5000%",
+      "reported": "5.50%",
+      "passed": true
+    },
+    {
+      "name": "狂战士-百分比-暴击收益",
+      "calculated": "1.1765%",
+      "reported": "1.2%",
+      "passed": true
+    },
+    {
+      "name": "狂战士-百分比-综合收益",
+      "calculated": "32.8125%",
+      "reported": "32.81%",
+      "passed": true
+    },
+    {
+      "name": "剑魂-百分比-力量收益",
+      "calculated": "36.4706%",
+      "reported": "36.5%",
+      "passed": true
+    },
+    {
+      "name": "剑魂-百分比-物理攻击收益",
+      "calculated": "4.2308%",
+      "reported": "4.23%",
+      "passed": true
+    },
+    {
+      "name": "剑魂-百分比-暴击收益",
+      "calculated": "1.2000%",
+      "reported": "1.2%",
+      "passed": true
+    },
+    {
+      "name": "剑魂-百分比-综合收益",
+      "calculated": "43.9513%",
+      "reported": "43.95%",
+      "passed": true
+    },
+    {
+      "name": "CC套-6件力量合计",
+      "calculated": "310",
+      "reported": "310",
+      "passed": true
+    },
+    {
+      "name": "CC套-6件物理攻击合计",
+      "calculated": "110",
+      "reported": "110",
+      "passed": true
+    },
+    {
+      "name": "CC套-6件独立攻击合计",
+      "calculated": "120",
+      "reported": "120",
+      "passed": true
+    },
+    {
+      "name": "CC套-6件暴击率合计",
+      "calculated": "3.0%",
+      "reported": "3.0%",
+      "passed": true
+    }
+  ]
+}
