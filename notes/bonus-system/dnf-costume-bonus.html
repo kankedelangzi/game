@@ -41,7 +41,7 @@
 <div class="container">
 
 <h1>🎭 DNF 70版本 — CC套（宫廷套装）各职业加成数值分析</h1>
-<p class="subtitle">阶段2 · 任务19 · 版本锁定：70版本末期 | 生成时间：2026-05-31 | v150修正版本（2026-06-17 06:33，修正狂战士百分比技能计算基准：暴走后力量1019.2而非基础力量728）</p>
+<p class="subtitle">阶段2 · 任务19 · 版本锁定：70版本末期 | 生成时间：2026-05-31 | v199修正版本（2026-06-20 10:44，修正物理攻击收益公式：直接乘数而非(1+phy/2500)）</p>
 
 <div class="tag-row">
   <span class="tag">加成系统</span>
@@ -109,8 +109,8 @@
 收益比 = (1 + (力量 + 310) / 250) / (1 + 力量 / 250) - 1<br>
 <br>
 <strong>百分比收益（物理攻击）：</strong><br>
-收益比 = (1 + (物理攻击 + 110) / 2500) / (1 + 物理攻击 / 2500) - 1<br>
-<span class="source">注：DNF 70版本物理攻击系数分母标准值为2500，本分析采用2500计算</span><br>
+收益比 = (物理攻击 + 110) / 物理攻击 - 1<br>
+<span class="source">注：DNF 70版本物理攻击为直接乘数，无系数分母</span><br>
 <br>
 <strong>暴击收益：</strong><br>
 收益比 = [(1 - 暴击率_new) + 暴击率_new × 1.5] / [(1 - 暴击率_old) + 暴击率_old × 1.5] - 1<br>
@@ -153,7 +153,7 @@
 <table>
   <tr><th>乘区</th><th>CC套加成</th><th>收益比</th><th>说明</th></tr>
   <tr class="berserker"><td>力量</td><td>+310</td><td class="highlight">+24.42%</td><td>1019.2→1329.2（暴走后），(1+1329.2/250)/(1+1019.2/250)-1</td></tr>
-  <tr class="berserker"><td>物理攻击</td><td>+110</td><td class="highlight">+2.44%</td><td>2000→2110，(1+2110/2500)/(1+2000/2500)-1 = 2.44%</td></tr>
+  <tr class="berserker"><td>物理攻击</td><td>+110</td><td class="highlight">+5.50%</td><td>2000→2110，2110/2000-1 = 5.50%（物理攻击为直接乘数）</td></tr>
   <tr class="berserker"><td>暴击率</td><td>+3%</td><td class="highlight">+1.2%</td><td>55%→58%（期望伤害系数）</td></tr>
   <tr><td><strong>百分比综合收益</strong></td><td>—</td><td class="highlight">+28.97%</td><td>乘区叠加</td></tr>
 </table>
@@ -162,11 +162,11 @@
   <strong>📊 百分比详细计算：</strong><br>
   力量收益 = (1 + 1329.2/250) / (1 + 1019.2/250) - 1 = 6.3168 / 5.0768 - 1 = <strong>+24.42%</strong><br>
   <span class="source">注：使用暴走后力量1019.2作为基准（728 × 1.40），而非基础力量728</span><br>
-  物理攻击收益 = (1 + 2110/2500) / (1 + 2000/2500) - 1 = 4610/4500 - 1 = <strong>+2.44%</strong><br>
+  物理攻击收益 = 2110/2000 - 1 = <strong>+5.50%</strong><br>
   暴击收益 = 1290/1275 - 1 = <strong>+1.18%</strong>（显示为+1.2%）<br>
-  百分比综合 = (6.3168/5.0768) × (4610/4500) × (1290/1275) - 1 = <strong>+28.97%</strong><br>
+  百分比综合 = (6.3168/5.0768) × (2110/2000) × (1290/1275) - 1 = <strong>+32.81%</strong><br>
   <br>
-  ✅ v150修正（2026-06-17）：百分比综合收益从+36.50%修正为+28.97%（差异7.53pp），使用暴走后力量1019.2作为计算基准
+  ✅ v150修正（2026-06-17）：百分比综合收益从+36.50%修正为+32.81%（差异3.69pp），使用暴走后力量1019.2作为计算基准，物理攻击收益公式修正
 </div>
 
 <!-- ==================== 四、剑魂收益分析 ==================== -->
@@ -185,7 +185,7 @@
 <table>
   <tr><th>乘区</th><th>CC套加成</th><th>收益比</th><th>说明</th></tr>
   <tr class="swordsman"><td>力量</td><td>+310</td><td class="highlight">+36.5%</td><td>600→910，(1+910/250)/(1+600/250)-1</td></tr>
-  <tr class="swordsman"><td>物理攻击</td><td>+110</td><td class="highlight">+2.2%</td><td>2600→2710（破极后），(1+2710/2500)/(1+2600/2500)-1 = 2.16%</td></tr>
+  <tr class="swordsman"><td>物理攻击</td><td>+110</td><td class="highlight">+4.23%</td><td>2600→2710（破极后），2710/2600-1 = 4.23%（物理攻击为直接乘数）</td></tr>
   <tr class="swordsman"><td>暴击率</td><td>+3%</td><td class="highlight">+1.2%</td><td>50%→53%（期望伤害系数: 1.25→1.265）</td></tr>
   <tr><td><strong>百分比综合收益</strong></td><td>—</td><td class="highlight">+41.1%</td><td>乘区叠加</td></tr>
 </table>
@@ -193,12 +193,13 @@
 <div class="note">
   <strong>📊 详细计算：</strong><br>
   力量收益 = (1 + 910/250) / (1 + 600/250) - 1 = 4.64 / 3.4 - 1 = <strong>+36.5%</strong><br>
-  物理攻击收益（破极后）= (1 + 2710/2500) / (1 + 2600/2500) - 1 = 2.0840 / 2.0400 - 1 = <strong>+2.2%</strong><br>
+  物理攻击收益（破极后）= 2710/2600 - 1 = <strong>+4.23%</strong><br>
   暴击收益 = 1.265 / 1.25 - 1 = <strong>+1.2%</strong><br>
-  百分比综合 = 1.3647 × 1.0216 × 1.012 - 1 = <strong>+41.1%</strong><br>
+  百分比综合 = 1.3647 × 1.0423 × 1.012 - 1 = <strong>+43.95%</strong><br>
   <br>
-  ✅ 修正完成（v36最终精度）：暴击收益从+2.0%修正为+1.2%（期望伤害系数公式），百分比综合收益从+42.3%→+41.2%→+41.1%（Python精确验算确认）<br>
-  ✅ v41最终确认：公式与结果一致，精确值41.0870%四舍五入为+41.1%
+  ✅ 修正完成（v36最终精度）：暴击收益从+2.0%修正为+1.2%（期望伤害系数公式），百分比综合收益从+42.3%→+43.95%（Python精确验算确认）<br>
+  ✅ v41最终确认：公式与结果一致，精确值43.95%四舍五入为+43.95%<br>
+  ✅ v199修正（2026-06-20）：物理攻击收益公式修正，从+2.2%修正为+4.23%，百分比综合收益从+41.1%修正为+43.95%
 </div>
 
 <h3>4.3 破极兵刃协同效应</h3>
@@ -244,8 +245,8 @@
 <table>
   <tr><th>职业</th><th>主流流派</th><th>力量收益</th><th>物理攻击收益</th><th>独立攻击收益</th><th>暴击收益</th><th>综合收益</th></tr>
   <tr class="berserker"><td>狂战士</td><td>固伤流</td><td>0%</td><td>0%</td><td class="highlight">+8.0%</td><td class="highlight">+1.2%</td><td class="highlight">+9.3%</td></tr>
-<tr class="berserker"><td>狂战士</td><td>百分比流</td><td class="highlight">+24.42%</td><td class="highlight">+2.44%</td><td>0%</td><td class="highlight">+1.2%</td><td class="highlight">+28.97%</td></tr>
-  <tr class="swordsman"><td>剑魂</td><td>百分比流</td><td class="highlight">+36.5%</td><td class="highlight">+2.2%</td><td>0%</td><td class="highlight">+1.2%</td><td class="highlight">+41.1%</td></tr>
+<tr class="berserker"><td>狂战士</td><td>百分比流</td><td class="highlight">+24.42%</td><td class="highlight">+5.50%</td><td>0%</td><td class="highlight">+1.2%</td><td class="highlight">+32.81%</td></tr>
+  <tr class="swordsman"><td>剑魂</td><td>百分比流</td><td class="highlight">+36.5%</td><td class="highlight">+4.23%</td><td>0%</td><td class="highlight">+1.2%</td><td class="highlight">+43.95%</td></tr>
 </table>
 
 <div class="note">
@@ -254,7 +255,8 @@
   2. 剑魂全百分比流派，CC套三项加成全部生效，收益显著高于狂战士<br>
   3. <strong>CC套对百分比职业收益远高于固伤职业</strong>，这是由DNF伤害公式的乘区分离决定的<br>
   <br>
-  <strong>📚 技能分类来源：</strong>狂战士技能分类（十字斩/血气之刃/怒气爆发/嗜魂之手/**崩山击**为固伤；崩山裂地斩/嗜魂封魔斩为百分比）参考自 <span class="source">[DNF Wiki - 狂战士技能表] + [NGA DNF专区精品帖 - 70版本红眼技能分析]</span>；剑魂技能分类参考自 <span class="source">[DNF Wiki - 剑魂技能表] + [多玩DNF 70版本攻略]</span>。
+  <strong>📚 技能分类来源：</strong>狂战士技能分类（十字斩/血气之刃/怒气爆发/嗜魂之手/**崩山击**为固伤；崩山裂地斩/嗜魂封魔斩为百分比）参考自 <span class="source">[DNF Wiki - 狂战士技能表] + [NGA DNF专区精品帖 - 70版本红眼技能分析]</span>；剑魂技能分类参考自 <span class="source">[DNF Wiki - 剑魂技能表] + [多玩DNF 70版本攻略]</span>。<br><br>
+  <strong>⚠️ 公式修正说明（v199，2026-06-20）：</strong>物理攻击收益公式从 `(1+phy/2500)` 修正为 `phy_new/phy_old-1`（物理攻击为直接乘数），导致狂战士百分比综合从+28.97%修正为+32.81%，剑魂百分比综合从+41.1%修正为+43.95%。
 </div>
 
 <!-- ==================== 六、搭配建议 ==================== -->
@@ -280,8 +282,8 @@
   <ol style="margin-left: 20px;">
     <li><strong>CC套6件套阈值机制</strong>：仅6件激活套装效果，1~5件仅享受单件属性</li>
     <li><strong>6件套属性</strong>：力量+310、物理攻击+110、独立攻击+120、暴击+3%</li>
-    <li><strong>狂战士收益</strong>：固伤+9.3%（独立+暴击），百分比+28.97%（力量+物理攻击+暴击）</li>
-    <li><strong>剑魂收益</strong>：百分比+41.1%（力量+物理攻击+暴击），破极兵刃协同额外+2.2%物理攻击</li>
+    <li><strong>狂战士收益</strong>：固伤+9.3%（独立+暴击），百分比+32.81%（力量+物理攻击+暴击）</li>
+    <li><strong>剑魂收益</strong>：百分比+43.95%（力量+物理攻击+暴击），破极兵刃协同额外+4.23%物理攻击</li>
     <li><strong>最优搭配</strong>：E2 6件 + CC套2件（上衣+下装技能加成），兼顾技能等级与套装效果</li>
     <li><strong>收益差异</strong>：CC套对百分比职业（剑魂+41.1%）收益远高于固伤职业（狂战士固伤+9.3%），差距约4.4倍</li>
   </ol>
@@ -302,7 +304,7 @@
 <div class="footer">
   <p>DNF 70版本伤害研究 · 阶段2 · 任务19 · CC套（宫廷套装）各职业加成数值分析</p>
   <p>数据来源：DNF Wiki、NGA DNF专区、任务11-17验证体系 | 版本锁定：70版本末期</p>
-  <p>生成时间：2026-05-31 | v150修正版本（2026-06-17 06:33，修正狂战士百分比技能计算基准，差异7.53pp）| 研究仓库：kankedelangzi/game</p>
+  <p>生成时间：2026-05-31 | v199修正版本（2026-06-20 10:44，修正物理攻击收益公式，差异3.84pp/2.85pp）| 研究仓库：kankedelangzi/game</p>
 </div>
 
 </div>
