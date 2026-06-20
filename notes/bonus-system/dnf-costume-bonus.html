@@ -137,16 +137,16 @@
   <tr class="berserker"><td>力量</td><td>+310</td><td>0%（固伤无收益）</td><td>固伤无收益</td></tr>
   <tr class="berserker"><td>物理攻击</td><td>+110</td><td>0%（固伤无收益）</td><td>固伤无收益</td></tr>
   <tr class="berserker"><td>暴击率</td><td>+3%</td><td class="highlight">+1.2%</td><td>通用</td></tr>
-  <tr><td><strong>固伤综合收益</strong></td><td>—</td><td class="highlight">+9.3%</td><td>独立×暴击</td></tr>
+  <tr><td><strong>固伤综合收益</strong></td><td>—</td><td class="highlight">+9.27%</td><td>独立×暴击</td></tr>
 </table>
 
 <div class="note">
   <strong>📊 详细计算：</strong><br>
   独立攻击收益 = (1 + 1370/250) / (1 + 1250/250) - 1 = 6.48 / 6.0 - 1 = <strong>+8.0%</strong><br>
   暴击收益（期望伤害系数）= (1.29 / 1.275) - 1 = <strong>+1.2%</strong><br>
-  固伤综合 = (1 + 8.0%) × (1 + 1.2%) - 1 = <strong>+9.3%</strong><br>
+  固伤综合 = (1 + 8.00%) × (1 + 1.18%) - 1 = <strong>+9.27%</strong><br>
   <br>
-  ✅ 修正完成（v29审核）：暴击收益从+1.9%修正为+1.2%（使用期望伤害系数公式），固伤综合收益从+10.1%修正为+9.3%
+  ✅ 修正完成（v29审核）：暴击收益从+1.9%修正为+1.2%（使用期望伤害系数公式），固伤综合收益从+10.1%修正为+9.27%
 </div>
 
 <h3>3.3 百分比技能收益（崩山裂地斩、嗜魂封魔斩）</h3>
@@ -222,12 +222,12 @@
     <h3 style="color:#e04040; margin-top:0;">🔴 狂战士（红眼）</h3>
     <table>
       <tr><th>流派</th><th>收益</th></tr>
-      <tr><td>固伤技能</td><td class="highlight">+9.3%</td></tr>
+      <tr><td>固伤技能</td><td class="highlight">+9.27%</td></tr>
       <tr><td>百分比技能</td><td class="highlight">+32.81%</td></tr>
       <tr><td>核心收益乘区</td><td>独立攻击 + 暴击</td></tr>
       <tr><td>力量收益</td><td>0%（固伤无收益）</td></tr>
     </table>
-    <p class="note">固伤为主（十字斩、血气之刃、怒气爆发、嗜魂之手等），CC套力量加成对主流技能零收益。独立攻击+120是核心收益来源。</p>
+    <p class="note">固伤为主（十字斩、血气之刃、怒气爆发、嗜魂之手等），CC套力量加成对主流技能零收益。独立攻击+120是核心收益来源。固伤综合收益+9.27%（独立+8.00% × 暴击+1.18%）。</p>
   </div>
   <div class="swordsman-card">
     <h3 style="color:#40a0e0; margin-top:0;">🔵 剑魂（白手）</h3>
@@ -244,7 +244,7 @@
 <h3>5.1 综合收益对比总表</h3>
 <table>
   <tr><th>职业</th><th>主流流派</th><th>力量收益</th><th>物理攻击收益</th><th>独立攻击收益</th><th>暴击收益</th><th>综合收益</th></tr>
-  <tr class="berserker"><td>狂战士</td><td>固伤流</td><td>0%</td><td>0%</td><td class="highlight">+8.0%</td><td class="highlight">+1.2%</td><td class="highlight">+9.3%</td></tr>
+  <tr class="berserker"><td>狂战士</td><td>固伤流</td><td>0%</td><td>0%</td><td class="highlight">+8.0%</td><td class="highlight">+1.2%</td><td class="highlight">+9.27%</td></tr>
 <tr class="berserker"><td>狂战士</td><td>百分比流</td><td class="highlight">+24.42%</td><td class="highlight">+5.50%</td><td>0%</td><td class="highlight">+1.2%</td><td class="highlight">+32.81%</td></tr>
   <tr class="swordsman"><td>剑魂</td><td>百分比流</td><td class="highlight">+36.5%</td><td class="highlight">+4.23%</td><td>0%</td><td class="highlight">+1.2%</td><td class="highlight">+43.95%</td></tr>
 </table>
@@ -282,10 +282,10 @@
   <ol style="margin-left: 20px;">
     <li><strong>CC套6件套阈值机制</strong>：仅6件激活套装效果，1~5件仅享受单件属性</li>
     <li><strong>6件套属性</strong>：力量+310、物理攻击+110、独立攻击+120、暴击+3%</li>
-    <li><strong>狂战士收益</strong>：固伤+9.3%（独立+暴击），百分比+32.81%（力量+物理攻击+暴击）</li>
+    <li><strong>狂战士收益</strong>：固伤+9.27%（独立+暴击），百分比+32.81%（力量+物理攻击+暴击）</li>
     <li><strong>剑魂收益</strong>：百分比+43.95%（力量+物理攻击+暴击），破极兵刃协同额外+4.23%物理攻击</li>
     <li><strong>最优搭配</strong>：E2 6件 + CC套2件（上衣+下装技能加成），兼顾技能等级与套装效果</li>
-    <li><strong>收益差异</strong>：CC套对百分比职业（剑魂+43.95%）收益远高于固伤职业（狂战士固伤+9.3%），差距约4.7倍</li>
+    <li><strong>收益差异</strong>：CC套对百分比职业（剑魂+43.95%）收益远高于固伤职业（狂战士固伤+9.27%），差距约4.7倍</li>
   </ol>
 </div>
 
