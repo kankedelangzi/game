@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-06-21T11:52:28.700714",
+  "version": "v201-steady",
+  "tests_passed": 10,
+  "tests_total": 10,
+  "results": {
+    "indep_gain": "8.00%",
+    "crit_gain_berserker": "1.18%",
+    "crit_gain_swordsman": "1.20%",
+    "power_gain_berserker": "24.42%",
+    "power_gain_swordsman": "36.47%",
+    "phy_gain_berserker": "5.50%",
+    "phy_gain_swordsman": "4.23%",
+    "berserker_fixed_total": "9.27%",
+    "berserker_percent_total": "32.81%",
+    "swordsman_percent_total": "43.95%"
+  }
+}
