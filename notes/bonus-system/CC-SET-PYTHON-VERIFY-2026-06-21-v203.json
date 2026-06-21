@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-06-21T15:26:00.034718",
+  "version": "v203-standalone",
+  "tests_passed": 10,
+  "tests_total": 10,
+  "all_pass": true,
+  "results": {
+    "indep_gain": "8.00%",
+    "berserker_fixed_total": "9.27%",
+    "berserker_percent_total": "32.81%",
+    "sword_percent_total": "43.95%",
+    "ratio_sword_vs_bers_fixed": "4.74\u500d",
+    "ratio_bers_percent_vs_bers_fixed": "3.54\u500d"
+  },
+  "expected": {
+    "indep_gain": "8.00%",
+    "berserker_fixed_total": "9.27%",
+    "berserker_percent_total": "32.81%",
+    "sword_percent_total": "43.95%",
+    "ratio_sword_vs_bers_fixed": "4.74\u500d",
+    "ratio_bers_percent_vs_bers_fixed": "3.54\u500d"
+  }
+}
