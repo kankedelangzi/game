@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-06-22T04:56:08.822712",
+  "version": "v213",
+  "checks": {
+    "berserker_fixed": {
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    "berserker_pct": {
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    "swordsman_pct": {
+      "expected": 43.95,
+      "actual": 43.95,
+      "pass": true
+    }
+  },
+  "all_pass": true
+}
