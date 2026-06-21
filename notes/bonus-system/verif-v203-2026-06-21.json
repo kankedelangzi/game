@@ -1,0 +1,136 @@
+{
+  "timestamp": "2026-06-21T10:25:44.334824Z",
+  "tests": [
+    {
+      "name": "力量合计",
+      "expected": 310,
+      "actual": 310,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "物理攻击合计",
+      "expected": 110,
+      "actual": 110,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "独立攻击合计",
+      "expected": 120,
+      "actual": 120,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "暴击率合计(%)",
+      "expected": 3.0,
+      "actual": 3.0,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "暴走后力量",
+      "expected": 1019.2,
+      "actual": 1019.1999999999999,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "独立攻击收益(%)",
+      "expected": 8.0,
+      "actual": 8.000000000000007,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "暴击收益(%)",
+      "expected": 1.18,
+      "actual": 1.1764705882353121,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "固伤综合收益(%)",
+      "expected": 9.27,
+      "actual": 9.270588235294142,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "力量收益(%)",
+      "expected": 24.42,
+      "actual": 24.424834541443417,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "物理攻击收益(%)",
+      "expected": 5.5,
+      "actual": 5.499999999999994,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "百分比综合收益(%)",
+      "expected": 32.81,
+      "actual": 32.812532211119574,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "破极后物理攻击",
+      "expected": 2600,
+      "actual": 2600.0,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "CC套后物理攻击",
+      "expected": 2710,
+      "actual": 2710.0,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "剑魂力量收益(%)",
+      "expected": 36.47,
+      "actual": 36.470588235294144,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "剑魂物理攻击收益(%)",
+      "expected": 4.23,
+      "actual": 4.230769230769238,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "剑魂暴击收益(%)",
+      "expected": 1.2,
+      "actual": 1.200000000000001,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "剑魂百分比综合收益(%)",
+      "expected": 43.95,
+      "actual": 43.951276018099584,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "收益倍数",
+      "expected": 4.74,
+      "actual": 4.740937133932049,
+      "passed": true,
+      "diff": 0
+    }
+  ],
+  "summary": {
+    "total": 18,
+    "passed": 18,
+    "failed": 0
+  }
+}
