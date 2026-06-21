@@ -1,0 +1,109 @@
+{
+  "timestamp": "2026-06-21T19:08:30.717801",
+  "results": [
+    {
+      "test": "\u72ec\u7acb\u653b\u51fb\u6536\u76ca",
+      "expected": 0.08,
+      "actual": 0.08000000000000007,
+      "pass": true
+    },
+    {
+      "test": "\u66b4\u51fb\u671f\u671b\u6536\u76ca",
+      "expected": 0.0118,
+      "actual": 0.011764705882353121,
+      "pass": true
+    },
+    {
+      "test": "\u56fa\u4f24\u7efc\u5408\u6536\u76ca",
+      "expected": 0.0927,
+      "actual": 0.09270588235294142,
+      "pass": true
+    },
+    {
+      "test": "\u529b\u91cf\u6536\u76ca(\u66b4\u8d70\u540e)",
+      "expected": 0.2442,
+      "actual": 0.2442483454144342,
+      "pass": true
+    },
+    {
+      "test": "\u7269\u7406\u653b\u51fb\u6536\u76ca(\u76f4\u63a5\u4e58\u6570)",
+      "expected": 0.055,
+      "actual": 0.05499999999999994,
+      "pass": true
+    },
+    {
+      "test": "\u66b4\u51fb\u6536\u76ca(\u767e\u5206\u6bd4)",
+      "expected": 0.0118,
+      "actual": 0.011764705882353121,
+      "pass": true
+    },
+    {
+      "test": "\u72c2\u6218\u58eb\u767e\u5206\u6bd4\u7efc\u5408",
+      "expected": 0.3281,
+      "actual": 0.3281253221111957,
+      "pass": true
+    },
+    {
+      "test": "\u5251\u9b42\u529b\u91cf\u6536\u76ca",
+      "expected": 0.3647,
+      "actual": 0.36470588235294144,
+      "pass": true
+    },
+    {
+      "test": "\u5251\u9b42\u7269\u7406\u653b\u51fb\u6536\u76ca(\u7834\u6781\u540e)",
+      "expected": 0.0423,
+      "actual": 0.04230769230769238,
+      "pass": true
+    },
+    {
+      "test": "\u5251\u9b42\u66b4\u51fb\u6536\u76ca",
+      "expected": 0.012,
+      "actual": 0.01200000000000001,
+      "pass": true
+    },
+    {
+      "test": "\u5251\u9b42\u767e\u5206\u6bd4\u7efc\u5408",
+      "expected": 0.4395,
+      "actual": 0.43951276018099583,
+      "pass": true
+    },
+    {
+      "test": "\u5251\u9b42%vs\u72c2\u6218\u58eb\u56fa\u4f24\u6536\u76ca\u6bd4",
+      "expected": 4.74,
+      "actual": 4.740937133932049,
+      "pass": true
+    },
+    {
+      "test": "\u72c2\u6218\u58eb%vs\u72c2\u6218\u58eb\u56fa\u4f24\u6536\u76ca\u6bd4",
+      "expected": 3.54,
+      "actual": 3.539422890793346,
+      "pass": true
+    },
+    {
+      "test": "CC\u5957\u529b\u91cf\u5408\u8ba1",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "test": "CC\u5957\u7269\u7406\u653b\u51fb\u5408\u8ba1",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "test": "CC\u5957\u72ec\u7acb\u653b\u51fb\u5408\u8ba1",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "test": "CC\u5957\u66b4\u51fb\u7387\u5408\u8ba1",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    }
+  ],
+  "passed": 17,
+  "total": 17
+}
