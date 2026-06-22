@@ -1,0 +1,276 @@
+{
+  "version": "v226",
+  "timestamp": "2026-06-22 06:02 UTC",
+  "total_tests": 38,
+  "total_passed": 38,
+  "total_failed": 0,
+  "pass_rate": 100.0,
+  "details": [
+    {
+      "item": "Lv21出血基础值",
+      "expected": "3800",
+      "actual": "3800",
+      "source": "NGA精品帖",
+      "status": "PASS"
+    },
+    {
+      "item": "出血持续时间",
+      "expected": "5秒",
+      "actual": "5秒",
+      "source": "DNF Wiki",
+      "status": "PASS"
+    },
+    {
+      "item": "穿透防御",
+      "expected": "0%",
+      "actual": "0%",
+      "source": "公式无defense变量",
+      "status": "PASS"
+    },
+    {
+      "item": "E2 6件出血/秒",
+      "expected": "5320",
+      "actual": "5320",
+      "source": "NGA精品帖",
+      "status": "PASS"
+    },
+    {
+      "item": "满配出血/秒",
+      "expected": "5890",
+      "actual": "5890",
+      "source": "NGA精品帖",
+      "status": "PASS"
+    },
+    {
+      "item": "满配5秒总伤害",
+      "expected": "29450",
+      "actual": "29450",
+      "source": "计算",
+      "status": "PASS"
+    },
+    {
+      "item": "防御500穿透验证",
+      "expected": "出血=24700",
+      "actual": "出血=24700",
+      "source": "公式验证",
+      "status": "PASS"
+    },
+    {
+      "item": "防御2000穿透验证",
+      "expected": "出血=24700",
+      "actual": "出血=24700",
+      "source": "公式验证",
+      "status": "PASS"
+    },
+    {
+      "item": "防御5000穿透验证",
+      "expected": "出血=24700",
+      "actual": "出血=24700",
+      "source": "公式验证",
+      "status": "PASS"
+    },
+    {
+      "item": "防御10000穿透验证",
+      "expected": "出血=24700",
+      "actual": "出血=24700",
+      "source": "公式验证",
+      "status": "PASS"
+    },
+    {
+      "item": "出血等级Lv21",
+      "expected": "Lv21",
+      "actual": "Lv21",
+      "source": "技能叠加计算",
+      "status": "PASS"
+    },
+    {
+      "item": "CC套力量",
+      "expected": "310",
+      "actual": "310",
+      "source": "单件加总",
+      "status": "PASS"
+    },
+    {
+      "item": "CC套物理攻击",
+      "expected": "110",
+      "actual": "110",
+      "source": "单件加总",
+      "status": "PASS"
+    },
+    {
+      "item": "CC套独立攻击",
+      "expected": "120",
+      "actual": "120",
+      "source": "单件加总",
+      "status": "PASS"
+    },
+    {
+      "item": "CC套暴击率",
+      "expected": "3%",
+      "actual": "3.0%",
+      "source": "单件加总",
+      "status": "PASS"
+    },
+    {
+      "item": "狂战士固伤-独立",
+      "expected": "8.00%",
+      "actual": "8.00%",
+      "source": "Python验算",
+      "status": "PASS"
+    },
+    {
+      "item": "狂战士固伤-暴击",
+      "expected": "1.18%",
+      "actual": "1.18%",
+      "source": "Python验算",
+      "status": "PASS"
+    },
+    {
+      "item": "狂战士固伤综合",
+      "expected": "9.27%",
+      "actual": "9.27%",
+      "source": "Python验算",
+      "status": "PASS"
+    },
+    {
+      "item": "狂战士百分比-力量",
+      "expected": "24.42%",
+      "actual": "24.42%",
+      "source": "Python验算",
+      "status": "PASS"
+    },
+    {
+      "item": "狂战士百分比-物理攻击",
+      "expected": "5.50%",
+      "actual": "5.50%",
+      "source": "Python验算",
+      "status": "PASS"
+    },
+    {
+      "item": "狂战士百分比-暴击",
+      "expected": "1.18%",
+      "actual": "1.18%",
+      "source": "Python验算",
+      "status": "PASS"
+    },
+    {
+      "item": "狂战士百分比综合",
+      "expected": "32.81%",
+      "actual": "32.81%",
+      "source": "Python验算",
+      "status": "PASS"
+    },
+    {
+      "item": "剑魂百分比-力量",
+      "expected": "36.47%",
+      "actual": "36.47%",
+      "source": "Python验算",
+      "status": "PASS"
+    },
+    {
+      "item": "剑魂百分比-物理攻击",
+      "expected": "4.23%",
+      "actual": "4.23%",
+      "source": "Python验算",
+      "status": "PASS"
+    },
+    {
+      "item": "剑魂百分比-暴击",
+      "expected": "1.20%",
+      "actual": "1.20%",
+      "source": "Python验算",
+      "status": "PASS"
+    },
+    {
+      "item": "剑魂百分比综合",
+      "expected": "43.95%",
+      "actual": "43.95%",
+      "source": "Python验算",
+      "status": "PASS"
+    },
+    {
+      "item": "边际对偶倍数",
+      "expected": "4.74",
+      "actual": "4.74",
+      "source": "Python验算",
+      "status": "PASS"
+    },
+    {
+      "item": "技能分类-十字斩",
+      "expected": "物理固伤",
+      "actual": "物理固伤",
+      "source": "BERSERKER.md",
+      "status": "PASS"
+    },
+    {
+      "item": "技能分类-崩山击",
+      "expected": "物理百分比+出血固伤",
+      "actual": "物理百分比+出血固伤",
+      "source": "BERSERKER.md",
+      "status": "PASS"
+    },
+    {
+      "item": "技能分类-血气之刃",
+      "expected": "物理固伤",
+      "actual": "物理固伤",
+      "source": "BERSERKER.md",
+      "status": "PASS"
+    },
+    {
+      "item": "技能分类-怒气爆发",
+      "expected": "物理固伤",
+      "actual": "物理固伤",
+      "source": "BERSERKER.md",
+      "status": "PASS"
+    },
+    {
+      "item": "技能分类-嗜魂之手",
+      "expected": "物理固伤",
+      "actual": "物理固伤",
+      "source": "BERSERKER.md",
+      "status": "PASS"
+    },
+    {
+      "item": "技能分类-崩山裂地斩",
+      "expected": "物理百分比",
+      "actual": "物理百分比",
+      "source": "BERSERKER.md",
+      "status": "PASS"
+    },
+    {
+      "item": "技能分类-嗜魂封魔斩",
+      "expected": "物理百分比",
+      "actual": "物理百分比",
+      "source": "BERSERKER.md",
+      "status": "PASS"
+    },
+    {
+      "item": "武器类型-屠戮之刃",
+      "expected": "太刀",
+      "actual": "太刀",
+      "source": "NGA精品帖",
+      "status": "PASS"
+    },
+    {
+      "item": "武器类型-魂·巨剑",
+      "expected": "巨剑",
+      "actual": "巨剑",
+      "source": "NGA精品帖",
+      "status": "PASS"
+    },
+    {
+      "item": "武器类型-逐风者",
+      "expected": "巨剑",
+      "actual": "巨剑",
+      "source": "NGA精品帖",
+      "status": "PASS"
+    },
+    {
+      "item": "武器类型-嗜魂",
+      "expected": "钝器",
+      "actual": "钝器",
+      "source": "NGA精品帖",
+      "status": "PASS"
+    }
+  ]
+}
