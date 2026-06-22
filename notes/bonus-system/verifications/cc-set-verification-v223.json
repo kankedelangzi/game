@@ -1,0 +1,106 @@
+{
+  "version": "v223",
+  "timestamp": "2026-06-22T05:27:00Z",
+  "passed": 16,
+  "failed": 0,
+  "total": 16,
+  "pass_rate": "100.0%",
+  "results": [
+    {
+      "test": "狂战士固伤-独立攻击收益",
+      "result": "8.00%",
+      "expected": "8.0%",
+      "status": "✅"
+    },
+    {
+      "test": "狂战士固伤-暴击收益",
+      "result": "1.18%",
+      "expected": "1.18%",
+      "status": "✅"
+    },
+    {
+      "test": "狂战士固伤综合收益",
+      "result": "9.27%",
+      "expected": "9.27%",
+      "status": "✅"
+    },
+    {
+      "test": "狂战士百分比-力量收益",
+      "result": "24.42%",
+      "expected": "24.42%",
+      "status": "✅"
+    },
+    {
+      "test": "狂战士百分比-物理攻击收益",
+      "result": "5.50%",
+      "expected": "5.50%",
+      "status": "✅"
+    },
+    {
+      "test": "狂战士百分比综合收益",
+      "result": "32.81%",
+      "expected": "32.81%",
+      "status": "✅"
+    },
+    {
+      "test": "剑魂百分比-力量收益",
+      "result": "36.47%",
+      "expected": "36.47%",
+      "status": "✅"
+    },
+    {
+      "test": "剑魂百分比-物理攻击收益(破极后)",
+      "result": "4.23%",
+      "expected": "4.23%",
+      "status": "✅"
+    },
+    {
+      "test": "剑魂百分比-暴击收益",
+      "result": "1.20%",
+      "expected": "1.20%",
+      "status": "✅"
+    },
+    {
+      "test": "剑魂百分比综合收益",
+      "result": "43.95%",
+      "expected": "43.95%",
+      "status": "✅"
+    },
+    {
+      "test": "CC套单件属性-力量合计",
+      "result": "310",
+      "expected": "310",
+      "status": "✅"
+    },
+    {
+      "test": "CC套单件属性-物理攻击合计",
+      "result": "110",
+      "expected": "110",
+      "status": "✅"
+    },
+    {
+      "test": "CC套单件属性-独立攻击合计",
+      "result": "120",
+      "expected": "120",
+      "status": "✅"
+    },
+    {
+      "test": "CC套单件属性-暴击合计",
+      "result": "3.0%",
+      "expected": "3.0%",
+      "status": "✅"
+    },
+    {
+      "test": "剑魂/狂战士固伤收益倍数",
+      "result": "4.74倍",
+      "expected": "~4.74倍",
+      "status": "✅"
+    },
+    {
+      "test": "暴击期望公式验证(DNF70)",
+      "result": "旧=1.250, 新=1.265",
+      "expected": "1.250, 1.265",
+      "status": "✅"
+    }
+  ]
+}
