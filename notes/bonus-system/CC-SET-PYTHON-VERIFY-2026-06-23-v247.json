@@ -1,0 +1,50 @@
+{
+  "timestamp": "2026-06-22T16:42:45.612808+00:00",
+  "version": "v247",
+  "cc_set": {
+    "power": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 3.0
+  },
+  "berserker_fixed": {
+    "independent_gain": 8.0,
+    "crit_gain": 1.18,
+    "total": 9.27
+  },
+  "berserker_percent": {
+    "power_gain": 24.42,
+    "phy_atk_gain": 5.5,
+    "crit_gain": 1.18,
+    "total": 32.81
+  },
+  "swordsman_percent": {
+    "power_gain": 36.47,
+    "phy_atk_gain": 4.23,
+    "crit_gain": 1.2,
+    "total": 43.95
+  },
+  "marginal_dual": 4.74,
+  "expected": {
+    "berserker_fixed_total": 9.27,
+    "berserker_percent_total": 32.81,
+    "swordsman_percent_total": 43.95,
+    "marginal_dual": 4.74
+  },
+  "all_pass": true,
+  "check_items": [
+    {"name": "CC套力量", "expected": 310, "actual": 310, "pass": true},
+    {"name": "CC套物理攻击", "expected": 110, "actual": 110, "pass": true},
+    {"name": "CC套独立攻击", "expected": 120, "actual": 120, "pass": true},
+    {"name": "CC套暴击", "expected": 3.0, "actual": 3.0, "pass": true},
+    {"name": "狂战士固伤独立收益", "expected": 8.0, "actual": 8.0, "pass": true},
+    {"name": "狂战士固伤暴击收益", "expected": 1.18, "actual": 1.18, "pass": true},
+    {"name": "狂战士固伤综合", "expected": 9.27, "actual": 9.27, "pass": true},
+    {"name": "狂战士百分比力量收益", "expected": 24.42, "actual": 24.42, "pass": true},
+    {"name": "狂战士百分比物理攻击收益", "expected": 5.5, "actual": 5.5, "pass": true},
+    {"name": "狂战士百分比综合", "expected": 32.81, "actual": 32.81, "pass": true},
+    {"name": "剑魂力量收益", "expected": 36.47, "actual": 36.47, "pass": true}
+  ],
+  "status": "稳态",
+  "continuous_pass_rounds": 35
+}
