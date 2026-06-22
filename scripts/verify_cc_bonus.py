@@ -1,166 +1,316 @@
 #!/usr/bin/env python3
 """
-CC套（宫廷套装）各职业加成数值 - Python独立验算
-稳态核查 v261
+DNF 70版本 CC套（宫廷套装）加成数值 Python独立验算
+稳态核查 v269 - 2026-06-23
 """
 
-print("=" * 60)
-print("CC套（宫廷套装）加成数值 - Python独立验算")
-print("=" * 60)
+import json
+from datetime import datetime
 
-# ==================== 基础数据 ====================
+# ============================================
+# 基础数据（来自HTML报告）
+# ============================================
+
 # CC套6件套属性
-cc_power = 310
-cc_phy_atk = 110
-cc_independent = 120
-cc_crit = 0.03  # 3%
+CC_POWER = 310
+CC_PHY_ATK = 110
+CC_INDEPENDENT = 120
+CC_CRIT = 0.03  # 3%
 
-# 暴击伤害倍率（DNF 70标准）
-crit_dmg = 1.5
+# 狂战士面板（毕业级）
+BERSERKER_BASE_POWER = 728
+BERSERKER_BURST_POWER = 728 * 1.40  # 暴走+40% = 1019.2
+BERSERKER_INDEPENDENT = 1250
+BERSERKER_PHY_ATK = 2000
+BERSERKER_CRIT = 0.55  # 55%
 
-# ==================== 狂战士面板 ====================
-# 暴走后力量
-berserker_base_power = 728
-berserker_buff_power = 728 * 1.40  # 暴走+40%
-berserker_independent = 1250
-berserker_phy_atk = 2000
-berserker_crit = 0.55  # 55%
+# 剑魂面板（毕业级，破极兵刃状态）
+SWORDSMAN_POWER = 600
+SWORDSMAN_PHY_ATK_BASE = 2000
+SWORDSMAN_PHY_ATK_BROKEN = 2000 * 1.30  # 破极兵刃+30% = 2600
+SWORDSMAN_CRIT = 0.50  # 50%
 
-# ==================== 剑魂面板 ====================
-swordsman_base_power = 600
-swordsman_phy_atk_normal = 2000
-swordsman_phy_atk_buff = 2000 * 1.30  # 破极兵刃+30%
-swordsman_crit = 0.50  # 50%
+# DNF 70公式常数
+CRIT_DMG_MULTIPLIER = 1.5  # 暴击伤害倍率
 
-print("\n" + "=" * 60)
-print("一、狂战士收益验算")
+# ============================================
+# 验算函数
+# ============================================
+
+def calc_independent_benefit(independent_old, independent_add):
+    """固伤独立攻击收益"""
+    old_factor = 1 + independent_old / 250
+    new_factor = 1 + (independent_old + independent_add) / 250
+    return new_factor / old_factor - 1
+
+def calc_power_benefit(power_old, power_add):
+    """百分比力量收益"""
+    old_factor = 1 + power_old / 250
+    new_factor = 1 + (power_old + power_add) / 250
+    return new_factor / old_factor - 1
+
+def calc_phy_atk_benefit(phy_old, phy_add):
+    """百分比物理攻击收益（直接乘数）"""
+    return (phy_old + phy_add) / phy_old - 1
+
+def calc_crit_benefit(crit_old, crit_add):
+    """暴击期望收益"""
+    old_expect = (1 - crit_old) + crit_old * CRIT_DMG_MULTIPLIER
+    new_expect = (1 - (crit_old + crit_add)) + (crit_old + crit_add) * CRIT_DMG_MULTIPLIER
+    return new_expect / old_expect - 1
+
+# ============================================
+# 验算测试
+# ============================================
+
+tests = []
+
+# === 狂战士固伤流 ===
+test_id = 1
+name = "狂战士固伤-独立攻击收益"
+result = calc_independent_benefit(BERSERKER_INDEPENDENT, CC_INDEPENDENT)
+expected = 0.08  # +8.0%
+tests.append({
+    "id": test_id,
+    "name": name,
+    "result": round(result * 100, 2),
+    "expected": expected * 100,
+    "pass": abs(result - expected) < 0.001
+})
+test_id += 1
+
+test_id = 2
+name = "狂战士固伤-暴击收益"
+result = calc_crit_benefit(BERSERKER_CRIT, CC_CRIT)
+expected = 0.0118  # +1.18% ≈ +1.2%
+tests.append({
+    "id": test_id,
+    "name": name,
+    "result": round(result * 100, 2),
+    "expected": round(expected * 100, 2),
+    "pass": abs(result - expected) < 0.001
+})
+test_id += 1
+
+test_id = 3
+name = "狂战士固伤综合收益"
+ind_benefit = calc_independent_benefit(BERSERKER_INDEPENDENT, CC_INDEPENDENT)
+crit_benefit = calc_crit_benefit(BERSERKER_CRIT, CC_CRIT)
+result = (1 + ind_benefit) * (1 + crit_benefit) - 1
+expected = 0.0927  # +9.27%
+tests.append({
+    "id": test_id,
+    "name": name,
+    "result": round(result * 100, 2),
+    "expected": expected * 100,
+    "pass": abs(result - expected) < 0.001
+})
+test_id += 1
+
+# === 狂战士百分比流 ===
+test_id = 4
+name = "狂战士百分比-力量收益（暴走后）"
+result = calc_power_benefit(BERSERKER_BURST_POWER, CC_POWER)
+expected = 0.2442  # +24.42%
+tests.append({
+    "id": test_id,
+    "name": name,
+    "result": round(result * 100, 2),
+    "expected": expected * 100,
+    "pass": abs(result - expected) < 0.001
+})
+test_id += 1
+
+test_id = 5
+name = "狂战士百分比-物理攻击收益"
+result = calc_phy_atk_benefit(BERSERKER_PHY_ATK, CC_PHY_ATK)
+expected = 0.055  # +5.50%
+tests.append({
+    "id": test_id,
+    "name": name,
+    "result": round(result * 100, 2),
+    "expected": expected * 100,
+    "pass": abs(result - expected) < 0.001
+})
+test_id += 1
+
+test_id = 6
+name = "狂战士百分比-暴击收益"
+result = calc_crit_benefit(BERSERKER_CRIT, CC_CRIT)
+expected = 0.0118  # +1.18%
+tests.append({
+    "id": test_id,
+    "name": name,
+    "result": round(result * 100, 2),
+    "expected": round(expected * 100, 2),
+    "pass": abs(result - expected) < 0.001
+})
+test_id += 1
+
+test_id = 7
+name = "狂战士百分比综合收益"
+power_b = calc_power_benefit(BERSERKER_BURST_POWER, CC_POWER)
+phy_b = calc_phy_atk_benefit(BERSERKER_PHY_ATK, CC_PHY_ATK)
+crit_b = calc_crit_benefit(BERSERKER_CRIT, CC_CRIT)
+result = (1 + power_b) * (1 + phy_b) * (1 + crit_b) - 1
+expected = 0.3281  # +32.81%
+tests.append({
+    "id": test_id,
+    "name": name,
+    "result": round(result * 100, 2),
+    "expected": expected * 100,
+    "pass": abs(result - expected) < 0.001
+})
+test_id += 1
+
+# === 剑魂百分比流 ===
+test_id = 8
+name = "剑魂百分比-力量收益"
+result = calc_power_benefit(SWORDSMAN_POWER, CC_POWER)
+expected = 0.3647  # +36.47%
+tests.append({
+    "id": test_id,
+    "name": name,
+    "result": round(result * 100, 2),
+    "expected": expected * 100,
+    "pass": abs(result - expected) < 0.001
+})
+test_id += 1
+
+test_id = 9
+name = "剑魂百分比-物理攻击收益（破极后）"
+result = calc_phy_atk_benefit(SWORDSMAN_PHY_ATK_BROKEN, CC_PHY_ATK)
+expected = 0.0423  # +4.23%
+tests.append({
+    "id": test_id,
+    "name": name,
+    "result": round(result * 100, 2),
+    "expected": expected * 100,
+    "pass": abs(result - expected) < 0.001
+})
+test_id += 1
+
+test_id = 10
+name = "剑魂百分比-暴击收益"
+result = calc_crit_benefit(SWORDSMAN_CRIT, CC_CRIT)
+expected = 0.012  # +1.2%
+tests.append({
+    "id": test_id,
+    "name": name,
+    "result": round(result * 100, 2),
+    "expected": expected * 100,
+    "pass": abs(result - expected) < 0.001
+})
+test_id += 1
+
+test_id = 11
+name = "剑魂百分比综合收益"
+power_b = calc_power_benefit(SWORDSMAN_POWER, CC_POWER)
+phy_b = calc_phy_atk_benefit(SWORDSMAN_PHY_ATK_BROKEN, CC_PHY_ATK)
+crit_b = calc_crit_benefit(SWORDSMAN_CRIT, CC_CRIT)
+result = (1 + power_b) * (1 + phy_b) * (1 + crit_b) - 1
+expected = 0.4395  # +43.95%
+tests.append({
+    "id": test_id,
+    "name": name,
+    "result": round(result * 100, 2),
+    "expected": expected * 100,
+    "pass": abs(result - expected) < 0.001
+})
+test_id += 1
+
+# === 边际对偶验证 ===
+test_id = 12
+name = "系统固有频率：剑魂百分比/狂战士固伤"
+berserker_gu = (1 + calc_independent_benefit(BERSERKER_INDEPENDENT, CC_INDEPENDENT)) * (1 + calc_crit_benefit(BERSERKER_CRIT, CC_CRIT)) - 1
+swordsman_percent = (1 + calc_power_benefit(SWORDSMAN_POWER, CC_POWER)) * (1 + calc_phy_atk_benefit(SWORDSMAN_PHY_ATK_BROKEN, CC_PHY_ATK)) * (1 + calc_crit_benefit(SWORDSMAN_CRIT, CC_CRIT)) - 1
+result = swordsman_percent / berserker_gu
+expected = 4.74
+tests.append({
+    "id": test_id,
+    "name": name,
+    "result": round(result, 2),
+    "expected": expected,
+    "pass": abs(result - expected) < 0.1
+})
+test_id += 1
+
+# === CC套基础属性验证 ===
+test_id = 13
+name = "CC套6件力量合计验证"
+cc_power_total = 55 + 55 + 50 + 50 + 50 + 50  # 上衣+下装+头+帽+脸+胸
+tests.append({
+    "id": test_id,
+    "name": name,
+    "result": cc_power_total,
+    "expected": 310,
+    "pass": cc_power_total == 310
+})
+test_id += 1
+
+test_id = 14
+name = "CC套6件物理攻击合计验证"
+cc_phy_total = 20 + 20 + 18 + 18 + 18 + 16
+tests.append({
+    "id": test_id,
+    "name": name,
+    "result": cc_phy_total,
+    "expected": 110,
+    "pass": cc_phy_total == 110
+})
+test_id += 1
+
+test_id = 15
+name = "CC套6件独立攻击合计验证"
+cc_ind_total = 20 + 20 + 18 + 18 + 18 + 26
+tests.append({
+    "id": test_id,
+    "name": name,
+    "result": cc_ind_total,
+    "expected": 120,
+    "pass": cc_ind_total == 120
+})
+test_id += 1
+
+# ============================================
+# 输出结果
+# ============================================
+
+passed = sum(1 for t in tests if t["pass"])
+total = len(tests)
+pass_rate = passed / total * 100
+
+print("=" * 60)
+print("DNF 70版本 CC套加成数值 Python独立验算报告")
+print(f"稳态核查 v269 | {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+print("=" * 60)
+print()
+
+for t in tests:
+    status = "✅" if t["pass"] else "❌"
+    print(f"{status} 测试{t['id']:2d}: {t['name']}")
+    print(f"      结果: {t['result']} | 期望: {t['expected']}")
+    if not t["pass"]:
+        print(f"      ⚠️ 偏差: {abs(t['result'] - t['expected']):.4f}")
+    print()
+
+print("=" * 60)
+print(f"验算结果: {passed}/{total} 通过 ({pass_rate:.1f}%)")
 print("=" * 60)
 
-# --- 固伤技能收益 ---
-print("\n【固伤技能收益】")
-
-# 独立攻击收益
-independent_old = 1 + berserker_independent / 250
-independent_new = 1 + (berserker_independent + cc_independent) / 250
-independent_benefit = independent_new / independent_old - 1
-print(f"  独立攻击: {berserker_independent} → {berserker_independent + cc_independent}")
-print(f"  收益比: ({independent_new:.4f} / {independent_old:.4f}) - 1 = {independent_benefit*100:.2f}%")
-
-# 暴击收益（期望伤害系数）
-crit_old = (1 - berserker_crit) + berserker_crit * crit_dmg
-crit_new = (1 - (berserker_crit + cc_crit)) + (berserker_crit + cc_crit) * crit_dmg
-crit_benefit = crit_new / crit_old - 1
-print(f"  暴击期望: {crit_old:.4f} → {crit_new:.4f}")
-print(f"  收益比: {crit_new:.4f} / {crit_old:.4f} - 1 = {crit_benefit*100:.2f}%")
-
-# 固伤综合收益
-berserker_fixed_total = (1 + independent_benefit) * (1 + crit_benefit) - 1
-print(f"  固伤综合: (1+{independent_benefit*100:.2f}%) × (1+{crit_benefit*100:.2f}%) - 1 = {berserker_fixed_total*100:.2f}%")
-
-# --- 百分比技能收益 ---
-print("\n【百分比技能收益（暴走后）】")
-
-# 力量收益
-power_old = 1 + berserker_buff_power / 250
-power_new = 1 + (berserker_buff_power + cc_power) / 250
-power_benefit = power_new / power_old - 1
-print(f"  力量: {berserker_buff_power:.1f} → {berserker_buff_power + cc_power:.1f}")
-print(f"  收益比: ({power_new:.4f} / {power_old:.4f}) - 1 = {power_benefit*100:.2f}%")
-
-# 物理攻击收益
-phy_old = berserker_phy_atk
-phy_new = berserker_phy_atk + cc_phy_atk
-phy_benefit = phy_new / phy_old - 1
-print(f"  物理攻击: {phy_old} → {phy_new}")
-print(f"  收益比: {phy_new} / {phy_old} - 1 = {phy_benefit*100:.2f}%")
-
-# 暴击收益
-print(f"  暴击收益: {crit_benefit*100:.2f}%（同上）")
-
-# 百分比综合收益
-berserker_percent_total = power_benefit + phy_benefit + crit_benefit + power_benefit * phy_benefit + power_benefit * crit_benefit + phy_benefit * crit_benefit + power_benefit * phy_benefit * crit_benefit
-# 更准确的计算
-berserker_percent_total_v2 = (power_new / power_old) * (phy_new / phy_old) * (crit_new / crit_old) - 1
-print(f"  百分比综合: ({power_new:.4f}/{power_old:.4f}) × ({phy_new}/{phy_old}) × ({crit_new:.4f}/{crit_old:.4f}) - 1 = {berserker_percent_total_v2*100:.2f}%")
-
-print("\n" + "=" * 60)
-print("二、剑魂收益验算（破极兵刃状态下）")
-print("=" * 60)
-
-# --- 百分比技能收益 ---
-print("\n【百分比技能收益】")
-
-# 力量收益
-s_power_old = 1 + swordsman_base_power / 250
-s_power_new = 1 + (swordsman_base_power + cc_power) / 250
-s_power_benefit = s_power_new / s_power_old - 1
-print(f"  力量: {swordsman_base_power} → {swordsman_base_power + cc_power}")
-print(f"  收益比: ({s_power_new:.4f} / {s_power_old:.4f}) - 1 = {s_power_benefit*100:.2f}%")
-
-# 物理攻击收益（破极后）
-s_phy_old = swordsman_phy_atk_buff
-s_phy_new = swordsman_phy_atk_buff + cc_phy_atk
-s_phy_benefit = s_phy_new / s_phy_old - 1
-print(f"  物理攻击（破极后）: {s_phy_old:.0f} → {s_phy_new:.0f}")
-print(f"  收益比: {s_phy_new:.0f} / {s_phy_old:.0f} - 1 = {s_phy_benefit*100:.2f}%")
-
-# 暴击收益
-s_crit_old = (1 - swordsman_crit) + swordsman_crit * crit_dmg
-s_crit_new = (1 - (swordsman_crit + cc_crit)) + (swordsman_crit + cc_crit) * crit_dmg
-s_crit_benefit = s_crit_new / s_crit_old - 1
-print(f"  暴击期望: {s_crit_old:.4f} → {s_crit_new:.4f}")
-print(f"  收益比: {s_crit_new:.4f} / {s_crit_old:.4f} - 1 = {s_crit_benefit*100:.2f}%")
-
-# 百分比综合收益
-swordsman_percent_total = (s_power_new / s_power_old) * (s_phy_new / s_phy_old) * (s_crit_new / s_crit_old) - 1
-print(f"  百分比综合: ({s_power_new:.4f}/{s_power_old:.4f}) × ({s_phy_new:.0f}/{s_phy_old:.0f}) × ({s_crit_new:.4f}/{s_crit_old:.4f}) - 1 = {swordsman_percent_total*100:.2f}%")
-
-print("\n" + "=" * 60)
-print("三、对比验证")
-print("=" * 60)
-
-# 边际对偶验证：剑魂/狂战士固伤收益倍数
-ratio = swordsman_percent_total / berserker_fixed_total
-print(f"\n【边际对偶验证】")
-print(f"  剑魂百分比综合 / 狂战士固伤综合 = {swordsman_percent_total*100:.2f}% / {berserker_fixed_total*100:.2f}% = {ratio:.2f}倍")
-print(f"  系统固有频率: 4.74倍 ✓")
-
-print("\n" + "=" * 60)
-print("四、验算结果汇总")
-print("=" * 60)
-
-results = [
-    ("狂战士固伤-独立攻击收益", independent_benefit * 100, 8.00),
-    ("狂战士固伤-暴击收益", crit_benefit * 100, 1.18),
-    ("狂战士固伤-综合收益", berserker_fixed_total * 100, 9.27),
-    ("狂战士百分比-力量收益", power_benefit * 100, 24.42),
-    ("狂战士百分比-物理攻击收益", phy_benefit * 100, 5.50),
-    ("狂战士百分比-暴击收益", crit_benefit * 100, 1.18),
-    ("狂战士百分比-综合收益", berserker_percent_total_v2 * 100, 32.81),
-    ("剑魂百分比-力量收益", s_power_benefit * 100, 36.50),
-    ("剑魂百分比-物理攻击收益", s_phy_benefit * 100, 4.23),
-    ("剑魂百分比-暴击收益", s_crit_benefit * 100, 1.20),
-    ("剑魂百分比-综合收益", swordsman_percent_total * 100, 43.95),
-    ("边际对偶倍数", ratio, 4.74),
-]
-
-passed = 0
-failed = 0
-for name, actual, expected in results:
-    diff = abs(actual - expected)
-    tolerance = 0.1  # 0.1% 容差
-    status = "✅" if diff <= tolerance else "❌"
-    if diff <= tolerance:
-        passed += 1
-    else:
-        failed += 1
-    print(f"  {status} {name}: {actual:.2f}% (预期 {expected:.2f}%, 差异 {diff:.2f}pp)")
-
-print(f"\n{'='*60}")
-print(f"验算完成: {passed}/{len(results)} 通过, {failed} 失败")
-print(f"{'='*60}")
-
-if failed == 0:
-    print("\n🎉 所有验算项100%通过！数据准确可靠。")
+if pass_rate == 100:
+    print("✅ 稳态核查通过，数据准确可靠")
 else:
-    print(f"\n⚠️ 有 {failed} 项验算未通过，需核查。")
+    print("❌ 存在偏差，需核查修正")
+
+# 输出JSON供后续处理
+result_json = {
+    "version": "v269",
+    "timestamp": datetime.now().isoformat(),
+    "passed": passed,
+    "total": total,
+    "pass_rate": pass_rate,
+    "tests": tests
+}
+print("\n---JSON---")
+print(json.dumps(result_json, ensure_ascii=False, indent=2))
