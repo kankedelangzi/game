@@ -1,0 +1,35 @@
+{
+  "version": "v225",
+  "timestamp": "2026-06-22 05:54 UTC",
+  "results": [
+    [
+      "CC\u5957\u57fa\u7840\u5c5e\u6027",
+      4,
+      4
+    ],
+    [
+      "\u72c2\u6218\u58eb\u56fa\u4f24\u6536\u76ca",
+      4,
+      4
+    ],
+    [
+      "\u72c2\u6218\u58eb\u767e\u5206\u6bd4\u6536\u76ca",
+      4,
+      4
+    ],
+    [
+      "\u5251\u9b42\u767e\u5206\u6bd4\u6536\u76ca",
+      5,
+      5
+    ],
+    [
+      "\u8fb9\u9645\u5bf9\u5076\u539f\u7406",
+      1,
+      1
+    ]
+  ],
+  "total_tests": 18,
+  "total_passed": 18,
+  "pass_rate": 100.0,
+  "status": "PASS"
+}
