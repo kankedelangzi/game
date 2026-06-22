@@ -1,0 +1,87 @@
+{
+  "timestamp": "2026-06-23T00:45:29.528949",
+  "version": "v248",
+  "all_pass": false,
+  "pass_rate": 0.9411764705882353,
+  "checks": [
+    {
+      "name": "Lv21\u51fa\u8840\u57fa\u7840\u503c",
+      "pass": true
+    },
+    {
+      "name": "\u65e0\u88c5\u5907\u51fa\u8840/\u79d2",
+      "pass": true
+    },
+    {
+      "name": "\u65e0\u88c5\u59075\u79d2\u603b\u4f24\u5bb3",
+      "pass": true
+    },
+    {
+      "name": "E2 6\u4ef6\u51fa\u8840/\u79d2",
+      "pass": true
+    },
+    {
+      "name": "E2 6\u4ef65\u79d2\u603b\u4f24\u5bb3",
+      "pass": true
+    },
+    {
+      "name": "\u6ee1\u914d\u51fa\u8840/\u79d2",
+      "pass": true
+    },
+    {
+      "name": "\u6ee1\u914d5\u79d2\u603b\u4f24\u5bb3",
+      "pass": true
+    },
+    {
+      "name": "\u9ad8\u9632BOSS\u7269\u7406\u4f24\u5bb3",
+      "pass": true
+    },
+    {
+      "name": "\u51fa\u8840/\u7269\u7406\u6bd4\u503c",
+      "pass": true
+    },
+    {
+      "name": "\u7a7f\u900f\u9632\u5fa1\u673a\u5236",
+      "pass": true
+    },
+    {
+      "name": "\u6280\u80fd\u5206\u7c7b\u6b63\u786e",
+      "pass": true
+    },
+    {
+      "name": "\u6b66\u5668\u7c7b\u578b\u6b63\u786e",
+      "pass": true
+    },
+    {
+      "name": "CC\u5957\u5c5e\u6027",
+      "pass": true
+    },
+    {
+      "name": "\u72c2\u6218\u58eb\u56fa\u4f24\u7efc\u5408",
+      "pass": true
+    },
+    {
+      "name": "\u72c2\u6218\u58eb\u767e\u5206\u6bd4\u7efc\u5408",
+      "pass": false
+    },
+    {
+      "name": "\u5251\u9b42\u767e\u5206\u6bd4\u7efc\u5408",
+      "pass": true
+    },
+    {
+      "name": "\u8fb9\u9645\u5bf9\u5076\u6bd4",
+      "pass": true
+    }
+  ],
+  "key_values": {
+    "lv21_base": 3800,
+    "no_equipment_dps": 4940.0,
+    "no_equipment_total": 24700.0,
+    "e2_dps": 5320.000000000001,
+    "full_dps": 5890.0,
+    "berserker_fixed_total": 0.09270588235294142,
+    "berserker_percent_total": 0.4567031141868516,
+    "swordsman_percent_total": 0.43951276018099583,
+    "marginal_dual": 4.740937133932049
+  }
+}
