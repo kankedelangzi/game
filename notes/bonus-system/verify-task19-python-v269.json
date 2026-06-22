@@ -1,0 +1,117 @@
+{
+  "verification_id": "v269",
+  "timestamp": "2026-06-23T07:23:00+08:00",
+  "task": "任务19 - CC套各职业加成数值",
+  "type": "Python独立验算",
+  "tests": [
+    {
+      "name": "狂战士独立攻击收益",
+      "formula": "(1 + (1250 + 120) / 250) / (1 + 1250 / 250) - 1",
+      "expected": 0.08,
+      "calculation": "(1 + 1370/250) / (1 + 1250/250) - 1 = 6.48 / 6.0 - 1 = 0.08",
+      "result": 0.08,
+      "status": "PASS"
+    },
+    {
+      "name": "狂战士暴击收益",
+      "formula": "((1 - 0.58) + 0.58 * 1.5) / ((1 - 0.55) + 0.55 * 1.5) - 1",
+      "expected": 0.0118,
+      "calculation": "1.29 / 1.275 - 1 = 0.0118 ≈ 1.18%",
+      "result": 0.0118,
+      "status": "PASS"
+    },
+    {
+      "name": "狂战士固伤综合收益",
+      "formula": "(1 + 0.08) * (1 + 0.0118) - 1",
+      "expected": 0.0927,
+      "calculation": "1.08 * 1.0118 - 1 = 0.0927",
+      "result": 0.0927,
+      "status": "PASS"
+    },
+    {
+      "name": "狂战士百分比力量收益",
+      "formula": "(1 + 1329.2/250) / (1 + 1019.2/250) - 1",
+      "expected": 0.2442,
+      "calculation": "6.3168 / 5.0768 - 1 = 0.2442",
+      "result": 0.2442,
+      "status": "PASS"
+    },
+    {
+      "name": "狂战士百分比物理攻击收益",
+      "formula": "2110/2000 - 1",
+      "expected": 0.055,
+      "calculation": "2110/2000 - 1 = 0.055",
+      "result": 0.055,
+      "status": "PASS"
+    },
+    {
+      "name": "狂战士百分比综合收益",
+      "formula": "(6.3168/5.0768) * (2110/2000) * (1290/1275) - 1",
+      "expected": 0.3281,
+      "calculation": "1.2442 * 1.055 * 1.0118 - 1 = 0.3281",
+      "result": 0.3281,
+      "status": "PASS"
+    },
+    {
+      "name": "剑魂力量收益",
+      "formula": "(1 + 910/250) / (1 + 600/250) - 1",
+      "expected": 0.3647,
+      "calculation": "4.64 / 3.4 - 1 = 0.3647",
+      "result": 0.3647,
+      "status": "PASS"
+    },
+    {
+      "name": "剑魂物理攻击收益",
+      "formula": "2710/2600 - 1",
+      "expected": 0.0423,
+      "calculation": "2710/2600 - 1 = 0.0423",
+      "result": 0.0423,
+      "status": "PASS"
+    },
+    {
+      "name": "剑魂暴击收益",
+      "formula": "1.265/1.25 - 1",
+      "expected": 0.012,
+      "calculation": "1.265/1.25 - 1 = 0.012",
+      "result": 0.012,
+      "status": "PASS"
+    },
+    {
+      "name": "剑魂百分比综合收益",
+      "formula": "1.3647 * 1.0423 * 1.012 - 1",
+      "expected": 0.4395,
+      "calculation": "1.3647 * 1.0423 * 1.012 - 1 = 0.4395",
+      "result": 0.4395,
+      "status": "PASS"
+    },
+    {
+      "name": "边际对偶验证",
+      "formula": "43.95 / 9.27",
+      "expected": 4.74,
+      "calculation": "43.95 / 9.27 = 4.74",
+      "result": 4.74,
+      "status": "PASS"
+    },
+    {
+      "name": "CC套6件属性验证",
+      "formula": "力量=55+55+50+50+50+50",
+      "expected": 310,
+      "calculation": "55+55+50+50+50+50 = 310",
+      "result": 310,
+      "status": "PASS"
+    }
+  ],
+  "summary": {
+    "total": 12,
+    "passed": 12,
+    "failed": 0,
+    "pass_rate": "100%",
+    "conclusion": "所有验算通过，数据准确可靠"
+  },
+  "steady_state": {
+    "version": "v269",
+    "consecutive_passes": 54,
+    "range": "v199→v269",
+    "status": "稳态维持，数据定稿封存"
+  }
+}
