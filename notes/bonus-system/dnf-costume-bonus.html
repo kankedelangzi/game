@@ -184,7 +184,7 @@
 <h3>4.2 各乘区收益计算（破极兵刃状态下）</h3>
 <table>
   <tr><th>乘区</th><th>CC套加成</th><th>收益比</th><th>说明</th></tr>
-  <tr class="swordsman"><td>力量</td><td>+310</td><td class="highlight">+36.5%</td><td>600→910，(1+910/250)/(1+600/250)-1</td></tr>
+  <tr class="swordsman"><td>力量</td><td>+310</td><td class="highlight">+36.47%</td><td>600→910，(1+910/250)/(1+600/250)-1 = 4.64/3.4-1 = 36.47%</td></tr>
   <tr class="swordsman"><td>物理攻击</td><td>+110</td><td class="highlight">+4.23%</td><td>2600→2710（破极后），2710/2600-1 = 4.23%（物理攻击为直接乘数）</td></tr>
   <tr class="swordsman"><td>暴击率</td><td>+3%</td><td class="highlight">+1.2%</td><td>50%→53%（期望伤害系数: 1.25→1.265）</td></tr>
   <tr><td><strong>百分比综合收益</strong></td><td>—</td><td class="highlight">+43.95%</td><td>乘区叠加</td></tr>
@@ -192,7 +192,7 @@
 
 <div class="note">
   <strong>📊 详细计算：</strong><br>
-  力量收益 = (1 + 910/250) / (1 + 600/250) - 1 = 4.64 / 3.4 - 1 = <strong>+36.5%</strong><br>
+  力量收益 = (1 + 910/250) / (1 + 600/250) - 1 = 4.64 / 3.4 - 1 = <strong>+36.47%</strong><br>
   物理攻击收益（破极后）= 2710/2600 - 1 = <strong>+4.23%</strong><br>
   暴击收益 = 1.265 / 1.25 - 1 = <strong>+1.2%</strong><br>
   百分比综合 = 1.3647 × 1.0423 × 1.012 - 1 = <strong>+43.95%</strong><br>
@@ -200,6 +200,7 @@
   ✅ 修正完成（v36最终精度）：暴击收益从+2.0%修正为+1.2%（期望伤害系数公式），百分比综合收益从+42.3%→+43.95%（Python精确验算确认）<br>
   ✅ v41最终确认：公式与结果一致，精确值43.95%四舍五入为+43.95%<br>
   ✅ v199修正（2026-06-20）：物理攻击收益公式修正，从+2.2%修正为+4.23%，百分比综合收益从+41.1%修正为+43.95%
+✅ v265精度修正（2026-06-23）：剑魂力量收益从+36.5%修正为+36.47%（Python精确验算：4.64/3.4-1=36.47%）
 </div>
 
 <h3>4.3 破极兵刃协同效应</h3>
@@ -246,7 +247,7 @@
   <tr><th>职业</th><th>主流流派</th><th>力量收益</th><th>物理攻击收益</th><th>独立攻击收益</th><th>暴击收益</th><th>综合收益</th></tr>
   <tr class="berserker"><td>狂战士</td><td>固伤流</td><td>0%</td><td>0%</td><td class="highlight">+8.0%</td><td class="highlight">+1.2%</td><td class="highlight">+9.27%</td></tr>
 <tr class="berserker"><td>狂战士</td><td>百分比流</td><td class="highlight">+24.42%</td><td class="highlight">+5.50%</td><td>0%</td><td class="highlight">+1.2%</td><td class="highlight">+32.81%</td></tr>
-  <tr class="swordsman"><td>剑魂</td><td>百分比流</td><td class="highlight">+36.5%</td><td class="highlight">+4.23%</td><td>0%</td><td class="highlight">+1.2%</td><td class="highlight">+43.95%</td></tr>
+  <tr class="swordsman"><td>剑魂</td><td>百分比流</td><td class="highlight">+36.47%</td><td class="highlight">+4.23%</td><td>0%</td><td class="highlight">+1.2%</td><td class="highlight">+43.95%</td></tr>
 </table>
 
 <div class="note">
