@@ -1,0 +1,98 @@
+{
+  "timestamp": "2026-06-23T06:07:55.899838",
+  "version": "v265",
+  "total": 15,
+  "passed": 15,
+  "results": [
+    {
+      "name": "独立攻击收益（狂战士固伤）",
+      "calculated": "8.00%",
+      "expected": "+8.00%",
+      "passed": true
+    },
+    {
+      "name": "暴击收益（狂战士固伤）",
+      "calculated": "1.18%",
+      "expected": "+1.18%",
+      "passed": true
+    },
+    {
+      "name": "固伤综合收益",
+      "calculated": "9.27%",
+      "expected": "+9.27%",
+      "passed": true
+    },
+    {
+      "name": "力量收益（狂战士百分比）",
+      "calculated": "24.42%",
+      "expected": "+24.42%",
+      "passed": true
+    },
+    {
+      "name": "物理攻击收益（狂战士百分比）",
+      "calculated": "5.50%",
+      "expected": "+5.50%",
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比综合收益",
+      "calculated": "32.81%",
+      "expected": "+32.81%",
+      "passed": true
+    },
+    {
+      "name": "力量收益（剑魂百分比）",
+      "calculated": "36.47%",
+      "expected": "+36.47%",
+      "passed": true
+    },
+    {
+      "name": "物理攻击收益（剑魂百分比）",
+      "calculated": "4.23%",
+      "expected": "+4.23%",
+      "passed": true
+    },
+    {
+      "name": "暴击收益（剑魂）",
+      "calculated": "1.20%",
+      "expected": "+1.20%",
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比综合收益",
+      "calculated": "43.95%",
+      "expected": "+43.95%",
+      "passed": true
+    },
+    {
+      "name": "边际对偶验证（剑魂固伤/百分比倍数）",
+      "calculated": "4.74倍",
+      "expected": "≈4.74倍",
+      "passed": true
+    },
+    {
+      "name": "胸部力量验证",
+      "calculated": "50",
+      "expected": "50",
+      "passed": true
+    },
+    {
+      "name": "6件总力量验证",
+      "calculated": "310",
+      "expected": "310",
+      "passed": true
+    },
+    {
+      "name": "6件总物理攻击验证",
+      "calculated": "110",
+      "expected": "110",
+      "passed": true
+    },
+    {
+      "name": "6件总独立攻击验证",
+      "calculated": "120",
+      "expected": "120",
+      "passed": true
+    }
+  ]
+}
