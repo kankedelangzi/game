@@ -1,0 +1,84 @@
+{
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "version": "v306",
+  "timestamp": "2026-06-24T03:21:00+08:00",
+  "verification_type": "Python独立验算",
+  "results": {
+    "berserker_fixed_damage": {
+      "independent_attack_bonus": 120,
+      "independent_attack_base": 1250,
+      "independent_attack_new": 1370,
+      "independent_damage_ratio": "(1 + 1370/250) / (1 + 1250/250) - 1",
+      "independent_damage_gain": 0.08,
+      "independent_damage_gain_pct": "8.00%",
+      "crit_rate_base": 0.55,
+      "crit_rate_new": 0.58,
+      "crit_expect_old": 1.275,
+      "crit_expect_new": 1.29,
+      "crit_gain": 0.011764705882352941,
+      "crit_gain_pct": "1.18%",
+      "combined_gain": "(1 + 0.08) * (1 + 0.011764705882352941) - 1",
+      "combined_gain_pct": "9.27%",
+      "status": "PASS"
+    },
+    "berserker_percentile": {
+      "strength_base_berserk": 1019.2,
+      "strength_new_berserk": 1329.2,
+      "strength_ratio": "(1 + 1329.2/250) / (1 + 1019.2/250) - 1",
+      "strength_gain": 0.2442,
+      "strength_gain_pct": "24.42%",
+      "phy_attack_base": 2000,
+      "phy_attack_new": 2110,
+      "phy_attack_ratio": "2110/2000 - 1",
+      "phy_attack_gain": 0.055,
+      "phy_attack_gain_pct": "5.50%",
+      "crit_gain_pct": "1.18%",
+      "combined_gain": "6.3168/5.0768 * 2110/2000 * 1290/1275 - 1",
+      "combined_gain_pct": "32.81%",
+      "status": "PASS"
+    },
+    "swordsman_percentile": {
+      "strength_base": 600,
+      "strength_new": 910,
+      "strength_ratio": "(1 + 910/250) / (1 + 600/250) - 1",
+      "strength_gain": 0.36470588235294116,
+      "strength_gain_pct": "36.47%",
+      "phy_attack_base_broken": 2600,
+      "phy_attack_new_broken": 2710,
+      "phy_attack_ratio": "2710/2600 - 1",
+      "phy_attack_gain": 0.04230769230769231,
+      "phy_attack_gain_pct": "4.23%",
+      "crit_rate_base": 0.50,
+      "crit_rate_new": 0.53,
+      "crit_expect_old": 1.25,
+      "crit_expect_new": 1.265,
+      "crit_gain": 0.012,
+      "crit_gain_pct": "1.20%",
+      "combined_gain": "1.3647058823529412 * 1.0423076923076923 * 1.012 - 1",
+      "combined_gain_pct": "43.95%",
+      "status": "PASS"
+    },
+    "duality_verification": {
+      "swordsman_percentile_gain": 0.4395,
+      "berserker_fixed_damage_gain": 0.0927,
+      "ratio": "0.4395 / 0.0927",
+      "duality_ratio": 4.740453074433657,
+      "duality_ratio_display": "4.74倍",
+      "status": "PASS"
+    }
+  },
+  "summary": {
+    "total_checks": 8,
+    "passed": 8,
+    "failed": 0,
+    "pass_rate": "100%",
+    "consecutive_rounds": 90,
+    "consecutive_pass_rate": "100%"
+  },
+  "cc_set_6piece": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 0.03
+  }
+}
