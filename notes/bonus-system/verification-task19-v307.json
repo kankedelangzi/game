@@ -1,0 +1,80 @@
+{
+  "task": 19,
+  "type": "steady_state_verification",
+  "version": "v307",
+  "timestamp": "2026-06-24T03:41:33.584026",
+  "passed": 10,
+  "total": 10,
+  "details": [
+    {
+      "name": "狂战士固伤-独立攻击收益",
+      "actual": "8.00%",
+      "expected": "+8.00%",
+      "ok": true
+    },
+    {
+      "name": "狂战士固伤-暴击收益",
+      "actual": "1.18%",
+      "expected": "+1.20%",
+      "ok": true
+    },
+    {
+      "name": "狂战士固伤-综合收益",
+      "actual": "9.27%",
+      "expected": "+9.27%",
+      "ok": true
+    },
+    {
+      "name": "狂战士百分比-力量收益",
+      "actual": "24.42%",
+      "expected": "+24.42%",
+      "ok": true
+    },
+    {
+      "name": "狂战士百分比-物理攻击收益",
+      "actual": "5.50%",
+      "expected": "+5.50%",
+      "ok": true
+    },
+    {
+      "name": "狂战士百分比-综合收益",
+      "actual": "32.81%",
+      "expected": "+32.81%",
+      "ok": true
+    },
+    {
+      "name": "剑魂百分比-力量收益",
+      "actual": "36.47%",
+      "expected": "+36.47%",
+      "ok": true
+    },
+    {
+      "name": "剑魂百分比-物理攻击收益",
+      "actual": "4.23%",
+      "expected": "+4.23%",
+      "ok": true
+    },
+    {
+      "name": "剑魂百分比-综合收益",
+      "actual": "43.95%",
+      "expected": "+43.95%",
+      "ok": true
+    },
+    {
+      "name": "边际对偶倍数",
+      "actual": "4.74倍",
+      "expected": "4.74倍",
+      "ok": true
+    }
+  ],
+  "summary": {
+    "berserker_fixed_gain": 9.27,
+    "berserker_percent_gain": 32.81,
+    "swordsman_percent_gain": 43.95,
+    "marginal_duality_ratio": 4.74,
+    "steady_state_round": 307,
+    "consecutive_pass": 91,
+    "verification_script": "scripts/verify_task19_cc_bonus.py",
+    "note": "v307修正验证脚本逻辑：固伤综合仅包含独立攻击+暴击，不包含力量（固伤不受力量影响）"
+  }
+}
