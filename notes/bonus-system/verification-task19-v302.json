@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-06-24T01:58:17.637376",
+  "round": 302,
+  "total_checks": 15,
+  "passed": 15,
+  "failed": 0,
+  "pass_rate": "100.0%",
+  "core_data": {
+    "cc_6piece": {
+      "力量": 310,
+      "物理攻击": 110,
+      "独立攻击": 120,
+      "暴击": 3.0
+    },
+    "berserker_fixed": "9.27%",
+    "berserker_percent": "32.81%",
+    "swordsman_percent": "43.95%",
+    "marginal_dual_ratio": "4.74倍"
+  }
+}
