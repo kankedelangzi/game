@@ -1,0 +1,49 @@
+{
+  "verification_id": "v272",
+  "timestamp": "2026-06-23T09:20:31.914766",
+  "task": "\u4efb\u52a119 - CC\u5957\u5404\u804c\u4e1a\u52a0\u6210\u6570\u503c",
+  "verification_type": "Python\u72ec\u7acb\u9a8c\u7b97",
+  "results": {
+    "cc_set_attributes": {
+      "power": 310,
+      "phy_atk": 110,
+      "independent": 120,
+      "crit": 3.0,
+      "status": "PASS"
+    },
+    "berserker_fissure": {
+      "independent_gain": 8.0,
+      "crit_gain": 1.18,
+      "total": 9.27,
+      "expected": 9.27,
+      "status": "PASS"
+    },
+    "berserker_percent": {
+      "power_gain": 24.42,
+      "phy_gain": 5.5,
+      "crit_gain": 1.18,
+      "total": 32.81,
+      "expected": 32.81,
+      "status": "PASS"
+    },
+    "swordsman_percent": {
+      "power_gain": 36.47,
+      "phy_gain": 4.23,
+      "crit_gain": 1.2,
+      "total": 43.95,
+      "expected": 43.95,
+      "status": "PASS"
+    },
+    "marginal_dual": {
+      "ratio": 4.74,
+      "expected": 4.74,
+      "status": "PASS"
+    }
+  },
+  "summary": {
+    "passed": 5,
+    "total": 5,
+    "pass_rate": "100.0%"
+  },
+  "status": "PASS"
+}
