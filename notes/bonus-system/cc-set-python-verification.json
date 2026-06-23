@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-06-23T22:00:00+08:00",
+  "cc_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker": {
+    "fixed_damage_benefit": 9.2706,
+    "percent_damage_benefit": 32.8125
+  },
+  "swordsman": {
+    "percent_damage_benefit": 43.9513
+  },
+  "marginal_dual_ratio": 4.7409,
+  "all_pass": true
+}
