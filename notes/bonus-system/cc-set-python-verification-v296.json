@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-06-24T00:57:00.000000",
+  "test_type": "CC套各职业加成数值独立验算",
+  "results": {
+    "berserker_fixed": {
+      "independent_gain": 8.0,
+      "crit_gain": 1.18,
+      "total_gain": 9.27
+    },
+    "berserker_percent": {
+      "power_gain": 24.42,
+      "phy_atk_gain": 5.5,
+      "crit_gain": 1.18,
+      "total_gain": 32.81
+    },
+    "swordsman_percent": {
+      "power_gain": 36.47,
+      "phy_atk_gain": 4.23,
+      "crit_gain": 1.2,
+      "total_gain": 43.95
+    },
+    "marginal_duality": {
+      "ratio": 4.74,
+      "expected": 4.74,
+      "confirmed": true
+    }
+  },
+  "all_pass": true,
+  "summary": {
+    "berserker_fixed_gain": 9.27,
+    "berserker_percent_gain": 32.81,
+    "swordsman_percent_gain": 43.95,
+    "marginal_duality_ratio": 4.74,
+    "steady_state_round": 296,
+    "consecutive_pass": 81
+  }
+}
