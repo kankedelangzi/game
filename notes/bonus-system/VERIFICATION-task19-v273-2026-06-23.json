@@ -1,0 +1,115 @@
+{
+  "version": "v273",
+  "date": "2026-06-23T10:13:00+08:00",
+  "total": 15,
+  "passed": 15,
+  "failed": 0,
+  "pass_rate": "100.0%",
+  "results": [
+    {
+      "name": "力量合计",
+      "expected": 310,
+      "actual": 310,
+      "diff_pp": 0.0,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "物理攻击合计",
+      "expected": 110,
+      "actual": 110,
+      "diff_pp": 0.0,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "独立攻击合计",
+      "expected": 120,
+      "actual": 120,
+      "diff_pp": 0.0,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "暴击率合计",
+      "expected": 3.0,
+      "actual": 3.0,
+      "diff_pp": 0.0,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "狂战士-独立攻击收益",
+      "expected": 8.0,
+      "actual": 8.0,
+      "diff_pp": 0.0,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "狂战士-暴击收益",
+      "expected": 1.18,
+      "actual": 1.1765,
+      "diff_pp": 0.3,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "狂战士-固伤综合收益",
+      "expected": 9.27,
+      "actual": 9.2706,
+      "diff_pp": 0.01,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "狂战士-力量收益",
+      "expected": 24.42,
+      "actual": 24.4248,
+      "diff_pp": 0.02,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "狂战士-物理攻击收益",
+      "expected": 5.5,
+      "actual": 5.5,
+      "diff_pp": 0.0,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "狂战士-百分比综合收益",
+      "expected": 32.81,
+      "actual": 32.8125,
+      "diff_pp": 0.01,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "剑魂-力量收益",
+      "expected": 36.47,
+      "actual": 36.4706,
+      "diff_pp": 0.0,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "剑魂-物理攻击收益",
+      "expected": 4.23,
+      "actual": 4.2308,
+      "diff_pp": 0.02,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "剑魂-暴击收益",
+      "expected": 1.2,
+      "actual": 1.2,
+      "diff_pp": 0.0,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "剑魂-百分比综合收益",
+      "expected": 43.95,
+      "actual": 43.9513,
+      "diff_pp": 0.0,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "剑魂百分比/狂战士固伤收益倍数",
+      "expected": 4.74,
+      "actual": 4.7409,
+      "diff_pp": 0.02,
+      "status": "✅ PASS"
+    }
+  ]
+}
