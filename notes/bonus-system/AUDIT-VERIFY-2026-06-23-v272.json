@@ -1,0 +1,105 @@
+{
+  "verification_id": "v272-audit",
+  "timestamp": "2026-06-23T09:58:00",
+  "task": "任务19 - CC套各职业加成数值",
+  "verification_type": "独立交叉验证",
+  "results": [
+    {
+      "name": "CC套6件力量",
+      "expected": 310,
+      "actual": 310,
+      "status": "PASS"
+    },
+    {
+      "name": "CC套6件物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "status": "PASS"
+    },
+    {
+      "name": "CC套6件独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "status": "PASS"
+    },
+    {
+      "name": "CC套6件暴击率",
+      "expected": 3.0,
+      "actual": 3.0,
+      "status": "PASS"
+    },
+    {
+      "name": "狂战士独立攻击收益",
+      "expected": 8.0,
+      "actual": 8.0,
+      "status": "PASS"
+    },
+    {
+      "name": "狂战士暴击收益",
+      "expected": 1.18,
+      "actual": 1.1765,
+      "status": "PASS"
+    },
+    {
+      "name": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.2706,
+      "status": "PASS"
+    },
+    {
+      "name": "狂战士力量收益(暴走后)",
+      "expected": 24.42,
+      "actual": 24.4248,
+      "status": "PASS"
+    },
+    {
+      "name": "狂战士物理攻击收益",
+      "expected": 5.5,
+      "actual": 5.5,
+      "status": "PASS"
+    },
+    {
+      "name": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.8125,
+      "status": "PASS"
+    },
+    {
+      "name": "剑魂力量收益",
+      "expected": 36.47,
+      "actual": 36.4706,
+      "status": "PASS"
+    },
+    {
+      "name": "剑魂物理攻击收益(破极后)",
+      "expected": 4.23,
+      "actual": 4.2308,
+      "status": "PASS"
+    },
+    {
+      "name": "剑魂暴击收益",
+      "expected": 1.2,
+      "actual": 1.2,
+      "status": "PASS"
+    },
+    {
+      "name": "剑魂百分比综合",
+      "expected": 43.95,
+      "actual": 43.9513,
+      "status": "PASS"
+    },
+    {
+      "name": "剑魂百分比/狂战士固伤倍数",
+      "expected": 4.74,
+      "actual": 4.7409,
+      "status": "PASS"
+    }
+  ],
+  "summary": {
+    "passed": 33,
+    "failed": 0,
+    "total": 33,
+    "pass_rate": "100.0%"
+  },
+  "status": "PASS"
+}
