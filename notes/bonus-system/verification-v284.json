@@ -1,0 +1,90 @@
+{
+  "version": "v284",
+  "timestamp": "2026-06-23T20:10:00+08:00",
+  "passed": 16,
+  "failed": 0,
+  "total": 16,
+  "rate": 1.0,
+  "results": [
+    {
+      "name": "狂战士固伤-独立攻击",
+      "actual": 8.0,
+      "expected": 8.0
+    },
+    {
+      "name": "狂战士固伤-暴击",
+      "actual": 1.1765,
+      "expected": 1.18
+    },
+    {
+      "name": "狂战士固伤综合",
+      "actual": 9.2706,
+      "expected": 9.27
+    },
+    {
+      "name": "狂战士百分比-力量",
+      "actual": 24.4248,
+      "expected": 24.42
+    },
+    {
+      "name": "狂战士百分比-物理攻击",
+      "actual": 5.5,
+      "expected": 5.5
+    },
+    {
+      "name": "狂战士百分比-暴击",
+      "actual": 1.1765,
+      "expected": 1.18
+    },
+    {
+      "name": "狂战士百分比综合",
+      "actual": 32.8125,
+      "expected": 32.81
+    },
+    {
+      "name": "剑魂百分比-力量",
+      "actual": 36.4706,
+      "expected": 36.47
+    },
+    {
+      "name": "剑魂百分比-物理攻击",
+      "actual": 4.2308,
+      "expected": 4.23
+    },
+    {
+      "name": "剑魂百分比-暴击",
+      "actual": 1.2,
+      "expected": 1.2
+    },
+    {
+      "name": "剑魂百分比综合",
+      "actual": 43.9513,
+      "expected": 43.95
+    },
+    {
+      "name": "边际对偶倍数",
+      "actual": 474.0937,
+      "expected": 474.0
+    },
+    {
+      "name": "CC套力量",
+      "actual": 31000,
+      "expected": 31000
+    },
+    {
+      "name": "CC套物理攻击",
+      "actual": 11000,
+      "expected": 11000
+    },
+    {
+      "name": "CC套独立攻击",
+      "actual": 12000,
+      "expected": 12000
+    },
+    {
+      "name": "CC套暴击",
+      "actual": 3.0,
+      "expected": 3.0
+    }
+  ]
+}
