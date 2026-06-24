@@ -1,0 +1,96 @@
+{
+  "timestamp": "2026-06-24T12:23:00+08:00",
+  "verifications": [
+    {
+      "item": "CC套力量合计",
+      "computed": 310,
+      "reported": 310,
+      "pass": true
+    },
+    {
+      "item": "CC套物理攻击合计",
+      "computed": 110,
+      "reported": 110,
+      "pass": true
+    },
+    {
+      "item": "CC套独立攻击合计",
+      "computed": 120,
+      "reported": 120,
+      "pass": true
+    },
+    {
+      "item": "CC套暴击合计",
+      "computed": 3.0,
+      "reported": 3.0,
+      "pass": true
+    },
+    {
+      "item": "狂战士独立收益",
+      "computed": "8.00%",
+      "reported": "+8.0%",
+      "pass": true
+    },
+    {
+      "item": "狂战士暴击收益",
+      "computed": "1.18%",
+      "reported": "+1.2%",
+      "pass": true
+    },
+    {
+      "item": "狂战士固伤综合",
+      "computed": "9.27%",
+      "reported": "+9.27%",
+      "pass": true
+    },
+    {
+      "item": "狂战士力量收益",
+      "computed": "24.42%",
+      "reported": "+24.42%",
+      "pass": true
+    },
+    {
+      "item": "狂战士物理攻击收益",
+      "computed": "5.50%",
+      "reported": "+5.50%",
+      "pass": true
+    },
+    {
+      "item": "狂战士百分比综合",
+      "computed": "32.81%",
+      "reported": "+32.81%",
+      "pass": true
+    },
+    {
+      "item": "剑魂力量收益",
+      "computed": "36.47%",
+      "reported": "+36.47%",
+      "pass": true
+    },
+    {
+      "item": "剑魂物理攻击收益",
+      "computed": "4.23%",
+      "reported": "+4.23%",
+      "pass": true
+    },
+    {
+      "item": "剑魂暴击收益",
+      "computed": "1.20%",
+      "reported": "+1.2%",
+      "pass": true
+    },
+    {
+      "item": "剑魂百分比综合",
+      "computed": "43.9513%",
+      "reported": "+43.95%",
+      "pass": true
+    },
+    {
+      "item": "边际对偶倍数",
+      "computed": "4.74",
+      "reported": "4.74",
+      "pass": true
+    }
+  ],
+  "summary": "15/15 通过"
+}
