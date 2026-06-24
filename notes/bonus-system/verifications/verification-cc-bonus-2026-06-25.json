@@ -1,14 +1,90 @@
 {
-  "timestamp": "2026-06-25T04:44:29.315986",
+  "timestamp": "2026-06-25T04:49:08.676471",
   "version": "v382",
-  "cc_set": {
-    "power": 310,
-    "physical_attack": 110,
-    "independent_attack": 120,
-    "crit_rate": "3%"
-  },
-  "berserker_fix\u7efc\u5408": 0.092706,
-  "berserker_pct\u7efc\u5408": 0.328125,
-  "swordsman_pct\u7efc\u5408": 0.439513,
-  "marginal_dual": 4.740937
+  "total_checks": 16,
+  "passed": 16,
+  "pass_rate": "100%",
+  "results": [
+    {
+      "name": "6件力量合计",
+      "passed": true,
+      "detail": "310 == 310"
+    },
+    {
+      "name": "6件物理攻击合计",
+      "passed": true,
+      "detail": "110 == 110"
+    },
+    {
+      "name": "6件独立攻击合计",
+      "passed": true,
+      "detail": "120 == 120"
+    },
+    {
+      "name": "6件暴击率合计",
+      "passed": true,
+      "detail": "3.0% == 3%"
+    },
+    {
+      "name": "狂战士独立攻击收益",
+      "passed": true,
+      "detail": "8.00% ≈ 8.0%"
+    },
+    {
+      "name": "狂战士暴击收益",
+      "passed": true,
+      "detail": "1.18% ≈ 1.18%"
+    },
+    {
+      "name": "狂战士固伤综合收益",
+      "passed": true,
+      "detail": "9.27% ≈ 9.27%"
+    },
+    {
+      "name": "狂战士力量收益",
+      "passed": true,
+      "detail": "24.42% ≈ 24.42%"
+    },
+    {
+      "name": "狂战士物理攻击收益",
+      "passed": true,
+      "detail": "5.50% ≈ 5.50%"
+    },
+    {
+      "name": "狂战士百分比综合收益",
+      "passed": true,
+      "detail": "32.81% ≈ 32.81%"
+    },
+    {
+      "name": "剑魂力量收益",
+      "passed": true,
+      "detail": "36.47% ≈ 36.47%"
+    },
+    {
+      "name": "剑魂物理攻击收益",
+      "passed": true,
+      "detail": "4.23% ≈ 4.23%"
+    },
+    {
+      "name": "剑魂暴击收益",
+      "passed": true,
+      "detail": "1.20% ≈ 1.2%"
+    },
+    {
+      "name": "剑魂百分比综合收益",
+      "passed": true,
+      "detail": "43.95% ≈ 43.95%"
+    },
+    {
+      "name": "边际对偶倍数",
+      "passed": true,
+      "detail": "4.740937 ≈ 4.7409"
+    },
+    {
+      "name": "边际对偶精确值",
+      "passed": true,
+      "detail": "4.740937"
+    }
+  ],
+  "marginal_dual_exact": 4.740937133932049
 }
