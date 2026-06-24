@@ -1,90 +1,88 @@
 {
-  "timestamp": "2026-06-25T04:49:08.676471",
-  "version": "v382",
-  "total_checks": 16,
-  "passed": 16,
-  "pass_rate": "100%",
-  "results": [
-    {
-      "name": "6件力量合计",
-      "passed": true,
-      "detail": "310 == 310"
+  "task": "任务19 - CC套各职业加成数值",
+  "timestamp": "2026-06-25T04:54:05.121589",
+  "version": "v383",
+  "results": {
+    "cc_6piece_power": {
+      "expected": 310,
+      "actual": 310,
+      "pass": true
     },
-    {
-      "name": "6件物理攻击合计",
-      "passed": true,
-      "detail": "110 == 110"
+    "cc_6piece_phy_atk": {
+      "expected": 110,
+      "actual": 110,
+      "pass": true
     },
-    {
-      "name": "6件独立攻击合计",
-      "passed": true,
-      "detail": "120 == 120"
+    "cc_6piece_independent": {
+      "expected": 120,
+      "actual": 120,
+      "pass": true
     },
-    {
-      "name": "6件暴击率合计",
-      "passed": true,
-      "detail": "3.0% == 3%"
+    "cc_6piece_crit": {
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
     },
-    {
-      "name": "狂战士独立攻击收益",
-      "passed": true,
-      "detail": "8.00% ≈ 8.0%"
+    "berserker_ind_gain": {
+      "expected": 8.0,
+      "actual": 8.0,
+      "pass": true
     },
-    {
-      "name": "狂战士暴击收益",
-      "passed": true,
-      "detail": "1.18% ≈ 1.18%"
+    "berserker_crit_gain": {
+      "expected": 1.18,
+      "actual": 1.18,
+      "pass": true
     },
-    {
-      "name": "狂战士固伤综合收益",
-      "passed": true,
-      "detail": "9.27% ≈ 9.27%"
+    "berserker_juggernaut_total": {
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
     },
-    {
-      "name": "狂战士力量收益",
-      "passed": true,
-      "detail": "24.42% ≈ 24.42%"
+    "berserker_pow_gain": {
+      "expected": 24.42,
+      "actual": 24.42,
+      "pass": true
     },
-    {
-      "name": "狂战士物理攻击收益",
-      "passed": true,
-      "detail": "5.50% ≈ 5.50%"
+    "berserker_phy_gain": {
+      "expected": 5.5,
+      "actual": 5.5,
+      "pass": true
     },
-    {
-      "name": "狂战士百分比综合收益",
-      "passed": true,
-      "detail": "32.81% ≈ 32.81%"
+    "berserker_percent_total": {
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
     },
-    {
-      "name": "剑魂力量收益",
-      "passed": true,
-      "detail": "36.47% ≈ 36.47%"
+    "swordsman_pow_gain": {
+      "expected": 36.47,
+      "actual": 36.47,
+      "pass": true
     },
-    {
-      "name": "剑魂物理攻击收益",
-      "passed": true,
-      "detail": "4.23% ≈ 4.23%"
+    "swordsman_phy_gain": {
+      "expected": 4.23,
+      "actual": 4.23,
+      "pass": true
     },
-    {
-      "name": "剑魂暴击收益",
-      "passed": true,
-      "detail": "1.20% ≈ 1.2%"
+    "swordsman_crit_gain": {
+      "expected": 1.2,
+      "actual": 1.2,
+      "pass": true
     },
-    {
-      "name": "剑魂百分比综合收益",
-      "passed": true,
-      "detail": "43.95% ≈ 43.95%"
+    "swordsman_percent_total": {
+      "expected": 43.95,
+      "actual": 43.95,
+      "pass": true
     },
-    {
-      "name": "边际对偶倍数",
-      "passed": true,
-      "detail": "4.740937 ≈ 4.7409"
-    },
-    {
-      "name": "边际对偶精确值",
-      "passed": true,
-      "detail": "4.740937"
+    "marginal_dual": {
+      "expected": 4.7409,
+      "actual": 4.7409,
+      "pass": true
     }
-  ],
-  "marginal_dual_exact": 4.740937133932049
+  },
+  "summary": {
+    "passed": 15,
+    "total": 15,
+    "pass_rate": "100%",
+    "marginal_dual_exact": 4.740937
+  }
 }
