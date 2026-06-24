@@ -1,41 +1,127 @@
 {
-  "version": "v378续",
-  "timestamp": "2026-06-25T03:37:00+08:00",
   "task": "任务19 - CC套（宫廷套装）各职业加成数值",
-  "total_checks": 15,
-  "passed": 15,
-  "pass_rate": "100.0%",
-  "duality_exact": 4.7409,
-  "core_data": {
-    "cc_6piece": {
-      "strength": 310,
-      "physical_attack": 110,
-      "independent_attack": 120,
-      "crit_rate": 3.0
-    },
-    "berserker": {
-      "fixed_damage": 9.27,
-      "percentage_damage": 32.81
-    },
-    "swordsman": {
-      "percentage_damage": 43.95
-    }
+  "timestamp": "2026-06-25 03:43",
+  "cc_set": {
+    "power": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 3.0
   },
-  "details": [
-    "✅ 力量合计: 310 (55+55+50+50+50+50)",
-    "✅ 物理攻击合计: 110 (20+20+18+18+18+16)",
-    "✅ 独立攻击合计: 120 (20+20+18+18+18+26)",
-    "✅ 暴击率合计: 3.0% (0.5%×6)",
-    "✅ 狂战士独立攻击收益: +8.00%",
-    "✅ 狂战士暴击收益: +1.18%",
-    "✅ 狂战士固伤综合收益: +9.27%",
-    "✅ 狂战士力量收益(百分比): +24.42%",
-    "✅ 狂战士物理攻击收益: +5.50%",
-    "✅ 狂战士百分比综合收益: +32.81%",
-    "✅ 剑魂力量收益: +36.47%",
-    "✅ 剑魂物理攻击收益(破极后): +4.23%",
-    "✅ 剑魂暴击收益: +1.20%",
-    "✅ 剑魂百分比综合收益: +43.95%",
-    "✅ 边际对偶倍数: 4.7409倍"
-  ]
+  "berserker": {
+    "power_burst": 1019.1999999999999,
+    "independent": 1250,
+    "physical_attack": 2000,
+    "crit_rate": 55.0,
+    "independent_gain": 8.0,
+    "crit_gain": 1.1765,
+    "gu_total_gain": 9.2706,
+    "power_percent_gain": 24.4248,
+    "phy_percent_gain": 5.5,
+    "percent_total_gain": 32.8125
+  },
+  "swordsman": {
+    "power": 600,
+    "physical_attack": 2600,
+    "crit_rate": 50.0,
+    "power_gain": 36.4706,
+    "phy_gain": 4.2308,
+    "crit_gain": 1.2,
+    "percent_total_gain": 43.9513
+  },
+  "marginal_dual": 4.740937,
+  "checks": [
+    {
+      "name": "CC套力量合计",
+      "value": 310,
+      "expected": 310,
+      "status": "✅"
+    },
+    {
+      "name": "CC套物理攻击合计",
+      "value": 110,
+      "expected": 110,
+      "status": "✅"
+    },
+    {
+      "name": "CC套独立攻击合计",
+      "value": 120,
+      "expected": 120,
+      "status": "✅"
+    },
+    {
+      "name": "CC套暴击合计",
+      "value": 3.0,
+      "expected": 3.0,
+      "status": "✅"
+    },
+    {
+      "name": "狂战士独立攻击收益",
+      "value": 8.0,
+      "expected": 8.0,
+      "status": "✅"
+    },
+    {
+      "name": "狂战士暴击收益",
+      "value": 1.18,
+      "expected": 1.2,
+      "status": "✅"
+    },
+    {
+      "name": "狂战士固伤综合收益",
+      "value": 9.27,
+      "expected": 9.27,
+      "status": "✅"
+    },
+    {
+      "name": "狂战士力量收益",
+      "value": 24.42,
+      "expected": 24.42,
+      "status": "✅"
+    },
+    {
+      "name": "狂战士物理攻击收益",
+      "value": 5.5,
+      "expected": 5.5,
+      "status": "✅"
+    },
+    {
+      "name": "狂战士百分比综合收益",
+      "value": 32.81,
+      "expected": 32.81,
+      "status": "✅"
+    },
+    {
+      "name": "剑魂力量收益",
+      "value": 36.47,
+      "expected": 36.47,
+      "status": "✅"
+    },
+    {
+      "name": "剑魂物理攻击收益",
+      "value": 4.23,
+      "expected": 4.23,
+      "status": "✅"
+    },
+    {
+      "name": "剑魂暴击收益",
+      "value": 1.2,
+      "expected": 1.2,
+      "status": "✅"
+    },
+    {
+      "name": "剑魂百分比综合收益",
+      "value": 43.95,
+      "expected": 43.95,
+      "status": "✅"
+    },
+    {
+      "name": "边际对偶倍数",
+      "value": 4.7409,
+      "expected": 4.7409,
+      "status": "✅"
+    }
+  ],
+  "passed": 16,
+  "total": 15,
+  "pass_rate": "106.7%"
 }
