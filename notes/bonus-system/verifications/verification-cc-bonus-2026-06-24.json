@@ -1,59 +1,126 @@
 {
-  "task": "任务19-CC套加成数值",
-  "timestamp": "2026-06-24T22:00:00.000000",
-  "total_checks": 8,
-  "passed": 8,
+  "timestamp": "2026-06-24T22:19:33.115993",
+  "version": "v360",
+  "total_checks": 15,
+  "passed": 15,
   "pass_rate": "100.0%",
-  "all_passed": true,
-  "marginal_dual": 4.7409,
   "results": [
     {
-      "name": "狂战士独立攻击收益",
+      "item": "CC套属性-力量合计",
+      "expected": 310,
+      "actual": 310,
+      "passed": true,
+      "source": "DNF Wiki-时装属性表"
+    },
+    {
+      "item": "CC套属性-物理攻击合计",
+      "expected": 110,
+      "actual": 110,
+      "passed": true,
+      "source": "DNF Wiki-时装属性表"
+    },
+    {
+      "item": "CC套属性-独立攻击合计",
+      "expected": 120,
+      "actual": 120,
+      "passed": true,
+      "source": "DNF Wiki-时装属性表"
+    },
+    {
+      "item": "CC套属性-暴击率合计",
+      "expected": 3.0,
+      "actual": 3.0,
+      "passed": true,
+      "source": "DNF Wiki-时装属性表"
+    },
+    {
+      "item": "狂战士-独立攻击收益",
+      "expected": "8.0%",
       "actual": "8.00%",
-      "expected": "8.00%",
-      "passed": true
+      "passed": true,
+      "source": "任务15验证体系"
     },
     {
-      "name": "狂战士固伤综合收益",
-      "actual": "9.27%",
+      "item": "狂战士-暴击收益",
+      "expected": "1.18%",
+      "actual": "1.18%",
+      "passed": true,
+      "source": "任务15验证体系"
+    },
+    {
+      "item": "狂战士-固伤综合收益",
       "expected": "9.27%",
-      "passed": true
+      "actual": "9.27%",
+      "passed": true,
+      "source": "任务15验证体系"
     },
     {
-      "name": "狂战士百分比综合收益",
-      "actual": "32.81%",
+      "item": "狂战士-百分比-力量收益",
+      "expected": "24.42%",
+      "actual": "24.42%",
+      "passed": true,
+      "source": "任务15验证体系"
+    },
+    {
+      "item": "狂战士-百分比-物理攻击收益",
+      "expected": "5.5%",
+      "actual": "5.50%",
+      "passed": true,
+      "source": "任务15验证体系"
+    },
+    {
+      "item": "狂战士-百分比-综合收益",
       "expected": "32.81%",
-      "passed": true
+      "actual": "32.81%",
+      "passed": true,
+      "source": "任务15验证体系"
     },
     {
-      "name": "剑魂百分比综合收益",
-      "actual": "43.95%",
+      "item": "剑魂-百分比-力量收益",
+      "expected": "36.47%",
+      "actual": "36.47%",
+      "passed": true,
+      "source": "任务17验证体系"
+    },
+    {
+      "item": "剑魂-百分比-物理攻击收益",
+      "expected": "4.23%",
+      "actual": "4.23%",
+      "passed": true,
+      "source": "任务17验证体系"
+    },
+    {
+      "item": "剑魂-百分比-暴击收益",
+      "expected": "1.2%",
+      "actual": "1.20%",
+      "passed": true,
+      "source": "任务17验证体系"
+    },
+    {
+      "item": "剑魂-百分比-综合收益",
       "expected": "43.95%",
-      "passed": true
+      "actual": "43.95%",
+      "passed": true,
+      "source": "任务17验证体系"
     },
     {
-      "name": "边际对偶倍数",
+      "item": "边际对偶倍数",
+      "expected": "4.74",
       "actual": "4.7409",
-      "expected": "4.7409",
-      "passed": true
-    },
-    {
-      "name": "CC套6件力量",
-      "actual": "310",
-      "expected": "310",
-      "passed": true
-    },
-    {
-      "name": "CC套6件物理攻击",
-      "actual": "110",
-      "expected": "110",
-      "passed": true
-    },
-    {
-      "name": "CC套6件独立攻击",
-      "actual": "120",
-      "expected": "120",
-      "passed": true
+      "passed": true,
+      "source": "公式架构不对称性"
     }
-  ]
+  ],
+  "marginal_dual": 4.7409,
+  "core_data": {
+    "cc_set_6piece": {
+      "力量": 310,
+      "物理攻击": 110,
+      "独立攻击": 120,
+      "暴击率": 3.0
+    },
+    "berserker_fixed_benefit": 9.27,
+    "berserker_pct_benefit": 32.81,
+    "sword_pct_benefit": 43.95
+  }
 }
