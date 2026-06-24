@@ -1,44 +1,273 @@
 {
-  "timestamp": "2026-06-25T03:28:19.213814",
-  "version": "v378",
-  "cc_set": {
-    "力量": 310,
-    "物理攻击": 110,
-    "独立攻击": 120,
-    "暴击率": 3.0
-  },
-  "berserker": {
-    "indep_gain_pct": 8.0,
-    "crit_gain_pct": 1.18,
-    "hgc_composite_pct": 9.27,
-    "str_gain_pct": 24.42,
-    "phy_gain_pct": 5.5,
-    "pct_composite_pct": 32.81
-  },
-  "swordsman": {
-    "str_gain_pct": 36.47,
-    "phy_gain_pct": 4.23,
-    "crit_gain_pct": 1.2,
-    "pct_composite_pct": 43.95
-  },
-  "marginal_dual": 4.7409,
-  "checks": {
-    "cc_power_310": true,
-    "cc_phy_110": true,
-    "cc_indep_120": true,
-    "cc_crit_3": true,
-    "bers_indep_8": true,
-    "bers_crit_1_2": true,
-    "bers_hgc_9_27": true,
-    "bers_str_24_42": true,
-    "bers_phy_5_5": true,
-    "bers_pct_32_81": true,
-    "sword_str_36_47": true,
-    "sword_phy_4_23": true,
-    "sword_crit_1_2": true,
-    "sword_pct_43_95": true,
-    "marginal_dual_4_74": true
-  },
-  "passed": 15,
-  "total": 15
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "timestamp": "2026-06-25T03:32:48.940620",
+  "total_checks": 33,
+  "passed": 33,
+  "pass_rate": 100.0,
+  "results": [
+    {
+      "item": "上衣力量",
+      "expected": 55,
+      "actual": 55,
+      "diff": 0,
+      "pass": true,
+      "status": "✅"
+    },
+    {
+      "item": "下装力量",
+      "expected": 55,
+      "actual": 55,
+      "diff": 0,
+      "pass": true,
+      "status": "✅"
+    },
+    {
+      "item": "头饰力量",
+      "expected": 50,
+      "actual": 50,
+      "diff": 0,
+      "pass": true,
+      "status": "✅"
+    },
+    {
+      "item": "帽子力量",
+      "expected": 50,
+      "actual": 50,
+      "diff": 0,
+      "pass": true,
+      "status": "✅"
+    },
+    {
+      "item": "脸部力量",
+      "expected": 50,
+      "actual": 50,
+      "diff": 0,
+      "pass": true,
+      "status": "✅"
+    },
+    {
+      "item": "胸部力量",
+      "expected": 50,
+      "actual": 50,
+      "diff": 0,
+      "pass": true,
+      "status": "✅"
+    },
+    {
+      "item": "6件力量合计",
+      "expected": 310,
+      "actual": 310,
+      "diff": 0,
+      "pass": true,
+      "status": "✅"
+    },
+    {
+      "item": "上衣物攻",
+      "expected": 20,
+      "actual": 20,
+      "diff": 0,
+      "pass": true,
+      "status": "✅"
+    },
+    {
+      "item": "下装物攻",
+      "expected": 20,
+      "actual": 20,
+      "diff": 0,
+      "pass": true,
+      "status": "✅"
+    },
+    {
+      "item": "头饰物攻",
+      "expected": 18,
+      "actual": 18,
+      "diff": 0,
+      "pass": true,
+      "status": "✅"
+    },
+    {
+      "item": "帽子物攻",
+      "expected": 18,
+      "actual": 18,
+      "diff": 0,
+      "pass": true,
+      "status": "✅"
+    },
+    {
+      "item": "脸部物攻",
+      "expected": 18,
+      "actual": 18,
+      "diff": 0,
+      "pass": true,
+      "status": "✅"
+    },
+    {
+      "item": "胸部物攻",
+      "expected": 16,
+      "actual": 16,
+      "diff": 0,
+      "pass": true,
+      "status": "✅"
+    },
+    {
+      "item": "6件物攻合计",
+      "expected": 110,
+      "actual": 110,
+      "diff": 0,
+      "pass": true,
+      "status": "✅"
+    },
+    {
+      "item": "上衣独立",
+      "expected": 20,
+      "actual": 20,
+      "diff": 0,
+      "pass": true,
+      "status": "✅"
+    },
+    {
+      "item": "下装独立",
+      "expected": 20,
+      "actual": 20,
+      "diff": 0,
+      "pass": true,
+      "status": "✅"
+    },
+    {
+      "item": "头饰独立",
+      "expected": 18,
+      "actual": 18,
+      "diff": 0,
+      "pass": true,
+      "status": "✅"
+    },
+    {
+      "item": "帽子独立",
+      "expected": 18,
+      "actual": 18,
+      "diff": 0,
+      "pass": true,
+      "status": "✅"
+    },
+    {
+      "item": "脸部独立",
+      "expected": 18,
+      "actual": 18,
+      "diff": 0,
+      "pass": true,
+      "status": "✅"
+    },
+    {
+      "item": "胸部独立",
+      "expected": 26,
+      "actual": 26,
+      "diff": 0,
+      "pass": true,
+      "status": "✅"
+    },
+    {
+      "item": "6件独立合计",
+      "expected": 120,
+      "actual": 120,
+      "diff": 0,
+      "pass": true,
+      "status": "✅"
+    },
+    {
+      "item": "6件暴击合计",
+      "expected": 3.0,
+      "actual": 3.0,
+      "diff": 0.0,
+      "pass": true,
+      "status": "✅"
+    },
+    {
+      "item": "狂战士力量收益",
+      "expected": 0.2442,
+      "actual": 0.2442,
+      "diff": 0.0,
+      "pass": true,
+      "status": "✅"
+    },
+    {
+      "item": "狂战士物理攻击收益",
+      "expected": 0.055,
+      "actual": 0.055,
+      "diff": 0.0,
+      "pass": true,
+      "status": "✅"
+    },
+    {
+      "item": "狂战士暴击收益",
+      "expected": 0.0118,
+      "actual": 0.0118,
+      "diff": 0.0,
+      "pass": true,
+      "status": "✅"
+    },
+    {
+      "item": "狂战士独立攻击收益",
+      "expected": 0.08,
+      "actual": 0.08,
+      "diff": 0.0,
+      "pass": true,
+      "status": "✅"
+    },
+    {
+      "item": "狂战士固伤综合收益",
+      "expected": 0.0927,
+      "actual": 0.0927,
+      "diff": 0.0,
+      "pass": true,
+      "status": "✅"
+    },
+    {
+      "item": "狂战士百分比综合收益",
+      "expected": 0.3281,
+      "actual": 0.3281,
+      "diff": 0.0,
+      "pass": true,
+      "status": "✅"
+    },
+    {
+      "item": "剑魂力量收益",
+      "expected": 0.3647,
+      "actual": 0.3647,
+      "diff": 0.0,
+      "pass": true,
+      "status": "✅"
+    },
+    {
+      "item": "剑魂物理攻击收益",
+      "expected": 0.0423,
+      "actual": 0.0423,
+      "diff": 0.0,
+      "pass": true,
+      "status": "✅"
+    },
+    {
+      "item": "剑魂暴击收益",
+      "expected": 0.012,
+      "actual": 0.012,
+      "diff": 0.0,
+      "pass": true,
+      "status": "✅"
+    },
+    {
+      "item": "剑魂百分比综合收益",
+      "expected": 0.4395,
+      "actual": 0.4395,
+      "diff": 0.0,
+      "pass": true,
+      "status": "✅"
+    },
+    {
+      "item": "边际对偶倍数",
+      "expected": 4.7409,
+      "actual": 4.7409,
+      "diff": 0.0,
+      "pass": true,
+      "status": "✅"
+    }
+  ]
 }
