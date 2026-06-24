@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-06-24T14:44:27.591244",
+  "version": "v333",
+  "passed": 12,
+  "total": 12,
+  "results": {
+    "\u80f8\u90e8\u529b\u91cf=50": "pass",
+    "6\u4ef6\u603b\u529b\u91cf=310": "pass",
+    "\u72c2\u6218\u58eb\u72ec\u7acb\u6536\u76ca\u22488.0%": "pass",
+    "\u72c2\u6218\u58eb\u66b4\u51fb\u6536\u76ca\u22481.2%": "pass",
+    "\u72c2\u6218\u58eb\u56fa\u4f24\u7efc\u5408\u22489.27%": "pass",
+    "\u72c2\u6218\u58eb\u767e\u5206\u6bd4\u529b\u91cf\u224824.42%": "pass",
+    "\u72c2\u6218\u58eb\u767e\u5206\u6bd4\u7269\u653b\u22485.50%": "pass",
+    "\u72c2\u6218\u58eb\u767e\u5206\u6bd4\u7efc\u5408\u224832.81%": "pass",
+    "\u5251\u9b42\u767e\u5206\u6bd4\u529b\u91cf\u224836.47%": "pass",
+    "\u5251\u9b42\u767e\u5206\u6bd4\u7269\u653b\u22484.23%": "pass",
+    "\u5251\u9b42\u767e\u5206\u6bd4\u7efc\u5408\u224843.95%": "pass",
+    "\u8fb9\u9645\u5bf9\u5076\u22484.74\u500d": "pass"
+  },
+  "values": {
+    "berserker_fixed_total": 9.27,
+    "berserker_pct_total": 32.81,
+    "swordsman_pct_total": 43.95,
+    "duality_ratio": 4.74
+  }
+}
