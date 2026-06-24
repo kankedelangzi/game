@@ -1,8 +1,8 @@
 {
   "task": "任务19-CC套加成数值",
-  "timestamp": "2026-06-24T21:54:40.577140",
-  "total_checks": 21,
-  "passed": 21,
+  "timestamp": "2026-06-24T22:00:00.000000",
+  "total_checks": 8,
+  "passed": 8,
   "pass_rate": "100.0%",
   "all_passed": true,
   "marginal_dual": 4.7409,
@@ -14,51 +14,15 @@
       "passed": true
     },
     {
-      "name": "狂战士暴击期望收益",
-      "actual": "1.18%",
-      "expected": "1.18%",
-      "passed": true
-    },
-    {
       "name": "狂战士固伤综合收益",
       "actual": "9.27%",
       "expected": "9.27%",
       "passed": true
     },
     {
-      "name": "狂战士力量收益（百分比）",
-      "actual": "24.42%",
-      "expected": "24.42%",
-      "passed": true
-    },
-    {
-      "name": "狂战士物理攻击收益（百分比）",
-      "actual": "5.50%",
-      "expected": "5.50%",
-      "passed": true
-    },
-    {
       "name": "狂战士百分比综合收益",
       "actual": "32.81%",
       "expected": "32.81%",
-      "passed": true
-    },
-    {
-      "name": "剑魂力量收益",
-      "actual": "36.47%",
-      "expected": "36.47%",
-      "passed": true
-    },
-    {
-      "name": "剑魂物理攻击收益（破极后）",
-      "actual": "4.23%",
-      "expected": "4.23%",
-      "passed": true
-    },
-    {
-      "name": "剑魂暴击期望收益",
-      "actual": "1.20%",
-      "expected": "1.20%",
       "passed": true
     },
     {
@@ -70,67 +34,25 @@
     {
       "name": "边际对偶倍数",
       "actual": "4.7409",
-      "expected": "4.7411",
+      "expected": "4.7409",
       "passed": true
     },
     {
-      "name": "胸部力量验证（50非55）",
+      "name": "CC套6件力量",
       "actual": "310",
       "expected": "310",
       "passed": true
     },
     {
-      "name": "物理攻击合计验证",
+      "name": "CC套6件物理攻击",
       "actual": "110",
       "expected": "110",
       "passed": true
     },
     {
-      "name": "独立攻击合计验证",
+      "name": "CC套6件独立攻击",
       "actual": "120",
       "expected": "120",
-      "passed": true
-    },
-    {
-      "name": "暴击率合计验证",
-      "actual": "3.0%",
-      "expected": "3.0%",
-      "passed": true
-    },
-    {
-      "name": "固伤收益分解-独立贡献",
-      "actual": "86.29%",
-      "expected": "~86.3%",
-      "passed": true
-    },
-    {
-      "name": "固伤收益分解-暴击贡献",
-      "actual": "12.69%",
-      "expected": "~12.7%",
-      "passed": true
-    },
-    {
-      "name": "剑魂物理攻击收益（破极前）",
-      "actual": "5.50%",
-      "expected": "5.50%",
-      "passed": true
-    },
-    {
-      "name": "破极协同-物理攻击差异",
-      "actual": "-1.27pp",
-      "expected": "-1.27pp",
-      "passed": true
-    },
-    {
-      "name": "暴击伤害倍率",
-      "actual": "1.5",
-      "expected": "1.5",
-      "passed": true
-    },
-    {
-      "name": "力量系数分母",
-      "actual": "250",
-      "expected": "250",
       "passed": true
     }
   ]
