@@ -1,42 +1,44 @@
 {
-  "timestamp": "2026-06-25T03:23:15.216599",
+  "timestamp": "2026-06-25T03:28:19.213814",
+  "version": "v378",
   "cc_set": {
-    "power": 310,
-    "phy_att": 110,
-    "independent": 120,
-    "crit_pct": 3.0
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
   },
   "berserker": {
-    "fixed_independent_gain_pct": 8.0,
-    "fixed_crit_gain_pct": 1.18,
-    "fixed_total_pct": 9.27,
-    "percent_power_gain_pct": 24.42,
-    "percent_phy_gain_pct": 5.5,
-    "percent_total_pct": 32.81
+    "indep_gain_pct": 8.0,
+    "crit_gain_pct": 1.18,
+    "hgc_composite_pct": 9.27,
+    "str_gain_pct": 24.42,
+    "phy_gain_pct": 5.5,
+    "pct_composite_pct": 32.81
   },
   "swordsman": {
-    "percent_power_gain_pct": 36.47,
-    "percent_phy_gain_pct": 4.23,
-    "percent_crit_gain_pct": 1.2,
-    "percent_total_pct": 43.95
+    "str_gain_pct": 36.47,
+    "phy_gain_pct": 4.23,
+    "crit_gain_pct": 1.2,
+    "pct_composite_pct": 43.95
   },
   "marginal_dual": 4.7409,
   "checks": {
     "cc_power_310": true,
-    "cc_phy_att_110": true,
-    "cc_independent_120": true,
-    "cc_crit_3pct": true,
-    "bers_ind_gain_8p00": true,
-    "bers_crit_gain_1p18": true,
-    "bers_fixed_total_9p27": true,
-    "bers_pow_gain_24p42": true,
-    "bers_phy_gain_5p50": true,
-    "bers_pct_total_32p81": true,
-    "sword_pow_gain_36p47": true,
-    "sword_phy_gain_4p23": true,
-    "sword_crit_gain_1p20": true,
-    "sword_pct_total_43p95": true,
-    "marginal_dual_4p7409": true
+    "cc_phy_110": true,
+    "cc_indep_120": true,
+    "cc_crit_3": true,
+    "bers_indep_8": true,
+    "bers_crit_1_2": true,
+    "bers_hgc_9_27": true,
+    "bers_str_24_42": true,
+    "bers_phy_5_5": true,
+    "bers_pct_32_81": true,
+    "sword_str_36_47": true,
+    "sword_phy_4_23": true,
+    "sword_crit_1_2": true,
+    "sword_pct_43_95": true,
+    "marginal_dual_4_74": true
   },
-  "summary": "15/15 (\u2705 100%\u901a\u8fc7)"
+  "passed": 15,
+  "total": 15
 }
