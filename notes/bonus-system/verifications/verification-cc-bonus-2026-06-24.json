@@ -1,67 +1,93 @@
 {
-  "round": "v338",
-  "timestamp": "2026-06-24T17:10:45.852089",
-  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
-  "verification_results": {
-    "狂战士固伤-独立攻击": {
-      "calculated": 0.08,
-      "expected": 0.08,
+  "timestamp": "2026-06-24T17:20:22.731510",
+  "task": "任务19 - CC套各职业加成数值",
+  "verification": [
+    {
+      "item": "CC套6件套属性",
+      "expected": {
+        "力量": 310,
+        "物理攻击": 110,
+        "独立攻击": 120,
+        "暴击率": 3.0
+      },
+      "actual": {
+        "力量": 310,
+        "物理攻击": 110,
+        "独立攻击": 120,
+        "暴击率": 3.0
+      },
       "status": "PASS"
     },
-    "狂战士固伤-暴击": {
-      "calculated": 0.011765,
-      "expected": 0.01176,
+    {
+      "item": "狂战士固伤-独立攻击收益",
+      "expected": "+8.0%",
+      "actual": "+8.00%",
       "status": "PASS"
     },
-    "狂战士固伤综合": {
-      "calculated": 0.092706,
-      "expected": 0.0927,
+    {
+      "item": "狂战士固伤-暴击收益",
+      "expected": "+1.2%",
+      "actual": "+1.18%",
       "status": "PASS"
     },
-    "狂战士百分比-力量": {
-      "calculated": 0.244248,
-      "expected": 0.2442,
+    {
+      "item": "狂战士固伤综合收益",
+      "expected": "+9.27%",
+      "actual": "+9.27%",
       "status": "PASS"
     },
-    "狂战士百分比-物理攻击": {
-      "calculated": 0.055,
-      "expected": 0.055,
+    {
+      "item": "狂战士百分比-力量收益",
+      "expected": "+24.42%",
+      "actual": "+24.42%",
       "status": "PASS"
     },
-    "狂战士百分比综合": {
-      "calculated": 0.328125,
-      "expected": 0.3281,
+    {
+      "item": "狂战士百分比-物理攻击收益",
+      "expected": "+5.50%",
+      "actual": "+5.50%",
       "status": "PASS"
     },
-    "剑魂百分比-力量": {
-      "calculated": 0.364706,
-      "expected": 0.3647,
+    {
+      "item": "狂战士百分比综合收益",
+      "expected": "+32.81%",
+      "actual": "+32.81%",
       "status": "PASS"
     },
-    "剑魂百分比-物理攻击": {
-      "calculated": 0.042308,
-      "expected": 0.0423,
+    {
+      "item": "剑魂百分比-力量收益",
+      "expected": "+36.47%",
+      "actual": "+36.47%",
       "status": "PASS"
     },
-    "剑魂百分比-暴击": {
-      "calculated": 0.012,
-      "expected": 0.012,
+    {
+      "item": "剑魂百分比-物理攻击收益",
+      "expected": "+4.23%",
+      "actual": "+4.23%",
       "status": "PASS"
     },
-    "剑魂百分比综合": {
-      "calculated": 0.439513,
-      "expected": 0.4395,
+    {
+      "item": "剑魂百分比-暴击收益",
+      "expected": "+1.2%",
+      "actual": "+1.20%",
       "status": "PASS"
     },
-    "边际对偶倍数": {
-      "calculated": 4.740937,
-      "expected": 4.74,
+    {
+      "item": "剑魂百分比综合收益",
+      "expected": "+43.95%",
+      "actual": "+43.95%",
+      "status": "PASS"
+    },
+    {
+      "item": "边际对偶倍数",
+      "expected": "4.74倍",
+      "actual": "4.7409倍",
       "status": "PASS"
     }
-  },
+  ],
   "summary": {
-    "total_checks": 11,
-    "passed": 11,
-    "pass_rate": "100%"
+    "passed": 12,
+    "total": 12,
+    "rate": "100%"
   }
 }
