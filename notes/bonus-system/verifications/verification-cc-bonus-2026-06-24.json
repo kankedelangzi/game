@@ -1,6 +1,6 @@
 {
-  "version": "v333续",
-  "timestamp": "2026-06-24T15:38:44+08:00",
+  "version": "v334",
+  "timestamp": "2026-06-24T15:43:52+08:00",
   "task": "任务19 - CC套（宫廷套装）各职业加成数值",
   "verification_type": "稳态核查",
   "cc_bonus": {
@@ -18,20 +18,16 @@
       "crit_rate": 0.55
     },
     "fixed_damage_benefit": {
-      "independent": 0.08,
-      "crit": 0.0118,
-      "综合": 0.0927,
-      "expected": 9.27,
-      "actual": 9.27,
+      "independent": 8.0,
+      "crit": 1.18,
+      "综合": 9.27,
       "pass": true
     },
     "percent_damage_benefit": {
-      "power": 0.2442,
-      "physical_attack": 0.055,
-      "crit": 0.0118,
-      "综合": 0.3281,
-      "expected": 32.81,
-      "actual": 32.81,
+      "power": 24.42,
+      "physical_attack": 5.5,
+      "crit": 1.18,
+      "综合": 32.81,
       "pass": true
     }
   },
@@ -39,15 +35,13 @@
     "base_panel": {
       "power": 600,
       "physical_attack": 2600,
-      "crit_rate": 0.50
+      "crit_rate": 0.5
     },
     "percent_damage_benefit": {
-      "power": 0.3647,
-      "physical_attack": 0.0423,
-      "crit": 0.0118,
-      "综合": 0.4395,
-      "expected": 43.95,
-      "actual": 43.95,
+      "power": 36.47,
+      "physical_attack": 4.23,
+      "crit": 1.2,
+      "综合": 43.95,
       "pass": true
     }
   },
@@ -57,11 +51,10 @@
     "confirmed_as_system_frequency": true
   },
   "summary": {
-    "total_checks": 3,
-    "passed": 3,
+    "total_checks": 4,
+    "passed": 4,
     "failed": 0,
-    "pass_rate": "100%",
-    "consecutive_pass_streak": 135,
+    "pass_rate": "4/4",
     "status": "✅ 全部通过，数据完全稳态"
   }
 }
