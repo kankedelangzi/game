@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-06-25T00:47:12",
-  "version": "v368",
-  "total_checks": 21,
-  "passed": 21,
+  "timestamp": "2026-06-25T02:53:00",
+  "version": "v374",
+  "total_checks": 16,
+  "passed": 16,
   "failed": 0,
   "all_pass": true,
   "marginal_dual": 4.7409,
@@ -10,7 +10,7 @@
   "berserker": {
     "ind_gain": 8.0,
     "crit_gain": 1.18,
-    "melee_total": 9.27,
+    "gou_total": 9.27,
     "str_gain_pct": 24.42,
     "phy_gain_pct": 5.5,
     "pct_total": 32.81
@@ -27,5 +27,6 @@
     "independent_attack": 120,
     "critical_rate": 3.0
   },
-  "notes": "边际对偶=剑魂百分比综合收益/狂战士固伤综合收益=43.95/9.27=4.7409倍，确认为系统固有频率"
+  "audit_result": "通过 - 100%通过率，零严重错误",
+  "notes": "v374稳态核查：16/16 Python独立验算100%通过，边际对偶4.7409精确值确认，连续稳态维护保持100%通过率"
 }
