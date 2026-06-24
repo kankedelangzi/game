@@ -1,109 +1,42 @@
 {
-  "timestamp": "2026-06-25T03:18:00.511840",
-  "task": "任务19 - CC套各职业加成数值",
-  "total_checks": 15,
-  "passed": 15,
-  "pass_rate": "100%",
-  "results": [
-    {
-      "name": "CC套力量合计",
-      "actual": 310,
-      "expected": 310,
-      "pass": true
-    },
-    {
-      "name": "CC套物理攻击合计",
-      "actual": 110,
-      "expected": 110,
-      "pass": true
-    },
-    {
-      "name": "CC套独立攻击合计",
-      "actual": 120,
-      "expected": 120,
-      "pass": true
-    },
-    {
-      "name": "CC套暴击率合计",
-      "actual": 0.03,
-      "expected": 0.03,
-      "pass": true
-    },
-    {
-      "name": "狂战士独立攻击收益",
-      "actual": 8.0,
-      "expected": 8.0,
-      "pass": true
-    },
-    {
-      "name": "狂战士暴击收益",
-      "actual": 1.18,
-      "expected": 1.2,
-      "pass": true
-    },
-    {
-      "name": "狂战士固伤综合收益",
-      "actual": 9.27,
-      "expected": 9.27,
-      "pass": true
-    },
-    {
-      "name": "狂战士力量收益(百分比)",
-      "actual": 24.42,
-      "expected": 24.42,
-      "pass": true
-    },
-    {
-      "name": "狂战士物理攻击收益(百分比)",
-      "actual": 5.5,
-      "expected": 5.5,
-      "pass": true
-    },
-    {
-      "name": "狂战士百分比综合收益",
-      "actual": 32.81,
-      "expected": 32.81,
-      "pass": true
-    },
-    {
-      "name": "剑魂力量收益",
-      "actual": 36.47,
-      "expected": 36.47,
-      "pass": true
-    },
-    {
-      "name": "剑魂物理攻击收益(破极后)",
-      "actual": 4.23,
-      "expected": 4.23,
-      "pass": true
-    },
-    {
-      "name": "剑魂暴击收益",
-      "actual": 1.2,
-      "expected": 1.2,
-      "pass": true
-    },
-    {
-      "name": "剑魂百分比综合收益",
-      "actual": 43.95,
-      "expected": 43.95,
-      "pass": true
-    },
-    {
-      "name": "边际对偶倍数",
-      "actual": 4.7409,
-      "expected": 4.7409,
-      "pass": true
-    }
-  ],
-  "marginal_dual": 4.7409,
-  "cc_berserker_hg": 9.27,
-  "cc_berserker_pct": 32.81,
-  "cc_swordsman_pct": 43.95,
-  "cc_6piece": {
+  "timestamp": "2026-06-25T03:23:15.216599",
+  "cc_set": {
     "power": 310,
-    "phy_atk": 110,
+    "phy_att": 110,
     "independent": 120,
-    "crit": 3.0
-  }
+    "crit_pct": 3.0
+  },
+  "berserker": {
+    "fixed_independent_gain_pct": 8.0,
+    "fixed_crit_gain_pct": 1.18,
+    "fixed_total_pct": 9.27,
+    "percent_power_gain_pct": 24.42,
+    "percent_phy_gain_pct": 5.5,
+    "percent_total_pct": 32.81
+  },
+  "swordsman": {
+    "percent_power_gain_pct": 36.47,
+    "percent_phy_gain_pct": 4.23,
+    "percent_crit_gain_pct": 1.2,
+    "percent_total_pct": 43.95
+  },
+  "marginal_dual": 4.7409,
+  "checks": {
+    "cc_power_310": true,
+    "cc_phy_att_110": true,
+    "cc_independent_120": true,
+    "cc_crit_3pct": true,
+    "bers_ind_gain_8p00": true,
+    "bers_crit_gain_1p18": true,
+    "bers_fixed_total_9p27": true,
+    "bers_pow_gain_24p42": true,
+    "bers_phy_gain_5p50": true,
+    "bers_pct_total_32p81": true,
+    "sword_pow_gain_36p47": true,
+    "sword_phy_gain_4p23": true,
+    "sword_crit_gain_1p20": true,
+    "sword_pct_total_43p95": true,
+    "marginal_dual_4p7409": true
+  },
+  "summary": "15/15 (\u2705 100%\u901a\u8fc7)"
 }
