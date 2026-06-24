@@ -1,0 +1,80 @@
+{
+  "task": 19,
+  "topic": "CC套（宫廷套装）各职业加成数值",
+  "version": "v337",
+  "timestamp": "2026-06-24T16:55:29+08:00",
+  "checks": [
+    {
+      "name": "狂战士-独立攻击收益",
+      "expected": "8.00%",
+      "actual": "8.00%",
+      "pass": true
+    },
+    {
+      "name": "狂战士-暴击收益",
+      "expected": "1.18%",
+      "actual": "1.18%",
+      "pass": true
+    },
+    {
+      "name": "狂战士-固伤综合收益",
+      "expected": "9.27%",
+      "actual": "9.27%",
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比-力量收益",
+      "expected": "24.42%",
+      "actual": "24.42%",
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比-物理攻击收益",
+      "expected": "5.50%",
+      "actual": "5.50%",
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比-综合收益",
+      "expected": "32.81%",
+      "actual": "32.81%",
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比-力量收益",
+      "expected": "36.47%",
+      "actual": "36.47%",
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比-物理攻击收益",
+      "expected": "4.23%",
+      "actual": "4.23%",
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比-暴击收益",
+      "expected": "1.20%",
+      "actual": "1.20%",
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比-综合收益",
+      "expected": "43.95%",
+      "actual": "43.95%",
+      "pass": true
+    },
+    {
+      "name": "边际对偶倍数",
+      "expected": "4.74",
+      "actual": "4.74",
+      "pass": true
+    }
+  ],
+  "summary": {
+    "passed": 11,
+    "total": 11,
+    "all_pass": true,
+    "conclusion": "CC套核心数据完全准确，持续稳态维护确认"
+  }
+}
