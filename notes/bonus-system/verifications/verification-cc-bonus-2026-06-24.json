@@ -1,38 +1,92 @@
 {
-  "timestamp": "2026-06-24T17:51:05.124839",
-  "round": "v342",
-  "results": {
-    "berserker_fixed": {
-      "independent_gain": 8.0,
-      "crit_gain": 1.18,
-      "total": 9.27
+  "timestamp": "2026-06-24T18:05:37.910974",
+  "check_count": 17,
+  "passed": 17,
+  "failed": 0,
+  "all_pass": true,
+  "duality_ratio": 4.7409,
+  "checks": [
+    {
+      "desc": "单件力量合计=310",
+      "pass": true
     },
-    "berserker_percent": {
-      "power_gain": 24.42,
-      "phy_atk_gain": 5.5,
-      "crit_gain": 1.18,
-      "total": 32.81
+    {
+      "desc": "单件物理攻击合计=110",
+      "pass": true
     },
-    "swordsman_percent": {
-      "power_gain": 36.47,
-      "phy_atk_gain": 4.23,
-      "crit_gain": 1.2,
-      "total": 43.95
+    {
+      "desc": "单件独立攻击合计=120",
+      "pass": true
     },
-    "duality_ratio": 4.7411,
-    "validation": {
-      "berserker_fixed_match": true,
-      "berserker_percent_match": true,
-      "swordsman_percent_match": true,
-      "duality_ratio_match": true
+    {
+      "desc": "单件暴击率合计=3.0%",
+      "pass": true
     },
-    "all_pass": true
+    {
+      "desc": "狂战士暴走后力量=1019.2",
+      "pass": true
+    },
+    {
+      "desc": "狂战士独立收益=+8.0%",
+      "pass": true
+    },
+    {
+      "desc": "狂战士暴击收益≈+1.18%",
+      "pass": true
+    },
+    {
+      "desc": "狂战士固伤综合=+9.27%",
+      "pass": true
+    },
+    {
+      "desc": "狂战士百分比力量收益=+24.42%",
+      "pass": true
+    },
+    {
+      "desc": "狂战士百分比物攻收益=+5.50%",
+      "pass": true
+    },
+    {
+      "desc": "狂战士百分比综合=+32.81%",
+      "pass": true
+    },
+    {
+      "desc": "剑魂破极后物攻=2600",
+      "pass": true
+    },
+    {
+      "desc": "剑魂力量收益=+36.47%",
+      "pass": true
+    },
+    {
+      "desc": "剑魂物攻收益=+4.23%",
+      "pass": true
+    },
+    {
+      "desc": "剑魂暴击收益≈+1.2%",
+      "pass": true
+    },
+    {
+      "desc": "剑魂百分比综合=+43.95%",
+      "pass": true
+    },
+    {
+      "desc": "边际对偶倍数≈4.74",
+      "pass": true
+    }
+  ],
+  "berzerker": {
+    "ind_gain": 0.08,
+    "crit_gain": 0.0118,
+    "stg_total": 0.0927,
+    "power_gain_pct": 0.2442,
+    "phy_gain_pct": 0.055,
+    "pct_total": 0.3281
   },
-  "expected": {
-    "berserker_fixed_total": 9.27,
-    "berserker_percent_total": 32.81,
-    "swordsman_percent_total": 43.95,
-    "duality_ratio": 4.74
-  },
-  "all_pass": true
+  "swordsman": {
+    "power_gain": 0.3647,
+    "phy_gain": 0.0423,
+    "crit_gain": 0.012,
+    "pct_total": 0.4395
+  }
 }
