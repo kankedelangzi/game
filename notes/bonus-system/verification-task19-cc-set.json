@@ -1,0 +1,176 @@
+{
+  "timestamp": "2026-06-24T13:27:32.438505",
+  "total_checks": 21,
+  "checks_passed": 21,
+  "pass_rate": "100.0%",
+  "results": [
+    {
+      "check": 1,
+      "name": "上衣力量",
+      "expected": 55,
+      "actual": 55,
+      "diff_pp": 0,
+      "status": "✅ PASS"
+    },
+    {
+      "check": 2,
+      "name": "下装力量",
+      "expected": 55,
+      "actual": 55,
+      "diff_pp": 0,
+      "status": "✅ PASS"
+    },
+    {
+      "check": 3,
+      "name": "头饰力量",
+      "expected": 50,
+      "actual": 50,
+      "diff_pp": 0,
+      "status": "✅ PASS"
+    },
+    {
+      "check": 4,
+      "name": "帽子力量",
+      "expected": 50,
+      "actual": 50,
+      "diff_pp": 0,
+      "status": "✅ PASS"
+    },
+    {
+      "check": 5,
+      "name": "脸部力量",
+      "expected": 50,
+      "actual": 50,
+      "diff_pp": 0,
+      "status": "✅ PASS"
+    },
+    {
+      "check": 6,
+      "name": "胸部力量",
+      "expected": 50,
+      "actual": 50,
+      "diff_pp": 0,
+      "status": "✅ PASS"
+    },
+    {
+      "check": 7,
+      "name": "6件力量合计",
+      "expected": 310,
+      "actual": 310,
+      "diff_pp": 0,
+      "status": "✅ PASS"
+    },
+    {
+      "check": 8,
+      "name": "6件物理攻击合计",
+      "expected": 110,
+      "actual": 110,
+      "diff_pp": 0,
+      "status": "✅ PASS"
+    },
+    {
+      "check": 9,
+      "name": "6件独立攻击合计",
+      "expected": 120,
+      "actual": 120,
+      "diff_pp": 0,
+      "status": "✅ PASS"
+    },
+    {
+      "check": 10,
+      "name": "6件暴击率合计",
+      "expected": 3.0,
+      "actual": 3.0,
+      "diff_pp": 0.0,
+      "status": "✅ PASS"
+    },
+    {
+      "check": 11,
+      "name": "狂战士独立攻击收益",
+      "expected": 0.08,
+      "actual": 0.08,
+      "diff_pp": 0.0,
+      "status": "✅ PASS"
+    },
+    {
+      "check": 12,
+      "name": "狂战士暴击收益",
+      "expected": 0.0118,
+      "actual": 0.0118,
+      "diff_pp": 0.0,
+      "status": "✅ PASS"
+    },
+    {
+      "check": 13,
+      "name": "狂战士固伤综合收益",
+      "expected": 0.0927,
+      "actual": 0.0927,
+      "diff_pp": 0.0,
+      "status": "✅ PASS"
+    },
+    {
+      "check": 14,
+      "name": "狂战士百分比力量收益",
+      "expected": 0.2442,
+      "actual": 0.2442,
+      "diff_pp": 0.0,
+      "status": "✅ PASS"
+    },
+    {
+      "check": 15,
+      "name": "狂战士百分比物理攻击收益",
+      "expected": 0.055,
+      "actual": 0.055,
+      "diff_pp": 0.0,
+      "status": "✅ PASS"
+    },
+    {
+      "check": 16,
+      "name": "狂战士百分比综合收益",
+      "expected": 0.3281,
+      "actual": 0.3281,
+      "diff_pp": 0.0,
+      "status": "✅ PASS"
+    },
+    {
+      "check": 17,
+      "name": "剑魂百分比力量收益",
+      "expected": 0.3647,
+      "actual": 0.3647,
+      "diff_pp": 0.0,
+      "status": "✅ PASS"
+    },
+    {
+      "check": 18,
+      "name": "剑魂百分比物理攻击收益",
+      "expected": 0.0423,
+      "actual": 0.0423,
+      "diff_pp": 0.0,
+      "status": "✅ PASS"
+    },
+    {
+      "check": 19,
+      "name": "剑魂暴击收益",
+      "expected": 0.012,
+      "actual": 0.012,
+      "diff_pp": 0.0,
+      "status": "✅ PASS"
+    },
+    {
+      "check": 20,
+      "name": "剑魂百分比综合收益",
+      "expected": 0.4395,
+      "actual": 0.4395,
+      "diff_pp": 0.0,
+      "status": "✅ PASS"
+    },
+    {
+      "check": 21,
+      "name": "边际对偶倍数（剑魂百分比/狂战士固伤）",
+      "expected": 4.74,
+      "actual": 4.7409,
+      "diff_pp": 0.09,
+      "status": "✅ PASS"
+    }
+  ]
+}
