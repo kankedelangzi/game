@@ -1,95 +1,74 @@
 {
-  "timestamp": "2026-06-24T23:52:02.952508",
-  "verifications": [
+  "timestamp": "2026-06-24T23:57:18.960290",
+  "version": "v366",
+  "results": [
     {
-      "name": "CC\u59576\u4ef6\u529b\u91cf",
-      "expected": 310,
-      "actual": 310,
-      "pass": true
-    },
-    {
-      "name": "CC\u59576\u4ef6\u7269\u7406\u653b\u51fb",
-      "expected": 110,
-      "actual": 110,
-      "pass": true
-    },
-    {
-      "name": "CC\u59576\u4ef6\u72ec\u7acb\u653b\u51fb",
-      "expected": 120,
-      "actual": 120,
-      "pass": true
-    },
-    {
-      "name": "CC\u59576\u4ef6\u66b4\u51fb\u7387",
-      "expected": 0.03,
-      "actual": 0.03,
-      "pass": true
-    },
-    {
-      "name": "\u72c2\u6218\u58eb\u72ec\u7acb\u653b\u51fb\u6536\u76ca",
+      "name": "狂战士-独立攻击收益",
+      "actual": 0.08,
       "expected": 0.08,
-      "actual": 0.08000000000000007,
-      "pass": true
+      "passed": true
     },
     {
-      "name": "\u72c2\u6218\u58eb\u66b4\u51fb\u6536\u76ca",
-      "expected": 0.012,
-      "actual": 0.011764705882353121,
-      "pass": true
+      "name": "狂战士-暴击收益",
+      "actual": 0.011765,
+      "expected": 0.0118,
+      "passed": true
     },
     {
-      "name": "\u72c2\u6218\u58eb\u56fa\u4f24\u7efc\u5408",
+      "name": "狂战士-固伤综合",
+      "actual": 0.092706,
       "expected": 0.0927,
-      "actual": 0.09270588235294142,
-      "pass": true
+      "passed": true
     },
     {
-      "name": "\u72c2\u6218\u58eb\u529b\u91cf\u6536\u76ca(\u767e\u5206\u6bd4)",
+      "name": "狂战士-力量收益",
+      "actual": 0.244248,
       "expected": 0.2442,
-      "actual": 0.2442483454144342,
-      "pass": true
+      "passed": true
     },
     {
-      "name": "\u72c2\u6218\u58eb\u7269\u7406\u653b\u51fb\u6536\u76ca(\u767e\u5206\u6bd4)",
+      "name": "狂战士-物理攻击收益",
+      "actual": 0.055,
       "expected": 0.055,
-      "actual": 0.05499999999999994,
-      "pass": true
+      "passed": true
     },
     {
-      "name": "\u72c2\u6218\u58eb\u767e\u5206\u6bd4\u7efc\u5408",
+      "name": "狂战士-百分比综合",
+      "actual": 0.328125,
       "expected": 0.3281,
-      "actual": 0.3281253221111957,
-      "pass": true
+      "passed": true
     },
     {
-      "name": "\u5251\u9b42\u529b\u91cf\u6536\u76ca",
+      "name": "剑魂-力量收益",
+      "actual": 0.364706,
       "expected": 0.3647,
-      "actual": 0.36470588235294144,
-      "pass": true
+      "passed": true
     },
     {
-      "name": "\u5251\u9b42\u7269\u7406\u653b\u51fb\u6536\u76ca",
+      "name": "剑魂-物理攻击收益",
+      "actual": 0.042308,
       "expected": 0.0423,
-      "actual": 0.04230769230769238,
-      "pass": true
+      "passed": true
     },
     {
-      "name": "\u5251\u9b42\u66b4\u51fb\u6536\u76ca",
+      "name": "剑魂-暴击收益",
+      "actual": 0.012,
       "expected": 0.012,
-      "actual": 0.01200000000000001,
-      "pass": true
+      "passed": true
     },
     {
-      "name": "\u5251\u9b42\u767e\u5206\u6bd4\u7efc\u5408",
+      "name": "剑魂-百分比综合",
+      "actual": 0.439513,
       "expected": 0.4395,
-      "actual": 0.43951276018099583,
-      "pass": true
+      "passed": true
     },
     {
-      "name": "\u8fb9\u9645\u5bf9\u5076\u500d\u6570",
+      "name": "边际对偶倍数",
+      "actual": 4.740937,
       "expected": 4.7409,
-      "actual": 4.740937133932049,
-      "pass": true
+      "passed": true
     }
-  ]
+  ],
+  "all_passed": true,
+  "marginal_dual": 4.740937
 }
