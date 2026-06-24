@@ -1,31 +1,82 @@
 {
-  "timestamp": "2026-06-25T00:28:14.593876",
-  "version": "v367",
-  "task": "任务19 - CC套各职业加成数值",
-  "total_checks": 15,
-  "passed": 15,
-  "pass_rate": "100%",
+  "timestamp": "2026-06-25T00:52:10.219366",
+  "task": "任务19-CC套加成数值",
+  "version": "v368",
+  "total_checks": 11,
+  "passed": 11,
+  "pass_rate": "100.0%",
   "results": [
-    "单件合计: 力量=310(预期310) ✅",
-    "单件合计: 物理攻击=110(预期110) ✅",
-    "单件合计: 独立攻击=120(预期120) ✅",
-    "单件合计: 暴击率=3.0%(预期3.0%) ✅",
-    "狂战士独立收益: 8.0000% (预期+8.0%) ✅",
-    "狂战士暴击收益: 1.1765% (预期+1.18%) ✅",
-    "狂战士固伤综合: 9.2706% (预期+9.27%) ✅",
-    "狂战士力量收益: 24.4248% (预期+24.42%) ✅",
-    "狂战士物理攻击收益: 5.5000% (预期+5.50%) ✅",
-    "狂战士百分比综合: 32.8125% (预期+32.81%) ✅",
-    "剑魂力量收益: 36.4706% (预期+36.47%) ✅",
-    "剑魂物理攻击收益: 4.2308% (预期+4.23%) ✅",
-    "剑魂暴击收益: 1.2000% (预期+1.2%) ✅",
-    "剑魂百分比综合: 43.9513% (预期+43.95%) ✅",
-    "边际对偶倍数: 4.7409 (预期~4.74) ✅"
+    {
+      "name": "狂战士固伤独立攻击收益",
+      "actual": 0.08,
+      "expected": "+8.0%",
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤暴击收益",
+      "actual": 0.011765,
+      "expected": "+1.2%",
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤综合收益",
+      "actual": 0.092706,
+      "expected": "+9.27%",
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比力量收益",
+      "actual": 0.244248,
+      "expected": "+24.42%",
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比物理攻击收益",
+      "actual": 0.055,
+      "expected": "+5.50%",
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比综合收益",
+      "actual": 0.328125,
+      "expected": "+32.81%",
+      "passed": true
+    },
+    {
+      "name": "剑魂力量收益",
+      "actual": 0.364706,
+      "expected": "+36.47%",
+      "passed": true
+    },
+    {
+      "name": "剑魂物理攻击收益",
+      "actual": 0.042308,
+      "expected": "+4.23%",
+      "passed": true
+    },
+    {
+      "name": "剑魂暴击收益",
+      "actual": 0.012,
+      "expected": "+1.2%",
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比综合收益",
+      "actual": 0.439513,
+      "expected": "+43.95%",
+      "passed": true
+    },
+    {
+      "name": "边际对偶倍数（剑魂/狂战士固伤）",
+      "actual": 4.740937,
+      "expected": "4.7409",
+      "passed": true
+    }
   ],
-  "key_values": {
-    "berserker_fixed_total": 9.2706,
-    "berserker_pct_total": 32.8125,
-    "swordsman_pct_total": 43.9513,
-    "marginal_dual": 4.7409
+  "core_conclusions": {
+    "berserker_fixed_damage": "+9.27%",
+    "berserker_percentile": "+32.81%",
+    "swordsman_percentile": "+43.95%",
+    "marginal_dual_ratio": 4.7409
   }
 }
