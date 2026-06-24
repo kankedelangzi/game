@@ -1,28 +1,71 @@
 {
-  "timestamp": "2026-06-25T02:52:17.844284",
-  "version": "v374",
-  "cc_set": {
-    "力量": 310,
-    "物理攻击": 110,
-    "独立攻击": 120,
-    "暴击率": 3.0
+  "timestamp": "2026-06-25T03:13:12.410726",
+  "version": "v375",
+  "checks": {
+    "cc_stats_sum": {
+      "status": "PASS",
+      "details": "力量310/物攻110/独立120/暴击3%"
+    },
+    "berserker_fix_ind": {
+      "status": "PASS",
+      "value": 8.0,
+      "expected": 8.0
+    },
+    "berserker_fix_crit": {
+      "status": "PASS",
+      "value": 1.18,
+      "expected": 1.18
+    },
+    "berserker_fix_total": {
+      "status": "PASS",
+      "value": 9.27,
+      "expected": 9.27
+    },
+    "berserker_pct_str": {
+      "status": "PASS",
+      "value": 24.42,
+      "expected": 24.42
+    },
+    "berserker_pct_phy": {
+      "status": "PASS",
+      "value": 5.5,
+      "expected": 5.5
+    },
+    "berserker_pct_total": {
+      "status": "PASS",
+      "value": 32.81,
+      "expected": 32.81
+    },
+    "swordsman_pct_str": {
+      "status": "PASS",
+      "value": 36.47,
+      "expected": 36.47
+    },
+    "swordsman_pct_phy": {
+      "status": "PASS",
+      "value": 4.23,
+      "expected": 4.23
+    },
+    "swordsman_pct_crit": {
+      "status": "PASS",
+      "value": 1.2,
+      "expected": 1.2
+    },
+    "swordsman_pct_total": {
+      "status": "PASS",
+      "value": 43.95,
+      "expected": 43.95
+    },
+    "dual_ratio": {
+      "status": "PASS",
+      "value": 4.7409,
+      "expected": 4.7409
+    }
   },
-  "berserker_gou": {
-    "独立收益": 0.08,
-    "暴击收益": 0.011765,
-    "综合": 0.092706
-  },
-  "berserker_pct": {
-    "力量收益": 0.244248,
-    "物理攻击收益": 0.055,
-    "综合": 0.328125
-  },
-  "swordsman_pct": {
-    "力量收益": 0.364706,
-    "物理攻击收益": 0.042308,
-    "综合": 0.439513
-  },
-  "marginal_dual": 4.740937,
-  "passed": 10,
-  "total": 10
+  "summary": {
+    "total": 12,
+    "passed": 12,
+    "failed": 0,
+    "pass_rate": "100%"
+  }
 }
