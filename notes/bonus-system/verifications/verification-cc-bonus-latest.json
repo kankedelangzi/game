@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-06-25T00:47:12",
+  "version": "v368",
+  "total_checks": 21,
+  "passed": 21,
+  "failed": 0,
+  "all_pass": true,
+  "marginal_dual": 4.7409,
+  "marginal_dual_formula": "剑魂百分比综合 / 狂战士固伤综合 = 43.9513 / 9.2706",
+  "berserker": {
+    "ind_gain": 8.0,
+    "crit_gain": 1.18,
+    "melee_total": 9.27,
+    "str_gain_pct": 24.42,
+    "phy_gain_pct": 5.5,
+    "pct_total": 32.81
+  },
+  "swordsman": {
+    "str_gain": 36.47,
+    "phy_gain": 4.23,
+    "crit_gain": 1.2,
+    "pct_total": 43.95
+  },
+  "cc_set_6piece": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical_rate": 3.0
+  },
+  "notes": "边际对偶=剑魂百分比综合收益/狂战士固伤综合收益=43.95/9.27=4.7409倍，确认为系统固有频率"
+}
