@@ -1,156 +1,38 @@
 {
-  "version": "v340",
-  "timestamp": "2026-06-24T17:41:06.575818",
-  "total_checks": 15,
-  "passed": 15,
-  "pass_rate": "100.0%",
-  "results": [
-    {
-      "id": 1,
-      "name": "CC套6件力量",
-      "expected": 310,
-      "actual": 310,
-      "diff": 0,
-      "passed": true,
-      "status": "✅"
+  "timestamp": "2026-06-24T17:51:05.124839",
+  "round": "v342",
+  "results": {
+    "berserker_fixed": {
+      "independent_gain": 8.0,
+      "crit_gain": 1.18,
+      "total": 9.27
     },
-    {
-      "id": 2,
-      "name": "CC套6件物理攻击",
-      "expected": 110,
-      "actual": 110,
-      "diff": 0,
-      "passed": true,
-      "status": "✅"
+    "berserker_percent": {
+      "power_gain": 24.42,
+      "phy_atk_gain": 5.5,
+      "crit_gain": 1.18,
+      "total": 32.81
     },
-    {
-      "id": 3,
-      "name": "CC套6件独立攻击",
-      "expected": 120,
-      "actual": 120,
-      "diff": 0,
-      "passed": true,
-      "status": "✅"
+    "swordsman_percent": {
+      "power_gain": 36.47,
+      "phy_atk_gain": 4.23,
+      "crit_gain": 1.2,
+      "total": 43.95
     },
-    {
-      "id": 4,
-      "name": "CC套6件暴击率",
-      "expected": 0.03,
-      "actual": 0.03,
-      "diff": 0.0,
-      "passed": true,
-      "status": "✅"
+    "duality_ratio": 4.7411,
+    "validation": {
+      "berserker_fixed_match": true,
+      "berserker_percent_match": true,
+      "swordsman_percent_match": true,
+      "duality_ratio_match": true
     },
-    {
-      "id": 5,
-      "name": "狂战士独立攻击收益",
-      "expected": 0.08,
-      "actual": 0.08,
-      "diff": 0.0,
-      "passed": true,
-      "status": "✅"
-    },
-    {
-      "id": 6,
-      "name": "狂战士暴击收益",
-      "expected": 0.0118,
-      "actual": 0.0118,
-      "diff": 0.0,
-      "passed": true,
-      "status": "✅"
-    },
-    {
-      "id": 7,
-      "name": "狂战士固伤综合收益",
-      "expected": 0.0927,
-      "actual": 0.0927,
-      "diff": 0.0,
-      "passed": true,
-      "status": "✅"
-    },
-    {
-      "id": 8,
-      "name": "狂战士百分比力量收益",
-      "expected": 0.2442,
-      "actual": 0.2442,
-      "diff": 0.0,
-      "passed": true,
-      "status": "✅"
-    },
-    {
-      "id": 9,
-      "name": "狂战士百分比物理攻击收益",
-      "expected": 0.055,
-      "actual": 0.055,
-      "diff": 0.0,
-      "passed": true,
-      "status": "✅"
-    },
-    {
-      "id": 10,
-      "name": "狂战士百分比综合收益",
-      "expected": 0.3281,
-      "actual": 0.3281,
-      "diff": 0.0,
-      "passed": true,
-      "status": "✅"
-    },
-    {
-      "id": 11,
-      "name": "剑魂力量收益",
-      "expected": 0.3647,
-      "actual": 0.3647,
-      "diff": 0.0,
-      "passed": true,
-      "status": "✅"
-    },
-    {
-      "id": 12,
-      "name": "剑魂物理攻击收益",
-      "expected": 0.0423,
-      "actual": 0.0423,
-      "diff": 0.0,
-      "passed": true,
-      "status": "✅"
-    },
-    {
-      "id": 13,
-      "name": "剑魂暴击收益",
-      "expected": 0.012,
-      "actual": 0.012,
-      "diff": 0.0,
-      "passed": true,
-      "status": "✅"
-    },
-    {
-      "id": 14,
-      "name": "剑魂百分比综合收益",
-      "expected": 0.4395,
-      "actual": 0.4395,
-      "diff": 0.0,
-      "passed": true,
-      "status": "✅"
-    },
-    {
-      "id": 15,
-      "name": "边际对偶倍数",
-      "expected": 4.7409,
-      "actual": 4.7409,
-      "diff": 0.0,
-      "passed": true,
-      "status": "✅"
-    }
-  ],
-  "core_conclusions": {
-    "cc_set_6pc": {
-      "strength": 310,
-      "phy_atk": 110,
-      "independent": 120,
-      "crit": 0.03
-    },
-    "berserker_hog_total": 0.0927,
-    "berserker_pct_total": 0.3281,
-    "swordman_pct_total": 0.4395,
-    "marginal_duality_ratio": 4.7409
-  }
+    "all_pass": true
+  },
+  "expected": {
+    "berserker_fixed_total": 9.27,
+    "berserker_percent_total": 32.81,
+    "swordsman_percent_total": 43.95,
+    "duality_ratio": 4.74
+  },
+  "all_pass": true
 }
