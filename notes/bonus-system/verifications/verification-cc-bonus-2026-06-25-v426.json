@@ -1,0 +1,42 @@
+{
+  "version": "v426",
+  "timestamp": "2026-06-25T18:21:00+08:00",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "checks": 15,
+  "passed": 15,
+  "pass_rate": "100%",
+  "verifications": {
+    "cc_set_attributes": {
+      "strength": {"expected": 310, "actual": 310, "pass": true},
+      "physical_attack": {"expected": 110, "actual": 110, "pass": true},
+      "independent_attack": {"expected": 120, "actual": 120, "pass": true},
+      "critical_rate": {"expected": 0.03, "actual": 0.03, "pass": true}
+    },
+    "berserker_fixed": {
+      "independent_gain": {"expected": 0.08, "actual": 0.08, "pass": true},
+      "critical_gain": {"expected": 0.011765, "actual": 0.011765, "pass": true},
+      "total": {"expected": 0.0927, "actual": 0.092706, "pass": true}
+    },
+    "berserker_percent": {
+      "strength_gain": {"expected": 0.2442, "actual": 0.244248, "pass": true},
+      "physical_gain": {"expected": 0.055, "actual": 0.055, "pass": true},
+      "total": {"expected": 0.3281, "actual": 0.328125, "pass": true}
+    },
+    "swordsman_percent": {
+      "strength_gain": {"expected": 0.3647, "actual": 0.364706, "pass": true},
+      "physical_gain": {"expected": 0.0423, "actual": 0.042308, "pass": true},
+      "critical_gain": {"expected": 0.012, "actual": 0.012, "pass": true},
+      "total": {"expected": 0.4395, "actual": 0.439513, "pass": true}
+    },
+    "marginal_duality": {
+      "ratio": {"expected": 4.740937, "actual": 4.740937, "pass": true}
+    }
+  },
+  "core_data": {
+    "cc_set_6pc": "力量+310/物理攻击+110/独立攻击+120/暴击+3%",
+    "berserker_fixed_total": "+9.27%",
+    "berserker_percent_total": "+32.81%",
+    "swordsman_percent_total": "+43.95%",
+    "marginal_duality": "4.740937倍"
+  }
+}
