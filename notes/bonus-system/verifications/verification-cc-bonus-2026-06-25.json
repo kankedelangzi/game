@@ -1,135 +1,138 @@
 {
-  "version": "v401",
-  "timestamp": "2026-06-25T11:47:00+08:00",
-  "total": 19,
+  "version": "v403",
+  "timestamp": "2026-06-25T12:06:42.969507+08:00",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "total_checks": 19,
   "passed": 19,
-  "pass_rate": "100.0%",
+  "failed": 0,
+  "pass_rate": "19/19 (100.0%)",
   "results": [
     {
-      "check": "CC套力量合计",
+      "name": "力量合计",
       "expected": 310,
       "actual": 310,
       "pass": true
     },
     {
-      "check": "CC套物理攻击合计",
+      "name": "物理攻击合计",
       "expected": 110,
       "actual": 110,
       "pass": true
     },
     {
-      "check": "CC套独立攻击合计",
+      "name": "独立攻击合计",
       "expected": 120,
       "actual": 120,
       "pass": true
     },
     {
-      "check": "CC套暴击率合计",
-      "expected": 3.0,
-      "actual": 3.0,
+      "name": "暴击率合计",
+      "expected": 0.03,
+      "actual": 0.03,
       "pass": true
     },
     {
-      "check": "狂战士独立攻击收益",
-      "expected": 8.0,
-      "actual": 8.0,
+      "name": "狂战士独立攻击收益",
+      "expected": 0.08,
+      "actual": 0.08,
       "pass": true
     },
     {
-      "check": "狂战士暴击收益",
-      "expected": 1.18,
-      "actual": 1.18,
+      "name": "狂战士暴击收益",
+      "expected": 0.0118,
+      "actual": 0.0118,
       "pass": true
     },
     {
-      "check": "狂战士固伤综合收益",
-      "expected": 9.27,
-      "actual": 9.27,
+      "name": "狂战士固伤综合收益",
+      "expected": 0.0927,
+      "actual": 0.0927,
       "pass": true
     },
     {
-      "check": "狂战士力量收益(百分比)",
-      "expected": 24.42,
-      "actual": 24.42,
+      "name": "狂战士百分比力量收益",
+      "expected": 0.2442,
+      "actual": 0.2442,
       "pass": true
     },
     {
-      "check": "狂战士物理攻击收益(百分比)",
-      "expected": 5.5,
-      "actual": 5.5,
+      "name": "狂战士百分比物理攻击收益",
+      "expected": 0.055,
+      "actual": 0.055,
       "pass": true
     },
     {
-      "check": "狂战士百分比综合收益",
-      "expected": 32.81,
-      "actual": 32.81,
+      "name": "狂战士百分比综合收益",
+      "expected": 0.3281,
+      "actual": 0.3281,
       "pass": true
     },
     {
-      "check": "剑魂力量收益",
-      "expected": 36.47,
-      "actual": 36.47,
+      "name": "剑魂力量收益",
+      "expected": 0.3647,
+      "actual": 0.3647,
       "pass": true
     },
     {
-      "check": "剑魂物理攻击收益(破极后)",
-      "expected": 4.23,
-      "actual": 4.23,
+      "name": "剑魂物理攻击收益",
+      "expected": 0.0423,
+      "actual": 0.0423,
       "pass": true
     },
     {
-      "check": "剑魂暴击收益",
-      "expected": 1.2,
-      "actual": 1.2,
+      "name": "剑魂暴击收益",
+      "expected": 0.012,
+      "actual": 0.012,
       "pass": true
     },
     {
-      "check": "剑魂百分比综合收益",
-      "expected": 43.95,
-      "actual": 43.95,
+      "name": "剑魂百分比综合收益",
+      "expected": 0.4395,
+      "actual": 0.4395,
       "pass": true
     },
     {
-      "check": "边际对偶倍数(百分比/固伤)",
-      "expected": 4.7409,
-      "actual": 4.7409,
+      "name": "边际对偶倍数",
+      "expected": 4.740937,
+      "actual": 4.740937,
       "pass": true
     },
     {
-      "check": "狂战士暴击期望系数(原)",
+      "name": "狂战士暴击期望旧",
       "expected": 1.275,
       "actual": 1.275,
       "pass": true
     },
     {
-      "check": "狂战士暴击期望系数(新)",
+      "name": "狂战士暴击期望新",
       "expected": 1.29,
       "actual": 1.29,
       "pass": true
     },
     {
-      "check": "剑魂暴击期望系数(原)",
+      "name": "剑魂暴击期望旧",
       "expected": 1.25,
       "actual": 1.25,
       "pass": true
     },
     {
-      "check": "剑魂暴击期望系数(新)",
+      "name": "剑魂暴击期望新",
       "expected": 1.265,
       "actual": 1.265,
       "pass": true
     }
   ],
   "summary": {
-    "cc_set": {
-      "str": 310,
-      "phy": 110,
-      "indep": 120,
-      "crit": 3.0
+    "cc_6pc": {
+      "strength": 310,
+      "physical_attack": 110,
+      "independent_attack": 120,
+      "crit_rate": "3.0%"
     },
-    "berserker_fixed": 9.27,
-    "berserker_percent": 32.81,
-    "swordsman_percent": 43.95,
-    "marginal_ratio": 4.740937
+    "berserker_fixed_total": "9.27%",
+    "berserker_pct_total": "32.81%",
+    "swordsman_pct_total": "43.95%",
+    "marginal_duality": "4.740937",
+    "marginal_duality_rounded": "4.7409"
   }
 }
