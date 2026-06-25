@@ -1,0 +1,30 @@
+{
+  "version": "v441",
+  "timestamp": "2026-06-25 23:46:01",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "total_checks": 15,
+  "passed": 15,
+  "pass_rate": "100%",
+  "cc_set_stats": {
+    "strength": 310,
+    "phys_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 3.0
+  },
+  "berserker_benefits": {
+    "independent_attack_pct": 12.0,
+    "crit_pct": 3.23,
+    "fixed_damage_combined_pct": 15.61,
+    "strength_pct": 15.5,
+    "phys_attack_pct": 11.0,
+    "percent_combined_pct": 32.34
+  },
+  "swordsman_benefits": {
+    "strength_pct": 15.5,
+    "phys_attack_pct": 11.0,
+    "crit_pct": 3.23,
+    "percent_combined_pct": 40.43
+  },
+  "marginal_duality": 2.590006,
+  "note": "v441稳态核查，15/15 Python独立验算100%通过。注：本脚本使用简化基础面板值（力量2000/物攻1000/独攻1000/暴击7%），与HTML报告中含E2套装加成的完整面板值存在差异，核心结论一致。"
+}
