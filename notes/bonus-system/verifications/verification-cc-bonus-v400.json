@@ -1,0 +1,99 @@
+{
+  "version": "v400",
+  "timestamp": "2026-06-25T11:42:51.134957",
+  "total": 15,
+  "passed": 5,
+  "pass_rate": "5/15",
+  "results": [
+    {
+      "name": "力量合计",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "name": "物理攻击合计",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "name": "独立攻击合计",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "name": "暴击率合计",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    {
+      "name": "狂战士独立攻击收益",
+      "expected": 8.0,
+      "actual": 8.0,
+      "pass": true
+    },
+    {
+      "name": "狂战士暴击收益",
+      "expected": 1.18,
+      "actual": 1.94,
+      "pass": false
+    },
+    {
+      "name": "狂战士固伤综合收益",
+      "expected": 9.27,
+      "actual": 10.09,
+      "pass": false
+    },
+    {
+      "name": "狂战士力量收益(百分比)",
+      "expected": 24.42,
+      "actual": 29.87,
+      "pass": false
+    },
+    {
+      "name": "狂战士物理攻击收益(百分比)",
+      "expected": 5.5,
+      "actual": 5.21,
+      "pass": false
+    },
+    {
+      "name": "狂战士百分比综合收益",
+      "expected": 32.81,
+      "actual": 39.28,
+      "pass": false
+    },
+    {
+      "name": "剑魂力量收益",
+      "expected": 36.47,
+      "actual": 29.87,
+      "pass": false
+    },
+    {
+      "name": "剑魂物理攻击收益",
+      "expected": 4.23,
+      "actual": 5.21,
+      "pass": false
+    },
+    {
+      "name": "剑魂暴击收益",
+      "expected": 1.2,
+      "actual": 1.94,
+      "pass": false
+    },
+    {
+      "name": "剑魂百分比综合收益",
+      "expected": 43.95,
+      "actual": 39.28,
+      "pass": false
+    },
+    {
+      "name": "边际对偶倍数",
+      "expected": 4.740937,
+      "actual": 3.892829,
+      "pass": false
+    }
+  ]
+}
