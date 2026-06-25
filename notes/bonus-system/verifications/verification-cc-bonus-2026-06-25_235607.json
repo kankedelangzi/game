@@ -1,0 +1,121 @@
+{
+  "version": "v443",
+  "timestamp": "2026-06-25_235607",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "total": 15,
+  "passed": 9,
+  "rate": "9/15",
+  "cc_stats": {
+    "strength": 310,
+    "phys_atk": 110,
+    "indep_atk": 120,
+    "crit_rate": 3
+  },
+  "berserker": {
+    "str_bonus_pct": 12.4,
+    "phys_atk_bonus_pct": 16.92,
+    "indep_atk_bonus_pct": 4.8,
+    "crit_bonus_pct": 3.33,
+    "fixed_total_pct": 8.29,
+    "pct_total_pct": 42.32
+  },
+  "swordsman": {
+    "str_bonus_pct": 12.4,
+    "phys_atk_bonus_pct": 16.92,
+    "crit_bonus_pct": 3.33,
+    "pct_total_pct": 85.02
+  },
+  "marginal_duality": 5.102986,
+  "details": [
+    {
+      "name": "CC力量合计",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "name": "CC物理攻击合计",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "name": "CC独立攻击合计",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "name": "CC暴击率合计",
+      "expected": 3,
+      "actual": 3,
+      "pass": true
+    },
+    {
+      "name": "狂战士力量收益%",
+      "expected": 12.4,
+      "actual": 12.4,
+      "pass": true
+    },
+    {
+      "name": "狂战士物理攻击收益%",
+      "expected": 16.92,
+      "actual": 16.92,
+      "pass": true
+    },
+    {
+      "name": "狂战士独立攻击收益%",
+      "expected": 4.8,
+      "actual": 4.8,
+      "pass": true
+    },
+    {
+      "name": "狂战士暴击收益%",
+      "expected": 3.33,
+      "actual": 3.26,
+      "pass": false
+    },
+    {
+      "name": "狂战士固伤综合%",
+      "expected": 8.29,
+      "actual": 9.27,
+      "pass": false
+    },
+    {
+      "name": "狂战士百分比综合%",
+      "expected": 42.32,
+      "actual": 32.81,
+      "pass": false
+    },
+    {
+      "name": "剑魂力量收益%",
+      "expected": 12.4,
+      "actual": 12.4,
+      "pass": true
+    },
+    {
+      "name": "剑魂物理攻击收益%",
+      "expected": 16.92,
+      "actual": 16.92,
+      "pass": true
+    },
+    {
+      "name": "剑魂暴击收益%",
+      "expected": 3.33,
+      "actual": 3.26,
+      "pass": false
+    },
+    {
+      "name": "剑魂百分比综合%",
+      "expected": 85.02,
+      "actual": 43.95,
+      "pass": false
+    },
+    {
+      "name": "边际对偶倍数",
+      "expected": 5.103,
+      "actual": 4.7409,
+      "pass": false
+    }
+  ]
+}
