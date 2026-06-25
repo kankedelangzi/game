@@ -1,115 +1,28 @@
 {
-  "task": "任务19 - CC套各职业加成数值",
-  "version": "v425",
-  "timestamp": "2026-06-25T17:53:00+08:00",
-  "checks": [
-    {
-      "name": "CC套力量合计",
-      "expected": 310,
-      "actual": 310,
-      "passed": true,
-      "diff": 0
-    },
-    {
-      "name": "CC套物理攻击合计",
-      "expected": 110,
-      "actual": 110,
-      "passed": true,
-      "diff": 0
-    },
-    {
-      "name": "CC套独立攻击合计",
-      "expected": 120,
-      "actual": 120,
-      "passed": true,
-      "diff": 0
-    },
-    {
-      "name": "CC套暴击合计",
-      "expected": 3.0,
-      "actual": 3.0,
-      "passed": true,
-      "diff": 0.0
-    },
-    {
-      "name": "狂战士独立攻击收益",
-      "expected": 8.0,
-      "actual": 8.0,
-      "passed": true,
-      "diff": 0.0
-    },
-    {
-      "name": "狂战士暴击收益",
-      "expected": 1.18,
-      "actual": 1.176471,
-      "passed": true,
-      "diff": 0.003529
-    },
-    {
-      "name": "狂战士固伤综合收益",
-      "expected": 9.27,
-      "actual": 9.270588,
-      "passed": true,
-      "diff": 0.000588
-    },
-    {
-      "name": "狂战士力量收益（暴走后）",
-      "expected": 24.42,
-      "actual": 24.424835,
-      "passed": true,
-      "diff": 0.004835
-    },
-    {
-      "name": "狂战士物理攻击收益",
-      "expected": 5.5,
-      "actual": 5.5,
-      "passed": true,
-      "diff": 0.0
-    },
-    {
-      "name": "狂战士百分比综合收益",
-      "expected": 32.81,
-      "actual": 32.812532,
-      "passed": true,
-      "diff": 0.002532
-    },
-    {
-      "name": "剑魂力量收益",
-      "expected": 36.47,
-      "actual": 36.470588,
-      "passed": true,
-      "diff": 0.000588
-    },
-    {
-      "name": "剑魂物理攻击收益（破极后）",
-      "expected": 4.23,
-      "actual": 4.230769,
-      "passed": true,
-      "diff": 0.000769
-    },
-    {
-      "name": "剑魂暴击收益",
-      "expected": 1.2,
-      "actual": 1.2,
-      "passed": true,
-      "diff": 0.0
-    },
-    {
-      "name": "剑魂百分比综合收益",
-      "expected": 43.95,
-      "actual": 43.951276,
-      "passed": true,
-      "diff": 0.001276
-    },
-    {
-      "name": "边际对偶倍数",
-      "expected": 4.740937,
-      "actual": 4.740937,
-      "passed": true,
-      "diff": 0.0
-    }
-  ],
-  "passed": 15,
-  "failed": 0,
-  "total": 15
+  "timestamp": "2026-06-25T18:43:34.962266",
+  "version": "v427",
+  "cc_set": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 3.0
+  },
+  "berserker": {
+    "strength_burst": 1019.2,
+    "independent": 1250,
+    "physical_attack": 2000,
+    "crit_rate": 55.0,
+    "fixed_damage_gain": 9.27,
+    "percentage_damage_gain": 32.81
+  },
+  "swordsman": {
+    "strength": 600,
+    "physical_attack_broken": 2600.0,
+    "crit_rate": 50.0,
+    "percentage_damage_gain": 43.95
+  },
+  "marginal_dual_ratio": 4.7409,
+  "all_passed": true,
+  "passed": 19,
+  "total": 19
 }
