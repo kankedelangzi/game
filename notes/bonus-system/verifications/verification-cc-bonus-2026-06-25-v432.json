@@ -1,0 +1,29 @@
+{
+  "version": "v432",
+  "timestamp": "2026-06-25T20:53:00+08:00",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "cc_set_6pc": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical_rate": 3.0
+  },
+  "berserker": {
+    "independent_gain_pct": 8.0,
+    "critical_gain_pct": 1.18,
+    "fixed_total_pct": 9.27,
+    "strength_gain_pct_baosou": 24.42,
+    "physical_gain_pct": 5.5,
+    "percent_total_pct": 32.81
+  },
+  "swordsman": {
+    "strength_gain_pct": 36.47,
+    "physical_gain_pct_poj": 4.23,
+    "critical_gain_pct": 1.2,
+    "percent_total_pct": 43.95
+  },
+  "marginal_duality": 4.740937,
+  "marginal_duality_formula": "剑魂百分比综合 / 狂战士固伤综合",
+  "passed": 15,
+  "total": 15
+}
