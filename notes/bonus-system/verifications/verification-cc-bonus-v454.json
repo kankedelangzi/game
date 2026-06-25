@@ -1,0 +1,109 @@
+{
+  "version": "v454",
+  "timestamp": "2026-06-26T02:39:38.595012",
+  "total": 16,
+  "passed": 16,
+  "rate": 100.0,
+  "marginal_duality": 4.740937,
+  "berserker_fixed_composite": 0.0927,
+  "berserker_pct_composite": 0.3281,
+  "swordsman_pct_composite": 0.4395,
+  "checks": [
+    {
+      "check": "力量+310",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "check": "物理攻击+110",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "check": "独立攻击+120",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "check": "暴击率+3%",
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true
+    },
+    {
+      "check": "狂战士独立攻击收益",
+      "expected": 0.08,
+      "actual": 0.08,
+      "pass": true
+    },
+    {
+      "check": "狂战士暴击收益(固伤)",
+      "expected": 0.012,
+      "actual": 0.0118,
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤综合",
+      "expected": 0.0927,
+      "actual": 0.0927,
+      "pass": true
+    },
+    {
+      "check": "狂战士力量收益(百分比)",
+      "expected": 0.2442,
+      "actual": 0.2442,
+      "pass": true
+    },
+    {
+      "check": "狂战士物理攻击收益",
+      "expected": 0.055,
+      "actual": 0.055,
+      "pass": true
+    },
+    {
+      "check": "狂战士暴击收益(百分比)",
+      "expected": 0.012,
+      "actual": 0.0118,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比综合",
+      "expected": 0.3281,
+      "actual": 0.3281,
+      "pass": true
+    },
+    {
+      "check": "剑魂力量收益",
+      "expected": 0.3647,
+      "actual": 0.3647,
+      "pass": true
+    },
+    {
+      "check": "剑魂物理攻击收益",
+      "expected": 0.0423,
+      "actual": 0.0423,
+      "pass": true
+    },
+    {
+      "check": "剑魂暴击收益",
+      "expected": 0.012,
+      "actual": 0.012,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比综合",
+      "expected": 0.4395,
+      "actual": 0.4395,
+      "pass": true
+    },
+    {
+      "check": "边际对偶倍数",
+      "expected": 4.74,
+      "actual": 4.7409,
+      "pass": true
+    }
+  ]
+}
