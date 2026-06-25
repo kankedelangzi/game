@@ -1,0 +1,175 @@
+{
+  "version": "v415",
+  "timestamp": "2026-06-25T16:49:33.436856+08:00",
+  "total": 27,
+  "passed": 27,
+  "pass_rate": "27/27 (100%)",
+  "marginal_duality": 4.740937,
+  "berserk_fixed_total": 0.0927,
+  "berserk_pct_total": 0.3281,
+  "swd_pct_total": 0.4395,
+  "results": [
+    {
+      "item": "CC套力量合计",
+      "expected": 310,
+      "actual": 310,
+      "status": "✅"
+    },
+    {
+      "item": "CC套物理攻击合计",
+      "expected": 110,
+      "actual": 110,
+      "status": "✅"
+    },
+    {
+      "item": "CC套独立攻击合计",
+      "expected": 120,
+      "actual": 120,
+      "status": "✅"
+    },
+    {
+      "item": "CC套暴击率合计",
+      "expected": 3.0,
+      "actual": 3.0,
+      "status": "✅"
+    },
+    {
+      "item": "狂战士独立攻击收益",
+      "expected": 0.08,
+      "actual": 0.08,
+      "status": "✅"
+    },
+    {
+      "item": "狂战士暴击收益",
+      "expected": 0.01176,
+      "actual": 0.011765,
+      "status": "✅"
+    },
+    {
+      "item": "狂战士固伤综合收益",
+      "expected": 0.09268,
+      "actual": 0.092706,
+      "status": "✅"
+    },
+    {
+      "item": "狂战士百分比力量收益",
+      "expected": 0.2442,
+      "actual": 0.244248,
+      "status": "✅"
+    },
+    {
+      "item": "狂战士百分比物理攻击收益",
+      "expected": 0.055,
+      "actual": 0.055,
+      "status": "✅"
+    },
+    {
+      "item": "狂战士百分比综合收益",
+      "expected": 0.3281,
+      "actual": 0.328125,
+      "status": "✅"
+    },
+    {
+      "item": "剑魂力量收益",
+      "expected": 0.3647,
+      "actual": 0.364706,
+      "status": "✅"
+    },
+    {
+      "item": "剑魂物理攻击收益",
+      "expected": 0.0423,
+      "actual": 0.042308,
+      "status": "✅"
+    },
+    {
+      "item": "剑魂暴击收益",
+      "expected": 0.012,
+      "actual": 0.012,
+      "status": "✅"
+    },
+    {
+      "item": "剑魂百分比综合收益",
+      "expected": 0.4395,
+      "actual": 0.439513,
+      "status": "✅"
+    },
+    {
+      "item": "边际对偶(剑魂百分比/狂战士固伤)",
+      "expected": 4.740937,
+      "actual": 4.740937,
+      "status": "✅"
+    },
+    {
+      "item": "狂战士暴击期望系数(55%)",
+      "expected": 1.275,
+      "actual": 1.275,
+      "status": "✅"
+    },
+    {
+      "item": "狂战士暴击期望系数(58%)",
+      "expected": 1.29,
+      "actual": 1.29,
+      "status": "✅"
+    },
+    {
+      "item": "剑魂暴击期望系数(50%)",
+      "expected": 1.25,
+      "actual": 1.25,
+      "status": "✅"
+    },
+    {
+      "item": "剑魂暴击期望系数(53%)",
+      "expected": 1.265,
+      "actual": 1.265,
+      "status": "✅"
+    },
+    {
+      "item": "狂战士固伤综合(显示+9.27%)",
+      "expected": 0.0927,
+      "actual": 0.092706,
+      "status": "✅"
+    },
+    {
+      "item": "狂战士百分比综合(显示+32.81%)",
+      "expected": 0.3281,
+      "actual": 0.328125,
+      "status": "✅"
+    },
+    {
+      "item": "剑魂综合(显示+43.95%)",
+      "expected": 0.4395,
+      "actual": 0.439513,
+      "status": "✅"
+    },
+    {
+      "item": "边际对偶(显示4.740937)",
+      "expected": 4.740937,
+      "actual": 4.740937,
+      "status": "✅"
+    },
+    {
+      "item": "狂战士力量+CC",
+      "expected": 1038,
+      "actual": 1038,
+      "status": "✅"
+    },
+    {
+      "item": "剑魂力量+CC",
+      "expected": 910,
+      "actual": 910,
+      "status": "✅"
+    },
+    {
+      "item": "狂战士物理攻击+CC",
+      "expected": 2110,
+      "actual": 2110,
+      "status": "✅"
+    },
+    {
+      "item": "剑魂物理攻击+CC",
+      "expected": 2110,
+      "actual": 2110,
+      "status": "✅"
+    }
+  ]
+}
