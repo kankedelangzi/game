@@ -1,0 +1,168 @@
+{
+  "version": "v413",
+  "timestamp": "2026-06-25 16:11:00",
+  "total_checks": 23,
+  "passed": 23,
+  "failed": 0,
+  "pass_rate": "100%",
+  "all_pass": true,
+  "marginal_duality": 4.740937,
+  "cc_set_stats": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 3.0
+  },
+  "berserker": {
+    "fixed_total": 9.27,
+    "percentage_total": 32.81,
+    "ind_gain": 8.0,
+    "crit_gain": 1.18
+  },
+  "swordsman": {
+    "percentage_total": 43.95,
+    "str_gain": 36.47,
+    "phy_gain": 4.23,
+    "crit_gain": 1.2
+  },
+  "checks": [
+    {
+      "check": "CC套力量合计",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "check": "CC套物理攻击合计",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "check": "CC套独立攻击合计",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "check": "CC套暴击率合计",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    {
+      "check": "狂战士独立攻击收益",
+      "expected": 0.08,
+      "actual": 0.08,
+      "pass": true
+    },
+    {
+      "check": "狂战士暴击收益",
+      "expected": 0.0118,
+      "actual": 0.0118,
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤综合收益",
+      "expected": 0.0927,
+      "actual": 0.0927,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比力量收益",
+      "expected": 0.2442,
+      "actual": 0.2442,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比物理攻击收益",
+      "expected": 0.055,
+      "actual": 0.055,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比综合收益",
+      "expected": 0.3281,
+      "actual": 0.3281,
+      "pass": true
+    },
+    {
+      "check": "剑魂力量收益",
+      "expected": 0.3647,
+      "actual": 0.3647,
+      "pass": true
+    },
+    {
+      "check": "剑魂物理攻击收益(破极后)",
+      "expected": 0.0423,
+      "actual": 0.0423,
+      "pass": true
+    },
+    {
+      "check": "剑魂暴击收益",
+      "expected": 0.012,
+      "actual": 0.012,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比综合收益",
+      "expected": 0.4395,
+      "actual": 0.4395,
+      "pass": true
+    },
+    {
+      "check": "边际对偶倍数",
+      "expected": 4.740937,
+      "actual": 4.740937,
+      "pass": true
+    },
+    {
+      "check": "狂战士暴走后力量+CC",
+      "expected": 1329.2,
+      "actual": 1329.2,
+      "pass": true
+    },
+    {
+      "check": "剑魂力量+CC",
+      "expected": 910,
+      "actual": 910,
+      "pass": true
+    },
+    {
+      "check": "狂战士物理攻击+CC",
+      "expected": 2110,
+      "actual": 2110,
+      "pass": true
+    },
+    {
+      "check": "剑魂破极后物理攻击+CC",
+      "expected": 2710,
+      "actual": 2710.0,
+      "pass": true
+    },
+    {
+      "check": "狂战士暴击期望系数(原)",
+      "expected": 1.275,
+      "actual": 1.275,
+      "pass": true
+    },
+    {
+      "check": "狂战士暴击期望系数(新)",
+      "expected": 1.29,
+      "actual": 1.29,
+      "pass": true
+    },
+    {
+      "check": "剑魂暴击期望系数(原)",
+      "expected": 1.25,
+      "actual": 1.25,
+      "pass": true
+    },
+    {
+      "check": "剑魂暴击期望系数(新)",
+      "expected": 1.265,
+      "actual": 1.265,
+      "pass": true
+    }
+  ]
+}
