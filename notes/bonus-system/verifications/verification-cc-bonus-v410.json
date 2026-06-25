@@ -1,0 +1,422 @@
+{
+  "version": "v410",
+  "timestamp": "2026-06-25T13:22:10.887511",
+  "total": 68,
+  "passed": 68,
+  "failed": 0,
+  "pass_rate": "100.0%",
+  "marginal_ratio": 4.740937,
+  "berserker_fixed_total": 0.0927,
+  "berserker_pct_total": 0.3281,
+  "swordsman_pct_total": 0.4395,
+  "results": [
+    {
+      "check": "CC套6件力量合计",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "check": "CC套6件物理攻击合计",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "check": "CC套6件独立攻击合计",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "check": "CC套6件暴击率合计",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    {
+      "check": "狂战士独立攻击收益",
+      "expected": 0.08,
+      "actual": 0.08,
+      "pass": true
+    },
+    {
+      "check": "狂战士暴击收益(期望系数)",
+      "expected": 0.0118,
+      "actual": 0.0118,
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤综合收益",
+      "expected": 0.0927,
+      "actual": 0.0927,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比力量收益(暴走后)",
+      "expected": 0.2442,
+      "actual": 0.2442,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比物理攻击收益",
+      "expected": 0.055,
+      "actual": 0.055,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比综合收益",
+      "expected": 0.3281,
+      "actual": 0.3281,
+      "pass": true
+    },
+    {
+      "check": "剑魂力量收益",
+      "expected": 0.3647,
+      "actual": 0.3647,
+      "pass": true
+    },
+    {
+      "check": "剑魂物理攻击收益(破极后)",
+      "expected": 0.0423,
+      "actual": 0.0423,
+      "pass": true
+    },
+    {
+      "check": "剑魂暴击收益(期望系数)",
+      "expected": 0.012,
+      "actual": 0.012,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比综合收益",
+      "expected": 0.4395,
+      "actual": 0.4395,
+      "pass": true
+    },
+    {
+      "check": "边际对偶倍数(百分比综合/固伤综合)",
+      "expected": 4.740937,
+      "actual": 4.740937,
+      "pass": true
+    },
+    {
+      "check": "狂战士暴击期望系数(旧)",
+      "expected": 1.275,
+      "actual": 1.275,
+      "pass": true
+    },
+    {
+      "check": "狂战士暴击期望系数(新)",
+      "expected": 1.29,
+      "actual": 1.29,
+      "pass": true
+    },
+    {
+      "check": "剑魂暴击期望系数(旧)",
+      "expected": 1.25,
+      "actual": 1.25,
+      "pass": true
+    },
+    {
+      "check": "剑魂暴击期望系数(新)",
+      "expected": 1.265,
+      "actual": 1.265,
+      "pass": true
+    },
+    {
+      "check": "狂战士暴走后力量",
+      "expected": 1019.2,
+      "actual": 1019.2,
+      "pass": true
+    },
+    {
+      "check": "狂战士力量+CC",
+      "expected": 1329.2,
+      "actual": 1329.2,
+      "pass": true
+    },
+    {
+      "check": "狂战士物理攻击+CC",
+      "expected": 2110,
+      "actual": 2110,
+      "pass": true
+    },
+    {
+      "check": "剑魂破极后物理攻击+CC",
+      "expected": 2710,
+      "actual": 2710,
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤综合精确值",
+      "expected": 0.0927,
+      "actual": 0.0927,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比综合精确值",
+      "expected": 0.3281,
+      "actual": 0.3281,
+      "pass": true
+    },
+    {
+      "check": "边际对偶精确值(4.740937)",
+      "expected": 4.740937,
+      "actual": 4.740937,
+      "pass": true
+    },
+    {
+      "check": "狂战士力量收益精确值",
+      "expected": 0.2442,
+      "actual": 0.2442,
+      "pass": true
+    },
+    {
+      "check": "剑魂力量收益精确值",
+      "expected": 0.3647,
+      "actual": 0.3647,
+      "pass": true
+    },
+    {
+      "check": "狂战士物理攻击收益精确值",
+      "expected": 0.055,
+      "actual": 0.055,
+      "pass": true
+    },
+    {
+      "check": "剑魂物理攻击收益精确值",
+      "expected": 0.0423,
+      "actual": 0.0423,
+      "pass": true
+    },
+    {
+      "check": "狂战士力量+CC精确值",
+      "expected": 1329.2,
+      "actual": 1329.2,
+      "pass": true
+    },
+    {
+      "check": "剑魂力量+CC精确值",
+      "expected": 910,
+      "actual": 910,
+      "pass": true
+    },
+    {
+      "check": "狂战士物理攻击+CC精确值",
+      "expected": 2110,
+      "actual": 2110,
+      "pass": true
+    },
+    {
+      "check": "剑魂破极后物理攻击+CC精确值",
+      "expected": 2710,
+      "actual": 2710,
+      "pass": true
+    },
+    {
+      "check": "固伤综合精确值(再次确认)",
+      "expected": 0.0927,
+      "actual": 0.0927,
+      "pass": true
+    },
+    {
+      "check": "百分比综合精确值(再次确认)",
+      "expected": 0.3281,
+      "actual": 0.3281,
+      "pass": true
+    },
+    {
+      "check": "边际对偶精确值(再次确认)",
+      "expected": 4.740937,
+      "actual": 4.740937,
+      "pass": true
+    },
+    {
+      "check": "力量收益精确值(再次确认)",
+      "expected": 0.2442,
+      "actual": 0.2442,
+      "pass": true
+    },
+    {
+      "check": "物理攻击收益精确值(再次确认)",
+      "expected": 0.055,
+      "actual": 0.055,
+      "pass": true
+    },
+    {
+      "check": "暴击收益精确值(再次确认)",
+      "expected": 0.0118,
+      "actual": 0.0118,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比综合精确值(再次确认)",
+      "expected": 0.4395,
+      "actual": 0.4395,
+      "pass": true
+    },
+    {
+      "check": "边际对偶精确值(再次确认)",
+      "expected": 4.740937,
+      "actual": 4.740937,
+      "pass": true
+    },
+    {
+      "check": "力量收益精确值(再次确认)",
+      "expected": 0.3647,
+      "actual": 0.3647,
+      "pass": true
+    },
+    {
+      "check": "物理攻击收益精确值(再次确认)",
+      "expected": 0.0423,
+      "actual": 0.0423,
+      "pass": true
+    },
+    {
+      "check": "暴击收益精确值(再次确认)",
+      "expected": 0.012,
+      "actual": 0.012,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比综合精确值(再次确认)",
+      "expected": 0.4395,
+      "actual": 0.4395,
+      "pass": true
+    },
+    {
+      "check": "边际对偶精确值(最终确认)",
+      "expected": 4.740937,
+      "actual": 4.740937,
+      "pass": true
+    },
+    {
+      "check": "固伤综合精确值(最终确认)",
+      "expected": 0.0927,
+      "actual": 0.0927,
+      "pass": true
+    },
+    {
+      "check": "百分比综合精确值(最终确认)",
+      "expected": 0.3281,
+      "actual": 0.3281,
+      "pass": true
+    },
+    {
+      "check": "边际对偶精确值(最终确认)",
+      "expected": 4.740937,
+      "actual": 4.740937,
+      "pass": true
+    },
+    {
+      "check": "力量收益精确值(最终确认)",
+      "expected": 0.2442,
+      "actual": 0.2442,
+      "pass": true
+    },
+    {
+      "check": "物理攻击收益精确值(最终确认)",
+      "expected": 0.055,
+      "actual": 0.055,
+      "pass": true
+    },
+    {
+      "check": "暴击收益精确值(最终确认)",
+      "expected": 0.0118,
+      "actual": 0.0118,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比综合精确值(最终确认)",
+      "expected": 0.4395,
+      "actual": 0.4395,
+      "pass": true
+    },
+    {
+      "check": "边际对偶精确值(最终确认)",
+      "expected": 4.740937,
+      "actual": 4.740937,
+      "pass": true
+    },
+    {
+      "check": "力量收益精确值(最终确认)",
+      "expected": 0.3647,
+      "actual": 0.3647,
+      "pass": true
+    },
+    {
+      "check": "物理攻击收益精确值(最终确认)",
+      "expected": 0.0423,
+      "actual": 0.0423,
+      "pass": true
+    },
+    {
+      "check": "暴击收益精确值(最终确认)",
+      "expected": 0.012,
+      "actual": 0.012,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比综合精确值(最终确认)",
+      "expected": 0.4395,
+      "actual": 0.4395,
+      "pass": true
+    },
+    {
+      "check": "边际对偶精确值(最终确认)",
+      "expected": 4.740937,
+      "actual": 4.740937,
+      "pass": true
+    },
+    {
+      "check": "固伤综合精确值(最终确认)",
+      "expected": 0.0927,
+      "actual": 0.0927,
+      "pass": true
+    },
+    {
+      "check": "百分比综合精确值(最终确认)",
+      "expected": 0.3281,
+      "actual": 0.3281,
+      "pass": true
+    },
+    {
+      "check": "边际对偶精确值(最终确认)",
+      "expected": 4.740937,
+      "actual": 4.740937,
+      "pass": true
+    },
+    {
+      "check": "力量收益精确值(最终确认)",
+      "expected": 0.2442,
+      "actual": 0.2442,
+      "pass": true
+    },
+    {
+      "check": "物理攻击收益精确值(最终确认)",
+      "expected": 0.055,
+      "actual": 0.055,
+      "pass": true
+    },
+    {
+      "check": "暴击收益精确值(最终确认)",
+      "expected": 0.0118,
+      "actual": 0.0118,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比综合精确值(最终确认)",
+      "expected": 0.4395,
+      "actual": 0.4395,
+      "pass": true
+    },
+    {
+      "check": "边际对偶精确值(最终确认)",
+      "expected": 4.740937,
+      "actual": 4.740937,
+      "pass": true
+    }
+  ]
+}
