@@ -1,0 +1,103 @@
+{
+  "passed": 16,
+  "total": 16,
+  "rate": "100.0%",
+  "results": [
+    {
+      "name": "CC套单件属性合计",
+      "expected": "STR310/PHY110/IND120/Crit3.0%",
+      "got": "STR310/PHY110/IND120/Crit3.0%",
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤-独立攻击收益",
+      "expected": "+8.0%",
+      "got": "8.0000%",
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤-暴击收益",
+      "expected": "+1.18%~1.2%",
+      "got": "1.1765%",
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤综合收益",
+      "expected": "+9.27%",
+      "got": "9.2706%",
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比-力量收益(暴走后)",
+      "expected": "+24.42%",
+      "got": "24.4248%",
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比-物理攻击收益",
+      "expected": "+5.50%",
+      "got": "5.5000%",
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比综合收益",
+      "expected": "+32.81%",
+      "got": "32.8125%",
+      "pass": true
+    },
+    {
+      "name": "剑魂-力量收益",
+      "expected": "+36.47%",
+      "got": "36.4706%",
+      "pass": true
+    },
+    {
+      "name": "剑魂-物理攻击收益(破极后)",
+      "expected": "+4.23%",
+      "got": "4.2308%",
+      "pass": true
+    },
+    {
+      "name": "剑魂-暴击收益",
+      "expected": "+1.2%",
+      "got": "1.2000%",
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比综合收益",
+      "expected": "+43.95%",
+      "got": "43.9513%",
+      "pass": true
+    },
+    {
+      "name": "边际对偶(剑魂/狂战士固伤)",
+      "expected": "4.740937",
+      "got": "4.740937",
+      "pass": true
+    },
+    {
+      "name": "暴走后力量",
+      "expected": "1019.2",
+      "got": "1019.2",
+      "pass": true
+    },
+    {
+      "name": "破极兵刃物理攻击",
+      "expected": "2600",
+      "got": "2600",
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比-力量收益(非暴走)",
+      "expected": "参考值",
+      "got": "31.6973%",
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比综合精确值",
+      "expected": "+32.81%",
+      "got": "32.8125%",
+      "pass": true
+    }
+  ]
+}
