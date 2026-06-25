@@ -1,0 +1,30 @@
+{
+  "version": "v442",
+  "timestamp": "2026-06-25T23:50:24+08:00",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "total": 19,
+  "passed": 19,
+  "failed": 0,
+  "rate": "100%",
+  "margin_duality": 4.740937,
+  "core_data": {
+    "cc_6pc_str": 310,
+    "cc_6pc_phys_atk": 110,
+    "cc_6pc_indep_atk": 120,
+    "cc_6pc_crit": 0.03
+  },
+  "berserker": {
+    "indep_atk_bonus": 0.08,
+    "crit_bonus": 0.0118,
+    "fixed_total": 0.0927,
+    "str_bonus": 0.2442,
+    "phys_atk_bonus": 0.055,
+    "percent_total": 0.3281
+  },
+  "swordsman": {
+    "str_bonus": 0.3647,
+    "phys_atk_bonus": 0.0423,
+    "crit_bonus": 0.012,
+    "percent_total": 0.4395
+  }
+}

@@ -1,105 +1,156 @@
 {
-  "version": "v438",
-  "timestamp": "2026-06-25T22:37:00+08:00",
-  "passed": 15,
-  "total": 15,
-  "results": {
-    "CC力量": {
-      "actual": 310,
+  "version": "v379",
+  "timestamp": "2026-06-25T23:50:24.920619",
+  "total_checks": 19,
+  "passed": 19,
+  "results": [
+    {
+      "name": "力量合计",
       "expected": 310,
-      "pass": true
+      "actual": 310,
+      "pass": true,
+      "diff": 0
     },
-    "CC物理攻击": {
-      "actual": 110,
+    {
+      "name": "物理攻击合计",
       "expected": 110,
-      "pass": true
+      "actual": 110,
+      "pass": true,
+      "diff": 0
     },
-    "CC独立攻击": {
-      "actual": 120,
+    {
+      "name": "独立攻击合计",
       "expected": 120,
-      "pass": true
+      "actual": 120,
+      "pass": true,
+      "diff": 0
     },
-    "CC暴击": {
-      "actual": 3,
-      "expected": 3,
-      "pass": true
+    {
+      "name": "暴击率合计",
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true,
+      "diff": 0.0
     },
-    "狂战士固伤独立": {
-      "actual": 0.08,
+    {
+      "name": "狂战士-独立攻击收益",
       "expected": 0.08,
-      "pass": true
+      "actual": 0.08,
+      "pass": true,
+      "diff": 0.0
     },
-    "狂战士固伤暴击": {
-      "actual": 0.011765,
+    {
+      "name": "狂战士-暴击收益",
       "expected": 0.0118,
-      "pass": true
+      "actual": 0.0118,
+      "pass": true,
+      "diff": 0.0
     },
-    "狂战士固伤综合": {
-      "actual": 0.092706,
+    {
+      "name": "狂战士-固伤综合收益",
       "expected": 0.0927,
-      "pass": true
+      "actual": 0.0927,
+      "pass": true,
+      "diff": 0.0
     },
-    "狂战士百分比力量": {
-      "actual": 0.244248,
+    {
+      "name": "狂战士-百分比力量收益",
       "expected": 0.2442,
-      "pass": true
+      "actual": 0.2442,
+      "pass": true,
+      "diff": 0.0
     },
-    "狂战士百分比物理攻击": {
-      "actual": 0.055,
+    {
+      "name": "狂战士-百分比物理攻击收益",
       "expected": 0.055,
-      "pass": true
+      "actual": 0.055,
+      "pass": true,
+      "diff": 0.0
     },
-    "狂战士百分比综合": {
-      "actual": 0.328125,
+    {
+      "name": "狂战士-百分比综合收益",
       "expected": 0.3281,
-      "pass": true
+      "actual": 0.3281,
+      "pass": true,
+      "diff": 0.0
     },
-    "剑魂力量": {
-      "actual": 0.364706,
+    {
+      "name": "剑魂-力量收益",
       "expected": 0.3647,
-      "pass": true
+      "actual": 0.3647,
+      "pass": true,
+      "diff": 0.0
     },
-    "剑魂物理攻击": {
-      "actual": 0.042308,
+    {
+      "name": "剑魂-物理攻击收益",
       "expected": 0.0423,
-      "pass": true
+      "actual": 0.0423,
+      "pass": true,
+      "diff": 0.0
     },
-    "剑魂暴击": {
-      "actual": 0.012,
+    {
+      "name": "剑魂-暴击收益",
       "expected": 0.012,
-      "pass": true
+      "actual": 0.012,
+      "pass": true,
+      "diff": 0.0
     },
-    "剑魂百分比综合": {
-      "actual": 0.439513,
+    {
+      "name": "剑魂-百分比综合收益",
       "expected": 0.4395,
-      "pass": true
+      "actual": 0.4395,
+      "pass": true,
+      "diff": 0.0
     },
-    "边际对偶": {
-      "actual": 4.740937,
-      "expected": 4.740937,
-      "pass": true
+    {
+      "name": "边际对偶倍数",
+      "expected": 4.7409,
+      "actual": 4.7409,
+      "pass": true,
+      "diff": 0.0
+    },
+    {
+      "name": "狂战士暴击期望系数",
+      "expected": 1.29,
+      "actual": 1.29,
+      "pass": true,
+      "diff": 0.0
+    },
+    {
+      "name": "狂战士暴击期望系数(旧)",
+      "expected": 1.275,
+      "actual": 1.275,
+      "pass": true,
+      "diff": 0.0
+    },
+    {
+      "name": "剑魂暴击期望系数",
+      "expected": 1.265,
+      "actual": 1.265,
+      "pass": true,
+      "diff": 0.0
+    },
+    {
+      "name": "剑魂暴击期望系数(旧)",
+      "expected": 1.25,
+      "actual": 1.25,
+      "pass": true,
+      "diff": 0.0
     }
-  },
-  "core_data": {
-    "cc_set": {
-      "str": 310,
-      "phy": 110,
-      "ind": 120,
-      "cri": 3
+  ],
+  "summary": {
+    "cc_set_6pc": {
+      "power": 310,
+      "phy_atk": 110,
+      "independent": 120,
+      "crit": 0.03
     },
     "berserker": {
-      "fixed_ind": 0.08,
-      "fixed_cri": 0.011765,
-      "fixed_total": 0.092706,
-      "pct_str": 0.244248,
-      "pct_phy": 0.055,
-      "pct_total": 0.328125
+      "fixed_total": 0.0927,
+      "percent_total": 0.3281
     },
     "swordsman": {
-      "str_gain": 0.364706,
-      "phy_gain": 0.042308,
-      "cri_gain": 0.012,
-      "pct_total": 0.439513
+      "percent_total": 0.4395
     },
     "marginal_dual": 4.740937
   }
