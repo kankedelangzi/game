@@ -1,0 +1,90 @@
+{
+  "version": "v394",
+  "timestamp": "2026-06-25T10:46:00+08:00",
+  "passed": 15,
+  "total": 15,
+  "pass_rate": "100%",
+  "results": {
+    "cc_6pc_str": {
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    "cc_6pc_phy": {
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    "cc_6pc_ind": {
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    "cc_6pc_crit": {
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true
+    },
+    "bers_ind_gain": {
+      "expected": 0.08,
+      "actual": 0.08,
+      "pass": true
+    },
+    "bers_crit_gain": {
+      "expected": 0.0118,
+      "actual": 0.0118,
+      "pass": true
+    },
+    "bers_fixed_total": {
+      "expected": 0.0927,
+      "actual": 0.0927,
+      "pass": true
+    },
+    "bers_str_gain": {
+      "expected": 0.2442,
+      "actual": 0.2442,
+      "pass": true
+    },
+    "bers_phy_gain": {
+      "expected": 0.055,
+      "actual": 0.055,
+      "pass": true
+    },
+    "bers_pct_total": {
+      "expected": 0.3281,
+      "actual": 0.3281,
+      "pass": true
+    },
+    "sw_str_gain": {
+      "expected": 0.3647,
+      "actual": 0.3647,
+      "pass": true
+    },
+    "sw_phy_gain": {
+      "expected": 0.0423,
+      "actual": 0.0423,
+      "pass": true
+    },
+    "sw_crit_gain": {
+      "expected": 0.012,
+      "actual": 0.012,
+      "pass": true
+    },
+    "sw_pct_total": {
+      "expected": 0.4395,
+      "actual": 0.4395,
+      "pass": true
+    },
+    "marginal_duality": {
+      "expected": 4.740937,
+      "actual": 4.740937,
+      "pass": true
+    }
+  },
+  "summary": {
+    "berserker_fixed": 9.27,
+    "berserker_percent": 32.81,
+    "swordsman_percent": 43.95,
+    "marginal_duality": 4.740937
+  }
+}
