@@ -1,0 +1,114 @@
+{
+  "version": "v446",
+  "timestamp": "2026-06-26T00:29:00+08:00",
+  "passed": 15,
+  "total": 15,
+  "results": [
+    {
+      "name": "力量合计",
+      "actual": 310,
+      "expected": 310,
+      "pass": true
+    },
+    {
+      "name": "物理攻击合计",
+      "actual": 110,
+      "expected": 110,
+      "pass": true
+    },
+    {
+      "name": "独立攻击合计",
+      "actual": 120,
+      "expected": 120,
+      "pass": true
+    },
+    {
+      "name": "暴击率合计",
+      "actual": 3.0,
+      "expected": 3.0,
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤收益(独立)",
+      "actual": 8.0,
+      "expected": 8.0,
+      "pass": true
+    },
+    {
+      "name": "狂战士暴击边际收益",
+      "actual": 1.18,
+      "expected": 1.18,
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤综合收益",
+      "actual": 9.27,
+      "expected": 9.27,
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比力量收益(暴走后)",
+      "actual": 24.42,
+      "expected": 24.42,
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比物理攻击收益",
+      "actual": 5.5,
+      "expected": 5.5,
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比综合收益",
+      "actual": 32.81,
+      "expected": 32.81,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比力量收益",
+      "actual": 36.47,
+      "expected": 36.47,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比物理攻击收益",
+      "actual": 4.23,
+      "expected": 4.23,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比暴击边际收益",
+      "actual": 1.2,
+      "expected": 1.2,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比综合收益",
+      "actual": 43.95,
+      "expected": 43.95,
+      "pass": true
+    },
+    {
+      "name": "边际对偶倍数",
+      "actual": 4.7409,
+      "expected": 4.7409,
+      "pass": true
+    }
+  ],
+  "summary": {
+    "cc_set": {
+      "str": 310,
+      "phy": 110,
+      "ind": 120,
+      "crit": 3.0
+    },
+    "berserker": {
+      "fixed": 9.27,
+      "percent": 32.81
+    },
+    "swordsman": {
+      "percent": 43.95
+    },
+    "marginal_duality": 4.740937
+  }
+}
