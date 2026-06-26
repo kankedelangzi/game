@@ -1,0 +1,96 @@
+{
+  "version": "v530",
+  "timestamp": "2026-06-26T18:20:00+08:00",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "passed": 15,
+  "total": 15,
+  "results": {
+    "cc_str_total": {
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    "cc_phy_total": {
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    "cc_ind_total": {
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    "cc_cri_total": {
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    "berserker_fixed_ind": {
+      "expected": 8.0,
+      "actual": 8.0,
+      "pass": true
+    },
+    "berserker_fixed_cri": {
+      "expected": 1.18,
+      "actual": 1.18,
+      "pass": true
+    },
+    "berserker_fixed_total": {
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    "berserker_pct_str": {
+      "expected": 24.42,
+      "actual": 24.42,
+      "pass": true
+    },
+    "berserker_pct_phy": {
+      "expected": 5.5,
+      "actual": 5.5,
+      "pass": true
+    },
+    "berserker_pct_total": {
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    "swordsman_pct_str": {
+      "expected": 36.47,
+      "actual": 36.47,
+      "pass": true
+    },
+    "swordsman_pct_phy": {
+      "expected": 4.23,
+      "actual": 4.23,
+      "pass": true
+    },
+    "swordsman_pct_cri": {
+      "expected": 1.2,
+      "actual": 1.2,
+      "pass": true
+    },
+    "swordsman_pct_total": {
+      "expected": 43.95,
+      "actual": 43.95,
+      "pass": true
+    },
+    "marginal_duality": {
+      "expected": 4.740937,
+      "actual": 4.740937,
+      "pass": true
+    }
+  },
+  "summary": {
+    "cc_set": {
+      "str": 310,
+      "phy": 110,
+      "ind": 120,
+      "cri": 3.0
+    },
+    "berserker_fixed": 9.27,
+    "berserker_pct": 32.81,
+    "swordsman_pct": 43.95,
+    "marginal_duality": 4.740937
+  }
+}
