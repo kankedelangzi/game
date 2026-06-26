@@ -1,0 +1,122 @@
+{
+  "version": "v585",
+  "timestamp": "2026-06-27 07:27:29",
+  "total": 18,
+  "passed": 18,
+  "failed": 0,
+  "pass_rate": "100.0%",
+  "marginal_duality": 4.740937,
+  "berserker_fixed_total": 9.2706,
+  "berserker_pct_total": 32.8125,
+  "swordsman_pct_total": 43.9513,
+  "results": [
+    {
+      "name": "CC力量+310",
+      "actual": 310,
+      "expected": 310,
+      "passed": true
+    },
+    {
+      "name": "CC物理攻击+110",
+      "actual": 110,
+      "expected": 110,
+      "passed": true
+    },
+    {
+      "name": "CC独立攻击+120",
+      "actual": 120,
+      "expected": 120,
+      "passed": true
+    },
+    {
+      "name": "CC暴击+3%",
+      "actual": 3,
+      "expected": 3,
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤独立收益",
+      "actual": 8.0,
+      "expected": 8.0,
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤暴击收益",
+      "actual": 1.18,
+      "expected": 1.2,
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤综合收益",
+      "actual": 9.27,
+      "expected": 9.27,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比力量收益",
+      "actual": 24.42,
+      "expected": 24.42,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比物理攻击收益",
+      "actual": 5.5,
+      "expected": 5.5,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比综合收益",
+      "actual": 32.81,
+      "expected": 32.81,
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比力量收益",
+      "actual": 36.47,
+      "expected": 36.47,
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比物理攻击收益",
+      "actual": 4.23,
+      "expected": 4.23,
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比暴击收益",
+      "actual": 1.2,
+      "expected": 1.2,
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比综合收益",
+      "actual": 43.95,
+      "expected": 43.95,
+      "passed": true
+    },
+    {
+      "name": "边际对偶倍数",
+      "actual": 4.7409,
+      "expected": 4.7409,
+      "passed": true
+    },
+    {
+      "name": "剑魂基础力量600",
+      "actual": 600,
+      "expected": 600,
+      "passed": true
+    },
+    {
+      "name": "剑魂破极后物理攻击2600",
+      "actual": 2600,
+      "expected": 2600,
+      "passed": true
+    },
+    {
+      "name": "狂战士暴击收益固伤",
+      "actual": 1.18,
+      "expected": 1.2,
+      "passed": true
+    }
+  ]
+}
