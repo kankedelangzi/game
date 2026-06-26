@@ -1,0 +1,17 @@
+{
+  "version": "v496",
+  "timestamp": "2026-06-26 11:44:50",
+  "cc_set": {"strength": 310, "physical_attack": 110, "independent_attack": 120, "critical_rate": 3.0},
+  "berserker": {
+    "fixed_damage": {"independent_bonus_pct": 8.0, "critical_bonus_pct": 1.1765, "total_pct": 9.2706},
+    "percent_damage": {"strength_bonus_pct": 24.4248, "physical_attack_bonus_pct": 5.5, "critical_bonus_pct": 1.1765, "total_pct": 32.8125}
+  },
+  "swordsman": {
+    "percent_damage": {"strength_bonus_pct": 36.4706, "physical_attack_bonus_pct": 4.2308, "critical_bonus_pct": 1.2, "total_pct": 43.9513}
+  },
+  "marginal_duality": {"ratio": 4.740937, "exact_value": 4.740937},
+  "checks": {
+    "cc_6piece_str": true, "cc_6piece_phy": true, "cc_6piece_ind": true, "cc_6piece_cri": true,
+    "berserker_fixed_total": true, "berserker_pct_total": true, "swordsman_pct_total": true, "marginal_duality_check": true
+  }
+}
