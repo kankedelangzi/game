@@ -1,113 +1,41 @@
 {
-  "version": "v478",
-  "timestamp": "2026-06-26T08:39:00+08:00",
-  "total_checks": 15,
-  "passed": 15,
-  "failed": 0,
-  "pass_rate": "15/15",
-  "all_pass": true,
-  "core_data": {
-    "cc_6pc": {
-      "力量": 310,
-      "物理攻击": 110,
-      "独立攻击": 120,
-      "暴击率": 3
-    },
-    "berserker_fixed_total_pct": 9.27,
-    "berserker_pct_total_pct": 32.81,
-    "swordsman_pct_total_pct": 43.95,
-    "marginal_duality": 4.740937
+  "timestamp": "2026-06-26 08:45:48",
+  "version": "v479",
+  "cc_set_6pc": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3
   },
-  "checks": [
-    {
-      "check": "CC套6件套-力量",
-      "expected": 310,
-      "actual": 310,
-      "pass": true
+  "berserker": {
+    "base": {
+      "力量": 728,
+      "暴走后力量": 1019.1999999999999,
+      "独立攻击": 1250,
+      "物理攻击": 2000,
+      "暴击率": 55
     },
-    {
-      "check": "CC套6件套-物理攻击",
-      "expected": 110,
-      "actual": 110,
-      "pass": true
+    "fixed_independent_bonus_pct": 8.0,
+    "crit_bonus_pct": 1.1765,
+    "fixed_total_pct": 9.2706,
+    "force_bonus_pct": 24.4248,
+    "phys_attack_bonus_pct": 5.5,
+    "percent_total_pct": 32.8125
+  },
+  "swordsman": {
+    "base": {
+      "力量": 600,
+      "物理攻击_破极前": 2000,
+      "物理攻击_破极后": 2600,
+      "暴击率": 50
     },
-    {
-      "check": "CC套6件套-独立攻击",
-      "expected": 120,
-      "actual": 120,
-      "pass": true
-    },
-    {
-      "check": "CC套6件套-暴击率",
-      "expected": 3,
-      "actual": 3,
-      "pass": true
-    },
-    {
-      "check": "狂战士-独立攻击收益",
-      "expected": 8.0,
-      "actual": 8.0,
-      "pass": true
-    },
-    {
-      "check": "狂战士-暴击收益(固伤)",
-      "expected": 1.18,
-      "actual": 1.18,
-      "pass": true
-    },
-    {
-      "check": "狂战士-固伤综合收益",
-      "expected": 9.27,
-      "actual": 9.27,
-      "pass": true
-    },
-    {
-      "check": "狂战士-力量收益(百分比)",
-      "expected": 24.42,
-      "actual": 24.42,
-      "pass": true
-    },
-    {
-      "check": "狂战士-物理攻击收益(百分比)",
-      "expected": 5.5,
-      "actual": 5.5,
-      "pass": true
-    },
-    {
-      "check": "狂战士-百分比综合收益",
-      "expected": 32.81,
-      "actual": 32.81,
-      "pass": true
-    },
-    {
-      "check": "剑魂-力量收益",
-      "expected": 36.47,
-      "actual": 36.47,
-      "pass": true
-    },
-    {
-      "check": "剑魂-物理攻击收益",
-      "expected": 4.23,
-      "actual": 4.23,
-      "pass": true
-    },
-    {
-      "check": "剑魂-暴击收益",
-      "expected": 1.2,
-      "actual": 1.2,
-      "pass": true
-    },
-    {
-      "check": "剑魂-百分比综合收益",
-      "expected": 43.95,
-      "actual": 43.95,
-      "pass": true
-    },
-    {
-      "check": "边际对偶倍数",
-      "expected": 4.740937,
-      "actual": 4.740937,
-      "pass": true
-    }
-  ]
+    "force_bonus_pct": 36.4706,
+    "phys_attack_bonus_pct": 4.2308,
+    "crit_bonus_pct": 1.2,
+    "percent_total_pct": 43.9513
+  },
+  "marginal_duality": {
+    "value": 4.740937,
+    "description": "剑魂百分比综合 / 狂战士固伤综合"
+  }
 }
