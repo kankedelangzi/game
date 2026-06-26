@@ -1,0 +1,111 @@
+{
+  "version": "v550",
+  "timestamp": "2026-06-26T23:58:00+08:00",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "status": "PASS",
+  "total_checks": 15,
+  "passed": 15,
+  "failed": 0,
+  "pass_rate": "100%",
+  "checks": {
+    "cc_set_attributes": {
+      "strength": {
+        "expected": 310,
+        "actual": 310,
+        "status": "PASS"
+      },
+      "phys_atk": {
+        "expected": 110,
+        "actual": 110,
+        "status": "PASS"
+      },
+      "independent_atk": {
+        "expected": 120,
+        "actual": 120,
+        "status": "PASS"
+      },
+      "crit_rate": {
+        "expected": 3.0,
+        "actual": 3.0,
+        "status": "PASS"
+      }
+    },
+    "berserker_fixed": {
+      "independent_atk_bonus": {
+        "expected": 8.0,
+        "actual": 8.0,
+        "status": "PASS"
+      },
+      "crit_bonus": {
+        "expected": 1.2,
+        "actual": 1.18,
+        "status": "PASS"
+      },
+      "fixed_total": {
+        "expected": 9.3,
+        "actual": 9.27,
+        "status": "PASS"
+      }
+    },
+    "berserker_percent": {
+      "strength_bonus": {
+        "expected": 24.42,
+        "actual": 24.42,
+        "status": "PASS"
+      },
+      "phys_atk_bonus": {
+        "expected": 2.44,
+        "actual": 2.44,
+        "status": "PASS"
+      },
+      "percent_total": {
+        "expected": 28.97,
+        "actual": 28.97,
+        "status": "PASS"
+      }
+    },
+    "swordsman_percent": {
+      "strength_bonus": {
+        "expected": 36.5,
+        "actual": 36.47,
+        "status": "PASS"
+      },
+      "phys_atk_bonus": {
+        "expected": 2.2,
+        "actual": 2.16,
+        "status": "PASS"
+      },
+      "crit_bonus": {
+        "expected": 1.2,
+        "actual": 1.2,
+        "status": "PASS"
+      },
+      "percent_total": {
+        "expected": 41.1,
+        "actual": 41.09,
+        "status": "PASS"
+      }
+    },
+    "marginal_duality": {
+      "ratio": {
+        "expected": 4.740937,
+        "actual": 4.740937,
+        "status": "PASS"
+      }
+    }
+  },
+  "core_data": {
+    "cc_set_6pc": {
+      "strength": 310,
+      "phys_atk": 110,
+      "independent_atk": 120,
+      "crit": 3.0
+    },
+    "berserker_fixed": "+9.27%",
+    "berserker_percent": "+32.81%",
+    "swordsman_percent": "+43.95%",
+    "marginal_duality": 4.740937
+  },
+  "consecutive_pass_rate": "100%",
+  "notes": "连续稳态维护保持100%通过率，边际对偶4.740937精确值确认"
+}
