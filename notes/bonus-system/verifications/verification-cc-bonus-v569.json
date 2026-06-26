@@ -1,0 +1,129 @@
+{
+  "version": "v569",
+  "timestamp": "2026-06-27T05:13:16.657657+08:00",
+  "total": 17,
+  "passed": 17,
+  "failed": 0,
+  "pass_rate": "17/17",
+  "results": [
+    {
+      "name": "力量合计",
+      "actual": 310,
+      "expected": 310,
+      "pass": true,
+      "diff": 0
+    },
+    {
+      "name": "物理攻击合计",
+      "actual": 110,
+      "expected": 110,
+      "pass": true,
+      "diff": 0
+    },
+    {
+      "name": "独立攻击合计",
+      "actual": 120,
+      "expected": 120,
+      "pass": true,
+      "diff": 0
+    },
+    {
+      "name": "暴击合计",
+      "actual": 0.03,
+      "expected": 0.03,
+      "pass": true,
+      "diff": 0.0
+    },
+    {
+      "name": "狂战士独立攻击收益",
+      "actual": 0.08,
+      "expected": 0.08,
+      "pass": true,
+      "diff": 0.0
+    },
+    {
+      "name": "狂战士暴击收益(固伤)",
+      "actual": 0.011765,
+      "expected": 0.011765,
+      "pass": true,
+      "diff": 0.0
+    },
+    {
+      "name": "狂战士固伤综合收益",
+      "actual": 0.092706,
+      "expected": 0.0927,
+      "pass": true,
+      "diff": 6e-06
+    },
+    {
+      "name": "狂战士力量收益(百分比)",
+      "actual": 0.244248,
+      "expected": 0.2442,
+      "pass": true,
+      "diff": 4.8e-05
+    },
+    {
+      "name": "狂战士物理攻击收益(百分比)",
+      "actual": 0.055,
+      "expected": 0.055,
+      "pass": true,
+      "diff": 0.0
+    },
+    {
+      "name": "狂战士百分比综合收益",
+      "actual": 0.328125,
+      "expected": 0.3281,
+      "pass": true,
+      "diff": 2.5e-05
+    },
+    {
+      "name": "剑魂力量收益",
+      "actual": 0.364706,
+      "expected": 0.3647,
+      "pass": true,
+      "diff": 6e-06
+    },
+    {
+      "name": "剑魂物理攻击收益(破极后)",
+      "actual": 0.042308,
+      "expected": 0.0423,
+      "pass": true,
+      "diff": 8e-06
+    },
+    {
+      "name": "剑魂暴击收益",
+      "actual": 0.012,
+      "expected": 0.012,
+      "pass": true,
+      "diff": 0.0
+    },
+    {
+      "name": "剑魂百分比综合收益",
+      "actual": 0.439513,
+      "expected": 0.4395,
+      "pass": true,
+      "diff": 1.3e-05
+    },
+    {
+      "name": "边际对偶倍数",
+      "actual": 4.740937,
+      "expected": 4.740937,
+      "pass": true,
+      "diff": 0.0
+    },
+    {
+      "name": "剑魂基础力量",
+      "actual": 600,
+      "expected": 600,
+      "pass": true,
+      "diff": 0
+    },
+    {
+      "name": "剑魂破极后物理攻击",
+      "actual": 2600.0,
+      "expected": 2600,
+      "pass": true,
+      "diff": 0.0
+    }
+  ]
+}
