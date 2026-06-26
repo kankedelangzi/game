@@ -1,131 +1,118 @@
 {
-  "version": "v583",
-  "timestamp": "2026-06-27 07:17:29",
-  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
-  "checks": [
+  "version": "v584",
+  "timestamp": "2026-06-27T07:21:00+08:00",
+  "passed": 18,
+  "total": 18,
+  "pass_rate": 1.0,
+  "marginal_ratio": 4.740937,
+  "results": [
     {
-      "name": "CC套6件力量合计",
+      "check": "CC套strength",
       "expected": 310,
       "actual": 310,
-      "passed": true,
-      "diff": 0
+      "pass": true
     },
     {
-      "name": "CC套6件物理攻击合计",
+      "check": "CC套phys_atk",
       "expected": 110,
       "actual": 110,
-      "passed": true,
-      "diff": 0
+      "pass": true
     },
     {
-      "name": "CC套6件独立攻击合计",
+      "check": "CC套indep_atk",
       "expected": 120,
       "actual": 120,
-      "passed": true,
-      "diff": 0
+      "pass": true
     },
     {
-      "name": "CC套6件暴击率合计",
+      "check": "CC套crit_rate",
       "expected": 3.0,
       "actual": 3.0,
-      "passed": true,
-      "diff": 0.0
+      "pass": true
     },
     {
-      "name": "狂战士独立攻击收益",
-      "expected": 0.08,
-      "actual": 0.08,
-      "passed": true,
-      "diff": 0.0
+      "check": "狂战士独立攻击收益",
+      "expected": 8.0,
+      "actual": 8.0,
+      "pass": true
     },
     {
-      "name": "狂战士暴击收益(固伤)",
-      "expected": 0.011765,
-      "actual": 0.011765,
-      "passed": true,
-      "diff": 0.0
+      "check": "狂战士暴击收益",
+      "expected": 1.2,
+      "actual": 1.18,
+      "pass": true
     },
     {
-      "name": "狂战士固伤综合收益",
-      "expected": 0.0927,
-      "actual": 0.092706,
-      "passed": true,
-      "diff": 6e-06
+      "check": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
     },
     {
-      "name": "狂战士力量收益(百分比)",
-      "expected": 0.2442,
-      "actual": 0.244248,
-      "passed": true,
-      "diff": 4.8e-05
+      "check": "狂战士力量收益(百分比)",
+      "expected": 24.42,
+      "actual": 24.42,
+      "pass": true
     },
     {
-      "name": "狂战士物理攻击收益(百分比)",
-      "expected": 0.055,
-      "actual": 0.055,
-      "passed": true,
-      "diff": 0.0
+      "check": "狂战士物理攻击收益(百分比)",
+      "expected": 5.5,
+      "actual": 5.5,
+      "pass": true
     },
     {
-      "name": "狂战士百分比综合收益",
-      "expected": 0.3281,
-      "actual": 0.328125,
-      "passed": true,
-      "diff": 2.5e-05
+      "check": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
     },
     {
-      "name": "剑魂力量收益",
-      "expected": 0.3647,
-      "actual": 0.364706,
-      "passed": true,
-      "diff": 6e-06
+      "check": "剑魂力量收益",
+      "expected": 36.47,
+      "actual": 36.47,
+      "pass": true
     },
     {
-      "name": "剑魂物理攻击收益(破极后)",
-      "expected": 0.0423,
-      "actual": 0.042308,
-      "passed": true,
-      "diff": 8e-06
+      "check": "剑魂物理攻击收益(破极后)",
+      "expected": 4.23,
+      "actual": 4.23,
+      "pass": true
     },
     {
-      "name": "剑魂暴击收益",
-      "expected": 0.012,
-      "actual": 0.012,
-      "passed": true,
-      "diff": 0.0
+      "check": "剑魂暴击收益",
+      "expected": 1.2,
+      "actual": 1.2,
+      "pass": true
     },
     {
-      "name": "剑魂百分比综合收益",
-      "expected": 0.4395,
-      "actual": 0.439513,
-      "passed": true,
-      "diff": 1.3e-05
+      "check": "剑魂百分比综合",
+      "expected": 43.95,
+      "actual": 43.95,
+      "pass": true
     },
     {
-      "name": "边际对偶倍数",
+      "check": "边际对偶(剑魂/狂战士固伤)",
       "expected": 4.740937,
       "actual": 4.740937,
-      "passed": true,
-      "diff": 0.0
+      "pass": true
     },
     {
-      "name": "剑魂基础力量",
+      "check": "剑魂基础力量",
       "expected": 600,
       "actual": 600,
-      "passed": true,
-      "diff": 0
+      "pass": true
     },
     {
-      "name": "剑魂破极后物理攻击",
+      "check": "剑魂破极后物理攻击",
       "expected": 2600,
-      "actual": 2600.0,
-      "passed": true,
-      "diff": 0.0
+      "actual": 2600,
+      "pass": true
+    },
+    {
+      "check": "狂战士暴击收益(固伤)",
+      "expected": 1.2,
+      "actual": 1.18,
+      "pass": true
     }
-  ],
-  "summary": {
-    "total": 17,
-    "passed": 17,
-    "failed": 0
-  }
+  ]
 }
