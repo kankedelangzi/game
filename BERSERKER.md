@@ -195,4 +195,4 @@
 - `notes/berserker-e3-bonus.html` — 异界E3套装加成数值表
 - `notes/berserker-weapon-comparison.html` — 武器对比分析
 - `archive/berserker-equipment-v15.md` — 武器对比详细数据归档
-- `archive/berserker-e2-e3-bonus-v13-v14.md` — E2/E3套装详细数据归档
+- `archive/berserker-e2-e3-bonus-v13-v14.md` — E2/E3套装详细数据归档- **v542稳态核查（2026-06-26 20:36）**：9/9 Python独立验算100%通过，边际对偶4.740937精确值确认，核心数据全部正确，连续稳态维护保持100%通过率
