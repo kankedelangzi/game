@@ -1,0 +1,111 @@
+{
+  "version": "v474",
+  "timestamp": "2026-06-26T07:58:44.429125",
+  "total": 15,
+  "passed": 15,
+  "pass_rate": 100.0,
+  "results": [
+    {
+      "check": "CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "check": "CC套物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "check": "CC套独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "check": "CC套暴击率",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    {
+      "check": "狂战士力量收益",
+      "expected": 68.89,
+      "actual": 68.89,
+      "pass": true
+    },
+    {
+      "check": "狂战士物理攻击收益",
+      "expected": 16.92,
+      "actual": 16.92,
+      "pass": true
+    },
+    {
+      "check": "狂战士独立攻击收益",
+      "expected": 120.0,
+      "actual": 120.0,
+      "pass": true
+    },
+    {
+      "check": "狂战士暴击收益",
+      "expected": 37.5,
+      "actual": 37.5,
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤综合收益",
+      "expected": 202.5,
+      "actual": 202.5,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比综合收益",
+      "expected": 253.69,
+      "actual": 253.69,
+      "pass": true
+    },
+    {
+      "check": "剑魂力量收益",
+      "expected": 77.5,
+      "actual": 77.5,
+      "pass": true
+    },
+    {
+      "check": "剑魂物理攻击收益",
+      "expected": 22.0,
+      "actual": 22.0,
+      "pass": true
+    },
+    {
+      "check": "剑魂暴击收益",
+      "expected": 37.5,
+      "actual": 37.5,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比综合收益",
+      "expected": 269.05,
+      "actual": 269.05,
+      "pass": true
+    },
+    {
+      "check": "边际对偶倍数",
+      "expected": 1.3286,
+      "actual": 1.3286,
+      "pass": true
+    }
+  ],
+  "summary": {
+    "cc_stats": {
+      "力量": 310,
+      "物理攻击": 110,
+      "独立攻击": 120,
+      "暴击率": 3.0
+    },
+    "berserker_fixed_gain": 202.5,
+    "berserker_pct_gain": 253.69,
+    "swordsman_pct_gain": 269.05,
+    "marginal_ratio": 1.328642
+  }
+}
