@@ -1,28 +1,120 @@
 {
-  "version": "v516",
-  "timestamp": "2026-06-26 15:43:55",
+  "version": "v517",
+  "timestamp": "2026-06-26 15:49:13",
   "passed": 15,
   "total": 15,
-  "pass_rate": "15/15",
+  "pass_rate": 1.0,
+  "results": [
+    {
+      "name": "力量合计",
+      "expected": 310,
+      "actual": 310,
+      "ok": true
+    },
+    {
+      "name": "物理攻击合计",
+      "expected": 110,
+      "actual": 110,
+      "ok": true
+    },
+    {
+      "name": "独立攻击合计",
+      "expected": 120,
+      "actual": 120,
+      "ok": true
+    },
+    {
+      "name": "暴击率合计",
+      "expected": 0.03,
+      "actual": 0.03,
+      "ok": true
+    },
+    {
+      "name": "狂战士独立攻击收益",
+      "expected": 0.08,
+      "actual": 0.08,
+      "ok": true
+    },
+    {
+      "name": "狂战士暴击收益",
+      "expected": 0.011765,
+      "actual": 0.011765,
+      "ok": true
+    },
+    {
+      "name": "狂战士固伤综合收益",
+      "expected": 0.092706,
+      "actual": 0.092706,
+      "ok": true
+    },
+    {
+      "name": "狂战士力量收益",
+      "expected": 0.2442,
+      "actual": 0.244248,
+      "ok": true
+    },
+    {
+      "name": "狂战士物理攻击收益",
+      "expected": 0.055,
+      "actual": 0.055,
+      "ok": true
+    },
+    {
+      "name": "狂战士百分比综合收益",
+      "expected": 0.328113,
+      "actual": 0.328125,
+      "ok": true
+    },
+    {
+      "name": "剑魂力量收益",
+      "expected": 0.364706,
+      "actual": 0.364706,
+      "ok": true
+    },
+    {
+      "name": "剑魂物理攻击收益",
+      "expected": 0.042308,
+      "actual": 0.042308,
+      "ok": true
+    },
+    {
+      "name": "剑魂暴击收益",
+      "expected": 0.012,
+      "actual": 0.012,
+      "ok": true
+    },
+    {
+      "name": "剑魂百分比综合收益",
+      "expected": 0.4395,
+      "actual": 0.439513,
+      "ok": true
+    },
+    {
+      "name": "边际对偶",
+      "expected": 4.740937,
+      "actual": 4.740937,
+      "ok": true
+    }
+  ],
   "cc_set": {
-    "strength": 310,
-    "physical_attack": 110,
-    "independent_attack": 120,
-    "critical_rate": 3
+    "str": 310,
+    "phys_atk": 110,
+    "indep_atk": 120,
+    "crit": 0.03
   },
   "berserker": {
-    "fixed_total": 9.27,
-    "percent_total": 32.81,
-    "independent_gain": 8.0,
-    "critical_gain": 1.18,
-    "strength_gain": 24.42,
-    "physical_attack_gain": 5.5
+    "fixed_total": 0.092706,
+    "pct_total": 0.328125,
+    "indep_gain": 0.08,
+    "str_gain": 0.244248,
+    "phys_gain": 0.055,
+    "crit_gain": 0.011765
   },
   "swordsman": {
-    "percent_total": 43.95,
-    "strength_gain": 36.47,
-    "physical_attack_gain": 4.23,
-    "critical_gain": 1.2
+    "pct_total": 0.439513,
+    "str_gain": 0.364706,
+    "phys_gain": 0.042308,
+    "crit_gain": 0.012
   },
-  "marginal_duality": 4.740937
+  "marginal": 4.740937
 }
