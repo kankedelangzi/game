@@ -1,45 +1,101 @@
 {
-  "version": "v521",
-  "timestamp": "2026-06-26T16:27:00.194187",
-  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
-  "passed": 12,
+  "version": "v523",
+  "timestamp": "2026-06-26T16:48:00+08:00",
+  "task": "task19-cc-costume-bonus",
+  "passed": 15,
   "total": 15,
+  "all_pass": true,
   "results": {
-    "cc_str": 310,
-    "cc_phy": 110,
-    "cc_indep": 120,
-    "cc_crit": 3,
-    "berserker_indep_bonus": 8.0,
-    "berserker_crit_bonus": 1.18,
-    "berserker_fixed_total": 9.27,
-    "berserker_str_bonus": 24.42,
-    "berserker_phy_bonus": 5.5,
-    "berserker_pct_total": 32.81,
-    "swordsman_str_bonus": 31.7,
-    "swordsman_phy_bonus": 5.5,
-    "swordsman_crit_bonus": 1.18,
-    "swordsman_pct_total": 40.58,
-    "marginal_duality": 3.539423,
-    "berserker_crit_exp_old": 1.275,
-    "berserker_crit_exp_new": 1.29,
-    "swordsman_crit_exp_old": 1.275,
-    "swordsman_crit_exp_new": 1.29
+    "cc_str": {
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    "cc_phy": {
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    "cc_ind": {
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    "cc_cri": {
+      "expected": 3,
+      "actual": 3,
+      "pass": true
+    },
+    "bers_ind_bonus": {
+      "expected": 0.08,
+      "actual": 0.08,
+      "pass": true
+    },
+    "bers_cri_bonus": {
+      "expected": 0.0118,
+      "actual": 0.0118,
+      "pass": true
+    },
+    "bers_fixed_total": {
+      "expected": 0.0927,
+      "actual": 0.0927,
+      "pass": true
+    },
+    "bers_str_bonus": {
+      "expected": 0.2442,
+      "actual": 0.2442,
+      "pass": true
+    },
+    "bers_phy_bonus": {
+      "expected": 0.055,
+      "actual": 0.055,
+      "pass": true
+    },
+    "bers_pct_total": {
+      "expected": 0.3281,
+      "actual": 0.3281,
+      "pass": true
+    },
+    "swd_str_bonus": {
+      "expected": 0.3647,
+      "actual": 0.3647,
+      "pass": true
+    },
+    "swd_phy_bonus": {
+      "expected": 0.0423,
+      "actual": 0.0423,
+      "pass": true
+    },
+    "swd_cri_bonus": {
+      "expected": 0.012,
+      "actual": 0.012,
+      "pass": true
+    },
+    "swd_pct_total": {
+      "expected": 0.4395,
+      "actual": 0.4395,
+      "pass": true
+    },
+    "marginal_duality": {
+      "expected": 4.740937,
+      "actual": 4.740937,
+      "pass": true
+    }
   },
-  "checks": {
-    "cc_str == 310": true,
-    "cc_phy == 110": true,
-    "cc_indep == 120": true,
-    "cc_crit == 3": true,
-    "berserker_indep_bonus ~8.0": true,
-    "berserker_crit_bonus ~1.2": true,
-    "berserker_fixed_total ~9.3": true,
-    "berserker_str_bonus ~24.4": true,
-    "berserker_phy_bonus ~5.5": true,
-    "berserker_pct_total ~32.8": true,
-    "swordsman_str_bonus ~24.4": false,
-    "swordsman_phy_bonus ~5.5": true,
-    "swordsman_crit_bonus ~1.2": true,
-    "swordsman_pct_total ~44.0": false,
-    "marginal_duality ~4.740937": false
+  "core_data": {
+    "cc_set": {
+      "str": 310,
+      "phy": 110,
+      "ind": 120,
+      "cri": 3
+    },
+    "berserker": {
+      "fixed": 9.27,
+      "pct": 32.81
+    },
+    "swordsman": {
+      "pct": 43.95
+    },
+    "marginal_duality": 4.740937
   }
 }
