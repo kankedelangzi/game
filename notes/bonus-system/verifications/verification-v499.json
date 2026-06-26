@@ -1,0 +1,131 @@
+{
+  "version": "v499",
+  "timestamp": "2026-06-26T12:24:00+08:00",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "pass_rate": "100.0%",
+  "total_checks": 19,
+  "passed": 19,
+  "failed": 0,
+  "marginal_duality": 4.740937,
+  "results": {
+    "cc_strength_total": {
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    "cc_phy_atk_total": {
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    "cc_indep_atk_total": {
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    "cc_crit_total": {
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true
+    },
+    "berserker_indep_gain": {
+      "expected": 0.08,
+      "actual": 0.08,
+      "pass": true
+    },
+    "berserker_crit_gain": {
+      "expected": 0.012,
+      "actual": 0.0117647059,
+      "pass": true
+    },
+    "berserker_fixed_total": {
+      "expected": 0.0927,
+      "actual": 0.0927058824,
+      "pass": true
+    },
+    "berserker_str_gain": {
+      "expected": 0.2442,
+      "actual": 0.2442483454,
+      "pass": true
+    },
+    "berserker_phy_gain": {
+      "expected": 0.055,
+      "actual": 0.055,
+      "pass": true
+    },
+    "berserker_pct_total": {
+      "expected": 0.3281,
+      "actual": 0.3281253221,
+      "pass": true
+    },
+    "swordsman_str_gain": {
+      "expected": 0.3647,
+      "actual": 0.3647058824,
+      "pass": true
+    },
+    "swordsman_phy_gain": {
+      "expected": 0.0423,
+      "actual": 0.0423076923,
+      "pass": true
+    },
+    "swordsman_crit_gain": {
+      "expected": 0.012,
+      "actual": 0.012,
+      "pass": true
+    },
+    "swordsman_pct_total": {
+      "expected": 0.4395,
+      "actual": 0.4395127602,
+      "pass": true
+    },
+    "marginal_dual": {
+      "expected": 4.740937,
+      "actual": 4.7409371339,
+      "pass": true
+    },
+    "berserker_skill_fixed": {
+      "expected": [
+        "十字斩",
+        "血气之刃",
+        "怒气爆发",
+        "嗜魂之手"
+      ],
+      "actual": [
+        "十字斩",
+        "血气之刃",
+        "怒气爆发",
+        "嗜魂之手"
+      ],
+      "pass": true
+    },
+    "berserker_skill_pct": {
+      "expected": [
+        "崩山裂地斩",
+        "嗜魂封魔斩"
+      ],
+      "actual": [
+        "崩山裂地斩",
+        "嗜魂封魔斩"
+      ],
+      "pass": true
+    },
+    "swordsman_skill_pct": {
+      "expected": [
+        "上挑",
+        "裂波斩",
+        "拔刀斩"
+      ],
+      "actual": [
+        "上挑",
+        "裂波斩",
+        "拔刀斩"
+      ],
+      "pass": true
+    },
+    "data_source_annotated": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    }
+  }
+}
