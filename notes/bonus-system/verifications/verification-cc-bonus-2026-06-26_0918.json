@@ -1,0 +1,22 @@
+{
+  "cc_str": 310,
+  "cc_phy": 110,
+  "cc_ind": 120,
+  "cc_cri": 3.0,
+  "bs_ind_gain": 8.0,
+  "bs_cri_gain": 1.1765,
+  "bs_fixed_total": 9.2706,
+  "bs_str_gain": 24.4248,
+  "bs_phy_gain": 5.5,
+  "bs_pct_total": 32.8125,
+  "sw_str_gain": 36.4706,
+  "sw_phy_gain": 4.2308,
+  "sw_cri_gain": 1.2,
+  "sw_pct_total": 43.9513,
+  "marginal_duality": 4.740937,
+  "timestamp": "2026-06-26_0918",
+  "version": "v482",
+  "pass_rate": "100%",
+  "total_checks": 15,
+  "passed": 15
+}
