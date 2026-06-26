@@ -1,0 +1,132 @@
+{
+  "version": "v527",
+  "timestamp": "2026-06-26T17:54:45.996953",
+  "total": 15,
+  "passed": 14,
+  "failed": 1,
+  "pass_rate": "14/15",
+  "all_pass": false,
+  "results": [
+    {
+      "name": "力量合计",
+      "expected": 310,
+      "actual": 310,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "物理攻击合计",
+      "expected": 110,
+      "actual": 110,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "独立攻击合计",
+      "expected": 120,
+      "actual": 120,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "暴击率合计",
+      "expected": 3.0,
+      "actual": 3.0,
+      "passed": true,
+      "diff": 0.0
+    },
+    {
+      "name": "狂战士独立攻击收益",
+      "expected": 0.48,
+      "actual": 0.48,
+      "passed": true,
+      "diff": 0.0
+    },
+    {
+      "name": "狂战士暴击期望系数",
+      "expected": 1.045,
+      "actual": 1.045,
+      "passed": true,
+      "diff": 0.0
+    },
+    {
+      "name": "狂战士固伤综合",
+      "expected": 0.5466,
+      "actual": 0.5466,
+      "passed": true,
+      "diff": 0.0
+    },
+    {
+      "name": "狂战士力量收益",
+      "expected": 0.124,
+      "actual": 0.124,
+      "passed": true,
+      "diff": 0.0
+    },
+    {
+      "name": "狂战士物理攻击收益",
+      "expected": 0.044,
+      "actual": 0.044,
+      "passed": true,
+      "diff": 0.0
+    },
+    {
+      "name": "狂战士百分比综合",
+      "expected": 0.22626,
+      "actual": 0.226262,
+      "passed": true,
+      "diff": 2e-06
+    },
+    {
+      "name": "剑魂力量收益",
+      "expected": 0.124,
+      "actual": 0.124,
+      "passed": true,
+      "diff": 0.0
+    },
+    {
+      "name": "剑魂物理攻击收益",
+      "expected": 0.044,
+      "actual": 0.044,
+      "passed": true,
+      "diff": 0.0
+    },
+    {
+      "name": "剑魂暴击期望系数",
+      "expected": 1.045,
+      "actual": 1.045,
+      "passed": true,
+      "diff": 0.0
+    },
+    {
+      "name": "剑魂百分比综合",
+      "expected": 0.22626,
+      "actual": 0.226262,
+      "passed": true,
+      "diff": 2e-06
+    },
+    {
+      "name": "边际对偶",
+      "expected": 4.740937,
+      "actual": 2.415789,
+      "passed": false,
+      "diff": 2.325148
+    }
+  ],
+  "core_data": {
+    "cc_6pc": {
+      "strength": 310,
+      "phys_atk": 110,
+      "indep_atk": 120,
+      "crit": 3.0
+    },
+    "berserker": {
+      "fixed_combined": 0.5466,
+      "pct_combined": 0.2263
+    },
+    "swordsman": {
+      "pct_combined": 0.2263
+    },
+    "marginal": 2.415789
+  }
+}

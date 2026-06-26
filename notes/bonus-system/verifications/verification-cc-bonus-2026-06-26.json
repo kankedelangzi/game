@@ -1,97 +1,101 @@
 {
-  "version": "v526",
-  "timestamp": "2026-06-26T17:48:22.213355",
-  "total": 15,
+  "version": "v527",
+  "timestamp": "2026-06-26T18:01:29.512719",
+  "task": "任务19 - CC套各职业加成数值",
   "passed": 15,
-  "failed": 0,
-  "all_pass": true,
-  "results": {
-    "cc_str_total": {
+  "total": 15,
+  "pass_rate": "15/15",
+  "marginal_duality": 4.740937,
+  "results": [
+    {
+      "check": "CC套力量合计",
       "expected": 310,
       "actual": 310,
       "pass": true
     },
-    "cc_phy_total": {
+    {
+      "check": "CC套物理攻击合计",
       "expected": 110,
       "actual": 110,
       "pass": true
     },
-    "cc_indep_total": {
+    {
+      "check": "CC套独立攻击合计",
       "expected": 120,
       "actual": 120,
       "pass": true
     },
-    "cc_crit_total": {
-      "expected": 3.0,
-      "actual": 3.0,
+    {
+      "check": "CC套暴击率合计",
+      "expected": 3,
+      "actual": 3,
       "pass": true
     },
-    "berserker_indep_gain": {
+    {
+      "check": "狂战士独立攻击收益",
       "expected": 0.08,
       "actual": 0.08,
       "pass": true
     },
-    "berserker_crit_gain": {
+    {
+      "check": "狂战士暴击收益",
       "expected": 0.012,
       "actual": 0.0118,
       "pass": true
     },
-    "berserker_fixed_total": {
+    {
+      "check": "狂战士固伤综合收益",
       "expected": 0.0927,
       "actual": 0.0927,
       "pass": true
     },
-    "berserker_str_gain": {
+    {
+      "check": "狂战士力量收益(暴走后)",
       "expected": 0.2442,
       "actual": 0.2442,
       "pass": true
     },
-    "berserker_phy_gain": {
+    {
+      "check": "狂战士物理攻击收益",
       "expected": 0.055,
       "actual": 0.055,
       "pass": true
     },
-    "berserker_pct_total": {
+    {
+      "check": "狂战士百分比综合收益",
       "expected": 0.3281,
       "actual": 0.3281,
       "pass": true
     },
-    "swordsman_str_gain": {
+    {
+      "check": "剑魂力量收益",
       "expected": 0.3647,
       "actual": 0.3647,
       "pass": true
     },
-    "swordsman_phy_gain": {
+    {
+      "check": "剑魂物理攻击收益(破极后)",
       "expected": 0.0423,
       "actual": 0.0423,
       "pass": true
     },
-    "swordsman_crit_gain": {
+    {
+      "check": "剑魂暴击收益",
       "expected": 0.012,
       "actual": 0.012,
       "pass": true
     },
-    "swordsman_pct_total": {
+    {
+      "check": "剑魂百分比综合收益",
       "expected": 0.4395,
       "actual": 0.4395,
       "pass": true
     },
-    "marginal_dual": {
+    {
+      "check": "边际对偶倍数",
       "expected": 4.740937,
       "actual": 4.740937,
       "pass": true
     }
-  },
-  "core_data": {
-    "cc_6pc": {
-      "str": 310,
-      "phy": 110,
-      "indep": 120,
-      "crit": 3.0
-    },
-    "berserker_fixed_total": 0.0927,
-    "berserker_pct_total": 0.3281,
-    "swordsman_pct_total": 0.4395,
-    "marginal_dual": 4.740937
-  }
+  ]
 }
