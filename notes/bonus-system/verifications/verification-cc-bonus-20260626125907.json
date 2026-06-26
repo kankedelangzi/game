@@ -1,0 +1,17 @@
+{
+  "cc_str_total": 310,
+  "cc_phy_total": 110,
+  "cc_ind_total": 120,
+  "cc_crit_total": 3.0,
+  "berserker_ind_gain": 8.0,
+  "berserker_crit_gain": 1.18,
+  "berserker_fixed_total": 9.27,
+  "berserker_str_gain": 24.42,
+  "berserker_phy_gain": 5.5,
+  "berserker_pct_total": 32.81,
+  "swordsman_str_gain": 36.47,
+  "swordsman_phy_gain": 4.23,
+  "swordsman_crit_gain": 1.2,
+  "swordsman_pct_total": 43.95,
+  "marginal_duality": 4.740937
+}
