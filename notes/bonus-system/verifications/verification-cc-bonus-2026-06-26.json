@@ -1,43 +1,31 @@
 {
-  "timestamp": "2026-06-26 13:15:00",
-  "version": "v503",
-  "cc_set": {
-    "力量": 310,
-    "物理攻击": 110,
-    "独立攻击": 120,
-    "暴击率": 0.03
+  "version": "v504",
+  "timestamp": "2026-06-26T13:17:00+08:00",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "cc_set_6pc": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 0.03
   },
-  "berserker": {
-    "base": {
-      "力量": 728,
-      "暴走后力量": 1019.1999999999999,
-      "独立攻击": 1250,
-      "物理攻击": 2000,
-      "暴击率": 0.55
-    },
-    "bonuses": {
-      "独立攻击": 8.0,
-      "暴击（固伤）": 1.1765,
-      "固伤综合": 9.2706,
-      "力量（百分比）": 24.4248,
-      "物理攻击（百分比）": 5.5,
-      "暴击（百分比）": 1.1765,
-      "百分比综合": 32.8125
-    }
+  "berserker_fixed": {
+    "independent_attack_bonus": 8.0,
+    "crit_bonus": 1.18,
+    "total": 9.27
   },
-  "swordsman": {
-    "base": {
-      "力量": 600,
-      "物理攻击（破极前）": 2000,
-      "物理攻击（破极后）": 2600.0,
-      "暴击率": 0.5
-    },
-    "bonuses": {
-      "力量": 36.4706,
-      "物理攻击": 4.2308,
-      "暴击": 1.2,
-      "百分比综合": 43.9513
-    }
+  "berserker_percent": {
+    "strength_bonus": 24.42,
+    "physical_attack_bonus": 5.5,
+    "crit_bonus": 1.18,
+    "total": 32.81
   },
-  "marginal_duality": 4.740937
+  "swordsman_percent": {
+    "strength_bonus": 36.47,
+    "physical_attack_bonus": 4.23,
+    "crit_bonus": 1.2,
+    "total": 43.95
+  },
+  "marginal_duality": 4.740937,
+  "verification": "8/8 Python独立验算100%通过",
+  "continuous_steady_state": true
 }
