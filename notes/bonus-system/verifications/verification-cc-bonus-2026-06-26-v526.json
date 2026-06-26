@@ -1,0 +1,118 @@
+{
+  "version": "v526",
+  "timestamp": "2026-06-26 17:42:24",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "total_checks": 15,
+  "passed": 15,
+  "failed": 0,
+  "pass_rate": "15/15",
+  "pass_rate_pct": 100.0,
+  "marginal_duality": 4.740937,
+  "checks": [
+    {
+      "name": "力量合计",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "name": "物理攻击合计",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "name": "独立攻击合计",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "name": "暴击率合计",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    {
+      "name": "狂战士独立攻击收益",
+      "expected": 8.28,
+      "actual": 8.28,
+      "pass": true
+    },
+    {
+      "name": "狂战士暴击收益",
+      "expected": 2.61,
+      "actual": 2.61,
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤综合",
+      "expected": 10.88,
+      "actual": 10.88,
+      "pass": true
+    },
+    {
+      "name": "狂战士力量收益",
+      "expected": 11.27,
+      "actual": 11.27,
+      "pass": true
+    },
+    {
+      "name": "狂战士物理攻击收益",
+      "expected": 16.92,
+      "actual": 16.92,
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比综合",
+      "expected": 30.8,
+      "actual": 30.8,
+      "pass": true
+    },
+    {
+      "name": "剑魂力量收益",
+      "expected": 12.65,
+      "actual": 12.65,
+      "pass": true
+    },
+    {
+      "name": "剑魂物理攻击收益",
+      "expected": 15.71,
+      "actual": 15.71,
+      "pass": true
+    },
+    {
+      "name": "剑魂暴击收益",
+      "expected": 2.61,
+      "actual": 2.61,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比综合",
+      "expected": 30.98,
+      "actual": 30.98,
+      "pass": true
+    },
+    {
+      "name": "边际对偶",
+      "expected": 4.7409,
+      "actual": 4.7409,
+      "pass": true
+    }
+  ],
+  "core_data": {
+    "cc_set": {
+      "力量": 310,
+      "物理攻击": 110,
+      "独立攻击": 120,
+      "暴击率": 3.0
+    },
+    "berserker_gains": {
+      "固伤综合": "+10.88%",
+      "百分比综合": "+30.8%"
+    },
+    "swordsman_gains": {
+      "百分比综合": "+30.98%"
+    }
+  }
+}
