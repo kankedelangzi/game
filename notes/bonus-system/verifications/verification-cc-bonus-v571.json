@@ -1,0 +1,117 @@
+{
+  "version": "v571",
+  "timestamp": "2026-06-27T05:42:06.645463",
+  "total": 18,
+  "passed": 18,
+  "pass_rate": "18/18",
+  "results": {
+    "cc_set_totals": {
+      "cc_strength_total": {
+        "expected": 310,
+        "actual": 310,
+        "pass": true
+      },
+      "cc_phy_atk_total": {
+        "expected": 110,
+        "actual": 110,
+        "pass": true
+      },
+      "cc_indep_atk_total": {
+        "expected": 120,
+        "actual": 120,
+        "pass": true
+      },
+      "cc_crit_total": {
+        "expected": 0.03,
+        "actual": 0.03,
+        "pass": true
+      }
+    },
+    "berserker_fixed": {
+      "indep_gain": {
+        "expected": 0.08,
+        "actual": 0.08,
+        "pass": true
+      },
+      "crit_gain": {
+        "expected": 0.0118,
+        "actual": 0.0118,
+        "pass": true
+      },
+      "fixed_total": {
+        "expected": 0.0927,
+        "actual": 0.0927,
+        "pass": true
+      }
+    },
+    "berserker_percent": {
+      "strength_gain": {
+        "expected": 0.2442,
+        "actual": 0.2442,
+        "pass": true
+      },
+      "phy_atk_gain": {
+        "expected": 0.055,
+        "actual": 0.055,
+        "pass": true
+      },
+      "crit_gain": {
+        "expected": 0.0118,
+        "actual": 0.0118,
+        "pass": true
+      },
+      "pct_total": {
+        "expected": 0.3281,
+        "actual": 0.3281,
+        "pass": true
+      }
+    },
+    "swordsman_percent": {
+      "strength_gain": {
+        "expected": 0.3647,
+        "actual": 0.3647,
+        "pass": true
+      },
+      "phy_atk_gain": {
+        "expected": 0.0423,
+        "actual": 0.0423,
+        "pass": true
+      },
+      "crit_gain": {
+        "expected": 0.012,
+        "actual": 0.012,
+        "pass": true
+      },
+      "pct_total": {
+        "expected": 0.4395,
+        "actual": 0.4395,
+        "pass": true
+      }
+    },
+    "marginal_dual": {
+      "ratio": {
+        "expected": 4.740937,
+        "actual": 4.740937,
+        "pass": true
+      }
+    },
+    "swordsman_base": {
+      "strength": {
+        "expected": 600,
+        "actual": 600,
+        "pass": true
+      },
+      "phy_atk_po": {
+        "expected": 2600,
+        "actual": 2600,
+        "pass": true
+      }
+    }
+  },
+  "summary": {
+    "berserker_fixed_total": 9.27,
+    "berserker_percent_total": 32.81,
+    "swordsman_percent_total": 43.95,
+    "marginal_dual": 4.740937
+  }
+}
