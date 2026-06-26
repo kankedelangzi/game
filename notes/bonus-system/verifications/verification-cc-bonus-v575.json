@@ -1,0 +1,121 @@
+{
+  "version": "v575",
+  "timestamp": "2026-06-27 06:18:30",
+  "total": 17,
+  "passed": 17,
+  "pass_rate": 100.0,
+  "results": [
+    {
+      "name": "CC套力量",
+      "actual": 310,
+      "expected": 310,
+      "status": "✅"
+    },
+    {
+      "name": "CC套物理攻击",
+      "actual": 110,
+      "expected": 110,
+      "status": "✅"
+    },
+    {
+      "name": "CC套独立攻击",
+      "actual": 120,
+      "expected": 120,
+      "status": "✅"
+    },
+    {
+      "name": "CC套暴击率",
+      "actual": 3,
+      "expected": 3,
+      "status": "✅"
+    },
+    {
+      "name": "狂战士固伤独立收益",
+      "actual": 8.0,
+      "expected": 8.0,
+      "status": "✅"
+    },
+    {
+      "name": "狂战士固伤暴击收益",
+      "actual": 1.18,
+      "expected": 1.2,
+      "status": "✅"
+    },
+    {
+      "name": "狂战士固伤综合",
+      "actual": 9.27,
+      "expected": 9.27,
+      "status": "✅"
+    },
+    {
+      "name": "狂战士百分比力量收益",
+      "actual": 24.42,
+      "expected": 24.42,
+      "status": "✅"
+    },
+    {
+      "name": "狂战士百分比物理攻击收益",
+      "actual": 5.5,
+      "expected": 5.5,
+      "status": "✅"
+    },
+    {
+      "name": "狂战士百分比综合",
+      "actual": 32.81,
+      "expected": 32.81,
+      "status": "✅"
+    },
+    {
+      "name": "剑魂百分比力量收益",
+      "actual": 36.47,
+      "expected": 36.47,
+      "status": "✅"
+    },
+    {
+      "name": "剑魂百分比物理攻击收益",
+      "actual": 4.23,
+      "expected": 4.23,
+      "status": "✅"
+    },
+    {
+      "name": "剑魂百分比暴击收益",
+      "actual": 1.2,
+      "expected": 1.2,
+      "status": "✅"
+    },
+    {
+      "name": "剑魂百分比综合",
+      "actual": 43.95,
+      "expected": 43.95,
+      "status": "✅"
+    },
+    {
+      "name": "边际对偶",
+      "actual": 4.740937,
+      "expected": 4.740937,
+      "status": "✅"
+    },
+    {
+      "name": "剑魂基础力量",
+      "actual": 600,
+      "expected": 600,
+      "status": "✅"
+    },
+    {
+      "name": "剑魂破极后物理攻击",
+      "actual": 2600,
+      "expected": 2600,
+      "status": "✅"
+    }
+  ],
+  "summary": {
+    "cc_str": 310,
+    "cc_phy": 110,
+    "cc_ind": 120,
+    "cc_cri": 3,
+    "berserker_fixed_total": 9.27,
+    "berserker_pct_total": 32.81,
+    "swordsman_pct_total": 43.95,
+    "marginal": 4.740937
+  }
+}
