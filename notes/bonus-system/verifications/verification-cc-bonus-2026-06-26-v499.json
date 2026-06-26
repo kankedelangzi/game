@@ -1,0 +1,89 @@
+{
+  "version": "v499",
+  "timestamp": "2026-06-26T12:43:00+08:00",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "total": 15,
+  "passed": 15,
+  "pass_rate": "15/15",
+  "marginal_duality": 4.740937,
+  "berserker_fixed_total": 0.0927,
+  "berserker_pct_total": 0.3281,
+  "swordsman_pct_total": 0.4395,
+  "results": {
+    "cc_strength": {
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    "cc_physical_attack": {
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    "cc_independent_attack": {
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    "cc_crit_rate": {
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true
+    },
+    "berserker_independent_gain": {
+      "expected": 0.08,
+      "actual": 0.08,
+      "pass": true
+    },
+    "berserker_crit_gain": {
+      "expected": 0.0118,
+      "actual": 0.0118,
+      "pass": true
+    },
+    "berserker_fixed_total": {
+      "expected": 0.0927,
+      "actual": 0.0927,
+      "pass": true
+    },
+    "berserker_strength_gain": {
+      "expected": 0.2442,
+      "actual": 0.2442,
+      "pass": true
+    },
+    "berserker_phy_gain": {
+      "expected": 0.055,
+      "actual": 0.055,
+      "pass": true
+    },
+    "berserker_pct_total": {
+      "expected": 0.3281,
+      "actual": 0.3281,
+      "pass": true
+    },
+    "swordsman_strength_gain": {
+      "expected": 0.3647,
+      "actual": 0.3647,
+      "pass": true
+    },
+    "swordsman_phy_gain": {
+      "expected": 0.0423,
+      "actual": 0.0423,
+      "pass": true
+    },
+    "swordsman_crit_gain": {
+      "expected": 0.012,
+      "actual": 0.012,
+      "pass": true
+    },
+    "swordsman_pct_total": {
+      "expected": 0.4395,
+      "actual": 0.4395,
+      "pass": true
+    },
+    "marginal_duality": {
+      "expected": 4.740937,
+      "actual": 4.740937,
+      "pass": true
+    }
+  }
+}
