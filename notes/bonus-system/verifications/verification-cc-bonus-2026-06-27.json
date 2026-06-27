@@ -1,99 +1,87 @@
 {
-  "version": "v611",
-  "timestamp": "2026-06-27T13:08:38.740068",
-  "total": 15,
-  "passed": 15,
-  "results": [
-    {
-      "name": "6件套力量合计",
-      "actual": 310,
+  "version": "v615",
+  "timestamp": "2026-06-27T13:28:13.497927+08:00",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "checks": {
+    "cc_6piece_str": {
+      "value": 310,
       "expected": 310,
-      "ok": true
+      "pass": true
     },
-    {
-      "name": "6件套物理攻击合计",
-      "actual": 110,
+    "cc_6piece_phy": {
+      "value": 110,
       "expected": 110,
-      "ok": true
+      "pass": true
     },
-    {
-      "name": "6件套独立攻击合计",
-      "actual": 120,
+    "cc_6piece_ind": {
+      "value": 120,
       "expected": 120,
-      "ok": true
+      "pass": true
     },
-    {
-      "name": "6件套暴击率合计",
-      "actual": 3.0,
+    "cc_6piece_crit": {
+      "value": 3.0,
       "expected": 3.0,
-      "ok": true
+      "pass": true
     },
-    {
-      "name": "狂战士固伤-独立收益",
-      "actual": 8.0,
+    "berserker_ind_gain": {
+      "value": 8.0,
       "expected": 8.0,
-      "ok": true
+      "pass": true
     },
-    {
-      "name": "狂战士固伤-暴击收益",
-      "actual": 1.18,
+    "berserker_crit_gain": {
+      "value": 1.18,
       "expected": 1.18,
-      "ok": true
+      "pass": true
     },
-    {
-      "name": "狂战士固伤-综合收益",
-      "actual": 9.27,
+    "berserker_fixed_total": {
+      "value": 9.27,
       "expected": 9.27,
-      "ok": true
+      "pass": true
     },
-    {
-      "name": "狂战士百分比-力量收益",
-      "actual": 24.42,
+    "berserker_str_gain": {
+      "value": 24.42,
       "expected": 24.42,
-      "ok": true
+      "pass": true
     },
-    {
-      "name": "狂战士百分比-物理攻击收益",
-      "actual": 5.5,
+    "berserker_phy_gain": {
+      "value": 5.5,
       "expected": 5.5,
-      "ok": true
+      "pass": true
     },
-    {
-      "name": "狂战士百分比-综合收益",
-      "actual": 32.81,
+    "berserker_pct_total": {
+      "value": 32.81,
       "expected": 32.81,
-      "ok": true
+      "pass": true
     },
-    {
-      "name": "剑魂百分比-力量收益",
-      "actual": 36.47,
+    "sword_str_gain": {
+      "value": 36.47,
       "expected": 36.47,
-      "ok": true
+      "pass": true
     },
-    {
-      "name": "剑魂百分比-物理攻击收益",
-      "actual": 4.23,
+    "sword_phy_gain": {
+      "value": 4.23,
       "expected": 4.23,
-      "ok": true
+      "pass": true
     },
-    {
-      "name": "剑魂百分比-暴击收益",
-      "actual": 1.2,
+    "sword_crit_gain": {
+      "value": 1.2,
       "expected": 1.2,
-      "ok": true
+      "pass": true
     },
-    {
-      "name": "剑魂百分比-综合收益",
-      "actual": 43.95,
+    "sword_pct_total": {
+      "value": 43.95,
       "expected": 43.95,
-      "ok": true
+      "pass": true
     },
-    {
-      "name": "边际对偶倍数",
-      "actual": 4.7409,
-      "expected": 4.7409,
-      "ok": true
+    "marginal_duality": {
+      "value": 4.740937,
+      "expected": 4.740937,
+      "pass": true
     }
-  ],
-  "summary": "15/15 Python独立验算100%通过（边际对偶4.740937精确值确认），核心数据全部正确，连续稳态维护保持100%通过率"
+  },
+  "summary": {
+    "passed": 15,
+    "total": 15,
+    "rate": "100.0%"
+  }
 }
