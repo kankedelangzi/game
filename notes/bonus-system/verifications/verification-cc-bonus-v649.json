@@ -1,0 +1,116 @@
+{
+  "version": "v649",
+  "timestamp": "2026-06-27T20:23:11.030872",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "total_checks": 15,
+  "passed": 15,
+  "pass_rate": "15/15",
+  "marginal_duality": 4.197122,
+  "core_data": {
+    "cc_6pc": {
+      "力量": 310,
+      "物理攻击": 110,
+      "独立攻击": 120,
+      "暴击率": 3
+    },
+    "berserker": {
+      "固伤综合": 10.89,
+      "百分比综合": 40.58
+    },
+    "swordsman": {
+      "百分比综合": 45.7
+    }
+  },
+  "checks": [
+    {
+      "check": "CC套力量合计",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "check": "CC套物理攻击合计",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "check": "CC套独立攻击合计",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "check": "CC套暴击率合计",
+      "expected": 3,
+      "actual": 3,
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤-独立收益",
+      "expected": 9.6,
+      "actual": 9.6,
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤-暴击收益",
+      "expected": 1.18,
+      "actual": 1.18,
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤综合收益",
+      "expected": 10.89,
+      "actual": 10.89,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比-力量收益",
+      "expected": 31.7,
+      "actual": 31.7,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比-物理攻击收益",
+      "expected": 5.5,
+      "actual": 5.5,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比综合收益",
+      "expected": 40.58,
+      "actual": 40.58,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比-力量收益",
+      "expected": 36.47,
+      "actual": 36.47,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比-物理攻击收益",
+      "expected": 5.5,
+      "actual": 5.5,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比-暴击收益",
+      "expected": 1.2,
+      "actual": 1.2,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比综合收益",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "check": "边际对偶倍数",
+      "expected": 4.197122,
+      "actual": 4.197122,
+      "pass": true
+    }
+  ]
+}
