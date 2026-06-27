@@ -1,0 +1,117 @@
+{
+  "timestamp": "2026-06-28T07:11:31+08:00",
+  "version": "v712",
+  "checks": [
+    {
+      "name": "CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "name": "CC套物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "name": "CC套独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "name": "CC套暴击率",
+      "expected": 3,
+      "actual": 3,
+      "pass": true
+    },
+    {
+      "name": "狂战士独立攻击收益",
+      "expected": 0.08,
+      "actual": 0.08,
+      "pass": true
+    },
+    {
+      "name": "狂战士暴击收益",
+      "expected": 0.011765,
+      "actual": 0.011765,
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤综合收益",
+      "expected": 0.092706,
+      "actual": 0.092706,
+      "pass": true
+    },
+    {
+      "name": "狂战士力量收益",
+      "expected": 0.244248,
+      "actual": 0.244248,
+      "pass": true
+    },
+    {
+      "name": "狂战士物理攻击收益",
+      "expected": 0.055,
+      "actual": 0.055,
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比综合收益",
+      "expected": 0.328125,
+      "actual": 0.328125,
+      "pass": true
+    },
+    {
+      "name": "剑魂力量收益",
+      "expected": 0.364706,
+      "actual": 0.364706,
+      "pass": true
+    },
+    {
+      "name": "剑魂物理攻击收益",
+      "expected": 0.042308,
+      "actual": 0.042308,
+      "pass": true
+    },
+    {
+      "name": "剑魂暴击收益",
+      "expected": 0.012,
+      "actual": 0.012,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比综合收益",
+      "expected": 0.439513,
+      "actual": 0.439513,
+      "pass": true
+    },
+    {
+      "name": "边际对偶",
+      "expected": 3.539423,
+      "actual": 3.539423,
+      "pass": true
+    }
+  ],
+  "summary": {
+    "passed": 15,
+    "total": 15,
+    "rate": "15/15"
+  },
+  "core_data": {
+    "cc_set": {
+      "力量": 310,
+      "物理攻击": 110,
+      "独立攻击": 120,
+      "暴击率": 3
+    },
+    "berserker": {
+      "固伤综合": "+9.27%",
+      "百分比综合": "+32.81%"
+    },
+    "swordsman": {
+      "百分比综合": "+43.95%"
+    },
+    "marginal_duality": 3.539423
+  }
+}
