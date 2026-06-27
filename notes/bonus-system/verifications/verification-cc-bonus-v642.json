@@ -1,0 +1,94 @@
+{
+  "version": "v642",
+  "timestamp": "2026-06-27T19:22:35.197812",
+  "total": 15,
+  "passed": 15,
+  "pass_rate": "15/15",
+  "results": {
+    "cc_total_str": {
+      "expected": 310,
+      "computed": 310,
+      "pass": true
+    },
+    "cc_total_phy": {
+      "expected": 110,
+      "computed": 110,
+      "pass": true
+    },
+    "cc_total_ind": {
+      "expected": 120,
+      "computed": 120,
+      "pass": true
+    },
+    "cc_total_cri": {
+      "expected": 3.0,
+      "computed": 3.0,
+      "pass": true
+    },
+    "bs_ind_gain": {
+      "expected": 0.08,
+      "computed": 0.08,
+      "pass": true
+    },
+    "bs_cri_gain": {
+      "expected": 0.012,
+      "computed": 0.0118,
+      "pass": true
+    },
+    "bs_fixed_total": {
+      "expected": 0.0927,
+      "computed": 0.0927,
+      "pass": true
+    },
+    "bs_str_gain": {
+      "expected": 0.2442,
+      "computed": 0.2442,
+      "pass": true
+    },
+    "bs_phy_gain": {
+      "expected": 0.055,
+      "computed": 0.055,
+      "pass": true
+    },
+    "bs_pct_total": {
+      "expected": 0.3281,
+      "computed": 0.3281,
+      "pass": true
+    },
+    "sw_str_gain": {
+      "expected": 0.3647,
+      "computed": 0.3647,
+      "pass": true
+    },
+    "sw_phy_gain": {
+      "expected": 0.0423,
+      "computed": 0.0423,
+      "pass": true
+    },
+    "sw_cri_gain": {
+      "expected": 0.012,
+      "computed": 0.012,
+      "pass": true
+    },
+    "sw_pct_total": {
+      "expected": 0.4395,
+      "computed": 0.4395,
+      "pass": true
+    },
+    "marginal_duality": {
+      "expected": 4.740937,
+      "computed": 4.740937,
+      "pass": true
+    }
+  },
+  "core_data": {
+    "cc_str": 310,
+    "cc_phy": 110,
+    "cc_ind": 120,
+    "cc_cri": 3.0,
+    "bs_fixed_total": 9.27,
+    "bs_pct_total": 32.81,
+    "sw_pct_total": 43.95,
+    "marginal_duality": 4.740937
+  }
+}
