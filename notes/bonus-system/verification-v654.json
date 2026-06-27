@@ -1,0 +1,116 @@
+{
+  "version": "v654",
+  "timestamp": "2026-06-27T21:24:00+08:00",
+  "task": "任务19 - CC套各职业加成数值稳态核查",
+  "checks": [
+    {
+      "name": "CC套力量",
+      "actual": 310,
+      "expected": 310,
+      "status": "PASS",
+      "diff": 0
+    },
+    {
+      "name": "CC套物理攻击",
+      "actual": 110,
+      "expected": 110,
+      "status": "PASS",
+      "diff": 0
+    },
+    {
+      "name": "CC套独立攻击",
+      "actual": 120,
+      "expected": 120,
+      "status": "PASS",
+      "diff": 0
+    },
+    {
+      "name": "CC套暴击率",
+      "actual": 3,
+      "expected": 3,
+      "status": "PASS",
+      "diff": 0
+    },
+    {
+      "name": "狂战士独立攻击收益",
+      "actual": 8.0,
+      "expected": 8.0,
+      "status": "PASS",
+      "diff": 0.0
+    },
+    {
+      "name": "狂战士暴击收益(固伤)",
+      "actual": 1.18,
+      "expected": 1.2,
+      "status": "FAIL",
+      "diff": -0.02
+    },
+    {
+      "name": "狂战士固伤综合",
+      "actual": 9.27,
+      "expected": 9.27,
+      "status": "PASS",
+      "diff": 0.0
+    },
+    {
+      "name": "狂战士力量收益(百分比)",
+      "actual": 24.42,
+      "expected": 24.42,
+      "status": "PASS",
+      "diff": 0.0
+    },
+    {
+      "name": "狂战士物理攻击收益(百分比)",
+      "actual": 5.5,
+      "expected": 5.5,
+      "status": "PASS",
+      "diff": 0.0
+    },
+    {
+      "name": "狂战士百分比综合",
+      "actual": 32.81,
+      "expected": 32.81,
+      "status": "PASS",
+      "diff": 0.0
+    },
+    {
+      "name": "剑魂力量收益",
+      "actual": 36.47,
+      "expected": 36.47,
+      "status": "PASS",
+      "diff": 0.0
+    },
+    {
+      "name": "剑魂物理攻击收益",
+      "actual": 4.23,
+      "expected": 4.23,
+      "status": "PASS",
+      "diff": 0.0
+    },
+    {
+      "name": "剑魂暴击收益",
+      "actual": 1.2,
+      "expected": 1.2,
+      "status": "PASS",
+      "diff": 0.0
+    },
+    {
+      "name": "剑魂百分比综合",
+      "actual": 43.95,
+      "expected": 43.95,
+      "status": "PASS",
+      "diff": 0.0
+    },
+    {
+      "name": "边际对偶",
+      "actual": 4.740937,
+      "expected": 4.740937,
+      "status": "PASS",
+      "diff": 0.0
+    }
+  ],
+  "passed": 14,
+  "failed": 1,
+  "total": 15,
+  "pass_rate": 93.3
+}
