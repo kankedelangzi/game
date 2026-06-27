@@ -1,0 +1,112 @@
+{
+  "version": "v669",
+  "timestamp": "2026-06-28 00:25:06",
+  "total": 15,
+  "passed": 15,
+  "failed": 0,
+  "pass_rate": 100.0,
+  "results": [
+    {
+      "check": "CC套力量合计",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "check": "CC套物理攻击合计",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "check": "CC套独立攻击合计",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "check": "CC套暴击率合计",
+      "expected": 3,
+      "actual": 3,
+      "pass": true
+    },
+    {
+      "check": "狂战士独立攻击收益",
+      "expected": 8.0,
+      "actual": 8.0,
+      "pass": true
+    },
+    {
+      "check": "狂战士暴击收益(固伤)",
+      "expected": 1.18,
+      "actual": 1.18,
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤综合收益",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "check": "狂战士力量收益(暴走后)",
+      "expected": 24.42,
+      "actual": 24.42,
+      "pass": true
+    },
+    {
+      "check": "狂战士物理攻击收益",
+      "expected": 5.5,
+      "actual": 5.5,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比综合收益",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "check": "剑魂力量收益",
+      "expected": 36.47,
+      "actual": 36.47,
+      "pass": true
+    },
+    {
+      "check": "剑魂物理攻击收益(破极后)",
+      "expected": 4.23,
+      "actual": 4.23,
+      "pass": true
+    },
+    {
+      "check": "剑魂暴击收益",
+      "expected": 1.2,
+      "actual": 1.2,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比综合收益",
+      "expected": 43.95,
+      "actual": 43.95,
+      "pass": true
+    },
+    {
+      "check": "边际对偶倍数",
+      "expected": 4.740937,
+      "actual": 4.740937,
+      "pass": true
+    }
+  ],
+  "core_data": {
+    "cc_6pc": {
+      "str": 310,
+      "phy": 110,
+      "ind": 120,
+      "crt": 3
+    },
+    "berserker_fixed_gain": 9.27,
+    "berserker_pct_gain": 32.81,
+    "swordsman_pct_gain": 43.95,
+    "marginal_dual": 4.740937
+  }
+}
