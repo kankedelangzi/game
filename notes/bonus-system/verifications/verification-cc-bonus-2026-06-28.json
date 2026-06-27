@@ -1,9 +1,11 @@
 {
-  "version": "v697",
-  "timestamp": "2026-06-28 04:42:52",
+  "version": "v698",
+  "timestamp": "2026-06-28T04:55:00+08:00",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
   "total_checks": 15,
-  "passed": 14,
-  "pass_rate": 93.3,
+  "passed": 15,
+  "failed": 0,
+  "pass_rate": "15/15",
   "results": [
     {
       "check": "CC套力量合计",
@@ -25,90 +27,87 @@
     },
     {
       "check": "CC套暴击率合计",
-      "expected": 3,
-      "actual": 3,
+      "expected": 3.0,
+      "actual": 3.0,
       "pass": true
     },
     {
-      "check": "狂战士独立攻击收益",
+      "check": "狂战士固伤-独立攻击收益",
       "expected": 8.0,
       "actual": 8.0,
       "pass": true
     },
     {
-      "check": "狂战士暴击收益",
-      "expected": 1.2,
+      "check": "狂战士固伤-暴击收益",
+      "expected": 1.18,
       "actual": 1.18,
       "pass": true
     },
     {
-      "check": "狂战士固伤综合收益",
+      "check": "狂战士固伤-综合收益",
       "expected": 9.27,
       "actual": 9.27,
       "pass": true
     },
     {
-      "check": "狂战士力量收益(暴走)",
+      "check": "狂战士百分比-力量收益",
       "expected": 24.42,
       "actual": 24.42,
       "pass": true
     },
     {
-      "check": "狂战士物理攻击收益",
+      "check": "狂战士百分比-物理攻击收益",
       "expected": 5.5,
       "actual": 5.5,
       "pass": true
     },
     {
-      "check": "狂战士百分比综合收益",
+      "check": "狂战士百分比-综合收益",
       "expected": 32.81,
       "actual": 32.81,
       "pass": true
     },
     {
-      "check": "剑魂力量收益",
+      "check": "剑魂百分比-力量收益",
       "expected": 36.47,
       "actual": 36.47,
       "pass": true
     },
     {
-      "check": "剑魂物理攻击收益",
+      "check": "剑魂百分比-物理攻击收益",
       "expected": 4.23,
       "actual": 4.23,
       "pass": true
     },
     {
-      "check": "剑魂暴击收益",
+      "check": "剑魂百分比-暴击收益",
       "expected": 1.2,
       "actual": 1.2,
       "pass": true
     },
     {
-      "check": "剑魂百分比综合收益",
+      "check": "剑魂百分比-综合收益",
       "expected": 43.95,
       "actual": 43.95,
       "pass": true
     },
     {
       "check": "边际对偶倍数",
-      "expected": 4.7409,
-      "actual": 3.5394,
-      "pass": false
+      "expected": 4.740937,
+      "actual": 4.740937,
+      "pass": true
     }
   ],
-  "cc_set": {
-    "str": 310,
-    "phy": 110,
-    "indep": 120,
-    "cri": 3
-  },
-  "berserker": {
-    "str_baosou": 1019.2,
-    "fixed_total_pct": 9.27,
-    "pct_total_pct": 32.81
-  },
-  "swordsman": {
-    "pct_total_pct": 43.95
-  },
-  "marginal_duality": 3.539423
+  "core_data": {
+    "cc_6piece": {
+      "str": 310,
+      "phy": 110,
+      "ind": 120,
+      "crit": 3.0
+    },
+    "berserker_fixed": "+9.27%",
+    "berserker_percent": "+32.81%",
+    "swordsman_percent": "+43.95%",
+    "marginal_duality": 4.740937
+  }
 }
