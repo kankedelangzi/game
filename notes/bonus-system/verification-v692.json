@@ -1,0 +1,30 @@
+{
+  "version": "v692",
+  "timestamp": "2026-06-28T03:46:00+08:00",
+  "cc_set": {
+    "strength": 310,
+    "phy_attack": 110,
+    "ind_attack": 120,
+    "crit": 3
+  },
+  "berserker_fixed": {
+    "ind_gain": 8.0,
+    "cri_gain": 1.1765,
+    "total": 9.2706
+  },
+  "berserker_percent": {
+    "str_gain": 24.4248,
+    "phy_gain": 5.5,
+    "cri_gain": 1.1765,
+    "total": 32.8125
+  },
+  "swordsman_percent": {
+    "str_gain": 36.4706,
+    "phy_gain": 4.2308,
+    "cri_gain": 1.2,
+    "total": 43.9513
+  },
+  "marginal_duality": 4.740937,
+  "pass_rate": "12/12 (100%)",
+  "status": "PASS"
+}
