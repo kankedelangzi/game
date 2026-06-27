@@ -1,0 +1,27 @@
+{
+  "version": "v634",
+  "timestamp": "2026-06-27T17:55:00+08:00",
+  "cc_set": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical_rate": 3.0
+  },
+  "berserker": {
+    "fixed_gain": 9.27,
+    "percent_gain": 32.81,
+    "independent_gain": 8.0,
+    "critical_gain": 1.18,
+    "strength_gain_berserk": 24.42,
+    "physical_attack_gain": 5.5
+  },
+  "swordsman": {
+    "percent_gain": 43.95,
+    "strength_gain": 36.47,
+    "physical_attack_gain": 4.23,
+    "critical_gain": 1.2
+  },
+  "marginal_duality": 4.7411,
+  "all_pass": true,
+  "marginal_duality_note": "剑魂百分比综合(43.95%) / 狂战士固伤综合(9.27%) = 4.741100"
+}
