@@ -1,0 +1,38 @@
+{
+  "version": "v636",
+  "timestamp": "2026-06-27T18:25:05.197585",
+  "cc_set": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 0.03
+  },
+  "berserker": {
+    "fixed_damage": {
+      "independent_benefit": 8.0,
+      "crit_benefit": 1.1765,
+      "total": 9.2706
+    },
+    "percent_damage": {
+      "strength_benefit": 24.4248,
+      "physical_attack_benefit": 5.5,
+      "crit_benefit": 1.1765,
+      "total": 32.8125
+    }
+  },
+  "swordsman": {
+    "percent_damage": {
+      "strength_benefit": 36.4706,
+      "physical_attack_benefit": 4.2308,
+      "crit_benefit": 1.2,
+      "total": 43.9513
+    }
+  },
+  "marginal_duality": 4.740937,
+  "cc_set_totals": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 0.03
+  }
+}
