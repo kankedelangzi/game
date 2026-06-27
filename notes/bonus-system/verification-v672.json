@@ -1,0 +1,133 @@
+{
+  "version": "v672",
+  "audit_time": "2026-06-28 00:49",
+  "audit_task": "任务19 - CC套（宫廷套装）各职业加成数值分析",
+  "audit_file": "notes/bonus-system/dnf-costume-bonus.html (v671)",
+  "knowledge_base": "BERSERKER.md, SWORDSMAN.md",
+  "audit_method": "Python独立验算",
+  "passed": 17,
+  "total": 17,
+  "pass_rate": 100.0,
+  "marginal_duality": 4.740937,
+  "results": [
+    {
+      "item": "CC套力量合计",
+      "expected": 310,
+      "actual": 310,
+      "ok": true,
+      "diff": 0
+    },
+    {
+      "item": "CC套物理攻击合计",
+      "expected": 110,
+      "actual": 110,
+      "ok": true,
+      "diff": 0
+    },
+    {
+      "item": "CC套独立攻击合计",
+      "expected": 120,
+      "actual": 120,
+      "ok": true,
+      "diff": 0
+    },
+    {
+      "item": "CC套暴击率合计",
+      "expected": 3.0,
+      "actual": 3.0,
+      "ok": true,
+      "diff": 0.0
+    },
+    {
+      "item": "狂战士独立攻击收益",
+      "expected": 0.08,
+      "actual": 0.08000000000000007,
+      "ok": true,
+      "diff": 6.938893903907228e-17
+    },
+    {
+      "item": "狂战士暴击收益(固伤)",
+      "expected": 0.011765,
+      "actual": 0.011764705882353121,
+      "ok": true,
+      "diff": 2.9411764687799213e-07
+    },
+    {
+      "item": "狂战士固伤综合",
+      "expected": 0.092706,
+      "actual": 0.09270588235294142,
+      "ok": true,
+      "diff": 1.1764705858119395e-07
+    },
+    {
+      "item": "狂战士力量收益(百分比)",
+      "expected": 0.244248,
+      "actual": 0.2442483454144342,
+      "ok": true,
+      "diff": 3.4541443419411344e-07
+    },
+    {
+      "item": "狂战士物理攻击收益(百分比)",
+      "expected": 0.055,
+      "actual": 0.05499999999999994,
+      "ok": true,
+      "diff": 6.245004513516506e-17
+    },
+    {
+      "item": "狂战士百分比综合",
+      "expected": 0.328125,
+      "actual": 0.3281253221111957,
+      "ok": true,
+      "diff": 3.2211119571634583e-07
+    },
+    {
+      "item": "剑魂力量收益",
+      "expected": 0.364706,
+      "actual": 0.36470588235294144,
+      "ok": true,
+      "diff": 1.1764705853956059e-07
+    },
+    {
+      "item": "剑魂物理攻击收益",
+      "expected": 0.042308,
+      "actual": 0.04230769230769238,
+      "ok": true,
+      "diff": 3.076923076189564e-07
+    },
+    {
+      "item": "剑魂暴击收益",
+      "expected": 0.012,
+      "actual": 0.01200000000000001,
+      "ok": true,
+      "diff": 1.0408340855860843e-17
+    },
+    {
+      "item": "剑魂百分比综合",
+      "expected": 0.439486,
+      "actual": 0.43951276018099583,
+      "ok": true,
+      "diff": 2.6760180995843985e-05
+    },
+    {
+      "item": "边际对偶",
+      "expected": 4.740937,
+      "actual": 4.740937133932049,
+      "ok": true,
+      "diff": 1.339320494508911e-07
+    },
+    {
+      "item": "暴走后力量",
+      "expected": 1019.2,
+      "actual": 1019.1999999999999,
+      "ok": true,
+      "diff": 1.1368683772161603e-13
+    },
+    {
+      "item": "破极兵刃物理攻击",
+      "expected": 2600,
+      "actual": 2600.0,
+      "ok": true,
+      "diff": 0.0
+    }
+  ]
+}
