@@ -1,0 +1,122 @@
+{
+  "version": "v635",
+  "timestamp": "2026-06-27T18:14:00+08:00",
+  "passed": 10,
+  "total": 15,
+  "all_pass": false,
+  "results": [
+    {
+      "check": "CC套力量合计",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "check": "CC套物理攻击合计",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "check": "CC套独立攻击合计",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "check": "CC套暴击合计",
+      "expected": 3,
+      "actual": 3,
+      "pass": true
+    },
+    {
+      "check": "狂战士独立攻击收益%",
+      "expected": 8.0,
+      "actual": 8.0,
+      "pass": true
+    },
+    {
+      "check": "狂战士暴击收益%",
+      "expected": 1.94,
+      "actual": 1.94,
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤综合%",
+      "expected": 9.27,
+      "actual": 10.09,
+      "pass": false
+    },
+    {
+      "check": "狂战士力量收益%",
+      "expected": 24.42,
+      "actual": 31.7,
+      "pass": false
+    },
+    {
+      "check": "狂战士物理攻击收益%",
+      "expected": 5.5,
+      "actual": 5.5,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比综合%",
+      "expected": 32.81,
+      "actual": 41.63,
+      "pass": false
+    },
+    {
+      "check": "剑魂力量收益%",
+      "expected": 36.5,
+      "actual": 36.47,
+      "pass": true
+    },
+    {
+      "check": "剑魂物理攻击收益%",
+      "expected": 5.5,
+      "actual": 5.5,
+      "pass": true
+    },
+    {
+      "check": "剑魂暴击收益%",
+      "expected": 2.0,
+      "actual": 2.0,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比综合%",
+      "expected": 43.95,
+      "actual": 46.86,
+      "pass": false
+    },
+    {
+      "check": "边际对偶倍数",
+      "expected": 4.740937,
+      "actual": 4.125722,
+      "pass": false
+    }
+  ],
+  "summary": {
+    "cc_set": {
+      "str": 310,
+      "phy": 110,
+      "ind": 120,
+      "crt": 3
+    },
+    "berserker": {
+      "fixed_bonus": 10.09,
+      "pct_bonus": 41.63,
+      "ind_bonus": 8.0,
+      "str_bonus": 31.7,
+      "phy_bonus": 5.5,
+      "crt_bonus": 1.94
+    },
+    "swordsman": {
+      "pct_bonus": 46.86,
+      "str_bonus": 36.47,
+      "phy_bonus": 5.5,
+      "crt_bonus": 2.0
+    },
+    "marginal_duality": 4.125722
+  }
+}
