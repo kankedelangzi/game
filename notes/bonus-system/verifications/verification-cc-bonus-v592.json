@@ -1,0 +1,91 @@
+{
+  "version": "v592",
+  "timestamp": "2026-06-27T08:40:00+08:00",
+  "results": {
+    "cc_6pc_str": {
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    "cc_6pc_phy": {
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    "cc_6pc_ind": {
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    "cc_6pc_cri": {
+      "expected": 3,
+      "actual": 3,
+      "pass": true
+    },
+    "bs_fixed_ind": {
+      "expected": 8.0,
+      "actual": 8.0,
+      "pass": true
+    },
+    "bs_fixed_cri": {
+      "expected": 1.18,
+      "actual": 1.18,
+      "pass": true
+    },
+    "bs_fixed_total": {
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    "bs_pct_str": {
+      "expected": 24.42,
+      "actual": 24.42,
+      "pass": true
+    },
+    "bs_pct_phy": {
+      "expected": 5.5,
+      "actual": 5.5,
+      "pass": true
+    },
+    "bs_pct_cri": {
+      "expected": 1.18,
+      "actual": 1.18,
+      "pass": true
+    },
+    "bs_pct_total": {
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    "sw_pct_str": {
+      "expected": 36.47,
+      "actual": 36.47,
+      "pass": true
+    },
+    "sw_pct_phy": {
+      "expected": 4.23,
+      "actual": 4.23,
+      "pass": true
+    },
+    "sw_pct_cri": {
+      "expected": 1.2,
+      "actual": 1.2,
+      "pass": true
+    },
+    "sw_pct_total": {
+      "expected": 43.95,
+      "actual": 43.95,
+      "pass": true
+    },
+    "marginal_dual": {
+      "expected": 4.740937,
+      "actual": 4.740937,
+      "pass": true
+    }
+  },
+  "summary": {
+    "passed": 16,
+    "total": 16,
+    "rate": "16/16"
+  }
+}
