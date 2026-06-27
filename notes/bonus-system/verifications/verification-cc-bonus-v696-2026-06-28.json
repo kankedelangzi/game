@@ -1,0 +1,83 @@
+{
+  "version": "v696",
+  "timestamp": "2026-06-28T04:29:00+08:00",
+  "total": 15,
+  "passed": 15,
+  "results": {
+    "cc_total_str": {
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    "cc_total_phy": {
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    "cc_total_ind": {
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    "cc_total_crit": {
+      "expected": 3.0,
+      "actual": 3,
+      "pass": true
+    },
+    "berserker_ind_gain": {
+      "expected": 0.08,
+      "actual": 0.08,
+      "pass": true
+    },
+    "berserker_crit_gain": {
+      "expected": 0.0118,
+      "actual": 0.0118,
+      "pass": true
+    },
+    "berserker_fixed_total": {
+      "expected": 0.0927,
+      "actual": 0.0927,
+      "pass": true
+    },
+    "berserker_str_gain": {
+      "expected": 0.2442,
+      "actual": 0.2442,
+      "pass": true
+    },
+    "berserker_phy_gain": {
+      "expected": 0.055,
+      "actual": 0.055,
+      "pass": true
+    },
+    "berserker_pct_total": {
+      "expected": 0.3281,
+      "actual": 0.3281,
+      "pass": true
+    },
+    "swordsman_str_gain": {
+      "expected": 0.3647,
+      "actual": 0.3647,
+      "pass": true
+    },
+    "swordsman_phy_gain": {
+      "expected": 0.0423,
+      "actual": 0.0423,
+      "pass": true
+    },
+    "swordsman_crit_gain": {
+      "expected": 0.012,
+      "actual": 0.012,
+      "pass": true
+    },
+    "swordsman_pct_total": {
+      "expected": 0.4395,
+      "actual": 0.4395,
+      "pass": true
+    },
+    "marginal_duality": {
+      "expected": 4.740937,
+      "actual": 4.740937,
+      "pass": true
+    }
+  }
+}
