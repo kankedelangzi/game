@@ -1,152 +1,112 @@
 {
-  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
-  "version": "v679",
-  "timestamp": "2026-06-28T01:51:08.267266",
-  "cc_6piece": {
-    "力量": 310,
-    "物理攻击": 110,
-    "独立攻击": 120,
-    "暴击": 3.0
-  },
-  "berserker": {
-    "base_stats": {
-      "力量": 728,
-      "暴走力量": 1019.1999999999999,
-      "独立攻击": 1250,
-      "物理攻击": 2000,
-      "暴击率": 0.55
-    },
-    "indep_bonus": 0.08,
-    "crit_bonus": 0.011765,
-    "fixed_total": 0.092706,
-    "str_bonus": 0.244248,
-    "phy_bonus": 0.055,
-    "pct_total": 0.328125
-  },
-  "swordsman": {
-    "base_stats": {
-      "力量": 600,
-      "物理攻击_基础": 2000,
-      "物理攻击_破极": 2600.0,
-      "暴击率": 0.5
-    },
-    "str_bonus": 0.364706,
-    "phy_bonus": 0.042308,
-    "crit_bonus": 0.012,
-    "pct_total": 0.439513
-  },
-  "marginal_dual": 4.740937,
+  "version": "v681",
+  "timestamp": "2026-06-28T02:11:17.572586",
+  "task": "19-CC套各职业加成数值",
+  "passed": 15,
+  "total": 15,
+  "pass_rate": 100.0,
   "results": [
     {
-      "name": "CC套6件-力量",
-      "expected": 310,
+      "name": "CC力量合计",
       "actual": 310,
-      "diff": 0,
-      "status": "✅ PASS"
+      "expected": 310,
+      "pass": true
     },
     {
-      "name": "CC套6件-物理攻击",
-      "expected": 110,
+      "name": "CC物理攻击合计",
       "actual": 110,
-      "diff": 0,
-      "status": "✅ PASS"
+      "expected": 110,
+      "pass": true
     },
     {
-      "name": "CC套6件-独立攻击",
-      "expected": 120,
+      "name": "CC独立攻击合计",
       "actual": 120,
-      "diff": 0,
-      "status": "✅ PASS"
+      "expected": 120,
+      "pass": true
     },
     {
-      "name": "CC套6件-暴击",
-      "expected": 3.0,
+      "name": "CC暴击合计",
       "actual": 3.0,
-      "diff": 0.0,
-      "status": "✅ PASS"
+      "expected": 3.0,
+      "pass": true
     },
     {
-      "name": "狂战士-独立攻击收益",
-      "expected": 0.08,
+      "name": "狂战士独立攻击收益",
       "actual": 0.08,
-      "diff": 0.0,
-      "status": "✅ PASS"
+      "expected": 0.08,
+      "pass": true
     },
     {
-      "name": "狂战士-暴击收益",
-      "expected": 0.0118,
+      "name": "狂战士暴击收益(期望系数)",
       "actual": 0.011765,
-      "diff": 3.5e-05,
-      "status": "✅ PASS"
+      "expected": 0.011765,
+      "pass": true
     },
     {
-      "name": "狂战士-固伤综合收益",
-      "expected": 0.0927,
+      "name": "狂战士固伤综合收益",
       "actual": 0.092706,
-      "diff": 6e-06,
-      "status": "✅ PASS"
+      "expected": 0.0927,
+      "pass": true
     },
     {
-      "name": "狂战士-力量收益(暴走后)",
-      "expected": 0.2442,
+      "name": "狂战士力量收益(百分比)",
       "actual": 0.244248,
-      "diff": 4.8e-05,
-      "status": "✅ PASS"
+      "expected": 0.2442,
+      "pass": true
     },
     {
-      "name": "狂战士-物理攻击收益",
-      "expected": 0.055,
+      "name": "狂战士物理攻击收益(百分比)",
       "actual": 0.055,
-      "diff": 0.0,
-      "status": "✅ PASS"
+      "expected": 0.055,
+      "pass": true
     },
     {
-      "name": "狂战士-百分比综合收益",
-      "expected": 0.3281,
+      "name": "狂战士百分比综合收益",
       "actual": 0.328125,
-      "diff": 2.5e-05,
-      "status": "✅ PASS"
+      "expected": 0.3281,
+      "pass": true
     },
     {
-      "name": "剑魂-力量收益",
-      "expected": 0.3647,
+      "name": "剑魂力量收益",
       "actual": 0.364706,
-      "diff": 6e-06,
-      "status": "✅ PASS"
+      "expected": 0.3647,
+      "pass": true
     },
     {
-      "name": "剑魂-物理攻击收益(破极后)",
-      "expected": 0.0423,
+      "name": "剑魂物理攻击收益(破极后)",
       "actual": 0.042308,
-      "diff": 8e-06,
-      "status": "✅ PASS"
+      "expected": 0.0423,
+      "pass": true
     },
     {
-      "name": "剑魂-暴击收益",
-      "expected": 0.012,
+      "name": "剑魂暴击收益(期望系数)",
       "actual": 0.012,
-      "diff": 0.0,
-      "status": "✅ PASS"
+      "expected": 0.012,
+      "pass": true
     },
     {
-      "name": "剑魂-百分比综合收益",
-      "expected": 0.4395,
+      "name": "剑魂百分比综合收益",
       "actual": 0.439513,
-      "diff": 1.3e-05,
-      "status": "✅ PASS"
+      "expected": 0.4395,
+      "pass": true
     },
     {
-      "name": "边际对偶倍数",
-      "expected": 4.7409,
+      "name": "边际对偶(百分比/固伤)",
       "actual": 4.740937,
-      "diff": 3.7e-05,
-      "status": "✅ PASS"
+      "expected": 4.740937,
+      "pass": true
     }
   ],
   "summary": {
-    "passed": 15,
-    "failed": 0,
-    "total": 15,
-    "pass_rate": 100.0
+    "cc_set": {
+      "str": 310,
+      "phy": 110,
+      "ind": 120,
+      "cri": 3.0
+    },
+    "berserker_fixed": 9.27,
+    "berserker_pct": 32.81,
+    "swordsman_pct": 43.95,
+    "marginal_duality": 4.740937
   }
 }
