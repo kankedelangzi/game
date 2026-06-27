@@ -1,0 +1,132 @@
+{
+  "version": "v623",
+  "timestamp": "2026-06-27T14:53:44.997222",
+  "passed": 17,
+  "total": 17,
+  "pass_rate": 100.0,
+  "marginal_duality": 4.740937,
+  "berserker_fixed": 9.27,
+  "berserker_percent": 32.81,
+  "swordsman_percent": 43.95,
+  "results": [
+    {
+      "name": "CC力量合计",
+      "expected": 310,
+      "actual": 310,
+      "diff": 0,
+      "passed": true
+    },
+    {
+      "name": "CC物理攻击合计",
+      "expected": 110,
+      "actual": 110,
+      "diff": 0,
+      "passed": true
+    },
+    {
+      "name": "CC独立攻击合计",
+      "expected": 120,
+      "actual": 120,
+      "diff": 0,
+      "passed": true
+    },
+    {
+      "name": "CC暴击合计",
+      "expected": 3,
+      "actual": 3,
+      "diff": 0,
+      "passed": true
+    },
+    {
+      "name": "狂战士独立收益",
+      "expected": 0.08,
+      "actual": 0.08,
+      "diff": 0.0,
+      "passed": true
+    },
+    {
+      "name": "狂战士暴击收益",
+      "expected": 0.0118,
+      "actual": 0.011765,
+      "diff": 3.5e-05,
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤综合收益",
+      "expected": 0.0927,
+      "actual": 0.092706,
+      "diff": 6e-06,
+      "passed": true
+    },
+    {
+      "name": "狂战士力量收益(暴走后)",
+      "expected": 0.2442,
+      "actual": 0.244248,
+      "diff": 4.8e-05,
+      "passed": true
+    },
+    {
+      "name": "狂战士物理攻击收益",
+      "expected": 0.055,
+      "actual": 0.055,
+      "diff": 0.0,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比综合收益",
+      "expected": 0.3281,
+      "actual": 0.328125,
+      "diff": 2.5e-05,
+      "passed": true
+    },
+    {
+      "name": "剑魂力量收益",
+      "expected": 0.3647,
+      "actual": 0.364706,
+      "diff": 6e-06,
+      "passed": true
+    },
+    {
+      "name": "剑魂物理攻击收益(破极后)",
+      "expected": 0.0423,
+      "actual": 0.042308,
+      "diff": 8e-06,
+      "passed": true
+    },
+    {
+      "name": "剑魂暴击收益",
+      "expected": 0.012,
+      "actual": 0.012,
+      "diff": 0.0,
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比综合收益",
+      "expected": 0.4395,
+      "actual": 0.439513,
+      "diff": 1.3e-05,
+      "passed": true
+    },
+    {
+      "name": "边际对偶倍数",
+      "expected": 4.740937,
+      "actual": 4.740937,
+      "diff": 0.0,
+      "passed": true
+    },
+    {
+      "name": "剑魂基础力量",
+      "expected": 600,
+      "actual": 600,
+      "diff": 0,
+      "passed": true
+    },
+    {
+      "name": "剑魂基础物理攻击",
+      "expected": 2000,
+      "actual": 2000,
+      "diff": 0,
+      "passed": true
+    }
+  ]
+}
