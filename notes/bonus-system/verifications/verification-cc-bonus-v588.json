@@ -1,0 +1,18 @@
+{
+  "version": "v588",
+  "timestamp": "2026-06-27T08:14:37.850795",
+  "total": 17,
+  "passed": 16,
+  "marginal_ratio": 4.740937,
+  "core_data": {
+    "cc_set": {
+      "str": 310,
+      "phy": 110,
+      "indep": 120,
+      "crit": 0.03
+    },
+    "berserker_fixed": 9.27,
+    "berserker_pct": 32.81,
+    "swordsman_pct": 43.95
+  }
+}
