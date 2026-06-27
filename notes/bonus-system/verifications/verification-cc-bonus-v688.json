@@ -1,0 +1,27 @@
+{
+  "round": "v688",
+  "timestamp": "2026-06-28T03:00:09.293686+08:00",
+  "cc_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker": {
+    "fixed_indep_gain": 0.08,
+    "fixed_crit_gain": 0.011765,
+    "fixed_total": 0.0927,
+    "pct_str_gain": 0.244248,
+    "pct_phys_gain": 0.055,
+    "pct_total": 0.3281
+  },
+  "swordsman": {
+    "pct_str_gain": 0.364706,
+    "pct_phys_gain": 0.042308,
+    "pct_crit_gain": 0.012,
+    "pct_total": 0.4395
+  },
+  "marginal_duality": 4.740937,
+  "checks_passed": 15,
+  "checks_total": 15
+}
