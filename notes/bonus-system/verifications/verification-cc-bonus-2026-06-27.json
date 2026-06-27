@@ -1,109 +1,157 @@
 {
-  "version": "v652",
-  "timestamp": "2026-06-27T20:57:16.374589",
-  "passed": 15,
-  "total": 15,
-  "pass_rate": 100.0,
+  "version": "v653",
+  "timestamp": "2026-06-27T21:13:13.225530",
+  "total_checks": 19,
+  "passed": 19,
   "results": [
     {
-      "name": "CC套力量合计",
+      "name": "力量合计",
       "expected": 310,
       "actual": 310,
-      "pass": true
+      "pass": true,
+      "diff": 0
     },
     {
-      "name": "CC套物理攻击合计",
+      "name": "物理攻击合计",
       "expected": 110,
       "actual": 110,
-      "pass": true
+      "pass": true,
+      "diff": 0
     },
     {
-      "name": "CC套独立攻击合计",
+      "name": "独立攻击合计",
       "expected": 120,
       "actual": 120,
-      "pass": true
+      "pass": true,
+      "diff": 0
     },
     {
-      "name": "CC套暴击率合计",
-      "expected": 3.0,
-      "actual": 3,
-      "pass": true
+      "name": "暴击率合计",
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true,
+      "diff": 0.0
     },
     {
-      "name": "狂战士独立攻击收益",
+      "name": "狂战士-独立攻击收益",
       "expected": 0.08,
       "actual": 0.08,
-      "pass": true
+      "pass": true,
+      "diff": 0.0
     },
     {
-      "name": "狂战士暴击收益",
+      "name": "狂战士-暴击收益",
       "expected": 0.0118,
       "actual": 0.0118,
-      "pass": true
+      "pass": true,
+      "diff": 0.0
     },
     {
-      "name": "狂战士固伤综合收益",
+      "name": "狂战士-固伤综合收益",
       "expected": 0.0927,
       "actual": 0.0927,
-      "pass": true
+      "pass": true,
+      "diff": 0.0
     },
     {
-      "name": "狂战士力量收益(百分比)",
+      "name": "狂战士-百分比力量收益",
       "expected": 0.2442,
       "actual": 0.2442,
-      "pass": true
+      "pass": true,
+      "diff": 0.0
     },
     {
-      "name": "狂战士物理攻击收益(百分比)",
+      "name": "狂战士-百分比物理攻击收益",
       "expected": 0.055,
       "actual": 0.055,
-      "pass": true
+      "pass": true,
+      "diff": 0.0
     },
     {
-      "name": "狂战士百分比综合收益",
+      "name": "狂战士-百分比综合收益",
       "expected": 0.3281,
       "actual": 0.3281,
-      "pass": true
+      "pass": true,
+      "diff": 0.0
     },
     {
-      "name": "剑魂力量收益",
+      "name": "剑魂-力量收益",
       "expected": 0.3647,
       "actual": 0.3647,
-      "pass": true
+      "pass": true,
+      "diff": 0.0
     },
     {
-      "name": "剑魂物理攻击收益(破极后)",
+      "name": "剑魂-物理攻击收益",
       "expected": 0.0423,
       "actual": 0.0423,
-      "pass": true
+      "pass": true,
+      "diff": 0.0
     },
     {
-      "name": "剑魂暴击收益",
+      "name": "剑魂-暴击收益",
       "expected": 0.012,
       "actual": 0.012,
-      "pass": true
+      "pass": true,
+      "diff": 0.0
     },
     {
-      "name": "剑魂百分比综合收益",
+      "name": "剑魂-百分比综合收益",
       "expected": 0.4395,
       "actual": 0.4395,
-      "pass": true
+      "pass": true,
+      "diff": 0.0
     },
     {
-      "name": "边际对偶(剑魂百分比/狂战士固伤)",
-      "expected": 4.740937,
-      "actual": 4.740937,
-      "pass": true
+      "name": "边际对偶倍数",
+      "expected": 4.7409,
+      "actual": 4.7409,
+      "pass": true,
+      "diff": 0.0
+    },
+    {
+      "name": "狂战士暴击期望系数",
+      "expected": 1.29,
+      "actual": 1.29,
+      "pass": true,
+      "diff": 0.0
+    },
+    {
+      "name": "狂战士暴击期望系数(旧)",
+      "expected": 1.275,
+      "actual": 1.275,
+      "pass": true,
+      "diff": 0.0
+    },
+    {
+      "name": "剑魂暴击期望系数",
+      "expected": 1.265,
+      "actual": 1.265,
+      "pass": true,
+      "diff": 0.0
+    },
+    {
+      "name": "剑魂暴击期望系数(旧)",
+      "expected": 1.25,
+      "actual": 1.25,
+      "pass": true,
+      "diff": 0.0
     }
   ],
-  "marginal_duality": 4.740937,
-  "core_data": {
-    "cc_str": 310,
-    "cc_phy": 110,
-    "cc_ind": 120,
-    "cc_cri": 3,
-    "berserker_fixed": 9.27,
-    "berserker_pct": 32.81,
-    "swordsman_pct": 43.95
+  "summary": {
+    "cc_set_6pc": {
+      "power": 310,
+      "phy_atk": 110,
+      "independent": 120,
+      "crit": 0.03
+    },
+    "berserker": {
+      "fixed_total": 0.0927,
+      "percent_total": 0.3281
+    },
+    "swordsman": {
+      "percent_total": 0.4395
+    },
+    "marginal_dual": 4.740937
   }
 }
