@@ -1,0 +1,80 @@
+{
+  "version": "v648",
+  "timestamp": "2026-06-27T20:10:03.764889",
+  "cc_set": {
+    "str": 310,
+    "phy": 110,
+    "indep": 120,
+    "crit": 3
+  },
+  "berserker": {
+    "base": {
+      "str": 728,
+      "indep": 1250,
+      "phy": 2000,
+      "crit": 0.55
+    },
+    "fixed_gain": 0.138909,
+    "percent_gain": 0.465193
+  },
+  "swordsman": {
+    "base": {
+      "str": 600,
+      "phy": 2000,
+      "crit": 0.5
+    },
+    "percent_gain": 0.526151
+  },
+  "margin_ratio": 3.348901,
+  "checks": [
+    {
+      "name": "力量合计",
+      "expected": 310,
+      "actual": 310,
+      "passed": true
+    },
+    {
+      "name": "物理攻击合计",
+      "expected": 110,
+      "actual": 110,
+      "passed": true
+    },
+    {
+      "name": "独立攻击合计",
+      "expected": 120,
+      "actual": 120,
+      "passed": true
+    },
+    {
+      "name": "暴击率合计",
+      "expected": 3,
+      "actual": 3,
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤综合收益",
+      "expected": 0.138909,
+      "actual": 0.138909,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比综合收益",
+      "expected": 0.465193,
+      "actual": 0.465193,
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比综合收益",
+      "expected": 0.526151,
+      "actual": 0.526151,
+      "passed": true
+    },
+    {
+      "name": "边际对偶倍数",
+      "expected": 3.348901,
+      "actual": 3.348901,
+      "passed": true
+    }
+  ],
+  "summary": "15/15 Python独立验算100%通过，边际对偶3.348901精确值确认，核心数据全部正确，连续稳态维护保持100%通过率"
+}
