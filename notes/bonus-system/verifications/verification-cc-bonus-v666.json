@@ -1,0 +1,112 @@
+{
+  "version": "v666",
+  "timestamp": "2026-06-27T23:50:36.233641",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "passed": 11,
+  "total": 15,
+  "pass_rate": "73.3%",
+  "results": [
+    {
+      "check": "6件套力量合计",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "check": "6件套物理攻击合计",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "check": "6件套独立攻击合计",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "check": "6件套暴击率合计",
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true
+    },
+    {
+      "check": "狂战士独立攻击收益",
+      "expected": 8.0,
+      "actual": 8.0,
+      "pass": true
+    },
+    {
+      "check": "狂战士暴击收益",
+      "expected": 1.94,
+      "actual": 1.94,
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤综合收益",
+      "expected": 10.09,
+      "actual": 10.09,
+      "pass": false
+    },
+    {
+      "check": "狂战士力量收益",
+      "expected": 31.7,
+      "actual": 31.7,
+      "pass": true
+    },
+    {
+      "check": "狂战士物理攻击收益",
+      "expected": 5.5,
+      "actual": 5.5,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比综合收益",
+      "expected": 41.63,
+      "actual": 41.63,
+      "pass": false
+    },
+    {
+      "check": "剑魂力量收益",
+      "expected": 36.47,
+      "actual": 36.47,
+      "pass": true
+    },
+    {
+      "check": "剑魂物理攻击收益",
+      "expected": 5.5,
+      "actual": 5.5,
+      "pass": true
+    },
+    {
+      "check": "剑魂暴击收益",
+      "expected": 2.0,
+      "actual": 2.0,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比综合收益",
+      "expected": 46.86,
+      "actual": 46.86,
+      "pass": false
+    },
+    {
+      "check": "边际对偶倍数",
+      "expected": 4.643657,
+      "actual": 4.643657,
+      "pass": false
+    }
+  ],
+  "core_data": {
+    "cc_set": {
+      "strength": 310,
+      "physical_attack": 110,
+      "independent_attack": 120,
+      "crit_rate": 0.03
+    },
+    "berserker_fixed_gain": 10.09,
+    "berserker_percent_gain": 41.63,
+    "swordsman_percent_gain": 46.86,
+    "marginal_dual": 4.643657
+  }
+}
