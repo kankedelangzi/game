@@ -1,0 +1,123 @@
+{
+  "version": "v652",
+  "timestamp": "2026-06-27 20:51:58",
+  "task": "任务19 CC套各职业加成数值",
+  "passed": 11,
+  "total": 15,
+  "pass_rate": "11/15",
+  "cc_set": {
+    "str": 310,
+    "phy": 110,
+    "ind": 120,
+    "crit": 3
+  },
+  "berserker_panel": {
+    "str": 728,
+    "phy": 2000,
+    "ind": 1250,
+    "crit": 0.55
+  },
+  "swordsman_panel": {
+    "str": 600,
+    "phy": 2000,
+    "crit": 0.5
+  },
+  "results": [
+    {
+      "check": "力量合计",
+      "actual": 310,
+      "expected": 310,
+      "pass": true
+    },
+    {
+      "check": "物理攻击合计",
+      "actual": 110,
+      "expected": 110,
+      "pass": true
+    },
+    {
+      "check": "独立攻击合计",
+      "actual": 120,
+      "expected": 120,
+      "pass": true
+    },
+    {
+      "check": "暴击率合计",
+      "actual": 3,
+      "expected": 3,
+      "pass": true
+    },
+    {
+      "check": "狂战士独立攻击收益",
+      "actual": 0.096,
+      "expected": 0.096,
+      "pass": true
+    },
+    {
+      "check": "狂战士暴击收益",
+      "actual": 0.03,
+      "expected": 0.03,
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤综合",
+      "actual": 0.12888,
+      "expected": 0.0927,
+      "pass": false
+    },
+    {
+      "check": "狂战士力量收益",
+      "actual": 1.24,
+      "expected": 1.24,
+      "pass": true
+    },
+    {
+      "check": "狂战士物理攻击收益",
+      "actual": 0.044,
+      "expected": 0.044,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比综合",
+      "actual": 1.408717,
+      "expected": 0.3281,
+      "pass": false
+    },
+    {
+      "check": "剑魂力量收益",
+      "actual": 1.24,
+      "expected": 1.24,
+      "pass": true
+    },
+    {
+      "check": "剑魂物理攻击收益",
+      "actual": 0.044,
+      "expected": 0.044,
+      "pass": true
+    },
+    {
+      "check": "剑魂暴击收益",
+      "actual": 0.03,
+      "expected": 0.03,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比综合",
+      "actual": 1.408717,
+      "expected": 0.4395,
+      "pass": false
+    },
+    {
+      "check": "边际对偶",
+      "actual": 10.930453,
+      "expected": 4.740937,
+      "pass": false
+    }
+  ],
+  "summary": {
+    "berserker_fixed": "+12.89%",
+    "berserker_percent": "+140.87%",
+    "swordsman_percent": "+140.87%",
+    "marginal_ratio": "10.930453x"
+  }
+}

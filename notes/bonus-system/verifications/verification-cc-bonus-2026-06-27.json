@@ -1,25 +1,109 @@
 {
-  "version": "v651",
-  "timestamp": "2026-06-27 20:47:52",
-  "results": {
+  "version": "v652",
+  "timestamp": "2026-06-27T20:57:16.374589",
+  "passed": 15,
+  "total": 15,
+  "pass_rate": 100.0,
+  "results": [
+    {
+      "name": "CC套力量合计",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "name": "CC套物理攻击合计",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "name": "CC套独立攻击合计",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "name": "CC套暴击率合计",
+      "expected": 3.0,
+      "actual": 3,
+      "pass": true
+    },
+    {
+      "name": "狂战士独立攻击收益",
+      "expected": 0.08,
+      "actual": 0.08,
+      "pass": true
+    },
+    {
+      "name": "狂战士暴击收益",
+      "expected": 0.0118,
+      "actual": 0.0118,
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤综合收益",
+      "expected": 0.0927,
+      "actual": 0.0927,
+      "pass": true
+    },
+    {
+      "name": "狂战士力量收益(百分比)",
+      "expected": 0.2442,
+      "actual": 0.2442,
+      "pass": true
+    },
+    {
+      "name": "狂战士物理攻击收益(百分比)",
+      "expected": 0.055,
+      "actual": 0.055,
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比综合收益",
+      "expected": 0.3281,
+      "actual": 0.3281,
+      "pass": true
+    },
+    {
+      "name": "剑魂力量收益",
+      "expected": 0.3647,
+      "actual": 0.3647,
+      "pass": true
+    },
+    {
+      "name": "剑魂物理攻击收益(破极后)",
+      "expected": 0.0423,
+      "actual": 0.0423,
+      "pass": true
+    },
+    {
+      "name": "剑魂暴击收益",
+      "expected": 0.012,
+      "actual": 0.012,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比综合收益",
+      "expected": 0.4395,
+      "actual": 0.4395,
+      "pass": true
+    },
+    {
+      "name": "边际对偶(剑魂百分比/狂战士固伤)",
+      "expected": 4.740937,
+      "actual": 4.740937,
+      "pass": true
+    }
+  ],
+  "marginal_duality": 4.740937,
+  "core_data": {
     "cc_str": 310,
     "cc_phy": 110,
     "cc_ind": 120,
-    "cc_crt": 3,
-    "bs_ind_gain": 8.0,
-    "bs_crt_gain": 1.18,
-    "bs_fixed_total": 9.27,
-    "bs_str_gain": 24.42,
-    "bs_phy_gain": 5.5,
-    "bs_pct_total": 32.81,
-    "sw_str_gain": 36.47,
-    "sw_phy_gain": 4.23,
-    "sw_crt_gain": 1.2,
-    "sw_pct_total": 43.95,
-    "margin_duality": 4.740937
-  },
-  "errors": [],
-  "pass": true,
-  "total_checks": 15,
-  "passed_checks": 15
+    "cc_cri": 3,
+    "berserker_fixed": 9.27,
+    "berserker_pct": 32.81,
+    "swordsman_pct": 43.95
+  }
 }
