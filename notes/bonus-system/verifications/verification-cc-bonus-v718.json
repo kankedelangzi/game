@@ -1,0 +1,133 @@
+{
+  "version": "v718",
+  "timestamp": "2026-06-27T23:55:14Z",
+  "total": 17,
+  "passed": 17,
+  "failed": 0,
+  "pass_rate": "100.0%",
+  "checks": [
+    {
+      "check": "CC套6件套str=310",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "check": "CC套6件套phy=110",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "check": "CC套6件套ind=120",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "check": "CC套6件套crit=3.0",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤-独立攻击收益=8.00%",
+      "expected": 8.0,
+      "actual": 8.0,
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤-暴击收益=1.18%",
+      "expected": 1.2,
+      "actual": 1.18,
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤综合收益=9.27%",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比-力量收益=24.42%",
+      "expected": 24.42,
+      "actual": 24.42,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比-物理攻击收益=5.50%",
+      "expected": 5.5,
+      "actual": 5.5,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比综合收益=32.81%",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比-力量收益=36.47%",
+      "expected": 36.47,
+      "actual": 36.47,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比-物理攻击收益=4.23%",
+      "expected": 4.23,
+      "actual": 4.23,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比-暴击收益=1.20%",
+      "expected": 1.2,
+      "actual": 1.2,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比综合收益=43.95%",
+      "expected": 43.95,
+      "actual": 43.95,
+      "pass": true
+    },
+    {
+      "check": "边际对偶=4.740937倍",
+      "expected": 4.740937,
+      "actual": 4.740937,
+      "pass": true
+    },
+    {
+      "check": "剑魂基础力量=600",
+      "expected": 600,
+      "actual": 600,
+      "pass": true
+    },
+    {
+      "check": "剑魂破极后物理攻击=2600",
+      "expected": 2600,
+      "actual": 2600,
+      "pass": true
+    }
+  ],
+  "cc_set": {
+    "str": 310,
+    "phy": 110,
+    "ind": 120,
+    "crit": 3.0
+  },
+  "berserker_base": {
+    "str": 1019.2,
+    "phy": 2000,
+    "ind": 1250,
+    "crit": 55.0
+  },
+  "swordsman_base": {
+    "str": 600,
+    "phy": 2600,
+    "crit": 50.0
+  },
+  "berserker_fixed_total_pct": 9.27,
+  "berserker_pct_total_pct": 32.81,
+  "swordsman_pct_total_pct": 43.95,
+  "marginal_duality": 4.740937
+}
