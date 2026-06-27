@@ -1,0 +1,112 @@
+{
+  "version": "v621",
+  "timestamp": "2026-06-27T14:40:00+08:00",
+  "total": 15,
+  "passed": 15,
+  "failed": [],
+  "pass_rate": 100.0,
+  "results": [
+    {
+      "name": "CC套力量合计",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "name": "CC套物理攻击合计",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "name": "CC套独立攻击合计",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "name": "CC套暴击率合计",
+      "expected": 3,
+      "actual": 3,
+      "pass": true
+    },
+    {
+      "name": "狂战士独立攻击收益",
+      "expected": 8.0,
+      "actual": 8.0,
+      "pass": true
+    },
+    {
+      "name": "狂战士暴击收益(固伤)",
+      "expected": 1.18,
+      "actual": 1.18,
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤综合收益",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "name": "狂战士力量收益(暴走后)",
+      "expected": 24.42,
+      "actual": 24.42,
+      "pass": true
+    },
+    {
+      "name": "狂战士物理攻击收益",
+      "expected": 5.5,
+      "actual": 5.5,
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比综合收益",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "name": "剑魂力量收益",
+      "expected": 36.47,
+      "actual": 36.47,
+      "pass": true
+    },
+    {
+      "name": "剑魂物理攻击收益(破极后)",
+      "expected": 4.23,
+      "actual": 4.23,
+      "pass": true
+    },
+    {
+      "name": "剑魂暴击收益",
+      "expected": 1.2,
+      "actual": 1.2,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比综合收益",
+      "expected": 43.95,
+      "actual": 43.95,
+      "pass": true
+    },
+    {
+      "name": "边际对偶倍数",
+      "expected": 4.740937,
+      "actual": 4.740937,
+      "pass": true
+    }
+  ],
+  "summary": {
+    "cc_set": {
+      "力量": 310,
+      "物理攻击": 110,
+      "独立攻击": 120,
+      "暴击率": "3%"
+    },
+    "berserker_fixed_gain": "9.27%",
+    "berserker_percent_gain": "32.81%",
+    "swordsman_percent_gain": "43.95%",
+    "marginal_dual": 4.740937
+  }
+}
