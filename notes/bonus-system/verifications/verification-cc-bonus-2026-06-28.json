@@ -1,43 +1,33 @@
 {
-  "version": "v785",
-  "timestamp": "2026-06-28 17:58:12",
+  "version": "v790",
+  "timestamp": "2026-06-28T18:22:00+08:00",
   "total": 15,
   "passed": 15,
-  "failed": 0,
-  "pass_rate": "15/15",
-  "cc_6pc": {
-    "str": 310,
-    "phy": 110,
-    "indep": 120,
-    "crit": 3.0
-  },
-  "berserker_fixed": 9.27,
-  "berserker_pct": 32.81,
-  "swordsman_pct": 43.95,
+  "pass_rate": 100.0,
   "marginal_duality": 4.740937,
-  "details": [
+  "results": [
     {
-      "name": "CC力量合计",
+      "name": "CC套力量合计",
       "expected": 310,
       "actual": 310,
       "pass": true
     },
     {
-      "name": "CC物理攻击合计",
+      "name": "CC套物理攻击合计",
       "expected": 110,
       "actual": 110,
       "pass": true
     },
     {
-      "name": "CC独立攻击合计",
+      "name": "CC套独立攻击合计",
       "expected": 120,
       "actual": 120,
       "pass": true
     },
     {
-      "name": "CC暴击合计",
-      "expected": 3.0,
-      "actual": 3.0,
+      "name": "CC套暴击合计",
+      "expected": 0.03,
+      "actual": 0.03,
       "pass": true
     },
     {
@@ -48,30 +38,30 @@
     },
     {
       "name": "狂战士暴击收益",
-      "expected": 0.012,
+      "expected": 0.0118,
       "actual": 0.011765,
       "pass": true
     },
     {
-      "name": "狂战士固伤综合",
+      "name": "狂战士固伤综合收益",
       "expected": 0.0927,
       "actual": 0.092706,
       "pass": true
     },
     {
-      "name": "狂战士力量收益",
+      "name": "狂战士力量收益(百分比)",
       "expected": 0.2442,
       "actual": 0.244248,
       "pass": true
     },
     {
-      "name": "狂战士物理攻击收益",
+      "name": "狂战士物理攻击收益(百分比)",
       "expected": 0.055,
       "actual": 0.055,
       "pass": true
     },
     {
-      "name": "狂战士百分比综合",
+      "name": "狂战士百分比综合收益",
       "expected": 0.3281,
       "actual": 0.328125,
       "pass": true
@@ -95,13 +85,13 @@
       "pass": true
     },
     {
-      "name": "剑魂百分比综合",
+      "name": "剑魂百分比综合收益",
       "expected": 0.4395,
       "actual": 0.439513,
       "pass": true
     },
     {
-      "name": "边际对偶",
+      "name": "边际对偶倍数",
       "expected": 4.740937,
       "actual": 4.740937,
       "pass": true
