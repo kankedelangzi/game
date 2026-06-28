@@ -1,0 +1,104 @@
+{
+  "timestamp": "2026-06-28T08:21:01.809774",
+  "version": "v721",
+  "cc_6piece": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3
+  },
+  "berserker_base": {
+    "独立攻击": 1250,
+    "力量_暴走后": 1019.2,
+    "物理攻击": 2000,
+    "暴击率": 55
+  },
+  "swordsman_base": {
+    "力量": 600,
+    "物理攻击_破极后": 2600,
+    "暴击率": 50
+  },
+  "verifications": {
+    "cc_total_str": {
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    "cc_total_phys_atk": {
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    "cc_total_indep_atk": {
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    "cc_total_crit": {
+      "expected": 3,
+      "actual": 3,
+      "pass": true
+    },
+    "berserker_indep_bonus": {
+      "expected": 0.08,
+      "actual": 0.08,
+      "pass": true
+    },
+    "berserker_crit_bonus": {
+      "expected": 0.0118,
+      "actual": 0.0118,
+      "pass": true
+    },
+    "berserker_fixed_total": {
+      "expected": 0.0927,
+      "actual": 0.0927,
+      "pass": true
+    },
+    "berserker_str_bonus": {
+      "expected": 0.2442,
+      "actual": 0.2442,
+      "pass": true
+    },
+    "berserker_phys_bonus": {
+      "expected": 0.055,
+      "actual": 0.055,
+      "pass": true
+    },
+    "berserker_percent_total": {
+      "expected": 0.3281,
+      "actual": 0.3281,
+      "pass": true
+    },
+    "swordsman_str_bonus": {
+      "expected": 0.3647,
+      "actual": 0.3647,
+      "pass": true
+    },
+    "swordsman_phys_bonus": {
+      "expected": 0.0423,
+      "actual": 0.0423,
+      "pass": true
+    },
+    "swordsman_crit_bonus": {
+      "expected": 0.012,
+      "actual": 0.012,
+      "pass": true
+    },
+    "swordsman_percent_total": {
+      "expected": 0.4395,
+      "actual": 0.4395,
+      "pass": true
+    },
+    "marginal_duality": {
+      "expected": 4.740937,
+      "actual": 4.740937,
+      "pass": true
+    }
+  },
+  "summary": {
+    "berserker_fixed_total_pct": "9.27%",
+    "berserker_percent_total_pct": "32.81%",
+    "swordsman_percent_total_pct": "43.95%",
+    "marginal_duality": "4.740937"
+  }
+}
