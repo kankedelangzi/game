@@ -1,0 +1,83 @@
+{
+  "version": "v806",
+  "timestamp": "2026-06-28 22:21:22",
+  "passed": 15,
+  "total": 15,
+  "results": {
+    "cc_6pc_str": {
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    "cc_6pc_phy": {
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    "cc_6pc_ind": {
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    "cc_6pc_cri": {
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    "bers_ind_benefit": {
+      "expected": 0.08,
+      "actual": 0.08,
+      "pass": true
+    },
+    "bers_cri_benefit": {
+      "expected": 0.0118,
+      "actual": 0.0118,
+      "pass": true
+    },
+    "bers_fixed_total": {
+      "expected": 0.0927,
+      "actual": 0.0927,
+      "pass": true
+    },
+    "bers_str_benefit": {
+      "expected": 0.2442,
+      "actual": 0.2442,
+      "pass": true
+    },
+    "bers_phy_benefit": {
+      "expected": 0.055,
+      "actual": 0.055,
+      "pass": true
+    },
+    "bers_pct_total": {
+      "expected": 0.3281,
+      "actual": 0.3281,
+      "pass": true
+    },
+    "sw_str_benefit": {
+      "expected": 0.3647,
+      "actual": 0.3647,
+      "pass": true
+    },
+    "sw_phy_benefit": {
+      "expected": 0.055,
+      "actual": 0.055,
+      "pass": true
+    },
+    "sw_cri_benefit": {
+      "expected": 0.012,
+      "actual": 0.012,
+      "pass": true
+    },
+    "sw_pct_total": {
+      "expected": 0.457,
+      "actual": 0.457,
+      "pass": true
+    },
+    "marginal": {
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    }
+  }
+}
