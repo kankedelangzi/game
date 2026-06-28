@@ -1,0 +1,27 @@
+{
+  "version": "v818",
+  "timestamp": "2026-06-29T00:34:00+08:00",
+  "cc_set": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical_rate": 3
+  },
+  "berserker": {
+    "fixed_total": 9.27,
+    "pct_total": 32.81,
+    "indep_gain": 8.0,
+    "crit_gain": 1.1765,
+    "str_gain": 24.42,
+    "phy_gain": 5.5
+  },
+  "swordsman": {
+    "pct_total": 45.7,
+    "str_gain": 36.47,
+    "phy_gain": 5.5,
+    "crit_gain": 1.2
+  },
+  "marginal_pair": 4.93002,
+  "passed": 15,
+  "total": 15
+}
