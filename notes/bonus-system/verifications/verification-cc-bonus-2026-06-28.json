@@ -1,99 +1,89 @@
 {
-  "version": "v727",
-  "timestamp": "2026-06-28T00:59:23Z",
-  "task": "task19-cc-bonus",
-  "passed": 15,
-  "total": 15,
-  "results": [
-    {
-      "name": "6件套力量合计",
+  "version": "v736",
+  "timestamp": "2026-06-28T02:47:03.503900+00:00",
+  "results": {
+    "cc_str_total": {
       "expected": 310,
       "actual": 310,
       "pass": true
     },
-    {
-      "name": "6件套物理攻击合计",
+    "cc_phy_total": {
       "expected": 110,
       "actual": 110,
       "pass": true
     },
-    {
-      "name": "6件套独立攻击合计",
+    "cc_ind_total": {
       "expected": 120,
       "actual": 120,
       "pass": true
     },
-    {
-      "name": "6件套暴击率合计",
-      "expected": 3.0,
-      "actual": 3.0,
+    "cc_crt_total": {
+      "expected": 0.03,
+      "actual": 0.03,
       "pass": true
     },
-    {
-      "name": "狂战士独立攻击收益",
+    "bers_ind_gain": {
       "expected": 0.08,
       "actual": 0.08,
       "pass": true
     },
-    {
-      "name": "狂战士暴击收益（期望系数）",
+    "bers_crt_gain": {
       "expected": 0.012,
       "actual": 0.0118,
       "pass": true
     },
-    {
-      "name": "狂战士固伤综合收益",
+    "bers_fixed_total": {
       "expected": 0.0927,
       "actual": 0.0927,
       "pass": true
     },
-    {
-      "name": "狂战士力量收益（暴走后）",
+    "bers_str_gain": {
       "expected": 0.2442,
       "actual": 0.2442,
       "pass": true
     },
-    {
-      "name": "狂战士物理攻击收益",
+    "bers_phy_gain": {
       "expected": 0.055,
       "actual": 0.055,
       "pass": true
     },
-    {
-      "name": "狂战士百分比综合收益",
+    "bers_pct_total": {
       "expected": 0.3281,
       "actual": 0.3281,
       "pass": true
     },
-    {
-      "name": "剑魂力量收益",
+    "swd_str_gain": {
       "expected": 0.3647,
       "actual": 0.3647,
       "pass": true
     },
-    {
-      "name": "剑魂物理攻击收益（破极后）",
+    "swd_phy_gain": {
       "expected": 0.0423,
       "actual": 0.0423,
       "pass": true
     },
-    {
-      "name": "剑魂暴击收益（期望系数）",
+    "swd_crt_gain": {
       "expected": 0.012,
       "actual": 0.012,
       "pass": true
     },
-    {
-      "name": "剑魂百分比综合收益",
+    "swd_pct_total": {
       "expected": 0.4395,
       "actual": 0.4395,
       "pass": true
     },
-    {
-      "name": "边际对偶（百分比/固伤）",
+    "margin_dual": {
       "expected": 4.740937,
       "actual": 4.740937,
       "pass": true
     }
-  ]
+  },
+  "summary": {
+    "pass_count": 15,
+    "total": 15,
+    "margin_dual": 4.740937,
+    "bers_fixed_total": 0.0927,
+    "bers_pct_total": 0.3281,
+    "swd_pct_total": 0.4395
+  }
 }
