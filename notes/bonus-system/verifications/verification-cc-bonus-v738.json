@@ -1,0 +1,29 @@
+{
+  "version": "v738",
+  "timestamp": "2026-06-28T10:56:00+08:00",
+  "cc_set": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical_rate": 3.0
+  },
+  "berserker": {
+    "base_strength": 728,
+    "berserk_strength": 1019.1999999999999,
+    "independent_attack": 1250,
+    "physical_attack": 2000,
+    "critical_rate": 55.0,
+    "fixed_total": 9.27,
+    "percent_total": 32.81
+  },
+  "swordsman": {
+    "base_strength": 600,
+    "physical_attack": 2000,
+    "pojie_physical_attack": 2600.0,
+    "critical_rate": 50.0,
+    "percent_total": 43.95
+  },
+  "marginal_duality": 4.740937,
+  "passed": 15,
+  "total": 15
+}
