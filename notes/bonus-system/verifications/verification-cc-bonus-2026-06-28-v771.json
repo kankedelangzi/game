@@ -1,0 +1,16 @@
+{
+  "version": "v771",
+  "timestamp": "2026-06-28T15:52:00+08:00",
+  "cc_6pc": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击": 3.0
+  },
+  "berserker_fixed_total": 9.27,
+  "berserker_pct_total": 32.81,
+  "swordsman_pct_total": 43.95,
+  "marginal_duality": 4.740937,
+  "pass": true,
+  "items": 15
+}
