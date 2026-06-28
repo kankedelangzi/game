@@ -1,0 +1,130 @@
+{
+  "version": "v811",
+  "timestamp": "2026-06-28T22:54:00+08:00",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "total_checks": 18,
+  "passed": 18,
+  "pass_rate": "100%",
+  "marginal_dual": 4.93002,
+  "core_data": {
+    "cc_set_6pc": {
+      "str": 310,
+      "phy": 110,
+      "ind": 120,
+      "cri": 0.03
+    },
+    "berserker_fixed_total": 0.0927,
+    "berserker_pct_total": 0.3281,
+    "swordsman_pct_total": 0.457
+  },
+  "checks": [
+    {
+      "name": "cc_str_total",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "name": "cc_phy_total",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "name": "cc_ind_total",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "name": "cc_cri_total",
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true
+    },
+    {
+      "name": "berserker_ind_gain",
+      "expected": 0.08,
+      "actual": 0.08,
+      "pass": true
+    },
+    {
+      "name": "berserker_cri_gain",
+      "expected": 0.012,
+      "actual": 0.0118,
+      "pass": true
+    },
+    {
+      "name": "berserker_fixed_total",
+      "expected": 0.0927,
+      "actual": 0.0927,
+      "pass": true
+    },
+    {
+      "name": "berserker_str_gain",
+      "expected": 0.2442,
+      "actual": 0.2442,
+      "pass": true
+    },
+    {
+      "name": "berserker_phy_gain",
+      "expected": 0.055,
+      "actual": 0.055,
+      "pass": true
+    },
+    {
+      "name": "berserker_pct_total",
+      "expected": 0.3281,
+      "actual": 0.3281,
+      "pass": true
+    },
+    {
+      "name": "swordsman_str_gain",
+      "expected": 0.3647,
+      "actual": 0.3647,
+      "pass": true
+    },
+    {
+      "name": "swordsman_phy_gain",
+      "expected": 0.055,
+      "actual": 0.055,
+      "pass": true
+    },
+    {
+      "name": "swordsman_cri_gain",
+      "expected": 0.012,
+      "actual": 0.012,
+      "pass": true
+    },
+    {
+      "name": "swordsman_pct_total",
+      "expected": 0.457,
+      "actual": 0.457,
+      "pass": true
+    },
+    {
+      "name": "marginal_dual",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "name": "berserker_str_buff",
+      "expected": 1019.2,
+      "actual": 1019.2,
+      "pass": true
+    },
+    {
+      "name": "swordsman_phy_buff",
+      "expected": 2600,
+      "actual": 2600,
+      "pass": true
+    },
+    {
+      "name": "swordsman_phy_buff_cc",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    }
+  ]
+}
