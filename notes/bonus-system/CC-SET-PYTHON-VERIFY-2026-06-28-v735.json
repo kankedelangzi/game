@@ -1,0 +1,131 @@
+{
+  "version": "v735",
+  "timestamp": "2026-06-28T10:41:00+08:00",
+  "task": "任务19 - CC套各职业加成数值稳态核查",
+  "checks": [
+    {
+      "name": "CC套力量合计",
+      "actual": 310,
+      "expected": 310,
+      "unit": "属性值",
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "CC套物理攻击合计",
+      "actual": 110,
+      "expected": 110,
+      "unit": "属性值",
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "CC套独立攻击合计",
+      "actual": 120,
+      "expected": 120,
+      "unit": "属性值",
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "CC套暴击率合计",
+      "actual": 3.0,
+      "expected": 3.0,
+      "unit": "属性值",
+      "passed": true,
+      "diff": 0.0
+    },
+    {
+      "name": "狂战士固伤-独立攻击加成",
+      "actual": 120.0,
+      "expected": 120.0,
+      "unit": "%",
+      "passed": true,
+      "diff": 0.0
+    },
+    {
+      "name": "狂战士固伤-暴击加成",
+      "actual": 3.0,
+      "expected": 3.0,
+      "unit": "%",
+      "passed": true,
+      "diff": 0.0
+    },
+    {
+      "name": "狂战士固伤综合",
+      "actual": 123.0,
+      "expected": 123.0,
+      "unit": "%",
+      "passed": true,
+      "diff": 0.0
+    },
+    {
+      "name": "狂战士百分比-力量加成",
+      "actual": 45.59,
+      "expected": 45.59,
+      "unit": "%",
+      "passed": true,
+      "diff": 0.0
+    },
+    {
+      "name": "狂战士百分比-物理攻击加成",
+      "actual": 4.4,
+      "expected": 4.4,
+      "unit": "%",
+      "passed": true,
+      "diff": 0.0
+    },
+    {
+      "name": "狂战士百分比综合",
+      "actual": 52.99,
+      "expected": 52.99,
+      "unit": "%",
+      "passed": true,
+      "diff": 0.0
+    },
+    {
+      "name": "剑魂百分比-力量加成",
+      "actual": 51.67,
+      "expected": 51.67,
+      "unit": "%",
+      "passed": true,
+      "diff": 0.0
+    },
+    {
+      "name": "剑魂百分比-物理攻击加成",
+      "actual": 4.4,
+      "expected": 4.4,
+      "unit": "%",
+      "passed": true,
+      "diff": 0.0
+    },
+    {
+      "name": "剑魂百分比-暴击加成",
+      "actual": 3.0,
+      "expected": 3.0,
+      "unit": "%",
+      "passed": true,
+      "diff": 0.0
+    },
+    {
+      "name": "剑魂百分比综合",
+      "actual": 59.07,
+      "expected": 59.07,
+      "unit": "%",
+      "passed": true,
+      "diff": 0.0
+    },
+    {
+      "name": "边际对偶倍数",
+      "actual": 0.430799,
+      "expected": 4.740937,
+      "unit": "倍",
+      "passed": false,
+      "diff": 4.310137999999999
+    }
+  ],
+  "passed": 14,
+  "failed": 1,
+  "total": 15,
+  "pass_rate": 93.3
+}
