@@ -1,0 +1,44 @@
+{
+  "version": "v860",
+  "timestamp": "2026-06-29T05:54:30",
+  "cc_set": {
+    "str": 310,
+    "phy": 110,
+    "ind": 120,
+    "crt": 3
+  },
+  "berserker": {
+    "base": {
+      "str": 600,
+      "phy": 2000,
+      "ind": 1500,
+      "crt": 55
+    },
+    "fixed_bonus": {
+      "ind": 8.0,
+      "crt": 5.4545,
+      "total": 13.4545
+    },
+    "pct_bonus": {
+      "str": 51.6667,
+      "phy": 5.5,
+      "total": 57.1667
+    }
+  },
+  "swordsman": {
+    "base": {
+      "str": 600,
+      "phy": 2000,
+      "ind": 1500,
+      "crt": 50
+    },
+    "pct_bonus": {
+      "str": 51.6667,
+      "phy": 5.5,
+      "crt": 6.0,
+      "total": 63.1667
+    }
+  },
+  "marginal_duality": 4.69482,
+  "all_pass": false
+}

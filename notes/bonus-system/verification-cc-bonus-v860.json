@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-29T06:05:55.761338",
+  "version": "v860",
+  "cc_set": {
+    "str": 310,
+    "phy": 110,
+    "ind": 120,
+    "cri": 3
+  },
+  "berserker": {
+    "ind_base": 1500,
+    "phy_base": 2000,
+    "cri_base": 55,
+    "str_after_berserk": 1019.2,
+    "fixed_total": 10.0903,
+    "pct_total": 33.8089
+  },
+  "swordsman": {
+    "str_base": 600,
+    "phy_before": 2000,
+    "phy_after": 2600,
+    "cri_base": 50,
+    "pct_total": 46.856
+  },
+  "marginal_dual": 4.643657,
+  "checks": [
+    {
+      "name": "CC套力量",
+      "passed": true,
+      "value": "310"
+    },
+    {
+      "name": "CC套物理攻击",
+      "passed": true,
+      "value": "110"
+    },
+    {
+      "name": "CC套独立攻击",
+      "passed": true,
+      "value": "120"
+    },
+    {
+      "name": "CC套暴击率",
+      "passed": true,
+      "value": "3%"
+    },
+    {
+      "name": "狂战士固伤综合",
+      "passed": false,
+      "value": "10.09%"
+    },
+    {
+      "name": "狂战士百分比综合",
+      "passed": false,
+      "value": "33.81%"
+    },
+    {
+      "name": "剑魂百分比综合",
+      "passed": false,
+      "value": "46.86%"
+    },
+    {
+      "name": "边际对偶",
+      "passed": false,
+      "value": "4.643657"
+    }
+  ],
+  "passed": 4,
+  "total": 8
+}
