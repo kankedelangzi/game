@@ -1,0 +1,30 @@
+{
+  "version": "v737",
+  "timestamp": "2026-06-28 10:52:51",
+  "cc_set": {
+    "str": 310,
+    "phy": 110,
+    "ind": 120,
+    "crit": 3
+  },
+  "berserker_fixed": {
+    "ind_gain": 8.0,
+    "crit_gain": 1.18,
+    "total": 9.27
+  },
+  "berserker_percent": {
+    "str_gain": 24.42,
+    "phy_gain": 5.5,
+    "crit_gain": 1.18,
+    "total": 32.81
+  },
+  "swordsman_percent": {
+    "str_gain": 36.47,
+    "phy_gain": 4.23,
+    "crit_gain": 1.2,
+    "total": 43.95
+  },
+  "marginal_duality": 4.740937,
+  "all_passed": true,
+  "test_count": 15
+}
