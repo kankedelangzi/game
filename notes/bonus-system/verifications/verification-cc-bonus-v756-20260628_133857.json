@@ -1,0 +1,96 @@
+{
+  "version": "v756",
+  "timestamp": "2026-06-28T13:38:57.309916",
+  "total_checks": 15,
+  "passed_checks": 15,
+  "pass_rate": "15/15",
+  "results": {
+    "cc_str_total": {
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    "cc_phys_atk_total": {
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    "cc_indep_atk_total": {
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    "cc_crit_total": {
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    "berserker_indep_bonus": {
+      "expected": 4.8,
+      "actual": 4.8,
+      "pass": true
+    },
+    "berserker_crit_bonus": {
+      "expected": 6.67,
+      "actual": 6.67,
+      "pass": true
+    },
+    "berserker_fixed_total": {
+      "expected": 11.79,
+      "actual": 11.79,
+      "pass": true
+    },
+    "berserker_str_bonus": {
+      "expected": 45.59,
+      "actual": 45.59,
+      "pass": true
+    },
+    "berserker_phys_atk_bonus": {
+      "expected": 16.92,
+      "actual": 16.92,
+      "pass": true
+    },
+    "berserker_pct_total": {
+      "expected": 81.57,
+      "actual": 81.57,
+      "pass": true
+    },
+    "swordsman_str_bonus": {
+      "expected": 51.67,
+      "actual": 51.67,
+      "pass": true
+    },
+    "swordsman_phys_atk_bonus": {
+      "expected": 16.92,
+      "actual": 16.92,
+      "pass": true
+    },
+    "swordsman_crit_bonus": {
+      "expected": 6.0,
+      "actual": 6.0,
+      "pass": true
+    },
+    "swordsman_pct_total": {
+      "expected": 87.97,
+      "actual": 87.97,
+      "pass": true
+    },
+    "marginal_duality": {
+      "expected": 6.920927,
+      "actual": 6.920927,
+      "pass": true
+    }
+  },
+  "summary": {
+    "cc_set": {
+      "str": 310,
+      "phys_atk": 110,
+      "indep_atk": 120,
+      "crit": 3.0
+    },
+    "berserker_fixed_total": 11.79,
+    "berserker_pct_total": 81.57,
+    "swordsman_pct_total": 87.97,
+    "marginal_duality": 6.920927
+  }
+}
