@@ -1,0 +1,111 @@
+{
+  "version": "v764",
+  "timestamp": "2026-06-28T14:42:38.939417",
+  "results": [
+    {
+      "check": "CC套6件套-力量合计",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "check": "CC套6件套-物理攻击合计",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "check": "CC套6件套-独立攻击合计",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "check": "CC套6件套-暴击率合计",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    {
+      "check": "狂战士-独立攻击收益",
+      "expected": 0.08,
+      "actual": 0.08,
+      "pass": true
+    },
+    {
+      "check": "狂战士-暴击收益(固伤)",
+      "expected": 0.0118,
+      "actual": 0.0118,
+      "pass": true
+    },
+    {
+      "check": "狂战士-固伤综合收益",
+      "expected": 0.0927,
+      "actual": 0.0927,
+      "pass": true
+    },
+    {
+      "check": "狂战士-力量收益(百分比)",
+      "expected": 0.2442,
+      "actual": 0.2442,
+      "pass": true
+    },
+    {
+      "check": "狂战士-物理攻击收益(百分比)",
+      "expected": 0.055,
+      "actual": 0.055,
+      "pass": true
+    },
+    {
+      "check": "狂战士-暴击收益(百分比)",
+      "expected": 0.0118,
+      "actual": 0.0118,
+      "pass": true
+    },
+    {
+      "check": "狂战士-百分比综合收益",
+      "expected": 0.3281,
+      "actual": 0.3281,
+      "pass": true
+    },
+    {
+      "check": "剑魂-力量收益",
+      "expected": 0.3647,
+      "actual": 0.3647,
+      "pass": true
+    },
+    {
+      "check": "剑魂-物理攻击收益(破极后)",
+      "expected": 0.0423,
+      "actual": 0.0423,
+      "pass": true
+    },
+    {
+      "check": "剑魂-暴击收益",
+      "expected": 0.012,
+      "actual": 0.012,
+      "pass": true
+    },
+    {
+      "check": "剑魂-百分比综合收益",
+      "expected": 0.4395,
+      "actual": 0.4395,
+      "pass": true
+    },
+    {
+      "check": "边际对偶(剑魂百分比/狂战士固伤)",
+      "expected": 4.740937,
+      "actual": 4.740937,
+      "pass": true
+    }
+  ],
+  "summary": {
+    "passed": 16,
+    "total": 16,
+    "pass_rate": 100.0,
+    "marginal": 4.740937,
+    "bers_fixed": 9.27,
+    "bers_pct": 32.81,
+    "swd_pct": 43.95
+  }
+}
