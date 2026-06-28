@@ -1,0 +1,111 @@
+{
+  "version": "v863",
+  "timestamp": "2026-06-29T06:25:00+08:00",
+  "total_checks": 15,
+  "passed": 15,
+  "pass_rate": "15/15",
+  "checks": [
+    {
+      "name": "力量合计",
+      "actual": 310,
+      "expected": 310,
+      "passed": true
+    },
+    {
+      "name": "物理攻击合计",
+      "actual": 110,
+      "expected": 110,
+      "passed": true
+    },
+    {
+      "name": "独立攻击合计",
+      "actual": 120,
+      "expected": 120,
+      "passed": true
+    },
+    {
+      "name": "暴击率合计",
+      "actual": 3.0,
+      "expected": 3.0,
+      "passed": true
+    },
+    {
+      "name": "狂战士独立攻击收益",
+      "actual": 8.0,
+      "expected": 8.0,
+      "passed": true
+    },
+    {
+      "name": "狂战士暴击收益",
+      "actual": 1.18,
+      "expected": 1.2,
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤综合",
+      "actual": 9.27,
+      "expected": 9.27,
+      "passed": true
+    },
+    {
+      "name": "狂战士力量收益(百分比)",
+      "actual": 24.42,
+      "expected": 24.42,
+      "passed": true
+    },
+    {
+      "name": "狂战士物理攻击收益(百分比)",
+      "actual": 5.5,
+      "expected": 5.5,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比综合",
+      "actual": 32.81,
+      "expected": 32.81,
+      "passed": true
+    },
+    {
+      "name": "剑魂力量收益",
+      "actual": 36.47,
+      "expected": 36.47,
+      "passed": true
+    },
+    {
+      "name": "剑魂物理攻击收益",
+      "actual": 5.5,
+      "expected": 5.5,
+      "passed": true
+    },
+    {
+      "name": "剑魂暴击收益",
+      "actual": 1.2,
+      "expected": 1.2,
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比综合",
+      "actual": 45.7,
+      "expected": 45.7,
+      "passed": true
+    },
+    {
+      "name": "边际对偶(剑魂/狂战固伤)",
+      "actual": 4.93002,
+      "expected": 4.93002,
+      "passed": true
+    }
+  ],
+  "summary": {
+    "cc_set_6pc": {
+      "str": 310,
+      "phy": 110,
+      "ind": 120,
+      "crit": 3.0
+    },
+    "berserker_fixed_total": 9.2706,
+    "berserker_pct_total": 32.8125,
+    "swordsman_pct_total": 45.7042,
+    "margin_dual": 4.93002
+  }
+}
