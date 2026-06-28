@@ -1,29 +1,33 @@
 {
-  "version": "v807",
-  "timestamp": "2026-06-28 22:26:30",
+  "timestamp": "2026-06-28T22:41:02.565593",
+  "version": "v808",
   "cc_set": {
     "strength": 310,
-    "phy_attack": 110,
-    "indep_attack": 120,
-    "crit_rate": 3
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 3.0
   },
   "berserker": {
-    "fixed_indep_gain": 8.0,
-    "fixed_crit_gain": 1.18,
-    "fixed_total": 9.27,
-    "pct_str_gain": 24.42,
-    "pct_phy_gain": 5.5,
-    "pct_crit_gain": 1.18,
-    "pct_total": 32.81
+    "fixed": {
+      "independent_gain": 8.0,
+      "crit_gain": 1.1765,
+      "total": 9.2706
+    },
+    "percent": {
+      "strength_gain": 24.4248,
+      "physical_attack_gain": 5.5,
+      "crit_gain": 1.1765,
+      "total": 32.8125
+    }
   },
   "swordsman": {
-    "str_gain": 36.47,
-    "phy_gain": 5.5,
-    "crit_gain": 1.2,
-    "pct_total": 45.7
+    "percent": {
+      "strength_gain": 36.4706,
+      "physical_attack_gain": 5.5,
+      "crit_gain": 1.2,
+      "total": 45.7042
+    }
   },
-  "marginal_duality": 4.93002,
-  "pass_count": 15,
-  "total": 16,
-  "all_passed": false
+  "marginal_ratio": 4.93002,
+  "marginal_ratio_formula": "剑魂百分比综合 / 狂战士固伤综合"
 }
