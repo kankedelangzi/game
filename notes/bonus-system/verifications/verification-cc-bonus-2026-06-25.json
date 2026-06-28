@@ -1,6 +1,6 @@
 {
-  "version": "v379",
-  "timestamp": "2026-06-28T18:07:55.455417",
+  "version": "v821",
+  "timestamp": "2026-06-29T01:01:10.510700",
   "total_checks": 19,
   "passed": 19,
   "results": [
@@ -83,8 +83,8 @@
     },
     {
       "name": "剑魂-物理攻击收益",
-      "expected": 0.0423,
-      "actual": 0.0423,
+      "expected": 0.055,
+      "actual": 0.055,
       "pass": true,
       "diff": 0.0
     },
@@ -97,15 +97,15 @@
     },
     {
       "name": "剑魂-百分比综合收益",
-      "expected": 0.4395,
-      "actual": 0.4395,
+      "expected": 0.457,
+      "actual": 0.457,
       "pass": true,
       "diff": 0.0
     },
     {
       "name": "边际对偶倍数",
-      "expected": 4.7409,
-      "actual": 4.7409,
+      "expected": 4.93,
+      "actual": 4.93,
       "pass": true,
       "diff": 0.0
     },
@@ -150,8 +150,8 @@
       "percent_total": 0.3281
     },
     "swordsman": {
-      "percent_total": 0.4395
+      "percent_total": 0.457
     },
-    "marginal_dual": 4.740937
+    "marginal_dual": 4.93002
   }
 }

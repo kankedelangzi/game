@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""CC套（宫廷套装）各职业加成数值 — Python独立验算（稳态核查 v379）"""
+"""CC套（宫廷套装）各职业加成数值 — Python独立验算（稳态核查 v821，v793修正版）"""
 import json, math
 from datetime import datetime
 
@@ -77,9 +77,9 @@ print("\n【三、剑魂收益验证】")
 sw_power_gain = (1 + (sw_power + cc_power) / 250) / (1 + sw_power / 250) - 1
 check("剑魂-力量收益", 0.3647, sw_power_gain)
 
-# 百分比：物理攻击收益（破极后）
-sw_phy_gain = (sw_phy_atk_post + cc_phy_atk) / sw_phy_atk_post - 1
-check("剑魂-物理攻击收益", 0.0423, sw_phy_gain)
+# 百分比：物理攻击收益（v793修正：CC套+110基于破极兵刃前基础物理攻击2000计算）
+sw_phy_gain = (sw_phy_atk_pre + cc_phy_atk) / sw_phy_atk_pre - 1
+check("剑魂-物理攻击收益", 0.0550, sw_phy_gain)
 
 # 百分比：暴击收益
 sw_crit_old_exp = (1 - sw_crit) + sw_crit * 1.5  # 1.25
@@ -87,14 +87,14 @@ sw_crit_new_exp = (1 - (sw_crit + cc_crit)) + (sw_crit + cc_crit) * 1.5  # 1.265
 sw_crit_gain = sw_crit_new_exp / sw_crit_old_exp - 1
 check("剑魂-暴击收益", 0.012, sw_crit_gain)
 
-# 百分比：综合收益
+# 百分比：综合收益（v793修正：45.70%）
 sw_percent_total = (1 + sw_power_gain) * (1 + sw_phy_gain) * (1 + sw_crit_gain) - 1
-check("剑魂-百分比综合收益", 0.4395, sw_percent_total)
+check("剑魂-百分比综合收益", 0.4570, sw_percent_total)
 
 # ====== 四、边际对偶验证 ======
 print("\n【四、边际对偶验证】")
 marginal_dual = sw_percent_total / bs_fixed_total
-check("边际对偶倍数", 4.7409, marginal_dual)
+check("边际对偶倍数", 4.9300, marginal_dual)
 print(f"  精确值: {marginal_dual:.6f}")
 
 # ====== 五、暴击收益精确值 ======
@@ -115,7 +115,7 @@ for r in results:
 
 # 保存验算JSON
 output = {
-    "version": "v379",
+    "version": "v821",
     "timestamp": datetime.now().isoformat(),
     "total_checks": total,
     "passed": passed,
