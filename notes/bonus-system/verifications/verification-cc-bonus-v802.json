@@ -1,0 +1,118 @@
+{
+  "version": "v802",
+  "timestamp": "2026-06-28 20:59",
+  "total": 15,
+  "passed": 15,
+  "results": [
+    {
+      "name": "CC套力量合计",
+      "actual": 310,
+      "expected": 310,
+      "pass": true
+    },
+    {
+      "name": "CC套物理攻击合计",
+      "actual": 110,
+      "expected": 110,
+      "pass": true
+    },
+    {
+      "name": "CC套独立攻击合计",
+      "actual": 120,
+      "expected": 120,
+      "pass": true
+    },
+    {
+      "name": "CC套暴击率合计",
+      "actual": 0.03,
+      "expected": 0.03,
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤-独立攻击收益",
+      "actual": 8.0,
+      "expected": 8.0,
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤-暴击收益",
+      "actual": 1.18,
+      "expected": 1.2,
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤综合收益",
+      "actual": 9.27,
+      "expected": 9.27,
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比-力量收益",
+      "actual": 24.42,
+      "expected": 24.42,
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比-物理攻击收益",
+      "actual": 5.5,
+      "expected": 5.5,
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比综合收益",
+      "actual": 32.81,
+      "expected": 32.81,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比-力量收益",
+      "actual": 36.47,
+      "expected": 36.47,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比-物理攻击收益",
+      "actual": 4.23,
+      "expected": 4.23,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比-暴击收益",
+      "actual": 1.2,
+      "expected": 1.2,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比综合收益",
+      "actual": 43.95,
+      "expected": 43.95,
+      "pass": true
+    },
+    {
+      "name": "边际对偶倍数",
+      "actual": 4.740937,
+      "expected": 4.740937,
+      "pass": true
+    }
+  ],
+  "marginal_duality": 4.740937,
+  "cc_stats": {
+    "strength": 310,
+    "phys_attack": 110,
+    "indep_attack": 120,
+    "crit_rate": 0.03
+  },
+  "berserker_stats": {
+    "strength": 728,
+    "strength_berzerk": 1019.1999999999999,
+    "indep_attack": 1250,
+    "phys_attack": 2000,
+    "crit_rate": 0.55
+  },
+  "swordsman_stats": {
+    "strength": 600,
+    "phys_attack": 2000,
+    "phys_attack_pojie": 2600.0,
+    "crit_rate": 0.5
+  }
+}
