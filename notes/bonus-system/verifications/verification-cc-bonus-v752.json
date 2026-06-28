@@ -1,0 +1,112 @@
+{
+  "version": "v752",
+  "timestamp": "2026-06-28T13:16:00Z",
+  "task": "任务19 CC套（宫廷套装）各职业加成数值",
+  "total": 15,
+  "passed": 15,
+  "all_pass": true,
+  "results": [
+    {
+      "name": "CC套6件套力量合计",
+      "actual": 310,
+      "expected": 310,
+      "passed": true
+    },
+    {
+      "name": "CC套6件套物理攻击合计",
+      "actual": 110,
+      "expected": 110,
+      "passed": true
+    },
+    {
+      "name": "CC套6件套独立攻击合计",
+      "actual": 120,
+      "expected": 120,
+      "passed": true
+    },
+    {
+      "name": "CC套6件套暴击率合计",
+      "actual": 3.0,
+      "expected": 3.0,
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤-独立攻击收益",
+      "actual": 8.0,
+      "expected": 8.0,
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤-暴击收益",
+      "actual": 1.18,
+      "expected": 1.2,
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤综合收益",
+      "actual": 9.27,
+      "expected": 9.27,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比-力量收益",
+      "actual": 24.42,
+      "expected": 24.42,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比-物理攻击收益",
+      "actual": 5.5,
+      "expected": 5.5,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比综合收益",
+      "actual": 32.81,
+      "expected": 32.81,
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比-力量收益",
+      "actual": 36.47,
+      "expected": 36.47,
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比-物理攻击收益",
+      "actual": 4.23,
+      "expected": 4.23,
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比-暴击收益",
+      "actual": 1.2,
+      "expected": 1.2,
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比综合收益",
+      "actual": 43.95,
+      "expected": 43.95,
+      "passed": true
+    },
+    {
+      "name": "边际对偶倍数",
+      "actual": 4.7411,
+      "expected": 4.740937,
+      "passed": true
+    }
+  ],
+  "summary": {
+    "cc_set": {
+      "str": 310,
+      "phy": 110,
+      "ind": 120,
+      "crt": 3.0
+    },
+    "berserker_fixed": 9.27,
+    "berserker_percent": 32.81,
+    "swordsman_percent": 43.95,
+    "marginal_duality": 4.7411
+  }
+}
