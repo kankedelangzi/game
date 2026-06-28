@@ -1,0 +1,114 @@
+{
+  "version": "v791",
+  "timestamp": "2026-06-28T18:28:12.832640",
+  "passed": 9,
+  "total": 15,
+  "results": [
+    {
+      "name": "CC套6件-力量合计",
+      "actual": 310,
+      "expected": 310,
+      "ok": true
+    },
+    {
+      "name": "CC套6件-物理攻击合计",
+      "actual": 110,
+      "expected": 110,
+      "ok": true
+    },
+    {
+      "name": "CC套6件-独立攻击合计",
+      "actual": 120,
+      "expected": 120,
+      "ok": true
+    },
+    {
+      "name": "CC套6件-暴击率合计",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "name": "狂战士固伤-独立攻击加成",
+      "actual": 60.0,
+      "expected": 60.0,
+      "ok": true
+    },
+    {
+      "name": "狂战士固伤-暴击期望增益",
+      "actual": 1.94,
+      "expected": 3.27,
+      "ok": false
+    },
+    {
+      "name": "狂战士固伤-综合收益",
+      "actual": 61.94,
+      "expected": 9.27,
+      "ok": false
+    },
+    {
+      "name": "狂战士百分比-力量加成",
+      "actual": 45.59,
+      "expected": 45.59,
+      "ok": true
+    },
+    {
+      "name": "狂战士百分比-物理攻击加成",
+      "actual": 22.0,
+      "expected": 22.0,
+      "ok": true
+    },
+    {
+      "name": "狂战士百分比-综合收益",
+      "actual": 69.52,
+      "expected": 32.81,
+      "ok": false
+    },
+    {
+      "name": "剑魂百分比-力量加成",
+      "actual": 51.67,
+      "expected": 51.67,
+      "ok": true
+    },
+    {
+      "name": "剑魂百分比-物理攻击加成",
+      "actual": 24.44,
+      "expected": 24.44,
+      "ok": true
+    },
+    {
+      "name": "剑魂百分比-暴击期望增益",
+      "actual": 2.0,
+      "expected": 3.03,
+      "ok": false
+    },
+    {
+      "name": "剑魂百分比-综合收益",
+      "actual": 78.11,
+      "expected": 43.95,
+      "ok": false
+    },
+    {
+      "name": "边际对偶倍数",
+      "actual": 1.122376,
+      "expected": 4.740937,
+      "ok": false
+    }
+  ],
+  "core_data": {
+    "cc_6pc": {
+      "str": 310,
+      "phys_atk": 110,
+      "indep_atk": 120,
+      "crit": 3
+    },
+    "berserker": {
+      "fixed": 61.94,
+      "percent": 69.52
+    },
+    "swordsman": {
+      "percent": 78.11
+    },
+    "marginal_duality": 1.122376
+  }
+}

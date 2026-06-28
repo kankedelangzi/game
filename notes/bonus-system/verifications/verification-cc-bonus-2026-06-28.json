@@ -1,10 +1,11 @@
 {
-  "version": "v790",
-  "timestamp": "2026-06-28T18:22:00+08:00",
-  "total": 15,
+  "version": "v792",
+  "timestamp": "2026-06-28T19:01:00+08:00",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "total_checks": 15,
   "passed": 15,
-  "pass_rate": 100.0,
-  "marginal_duality": 4.740937,
+  "failed": 0,
+  "pass_rate": "15/15 (100.0%)",
   "results": [
     {
       "name": "CC套力量合计",
@@ -25,37 +26,37 @@
       "pass": true
     },
     {
-      "name": "CC套暴击合计",
-      "expected": 0.03,
-      "actual": 0.03,
+      "name": "CC套暴击率合计",
+      "expected": 3.0,
+      "actual": 3.0,
       "pass": true
     },
     {
-      "name": "狂战士独立攻击收益",
+      "name": "狂战士固伤-独立攻击收益",
       "expected": 0.08,
       "actual": 0.08,
       "pass": true
     },
     {
-      "name": "狂战士暴击收益",
-      "expected": 0.0118,
-      "actual": 0.011765,
+      "name": "狂战士固伤-暴击收益",
+      "expected": 0.012,
+      "actual": 0.0118,
       "pass": true
     },
     {
       "name": "狂战士固伤综合收益",
       "expected": 0.0927,
-      "actual": 0.092706,
+      "actual": 0.0927,
       "pass": true
     },
     {
-      "name": "狂战士力量收益(百分比)",
+      "name": "狂战士百分比-力量收益",
       "expected": 0.2442,
-      "actual": 0.244248,
+      "actual": 0.2442,
       "pass": true
     },
     {
-      "name": "狂战士物理攻击收益(百分比)",
+      "name": "狂战士百分比-物理攻击收益",
       "expected": 0.055,
       "actual": 0.055,
       "pass": true
@@ -63,23 +64,23 @@
     {
       "name": "狂战士百分比综合收益",
       "expected": 0.3281,
-      "actual": 0.328125,
+      "actual": 0.3281,
       "pass": true
     },
     {
-      "name": "剑魂力量收益",
+      "name": "剑魂百分比-力量收益",
       "expected": 0.3647,
-      "actual": 0.364706,
+      "actual": 0.3647,
       "pass": true
     },
     {
-      "name": "剑魂物理攻击收益",
+      "name": "剑魂百分比-物理攻击收益",
       "expected": 0.0423,
-      "actual": 0.042308,
+      "actual": 0.0423,
       "pass": true
     },
     {
-      "name": "剑魂暴击收益",
+      "name": "剑魂百分比-暴击收益",
       "expected": 0.012,
       "actual": 0.012,
       "pass": true
@@ -87,7 +88,7 @@
     {
       "name": "剑魂百分比综合收益",
       "expected": 0.4395,
-      "actual": 0.439513,
+      "actual": 0.4395,
       "pass": true
     },
     {
@@ -96,5 +97,17 @@
       "actual": 4.740937,
       "pass": true
     }
-  ]
+  ],
+  "core_data": {
+    "cc_set_6pc": {
+      "str": 310,
+      "phy": 110,
+      "ind": 120,
+      "cri": 3.0
+    },
+    "berserker_fixed_total": 0.0927,
+    "berserker_pct_total": 0.3281,
+    "swordsman_pct_total": 0.4395,
+    "margin_duality": 4.740937
+  }
 }
