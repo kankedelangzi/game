@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-06-29T06:56:00+08:00",
+  "version": "v865",
+  "cc_set": {
+    "strength": 310,
+    "phys_atk": 110,
+    "indep_atk": 120,
+    "crit": 0.03
+  },
+  "berserker_fixed": {
+    "indep_bonus": 8.0,
+    "crit_bonus": 1.1765,
+    "total": 9.27
+  },
+  "berserker_percent": {
+    "str_bonus": 24.42,
+    "phys_bonus": 5.5,
+    "crit_bonus": 1.1765,
+    "total": 32.81
+  },
+  "swordsman_percent": {
+    "str_bonus": 36.47,
+    "phys_bonus": 5.5,
+    "crit_bonus": 1.2,
+    "total": 45.7
+  },
+  "marginal_duality": 4.93002,
+  "checks": {
+    "cc_str": true,
+    "cc_phys_atk": true,
+    "cc_indep_atk": true,
+    "cc_crit": true,
+    "berserker_indep": true,
+    "berserker_crit_fixed": true,
+    "berserker_fixed_total": true,
+    "berserker_str": true,
+    "berserker_phys": true,
+    "berserker_percent_total": true,
+    "swordsman_str": true,
+    "swordsman_phys": true,
+    "swordsman_crit": true,
+    "swordsman_percent_total": true,
+    "marginal_duality": true
+  },
+  "passed": 15,
+  "total": 15
+}
