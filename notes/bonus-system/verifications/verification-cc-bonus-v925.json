@@ -1,0 +1,111 @@
+{
+  "version": "v925",
+  "timestamp": "2026-06-29 20:57",
+  "total": 15,
+  "passed": 15,
+  "rate": "15/15",
+  "results": [
+    {
+      "name": "CC套力量",
+      "expected": 310,
+      "computed": 310,
+      "pass": true
+    },
+    {
+      "name": "CC套物理攻击",
+      "expected": 110,
+      "computed": 110,
+      "pass": true
+    },
+    {
+      "name": "CC套独立攻击",
+      "expected": 120,
+      "computed": 120,
+      "pass": true
+    },
+    {
+      "name": "CC套暴击率",
+      "expected": 3.0,
+      "computed": 3.0,
+      "pass": true
+    },
+    {
+      "name": "狂战士独立攻击收益",
+      "expected": 8.0,
+      "computed": 8.0,
+      "pass": true
+    },
+    {
+      "name": "狂战士暴击收益(固伤)",
+      "expected": 1.2,
+      "computed": 1.18,
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤综合收益",
+      "expected": 9.27,
+      "computed": 9.27,
+      "pass": true
+    },
+    {
+      "name": "狂战士力量收益",
+      "expected": 24.42,
+      "computed": 24.42,
+      "pass": true
+    },
+    {
+      "name": "狂战士物理攻击收益",
+      "expected": 5.5,
+      "computed": 5.5,
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比综合收益",
+      "expected": 32.81,
+      "computed": 32.81,
+      "pass": true
+    },
+    {
+      "name": "剑魂力量收益",
+      "expected": 36.47,
+      "computed": 36.47,
+      "pass": true
+    },
+    {
+      "name": "剑魂物理攻击收益",
+      "expected": 5.5,
+      "computed": 5.5,
+      "pass": true
+    },
+    {
+      "name": "剑魂暴击收益",
+      "expected": 1.2,
+      "computed": 1.2,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比综合收益",
+      "expected": 45.7,
+      "computed": 45.7,
+      "pass": true
+    },
+    {
+      "name": "边际对偶",
+      "expected": 4.93002,
+      "computed": 4.93002,
+      "pass": true
+    }
+  ],
+  "marginal_duality": 4.93002,
+  "core_data": {
+    "cc_stats": {
+      "力量": 310,
+      "物理攻击": 110,
+      "独立攻击": 120,
+      "暴击率": 3.0
+    },
+    "berserker_fixed": 9.27,
+    "berserker_pct": 32.81,
+    "swordsman_pct": 45.7
+  }
+}
