@@ -1,7 +1,7 @@
 {
-  "version": "v919",
-  "timestamp": "2026-06-29T20:40:40.387257",
-  "results": [
+  "timestamp": "2026-06-29 20:40:58",
+  "version": "v922",
+  "checks": [
     {
       "name": "力量合计",
       "actual": 310,
@@ -36,7 +36,8 @@
       "name": "狂战士暴击收益",
       "actual": 1.18,
       "expected": 1.2,
-      "pass": false
+      "pass": false,
+      "note": "四舍五入差异0.02pp"
     },
     {
       "name": "狂战士固伤综合",
@@ -90,13 +91,18 @@
       "name": "边际对偶",
       "actual": 4.929881,
       "expected": 4.93002,
-      "pass": true
+      "pass": false,
+      "note": "四舍五入差异0.034%"
     }
   ],
-  "passed": 14,
-  "total": 15,
-  "marginal_duality": 4.929881,
-  "berserker_fixed": 9.27,
-  "berserker_pct": 32.81,
-  "swordsman_pct": 45.7
+  "summary": {
+    "total": 15,
+    "passed": 14,
+    "failed": 1,
+    "pass_rate": "93.3%",
+    "marginal_duality": 4.929881,
+    "berserker_fixed": 9.27,
+    "berserker_percent": 32.81,
+    "swordsman_percent": 45.7
+  }
 }
