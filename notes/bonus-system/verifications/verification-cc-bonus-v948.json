@@ -1,0 +1,59 @@
+{
+  "version": "v948",
+  "timestamp": "2026-06-30 01:10:17",
+  "results": {
+    "cc_str": 310,
+    "cc_patk": 110,
+    "cc_indep": 120,
+    "cc_crit": 3.0,
+    "berserker_indep_gain": 8.0,
+    "berserker_crit_gain": 1.1765,
+    "berserker_fixed_total": 9.2706,
+    "berserker_str_gain": 24.4248,
+    "berserker_patk_gain": 5.5,
+    "berserker_percent_total": 32.8125,
+    "swordsman_str_gain": 36.4706,
+    "swordsman_patk_gain": 5.5,
+    "swordsman_crit_gain": 1.2,
+    "swordsman_percent_total": 45.7042,
+    "marginal_duality": 4.930015
+  },
+  "expected": {
+    "cc_str": 310,
+    "cc_patk": 110,
+    "cc_indep": 120,
+    "cc_crit": 3.0,
+    "berserker_indep_gain": 8.0,
+    "berserker_crit_gain": 1.1765,
+    "berserker_fixed_total": 9.2706,
+    "berserker_str_gain": 24.4248,
+    "berserker_patk_gain": 5.5,
+    "berserker_percent_total": 32.8125,
+    "swordsman_str_gain": 36.4706,
+    "swordsman_patk_gain": 5.5,
+    "swordsman_crit_gain": 1.2,
+    "swordsman_percent_total": 45.7042,
+    "marginal_duality": 4.93002
+  },
+  "all_pass": true,
+  "cc_set": {
+    "str": 310,
+    "patk": 110,
+    "indep": 120,
+    "crit": 3.0
+  },
+  "berserker_base": {
+    "str": 728,
+    "phys": 2000,
+    "indep": 1250,
+    "crit": 55.0
+  },
+  "berserker_berserk_str": 1019.1999999999999,
+  "swordsman_base": {
+    "str": 600,
+    "phys": 2000,
+    "crit": 55.0
+  },
+  "checks_passed": 15,
+  "checks_total": 15
+}
