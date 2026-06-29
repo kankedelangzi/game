@@ -1,0 +1,109 @@
+{
+  "version": "v915",
+  "timestamp": "2026-06-29 19:39:22",
+  "checks": [
+    {
+      "name": "力量合计",
+      "expected": 310,
+      "actual": 310,
+      "passed": true
+    },
+    {
+      "name": "物理攻击合计",
+      "expected": 110,
+      "actual": 110,
+      "passed": true
+    },
+    {
+      "name": "独立攻击合计",
+      "expected": 120,
+      "actual": 120,
+      "passed": true
+    },
+    {
+      "name": "暴击合计",
+      "expected": 3,
+      "actual": 3,
+      "passed": true
+    },
+    {
+      "name": "狂战士独立攻击收益",
+      "expected": 0.08,
+      "actual": 0.08,
+      "passed": true
+    },
+    {
+      "name": "狂战士暴击收益",
+      "expected": 0.012,
+      "actual": 0.011765,
+      "passed": false
+    },
+    {
+      "name": "狂战士固伤综合",
+      "expected": 0.0927,
+      "actual": 0.092706,
+      "passed": true
+    },
+    {
+      "name": "狂战士力量收益",
+      "expected": 0.2442,
+      "actual": 0.244248,
+      "passed": true
+    },
+    {
+      "name": "狂战士物理攻击收益",
+      "expected": 0.055,
+      "actual": 0.055,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比综合",
+      "expected": 0.3281,
+      "actual": 0.328125,
+      "passed": true
+    },
+    {
+      "name": "剑魂力量收益",
+      "expected": 0.3647,
+      "actual": 0.364706,
+      "passed": true
+    },
+    {
+      "name": "剑魂物理攻击收益",
+      "expected": 0.055,
+      "actual": 0.055,
+      "passed": true
+    },
+    {
+      "name": "剑魂暴击收益",
+      "expected": 0.012,
+      "actual": 0.012,
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比综合",
+      "expected": 0.457,
+      "actual": 0.457042,
+      "passed": true
+    },
+    {
+      "name": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "passed": true
+    }
+  ],
+  "passed": 14,
+  "total": 15,
+  "pass_rate": "14/15",
+  "summary": {
+    "cc_str": 310,
+    "cc_phy": 110,
+    "cc_ind": 120,
+    "cc_crt": 3,
+    "berserker_fixed_total": 0.0927,
+    "berserker_pct_total": 0.3281,
+    "swordsman_pct_total": 0.457,
+    "marginal_duality": 4.93002
+  }
+}
