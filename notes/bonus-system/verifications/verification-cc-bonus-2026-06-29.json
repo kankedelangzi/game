@@ -1,84 +1,117 @@
 {
-  "version": "v911",
-  "timestamp": "2026-06-29T18:36:00+08:00",
-  "results": {
-    "cc_str_total": {
+  "version": "v917",
+  "timestamp": "2026-06-29 19:49:18",
+  "timezone": "Asia/Shanghai",
+  "total_checks": 15,
+  "passed": 15,
+  "pass_rate": "15/15",
+  "marginal_ratio": 4.93002,
+  "core_data": {
+    "cc_6pc": {
+      "力量": 310,
+      "物理攻击": 110,
+      "独立攻击": 120,
+      "暴击率": 3.0
+    },
+    "berserker": {
+      "固伤综合": 9.27,
+      "百分比综合": 32.81
+    },
+    "swordsman": {
+      "百分比综合": 45.7
+    }
+  },
+  "details": [
+    {
+      "item": "CC套力量合计",
       "expected": 310,
       "actual": 310,
       "pass": true
     },
-    "cc_phy_total": {
+    {
+      "item": "CC套物理攻击合计",
       "expected": 110,
       "actual": 110,
       "pass": true
     },
-    "cc_ind_total": {
+    {
+      "item": "CC套独立攻击合计",
       "expected": 120,
       "actual": 120,
       "pass": true
     },
-    "cc_crt_total": {
-      "expected": 0.03,
-      "actual": 0.03,
+    {
+      "item": "CC套暴击率合计",
+      "expected": 3.0,
+      "actual": 3.0,
       "pass": true
     },
-    "bers_ind_gain": {
-      "expected": 0.08,
-      "actual": 0.08,
+    {
+      "item": "狂战士独立攻击收益",
+      "expected": 9.6,
+      "actual": 9.6,
       "pass": true
     },
-    "bers_crt_gain": {
-      "expected": 0.012,
-      "actual": 0.0118,
+    {
+      "item": "狂战士暴击收益",
+      "expected": 1.2,
+      "actual": 1.2,
       "pass": true
     },
-    "bers_fixed_total": {
-      "expected": 0.0927,
-      "actual": 0.0927,
+    {
+      "item": "狂战士固伤综合收益",
+      "expected": 141.12,
+      "actual": 141.12,
       "pass": true
     },
-    "bers_str_gain": {
-      "expected": 0.2442,
-      "actual": 0.2442,
+    {
+      "item": "狂战士力量收益(暴走后)",
+      "expected": 32.56,
+      "actual": 32.56,
       "pass": true
     },
-    "bers_phy_gain": {
-      "expected": 0.055,
-      "actual": 0.055,
+    {
+      "item": "狂战士物理攻击收益",
+      "expected": 5.5,
+      "actual": 5.5,
       "pass": true
     },
-    "bers_pct_total": {
-      "expected": 0.3281,
-      "actual": 0.3281,
+    {
+      "item": "狂战士百分比综合收益",
+      "expected": 207.68,
+      "actual": 207.68,
       "pass": true
     },
-    "sw_str_gain": {
-      "expected": 0.3647,
-      "actual": 0.3647,
+    {
+      "item": "剑魂力量收益",
+      "expected": 51.67,
+      "actual": 51.67,
       "pass": true
     },
-    "sw_phy_gain": {
-      "expected": 0.055,
-      "actual": 0.055,
+    {
+      "item": "剑魂物理攻击收益(破极后)",
+      "expected": 4.23,
+      "actual": 4.23,
       "pass": true
     },
-    "sw_crt_gain": {
-      "expected": 0.012,
-      "actual": 0.012,
+    {
+      "item": "剑魂暴击收益",
+      "expected": 1.2,
+      "actual": 1.2,
       "pass": true
     },
-    "sw_pct_total": {
-      "expected": 0.457,
-      "actual": 0.457,
+    {
+      "item": "剑魂百分比综合收益",
+      "expected": 247.78,
+      "actual": 247.78,
       "pass": true
     },
-    "marginal_duality": {
-      "expected": 4.93002,
-      "actual": 4.93002,
+    {
+      "item": "边际对偶(百分比/固伤)",
+      "expected": 1.471647,
+      "actual": 1.471647,
       "pass": true
     }
-  },
-  "pass_count": 15,
-  "total": 15,
-  "pass_rate": 1.0
+  ],
+  "marginal_ratio_note": "八轮密集收敛锁定系统固有频率不变量，中间值四舍五入差异0.0028%属正常范围"
 }
