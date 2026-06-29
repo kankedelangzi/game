@@ -1,0 +1,28 @@
+{
+  "version": "v893",
+  "timestamp": "2026-06-29T14:42:24+08:00",
+  "cc_stats": {
+    "strength": 310,
+    "phys_atk": 110,
+    "indep_atk": 120,
+    "crit_rate": 3.0
+  },
+  "berserker": {
+    "indep_bonus_pct": 8.0,
+    "crit_bonus_pct": 1.1765,
+    "fixed_total_pct": 9.2706,
+    "str_bonus_pct": 24.4248,
+    "phys_atk_bonus_pct": 5.5,
+    "pct_total_pct": 32.8125
+  },
+  "swordsman": {
+    "str_bonus_pct": 36.4706,
+    "phys_atk_bonus_pct": 5.5,
+    "crit_bonus_pct": 1.2,
+    "pct_total_pct": 45.7042
+  },
+  "marginal_duality": 4.93002,
+  "checks_passed": 8,
+  "checks_total": 8,
+  "pass_rate": "100%"
+}
