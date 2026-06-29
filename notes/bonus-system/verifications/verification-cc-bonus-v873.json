@@ -1,0 +1,96 @@
+{
+  "version": "v873",
+  "timestamp": "2026-06-29T09:49:00+08:00",
+  "passed": 15,
+  "total": 15,
+  "pass_rate": 1.0,
+  "results": {
+    "CC力量合计": {
+      "expected": 310,
+      "actual": 310,
+      "status": "PASS"
+    },
+    "CC物理攻击合计": {
+      "expected": 110,
+      "actual": 110,
+      "status": "PASS"
+    },
+    "CC独立攻击合计": {
+      "expected": 120,
+      "actual": 120,
+      "status": "PASS"
+    },
+    "CC暴击合计": {
+      "expected": 3.0,
+      "actual": 3.0,
+      "status": "PASS"
+    },
+    "狂战士独立攻击收益": {
+      "expected": 8.0,
+      "actual": 8.0,
+      "status": "PASS"
+    },
+    "狂战士暴击收益": {
+      "expected": 1.18,
+      "actual": 1.1765,
+      "status": "PASS"
+    },
+    "狂战士固伤综合": {
+      "expected": 9.27,
+      "actual": 9.2706,
+      "status": "PASS"
+    },
+    "狂战士百分比力量收益": {
+      "expected": 24.42,
+      "actual": 24.4248,
+      "status": "PASS"
+    },
+    "狂战士百分比物理攻击收益": {
+      "expected": 5.5,
+      "actual": 5.5,
+      "status": "PASS"
+    },
+    "狂战士百分比综合": {
+      "expected": 32.81,
+      "actual": 32.8125,
+      "status": "PASS"
+    },
+    "剑魂力量收益": {
+      "expected": 36.47,
+      "actual": 36.4706,
+      "status": "PASS"
+    },
+    "剑魂物理攻击收益": {
+      "expected": 5.5,
+      "actual": 5.5,
+      "status": "PASS"
+    },
+    "剑魂暴击收益": {
+      "expected": 1.2,
+      "actual": 1.2,
+      "status": "PASS"
+    },
+    "剑魂百分比综合": {
+      "expected": 45.7,
+      "actual": 45.7042,
+      "status": "PASS"
+    },
+    "边际对偶": {
+      "expected": 4.93,
+      "actual": 4.93,
+      "status": "PASS"
+    }
+  },
+  "core_data": {
+    "cc_6pc": {
+      "str": 310,
+      "phy": 110,
+      "ind": 120,
+      "crit": 3.0
+    },
+    "berserker_fixed_total": 9.27,
+    "berserker_pct_total": 32.81,
+    "swordsman_pct_total": 45.7,
+    "marginal_duality": 4.93002
+  }
+}
