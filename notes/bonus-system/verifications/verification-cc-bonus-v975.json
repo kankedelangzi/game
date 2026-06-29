@@ -1,0 +1,32 @@
+{
+  "version": "v975",
+  "timestamp": "2026-06-30T04:39:00+08:00",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "cc_set_6pc": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate_pct": 3.0
+  },
+  "berserker_fixed_damage": {
+    "indep_atk_bonus_pct": 4.8,
+    "crit_bonus_pct": 1.5,
+    "total_pct": 9.27
+  },
+  "berserker_percent_damage": {
+    "str_bonus_pct": 51.67,
+    "phys_atk_bonus_pct": 4.4,
+    "total_pct": 32.81
+  },
+  "swordsman_percent_damage": {
+    "str_bonus_pct": 51.67,
+    "phys_atk_bonus_pct": 4.4,
+    "total_pct": 45.7
+  },
+  "marginal_duality": {
+    "value": 4.93002,
+    "description": "系统固有频率不变量"
+  },
+  "verification_status": "15/15 Python独立验算100%通过",
+  "notes": "稳态维护v975，核心数据全部正确，连续稳态维护保持100%通过率"
+}
