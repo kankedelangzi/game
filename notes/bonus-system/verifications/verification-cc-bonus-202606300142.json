@@ -1,0 +1,25 @@
+{
+  "cc_6pc": {
+    "str": 310,
+    "phy": 110,
+    "ind": 120,
+    "cri": 3
+  },
+  "berserker": {
+    "fixed_ind_gain": 8.0,
+    "fixed_cri_gain": 3.5294,
+    "fixed_total": 11.8118,
+    "pct_str_gain": 24.4248,
+    "pct_phy_gain": 5.5,
+    "pct_cri_gain": 3.5294,
+    "pct_total": 35.9012
+  },
+  "swordsman": {
+    "str_gain": 36.4706,
+    "phy_gain": 5.5,
+    "cri_gain": 3.6,
+    "pct_total": 49.1596
+  },
+  "marginal_dual": 4.16192,
+  "marginal_dual_exact": 4.16192
+}

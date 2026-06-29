@@ -1,0 +1,26 @@
+{
+  "version": "v952",
+  "timestamp": "2026-06-30T01:43:48.021292",
+  "cc_6pc": {
+    "str": 310,
+    "phy": 110,
+    "ind": 120,
+    "cri": 3
+  },
+  "berserker": {
+    "fixed_ind_gain": 8.0,
+    "fixed_cri_gain": 1.1765,
+    "fixed_total": 9.2706,
+    "pct_str_gain": 24.4248,
+    "pct_phy_gain": 5.5,
+    "pct_cri_gain": 1.1765,
+    "pct_total": 32.8125
+  },
+  "swordsman": {
+    "str_gain": 36.4706,
+    "phy_gain": 5.5,
+    "cri_gain": 1.2,
+    "pct_total": 45.7042
+  },
+  "marginal_dual": 4.93002
+}
