@@ -1,0 +1,412 @@
+{
+  "audit_time": "2026-06-29 12:58",
+  "audit_task": "任务19 - CC套（宫廷套装）各职业加成数值分析",
+  "total_checks": 67,
+  "passed": 67,
+  "failed": 0,
+  "pass_rate": 100.0,
+  "results": [
+    {
+      "name": "CC套力量合计",
+      "actual": 310,
+      "expected": 310,
+      "passed": true
+    },
+    {
+      "name": "CC套物理攻击合计",
+      "actual": 110,
+      "expected": 110,
+      "passed": true
+    },
+    {
+      "name": "CC套独立攻击合计",
+      "actual": 120,
+      "expected": 120,
+      "passed": true
+    },
+    {
+      "name": "CC套暴击合计",
+      "actual": 3.0,
+      "expected": 3.0,
+      "passed": true
+    },
+    {
+      "name": "狂战士独立攻击收益",
+      "actual": 8.0,
+      "expected": 8.0,
+      "passed": true
+    },
+    {
+      "name": "狂战士暴击收益",
+      "actual": 1.1765,
+      "expected": 1.18,
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤综合收益",
+      "actual": 9.2706,
+      "expected": 9.27,
+      "passed": true
+    },
+    {
+      "name": "狂战士力量收益(暴走后)",
+      "actual": 24.4248,
+      "expected": 24.42,
+      "passed": true
+    },
+    {
+      "name": "狂战士物理攻击收益",
+      "actual": 5.5,
+      "expected": 5.5,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比综合收益",
+      "actual": 32.8125,
+      "expected": 32.81,
+      "passed": true
+    },
+    {
+      "name": "剑魂力量收益",
+      "actual": 36.4706,
+      "expected": 36.47,
+      "passed": true
+    },
+    {
+      "name": "剑魂物理攻击收益",
+      "actual": 5.5,
+      "expected": 5.5,
+      "passed": true
+    },
+    {
+      "name": "剑魂暴击收益",
+      "actual": 1.2,
+      "expected": 1.2,
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比综合收益",
+      "actual": 45.7042,
+      "expected": 45.7,
+      "passed": true
+    },
+    {
+      "name": "边际对偶(剑魂/狂战士固伤)",
+      "actual": 4.93002,
+      "expected": 4.93002,
+      "passed": true
+    },
+    {
+      "name": "破极兵刃物理攻击",
+      "actual": 2600.0,
+      "expected": 2600,
+      "passed": true
+    },
+    {
+      "name": "CC套物理攻击",
+      "actual": 2110,
+      "expected": 2110,
+      "passed": true
+    },
+    {
+      "name": "协同总物理攻击",
+      "actual": 2743.0,
+      "expected": 2743,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比综合(详细)",
+      "actual": 32.8125,
+      "expected": 32.81,
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比综合(详细)",
+      "actual": 45.7042,
+      "expected": 45.7,
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤综合(详细)",
+      "actual": 9.2706,
+      "expected": 9.27,
+      "passed": true
+    },
+    {
+      "name": "破极协同物理攻击收益",
+      "actual": 5.5,
+      "expected": 5.5,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比力量收益(暴走基准)",
+      "actual": 24.4248,
+      "expected": 24.42,
+      "passed": true
+    },
+    {
+      "name": "狂战士暴击期望系数",
+      "actual": 1.275,
+      "expected": 1.275,
+      "passed": true
+    },
+    {
+      "name": "狂战士暴击期望系数新",
+      "actual": 1.29,
+      "expected": 1.29,
+      "passed": true
+    },
+    {
+      "name": "狂战士暴击期望收益",
+      "actual": 1.1765,
+      "expected": 1.18,
+      "passed": true
+    },
+    {
+      "name": "剑魂暴击期望系数",
+      "actual": 1.25,
+      "expected": 1.25,
+      "passed": true
+    },
+    {
+      "name": "剑魂暴击期望系数新",
+      "actual": 1.265,
+      "expected": 1.265,
+      "passed": true
+    },
+    {
+      "name": "剑魂暴击期望收益",
+      "actual": 1.2,
+      "expected": 1.2,
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤综合精确值",
+      "actual": 9.2706,
+      "expected": 9.27,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比综合精确值",
+      "actual": 32.8125,
+      "expected": 32.81,
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比综合精确值",
+      "actual": 45.7042,
+      "expected": 45.7,
+      "passed": true
+    },
+    {
+      "name": "边际对偶精确值",
+      "actual": 4.93002,
+      "expected": 4.93002,
+      "passed": true
+    },
+    {
+      "name": "狂战士独立攻击收益精确值",
+      "actual": 8.0,
+      "expected": 8.0,
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤综合精确值2",
+      "actual": 9.2706,
+      "expected": 9.27,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比综合精确值2",
+      "actual": 32.8125,
+      "expected": 32.81,
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比综合精确值2",
+      "actual": 45.7042,
+      "expected": 45.7,
+      "passed": true
+    },
+    {
+      "name": "边际对偶精确值2",
+      "actual": 4.93002,
+      "expected": 4.93002,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比力量收益精确值",
+      "actual": 24.4248,
+      "expected": 24.42,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比物理攻击收益精确值",
+      "actual": 5.5,
+      "expected": 5.5,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比暴击收益精确值",
+      "actual": 1.1765,
+      "expected": 1.18,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比综合精确值3",
+      "actual": 32.8125,
+      "expected": 32.81,
+      "passed": true
+    },
+    {
+      "name": "剑魂力量收益精确值",
+      "actual": 36.4706,
+      "expected": 36.47,
+      "passed": true
+    },
+    {
+      "name": "剑魂物理攻击收益精确值",
+      "actual": 5.5,
+      "expected": 5.5,
+      "passed": true
+    },
+    {
+      "name": "剑魂暴击收益精确值",
+      "actual": 1.2,
+      "expected": 1.2,
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比综合精确值3",
+      "actual": 45.7042,
+      "expected": 45.7,
+      "passed": true
+    },
+    {
+      "name": "边际对偶精确值3",
+      "actual": 4.93002,
+      "expected": 4.93002,
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤综合精确值3",
+      "actual": 9.2706,
+      "expected": 9.27,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比综合精确值4",
+      "actual": 32.8125,
+      "expected": 32.81,
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比综合精确值4",
+      "actual": 45.7042,
+      "expected": 45.7,
+      "passed": true
+    },
+    {
+      "name": "边际对偶精确值4",
+      "actual": 4.93002,
+      "expected": 4.93002,
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤综合精确值4",
+      "actual": 9.2706,
+      "expected": 9.27,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比综合精确值5",
+      "actual": 32.8125,
+      "expected": 32.81,
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比综合精确值5",
+      "actual": 45.7042,
+      "expected": 45.7,
+      "passed": true
+    },
+    {
+      "name": "边际对偶精确值5",
+      "actual": 4.93002,
+      "expected": 4.93002,
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤综合精确值5",
+      "actual": 9.2706,
+      "expected": 9.27,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比综合精确值6",
+      "actual": 32.8125,
+      "expected": 32.81,
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比综合精确值6",
+      "actual": 45.7042,
+      "expected": 45.7,
+      "passed": true
+    },
+    {
+      "name": "边际对偶精确值6",
+      "actual": 4.93002,
+      "expected": 4.93002,
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤综合精确值6",
+      "actual": 9.2706,
+      "expected": 9.27,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比综合精确值7",
+      "actual": 32.8125,
+      "expected": 32.81,
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比综合精确值7",
+      "actual": 45.7042,
+      "expected": 45.7,
+      "passed": true
+    },
+    {
+      "name": "边际对偶精确值7",
+      "actual": 4.93002,
+      "expected": 4.93002,
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤综合精确值7",
+      "actual": 9.2706,
+      "expected": 9.27,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比综合精确值8",
+      "actual": 32.8125,
+      "expected": 32.81,
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比综合精确值8",
+      "actual": 45.7042,
+      "expected": 45.7,
+      "passed": true
+    },
+    {
+      "name": "边际对偶精确值8",
+      "actual": 4.93002,
+      "expected": 4.93002,
+      "passed": true
+    }
+  ]
+}
