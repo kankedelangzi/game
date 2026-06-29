@@ -88,9 +88,9 @@ print(f"  破极后物理攻击: {swordsman_phy_atk_pojue} (预期2600)")
 power_gain_swordsman = (1 + (swordsman_power + 310) / 250) / (1 + swordsman_power / 250) - 1
 print(f"  力量收益: {power_gain_swordsman*100:.2f}% (预期36.50%) {'✅' if abs(power_gain_swordsman*100 - 36.50) < 0.05 else '❌'}")
 
-# 物理攻击收益（破极后）
-phy_atk_gain_swordsman = (swordsman_phy_atk_pojue + 110) / swordsman_phy_atk_pojue - 1
-print(f"  物理攻击收益: {phy_atk_gain_swordsman*100:.2f}% (预期4.23%) {'✅' if abs(phy_atk_gain_swordsman*100 - 4.23) < 0.01 else '❌'}")
+# 物理攻击收益（v889修正：基于破极兵刃前基础物理攻击2000计算）
+phy_atk_gain_swordsman = (swordsman_phy_atk_base + 110) / swordsman_phy_atk_base - 1
+print(f"  物理攻击收益: {phy_atk_gain_swordsman*100:.2f}% (预期5.50%) {'✅' if abs(phy_atk_gain_swordsman*100 - 5.50) < 0.01 else '❌'}")
 
 # 暴击收益
 crit_old_s = swordsman_crit
@@ -100,9 +100,9 @@ crit_mult_new_s = (1 - crit_new_s) + crit_new_s * 1.5
 crit_gain_s = crit_mult_new_s / crit_mult_old_s - 1
 print(f"  暴击收益: {crit_gain_s*100:.2f}% (预期1.20%) {'✅' if abs(crit_gain_s*100 - 1.20) < 0.05 else '❌'}")
 
-# 百分比综合
+# 百分比综合（v889修正后：力量+物理攻击(基于2000)+暴击）
 swordsman_percent综合 = (1 + power_gain_swordsman) * (1 + phy_atk_gain_swordsman) * (1 + crit_gain_s) - 1
-print(f"  百分比综合收益: {swordsman_percent综合*100:.2f}% (预期43.95%) {'✅' if abs(swordsman_percent综合*100 - 43.95) < 0.05 else '❌'}")
+print(f"  百分比综合收益: {swordsman_percent综合*100:.2f}% (预期45.70%) {'✅' if abs(swordsman_percent综合*100 - 45.70) < 0.05 else '❌'}")
 
 # ============================================
 # 四、边际对偶验证
@@ -110,8 +110,8 @@ print(f"  百分比综合收益: {swordsman_percent综合*100:.2f}% (预期43.95
 print("\n【四、边际对偶验证】")
 
 ratio = swordsman_percent综合 / berserker_fix综合
-print(f"  剑魂百分比/狂战士固伤 收益倍数: {ratio:.2f} (预期4.74)")
-print(f"  系统固有频率确认: {'✅' if abs(ratio - 4.74) < 0.05 else '❌'}")
+print(f"  剑魂百分比/狂战士固伤 收益倍数: {ratio:.6f} (预期4.930020)")
+print(f"  系统固有频率确认: {'✅' if abs(ratio - 4.930020) < 0.001 else '❌'}")
 
 # ============================================
 # 五、最终统计
