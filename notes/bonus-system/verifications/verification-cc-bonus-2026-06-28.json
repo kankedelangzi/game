@@ -1,9 +1,8 @@
 {
-  "version": "v824",
-  "timestamp": "2026-06-29T01:16:36.683013",
+  "version": "v797",
+  "timestamp": "2026-06-29T13:58:51.306587",
   "passed": 15,
   "total": 15,
-  "all_pass": true,
   "results": [
     {
       "name": "CC套力量合计",
