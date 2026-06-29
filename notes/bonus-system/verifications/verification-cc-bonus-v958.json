@@ -1,0 +1,111 @@
+{
+  "version": "v958",
+  "timestamp": "2026-06-30T02:22:13.999070",
+  "task": "任务19-CC套各职业加成数值",
+  "results": [
+    {
+      "check": "CC套6件-力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "check": "CC套6件-物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "check": "CC套6件-独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "check": "CC套6件-暴击率",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    {
+      "check": "狂战士-独立攻击收益",
+      "expected": 48.0,
+      "actual": 48.0,
+      "pass": true
+    },
+    {
+      "check": "狂战士-暴击率收益",
+      "expected": 37.5,
+      "actual": 37.5,
+      "pass": true
+    },
+    {
+      "check": "狂战士-固伤综合收益",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "check": "狂战士-力量收益",
+      "expected": 45.59,
+      "actual": 45.59,
+      "pass": true
+    },
+    {
+      "check": "狂战士-物理攻击收益",
+      "expected": 4.4,
+      "actual": 4.4,
+      "pass": true
+    },
+    {
+      "check": "狂战士-百分比综合收益",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "check": "剑魂-力量收益",
+      "expected": 51.67,
+      "actual": 51.67,
+      "pass": true
+    },
+    {
+      "check": "剑魂-物理攻击收益",
+      "expected": 5.5,
+      "actual": 5.5,
+      "pass": true
+    },
+    {
+      "check": "剑魂-暴击率收益",
+      "expected": 37.5,
+      "actual": 37.5,
+      "pass": true
+    },
+    {
+      "check": "剑魂-百分比综合收益",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "check": "边际对偶倍数",
+      "expected": 4.93002,
+      "actual": 4.929881,
+      "pass": true
+    }
+  ],
+  "summary": {
+    "passed": 15,
+    "total": 15,
+    "marginal_duality": 4.929881,
+    "cc_set": {
+      "力量": 310,
+      "物理攻击": 110,
+      "独立攻击": 120,
+      "暴击率": 3.0
+    },
+    "berserker_fixed": 9.27,
+    "berserker_percent": 32.81,
+    "swordsman_percent": 45.7
+  }
+}
