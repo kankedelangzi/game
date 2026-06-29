@@ -1,0 +1,35 @@
+{
+  "version": "v966",
+  "timestamp": "2026-06-30T03:10:04.949788",
+  "cc_set": {
+    "str": 310,
+    "phy": 110,
+    "ind": 120,
+    "cri": 3
+  },
+  "berserker": {
+    "str_base": 728,
+    "str_berserk": 1019.2,
+    "ind": 1250,
+    "phy": 2000,
+    "cri": "55%",
+    "fixed_total": 9.27,
+    "pct_total": 32.81,
+    "ind_gain": 8.0,
+    "cri_gain": 1.18,
+    "str_gain": 24.42,
+    "phy_gain": 5.5
+  },
+  "swordsman": {
+    "str": 600,
+    "phy": 2000,
+    "cri": "50%",
+    "pct_total": 45.7,
+    "str_gain": 36.47,
+    "phy_gain": 5.5,
+    "cri_gain": 1.2
+  },
+  "marginal_dual": 4.93002,
+  "pass_rate": "15/15",
+  "status": "PASS"
+}
