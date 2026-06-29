@@ -1,0 +1,131 @@
+{
+  "version": "v955",
+  "timestamp": "2026-06-30 01:58:50 CST",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "total_checks": 18,
+  "passed": 18,
+  "pass_rate": "100%",
+  "marginal_dual": 4.929881,
+  "marginal_dual_expected": 4.93002,
+  "core_data": {
+    "cc_set": {
+      "力量": 310,
+      "物理攻击": 110,
+      "独立攻击": 120,
+      "暴击率": 3
+    },
+    "berserker_fixed_total": 9.27,
+    "berserker_pct_total": 32.81,
+    "swordsman_pct_total": 45.7
+  },
+  "checks": [
+    {
+      "name": "CC套力量",
+      "actual": 310,
+      "expected": 310,
+      "pass": true
+    },
+    {
+      "name": "CC套物理攻击",
+      "actual": 110,
+      "expected": 110,
+      "pass": true
+    },
+    {
+      "name": "CC套独立攻击",
+      "actual": 120,
+      "expected": 120,
+      "pass": true
+    },
+    {
+      "name": "CC套暴击率",
+      "actual": 3,
+      "expected": 3,
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤综合",
+      "actual": 9.27,
+      "expected": 9.27,
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比综合",
+      "actual": 32.81,
+      "expected": 32.81,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比综合",
+      "actual": 45.7,
+      "expected": 45.7,
+      "pass": true
+    },
+    {
+      "name": "边际对偶",
+      "actual": 4.929881,
+      "expected": 4.93002,
+      "pass": true
+    },
+    {
+      "name": "狂战士独立攻击收益",
+      "actual": 4.3636,
+      "expected": 4.3636,
+      "pass": true
+    },
+    {
+      "name": "狂战士暴击收益",
+      "actual": 4.0,
+      "expected": 4.0,
+      "pass": true
+    },
+    {
+      "name": "狂战士力量收益",
+      "actual": 12.4,
+      "expected": 12.4,
+      "pass": true
+    },
+    {
+      "name": "狂战士物理攻击收益",
+      "actual": 2.2,
+      "expected": 2.2,
+      "pass": true
+    },
+    {
+      "name": "剑魂力量收益",
+      "actual": 12.4,
+      "expected": 12.4,
+      "pass": true
+    },
+    {
+      "name": "剑魂物理攻击收益",
+      "actual": 2.2,
+      "expected": 2.2,
+      "pass": true
+    },
+    {
+      "name": "剑魂暴击收益",
+      "actual": 4.0,
+      "expected": 4.0,
+      "pass": true
+    },
+    {
+      "name": "边际对偶(剑魂/狂固)",
+      "actual": 4.929881,
+      "expected": 4.93002,
+      "pass": true
+    },
+    {
+      "name": "边际对偶(狂百/狂固)",
+      "actual": 3.539374,
+      "expected": 3.539374,
+      "pass": true
+    },
+    {
+      "name": "边际对偶(剑百/狂百)",
+      "actual": 1.392868,
+      "expected": 1.392868,
+      "pass": true
+    }
+  ]
+}
