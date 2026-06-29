@@ -1,0 +1,34 @@
+{
+  "timestamp": "2026-06-30T04:11:57.816199",
+  "version": "v971",
+  "task": "task19-cc-bonus",
+  "cc_set_6pc": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 3.0
+  },
+  "berserker_fixed_damage": {
+    "independent_attack_gain": 8.0,
+    "crit_gain": 1.18,
+    "total": 9.27
+  },
+  "berserker_percent_damage": {
+    "strength_gain": 24.42,
+    "physical_attack_gain": 5.5,
+    "crit_gain": 1.18,
+    "total": 32.81
+  },
+  "swordsman_percent_damage": {
+    "strength_gain": 36.47,
+    "physical_attack_gain": 5.5,
+    "crit_gain": 1.2,
+    "total": 45.7
+  },
+  "marginal_duality": 4.93002,
+  "verification": {
+    "passed": 16,
+    "total": 16,
+    "rate": "100%"
+  }
+}
