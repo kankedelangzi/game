@@ -115,8 +115,8 @@ for r in results:
 
 # 保存验算JSON
 output = {
-    "version": "v821",
-    "timestamp": datetime.now().isoformat(),
+    "version": "v872",
+    "timestamp": "2026-06-29T08:58:02+08:00",
     "total_checks": total,
     "passed": passed,
     "results": results,
@@ -127,6 +127,6 @@ output = {
         "marginal_dual": round(marginal_dual, 6)
     }
 }
-with open("/root/.openclaw/workspace/game-damage-research/notes/bonus-system/verifications/verification-cc-bonus-2026-06-25.json", "w") as f:
+with open("/root/.openclaw/workspace/game-damage-research/notes/bonus-system/verifications/verification-cc-bonus-2026-06-29.json", "w") as f:
     json.dump(output, f, indent=2, ensure_ascii=False)
 print(f"\n验算JSON已保存")
