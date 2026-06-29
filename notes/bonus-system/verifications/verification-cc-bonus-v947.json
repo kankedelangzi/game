@@ -1,0 +1,27 @@
+{
+  "version": "v947",
+  "timestamp": "2026-06-30T00:54:15",
+  "cc_set": {
+    "str": 310,
+    "patk": 110,
+    "indep": 120,
+    "crit": 3.0
+  },
+  "berserker": {
+    "indep_gain": 8.0,
+    "crit_gain": 1.1765,
+    "fixed_total": 9.2706,
+    "str_gain": 24.4248,
+    "patk_gain": 5.5,
+    "percent_total": 32.8125
+  },
+  "swordsman": {
+    "str_gain": 36.4706,
+    "patk_gain": 5.5,
+    "crit_gain": 1.2,
+    "percent_total": 45.7042
+  },
+  "marginal_duality": 4.93002,
+  "checks_passed": 15,
+  "checks_total": 15
+}
