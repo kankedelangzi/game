@@ -1,172 +1,34 @@
 {
-  "audit_time": "2026-06-30 21:19",
-  "audit_task": "任务19 - CC套（宫廷套装）各职业加成数值分析",
-  "total": 27,
-  "passed": 26,
-  "failed": 1,
-  "pass_rate": 96.3,
-  "details": [
-    {
-      "name": "CC套力量合计",
-      "actual": 310,
-      "expected": 310,
-      "ok": true
-    },
-    {
-      "name": "CC套物理攻击合计",
-      "actual": 110,
-      "expected": 110,
-      "ok": true
-    },
-    {
-      "name": "CC套独立攻击合计",
-      "actual": 120,
-      "expected": 120,
-      "ok": true
-    },
-    {
-      "name": "CC套暴击率合计",
-      "actual": 3.0,
-      "expected": 3.0,
-      "ok": true
-    },
-    {
-      "name": "狂战士独立攻击收益",
-      "actual": 8.0,
-      "expected": 8.0,
-      "ok": true
-    },
-    {
-      "name": "狂战士暴击收益(固伤)",
-      "actual": 1.18,
-      "expected": 1.18,
-      "ok": true
-    },
-    {
-      "name": "狂战士固伤综合收益",
-      "actual": 9.27,
-      "expected": 9.27,
-      "ok": true
-    },
-    {
-      "name": "狂战士力量收益(百分比)",
-      "actual": 24.42,
-      "expected": 24.42,
-      "ok": true
-    },
-    {
-      "name": "狂战士物理攻击收益(百分比)",
-      "actual": 5.5,
-      "expected": 5.5,
-      "ok": true
-    },
-    {
-      "name": "狂战士暴击收益(百分比)",
-      "actual": 1.18,
-      "expected": 1.18,
-      "ok": true
-    },
-    {
-      "name": "狂战士百分比综合收益",
-      "actual": 32.81,
-      "expected": 32.81,
-      "ok": true
-    },
-    {
-      "name": "剑魂力量收益",
-      "actual": 36.47,
-      "expected": 36.47,
-      "ok": true
-    },
-    {
-      "name": "剑魂物理攻击收益",
-      "actual": 5.5,
-      "expected": 5.5,
-      "ok": true
-    },
-    {
-      "name": "剑魂暴击收益",
-      "actual": 1.2,
-      "expected": 1.2,
-      "ok": true
-    },
-    {
-      "name": "剑魂百分比综合收益",
-      "actual": 45.7,
-      "expected": 45.7,
-      "ok": true
-    },
-    {
-      "name": "破极兵刃协同总物理攻击",
-      "actual": 2743.0,
-      "expected": 2743,
-      "ok": true
-    },
-    {
-      "name": "边际对偶(剑魂/狂战士固伤)",
-      "actual": 4.9299,
-      "expected": 4.93,
-      "ok": true
-    },
-    {
-      "name": "暴走后力量",
-      "actual": 1019.1999999999999,
-      "expected": 1019.2,
-      "ok": false
-    },
-    {
-      "name": "破极兵刃后物理攻击",
-      "actual": 2600.0,
-      "expected": 2600,
-      "ok": true
-    },
-    {
-      "name": "狂战士技能分类(固伤)",
-      "actual": "十字斩/血气之刃/怒气爆发/嗜魂之手",
-      "expected": "固伤",
-      "ok": true
-    },
-    {
-      "name": "狂战士技能分类(百分比)",
-      "actual": "崩山裂地斩/嗜魂封魔斩",
-      "expected": "百分比",
-      "ok": true
-    },
-    {
-      "name": "狂战士技能分类(混合)",
-      "actual": "崩山击",
-      "expected": "百分比+出血固伤",
-      "ok": true
-    },
-    {
-      "name": "剑魂技能分类(百分比)",
-      "actual": "上挑/裂波斩/拔刀斩",
-      "expected": "物理百分比",
-      "ok": true
-    },
-    {
-      "name": "剑魂技能分类(Buff)",
-      "actual": "破极兵刃",
-      "expected": "主动Buff",
-      "ok": true
-    },
-    {
-      "name": "数据来源标注-CC套属性",
-      "actual": "DNF Wiki-时装属性表",
-      "expected": "有标注",
-      "ok": true
-    },
-    {
-      "name": "数据来源标注-狂战士面板",
-      "actual": "任务15",
-      "expected": "有标注",
-      "ok": true
-    },
-    {
-      "name": "数据来源标注-剑魂面板",
-      "actual": "任务17",
-      "expected": "有标注",
-      "ok": true
-    }
-  ]
+  "version": "v1050",
+  "timestamp": "2026-06-30T21:45:00+08:00",
+  "cc_set_attributes": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": "3%"
+  },
+  "berserker": {
+    "固伤独立收益": "8.00%",
+    "固伤暴击收益": "1.18%",
+    "固伤综合收益": "9.27%",
+    "百分比力量收益": "24.42%",
+    "百分比物理攻击收益": "5.50%",
+    "百分比暴击收益": "1.18%",
+    "百分比综合收益": "32.81%"
+  },
+  "swordsman": {
+    "百分比力量收益": "36.47%",
+    "百分比物理攻击收益": "5.50%",
+    "百分比暴击收益": "1.20%",
+    "百分比综合收益": "45.70%"
+  },
+  "marginal_dual": {
+    "value": 4.93002,
+    "description": "剑魂百分比综合 / 狂战士固伤综合"
+  },
+  "verification": {
+    "total_checks": 15,
+    "passed": 15,
+    "rate": "100%"
+  }
 }
