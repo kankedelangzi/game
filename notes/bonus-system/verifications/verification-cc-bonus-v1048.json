@@ -1,0 +1,136 @@
+{
+  "version": "v1048",
+  "timestamp": "2026-06-30 20:55:19",
+  "total": 17,
+  "passed": 16,
+  "failed": 1,
+  "pass_rate": "16/17",
+  "results": [
+    {
+      "name": "力量合计",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "name": "物理攻击合计",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "name": "独立攻击合计",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "name": "暴击率合计",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    {
+      "name": "狂战士独立攻击收益",
+      "expected": 8.0,
+      "actual": 8.0,
+      "pass": true
+    },
+    {
+      "name": "狂战士暴击收益(固伤)",
+      "expected": 4.5,
+      "actual": 4.5,
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤综合收益",
+      "expected": 12.9,
+      "actual": 12.86,
+      "pass": true
+    },
+    {
+      "name": "狂战士力量收益",
+      "expected": 12.4,
+      "actual": 12.4,
+      "pass": true
+    },
+    {
+      "name": "狂战士物理攻击收益",
+      "expected": 4.4,
+      "actual": 4.4,
+      "pass": true
+    },
+    {
+      "name": "狂战士暴击收益(百分比)",
+      "expected": 4.5,
+      "actual": 4.5,
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比综合收益",
+      "expected": 22.5,
+      "actual": 22.63,
+      "pass": true
+    },
+    {
+      "name": "剑魂力量收益",
+      "expected": 12.4,
+      "actual": 12.4,
+      "pass": true
+    },
+    {
+      "name": "剑魂物理攻击收益",
+      "expected": 4.4,
+      "actual": 4.4,
+      "pass": true
+    },
+    {
+      "name": "剑魂暴击收益",
+      "expected": 4.5,
+      "actual": 4.5,
+      "pass": true
+    },
+    {
+      "name": "剑魂独立攻击收益",
+      "expected": 8.0,
+      "actual": 8.0,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比综合收益",
+      "expected": 22.5,
+      "actual": 22.63,
+      "pass": true
+    },
+    {
+      "name": "边际对偶(狂战士固伤/百分比)",
+      "expected": 4.93,
+      "actual": 0.5684,
+      "pass": false
+    }
+  ],
+  "cc_set": {
+    "str": 310,
+    "phy_atk": 110,
+    "indep_atk": 120,
+    "crit": 3.0
+  },
+  "berserker": {
+    "str": 2500,
+    "phy_atk": 2500,
+    "indep_atk": 1500,
+    "crit": 20.0
+  },
+  "swordsman": {
+    "str": 2500,
+    "phy_atk": 2500,
+    "indep_atk": 1500,
+    "crit": 20.0
+  },
+  "summary": {
+    "berserker_fixed_total": 12.86,
+    "berserker_pct_total": 22.63,
+    "swordsman_pct_total": 22.63,
+    "marginal_duality": 0.5684
+  }
+}
