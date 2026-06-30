@@ -1,0 +1,26 @@
+{
+  "version": "v1055",
+  "timestamp": "2026-06-30T22:25:00+08:00",
+  "cc_set": {
+    "strength": 310,
+    "phys_atk": 110,
+    "indep_atk": 120,
+    "crit": 3.0
+  },
+  "berserker": {
+    "fixed_total": 9.27,
+    "percent_total": 32.81,
+    "indep_gain": 8.0,
+    "crit_gain": 1.18,
+    "str_gain": 24.42,
+    "phys_gain": 5.5
+  },
+  "swordsman": {
+    "percent_total": 45.7,
+    "str_gain": 36.47,
+    "phys_gain": 5.5,
+    "crit_gain": 1.2
+  },
+  "marginal_dual": 4.93002,
+  "all_pass": true
+}
