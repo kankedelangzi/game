@@ -1,0 +1,179 @@
+{
+  "audit_time": "2026-07-01 02:15 CST",
+  "audit_task": "任务19 - CC套（宫廷套装）各职业加成数值分析",
+  "total_checks": 28,
+  "passed": 28,
+  "failed": 0,
+  "pass_rate": 100.0,
+  "results": [
+    {
+      "check": "CC套6件力量合计",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "check": "CC套6件物理攻击合计",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "check": "CC套6件独立攻击合计",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "check": "CC套6件暴击率合计",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤-独立攻击收益",
+      "expected": 0.08,
+      "actual": 0.08,
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤-暴击收益",
+      "expected": 0.012,
+      "actual": 0.0118,
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤综合收益",
+      "expected": 0.0927,
+      "actual": 0.0927,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比-力量收益(暴走后)",
+      "expected": 0.2442,
+      "actual": 0.2442,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比-物理攻击收益",
+      "expected": 0.055,
+      "actual": 0.055,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比综合收益",
+      "expected": 0.3281,
+      "actual": 0.3281,
+      "pass": true
+    },
+    {
+      "check": "剑魂-力量收益",
+      "expected": 0.3647,
+      "actual": 0.3647,
+      "pass": true
+    },
+    {
+      "check": "剑魂-物理攻击收益",
+      "expected": 0.055,
+      "actual": 0.055,
+      "pass": true
+    },
+    {
+      "check": "剑魂-暴击收益",
+      "expected": 0.012,
+      "actual": 0.012,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比综合收益",
+      "expected": 0.457,
+      "actual": 0.457,
+      "pass": true
+    },
+    {
+      "check": "破极兵刃后物理攻击",
+      "expected": 2600,
+      "actual": 2600.0,
+      "pass": true
+    },
+    {
+      "check": "破极兵刃+CC套协同总物理攻击",
+      "expected": 2743,
+      "actual": 2743.0,
+      "pass": true
+    },
+    {
+      "check": "边际对偶(剑魂百分比/狂战士固伤)",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "check": "狂战士技能分类正确性",
+      "expected": "固伤4+百分比2+混合1",
+      "actual": "固伤4+百分比2+混合1",
+      "pass": true
+    },
+    {
+      "check": "剑魂技能分类正确性(全百分比)",
+      "expected": "全百分比",
+      "actual": "全百分比",
+      "pass": true
+    },
+    {
+      "check": "数据来源标注完整性",
+      "expected": "所有数据有来源标注",
+      "actual": "所有数据有来源标注（DNF Wiki/NGA/任务11-17验证体系）",
+      "pass": true
+    },
+    {
+      "check": "固伤公式架构正确性",
+      "expected": "独立/250系数",
+      "actual": "独立/250系数",
+      "pass": true
+    },
+    {
+      "check": "百分比公式架构正确性",
+      "expected": "物理攻击×倍率×(1+力量/250)",
+      "actual": "物理攻击×倍率×(1+力量/250)",
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比-暴击收益(与固伤相同)",
+      "expected": 0.012,
+      "actual": 0.0118,
+      "pass": true
+    },
+    {
+      "check": "物理攻击收益公式为直接乘数",
+      "expected": "phy_new/phy_old-1",
+      "actual": "phy_new/phy_old-1",
+      "pass": true
+    },
+    {
+      "check": "CC套6件阈值机制描述正确",
+      "expected": "仅6件激活套装效果",
+      "actual": "仅6件激活套装效果",
+      "pass": true
+    },
+    {
+      "check": "狂战士暴走后力量",
+      "expected": 1019.2,
+      "actual": 1019.1999999999999,
+      "pass": true
+    },
+    {
+      "check": "破极兵刃物理攻击+30%",
+      "expected": 0.3,
+      "actual": 0.3,
+      "pass": true
+    },
+    {
+      "check": "暴击伤害倍率=1.5",
+      "expected": 1.5,
+      "actual": 1.5,
+      "pass": true
+    }
+  ],
+  "conclusion": "通过"
+}
