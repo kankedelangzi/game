@@ -1,28 +1,32 @@
 {
-  "version": "v1074",
-  "timestamp": "2026-07-01T01:38:00+08:00",
-  "cc_6pc_attrs": {
-    "力量": 310,
-    "物理攻击": 110,
-    "独立攻击": 120,
-    "暴击率": 0.03
+  "version": "v1076",
+  "timestamp": "2026-07-01 01:51:09",
+  "cc_set_attributes": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical_rate": 3
   },
-  "berserker": {
-    "力量收益": 17.2222,
-    "物理攻击收益": 4.4,
-    "独立攻击收益": 4.8,
-    "暴击收益": 3.1579,
-    "固伤综合": 7.9579,
-    "百分比综合": 29.5801
+  "berserker_fixed": {
+    "independent_gain": 48.0,
+    "critical_gain": 3.0,
+    "total": 51.0
   },
-  "swordsman": {
-    "力量收益": 17.2222,
-    "物理攻击收益": 4.4,
-    "独立攻击收益": 4.8,
-    "暴击收益": 3.1579,
-    "百分比综合": 29.5801
+  "berserker_percent": {
+    "strength_gain": 7.75,
+    "physical_attack_gain": 2.2,
+    "independent_gain": 48.0,
+    "critical_gain": 3.0,
+    "total": 60.95
   },
-  "marginal_duality": 3.717078,
-  "checks_passed": 19,
-  "checks_total": 19
+  "swordsman_percent": {
+    "strength_gain": 7.75,
+    "physical_attack_gain": 2.2,
+    "independent_gain": 48.0,
+    "critical_gain": 3.0,
+    "total": 60.95
+  },
+  "marginal_duality": 1.195098,
+  "pass_count": 15,
+  "total_count": 15
 }
