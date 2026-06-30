@@ -1,39 +1,28 @@
 {
-  "version": "v1029",
-  "timestamp": "2026-06-30T16:55:00+08:00",
-  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
-  "cc_set": {
-    "strength": 310,
-    "physical_attack": 110,
-    "independent_attack": 120,
-    "crit_rate": 3.0
+  "version": "v1031",
+  "timestamp": "2026-06-30T17:50:00+08:00",
+  "task": "CC套（宫廷套装）各职业加成数值",
+  "results": {
+    "cc_str_total": 310,
+    "cc_phy_total": 110,
+    "cc_ind_total": 120,
+    "cc_cri_total": 3.0,
+    "bs_ind_gain": 8.0,
+    "bs_cri_gain": 1.18,
+    "bs_fixed_total": 9.27,
+    "bs_str_gain": 24.42,
+    "bs_phy_gain": 5.5,
+    "bs_cri_gain_pct": 1.18,
+    "bs_pct_total": 32.81,
+    "sm_str_gain": 36.47,
+    "sm_phy_gain": 5.5,
+    "sm_cri_gain": 1.2,
+    "sm_pct_total": 45.7,
+    "marginal_dual": 1.392888
   },
-  "berserker": {
-    "fixed": {
-      "independent_attack_bonus": 8.0,
-      "crit_bonus": 1.1765,
-      "total": 9.2706
-    },
-    "percent": {
-      "strength_bonus": 24.4248,
-      "physical_attack_bonus": 5.5,
-      "crit_bonus": 1.1765,
-      "total": 32.8125
-    }
-  },
-  "swordsman": {
-    "percent": {
-      "strength_bonus": 36.4706,
-      "physical_attack_bonus": 5.5,
-      "crit_bonus": 1.2,
-      "total": 45.7042
-    }
-  },
-  "marginal_duality": 4.93002,
-  "verification": {
-    "total_checks": 15,
-    "passed": 15,
-    "failed": 0,
-    "pass_rate": "100%"
-  }
+  "all_pass": false,
+  "marginal_dual": 1.392888,
+  "marginal_dual_expected": 4.93002,
+  "checks": 16,
+  "passed": 15
 }
