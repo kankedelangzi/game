@@ -1,0 +1,42 @@
+{
+  "version": "v1036",
+  "timestamp": "2026-06-30T19:21:16.819114",
+  "cc_set": {
+    "str": 310,
+    "phys_atk": 110,
+    "indep_atk": 120,
+    "crit": 3.0
+  },
+  "berserker": {
+    "base": {
+      "str": 728,
+      "str_berserk": 1019.2,
+      "phys_atk": 2000,
+      "indep_atk": 1250,
+      "crit": 55.0
+    },
+    "fixed_gain_indep": 8.0,
+    "fixed_gain_crit": 1.1765,
+    "fixed_gain_total": 9.2706,
+    "pct_gain_str": 24.4248,
+    "pct_gain_phys": 5.5,
+    "pct_gain_crit": 1.1765,
+    "pct_gain_total": 32.8125
+  },
+  "swordsman": {
+    "base": {
+      "str": 600,
+      "phys_atk": 2000,
+      "crit": 50.0
+    },
+    "pct_gain_str": 36.4706,
+    "pct_gain_phys": 5.5,
+    "pct_gain_crit": 1.2,
+    "pct_gain_total": 45.7042
+  },
+  "marginal_dual": 4.93002,
+  "marginal_dual_expected": 4.929881,
+  "marginal_dual_diff": 0.000139,
+  "checks_passed": 15,
+  "checks_total": 15
+}
