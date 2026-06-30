@@ -1,0 +1,111 @@
+{
+  "version": "v1034",
+  "timestamp": "2026-06-30T19:07:00+08:00",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "checks_total": 15,
+  "checks_passed": 15,
+  "checks_failed": 0,
+  "pass_rate": "15/15",
+  "marginal_duality": 4.929881,
+  "cc_stats": {
+    "str": 310,
+    "phys_atk": 110,
+    "indep_atk": 120,
+    "crit_rate": 3.0
+  },
+  "berserker_fixed_total": 9.27,
+  "berserker_pct_total": 32.81,
+  "swordsman_pct_total": 45.7,
+  "checks": [
+    {
+      "name": "CC套力量合计",
+      "actual": 310,
+      "expected": 310,
+      "passed": true
+    },
+    {
+      "name": "CC套物理攻击合计",
+      "actual": 110,
+      "expected": 110,
+      "passed": true
+    },
+    {
+      "name": "CC套独立攻击合计",
+      "actual": 120,
+      "expected": 120,
+      "passed": true
+    },
+    {
+      "name": "CC套暴击率合计",
+      "actual": 3.0,
+      "expected": 3.0,
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤-独立攻击收益",
+      "actual": 8.0,
+      "expected": 8.0,
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤-暴击收益",
+      "actual": 1.18,
+      "expected": 1.18,
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤综合收益",
+      "actual": 9.27,
+      "expected": 9.27,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比-力量收益",
+      "actual": 24.42,
+      "expected": 24.42,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比-物理攻击收益",
+      "actual": 5.5,
+      "expected": 5.5,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比综合收益",
+      "actual": 32.81,
+      "expected": 32.81,
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比-力量收益",
+      "actual": 36.47,
+      "expected": 36.47,
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比-物理攻击收益",
+      "actual": 5.5,
+      "expected": 5.5,
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比-暴击收益",
+      "actual": 1.18,
+      "expected": 1.18,
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比综合收益",
+      "actual": 45.7,
+      "expected": 45.7,
+      "passed": true
+    },
+    {
+      "name": "边际对偶",
+      "actual": 4.929881,
+      "expected": 4.93002,
+      "passed": true
+    }
+  ]
+}
