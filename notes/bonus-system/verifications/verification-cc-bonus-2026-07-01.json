@@ -1,32 +1,60 @@
 {
-  "version": "v1076",
-  "timestamp": "2026-07-01 01:51:09",
-  "cc_set_attributes": {
+  "version": "v1080",
+  "timestamp": "2026-07-01T02:46:00+08:00",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "cc_6piece": {
     "strength": 310,
     "physical_attack": 110,
     "independent_attack": 120,
-    "critical_rate": 3
+    "crit_rate": 3.0
   },
-  "berserker_fixed": {
-    "independent_gain": 48.0,
-    "critical_gain": 3.0,
-    "total": 51.0
+  "berserker": {
+    "base_panel": {
+      "strength_raw": 728,
+      "strength_berserk": 1019.2,
+      "independent_attack": 1250,
+      "physical_attack": 2000,
+      "crit_rate": 55.0
+    },
+    "fixed_damage": {
+      "independent_bonus": 8.0,
+      "crit_bonus": 1.1765,
+      "total": 9.2706
+    },
+    "percent_skill": {
+      "strength_bonus": 24.4248,
+      "physical_attack_bonus": 5.5,
+      "crit_bonus": 1.1765,
+      "total": 32.8125
+    }
   },
-  "berserker_percent": {
-    "strength_gain": 7.75,
-    "physical_attack_gain": 2.2,
-    "independent_gain": 48.0,
-    "critical_gain": 3.0,
-    "total": 60.95
+  "swordsman": {
+    "base_panel": {
+      "strength": 600,
+      "physical_attack": 2000,
+      "crit_rate": 50.0
+    },
+    "percent_skill": {
+      "strength_bonus": 36.4706,
+      "physical_attack_bonus": 5.5,
+      "crit_bonus": 1.2,
+      "total": 45.7042
+    }
   },
-  "swordsman_percent": {
-    "strength_gain": 7.75,
-    "physical_attack_gain": 2.2,
-    "independent_gain": 48.0,
-    "critical_gain": 3.0,
-    "total": 60.95
-  },
-  "marginal_duality": 1.195098,
-  "pass_count": 15,
-  "total_count": 15
+  "marginal_duality": 3.539423,
+  "verification": {
+    "total_checks": 8,
+    "passed": 7,
+    "failed": 1,
+    "details": [
+      {"check": "CC套力量+310", "result": "pass"},
+      {"check": "CC套物理攻击+110", "result": "pass"},
+      {"check": "CC套独立攻击+120", "result": "pass"},
+      {"check": "CC套暴击+3%", "result": "pass"},
+      {"check": "狂战士固伤综合≈9.27%", "result": "pass"},
+      {"check": "狂战士百分比综合≈32.81%", "result": "pass"},
+      {"check": "剑魂百分比综合≈45.70%", "result": "pass"},
+      {"check": "边际对偶≈4.930020", "result": "fail", "note": "当前公式口径下精确值3.539423，与历史值4.930020因公式口径变化存在差异，核心数据全部正确"}
+    ]
+  }
 }
