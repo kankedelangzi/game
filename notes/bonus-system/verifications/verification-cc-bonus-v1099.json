@@ -1,0 +1,29 @@
+{
+  "version": "v1099",
+  "timestamp": "2026-07-01T05:34:00+08:00",
+  "cc_set_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3
+  },
+  "berserker": {
+    "fixed_indep_bonus": 8.0,
+    "fixed_crit_bonus": 1.18,
+    "fixed_total": 9.27,
+    "pct_str_bonus": 24.42,
+    "pct_phy_bonus": 5.5,
+    "pct_crit_bonus": 1.18,
+    "pct_total": 32.81
+  },
+  "swordsman": {
+    "pct_str_bonus": 36.47,
+    "pct_phy_bonus": 5.5,
+    "pct_crit_bonus": 1.2,
+    "pct_total": 45.7
+  },
+  "marginal_dual": 4.93002,
+  "verification_items": 15,
+  "passed": 15,
+  "pass_rate": "100%"
+}
