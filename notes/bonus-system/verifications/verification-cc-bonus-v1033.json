@@ -1,0 +1,29 @@
+{
+  "version": "v1033",
+  "timestamp": "2026-06-30 19:01:53",
+  "cc_set": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical_rate": 3
+  },
+  "berserker_fixed": {
+    "independent_ratio": 8.0,
+    "critical_ratio": 1.1765,
+    "total": 9.2706
+  },
+  "berserker_percent": {
+    "strength_ratio": 24.4248,
+    "physical_ratio": 5.5,
+    "critical_ratio": 1.1765,
+    "total": 32.8125
+  },
+  "swordsman_percent": {
+    "strength_ratio": 36.4706,
+    "physical_ratio": 5.5,
+    "critical_ratio": 1.2,
+    "total": 45.7042
+  },
+  "marginal_duality": 4.93002,
+  "notes": "狂战士暴击收益1.1765%≈1.2%（四舍五入差异0.02pp，已知可接受差异）"
+}
