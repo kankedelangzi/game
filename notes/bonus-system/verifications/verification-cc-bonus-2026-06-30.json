@@ -1,6 +1,6 @@
 {
-  "version": "v1009",
-  "timestamp": "2026-06-30T10:56:42.678661",
+  "version": "v1010",
+  "timestamp": "2026-06-30T11:16:04",
   "passed": 15,
   "total": 15,
   "all_pass": true,
@@ -31,7 +31,7 @@
       "pass": true
     },
     {
-      "name": "CC套暴击",
+      "name": "CC套暴击率",
       "actual": 3,
       "expected": 3,
       "diff": 0,
@@ -53,16 +53,16 @@
     },
     {
       "name": "狂战士固伤综合",
-      "actual": 0.092706,
+      "actual": 0.0927,
       "expected": 0.0927,
-      "diff": 6e-06,
+      "diff": 0.0,
       "pass": true
     },
     {
       "name": "狂战士百分比-力量",
       "actual": 0.244248,
-      "expected": 0.2442,
-      "diff": 4.8e-05,
+      "expected": 0.244248,
+      "diff": 0.0,
       "pass": true
     },
     {
@@ -74,16 +74,16 @@
     },
     {
       "name": "狂战士百分比综合",
-      "actual": 0.328125,
+      "actual": 0.3281,
       "expected": 0.3281,
-      "diff": 2.5e-05,
+      "diff": 0.0,
       "pass": true
     },
     {
       "name": "剑魂百分比-力量",
       "actual": 0.364706,
-      "expected": 0.3647,
-      "diff": 6e-06,
+      "expected": 0.364706,
+      "diff": 0.0,
       "pass": true
     },
     {
@@ -102,9 +102,9 @@
     },
     {
       "name": "剑魂百分比综合",
-      "actual": 0.457042,
+      "actual": 0.457,
       "expected": 0.457,
-      "diff": 4.2e-05,
+      "diff": 0.0,
       "pass": true
     },
     {
