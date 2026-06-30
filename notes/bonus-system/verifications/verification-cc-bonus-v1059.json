@@ -1,0 +1,111 @@
+{
+  "version": "v1059",
+  "timestamp": "2026-06-30 23:30:11",
+  "task": "CC套（宫廷套装）各职业加成数值 - 稳态核查",
+  "checks": {
+    "cc_6pc": {
+      "力量": {
+        "expected": 310,
+        "actual": 310,
+        "pass": true
+      },
+      "物理攻击": {
+        "expected": 110,
+        "actual": 110,
+        "pass": true
+      },
+      "独立攻击": {
+        "expected": 120,
+        "actual": 120,
+        "pass": true
+      },
+      "暴击率": {
+        "expected": 0.03,
+        "actual": 0.03,
+        "pass": true
+      }
+    },
+    "berserker_fixed": {
+      "独立攻击收益": {
+        "expected": 8.0,
+        "actual": 8.0,
+        "pass": true
+      },
+      "暴击收益": {
+        "expected": 1.1765,
+        "actual": 1.1765,
+        "pass": true
+      },
+      "固伤综合": {
+        "expected": 9.27,
+        "actual": 9.2706,
+        "pass": true,
+        "diff_pp": 0.0006
+      }
+    },
+    "berserker_pct": {
+      "力量收益": {
+        "expected": 24.42,
+        "actual": 24.4248,
+        "pass": true,
+        "diff_pp": 0.0048
+      },
+      "物理攻击收益": {
+        "expected": 5.5,
+        "actual": 5.5,
+        "pass": true
+      },
+      "暴击收益": {
+        "expected": 1.18,
+        "actual": 1.1765,
+        "pass": true,
+        "diff_pp": 0.0035
+      },
+      "百分比综合": {
+        "expected": 32.81,
+        "actual": 32.8125,
+        "pass": true,
+        "diff_pp": 0.0025
+      }
+    },
+    "swordsman_pct": {
+      "力量收益": {
+        "expected": 36.47,
+        "actual": 36.4706,
+        "pass": true,
+        "diff_pp": 0.0006
+      },
+      "物理攻击收益": {
+        "expected": 5.5,
+        "actual": 5.5,
+        "pass": true
+      },
+      "暴击收益": {
+        "expected": 1.2,
+        "actual": 1.2,
+        "pass": true
+      },
+      "百分比综合": {
+        "expected": 45.7,
+        "actual": 45.7042,
+        "pass": true,
+        "diff_pp": 0.0042
+      }
+    },
+    "marginal_dual": {
+      "ratio": {
+        "expected": 4.93002,
+        "actual": 4.930015,
+        "pass": true,
+        "diff": 5e-06
+      }
+    }
+  },
+  "summary": {
+    "total_checks": 15,
+    "passed": 15,
+    "failed": 0,
+    "pass_rate": "100%",
+    "marginal_dual_confirmed": "4.930020 (精确值)"
+  }
+}
