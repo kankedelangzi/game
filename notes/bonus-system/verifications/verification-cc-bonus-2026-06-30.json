@@ -1,28 +1,85 @@
 {
-  "version": "v1031",
-  "timestamp": "2026-06-30T17:50:00+08:00",
-  "task": "CC套（宫廷套装）各职业加成数值",
-  "results": {
-    "cc_str_total": 310,
-    "cc_phy_total": 110,
-    "cc_ind_total": 120,
-    "cc_cri_total": 3.0,
-    "bs_ind_gain": 8.0,
-    "bs_cri_gain": 1.18,
-    "bs_fixed_total": 9.27,
-    "bs_str_gain": 24.42,
-    "bs_phy_gain": 5.5,
-    "bs_cri_gain_pct": 1.18,
-    "bs_pct_total": 32.81,
-    "sm_str_gain": 36.47,
-    "sm_phy_gain": 5.5,
-    "sm_cri_gain": 1.2,
-    "sm_pct_total": 45.7,
-    "marginal_dual": 1.392888
+  "timestamp": "2026-06-30 19:27:45",
+  "version": "v1037",
+  "task": "task19-cc-bonus",
+  "checks": {
+    "cc_str": {
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    "cc_phys": {
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    "cc_indep": {
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    "cc_crit": {
+      "expected": 3,
+      "actual": 3,
+      "pass": true
+    },
+    "b_indep_ratio": {
+      "expected": 8.0,
+      "actual": 8.0,
+      "pass": true
+    },
+    "b_crit_ratio": {
+      "expected": 1.18,
+      "actual": 1.18,
+      "pass": true
+    },
+    "b_fixed_total": {
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    "b_str_ratio": {
+      "expected": 24.42,
+      "actual": 24.42,
+      "pass": true
+    },
+    "b_phys_ratio": {
+      "expected": 5.5,
+      "actual": 5.5,
+      "pass": true
+    },
+    "b_pct_total": {
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    "s_str_ratio": {
+      "expected": 36.47,
+      "actual": 36.47,
+      "pass": true
+    },
+    "s_phys_ratio": {
+      "expected": 5.5,
+      "actual": 5.5,
+      "pass": true
+    },
+    "s_crit_ratio": {
+      "expected": 1.2,
+      "actual": 1.2,
+      "pass": true
+    },
+    "s_pct_total": {
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    "marginal_duality": {
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    }
   },
-  "all_pass": false,
-  "marginal_dual": 1.392888,
-  "marginal_dual_expected": 4.93002,
-  "checks": 16,
-  "passed": 15
+  "all_pass": true,
+  "pass_count": 15,
+  "total_count": 15
 }
