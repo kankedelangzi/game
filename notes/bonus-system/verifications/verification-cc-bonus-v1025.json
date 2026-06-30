@@ -1,0 +1,21 @@
+{
+  "version": "v1025",
+  "timestamp": "2026-06-30T16:14:51+08:00",
+  "total_checks": 19,
+  "passed": 19,
+  "cc_set_6pc": {
+    "power": 310,
+    "phy_atk": 110,
+    "independent": 120,
+    "crit": 0.03
+  },
+  "berserker": {
+    "fixed_total": 0.0927,
+    "percent_total": 0.3281
+  },
+  "swordsman": {
+    "percent_total": 0.457
+  },
+  "marginal_dual": 4.93002,
+  "notes": "v1025稳态核查：19/19 Python独立验算100%通过，边际对偶4.930020精确值确认，核心数据全部正确，连续稳态维护保持100%通过率"
+}
