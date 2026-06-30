@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-06-30T20:50:03.790994",
+  "version": "v1047",
+  "cc_set": {
+    "str": 310,
+    "phy": 110,
+    "ind": 120,
+    "cri": 0.03
+  },
+  "berserker": {
+    "fixed_gain": 0.092706,
+    "pct_gain": 0.328125,
+    "ind_gain": 0.08,
+    "cri_gain": 0.011765,
+    "str_gain": 0.244248,
+    "phy_gain": 0.055
+  },
+  "swordsman": {
+    "pct_gain": 0.457042,
+    "str_gain": 0.364706,
+    "phy_gain": 0.055,
+    "cri_gain": 0.012
+  },
+  "marginal_duality": 4.93002,
+  "all_pass": true
+}
