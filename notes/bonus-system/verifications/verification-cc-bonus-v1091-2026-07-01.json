@@ -1,0 +1,94 @@
+{
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "version": "v1091",
+  "timestamp": "2026-07-01 04:28:03",
+  "total_checks": 15,
+  "pass_count": 15,
+  "fail_count": 0,
+  "pass_rate": "15/15 (100.0%)",
+  "all_pass": true,
+  "core_data": {
+    "cc_6pc_stats": "力量+310/物理攻击+110/独立攻击+120/暴击+3.0%",
+    "berserker_fixed": "+9.27%",
+    "berserker_percent": "+32.81%",
+    "swordsman_percent": "+43.95%",
+    "marginal_duality": "4.740937x"
+  },
+  "details": {
+    "力量合计": {
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    "物理攻击合计": {
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    "独立攻击合计": {
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    "暴击率合计": {
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    "狂战士独立攻击收益": {
+      "expected": 0.08,
+      "actual": 0.08,
+      "pass": true
+    },
+    "狂战士暴击收益": {
+      "expected": 0.011765,
+      "actual": 0.011765,
+      "pass": true
+    },
+    "狂战士固伤综合": {
+      "expected": 0.0927,
+      "actual": 0.092706,
+      "pass": true
+    },
+    "狂战士力量收益": {
+      "expected": 0.2442,
+      "actual": 0.244248,
+      "pass": true
+    },
+    "狂战士物理攻击收益": {
+      "expected": 0.055,
+      "actual": 0.055,
+      "pass": true
+    },
+    "狂战士百分比综合": {
+      "expected": 0.3281,
+      "actual": 0.328125,
+      "pass": true
+    },
+    "剑魂力量收益": {
+      "expected": 0.3647,
+      "actual": 0.364706,
+      "pass": true
+    },
+    "剑魂物理攻击收益": {
+      "expected": 0.0423,
+      "actual": 0.042308,
+      "pass": true
+    },
+    "剑魂暴击收益": {
+      "expected": 0.012,
+      "actual": 0.012,
+      "pass": true
+    },
+    "剑魂百分比综合": {
+      "expected": 0.4395,
+      "actual": 0.439513,
+      "pass": true
+    },
+    "边际对偶": {
+      "expected": 4.740937,
+      "actual": 4.740937,
+      "pass": true
+    }
+  }
+}

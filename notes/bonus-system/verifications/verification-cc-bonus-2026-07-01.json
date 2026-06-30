@@ -1,83 +1,28 @@
 {
-  "version": "v1088",
-  "results": {
-    "timestamp": "2026-07-01 03:57:22",
-    "version": "v1088",
-    "cc_set": {
-      "strength": 310,
-      "phys_atk": 110,
-      "indep_atk": 120,
-      "crit": 3
-    },
-    "berserker": {
-      "fixed_indep_gain": 8.0,
-      "fixed_crit_gain": 1.18,
-      "fixed_total_gain": 9.27,
-      "pct_str_gain": 24.42,
-      "pct_phy_gain": 5.5,
-      "pct_crit_gain": 1.18,
-      "pct_total_gain": 32.81
-    },
-    "swordsman": {
-      "pct_str_gain": 36.47,
-      "pct_phy_gain": 5.5,
-      "pct_crit_gain": 1.2,
-      "pct_total_gain": 45.7
-    },
-    "marginal_duality": 4.93002,
-    "expected_marginal_duality": 4.93002
+  "timestamp": "2026-07-01T04:27:17.292335",
+  "version": "v1091",
+  "cc_stats": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 3.0
   },
-  "checks": [
-    {
-      "item": "CC套strength",
-      "expected": 310,
-      "actual": 310,
-      "pass": true
-    },
-    {
-      "item": "CC套phys_atk",
-      "expected": 110,
-      "actual": 110,
-      "pass": true
-    },
-    {
-      "item": "CC套indep_atk",
-      "expected": 120,
-      "actual": 120,
-      "pass": true
-    },
-    {
-      "item": "CC套crit",
-      "expected": 3,
-      "actual": 3,
-      "pass": true
-    },
-    {
-      "item": "狂战士固伤综合",
-      "expected": 9.27,
-      "actual": 9.27,
-      "pass": true
-    },
-    {
-      "item": "狂战士百分比综合",
-      "expected": 32.81,
-      "actual": 32.81,
-      "pass": true
-    },
-    {
-      "item": "剑魂百分比综合",
-      "expected": 45.7,
-      "actual": 45.7,
-      "pass": true
-    },
-    {
-      "item": "边际对偶",
-      "expected": 4.93002,
-      "actual": 4.93002,
-      "pass": true
-    }
-  ],
-  "passed": 8,
-  "total": 8,
-  "pass_rate": 100.0
+  "berserker": {
+    "fixed_independent": 40.0,
+    "fixed_crit": 2.6087,
+    "fixed_total": 43.65,
+    "pct_strength": 17.22,
+    "pct_physical": 7.33,
+    "pct_crit": 2.6087,
+    "pct_total": 29.1
+  },
+  "swordsman": {
+    "pct_strength": 17.22,
+    "pct_physical": 7.33,
+    "pct_crit": 2.6087,
+    "pct_total": 29.1
+  },
+  "marginal_duality": 0.66665,
+  "checks_passed": 4,
+  "checks_total": 8
 }

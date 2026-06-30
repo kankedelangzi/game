@@ -1,0 +1,83 @@
+{
+  "version": "v1091",
+  "timestamp": "2026-07-01T04:21:00+08:00",
+  "passed": 4,
+  "total": 8,
+  "pass_rate": 50.0,
+  "results": {
+    "version": "v1091",
+    "timestamp": "2026-07-01T04:21:00+08:00",
+    "cc_6piece_stats": {
+      "力量": 310,
+      "物理攻击": 110,
+      "独立攻击": 120,
+      "暴击率": 3.0
+    },
+    "berserker": {
+      "fixed_independent": 4.8,
+      "fixed_critical": 3.4483,
+      "fixed_total": 8.2483,
+      "pct_strength": 15.5,
+      "pct_physical": 4.4,
+      "pct_critical": 3.4483,
+      "pct_total": 23.3483
+    },
+    "swordsman": {
+      "pct_strength": 15.5,
+      "pct_physical": 4.4,
+      "pct_critical": 3.4483,
+      "pct_total": 23.3483
+    },
+    "marginal_duality": 2.830686
+  },
+  "checks": [
+    {
+      "item": "cc_str",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "item": "cc_phy",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "item": "cc_ind",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "item": "cc_crit",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    {
+      "item": "berserker_fixed_total",
+      "expected": 9.27,
+      "actual": 8.2483,
+      "pass": false
+    },
+    {
+      "item": "berserker_pct_total",
+      "expected": 32.81,
+      "actual": 23.3483,
+      "pass": false
+    },
+    {
+      "item": "swordsman_pct_total",
+      "expected": 45.7,
+      "actual": 23.3483,
+      "pass": false
+    },
+    {
+      "item": "marginal_duality",
+      "expected": 4.93002,
+      "actual": 2.830686,
+      "pass": false
+    }
+  ]
+}
