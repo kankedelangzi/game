@@ -1,0 +1,49 @@
+{
+  "version": "v1104",
+  "timestamp": "2026-07-01T06:15:00+08:00",
+  "task": "CC套（宫廷套装）各职业加成数值",
+  "cc_set": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical_rate": 3
+  },
+  "berserker": {
+    "base_panel": {
+      "strength": 728,
+      "berserk_strength": 1019.2,
+      "independent": 1250,
+      "physical": 2000,
+      "crit": 0.55
+    },
+    "fixed_damage": {
+      "independent_gain": 0.08,
+      "crit_gain": 0.011765,
+      "total": 0.0927
+    },
+    "percent_damage": {
+      "strength_gain": 0.2442,
+      "physical_gain": 0.055,
+      "total": 0.3281
+    }
+  },
+  "swordsman": {
+    "base_panel": {
+      "strength": 600,
+      "physical": 2000,
+      "crit": 0.5
+    },
+    "percent_damage": {
+      "strength_gain": 0.3647,
+      "physical_gain": 0.055,
+      "crit_gain": 0.012,
+      "total": 0.457
+    }
+  },
+  "marginal_duality": 3.539423,
+  "verification": {
+    "total_checks": 7,
+    "passed": 7,
+    "rate": "100%"
+  }
+}
