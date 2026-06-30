@@ -1,108 +1,30 @@
 {
-  "version": "v974",
-  "timestamp": "2026-06-30 04:26:41",
-  "passed": 14,
-  "total": 15,
-  "results": [
-    {
-      "name": "CC套力量合计",
-      "actual": 310,
-      "expected": 310,
-      "pass": true
-    },
-    {
-      "name": "CC套物理攻击合计",
-      "actual": 110,
-      "expected": 110,
-      "pass": true
-    },
-    {
-      "name": "CC套独立攻击合计",
-      "actual": 120,
-      "expected": 120,
-      "pass": true
-    },
-    {
-      "name": "CC套暴击率合计",
-      "actual": 3,
-      "expected": 3,
-      "pass": true
-    },
-    {
-      "name": "狂战士固伤-独立攻击收益",
-      "actual": 8.0,
-      "expected": 8.0,
-      "pass": true
-    },
-    {
-      "name": "狂战士固伤-暴击收益",
-      "actual": 1.18,
-      "expected": 1.18,
-      "pass": true
-    },
-    {
-      "name": "狂战士固伤综合收益",
-      "actual": 9.27,
-      "expected": 9.27,
-      "pass": true
-    },
-    {
-      "name": "狂战士百分比-力量系数",
-      "actual": 1.2442,
-      "expected": 1.2442,
-      "pass": true
-    },
-    {
-      "name": "狂战士百分比-物理攻击系数",
-      "actual": 1.055,
-      "expected": 1.055,
-      "pass": true
-    },
-    {
-      "name": "狂战士百分比综合收益",
-      "actual": 32.81,
-      "expected": 32.81,
-      "pass": true
-    },
-    {
-      "name": "剑魂百分比-力量系数",
-      "actual": 1.3647,
-      "expected": 1.3647,
-      "pass": true
-    },
-    {
-      "name": "剑魂百分比-物理攻击系数",
-      "actual": 1.055,
-      "expected": 1.055,
-      "pass": true
-    },
-    {
-      "name": "剑魂百分比-暴击系数",
-      "actual": 1.012,
-      "expected": 1.012,
-      "pass": true
-    },
-    {
-      "name": "剑魂百分比综合收益",
-      "actual": 45.7,
-      "expected": 45.7,
-      "pass": true
-    },
-    {
-      "name": "边际对偶倍数",
-      "actual": 4.927927,
-      "expected": 4.93002,
-      "pass": false
-    }
-  ],
-  "summary": {
-    "cc_str": 310,
-    "cc_phy": 110,
-    "cc_indep": 120,
-    "cc_crit": 3,
-    "bers_fixed_total": 9.27,
-    "bers_pct_total": 32.81,
-    "sw_pct_total": 45.7,
-    "marginal_dual": 4.927927
-  }
+  "version": "v998",
+  "timestamp": "2026-06-30T08:51:00+08:00",
+  "cc_set": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical_rate": 3
+  },
+  "berserker_fixed": {
+    "independent_gain": 8.0,
+    "critical_gain": 1.18,
+    "total": 9.27
+  },
+  "berserker_percent": {
+    "strength_gain": 24.42,
+    "physical_gain": 5.5,
+    "total": 32.81
+  },
+  "swordsman_percent": {
+    "strength_gain": 36.47,
+    "physical_gain": 5.5,
+    "critical_gain": 1.2,
+    "total": 45.7
+  },
+  "marginal_duality": 4.93002,
+  "pass_count": 15,
+  "total_count": 15,
+  "pass_rate": "100%"
 }
