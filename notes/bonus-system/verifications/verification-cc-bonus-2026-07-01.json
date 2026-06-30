@@ -1,110 +1,126 @@
 {
-  "version": "v1068",
-  "timestamp": "2026-07-01 01:09:21",
-  "total": 15,
-  "passed": 15,
-  "results": [
-    {
-      "check": "CC套力量",
-      "expected": 310,
-      "actual": 310,
-      "pass": true
-    },
-    {
-      "check": "CC套物理攻击",
-      "expected": 110,
-      "actual": 110,
-      "pass": true
-    },
-    {
-      "check": "CC套独立攻击",
-      "expected": 120,
-      "actual": 120,
-      "pass": true
-    },
-    {
-      "check": "CC套暴击率",
-      "expected": 3.0,
-      "actual": 3.0,
-      "pass": true
-    },
-    {
-      "check": "狂战士固伤-独立攻击收益",
-      "expected": 8.0,
-      "actual": 8.0,
-      "pass": true
-    },
-    {
-      "check": "狂战士固伤-暴击收益",
-      "expected": 1.2,
-      "actual": 1.18,
-      "pass": true
-    },
-    {
-      "check": "狂战士固伤综合收益",
-      "expected": 9.27,
-      "actual": 9.27,
-      "pass": true
-    },
-    {
-      "check": "狂战士百分比-力量收益",
-      "expected": 24.42,
-      "actual": 24.42,
-      "pass": true
-    },
-    {
-      "check": "狂战士百分比-物理攻击收益",
-      "expected": 5.5,
-      "actual": 5.5,
-      "pass": true
-    },
-    {
-      "check": "狂战士百分比综合收益",
-      "expected": 32.81,
-      "actual": 32.81,
-      "pass": true
-    },
-    {
-      "check": "剑魂百分比-力量收益",
-      "expected": 36.47,
-      "actual": 36.47,
-      "pass": true
-    },
-    {
-      "check": "剑魂百分比-物理攻击收益",
-      "expected": 5.5,
-      "actual": 5.5,
-      "pass": true
-    },
-    {
-      "check": "剑魂百分比-暴击收益",
-      "expected": 1.2,
-      "actual": 1.2,
-      "pass": true
-    },
-    {
-      "check": "剑魂百分比综合收益",
-      "expected": 45.7,
-      "actual": 45.7,
-      "pass": true
-    },
-    {
-      "check": "边际对偶（剑魂百分比/狂战士固伤）",
-      "expected": 4.93,
-      "actual": 4.93,
-      "pass": true
-    }
-  ],
-  "marginal_dual": 4.93002,
-  "core_data": {
-    "cc_6piece": {
+  "version": "v1072",
+  "timestamp": "2026-07-01 01:29:02",
+  "results": {
+    "timestamp": "2026-07-01 01:29:02",
+    "version": "v1072",
+    "cc_set_stats": {
       "力量": 310,
       "物理攻击": 110,
       "独立攻击": 120,
-      "暴击率": 3.0
+      "暴击率": 0.03
     },
-    "berserker_fixed_total": 9.27,
-    "berserker_pct_total": 32.81,
-    "swordsman_pct_total": 45.7
-  }
+    "berserker": {
+      "fixed_indep": 48.0,
+      "fixed_crit": 3.0,
+      "fixed_total": 51.0,
+      "pct_str": 17.2222,
+      "pct_phy": 4.4,
+      "pct_indep": 48.0,
+      "pct_crit": 3.0,
+      "pct_total": 72.6222
+    },
+    "swordsman": {
+      "pct_str": 17.2222,
+      "pct_phy": 4.4,
+      "pct_indep": 48.0,
+      "pct_crit": 3.0,
+      "pct_total": 72.6222
+    },
+    "marginal_duality": 1.423965
+  },
+  "checks": [
+    {
+      "name": "CC套力量合计",
+      "passed": true,
+      "value": 310
+    },
+    {
+      "name": "CC套物理攻击合计",
+      "passed": true,
+      "value": 110
+    },
+    {
+      "name": "CC套独立攻击合计",
+      "passed": true,
+      "value": 120
+    },
+    {
+      "name": "CC套暴击率合计",
+      "passed": true,
+      "value": 0.03
+    },
+    {
+      "name": "狂战士固伤-独立",
+      "passed": true,
+      "value": 48.0
+    },
+    {
+      "name": "狂战士固伤-暴击",
+      "passed": true,
+      "value": 3.0
+    },
+    {
+      "name": "狂战士固伤综合",
+      "passed": true,
+      "value": 51.0
+    },
+    {
+      "name": "狂战士百分比-力量",
+      "passed": true,
+      "value": 17.22
+    },
+    {
+      "name": "狂战士百分比-物理攻击",
+      "passed": true,
+      "value": 4.4
+    },
+    {
+      "name": "狂战士百分比-独立",
+      "passed": true,
+      "value": 48.0
+    },
+    {
+      "name": "狂战士百分比-暴击",
+      "passed": true,
+      "value": 3.0
+    },
+    {
+      "name": "狂战士百分比综合",
+      "passed": true,
+      "value": 72.62
+    },
+    {
+      "name": "剑魂百分比-力量",
+      "passed": true,
+      "value": 17.22
+    },
+    {
+      "name": "剑魂百分比-物理攻击",
+      "passed": true,
+      "value": 4.4
+    },
+    {
+      "name": "剑魂百分比-独立",
+      "passed": true,
+      "value": 48.0
+    },
+    {
+      "name": "剑魂百分比-暴击",
+      "passed": true,
+      "value": 3.0
+    },
+    {
+      "name": "剑魂百分比综合",
+      "passed": true,
+      "value": 72.62
+    },
+    {
+      "name": "边际对偶",
+      "passed": false,
+      "value": 1.423965
+    }
+  ],
+  "passed": 17,
+  "total": 18
 }
