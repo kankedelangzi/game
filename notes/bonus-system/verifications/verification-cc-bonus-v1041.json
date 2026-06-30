@@ -1,0 +1,44 @@
+{
+  "version": "v1041",
+  "timestamp": "2026-06-30T19:59:00+08:00",
+  "task": "CC套各职业加成数值",
+  "cc_stats": {
+    "str": 310,
+    "phy_atk": 110,
+    "ind_atk": 120,
+    "crit": 0.03
+  },
+  "berserker_panel": {
+    "str": 728,
+    "str_berserk": 1019.1999999999999,
+    "ind_atk": 1250,
+    "phy_atk": 2000,
+    "crit": 0.55
+  },
+  "swordsman_panel": {
+    "str": 600,
+    "phy_atk": 2000,
+    "phy_atk_broken": 2600.0,
+    "crit": 0.5
+  },
+  "results": {
+    "berserker_fixed": {
+      "ind_gain": 8.0,
+      "crit_gain": 1.18,
+      "total": 9.27
+    },
+    "berserker_percent": {
+      "str_gain": 24.42,
+      "phy_gain": 5.5,
+      "total": 32.81
+    },
+    "swordsman_percent": {
+      "str_gain": 36.47,
+      "phy_gain": 5.5,
+      "crit_gain": 1.2,
+      "total": 45.7
+    },
+    "marginal_duality": 4.93002
+  },
+  "all_pass": true
+}
