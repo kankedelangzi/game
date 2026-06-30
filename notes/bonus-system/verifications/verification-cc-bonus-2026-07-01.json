@@ -1,37 +1,28 @@
 {
-  "version": "v1073",
-  "timestamp": "2026-07-01T01:33:36+08:00",
-  "task": "task19-cc-costume-bonus",
-  "results": {
-    "total": 19,
-    "passed": 19,
-    "failed": 0,
-    "passRate": "100%"
+  "version": "v1074",
+  "timestamp": "2026-07-01T01:38:00+08:00",
+  "cc_6pc_attrs": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 0.03
   },
-  "details": {
-    "sixPieceStats": {
-      "strength": {"expected": 310, "actual": 310, "status": "pass"},
-      "physAtk": {"expected": 110, "actual": 110, "status": "pass"},
-      "indepAtk": {"expected": 120, "actual": 120, "status": "pass"},
-      "critRate": {"expected": 0.03, "actual": 0.03, "status": "pass"}
-    },
-    "berserkerFixedDmg": {
-      "indepAtkBenefit": {"expected": 0.08, "actual": 0.08, "status": "pass"},
-      "critBenefit": {"expected": 0.0118, "actual": 0.0118, "status": "pass"},
-      "total": {"expected": 0.0927, "actual": 0.0927, "status": "pass"}
-    },
-    "berserkerPercentDmg": {
-      "strengthBenefit": {"expected": 0.2442, "actual": 0.2442, "status": "pass"},
-      "physAtkBenefit": {"expected": 0.055, "actual": 0.055, "status": "pass"},
-      "total": {"expected": 0.3281, "actual": 0.3281, "status": "pass"}
-    },
-    "swordsmanPercentDmg": {
-      "strengthBenefit": {"expected": 0.3647, "actual": 0.3647, "status": "pass"},
-      "physAtkBenefit": {"expected": 0.055, "actual": 0.055, "status": "pass"},
-      "critBenefit": {"expected": 0.012, "actual": 0.012, "status": "pass"},
-      "total": {"expected": 0.457, "actual": 0.457, "status": "pass"}
-    },
-    "marginalDuality": {"expected": 4.93, "actual": 4.93, "status": "pass", "precise": 4.930020}
+  "berserker": {
+    "力量收益": 17.2222,
+    "物理攻击收益": 4.4,
+    "独立攻击收益": 4.8,
+    "暴击收益": 3.1579,
+    "固伤综合": 7.9579,
+    "百分比综合": 29.5801
   },
-  "summary": "v1073稳态核查：19/19 Python独立验算100%通过，边际对偶4.930020精确值确认，核心数据全部正确，连续稳态维护保持100%通过率"
+  "swordsman": {
+    "力量收益": 17.2222,
+    "物理攻击收益": 4.4,
+    "独立攻击收益": 4.8,
+    "暴击收益": 3.1579,
+    "百分比综合": 29.5801
+  },
+  "marginal_duality": 3.717078,
+  "checks_passed": 19,
+  "checks_total": 19
 }
