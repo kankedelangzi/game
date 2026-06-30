@@ -1,0 +1,101 @@
+{
+  "audit_time": "2026-06-30 19:12 CST",
+  "task": "任务19 - CC套各职业加成数值分析",
+  "file": "dnf-costume-bonus.html",
+  "passed": 15,
+  "total": 15,
+  "rate": "100.0%",
+  "conclusion": "通过",
+  "results": [
+    {
+      "name": "CC套力量合计",
+      "expected": 310,
+      "actual": 310,
+      "ok": true
+    },
+    {
+      "name": "CC套物理攻击合计",
+      "expected": 110,
+      "actual": 110,
+      "ok": true
+    },
+    {
+      "name": "CC套独立攻击合计",
+      "expected": 120,
+      "actual": 120,
+      "ok": true
+    },
+    {
+      "name": "CC套暴击合计",
+      "expected": 3.0,
+      "actual": 3.0,
+      "ok": true
+    },
+    {
+      "name": "狂战士固伤综合收益",
+      "expected": 9.27,
+      "actual": 9.27,
+      "ok": true
+    },
+    {
+      "name": "狂战士百分比综合收益",
+      "expected": 32.81,
+      "actual": 32.81,
+      "ok": true
+    },
+    {
+      "name": "剑魂百分比综合收益",
+      "expected": 45.7,
+      "actual": 45.7,
+      "ok": true
+    },
+    {
+      "name": "边际对偶(剑魂/狂战士固伤)",
+      "expected": 4.93,
+      "actual": 4.93,
+      "ok": true
+    },
+    {
+      "name": "狂战士暴走后力量",
+      "expected": 1019.2,
+      "actual": 1019.2,
+      "ok": true
+    },
+    {
+      "name": "破极兵刃物理攻击",
+      "expected": 2600,
+      "actual": 2600.0,
+      "ok": true
+    },
+    {
+      "name": "狂战士固伤技能分类正确",
+      "expected": true,
+      "actual": true,
+      "ok": true
+    },
+    {
+      "name": "狂战士百分比技能分类正确",
+      "expected": true,
+      "actual": true,
+      "ok": true
+    },
+    {
+      "name": "剑魂全百分比流派正确",
+      "expected": true,
+      "actual": true,
+      "ok": true
+    },
+    {
+      "name": "HTML含来源标注",
+      "expected": true,
+      "actual": true,
+      "ok": true
+    },
+    {
+      "name": "固伤公式架构正确",
+      "expected": true,
+      "actual": true,
+      "ok": true
+    }
+  ]
+}
