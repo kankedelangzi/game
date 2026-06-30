@@ -1,30 +1,23 @@
 {
-  "version": "v998",
-  "timestamp": "2026-06-30T08:51:00+08:00",
-  "cc_set": {
-    "strength": 310,
-    "physical_attack": 110,
-    "independent_attack": 120,
-    "critical_rate": 3
+  "version": "v1002",
+  "timestamp": "2026-06-30 09:34 CST",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "status": "✅ 稳态核查通过",
+  "checks": 16,
+  "passed": 16,
+  "rate": "100%",
+  "core_data": {
+    "cc_6pc": {
+      "str": 310,
+      "phys_atk": 110,
+      "indep_atk": 120,
+      "crit": 3
+    },
+    "berserker_fixed_total": 9.27,
+    "berserker_pct_total": 32.81,
+    "swordsman_pct_total": 45.7,
+    "marginal_duality": 4.93002
   },
-  "berserker_fixed": {
-    "independent_gain": 8.0,
-    "critical_gain": 1.18,
-    "total": 9.27
-  },
-  "berserker_percent": {
-    "strength_gain": 24.42,
-    "physical_gain": 5.5,
-    "total": 32.81
-  },
-  "swordsman_percent": {
-    "strength_gain": 36.47,
-    "physical_gain": 5.5,
-    "critical_gain": 1.2,
-    "total": 45.7
-  },
-  "marginal_duality": 4.93002,
-  "pass_count": 15,
-  "total_count": 15,
-  "pass_rate": "100%"
+  "git_commit": "pending",
+  "notes": "连续稳态维护保持100%通过率，边际对偶4.930020精确值确认"
 }
