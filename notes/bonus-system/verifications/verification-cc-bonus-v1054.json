@@ -1,0 +1,28 @@
+{
+  "version": "v1054",
+  "timestamp": "2026-06-30T22:16:00+08:00",
+  "passed": 15,
+  "total": 15,
+  "cc_set": {
+    "str": 310,
+    "phy": 110,
+    "ind": 120,
+    "cri": 3.0
+  },
+  "berserker": {
+    "fixed_total": 9.27,
+    "pct_total": 32.81,
+    "ind_benefit": 8.0,
+    "cri_benefit": 1.18,
+    "str_benefit": 24.42,
+    "phy_benefit": 5.5
+  },
+  "swordsman": {
+    "pct_total": 45.7,
+    "str_benefit": 36.47,
+    "phy_benefit": 5.5,
+    "cri_benefit": 1.2
+  },
+  "marginal_duality": 4.93002,
+  "all_passed": true
+}
