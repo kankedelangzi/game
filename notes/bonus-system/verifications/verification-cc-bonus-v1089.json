@@ -1,0 +1,78 @@
+{
+  "version": "v1089",
+  "timestamp": "2026-07-01 04:13:36",
+  "cc_set_6pc": {
+    "str": 310,
+    "phy": 110,
+    "ind": 120,
+    "crit": 3.0
+  },
+  "berserker": {
+    "fixed_ind": 8.0,
+    "fixed_crit": 1.18,
+    "fixed_total": 9.27,
+    "pct_str": 24.42,
+    "pct_phy": 5.5,
+    "pct_total": 32.81
+  },
+  "swordsman": {
+    "pct_str": 36.47,
+    "pct_phy": 5.5,
+    "pct_crit": 1.2,
+    "pct_total": 45.7
+  },
+  "marginal_dual": 3.539423,
+  "checks": [
+    {
+      "item": "CC套力量合计",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "item": "CC套物理攻击合计",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "item": "CC套独立攻击合计",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "item": "CC套暴击合计",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    {
+      "item": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "item": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "item": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "item": "边际对偶",
+      "expected": 4.93002,
+      "actual": 3.539423,
+      "pass": false,
+      "note": "32.81/9.27=3.539423，非4.930020"
+    }
+  ],
+  "passed": 7,
+  "total": 8
+}
