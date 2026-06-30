@@ -1,0 +1,39 @@
+{
+  "version": "v1096",
+  "timestamp": "2026-07-01T05:04:00+08:00",
+  "cc_6pc": {
+    "strength": 310,
+    "phys_atk": 110,
+    "indep_atk": 120,
+    "crit": 3
+  },
+  "berserker": {
+    "base": {
+      "strength": 728,
+      "phys_atk": 2000,
+      "indep_atk": 1250,
+      "crit": 55
+    },
+    "post_berserk_str": 1019.2,
+    "indep_gain": 8.0,
+    "crit_gain": 1.1765,
+    "fixed_total": 9.2706,
+    "str_gain": 24.4248,
+    "phy_gain": 5.5,
+    "percent_total": 32.8125
+  },
+  "swordsman": {
+    "base": {
+      "strength": 600,
+      "phys_atk": 2000,
+      "crit": 50
+    },
+    "str_gain": 36.4706,
+    "phy_gain": 5.5,
+    "crit_gain": 1.2,
+    "percent_total": 45.7042
+  },
+  "marginal_duality": 4.93002,
+  "checks_passed": 8,
+  "checks_total": 8
+}
