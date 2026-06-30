@@ -1,0 +1,99 @@
+{
+  "version": "v1032",
+  "timestamp": "2026-06-30T18:20:00Z",
+  "total": 15,
+  "passed": 8,
+  "failed": 7,
+  "checks": [
+    {
+      "name": "CC套力量合计",
+      "actual": 310,
+      "expected": 310,
+      "pass": true
+    },
+    {
+      "name": "CC套物理攻击合计",
+      "actual": 110,
+      "expected": 110,
+      "pass": true
+    },
+    {
+      "name": "CC套独立攻击合计",
+      "actual": 120,
+      "expected": 120,
+      "pass": true
+    },
+    {
+      "name": "CC套暴击合计",
+      "actual": 3,
+      "expected": 3,
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤-独立攻击收益",
+      "actual": 8.0,
+      "expected": 48.0,
+      "pass": false
+    },
+    {
+      "name": "狂战士固伤-暴击收益",
+      "actual": 5.45,
+      "expected": 5.45,
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤综合收益",
+      "actual": 13.89,
+      "expected": 54.44,
+      "pass": false
+    },
+    {
+      "name": "狂战士百分比-力量收益",
+      "actual": 31.7,
+      "expected": 42.58,
+      "pass": false
+    },
+    {
+      "name": "狂战士百分比-物理攻击收益",
+      "actual": 5.5,
+      "expected": 5.5,
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比综合收益",
+      "actual": 46.52,
+      "expected": 54.51,
+      "pass": false
+    },
+    {
+      "name": "剑魂百分比-力量收益",
+      "actual": 36.47,
+      "expected": 51.67,
+      "pass": false
+    },
+    {
+      "name": "剑魂百分比-物理攻击收益",
+      "actual": 5.5,
+      "expected": 5.5,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比-暴击收益",
+      "actual": 6.0,
+      "expected": 6.0,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比综合收益",
+      "actual": 52.62,
+      "expected": 67.89,
+      "pass": false
+    },
+    {
+      "name": "边际对偶",
+      "actual": 3.787733,
+      "expected": 1.247,
+      "pass": false
+    }
+  ]
+}
