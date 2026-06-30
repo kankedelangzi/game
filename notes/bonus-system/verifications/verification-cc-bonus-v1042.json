@@ -1,0 +1,102 @@
+{
+  "version": "v1042",
+  "timestamp": "2026-06-30T20:16:25.103933",
+  "pass_count": 15,
+  "total": 15,
+  "results": {
+    "力量合计": {
+      "actual": 310,
+      "expected": 310,
+      "pass": true,
+      "diff": 0
+    },
+    "物理攻击合计": {
+      "actual": 110,
+      "expected": 110,
+      "pass": true,
+      "diff": 0
+    },
+    "独立攻击合计": {
+      "actual": 120,
+      "expected": 120,
+      "pass": true,
+      "diff": 0
+    },
+    "暴击率合计": {
+      "actual": 3.0,
+      "expected": 3.0,
+      "pass": true,
+      "diff": 0.0
+    },
+    "狂战士固伤-独立攻击收益": {
+      "actual": 8.0,
+      "expected": 8.0,
+      "pass": true,
+      "diff": 0.0
+    },
+    "狂战士固伤-暴击收益": {
+      "actual": 1.176471,
+      "expected": 1.18,
+      "pass": true,
+      "diff": 0.003529
+    },
+    "狂战士固伤综合收益": {
+      "actual": 9.270588,
+      "expected": 9.27,
+      "pass": true,
+      "diff": 0.000588
+    },
+    "狂战士百分比-力量收益": {
+      "actual": 24.424835,
+      "expected": 24.42,
+      "pass": true,
+      "diff": 0.004835
+    },
+    "狂战士百分比-物理攻击收益": {
+      "actual": 5.5,
+      "expected": 5.5,
+      "pass": true,
+      "diff": 0.0
+    },
+    "狂战士百分比综合收益": {
+      "actual": 32.812532,
+      "expected": 32.81,
+      "pass": true,
+      "diff": 0.002532
+    },
+    "剑魂百分比-力量收益": {
+      "actual": 36.470588,
+      "expected": 36.47,
+      "pass": true,
+      "diff": 0.000588
+    },
+    "剑魂百分比-物理攻击收益": {
+      "actual": 5.5,
+      "expected": 5.5,
+      "pass": true,
+      "diff": 0.0
+    },
+    "剑魂百分比-暴击收益": {
+      "actual": 1.2,
+      "expected": 1.2,
+      "pass": true,
+      "diff": 0.0
+    },
+    "剑魂百分比综合收益": {
+      "actual": 45.704188,
+      "expected": 45.7,
+      "pass": true,
+      "diff": 0.004188
+    },
+    "边际对偶": {
+      "actual": 4.93002,
+      "expected": 4.93002,
+      "pass": true,
+      "diff": 0.0
+    }
+  },
+  "marginal_ratio": 4.93002,
+  "berserker_fixed_pct": 9.27,
+  "berserker_pct_pct": 32.81,
+  "swordsman_pct_pct": 45.7
+}
