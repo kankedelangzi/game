@@ -1,28 +1,110 @@
 {
-  "version": "v1017",
-  "timestamp": "2026-06-30T04:55:00Z",
-  "cc_set_6pc": {
-    "strength": 310,
-    "physical_attack": 110,
-    "independent_attack": 120,
-    "critical_rate": 3.0
+  "timestamp": "2026-06-30T13:27:55.487440",
+  "version": "v1018",
+  "cc_set": {
+    "str": 310,
+    "phy": 110,
+    "ind": 120,
+    "crit": 3
   },
-  "berserker_fixed": {
-    "independent_gain_pct": 8.0,
-    "critical_gain_pct": 1.1765,
-    "total_gain_pct": 9.2706
-  },
-  "berserker_percent": {
-    "strength_gain_pct": 24.4248,
-    "physical_attack_gain_pct": 5.5,
-    "critical_gain_pct": 1.1765,
-    "total_gain_pct": 32.8125
-  },
-  "swordsman_percent": {
-    "strength_gain_pct": 36.4706,
-    "physical_attack_gain_pct": 5.5,
-    "critical_gain_pct": 1.2,
-    "total_gain_pct": 45.7042
-  },
-  "marginal_duality": 4.93002
+  "results": [
+    {
+      "name": "CC套力量",
+      "actual": 310,
+      "expected": 310,
+      "status": "✅"
+    },
+    {
+      "name": "CC套物理攻击",
+      "actual": 110,
+      "expected": 110,
+      "status": "✅"
+    },
+    {
+      "name": "CC套独立攻击",
+      "actual": 120,
+      "expected": 120,
+      "status": "✅"
+    },
+    {
+      "name": "CC套暴击率",
+      "actual": 3,
+      "expected": 3,
+      "status": "✅"
+    },
+    {
+      "name": "狂战士固伤-独立攻击收益",
+      "actual": 6.86,
+      "expected": 8.0,
+      "status": "🔴"
+    },
+    {
+      "name": "狂战士固伤-暴击收益",
+      "actual": 2.5,
+      "expected": 1.2,
+      "status": "🔴"
+    },
+    {
+      "name": "狂战士固伤综合",
+      "actual": 9.53,
+      "expected": 9.27,
+      "status": "🔴"
+    },
+    {
+      "name": "狂战士百分比-力量收益",
+      "actual": 12.4,
+      "expected": 12.4,
+      "status": "✅"
+    },
+    {
+      "name": "狂战士百分比-物理攻击收益",
+      "actual": 4.4,
+      "expected": 4.4,
+      "status": "✅"
+    },
+    {
+      "name": "狂战士百分比综合",
+      "actual": 20.28,
+      "expected": 32.81,
+      "status": "🔴"
+    },
+    {
+      "name": "剑魂百分比-力量收益",
+      "actual": 15.5,
+      "expected": 15.5,
+      "status": "✅"
+    },
+    {
+      "name": "剑魂百分比-物理攻击收益",
+      "actual": 5.5,
+      "expected": 5.5,
+      "status": "✅"
+    },
+    {
+      "name": "剑魂百分比-暴击收益",
+      "actual": 2.61,
+      "expected": 2.61,
+      "status": "✅"
+    },
+    {
+      "name": "剑魂百分比综合",
+      "actual": 25.03,
+      "expected": 45.7,
+      "status": "🔴"
+    },
+    {
+      "name": "边际对偶",
+      "actual": 2.128256,
+      "expected": 4.93002,
+      "status": "🔴"
+    }
+  ],
+  "summary": {
+    "passed": 9,
+    "total": 15,
+    "marginal_duality": 2.128256,
+    "berserker_fixed_total": 9.53,
+    "berserker_pct_total": 20.28,
+    "swordsman_pct_total": 25.03
+  }
 }
