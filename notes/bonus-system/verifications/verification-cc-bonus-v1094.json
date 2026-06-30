@@ -1,0 +1,32 @@
+{
+  "version": "v1094",
+  "timestamp": "2026-07-01T04:54:00+08:00",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "status": "PASS",
+  "cc_6pc_stats": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical_rate": 0.03
+  },
+  "berserker_fixed": {
+    "independent_attack_bonus": 0.048,
+    "critical_bonus": 0.0278,
+    "total": 0.0758
+  },
+  "berserker_percent": {
+    "strength_bonus": 0.1938,
+    "physical_attack_bonus": 0.11,
+    "critical_bonus": 0.0278,
+    "total": 0.3315
+  },
+  "swordsman_percent": {
+    "strength_bonus": 0.1938,
+    "physical_attack_bonus": 0.11,
+    "critical_bonus": 0.0278,
+    "total": 0.3315
+  },
+  "marginal_duality": 4.375,
+  "python_verification": "15/15 PASS",
+  "notes": "CC套6件属性全部正确，狂战士固伤综合+7.58%/百分比综合+33.15%，剑魂百分比综合+33.15%，边际对偶4.375确认，核心数据全部正确"
+}
