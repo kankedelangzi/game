@@ -1,0 +1,25 @@
+{
+  "version": "v1018",
+  "timestamp": "2026-06-30T14:15:00",
+  "checks": {
+    "cc_str": 310,
+    "cc_patk": 110,
+    "cc_ind": 120,
+    "cc_crit": 0.03,
+    "bs_ind_ratio": 8.0,
+    "bs_crit_ratio": 1.18,
+    "bs_fixed_total": 9.27,
+    "bs_str_ratio": 24.42,
+    "bs_patk_ratio": 5.5,
+    "bs_pct_total": 32.81,
+    "sw_str_ratio": 36.47,
+    "sw_patk_ratio": 5.5,
+    "sw_crit_ratio": 1.2,
+    "sw_pct_total": 45.7,
+    "dual": 4.93002
+  },
+  "passed": 15,
+  "total": 15,
+  "dual": 4.930020304568518,
+  "summary": "CC套6件(力量+310/物理攻击+110/独立攻击+120/暴击+3.0%)"
+}
