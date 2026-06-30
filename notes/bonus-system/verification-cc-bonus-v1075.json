@@ -1,0 +1,44 @@
+{
+  "version": "v1075",
+  "timestamp": "2026-07-01T01:43:00+08:00",
+  "cc_set": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker": {
+    "固伤_独立攻击收益": 8.0,
+    "固伤_暴击收益": 1.1765,
+    "固伤_综合收益": 9.2706,
+    "百分比_力量收益": 24.4248,
+    "百分比_物理攻击收益": 5.5,
+    "百分比_暴击收益": 1.1765,
+    "百分比_综合收益": 32.8125
+  },
+  "swordsman": {
+    "百分比_力量收益": 36.4706,
+    "百分比_物理攻击收益": 5.5,
+    "百分比_暴击收益": 1.2,
+    "百分比_综合收益": 45.7042
+  },
+  "marginal_dual": 4.93002,
+  "checks": {
+    "cc_str": true,
+    "cc_phy": true,
+    "cc_indep": true,
+    "cc_crit": true,
+    "berserker_fixed_indep": true,
+    "berserker_fixed_crit": true,
+    "berserker_fixed_total": true,
+    "berserker_pct_str": true,
+    "berserker_pct_phy": true,
+    "berserker_pct_total": true,
+    "swordsman_pct_str": true,
+    "swordsman_pct_phy": true,
+    "swordsman_pct_crit": true,
+    "swordsman_pct_total": true,
+    "marginal_dual": true
+  },
+  "all_passed": true
+}
