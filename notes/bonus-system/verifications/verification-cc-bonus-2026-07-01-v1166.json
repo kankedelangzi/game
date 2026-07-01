@@ -1,0 +1,38 @@
+{
+  "task": "Task19 - CC套（宫廷套装）各职业加成数值",
+  "version": "v1166",
+  "timestamp": "2026-07-01T22:22:00+08:00",
+  "cc_set_6piece": {
+    "strength": 310,
+    "phy_attack": 110,
+    "indep_attack": 120,
+    "crit_rate": 0.03,
+    "status": "PASS"
+  },
+  "berserker_fixed": {
+    "indep_gain": 0.0800,
+    "crit_gain": 0.0118,
+    "total_gain": 0.0927,
+    "status": "PASS"
+  },
+  "berserker_percent": {
+    "str_gain_berserk": 0.2442,
+    "phy_gain": 0.0550,
+    "crit_gain": 0.0118,
+    "total_gain": 0.3281,
+    "status": "PASS"
+  },
+  "swordsman_percent": {
+    "str_gain": 0.3647,
+    "phy_gain": 0.0550,
+    "crit_gain": 0.0120,
+    "total_gain": 0.4570,
+    "status": "PASS"
+  },
+  "marginal_duality": 4.930020,
+  "marginal_duality_status": "PASS",
+  "total_checks": 8,
+  "passed": 8,
+  "pass_rate": 1.0,
+  "notes": "v1166: 8/8 Python独立验算100%通过，CC套6件属性全部正确，狂战士固伤+9.27%/百分比+32.81%，剑魂百分比+45.70%，边际对偶4.930020精确值确认，核心数据全部正确，连续稳态维护保持100%通过率"
+}
