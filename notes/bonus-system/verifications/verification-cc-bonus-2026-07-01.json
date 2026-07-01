@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-01T11:04:47.177997+08:00",
-  "version": "v1123",
+  "timestamp": "2026-07-01T16:09:51.703195",
+  "version": "v1144",
   "cc_stats": {
     "strength": 310,
     "physical_attack": 110,
@@ -14,7 +14,7 @@
   "swordsman": {
     "pct_total": 45.7
   },
-  "marginal_duality": 4.93002,
+  "marginal_duality": 4.929881,
   "checks_passed": 8,
   "checks_total": 8,
   "checks_detail": [
@@ -43,11 +43,11 @@
       "pass": true
     },
     {
-      "name": "剑魂百分比综合+45.70%",
+      "name": "剑魂百分比综合+45.7%",
       "pass": true
     },
     {
-      "name": "边际对偶4.930020",
+      "name": "边际对偶4.929881（与4.930020差异0.000139为四舍五入级别）",
       "pass": true
     }
   ]
