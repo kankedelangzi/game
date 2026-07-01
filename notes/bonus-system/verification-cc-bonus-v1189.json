@@ -1,26 +1,38 @@
 {
-  "cc_6_attr": {
-    "力量": 310,
-    "物理攻击": 110,
-    "独立攻击": 120,
-    "暴击率": "3%"
+  "version": "v1189",
+  "timestamp": "2026-07-02 03:35 CST",
+  "cc_set": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate_pct": 3.0
   },
-  "berserker_fixed": {
-    "独立攻击": 8.0,
-    "暴击": 1.1765,
-    "固伤综合": 9.3
+  "berserker": {
+    "fixed": {
+      "independent_bonus_pct": 8.0,
+      "crit_bonus_pct": 1.18,
+      "combined_pct": 9.27
+    },
+    "percentage": {
+      "strength_bonus_pct": 24.42,
+      "physical_attack_bonus_pct": 5.5,
+      "crit_bonus_pct": 1.18,
+      "combined_pct": 32.81
+    }
   },
-  "berserker_pct": {
-    "力量": 24.42,
-    "物理攻击": 5.5,
-    "暴击": 1.18,
-    "百分比综合": 32.81
+  "swordsman": {
+    "percentage": {
+      "strength_bonus_pct": 36.47,
+      "physical_attack_bonus_pct": 5.5,
+      "crit_bonus_pct": 1.2,
+      "combined_pct": 45.7
+    }
   },
-  "swordsman_pct": {
-    "力量": 36.47,
-    "物理攻击": 5.5,
-    "暴击": 1.2,
-    "百分比综合": 45.7
-  },
-  "marginal_duality": 3.527957
+  "marginal_duality": 4.93002,
+  "expected": {
+    "berserker_fixed": 9.27,
+    "berserker_pct": 32.81,
+    "swordsman_pct": 45.7,
+    "marginal_duality": 4.929881
+  }
 }
