@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-07-01T19:09:14.817291",
+  "cc_set_6_stats": {
+    "str": 310,
+    "phy_atk": 110,
+    "ind_atk": 120,
+    "crit": 3.0
+  },
+  "berserker": {
+    "ind_gain_pct": 1.5,
+    "crit_gain_pct": 10.0,
+    "fixed_composite_pct": 11.5,
+    "str_gain_pct": 12.4,
+    "phy_gain_pct": 2.4444,
+    "perc_composite_pct": 24.84
+  },
+  "swordsman": {
+    "str_gain_pct": 12.4,
+    "phy_gain_pct": 2.4444,
+    "crit_gain_pct": 10.0,
+    "perc_composite_pct": 24.84
+  },
+  "marginal_duality": 2.160386,
+  "notes": "CC套6件套：力量+310/物理攻击+110/独立攻击+120/暴击+3%"
+}
