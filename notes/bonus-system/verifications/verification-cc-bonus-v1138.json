@@ -1,0 +1,28 @@
+{
+  "version": "v1138",
+  "timestamp": "2026-07-01 13:54:10",
+  "cc_set": {
+    "str": 310,
+    "phy": 110,
+    "ind": 120,
+    "cri": 0.03
+  },
+  "berserker": {
+    "str": 728,
+    "str_buff": 1019.1999999999999,
+    "ind": 1250,
+    "phy": 2000,
+    "cri": 0.55,
+    "fixed_total": 9.27,
+    "pct_total": 32.81
+  },
+  "swordsman": {
+    "str": 600,
+    "phy": 2000,
+    "cri": 0.5,
+    "pct_total": 45.7
+  },
+  "marginal_ratio": 4.93002,
+  "passed": 14,
+  "total": 15
+}
