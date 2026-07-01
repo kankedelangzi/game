@@ -1,0 +1,97 @@
+{
+  "version": "v1165",
+  "timestamp": "2026-07-01T21:50:00+08:00",
+  "cc_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 0.03
+  },
+  "berserker": {
+    "str_base": 728,
+    "str_buff": 1019.2,
+    "indep_base": 1250,
+    "phy_base": 2000,
+    "crit_base": 0.55,
+    "fixed_total": 9.27,
+    "percent_total": 32.81,
+    "indep_gain": 8.0,
+    "crit_gain": 1.18,
+    "str_gain": 24.42,
+    "phy_gain": 5.5
+  },
+  "swordsman": {
+    "str_base": 600,
+    "phy_base": 2000,
+    "phy_buff": 2600,
+    "crit_base": 0.5,
+    "percent_total": 45.7,
+    "str_gain": 36.47,
+    "phy_gain": 5.5,
+    "crit_gain": 1.2
+  },
+  "marginal_dual": 4.93002,
+  "verification": {
+    "passed": 8,
+    "total": 8,
+    "pass_rate": "8/8",
+    "checks": [
+      {
+        "item": "cc_力量",
+        "expected": 310,
+        "actual": 310,
+        "passed": true,
+        "diff": 0
+      },
+      {
+        "item": "cc_物理攻击",
+        "expected": 110,
+        "actual": 110,
+        "passed": true,
+        "diff": 0
+      },
+      {
+        "item": "cc_独立攻击",
+        "expected": 120,
+        "actual": 120,
+        "passed": true,
+        "diff": 0
+      },
+      {
+        "item": "cc_暴击率",
+        "expected": 0.03,
+        "actual": 0.03,
+        "passed": true,
+        "diff": 0.0
+      },
+      {
+        "item": "狂战士固伤综合",
+        "expected": 9.27,
+        "actual": 9.27,
+        "passed": true,
+        "diff": 0.0
+      },
+      {
+        "item": "狂战士百分比综合",
+        "expected": 32.81,
+        "actual": 32.81,
+        "passed": true,
+        "diff": 0.0
+      },
+      {
+        "item": "剑魂百分比综合",
+        "expected": 45.7,
+        "actual": 45.7,
+        "passed": true,
+        "diff": 0.0
+      },
+      {
+        "item": "边际对偶",
+        "expected": 4.929881,
+        "actual": 4.93,
+        "passed": true,
+        "diff": 0.0001
+      }
+    ]
+  }
+}
