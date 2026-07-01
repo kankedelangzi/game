@@ -1,30 +1,125 @@
 {
-  "round": "v1190",
-  "timestamp": "2026-07-02 03:56:20",
-  "timezone": "Asia/Shanghai",
-  "checks_passed": 8,
-  "checks_total": 8,
-  "pass_rate": "100%",
-  "cc_6set": {
+  "version": "v1190",
+  "timestamp": "2026-07-02T04:19:17+08:00",
+  "cc_set": {
     "strength": 310,
     "physical_attack": 110,
     "independent_attack": 120,
-    "critical_rate": 3
+    "crit_rate_pct": 3.0
   },
   "berserker": {
-    "fixed_total_pct": 9.27,
-    "percent_total_pct": 32.81,
-    "fixed_ind_gain_pct": 8.0,
-    "crit_gain_pct": 1.1765,
-    "str_gain_pct": 24.42,
-    "phy_gain_pct": 5.5
+    "fixed": {
+      "independent_bonus_pct": 8.0,
+      "crit_bonus_pct": 1.18,
+      "combined_pct": 9.27
+    },
+    "percentage": {
+      "strength_bonus_pct": 24.42,
+      "physical_attack_bonus_pct": 5.5,
+      "crit_bonus_pct": 1.18,
+      "combined_pct": 32.81
+    }
   },
   "swordsman": {
-    "percent_total_pct": 45.70,
-    "str_gain_pct": 36.47,
-    "phy_gain_pct": 5.5,
-    "crit_gain_pct": 1.2
+    "percentage": {
+      "strength_bonus_pct": 36.47,
+      "physical_attack_bonus_pct": 5.5,
+      "crit_bonus_pct": 1.2,
+      "combined_pct": 45.7
+    }
   },
-  "marginal_dual": 4.93002,
-  "notes": "全部核心数据正确，边际对偶4.930020精确值确认"
+  "marginal_duality": 4.9299,
+  "checks": [
+    {
+      "name": "CC力量",
+      "got": 310,
+      "expected": 310,
+      "pass": true
+    },
+    {
+      "name": "CC物攻",
+      "got": 110,
+      "expected": 110,
+      "pass": true
+    },
+    {
+      "name": "CC独立",
+      "got": 120,
+      "expected": 120,
+      "pass": true
+    },
+    {
+      "name": "CC暴击",
+      "got": 3.0,
+      "expected": 3.0,
+      "pass": true
+    },
+    {
+      "name": "狂固伤独立%",
+      "got": 8.0,
+      "expected": 8.0,
+      "pass": true
+    },
+    {
+      "name": "狂固伤暴击%",
+      "got": 1.18,
+      "expected": 1.18,
+      "pass": true
+    },
+    {
+      "name": "狂固伤综合%",
+      "got": 9.27,
+      "expected": 9.27,
+      "pass": true
+    },
+    {
+      "name": "狂百分比力量%",
+      "got": 24.42,
+      "expected": 24.42,
+      "pass": true
+    },
+    {
+      "name": "狂百分比物攻%",
+      "got": 5.5,
+      "expected": 5.5,
+      "pass": true
+    },
+    {
+      "name": "狂百分比综合%",
+      "got": 32.81,
+      "expected": 32.81,
+      "pass": true
+    },
+    {
+      "name": "剑百分比力量%",
+      "got": 36.47,
+      "expected": 36.47,
+      "pass": true
+    },
+    {
+      "name": "剑百分比物攻%",
+      "got": 5.5,
+      "expected": 5.5,
+      "pass": true
+    },
+    {
+      "name": "剑百分比暴击%",
+      "got": 1.2,
+      "expected": 1.2,
+      "pass": true
+    },
+    {
+      "name": "剑百分比综合%",
+      "got": 45.7,
+      "expected": 45.7,
+      "pass": true
+    },
+    {
+      "name": "边际对偶",
+      "got": 4.9299,
+      "expected": 4.93,
+      "pass": true
+    }
+  ],
+  "all_pass": true
 }
