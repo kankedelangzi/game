@@ -1,23 +1,107 @@
 {
   "version": "v1185",
-  "timestamp": "2026-07-02T02:43:00+08:00",
-  "passed": 12,
-  "total": 14,
-  "pass_rate": "12/14",
-  "core_data": {
-    "cc_set_6pc": {
-      "力量": 310,
-      "物理攻击": 110,
-      "独立攻击": 120,
-      "暴击率": "3%"
+  "timestamp": "2026-07-02T02:49:28.574421",
+  "results": [
+    {
+      "力量合计": {
+        "actual": 310,
+        "expected": 310
+      }
     },
-    "berserker_fixed_total": "+9.27%",
-    "berserker_pct_total": "+32.81%",
-    "swordsman_pct_total": "+45.70%",
-    "marginal_dual": 4.929881
+    {
+      "物理攻击合计": {
+        "actual": 110,
+        "expected": 110
+      }
+    },
+    {
+      "独立攻击合计": {
+        "actual": 120,
+        "expected": 120
+      }
+    },
+    {
+      "暴击合计": {
+        "actual": 3,
+        "expected": 3
+      }
+    },
+    {
+      "狂战士独立收益": {
+        "actual": 8.0,
+        "expected": 8.0
+      }
+    },
+    {
+      "狂战士暴击收益": {
+        "actual": 1.18,
+        "expected": 1.2
+      }
+    },
+    {
+      "狂战士固伤综合": {
+        "actual": 9.27,
+        "expected": 9.27
+      }
+    },
+    {
+      "狂战士力量收益": {
+        "actual": 24.42,
+        "expected": 24.42
+      }
+    },
+    {
+      "狂战士物理攻击收益": {
+        "actual": 5.5,
+        "expected": 5.5
+      }
+    },
+    {
+      "狂战士百分比综合": {
+        "actual": 32.81,
+        "expected": 32.81
+      }
+    },
+    {
+      "剑魂力量收益": {
+        "actual": 36.47,
+        "expected": 36.47
+      }
+    },
+    {
+      "剑魂物理攻击收益": {
+        "actual": 5.5,
+        "expected": 5.5
+      }
+    },
+    {
+      "剑魂暴击收益": {
+        "actual": 1.2,
+        "expected": 1.2
+      }
+    },
+    {
+      "剑魂百分比综合": {
+        "actual": 45.7,
+        "expected": 45.7
+      }
+    },
+    {
+      "边际对偶": {
+        "actual": 4.93002,
+        "expected": 4.929881
+      }
+    }
+  ],
+  "pass_rate": "14/15",
+  "cc_set": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击": 3
   },
-  "known_issues": "暴击收益2项为公式口径差异（3%/(1+5%)=2.86% vs 期望1.2%），核心数据全部正确",
-  "status": "PASS",
-  "steady_state": "连续稳态维护保持100%通过率",
-  "marginal_dual_status": "边际对偶4.929881精确值确认"
+  "berserker_fixed_total": 9.27,
+  "berserker_pct_total": 32.81,
+  "swordsman_pct_total": 45.7,
+  "marginal_duality": 4.93002
 }
