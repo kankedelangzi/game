@@ -1,0 +1,111 @@
+{
+  "version": "v1156",
+  "timestamp": "2026-07-01T17:58:00+08:00",
+  "task": "任务19 - CC套宫廷套装各职业加成数值",
+  "total_checks": 15,
+  "passed": 15,
+  "failed": 0,
+  "pass_rate": "100.0%",
+  "results": [
+    {
+      "check": "CC套6件力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "check": "CC套6件物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "check": "CC套6件独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "check": "CC套6件暴击率",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤-独立攻击收益",
+      "expected": 8.0,
+      "actual": 8.0,
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤-暴击收益",
+      "expected": 1.2,
+      "actual": 1.18,
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤综合收益",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比-力量收益",
+      "expected": 24.42,
+      "actual": 24.42,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比-物理攻击收益",
+      "expected": 5.5,
+      "actual": 5.5,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比综合收益",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "check": "剑魂-力量收益",
+      "expected": 36.47,
+      "actual": 36.47,
+      "pass": true
+    },
+    {
+      "check": "剑魂-物理攻击收益",
+      "expected": 5.5,
+      "actual": 5.5,
+      "pass": true
+    },
+    {
+      "check": "剑魂-暴击收益",
+      "expected": 1.2,
+      "actual": 1.2,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比综合收益",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "check": "边际对偶倍数",
+      "expected": 4.93002,
+      "actual": 4.929881,
+      "pass": true
+    }
+  ],
+  "summary": {
+    "cc_6pc_strength": 310,
+    "cc_6pc_phy": 110,
+    "cc_6pc_indep": 120,
+    "cc_6pc_cri": 3.0,
+    "berserker_fixed_combo_pct": 9.27,
+    "berserker_pct_combo_pct": 32.81,
+    "swordsman_combo_pct": 45.7,
+    "dual_ratio": 4.929881
+  }
+}
