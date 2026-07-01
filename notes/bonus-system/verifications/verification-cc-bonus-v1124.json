@@ -1,0 +1,54 @@
+{
+  "timestamp": "2026-07-01T11:10:00+08:00",
+  "version": "v1124",
+  "cc_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker": {
+    "fixed_total": 9.0,
+    "pct_total": 33.0
+  },
+  "swordsman": {
+    "pct_total": 45.7
+  },
+  "marginal_duality": 5.077778,
+  "checks_passed": 5,
+  "checks_total": 8,
+  "checks_detail": [
+    {
+      "name": "CC力量=310",
+      "pass": true
+    },
+    {
+      "name": "CC物理攻击=110",
+      "pass": true
+    },
+    {
+      "name": "CC独立攻击=120",
+      "pass": true
+    },
+    {
+      "name": "CC暴击=3%",
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤综合+9.27%",
+      "pass": false
+    },
+    {
+      "name": "狂战士百分比综合+32.81%",
+      "pass": false
+    },
+    {
+      "name": "剑魂百分比综合+45.70%",
+      "pass": true
+    },
+    {
+      "name": "边际对偶4.930020",
+      "pass": false
+    }
+  ]
+}
