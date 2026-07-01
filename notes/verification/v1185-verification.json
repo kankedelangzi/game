@@ -1,0 +1,52 @@
+{
+  "version": "v1185",
+  "timestamp": "2026-07-02T02:39:09.708652",
+  "checks": [
+    {
+      "item": "CC套力量+310",
+      "pass": true
+    },
+    {
+      "item": "CC套物理攻击+110",
+      "pass": true
+    },
+    {
+      "item": "CC套独立攻击+120",
+      "pass": true
+    },
+    {
+      "item": "CC套暴击+3%",
+      "pass": true
+    },
+    {
+      "item": "狂战士固伤综合+9.27%",
+      "pass": true
+    },
+    {
+      "item": "狂战士百分比综合+32.81%",
+      "pass": true
+    },
+    {
+      "item": "剑魂百分比综合+45.70%",
+      "pass": true
+    },
+    {
+      "item": "边际对偶验证: 剑魂/狂战士固伤 = 45.70/9.27 ≈ 4.930020",
+      "pass": false
+    }
+  ],
+  "passed": 7,
+  "total": 8,
+  "cc_6_piece": {
+    "strength": 310,
+    "phys_attack": 110,
+    "indep_attack": 120,
+    "crit": 3
+  },
+  "benefits": {
+    "berserker_fixed": 9.27,
+    "berserker_percent": 32.81,
+    "swordsman_percent": 45.7
+  },
+  "marginal_duality": 4.929881
+}
