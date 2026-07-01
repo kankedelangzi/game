@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-07-01T08:15:19.736743+08:00",
-  "version": "v1114",
+  "timestamp": "2026-07-01T11:04:47.177997+08:00",
+  "version": "v1123",
   "cc_stats": {
     "strength": 310,
     "physical_attack": 110,
@@ -14,9 +14,9 @@
   "swordsman": {
     "pct_total": 45.7
   },
-  "marginal_duality": 4.929881,
-  "checks_passed": 4,
-  "checks_total": 4,
+  "marginal_duality": 4.93002,
+  "checks_passed": 8,
+  "checks_total": 8,
   "checks_detail": [
     {
       "name": "CC力量=310",
@@ -35,19 +35,19 @@
       "pass": true
     },
     {
-      "name": "狂战士固伤综合=9.27%",
+      "name": "狂战士固伤综合+9.27%",
       "pass": true
     },
     {
-      "name": "狂战士百分比综合=32.81%",
+      "name": "狂战士百分比综合+32.81%",
       "pass": true
     },
     {
-      "name": "剑魂百分比综合=45.70%",
+      "name": "剑魂百分比综合+45.70%",
       "pass": true
     },
     {
-      "name": "边际对偶=4.930020",
+      "name": "边际对偶4.930020",
       "pass": true
     }
   ]
