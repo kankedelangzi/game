@@ -1,0 +1,36 @@
+{
+  "version": "v1174",
+  "timestamp": "2026-07-02T01:14:26.259181+08:00",
+  "cc_set": {
+    "str": 310,
+    "phy": 110,
+    "ind": 120,
+    "crt": 3.0
+  },
+  "berserker": {
+    "fixed_damage": {
+      "ind_gain": 8.0,
+      "crt_gain": 1.18,
+      "total": 9.27
+    },
+    "percent_damage": {
+      "str_gain": 24.42,
+      "phy_gain": 5.5,
+      "crt_gain": 1.18,
+      "total": 32.81
+    }
+  },
+  "swordsman": {
+    "percent_damage": {
+      "str_gain": 36.47,
+      "phy_gain": 5.5,
+      "crt_gain": 1.2,
+      "total": 45.7
+    }
+  },
+  "marginal_dual": 4.93002,
+  "verification": {
+    "passed": 15,
+    "total": 15
+  }
+}
