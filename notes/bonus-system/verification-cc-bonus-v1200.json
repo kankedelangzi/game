@@ -1,0 +1,49 @@
+{
+  "version": "v1200",
+  "timestamp": "2026-07-02T06:16:00+08:00",
+  "checks": {
+    "cc_strength": {
+      "value": 310,
+      "expected": 310,
+      "pass": true
+    },
+    "cc_phys_atk": {
+      "value": 110,
+      "expected": 110,
+      "pass": true
+    },
+    "cc_indep_atk": {
+      "value": 120,
+      "expected": 120,
+      "pass": true
+    },
+    "cc_crit": {
+      "value": 0.03,
+      "expected": 0.03,
+      "pass": true
+    },
+    "berserker_fixed": {
+      "value": 9.27,
+      "expected": 9.27,
+      "pass": true
+    },
+    "berserker_pct": {
+      "value": 32.81,
+      "expected": 32.81,
+      "pass": true
+    },
+    "swordsman_pct": {
+      "value": 45.7,
+      "expected": 45.7,
+      "pass": true
+    },
+    "marginal_duality": {
+      "value": 4.929881,
+      "expected": 4.929881,
+      "pass": true
+    }
+  },
+  "pass_rate": "100%",
+  "total_checks": 8,
+  "passed": 8
+}
