@@ -1,0 +1,23 @@
+{
+  "version": "v1115",
+  "timestamp": "2026-07-01T08:29:00+08:00",
+  "task": "CC套（宫廷套装）各职业加成数值",
+  "cc_set_6pc": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 0.03
+  },
+  "berserker": {
+    "fixed_total": 9.27,
+    "percent_total": 32.81
+  },
+  "swordsman": {
+    "percent_total": 45.7
+  },
+  "marginal_duality": 4.93002,
+  "checks_passed": 8,
+  "checks_total": 8,
+  "pass_rate": "100%",
+  "status": "连续稳态维护保持100%通过率"
+}
