@@ -1,0 +1,21 @@
+{
+  "version": "v1170",
+  "timestamp": "2026-07-01 23:45 CST",
+  "task": "19-CC套各职业加成数值",
+  "checks_total": 4,
+  "checks_passed": 3,
+  "status": "FAIL",
+  "cc_set": {
+    "strength": 310,
+    "p_atk": 110,
+    "indep_atk": 120,
+    "crit_rate_pct": 3.0
+  },
+  "core_data": {
+    "berserker_fixed_total_pct": 9.27,
+    "berserker_percent_total_pct": 32.81,
+    "swordsman_percent_total_pct": 45.7,
+    "marginal_duality": 4.93002
+  },
+  "marginal_calc": 3.539374
+}
