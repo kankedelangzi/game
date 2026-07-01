@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-07-01 10:56:15",
+  "version": "v1122",
+  "cc_set_6pc": {
+    "strength": 310,
+    "phys_attack": 110,
+    "independent_attack": 120,
+    "crit_rate_pct": 3
+  },
+  "berserker": {
+    "fixed_total": "+9.27%",
+    "percent_total": "+32.81%"
+  },
+  "swordsman": {
+    "percent_total": "+45.70%"
+  },
+  "marginal_duality": 4.93002,
+  "checks": {
+    "cc_set_str_310": true,
+    "cc_set_phys_110": true,
+    "cc_set_indep_120": true,
+    "cc_set_crit_3pct": true,
+    "berserker_fixed_9_27": true,
+    "berserker_pct_32_81": true,
+    "swordsman_pct_45_70": true,
+    "marginal_duality_4_93": true
+  },
+  "passed": 8,
+  "total": 8,
+  "status": "PASS"
+}
