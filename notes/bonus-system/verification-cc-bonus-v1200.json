@@ -1,49 +1,102 @@
 {
   "version": "v1200",
-  "timestamp": "2026-07-02T06:16:00+08:00",
-  "checks": {
-    "cc_strength": {
-      "value": 310,
+  "timestamp": "2026-07-02 06:43:04",
+  "checks": [
+    {
+      "name": "CC套力量",
       "expected": 310,
-      "pass": true
+      "actual": 310,
+      "passed": true
     },
-    "cc_phys_atk": {
-      "value": 110,
+    {
+      "name": "CC套物理攻击",
       "expected": 110,
-      "pass": true
+      "actual": 110,
+      "passed": true
     },
-    "cc_indep_atk": {
-      "value": 120,
+    {
+      "name": "CC套独立攻击",
       "expected": 120,
-      "pass": true
+      "actual": 120,
+      "passed": true
     },
-    "cc_crit": {
-      "value": 0.03,
-      "expected": 0.03,
-      "pass": true
+    {
+      "name": "CC套暴击",
+      "expected": 3.0,
+      "actual": 3.0,
+      "passed": true
     },
-    "berserker_fixed": {
-      "value": 9.27,
+    {
+      "name": "狂战士固伤-独立攻击收益",
+      "expected": 8.0,
+      "actual": 8.000000000000007,
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤-暴击收益",
+      "expected": 1.18,
+      "actual": 1.1764705882353121,
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤综合",
       "expected": 9.27,
-      "pass": true
+      "actual": 9.270588235294142,
+      "passed": true
     },
-    "berserker_pct": {
-      "value": 32.81,
+    {
+      "name": "狂战士百分比-力量收益",
+      "expected": 24.42,
+      "actual": 24.424834541443417,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比-物理攻击收益",
+      "expected": 5.5,
+      "actual": 5.499999999999994,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比综合",
       "expected": 32.81,
-      "pass": true
+      "actual": 32.812532211119574,
+      "passed": true
     },
-    "swordsman_pct": {
-      "value": 45.7,
+    {
+      "name": "剑魂-力量收益",
+      "expected": 36.47,
+      "actual": 36.470588235294144,
+      "passed": true
+    },
+    {
+      "name": "剑魂-物理攻击收益",
+      "expected": 5.5,
+      "actual": 5.499999999999994,
+      "passed": true
+    },
+    {
+      "name": "剑魂-暴击收益",
+      "expected": 1.2,
+      "actual": 1.200000000000001,
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比综合",
       "expected": 45.7,
-      "pass": true
+      "actual": 45.70418823529414,
+      "passed": true
     },
-    "marginal_duality": {
-      "value": 4.929881,
+    {
+      "name": "边际对偶",
       "expected": 4.929881,
-      "pass": true
+      "actual": 4.930020304568518,
+      "passed": true
+    },
+    {
+      "name": "破极兵刃×CC套协同物理攻击",
+      "expected": 2743,
+      "actual": 2743.0,
+      "passed": true
     }
-  },
-  "pass_rate": "100%",
-  "total_checks": 8,
-  "passed": 8
+  ]
 }
