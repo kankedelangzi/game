@@ -1,0 +1,112 @@
+{
+  "version": "v1169",
+  "timestamp": "2026-07-01T23:40:23.575557",
+  "total_checks": 15,
+  "passed": 14,
+  "pass_rate": 0.9333,
+  "status": "continuous_steady_state_maintenance",
+  "results": [
+    {
+      "check": "CC套力量合计",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "check": "CC套物理攻击合计",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "check": "CC套独立攻击合计",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "check": "CC套暴击率合计",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    {
+      "check": "狂战士独立攻击收益",
+      "expected": 8.0,
+      "actual": 8.0,
+      "pass": true
+    },
+    {
+      "check": "狂战士暴击收益",
+      "expected": 1.2,
+      "actual": 1.18,
+      "pass": false
+    },
+    {
+      "check": "狂战士固伤综合收益",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "check": "狂战士力量收益",
+      "expected": 24.42,
+      "actual": 24.42,
+      "pass": true
+    },
+    {
+      "check": "狂战士物理攻击收益",
+      "expected": 5.5,
+      "actual": 5.5,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比综合收益",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "check": "剑魂力量收益",
+      "expected": 36.47,
+      "actual": 36.47,
+      "pass": true
+    },
+    {
+      "check": "剑魂物理攻击收益",
+      "expected": 5.5,
+      "actual": 5.5,
+      "pass": true
+    },
+    {
+      "check": "剑魂暴击收益",
+      "expected": 1.2,
+      "actual": 1.2,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比综合收益",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "check": "边际对偶（剑魂%/狂战士固伤）",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    }
+  ],
+  "core_data": {
+    "cc_set_6piece": {
+      "strength": 310,
+      "physical_attack": 110,
+      "independent_attack": 120,
+      "critical_rate_pct": 3.0
+    },
+    "berserker_fixed_comp": 9.27,
+    "berserker_pct_comp": 32.81,
+    "swordsman_pct_comp": 45.7,
+    "marginal_duality": 4.93002
+  }
+}
