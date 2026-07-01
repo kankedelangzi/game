@@ -1,0 +1,35 @@
+{
+  "version": "v1118",
+  "timestamp": "2026-07-01T10:00:00+08:00",
+  "results": {
+    "cc_str_total": 310,
+    "cc_phy_total": 110,
+    "cc_ind_total": 120,
+    "cc_cri_total": 3,
+    "berserker_ind_bonus": 6.8571,
+    "berserker_cri_bonus": 2.6087,
+    "berserker_fixed_total": 9.6447,
+    "berserker_str_bonus": 12.4,
+    "berserker_phy_bonus": 7.3333,
+    "berserker_pct_total": 23.7899,
+    "swordsman_str_bonus": 12.4,
+    "swordsman_phy_bonus": 7.3333,
+    "swordsman_cri_bonus": 20.0,
+    "swordsman_pct_total": 44.7712,
+    "marginal_duality": 2.466621
+  },
+  "expected": {
+    "berserker_fixed_total": 9.27,
+    "berserker_pct_total": 32.81,
+    "swordsman_pct_total": 45.7,
+    "marginal_duality": 4.93002
+  },
+  "passed": 0,
+  "total": 4,
+  "errors": [
+    "❌ berserker_fixed_total: 期望=9.27, 实际=9.6447, 差异=0.3747",
+    "❌ berserker_pct_total: 期望=32.81, 实际=23.7899, 差异=9.0201",
+    "❌ swordsman_pct_total: 期望=45.7, 实际=44.7712, 差异=0.9288",
+    "❌ marginal_duality: 期望=4.93002, 实际=2.466621, 差异=2.4634"
+  ]
+}
