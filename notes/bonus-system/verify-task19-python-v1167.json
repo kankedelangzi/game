@@ -1,0 +1,99 @@
+{
+  "version": "v1167",
+  "timestamp": "2026-07-01T22:48:56.176675+08:00",
+  "task": "任务19-CC套宫廷套装各职业加成数值稳态核查",
+  "total_checks": 15,
+  "passed": 15,
+  "pass_rate": "100%",
+  "cc_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3
+  },
+  "berserker": {
+    "固伤综合": 9.27,
+    "百分比综合": 32.81
+  },
+  "swordsman": {
+    "百分比综合": 45.7
+  },
+  "marginal_dual": 4.93002,
+  "checks": [
+    {
+      "check": "CC套6件-力量",
+      "expected": 310,
+      "status": "✅"
+    },
+    {
+      "check": "CC套6件-物理攻击",
+      "expected": 110,
+      "status": "✅"
+    },
+    {
+      "check": "CC套6件-独立攻击",
+      "expected": 120,
+      "status": "✅"
+    },
+    {
+      "check": "CC套6件-暴击率",
+      "expected": 3,
+      "status": "✅"
+    },
+    {
+      "check": "狂战士-独立攻击收益%",
+      "expected": 2.61,
+      "status": "✅"
+    },
+    {
+      "check": "狂战士-暴击收益%",
+      "expected": 1.2,
+      "status": "✅"
+    },
+    {
+      "check": "狂战士-固伤综合%",
+      "expected": 9.27,
+      "status": "✅"
+    },
+    {
+      "check": "狂战士-力量收益%",
+      "expected": 11.92,
+      "status": "✅"
+    },
+    {
+      "check": "狂战士-物理攻击收益%",
+      "expected": 1.16,
+      "status": "✅"
+    },
+    {
+      "check": "狂战士-百分比综合%",
+      "expected": 32.81,
+      "status": "✅"
+    },
+    {
+      "check": "剑魂-力量收益%",
+      "expected": 9.69,
+      "status": "✅"
+    },
+    {
+      "check": "剑魂-物理攻击收益%",
+      "expected": 0.96,
+      "status": "✅"
+    },
+    {
+      "check": "剑魂-暴击收益%",
+      "expected": 1.2,
+      "status": "✅"
+    },
+    {
+      "check": "剑魂-百分比综合%",
+      "expected": 45.7,
+      "status": "✅"
+    },
+    {
+      "check": "边际对偶",
+      "expected": 4.93002,
+      "status": "✅"
+    }
+  ]
+}
