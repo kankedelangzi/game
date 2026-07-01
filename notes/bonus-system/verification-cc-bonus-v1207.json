@@ -1,0 +1,18 @@
+{
+  "version": "v1207",
+  "timestamp": "2026-07-02T07:50:00+08:00",
+  "cc_set": {
+    "strength": 310,
+    "phy_attack": 110,
+    "indep_attack": 120,
+    "crit_rate": "3%"
+  },
+  "berserker_fixed_total_pct": 10.0903,
+  "berserker_pct_total_pct": 41.6299,
+  "swordsman_pct_total_pct": 45.0892,
+  "marginal_ratio": 4.468562,
+  "total_checks": 15,
+  "passed": 9,
+  "failed": 6,
+  "pass_rate": "60.0%"
+}
