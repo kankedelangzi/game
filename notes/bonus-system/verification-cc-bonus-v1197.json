@@ -1,0 +1,67 @@
+{
+  "passed": 8,
+  "total": 8,
+  "pass_rate": 100.0,
+  "results": {
+    "version": "v1197",
+    "timestamp": "2026-07-02T05:38:00+08:00",
+    "cc_set_6pc": {
+      "str": 310,
+      "phy": 110,
+      "ind": 120,
+      "crit": 3.0
+    },
+    "berserker_fixed": {
+      "ind": 8.0,
+      "crit": 1.1765,
+      "total": 9.2706
+    },
+    "berserker_percentage": {
+      "str": 24.4248,
+      "phy": 5.5,
+      "crit": 1.1765,
+      "total": 32.8125
+    },
+    "swordsman_percentage": {
+      "str": 36.4706,
+      "phy": 5.5,
+      "crit": 1.2,
+      "total": 45.7042
+    },
+    "marginal_duality": 4.93002
+  },
+  "checks": [
+    {
+      "name": "CC力量+310",
+      "pass": true
+    },
+    {
+      "name": "CC物理攻击+110",
+      "pass": true
+    },
+    {
+      "name": "CC独立攻击+120",
+      "pass": true
+    },
+    {
+      "name": "CC暴击+3%",
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤综合+9.27%",
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比综合+32.81%",
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比综合+45.70%",
+      "pass": true
+    },
+    {
+      "name": "边际对偶4.929881",
+      "pass": true
+    }
+  ]
+}
