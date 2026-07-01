@@ -1,0 +1,28 @@
+{
+  "version": "v1170",
+  "timestamp": "2026-07-02T00:23:00+08:00",
+  "cc_set_stats": {
+    "strength": 310,
+    "phys_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 3.0
+  },
+  "berserker": {
+    "fixed_damage_bonus": 9.27,
+    "pct_damage_bonus": 32.81,
+    "independent_attack_bonus": 8.0,
+    "strength_bonus_pct": 24.42,
+    "phys_attack_bonus": 5.5,
+    "crit_bonus": 1.18
+  },
+  "swordsman": {
+    "pct_damage_bonus": 45.7,
+    "strength_bonus": 36.47,
+    "phys_attack_bonus": 5.5,
+    "crit_bonus": 1.2,
+    "po_cc_phys_attack": 2743,
+    "po_synergy_bonus": 5.5
+  },
+  "marginal_ratio": 4.93002,
+  "verification": "16/18 passed"
+}
