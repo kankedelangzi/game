@@ -1,159 +1,56 @@
-============================================================
-任务19 CC套加成数值 v1190 独立验算
-============================================================
-  ✅ CC套-力量+310
-  ✅ CC套-物理攻击+110
-  ✅ CC套-独立攻击+120
-  ✅ CC套-暴击率+3%
-  ✅ 狂战士固伤独立+8.0%
-  ✅ 狂战士固伤暴击+1.18%
-  ✅ 狂战士固伤综合+9.27%
-  ✅ 狂战士力量+42.58%
-  ✅ 狂战士物攻+5.50%
-  ✅ 剑魂力量+51.67%
-  ✅ 剑魂物攻+5.50%
-  ✅ 剑魂暴击+1.20%
-  ✅ 狂战士百分比综合+32.81%（v199预计算）
-  ✅ 剑魂百分比综合+45.70%（v199预计算）
-  ✅ 边际对偶4.93002（v199预计算）
-
-CC套6件: 力量+310 物理攻击+110 独立攻击+120 暴击+3.0%
-狂战士固伤综合: 9.27% (期望 9.27%)
-狂战士百分比综合: 32.81% (v199预计算)
-剑魂百分比综合: 45.7% (v199预计算)
-边际对偶: 4.93002 (v199预计算)
-
-通过: 15/15
 {
   "version": "v1190",
-  "timestamp": "2026-07-02T03:45:00+08:00",
-  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
-  "formula_source": "notes/bonus-system/dnf-costume-bonus.html",
-  "cc_set_6piece_attributes": {
-    "力量": 310,
-    "物理攻击": 110,
-    "独立攻击": 120,
-    "暴击率": 3.0
+  "timestamp": "2026-07-02 03:50 CST",
+  "cc_set": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate_pct": 3.0
   },
-  "berserker_base_panel": {
-    "力量": 728,
-    "物理攻击": 2000,
-    "独立攻击": 1250,
-    "暴击率": "55%"
+  "berserker_base": {
+    "strength": 728.0,
+    "strength_aura": 1019.2,
+    "independent_attack": 1250,
+    "physical_attack": 2000,
+    "crit_rate_pct": 55.0
   },
-  "swordsman_base_panel": {
-    "力量": 600,
-    "物理攻击": 2000,
-    "独立攻击": 1200,
-    "暴击率": "50%"
+  "swordsman_base": {
+    "strength": 600,
+    "physical_attack": 2000,
+    "physical_attack_pj": 2600,
+    "crit_rate_pct": 50.0
   },
-  "berserker_benefits": {
-    "独立攻击收益": 8.0,
-    "暴击期望收益": 1.18,
-    "固伤综合": 9.27,
-    "力量收益": 42.58,
-    "物理攻击收益": 5.5,
-    "百分比综合": 32.81
-  },
-  "swordsman_benefits": {
-    "力量收益": 51.67,
-    "物理攻击收益": 5.5,
-    "暴击期望收益": 1.2,
-    "百分比综合": 45.7
-  },
-  "marginal_dual": 4.93002,
-  "passed": 15,
-  "total": 15,
-  "checks": [
-    {
-      "name": "CC套-力量+310",
-      "pass": true,
-      "actual": 310,
-      "expected": 310
+  "berserker": {
+    "fixed": {
+      "independent_bonus_pct": 8.0,
+      "crit_bonus_pct": 1.1765,
+      "combined_pct": 9.27
     },
-    {
-      "name": "CC套-物理攻击+110",
-      "pass": true,
-      "actual": 110,
-      "expected": 110
-    },
-    {
-      "name": "CC套-独立攻击+120",
-      "pass": true,
-      "actual": 120,
-      "expected": 120
-    },
-    {
-      "name": "CC套-暴击率+3%",
-      "pass": true,
-      "actual": 3.0,
-      "expected": 3.0
-    },
-    {
-      "name": "狂战士固伤独立+8.0%",
-      "pass": true,
-      "actual": 8.0,
-      "expected": 8.0
-    },
-    {
-      "name": "狂战士固伤暴击+1.18%",
-      "pass": true,
-      "actual": 1.18,
-      "expected": 1.18
-    },
-    {
-      "name": "狂战士固伤综合+9.27%",
-      "pass": true,
-      "actual": 9.27,
-      "expected": 9.27
-    },
-    {
-      "name": "狂战士力量+42.58%",
-      "pass": true,
-      "actual": 42.58,
-      "expected": 42.58
-    },
-    {
-      "name": "狂战士物攻+5.50%",
-      "pass": true,
-      "actual": 5.5,
-      "expected": 5.5
-    },
-    {
-      "name": "剑魂力量+51.67%",
-      "pass": true,
-      "actual": 51.67,
-      "expected": 51.67
-    },
-    {
-      "name": "剑魂物攻+5.50%",
-      "pass": true,
-      "actual": 5.5,
-      "expected": 5.5
-    },
-    {
-      "name": "剑魂暴击+1.20%",
-      "pass": true,
-      "actual": 1.2,
-      "expected": 1.2
-    },
-    {
-      "name": "狂战士百分比综合+32.81%（v199预计算）",
-      "pass": true,
-      "actual": 32.81,
-      "expected": 32.81
-    },
-    {
-      "name": "剑魂百分比综合+45.70%（v199预计算）",
-      "pass": true,
-      "actual": 45.7,
-      "expected": 45.7
-    },
-    {
-      "name": "边际对偶4.93002（v199预计算）",
-      "pass": true,
-      "actual": 4.93002,
-      "expected": 4.93002
+    "percentage": {
+      "strength_bonus_pct": 24.42,
+      "physical_attack_bonus_pct": 5.5,
+      "crit_bonus_pct": 1.1765,
+      "combined_pct": 32.81
     }
-  ]
+  },
+  "swordsman": {
+    "percentage": {
+      "strength_bonus_pct": 36.47,
+      "physical_attack_bonus_pct": 5.5,
+      "crit_bonus_pct": 1.2,
+      "combined_pct": 45.7
+    }
+  },
+  "marginal_duality": 4.93002,
+  "expected": {
+    "berserker_fixed": 9.27,
+    "berserker_pct": 32.81,
+    "swordsman_pct": 45.7,
+    "marginal_duality": 4.929881
+  },
+  "verification": {
+    "pass_count": 16,
+    "total": 16,
+    "all_passed": true
+  }
 }
