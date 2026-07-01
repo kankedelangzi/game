@@ -1,0 +1,21 @@
+{
+  "version": "v1205",
+  "timestamp": "2026-07-02T07:40:00+08:00",
+  "cc_set_attributes": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical_hit_rate": 0.03
+  },
+  "berserker": {
+    "fixed_dmg_bonus_pct": 9.27,
+    "pct_total_pct": 32.81
+  },
+  "swordsman": {
+    "pct_total_pct": 45.7
+  },
+  "marginal_duality": 4.929881,
+  "checks_passed": 8,
+  "checks_total": 8,
+  "all_checks_passed": true
+}
