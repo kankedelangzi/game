@@ -1,0 +1,68 @@
+{
+  "version": "v1173",
+  "timestamp": "2026-07-02T00:53:00+08:00",
+  "passed": 8,
+  "total": 8,
+  "items": [
+    {
+      "check": "CC套力量",
+      "expected": 310,
+      "calculated": 310,
+      "ok": true
+    },
+    {
+      "check": "CC套物理攻击",
+      "expected": 110,
+      "calculated": 110,
+      "ok": true
+    },
+    {
+      "check": "CC套独立攻击",
+      "expected": 120,
+      "calculated": 120,
+      "ok": true
+    },
+    {
+      "check": "CC套暴击率",
+      "expected": 0.03,
+      "calculated": 0.03,
+      "ok": true
+    },
+    {
+      "check": "狂战士固伤综合",
+      "expected": 9.27,
+      "calculated": 9.27,
+      "ok": true
+    },
+    {
+      "check": "狂战士百分比综合",
+      "expected": 32.81,
+      "calculated": 32.81,
+      "ok": true
+    },
+    {
+      "check": "剑魂百分比综合",
+      "expected": 45.7,
+      "calculated": 45.7,
+      "ok": true
+    },
+    {
+      "check": "边际对偶",
+      "expected": 4.93002,
+      "calculated": 4.929881,
+      "ok": true
+    }
+  ],
+  "core_data": {
+    "cc_suit_6pc": {
+      "力量": 310,
+      "物理攻击": 110,
+      "独立攻击": 120,
+      "暴击率": 0.03
+    },
+    "berserker_fixed": "+9.27%",
+    "berserker_percent": "+32.81%",
+    "swordsman_percent": "+45.70%",
+    "dual_ratio": 4.929881
+  }
+}
