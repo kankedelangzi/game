@@ -1,0 +1,26 @@
+{
+  "version": "v1133",
+  "timestamp": "2026-07-01T12:54:04.467142",
+  "cc_set": {
+    "str": 310,
+    "phys": 110,
+    "indep": 120,
+    "crit": 3
+  },
+  "berserker": {
+    "fixed_total": 9.27,
+    "percent_total": 32.81,
+    "indep_bonus": 8.0,
+    "crit_bonus": 1.18,
+    "str_bonus": 24.42,
+    "phys_bonus": 5.5
+  },
+  "swordsman": {
+    "percent_total": 45.7,
+    "str_bonus": 36.47,
+    "phys_bonus": 5.5,
+    "crit_bonus": 1.2
+  },
+  "marginal_duality": 4.93002,
+  "all_pass": true
+}
