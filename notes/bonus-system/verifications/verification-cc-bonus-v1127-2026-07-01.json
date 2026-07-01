@@ -1,0 +1,38 @@
+{
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "version": "v1127",
+  "timestamp": "2026-07-01 11:56:08",
+  "total_checks": 4,
+  "pass_count": 4,
+  "pass_rate": "4/4 (100%)",
+  "all_pass": true,
+  "core_data": {
+    "cc_6pc_stats": "力量+310/物理攻击+110/独立攻击+120/暴击+3.0%",
+    "berserker_fixed": "+9.27%",
+    "berserker_percent": "+32.81%",
+    "swordsman_percent": "+45.70%",
+    "marginal_duality": "4.930020x"
+  },
+  "details": {
+    "力量合计": {
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    "物理攻击合计": {
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    "独立攻击合计": {
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    "暴击率合计": {
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    }
+  }
+}
