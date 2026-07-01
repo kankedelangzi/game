@@ -1,0 +1,17 @@
+{
+  "version": "v1157",
+  "timestamp": "2026-07-01T18:15:00+08:00",
+  "cc_set_6piece": {
+    "str": 310,
+    "phys_atk": 110,
+    "indep_atk": 120,
+    "crit": 3.0
+  },
+  "berserker_fixed_comp": 9.27,
+  "berserker_pct_comp": 32.81,
+  "swordsman_pct_comp": 45.7,
+  "marginal_duality": 4.93002,
+  "passed": 8,
+  "total": 8,
+  "status": "continuous_steady_state_maintenance"
+}
