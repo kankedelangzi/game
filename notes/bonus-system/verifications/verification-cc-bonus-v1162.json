@@ -1,0 +1,59 @@
+{
+  "version": "v1162",
+  "timestamp": "2026-07-01T19:55:00+08:00",
+  "task": "CC套（宫廷套装）各职业加成数值",
+  "task_id": 19,
+  "checks": [
+    {
+      "item": "CC套-力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "item": "CC套-物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "item": "CC套-独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "item": "CC套-暴击率",
+      "expected": 3,
+      "actual": 3,
+      "pass": true
+    },
+    {
+      "item": "狂战士-固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "item": "狂战士-百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "item": "剑魂-百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "item": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    }
+  ],
+  "pass_rate": "100%",
+  "pass_count": 8,
+  "total_count": 8
+}
