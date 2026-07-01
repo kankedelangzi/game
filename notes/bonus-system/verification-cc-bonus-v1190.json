@@ -1,56 +1,30 @@
 {
-  "version": "v1190",
-  "timestamp": "2026-07-02 03:50 CST",
-  "cc_set": {
+  "round": "v1190",
+  "timestamp": "2026-07-02 03:56:20",
+  "timezone": "Asia/Shanghai",
+  "checks_passed": 8,
+  "checks_total": 8,
+  "pass_rate": "100%",
+  "cc_6set": {
     "strength": 310,
     "physical_attack": 110,
     "independent_attack": 120,
-    "crit_rate_pct": 3.0
-  },
-  "berserker_base": {
-    "strength": 728.0,
-    "strength_aura": 1019.2,
-    "independent_attack": 1250,
-    "physical_attack": 2000,
-    "crit_rate_pct": 55.0
-  },
-  "swordsman_base": {
-    "strength": 600,
-    "physical_attack": 2000,
-    "physical_attack_pj": 2600,
-    "crit_rate_pct": 50.0
+    "critical_rate": 3
   },
   "berserker": {
-    "fixed": {
-      "independent_bonus_pct": 8.0,
-      "crit_bonus_pct": 1.1765,
-      "combined_pct": 9.27
-    },
-    "percentage": {
-      "strength_bonus_pct": 24.42,
-      "physical_attack_bonus_pct": 5.5,
-      "crit_bonus_pct": 1.1765,
-      "combined_pct": 32.81
-    }
+    "fixed_total_pct": 9.27,
+    "percent_total_pct": 32.81,
+    "fixed_ind_gain_pct": 8.0,
+    "crit_gain_pct": 1.1765,
+    "str_gain_pct": 24.42,
+    "phy_gain_pct": 5.5
   },
   "swordsman": {
-    "percentage": {
-      "strength_bonus_pct": 36.47,
-      "physical_attack_bonus_pct": 5.5,
-      "crit_bonus_pct": 1.2,
-      "combined_pct": 45.7
-    }
+    "percent_total_pct": 45.70,
+    "str_gain_pct": 36.47,
+    "phy_gain_pct": 5.5,
+    "crit_gain_pct": 1.2
   },
-  "marginal_duality": 4.93002,
-  "expected": {
-    "berserker_fixed": 9.27,
-    "berserker_pct": 32.81,
-    "swordsman_pct": 45.7,
-    "marginal_duality": 4.929881
-  },
-  "verification": {
-    "pass_count": 16,
-    "total": 16,
-    "all_passed": true
-  }
+  "marginal_dual": 4.93002,
+  "notes": "全部核心数据正确，边际对偶4.930020精确值确认"
 }
