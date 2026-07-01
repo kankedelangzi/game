@@ -1,0 +1,20 @@
+{
+  "version": "v1167",
+  "timestamp": "2026-07-01T23:22:00+08:00",
+  "cc_set": {
+    "power": 310,
+    "phy_atk": 110,
+    "ind_atk": 120,
+    "crt": 3.0
+  },
+  "berserker": {
+    "fixed_combined_pct": 9.2706,
+    "pct_combined_pct": 32.8125
+  },
+  "swordsman": {
+    "pct_combined_pct": 45.7042
+  },
+  "marginal_duality": 4.93002,
+  "checks_passed": 10,
+  "checks_total": 14
+}
