@@ -1,0 +1,112 @@
+{
+  "version": "v1195",
+  "timestamp": "2026-07-02T05:00:00+08:00",
+  "cc_set_attributes": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": "3%"
+  },
+  "berserker": {
+    "固伤综合": 9.27,
+    "百分比综合": 32.81
+  },
+  "swordsman": {
+    "百分比综合": 45.7
+  },
+  "marginal_duality": 4.93002,
+  "verification_results": [
+    {
+      "item": "CC套-力量",
+      "expected": 310,
+      "calculated": 310,
+      "ok": true
+    },
+    {
+      "item": "CC套-物理攻击",
+      "expected": 110,
+      "calculated": 110,
+      "ok": true
+    },
+    {
+      "item": "CC套-独立攻击",
+      "expected": 120,
+      "calculated": 120,
+      "ok": true
+    },
+    {
+      "item": "CC套-暴击率",
+      "expected": 0.03,
+      "calculated": 0.03,
+      "ok": true
+    },
+    {
+      "item": "狂战士-独立攻击收益",
+      "expected": 0.08,
+      "calculated": 0.08,
+      "ok": true
+    },
+    {
+      "item": "狂战士-固伤暴击收益",
+      "expected": 0.0118,
+      "calculated": 0.011765,
+      "ok": true
+    },
+    {
+      "item": "狂战士-固伤综合",
+      "expected": 0.0927,
+      "calculated": 0.092706,
+      "ok": true
+    },
+    {
+      "item": "狂战士-力量百分比收益",
+      "expected": 0.2442,
+      "calculated": 0.244248,
+      "ok": true
+    },
+    {
+      "item": "狂战士-物理攻击百分比收益",
+      "expected": 0.055,
+      "calculated": 0.055,
+      "ok": true
+    },
+    {
+      "item": "狂战士-百分比综合",
+      "expected": 0.3281,
+      "calculated": 0.328125,
+      "ok": true
+    },
+    {
+      "item": "剑魂-力量收益",
+      "expected": 0.3647,
+      "calculated": 0.364706,
+      "ok": true
+    },
+    {
+      "item": "剑魂-物理攻击收益",
+      "expected": 0.055,
+      "calculated": 0.055,
+      "ok": true
+    },
+    {
+      "item": "剑魂-暴击收益",
+      "expected": 0.012,
+      "calculated": 0.012,
+      "ok": true
+    },
+    {
+      "item": "剑魂-百分比综合",
+      "expected": 0.457,
+      "calculated": 0.457042,
+      "ok": true
+    },
+    {
+      "item": "边际对偶",
+      "expected": 4.93,
+      "calculated": 4.93002,
+      "ok": true
+    }
+  ],
+  "passed": 15,
+  "total": 15
+}
