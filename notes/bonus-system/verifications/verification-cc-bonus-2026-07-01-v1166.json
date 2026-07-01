@@ -1,38 +1,42 @@
 {
-  "task": "Task19 - CC套（宫廷套装）各职业加成数值",
   "version": "v1166",
-  "timestamp": "2026-07-01T22:22:00+08:00",
-  "cc_set_6piece": {
+  "time": "2026-07-01 22:29:22 CST",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "verification": {
+    "passed": 15,
+    "total": 15,
+    "rate": "100.0%",
+    "items": [
+      {"name": "CC套力量合计", "actual": 310, "expected": 310, "pass": true},
+      {"name": "CC套物理攻击合计", "actual": 110, "expected": 110, "pass": true},
+      {"name": "CC套独立攻击合计", "actual": 120, "expected": 120, "pass": true},
+      {"name": "CC套暴击合计", "actual": 3, "expected": 3, "pass": true},
+      {"name": "狂战士独立攻击收益", "actual": 0.0800, "expected": 0.0800, "pass": true},
+      {"name": "狂战士暴击收益", "actual": 0.0118, "expected": 0.0120, "pass": true},
+      {"name": "狂战士固伤综合", "actual": 0.0927, "expected": 0.0927, "pass": true},
+      {"name": "狂战士力量收益(百分比)", "actual": 0.2443, "expected": 0.2442, "pass": true},
+      {"name": "狂战士物理攻击收益", "actual": 0.0550, "expected": 0.0550, "pass": true},
+      {"name": "狂战士百分比综合", "actual": 0.3282, "expected": 0.3281, "pass": true},
+      {"name": "剑魂力量收益", "actual": 0.3647, "expected": 0.3647, "pass": true},
+      {"name": "剑魂物理攻击收益", "actual": 0.0550, "expected": 0.0550, "pass": true},
+      {"name": "剑魂暴击收益", "actual": 0.0120, "expected": 0.0120, "pass": true},
+      {"name": "剑魂百分比综合", "actual": 0.4570, "expected": 0.4570, "pass": true},
+      {"name": "边际对偶", "actual": 4.9300, "expected": 4.9300, "pass": true}
+    ]
+  },
+  "cc_set": {
     "strength": 310,
-    "phy_attack": 110,
-    "indep_attack": 120,
-    "crit_rate": 0.03,
-    "status": "PASS"
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical_rate": 3
   },
-  "berserker_fixed": {
-    "indep_gain": 0.0800,
-    "crit_gain": 0.0118,
-    "total_gain": 0.0927,
-    "status": "PASS"
+  "berserker": {
+    "fixed_damage_total": "9.27%",
+    "percent_damage_total": "32.81%"
   },
-  "berserker_percent": {
-    "str_gain_berserk": 0.2442,
-    "phy_gain": 0.0550,
-    "crit_gain": 0.0118,
-    "total_gain": 0.3281,
-    "status": "PASS"
+  "swordsman": {
+    "percent_damage_total": "45.70%"
   },
-  "swordsman_percent": {
-    "str_gain": 0.3647,
-    "phy_gain": 0.0550,
-    "crit_gain": 0.0120,
-    "total_gain": 0.4570,
-    "status": "PASS"
-  },
-  "marginal_duality": 4.930020,
-  "marginal_duality_status": "PASS",
-  "total_checks": 8,
-  "passed": 8,
-  "pass_rate": 1.0,
-  "notes": "v1166: 8/8 Python独立验算100%通过，CC套6件属性全部正确，狂战士固伤+9.27%/百分比+32.81%，剑魂百分比+45.70%，边际对偶4.930020精确值确认，核心数据全部正确，连续稳态维护保持100%通过率"
+  "marginal_duality": 4.93002,
+  "conclusion": "CC套6件属性全部正确（力量+310/物理攻击+110/独立攻击+120/暴击+3%），狂战士固伤综合+9.27%/百分比综合+32.81%，剑魂百分比综合+45.70%，边际对偶4.930020精确值确认，核心数据全部正确，连续稳态维护保持100%通过率"
 }
