@@ -1,0 +1,29 @@
+{
+  "version": "v1186",
+  "timestamp": "2026-07-02 02:54:48",
+  "cc_set_6piece": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 0.03
+  },
+  "berserker": {
+    "fixed_independent_ratio": 8.0,
+    "fixed_crit_expected_ratio": 1.1765,
+    "fixed_total_ratio": 9.2706,
+    "pct_strength_ratio": 24.4248,
+    "pct_physical_ratio": 5.5,
+    "pct_crit_ratio": 1.1765,
+    "pct_total_ratio": 32.8125
+  },
+  "swordsman": {
+    "strength_ratio": 36.4706,
+    "physical_ratio": 5.5,
+    "crit_ratio": 1.2,
+    "pct_total_ratio": 45.7042
+  },
+  "edge_duality": 4.93002,
+  "pass_count": 8,
+  "pass_total": 8,
+  "pass_rate": "100%"
+}
