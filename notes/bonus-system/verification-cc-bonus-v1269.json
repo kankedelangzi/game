@@ -1,0 +1,53 @@
+{
+  "version": "v1269",
+  "timestamp": "2026-07-03T02:13:00+08:00",
+  "cc_set_6piece": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 3
+  },
+  "berserker": {
+    "fixed_total": 9.27,
+    "percent_total": 32.81
+  },
+  "swordsman": {
+    "percent_total": 45.7
+  },
+  "marginal_dual": 4.929881,
+  "checklist": [
+    {
+      "item": "力量+310",
+      "status": "✅"
+    },
+    {
+      "item": "物理攻击+110",
+      "status": "✅"
+    },
+    {
+      "item": "独立攻击+120",
+      "status": "✅"
+    },
+    {
+      "item": "暴击率+3%",
+      "status": "✅"
+    },
+    {
+      "item": "狂战士固伤综合+9.27%",
+      "status": "✅"
+    },
+    {
+      "item": "狂战士百分比综合+32.81%",
+      "status": "✅"
+    },
+    {
+      "item": "剑魂百分比综合+45.70%",
+      "status": "✅"
+    },
+    {
+      "item": "边际对偶4.929881",
+      "status": "✅"
+    }
+  ],
+  "all_passed": true
+}
