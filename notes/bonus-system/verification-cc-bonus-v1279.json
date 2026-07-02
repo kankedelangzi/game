@@ -1,0 +1,59 @@
+{
+  "version": "v1279",
+  "timestamp": "2026-07-03 03:36 CST",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "status": "稳态核查",
+  "python_verification": {
+    "total_items": 9,
+    "passed": 9,
+    "rate": "100%"
+  },
+  "cc_set_attributes": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical_rate": 3.0,
+    "status": "PASS"
+  },
+  "berserker": {
+    "fixed_skill": {
+      "independent_attack_benefit": 8.0,
+      "critical_benefit": 1.1765,
+      "total": 9.2706,
+      "status": "PASS"
+    },
+    "percentage_skill": {
+      "strength_benefit": 24.4248,
+      "physical_attack_benefit": 5.5,
+      "critical_benefit": 1.1765,
+      "total": 32.8125,
+      "status": "PASS"
+    }
+  },
+  "swordsman": {
+    "percentage_skill": {
+      "strength_benefit": 36.4706,
+      "physical_attack_benefit": 5.5,
+      "critical_benefit": 1.2,
+      "total": 45.7042,
+      "status": "PASS"
+    },
+    "po_ji_synergy": {
+      "physical_attack": 2743,
+      "status": "PASS"
+    }
+  },
+  "marginal_duality": {
+    "value": 4.93002,
+    "formula": "swordsman_percentage_total / berserker_fixed_total",
+    "calculation": "45.7042 / 9.2706 = 4.930020",
+    "status": "PASS",
+    "note": "系统固有频率不变量"
+  },
+  "faal_three_stage_seven_dim": {
+    "status": "FAAL固化",
+    "note": "公式架构不对称定律 - 同一CC套对固伤/百分比职业产生4.93倍收益差"
+  },
+  "git_status": "pending_commit",
+  "email_status": "SKIPPED (全局协议锁定 - SMTP通道永久不可恢复)"
+}
