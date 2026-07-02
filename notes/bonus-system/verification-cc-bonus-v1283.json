@@ -1,0 +1,24 @@
+{
+  "version": "v1283",
+  "timestamp": "2026-07-03 04:27:06",
+  "cc_6set": {
+    "str": 310,
+    "phy_atk": 110,
+    "ind_atk": 120,
+    "crit": 0.03
+  },
+  "berserker": {
+    "fixed_bonus_pct": 11.72,
+    "pct_bonus_str": 31.7,
+    "pct_bonus_phy": 5.5,
+    "pct_bonus_crit": 1.94,
+    "pct_total_pct": 41.63
+  },
+  "swordsman": {
+    "pct_bonus_str": 36.47,
+    "pct_bonus_phy": 5.5,
+    "pct_bonus_crit": 2.0,
+    "pct_total_pct": 46.86
+  },
+  "marginal_ratio": 1.314485
+}
