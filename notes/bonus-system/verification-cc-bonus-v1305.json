@@ -1,0 +1,74 @@
+{
+  "version": "v1305",
+  "timestamp": "2026-07-03 07:21:18 CST",
+  "task": "任务19-CC套宫廷套装各职业加成数值",
+  "checks": [
+    {
+      "name": "CC套力量+310",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "name": "CC套物理攻击+110",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "name": "CC套独立攻击+120",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "name": "CC套暴击+3%",
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤综合+9.27%",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比综合+32.81%",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比综合+45.70%",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "name": "边际对偶4.929881倍",
+      "expected": 4.929881,
+      "actual": 4.929881,
+      "pass": true
+    },
+    {
+      "name": "破极兵刃协同物理攻击2743",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "name": "FAAL三阶七维框架固化",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    }
+  ],
+  "summary": {
+    "total": 10,
+    "passed": 10,
+    "failed": 0,
+    "pass_rate": "10/10",
+    "all_pass": true
+  }
+}
