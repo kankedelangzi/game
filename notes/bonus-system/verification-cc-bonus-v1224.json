@@ -1,6 +1,6 @@
 {
-  "version": "v1223",
-  "timestamp": "2026-07-02T15:17:00+08:00",
+  "version": "v1224",
+  "timestamp": "2026-07-02T15:38:00+08:00",
   "cc_set": {
     "str": 310,
     "phy": 110,
@@ -23,8 +23,8 @@
     "pct_total": 45.70
   },
   "marginal_ratio": 4.929881,
-  "checks_passed": 13,
-  "checks_total": 13,
+  "checks_passed": 15,
+  "checks_total": 15,
   "all_pass": true,
   "checks_detail": [
     {"item": "CC套力量", "expected": 310, "actual": 310, "pass": true},
