@@ -1,0 +1,116 @@
+{
+  "version": "v1254",
+  "timestamp": "2026-07-02 23:00:00",
+  "passed": 16,
+  "total": 16,
+  "pass_rate": "16/16",
+  "results": [
+    {
+      "item": "cc_str_total",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "item": "cc_phy_total",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "item": "cc_ind_total",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "item": "cc_crit_total",
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true
+    },
+    {
+      "item": "berserker_ind_gain",
+      "expected": 8.0,
+      "actual": 8.0,
+      "pass": true
+    },
+    {
+      "item": "berserker_crit_precise",
+      "expected": 1.18,
+      "actual": 1.18,
+      "pass": true
+    },
+    {
+      "item": "berserker_fix_total",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "item": "berserker_str_gain",
+      "expected": 24.42,
+      "actual": 24.42,
+      "pass": true
+    },
+    {
+      "item": "berserker_phy_gain",
+      "expected": 5.5,
+      "actual": 5.5,
+      "pass": true
+    },
+    {
+      "item": "berserker_pct_total",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "item": "swordsman_str_gain",
+      "expected": 36.47,
+      "actual": 36.47,
+      "pass": true
+    },
+    {
+      "item": "swordsman_phy_gain",
+      "expected": 5.5,
+      "actual": 5.5,
+      "pass": true
+    },
+    {
+      "item": "swordsman_crit_precise",
+      "expected": 1.2,
+      "actual": 1.2,
+      "pass": true
+    },
+    {
+      "item": "swordsman_pct_total",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "item": "marginal_dual",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "item": "synergy_phy",
+      "expected": 2743.0,
+      "actual": 2743.0,
+      "pass": true
+    }
+  ],
+  "cc_set": {
+    "str": 310,
+    "phy": 110,
+    "ind": 120,
+    "crit": 0.03
+  },
+  "berserker_fix": 9.27,
+  "berserker_pct": 32.81,
+  "swordsman_pct": 45.7,
+  "marginal": 4.93002,
+  "synergy_phy": 2743.0
+}
