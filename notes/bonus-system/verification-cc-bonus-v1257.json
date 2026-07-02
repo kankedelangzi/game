@@ -1,0 +1,50 @@
+{
+  "version": "v1257",
+  "timestamp": "2026-07-02T23:50:00+08:00",
+  "task": "task19-cc-bonus",
+  "total": 8,
+  "passed": 8,
+  "pass_rate": "8/8",
+  "results": {
+    "力量合计": {
+      "expected": 310,
+      "got": 310,
+      "pass": true
+    },
+    "物理攻击合计": {
+      "expected": 110,
+      "got": 110,
+      "pass": true
+    },
+    "独立攻击合计": {
+      "expected": 120,
+      "got": 120,
+      "pass": true
+    },
+    "暴击合计": {
+      "expected": 3,
+      "got": 3,
+      "pass": true
+    },
+    "狂战士固伤综合": {
+      "expected": 0.0927,
+      "got": 0.0927,
+      "pass": true
+    },
+    "狂战士百分比综合": {
+      "expected": 0.3281,
+      "got": 0.3281,
+      "pass": true
+    },
+    "剑魂百分比综合": {
+      "expected": 0.457,
+      "got": 0.457,
+      "pass": true
+    },
+    "边际对偶": {
+      "expected": 4.93002,
+      "got": 4.93002,
+      "pass": true
+    }
+  }
+}
