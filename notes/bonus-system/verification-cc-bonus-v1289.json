@@ -1,0 +1,118 @@
+{
+  "version": "v1289",
+  "timestamp": "2026-07-03T05:18:00+08:00",
+  "total": 16,
+  "passed": 16,
+  "rate": "16/16",
+  "core_data": {
+    "cc_set": {
+      "strength": 310,
+      "phys_attack": 110,
+      "indep_attack": 120,
+      "crit": 3
+    },
+    "berserker_fixed": 9.27,
+    "berserker_percent": 32.81,
+    "swordsman_percent": 45.7,
+    "marginal_duality": 4.93002,
+    "pojie_synergy": 2743.0
+  },
+  "results": [
+    {
+      "name": "CC套-力量+310",
+      "actual": 310,
+      "expected": 310,
+      "ok": true
+    },
+    {
+      "name": "CC套-物理攻击+110",
+      "actual": 110,
+      "expected": 110,
+      "ok": true
+    },
+    {
+      "name": "CC套-独立攻击+120",
+      "actual": 120,
+      "expected": 120,
+      "ok": true
+    },
+    {
+      "name": "CC套-暴击+3%",
+      "actual": 3.0,
+      "expected": 3.0,
+      "ok": true
+    },
+    {
+      "name": "狂战士-独立攻击收益",
+      "actual": 0.08,
+      "expected": 0.08,
+      "ok": true
+    },
+    {
+      "name": "狂战士-暴击收益(期望系数)",
+      "actual": 0.011765,
+      "expected": 0.011765,
+      "ok": true
+    },
+    {
+      "name": "狂战士-固伤综合(乘法)",
+      "actual": 0.092706,
+      "expected": 0.0927,
+      "ok": true
+    },
+    {
+      "name": "狂战士-力量收益",
+      "actual": 0.244248,
+      "expected": 0.24424,
+      "ok": true
+    },
+    {
+      "name": "狂战士-物理攻击收益",
+      "actual": 0.055,
+      "expected": 0.055,
+      "ok": true
+    },
+    {
+      "name": "狂战士-百分比综合(乘法)",
+      "actual": 0.328125,
+      "expected": 0.3281,
+      "ok": true
+    },
+    {
+      "name": "剑魂-力量收益",
+      "actual": 0.364706,
+      "expected": 0.36471,
+      "ok": true
+    },
+    {
+      "name": "剑魂-物理攻击收益",
+      "actual": 0.055,
+      "expected": 0.055,
+      "ok": true
+    },
+    {
+      "name": "剑魂-暴击收益",
+      "actual": 0.012,
+      "expected": 0.012,
+      "ok": true
+    },
+    {
+      "name": "剑魂-百分比综合(乘法)",
+      "actual": 0.457042,
+      "expected": 0.457,
+      "ok": true
+    },
+    {
+      "name": "边际对偶倍数",
+      "actual": 4.93002,
+      "expected": 4.93002,
+      "ok": true
+    },
+    {
+      "name": "破极兵刃协同物理攻击",
+      "actual": 2743.0,
+      "expected": 2743.0,
+      "ok": true
+    }
+  ]
+}
