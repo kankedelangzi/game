@@ -1,0 +1,119 @@
+{
+  "version": "v1285",
+  "timestamp": "2026-07-03T04:40:00+08:00",
+  "total_checks": 15,
+  "passed": 15,
+  "cc_set": {
+    "force": 310,
+    "phys_atk": 110,
+    "independent_atk": 120,
+    "crit_rate": 3.0
+  },
+  "berserker_gains": {
+    "independent_gain": 8.0,
+    "crit_gain": 1.18,
+    "fixed_total": 9.27,
+    "force_gain_berserk": 24.42,
+    "phys_atk_gain": 5.5,
+    "pct_total": 32.81
+  },
+  "swordsman_gains": {
+    "force_gain": 36.47,
+    "phys_atk_gain": 5.5,
+    "crit_gain": 1.2,
+    "pct_total": 45.7
+  },
+  "marginal_duality": 4.93002,
+  "results": [
+    {
+      "check": "CC套force合计",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "check": "CC套phys_atk合计",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "check": "CC套independent_atk合计",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "check": "CC套crit_rate合计",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    {
+      "check": "狂战士独立攻击收益%",
+      "expected": 8.0,
+      "actual": 8.0,
+      "pass": true
+    },
+    {
+      "check": "狂战士暴击收益%",
+      "expected": 1.18,
+      "actual": 1.18,
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤综合%",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "check": "狂战士力量收益%(暴走)",
+      "expected": 24.42,
+      "actual": 24.42,
+      "pass": true
+    },
+    {
+      "check": "狂战士物理攻击收益%",
+      "expected": 5.5,
+      "actual": 5.5,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比综合%",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "check": "剑魂力量收益%",
+      "expected": 36.47,
+      "actual": 36.47,
+      "pass": true
+    },
+    {
+      "check": "剑魂物理攻击收益%",
+      "expected": 5.5,
+      "actual": 5.5,
+      "pass": true
+    },
+    {
+      "check": "剑魂暴击收益%",
+      "expected": 1.2,
+      "actual": 1.2,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比综合%",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "check": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    }
+  ]
+}
