@@ -1,0 +1,43 @@
+{
+  "timestamp": "2026-07-03 07:15:00",
+  "version": "v1304",
+  "cc_set_6p_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 0.03
+  },
+  "berserker": {
+    "base_str": 1270,
+    "base_phy": 2000,
+    "base_crit": 0.5,
+    "fixed_idp_gain": 6.0,
+    "fixed_crit_gain": 3.0,
+    "fixed_total_gain": 9.04,
+    "pct_str_gain": 19.62,
+    "pct_phy_gain": 5.21,
+    "pct_crit_gain": 3.0,
+    "pct_total_gain": 29.630000000000003
+  },
+  "swordsman": {
+    "base_str": 600,
+    "base_phy": 2000,
+    "base_crit": 0.5,
+    "pct_str_gain": 34.07,
+    "pct_phy_gain": 5.21,
+    "pct_crit_gain": 3.0,
+    "pct_total_gain": 45.29
+  },
+  "marginal_duality": 5.009956,
+  "crit_factor": 1.012,
+  "verification": {
+    "cc_6p_str": true,
+    "cc_6p_phy": true,
+    "cc_6p_idp": true,
+    "cc_6p_crit": true,
+    "berserker_fixed_total": false,
+    "berserker_pct_total": false,
+    "swordsman_pct_total": false,
+    "marginal_duality": false
+  }
+}
