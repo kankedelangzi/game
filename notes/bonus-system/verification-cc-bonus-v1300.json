@@ -1,0 +1,117 @@
+{
+  "version": "v1300",
+  "timestamp": "2026-07-03 06:48 CST",
+  "checks": [
+    {
+      "name": "力量合计",
+      "expected": 310,
+      "computed": 310,
+      "pass": true
+    },
+    {
+      "name": "物理攻击合计",
+      "expected": 110,
+      "computed": 110,
+      "pass": true
+    },
+    {
+      "name": "独立攻击合计",
+      "expected": 120,
+      "computed": 120,
+      "pass": true
+    },
+    {
+      "name": "暴击率合计",
+      "expected": 3,
+      "computed": 3,
+      "pass": true
+    },
+    {
+      "name": "狂战士-独立攻击收益",
+      "expected": 5.33,
+      "computed": 5.36,
+      "pass": true
+    },
+    {
+      "name": "狂战士-暴击收益(固伤)",
+      "expected": 2.4,
+      "computed": 2.4,
+      "pass": true
+    },
+    {
+      "name": "狂战士-固伤综合收益",
+      "expected": 9.27,
+      "computed": 7.76,
+      "pass": false
+    },
+    {
+      "name": "狂战士-力量收益(百分比)",
+      "expected": 6.33,
+      "computed": 6.33,
+      "pass": true
+    },
+    {
+      "name": "狂战士-物理攻击收益(百分比)",
+      "expected": 4.4,
+      "computed": 4.4,
+      "pass": true
+    },
+    {
+      "name": "狂战士-百分比综合收益",
+      "expected": 32.81,
+      "computed": 17.0,
+      "pass": false
+    },
+    {
+      "name": "剑魂-力量收益",
+      "expected": 6.6,
+      "computed": 6.6,
+      "pass": true
+    },
+    {
+      "name": "剑魂-物理攻击收益",
+      "expected": 4.4,
+      "computed": 4.4,
+      "pass": true
+    },
+    {
+      "name": "剑魂-暴击收益",
+      "expected": 5.4,
+      "computed": 5.4,
+      "pass": true
+    },
+    {
+      "name": "剑魂-百分比综合收益",
+      "expected": 45.7,
+      "computed": 17.3,
+      "pass": false
+    },
+    {
+      "name": "边际对偶(剑魂百分比/狂战士固伤)",
+      "expected": 4.93,
+      "computed": 2.2296,
+      "pass": false
+    }
+  ],
+  "summary": {
+    "passed": 11,
+    "total": 15,
+    "rate": "11/15",
+    "all_pass": false,
+    "marginal_duality": 2.229609,
+    "cc_set": {
+      "str": 310,
+      "patk": 110,
+      "ind": 120,
+      "crit": 3
+    },
+    "berserker": {
+      "fixed_total": 7.76,
+      "pct_total": 17.0
+    },
+    "swordsman": {
+      "pct_total": 17.3
+    },
+    "po_ji_synergy": 2743
+  }
+}
