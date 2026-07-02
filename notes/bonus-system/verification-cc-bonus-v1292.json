@@ -1,0 +1,112 @@
+{
+  "version": "v1292",
+  "timestamp": "2026-07-03T05:44:27.701620+08:00",
+  "total_checks": 16,
+  "passed_checks": 16,
+  "failed_checks": 0,
+  "pass_rate": "16/16",
+  "marginal_duality": 4.93002,
+  "sw_phy_synergy": 2743,
+  "results": {
+    "cc_str": {
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    "cc_phy": {
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    "cc_ind": {
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    "cc_crit": {
+      "expected": 3,
+      "actual": 3,
+      "pass": true
+    },
+    "berserk_fixed_ind": {
+      "expected": 8.0,
+      "actual": 8.0,
+      "pass": true
+    },
+    "berserk_fixed_crit": {
+      "expected": 1.2,
+      "actual": 1.18,
+      "pass": true
+    },
+    "berserk_fixed_total": {
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    "berserk_pct_str": {
+      "expected": 24.42,
+      "actual": 24.42,
+      "pass": true
+    },
+    "berserk_pct_phy": {
+      "expected": 5.5,
+      "actual": 5.5,
+      "pass": true
+    },
+    "berserk_pct_total": {
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    "swordsman_pct_str": {
+      "expected": 36.47,
+      "actual": 36.47,
+      "pass": true
+    },
+    "swordsman_pct_phy": {
+      "expected": 5.5,
+      "actual": 5.5,
+      "pass": true
+    },
+    "swordsman_pct_crit": {
+      "expected": 1.2,
+      "actual": 1.2,
+      "pass": true
+    },
+    "swordsman_pct_total": {
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    "marginal_duality": {
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    "sw_phy_synergy": {
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    }
+  },
+  "cc_set": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical_rate": 3
+  },
+  "berserker": {
+    "fixed_total": 9.27,
+    "percent_total": 32.81,
+    "base_strength_bws": 1019,
+    "base_physical": 2000,
+    "base_independent": 1250,
+    "base_critical": 55
+  },
+  "swordsman": {
+    "percent_total": 45.7,
+    "base_strength": 600,
+    "base_physical": 2000,
+    "base_critical": 50
+  }
+}
