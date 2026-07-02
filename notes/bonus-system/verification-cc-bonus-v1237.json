@@ -1,0 +1,129 @@
+{
+  "version": "v1237",
+  "timestamp": "2026-07-02T18:45:00+08:00",
+  "task": 19,
+  "description": "CC套（宫廷套装）各职业加成数值稳态核查",
+  "cc_bonus_set": {
+    "strength": 310,
+    "phy_atk": 110,
+    "indep_atk": 120,
+    "cri_rate": 0.03
+  },
+  "berserker": {
+    "indep_gain_pct": 8.0,
+    "cri_gain_pct": 1.18,
+    "fixed_total_pct": 9.27,
+    "pct_str_gain_pct": 24.42,
+    "pct_phy_gain_pct": 5.5,
+    "pct_total_pct": 32.81
+  },
+  "swordsman": {
+    "str_gain_pct": 36.47,
+    "phy_gain_pct": 5.5,
+    "cri_gain_pct": 1.2,
+    "pct_total_pct": 45.7
+  },
+  "marginal_duality": 4.93002,
+  "swordsman_broken_phy": 2743.0,
+  "checks_passed": 16,
+  "checks_total": 16,
+  "pass_rate": "100%",
+  "checks_detail": [
+    {
+      "name": "力量合计",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "name": "物理攻击合计",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "name": "独立攻击合计",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "name": "暴击率合计",
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true
+    },
+    {
+      "name": "狂战士独立攻击收益",
+      "expected": 8.0,
+      "actual": 8.0,
+      "pass": true
+    },
+    {
+      "name": "狂战士暴击收益",
+      "expected": 1.18,
+      "actual": 1.18,
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比-力量收益",
+      "expected": 24.42,
+      "actual": 24.42,
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比-物理攻击收益",
+      "expected": 5.5,
+      "actual": 5.5,
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "name": "剑魂力量收益",
+      "expected": 36.47,
+      "actual": 36.47,
+      "pass": true
+    },
+    {
+      "name": "剑魂物理攻击收益",
+      "expected": 5.5,
+      "actual": 5.5,
+      "pass": true
+    },
+    {
+      "name": "剑魂暴击收益",
+      "expected": 1.2,
+      "actual": 1.2,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "name": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "name": "破极兵刃协同物理攻击",
+      "expected": 2743,
+      "actual": 2743.0,
+      "pass": true
+    }
+  ]
+}
