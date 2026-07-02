@@ -1,0 +1,58 @@
+{
+  "version": "v1265",
+  "timestamp": "2026-07-03T01:12:58.649733",
+  "total_tests": 7,
+  "passed_tests": 7,
+  "all_pass": true,
+  "results": {
+    "cc_6_set": {
+      "strength": 310,
+      "phy_atk": 110,
+      "indep_atk": 120,
+      "crit_pp": 3,
+      "pass": true
+    },
+    "berserker_indep_gain": {
+      "value": 8.0,
+      "pass": true
+    },
+    "berserker_crit_gain": {
+      "value": 1.18,
+      "pass": true
+    },
+    "berserker_fixed_total": {
+      "value": 9.27,
+      "expected": 9.27,
+      "pass": true
+    },
+    "berserker_pct_total": {
+      "value": 32.81,
+      "expected": 32.81,
+      "pass": true
+    },
+    "swordsman_pct_total": {
+      "value": 45.7,
+      "expected": 45.7,
+      "pass": true
+    },
+    "marginal_duality": {
+      "value": 4.93002,
+      "expected": 4.93002,
+      "pass": true
+    }
+  },
+  "core_data": {
+    "cc_6_set": {
+      "strength": 310,
+      "phy_atk": 110,
+      "indep_atk": 120,
+      "crit_pp": 3
+    },
+    "berserker_fixed_total_pct": 9.27,
+    "berserker_pct_total_pct": 32.81,
+    "swordsman_pct_total_pct": 45.7,
+    "marginal_duality": 4.93002
+  },
+  "status": "retired_steady_state_maintenance",
+  "faal": "formula_architecture_asymmetry_law_v3"
+}
