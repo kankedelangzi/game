@@ -1,0 +1,32 @@
+{
+  "version": "v1276",
+  "timestamp": "2026-07-03 03:17:32",
+  "cc_set_6pc": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical_rate": 0.03
+  },
+  "berserker": {
+    "fixed_damage_total": 0.0927,
+    "percent_damage_total": 0.3281,
+    "strength_to_dmg": "固伤不直接转换",
+    "phys_attack_to_dmg": "固伤不直接转换"
+  },
+  "swordsman": {
+    "percent_damage_total": 0.457,
+    "pa_xinji_physical": 2743,
+    "strength_to_dmg": "+310 str = +310*4=1240 物攻(12%)",
+    "phys_attack_to_dmg": "+110 物攻(0.55%×2=1.1%×2500%)"
+  },
+  "marginal_duality": 4.93002,
+  "faal_ratio": "百分比综合/固伤综合 = 45.70%/9.27% = 4.93倍",
+  "verification": {
+    "cc_set_attributes": "✅ 4/4 全部正确",
+    "berserker_fixed_damage": "✅ 9.27%",
+    "berserker_percent_damage": "✅ 32.81%",
+    "swordsman_percent_damage": "✅ 45.70%",
+    "marginal_duality_value": "✅ 4.930020",
+    "pa_xinji_physical_attack": "✅ 2743"
+  }
+}
