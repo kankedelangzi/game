@@ -1,0 +1,97 @@
+{
+  "version": "v1256",
+  "timestamp": "2026-07-02T23:25:00+08:00",
+  "task": "task19-cc-bonus",
+  "total": 15,
+  "passed": 14,
+  "pass_rate": "14/15",
+  "results": {
+    "力量合计": {
+      "expected": 310,
+      "got": 310,
+      "pass": true
+    },
+    "物理攻击合计": {
+      "expected": 110,
+      "got": 110,
+      "pass": true
+    },
+    "独立攻击合计": {
+      "expected": 120,
+      "got": 120,
+      "pass": true
+    },
+    "狂战士固伤-独立": {
+      "expected": 0.08,
+      "got": 0.08,
+      "pass": true
+    },
+    "狂战士固伤-暴击": {
+      "expected": 0.0118,
+      "got": 0.0118,
+      "pass": true
+    },
+    "狂战士固伤综合": {
+      "expected": 0.0927,
+      "got": 0.0927,
+      "pass": true
+    },
+    "狂战士百分比-力量": {
+      "expected": 0.2442,
+      "got": 0.2442,
+      "pass": true
+    },
+    "狂战士百分比-物理攻击": {
+      "expected": 0.055,
+      "got": 0.055,
+      "pass": true
+    },
+    "狂战士百分比-暴击": {
+      "expected": 0.0118,
+      "got": 0.0118,
+      "pass": true
+    },
+    "狂战士百分比综合": {
+      "expected": 0.3281,
+      "got": 0.3281,
+      "pass": true
+    },
+    "剑魂百分比-力量": {
+      "expected": 0.3647,
+      "got": 0.3647,
+      "pass": true
+    },
+    "剑魂百分比-物理攻击": {
+      "expected": 0.055,
+      "got": 0.055,
+      "pass": true
+    },
+    "剑魂百分比-暴击": {
+      "expected": 0.012,
+      "got": 0.012,
+      "pass": true
+    },
+    "剑魂百分比综合": {
+      "expected": 0.457,
+      "got": 0.457,
+      "pass": true
+    },
+    "边际对偶": {
+      "expected": 4.93002,
+      "got": 4.927926,
+      "pass": false
+    }
+  },
+  "summary": {
+    "cc_set_6pc": {
+      "力量": 310,
+      "物理攻击": 110,
+      "独立攻击": 120,
+      "暴击率": "3%"
+    },
+    "berserker_fixed": "+9.27%",
+    "berserker_percent": "+32.81%",
+    "swordsman_percent": "+45.70%",
+    "marginal_duality": 4.927926
+  }
+}
