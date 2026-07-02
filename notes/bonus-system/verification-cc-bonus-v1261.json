@@ -1,0 +1,118 @@
+{
+  "version": "v1261",
+  "timestamp": "2026-07-03T00:37:30+08:00",
+  "total_checks": 16,
+  "passed": 16,
+  "pass_rate": 100.0,
+  "core_data": {
+    "cc_set": {
+      "power": 310,
+      "phy_attack": 110,
+      "indep_attack": 120,
+      "crit_rate": 0.03
+    },
+    "berserker_fixed_total": 0.092706,
+    "berserker_pct_total": 0.328125,
+    "swordsman_pct_total": 0.457042,
+    "marginal_duality": 4.93002,
+    "po_ji_synergy_attack": 2743.0
+  },
+  "checks": [
+    {
+      "item": "CC套力量合计",
+      "expected": 310,
+      "actual": 310,
+      "ok": true
+    },
+    {
+      "item": "CC套物理攻击合计",
+      "expected": 110,
+      "actual": 110,
+      "ok": true
+    },
+    {
+      "item": "CC套独立攻击合计",
+      "expected": 120,
+      "actual": 120,
+      "ok": true
+    },
+    {
+      "item": "CC套暴击率合计",
+      "expected": 0.03,
+      "actual": 0.03,
+      "ok": true
+    },
+    {
+      "item": "狂战士独立攻击收益",
+      "expected": 0.08,
+      "actual": 0.08000000000000007,
+      "ok": true
+    },
+    {
+      "item": "狂战士暴击收益",
+      "expected": 0.0118,
+      "actual": 0.011764705882353121,
+      "ok": true
+    },
+    {
+      "item": "狂战士固伤综合收益",
+      "expected": 0.0927,
+      "actual": 0.09270588235294142,
+      "ok": true
+    },
+    {
+      "item": "狂战士力量收益",
+      "expected": 0.2442,
+      "actual": 0.2442483454144342,
+      "ok": true
+    },
+    {
+      "item": "狂战士物理攻击收益",
+      "expected": 0.055,
+      "actual": 0.05499999999999994,
+      "ok": true
+    },
+    {
+      "item": "狂战士百分比综合收益",
+      "expected": 0.3281,
+      "actual": 0.3281253221111957,
+      "ok": true
+    },
+    {
+      "item": "剑魂力量收益",
+      "expected": 0.3647,
+      "actual": 0.36470588235294144,
+      "ok": true
+    },
+    {
+      "item": "剑魂物理攻击收益",
+      "expected": 0.055,
+      "actual": 0.05499999999999994,
+      "ok": true
+    },
+    {
+      "item": "剑魂暴击收益",
+      "expected": 0.012,
+      "actual": 0.01200000000000001,
+      "ok": true
+    },
+    {
+      "item": "剑魂百分比综合收益",
+      "expected": 0.457,
+      "actual": 0.4570418823529414,
+      "ok": true
+    },
+    {
+      "item": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.930020304568518,
+      "ok": true
+    },
+    {
+      "item": "破极兵刃协同物理攻击",
+      "expected": 2743.0,
+      "actual": 2743.0,
+      "ok": true
+    }
+  ]
+}
