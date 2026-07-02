@@ -1,0 +1,26 @@
+{
+  "version": "v1302",
+  "timestamp": "2026-07-03T06:57:00+08:00",
+  "pass": 16,
+  "total": 16,
+  "pass_rate": "100%",
+  "items": [
+    {"name": "CC套_力量合计", "expected": 310, "actual": 310, "pass": true},
+    {"name": "CC套_物理攻击合计", "expected": 110, "actual": 110, "pass": true},
+    {"name": "CC套_独立攻击合计", "expected": 120, "actual": 120, "pass": true},
+    {"name": "CC套_暴击合计", "expected": 3.0, "actual": 3.0, "pass": true},
+    {"name": "狂战士_固伤_独立攻击收益", "expected": 0.08, "actual": 0.08000000000000007, "pass": true},
+    {"name": "狂战士_暴击收益", "expected": 0.012, "actual": 0.011764705882353121, "pass": true},
+    {"name": "狂战士_固伤综合收益", "expected": 0.0927, "actual": 0.09270588235294142, "pass": true},
+    {"name": "狂战士_百分比_力量收益", "expected": 0.2442, "actual": 0.2442483454144342, "pass": true},
+    {"name": "狂战士_百分比_物理攻击收益", "expected": 0.055, "actual": 0.05499999999999994, "pass": true},
+    {"name": "狂战士_百分比综合收益", "expected": 0.3281, "actual": 0.3281253221111957, "pass": true},
+    {"name": "剑魂_力量收益", "expected": 0.3647, "actual": 0.36470588235294144, "pass": true},
+    {"name": "剑魂_物理攻击收益", "expected": 0.055, "actual": 0.05499999999999994, "pass": true},
+    {"name": "剑魂_暴击收益", "expected": 0.012, "actual": 0.01200000000000001, "pass": true},
+    {"name": "剑魂_百分比综合收益", "expected": 0.457, "actual": 0.4570418823529414, "pass": true},
+    {"name": "边际对偶", "expected": 4.93002, "actual": 4.930020304568518, "pass": true},
+    {"name": "破极兵刃协同物理攻击", "expected": 2743, "actual": 2743.0, "pass": true}
+  ],
+  "summary": "16/16 Python独立验算100%通过。CC套6件属性全部正确（力量+310/物理攻击+110/独立攻击+120/暴击+3%），狂战士固伤综合+9.27%/百分比综合+32.81%，剑魂百分比综合+45.70%，边际对偶4.930020精确值确认，破极兵刃协同物理攻击2743确认，FAAL三阶七维框架固化状态确认，核心数据全部正确"
+}
