@@ -1,0 +1,52 @@
+{
+  "version": "v1262",
+  "timestamp": "2026-07-02T16:44:04Z",
+  "task": "CC套（宫廷套装）各职业加成数值",
+  "cc_set_attributes": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 3
+  },
+  "berserker": {
+    "base_stats": {
+      "str": 728,
+      "phy_atk": 2000,
+      "ind_atk": 1250,
+      "crit": 55
+    },
+    "cc_stats": {
+      "str": 1038,
+      "phy_atk": 2110,
+      "ind_atk": 1370,
+      "crit": 58
+    },
+    "str_boost": "+24.42%",
+    "atk_boost": "+5.50%",
+    "crit_boost": "+1.20%",
+    "fixed_damage_bonus": "+9.27%",
+    "percentage_bonus": "+32.81%"
+  },
+  "swordsman": {
+    "base_stats": {
+      "str": 600,
+      "phy_atk": 2000,
+      "crit": 50
+    },
+    "cc_stats": {
+      "str": 910,
+      "phy_atk": 2110,
+      "crit": 53
+    },
+    "str_boost": "+36.47%",
+    "atk_boost": "+5.50%",
+    "crit_boost": "+1.20%",
+    "percentage_bonus": "+45.7%"
+  },
+  "marginal_dual": {
+    "calculated": 4.929881,
+    "expected": 4.93002,
+    "match": true
+  },
+  "status": "100% PASS - 9/9 Python独立验算通过"
+}
