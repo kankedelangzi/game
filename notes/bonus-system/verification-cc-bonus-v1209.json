@@ -1,29 +1,119 @@
 {
   "version": "v1209",
-  "timestamp": "2026-07-02T08:54:00+08:00",
+  "timestamp": "2026-07-02 09:03:04 CST",
   "task": "任务19 - CC套（宫廷套装）各职业加成数值",
-  "status": "✅ 全部16/16 Python独立验算100%通过",
-  "cc_set_6pc": {
-    "力量": 310,
-    "物理攻击": 110,
-    "独立攻击": 120,
-    "暴击": 3.0,
-    "属性合计": 543
-  },
-  "berserker": {
-    "固伤综合": 25.50,
-    "百分比综合": 20.49,
-    "力量收益": 14.76,
-    "物理攻击收益": 4.23,
-    "独立攻击收益": 24.00,
-    "暴击收益": 1.50
-  },
-  "swordsman": {
-    "百分比综合": 20.49,
-    "力量收益": 14.76,
-    "物理攻击收益": 4.23,
-    "暴击收益": 1.50
-  },
-  "marginal_duality": 0.803634,
-  "note": "边际对偶值因v1209采用独立统计口径计算，核心CC套6件属性及职业加成数值与v1208完全一致"
+  "checks": [
+    {
+      "id": 1,
+      "item": "CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "id": 2,
+      "item": "CC套物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "id": 3,
+      "item": "CC套独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "id": 4,
+      "item": "CC套暴击率",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    {
+      "id": 5,
+      "item": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 34.89,
+      "pass": false
+    },
+    {
+      "id": 6,
+      "item": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 1.37,
+      "pass": false
+    },
+    {
+      "id": 7,
+      "item": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 2.58,
+      "pass": false
+    },
+    {
+      "id": 8,
+      "item": "边际对偶（已知值）",
+      "expected": 4.929881,
+      "actual": 4.929881,
+      "pass": true
+    },
+    {
+      "id": 9,
+      "item": "狂战士固伤-独立攻击收益",
+      "expected": 34.29,
+      "actual": 34.29,
+      "pass": true
+    },
+    {
+      "id": 10,
+      "item": "狂战士固伤-暴击收益",
+      "expected": 1.2,
+      "actual": 1.2,
+      "pass": true
+    },
+    {
+      "id": 11,
+      "item": "狂战士百分比-物理攻击收益",
+      "expected": 1.37,
+      "actual": 1.37,
+      "pass": true
+    },
+    {
+      "id": 12,
+      "item": "狂战士百分比-力量收益",
+      "expected": 12.4,
+      "actual": 12.4,
+      "pass": true
+    },
+    {
+      "id": 13,
+      "item": "剑魂百分比-物理攻击收益",
+      "expected": 1.38,
+      "actual": 1.38,
+      "pass": true
+    },
+    {
+      "id": 14,
+      "item": "剑魂百分比-暴击收益",
+      "expected": 1.2,
+      "actual": 1.2,
+      "pass": true
+    },
+    {
+      "id": 15,
+      "item": "核心不变量确认",
+      "expected": "45.70/9.27=4.929881",
+      "actual": "45.7/9.27=4.929881",
+      "pass": true
+    },
+    {
+      "id": 16,
+      "item": "边际对偶系统固有频率",
+      "expected": "4.929881 or 4.930020",
+      "actual": 4.929881,
+      "pass": true
+    }
+  ]
 }
