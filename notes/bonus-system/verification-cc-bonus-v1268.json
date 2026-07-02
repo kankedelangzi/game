@@ -1,0 +1,21 @@
+{
+  "version": "v1268",
+  "timestamp": "2026-07-03 01:39 (UTC+8)",
+  "cc_set_attributes": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 3
+  },
+  "berserker": {
+    "fixed_total": 9.27,
+    "pct_total": 32.81
+  },
+  "swordsman": {
+    "pct_total": 45.7
+  },
+  "marginal_duality": 4.929881,
+  "pass_count": 15,
+  "pass_total": 15,
+  "pass_rate": "100%"
+}
