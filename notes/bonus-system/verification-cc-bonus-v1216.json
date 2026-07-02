@@ -1,0 +1,135 @@
+{
+  "version": "v1216",
+  "timestamp": "2026-07-02T12:23:00+08:00",
+  "total": 16,
+  "passed": 16,
+  "failed": 0,
+  "pass_rate": "16/16",
+  "pass_rate_pct": "100%",
+  "core_data": {
+    "cc_set": {
+      "力量": 310,
+      "物理攻击": 110,
+      "独立攻击": 120,
+      "暴击率": 3
+    },
+    "berserker_fixed_bonus": 9.27,
+    "berserker_percent_bonus": 32.81,
+    "swordsman_percent_bonus": 45.7,
+    "marginal_ratio": 4.929881
+  },
+  "checks": [
+    {
+      "id": "cc_strength",
+      "desc": "CC套力量+310",
+      "expected": 310,
+      "actual": 310,
+      "status": "PASS"
+    },
+    {
+      "id": "cc_phyattk",
+      "desc": "CC套物理攻击+110",
+      "expected": 110,
+      "actual": 110,
+      "status": "PASS"
+    },
+    {
+      "id": "cc_indptatk",
+      "desc": "CC套独立攻击+120",
+      "expected": 120,
+      "actual": 120,
+      "status": "PASS"
+    },
+    {
+      "id": "cc_crit",
+      "desc": "CC套暴击+3%",
+      "expected": 3,
+      "actual": 3,
+      "status": "PASS"
+    },
+    {
+      "id": "ber_fixed",
+      "desc": "狂战士固伤综合+9.27%",
+      "expected": 9.27,
+      "actual": 9.27,
+      "status": "PASS"
+    },
+    {
+      "id": "ber_percent",
+      "desc": "狂战士百分比综合+32.81%",
+      "expected": 32.81,
+      "actual": 32.81,
+      "status": "PASS"
+    },
+    {
+      "id": "ber_cri_bonus",
+      "desc": "狂战士暴击收益+3%",
+      "expected": 3,
+      "actual": 3,
+      "status": "PASS"
+    },
+    {
+      "id": "sw_str",
+      "desc": "剑魂力量+310",
+      "expected": 310,
+      "actual": 310,
+      "status": "PASS"
+    },
+    {
+      "id": "sw_phy",
+      "desc": "剑魂物理攻击+110",
+      "expected": 110,
+      "actual": 110,
+      "status": "PASS"
+    },
+    {
+      "id": "sw_percent",
+      "desc": "剑魂百分比综合+45.70%",
+      "expected": 45.7,
+      "actual": 45.7,
+      "status": "PASS"
+    },
+    {
+      "id": "marginal",
+      "desc": "边际对偶4.929881",
+      "expected": 4.929881,
+      "actual": 4.929881,
+      "status": "PASS"
+    },
+    {
+      "id": "sw_crit",
+      "desc": "剑魂暴击+3%",
+      "expected": 3,
+      "actual": 3,
+      "status": "PASS"
+    },
+    {
+      "id": "sw_indpt",
+      "desc": "剑魂独立攻击+120",
+      "expected": 120,
+      "actual": 120,
+      "status": "PASS"
+    },
+    {
+      "id": "ber_str",
+      "desc": "狂战士力量+310",
+      "expected": 310,
+      "actual": 310,
+      "status": "PASS"
+    },
+    {
+      "id": "ber_phy",
+      "desc": "狂战士物理攻击+110",
+      "expected": 110,
+      "actual": 110,
+      "status": "PASS"
+    },
+    {
+      "id": "ber_indpt",
+      "desc": "狂战士独立攻击+120",
+      "expected": 120,
+      "actual": 120,
+      "status": "PASS"
+    }
+  ]
+}
