@@ -1,0 +1,130 @@
+{
+  "version": "v1287",
+  "timestamp": "2026-07-03 04:51:52",
+  "total_checks": 18,
+  "passed": 18,
+  "pass_rate": 100.0,
+  "results": [
+    {
+      "check": "CC套6件属性合计",
+      "expected": "力量+310/物理攻击+110/独立攻击+120/暴击+3.0%",
+      "actual": "力量+310/物理攻击+110/独立攻击+120/暴击+3.0%",
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤-独立攻击收益",
+      "expected": "8.0%",
+      "actual": "8.00%",
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤-暴击收益",
+      "expected": "1.2%",
+      "actual": "1.18%",
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤综合收益",
+      "expected": "9.27%",
+      "actual": "9.27%",
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比-力量收益",
+      "expected": "24.42%",
+      "actual": "24.42%",
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比-物理攻击收益",
+      "expected": "5.50%",
+      "actual": "5.50%",
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比综合收益",
+      "expected": "32.81%",
+      "actual": "32.81%",
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比-力量收益",
+      "expected": "36.47%",
+      "actual": "36.47%",
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比-物理攻击收益",
+      "expected": "5.50%",
+      "actual": "5.50%",
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比-暴击收益",
+      "expected": "1.2%",
+      "actual": "1.20%",
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比综合收益",
+      "expected": "45.70%",
+      "actual": "45.70%",
+      "pass": true
+    },
+    {
+      "check": "边际对偶值",
+      "expected": "4.930020",
+      "actual": "4.930020",
+      "pass": true
+    },
+    {
+      "check": "破极兵刃协同物理攻击",
+      "expected": "2743",
+      "actual": "2743",
+      "pass": true
+    },
+    {
+      "check": "CC套-strength-验证",
+      "expected": "310",
+      "actual": "310",
+      "pass": true
+    },
+    {
+      "check": "CC套-phys_attk-验证",
+      "expected": "110",
+      "actual": "110",
+      "pass": true
+    },
+    {
+      "check": "CC套-indep_attk-验证",
+      "expected": "120",
+      "actual": "120",
+      "pass": true
+    },
+    {
+      "check": "CC套-crit_rate-验证",
+      "expected": "0.03",
+      "actual": "0.03",
+      "pass": true
+    },
+    {
+      "check": "FAAL三阶七维框架固化状态",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    }
+  ],
+  "core_data": {
+    "cc_set_6pc": {
+      "力量": 310,
+      "物理攻击": 110,
+      "独立攻击": 120,
+      "暴击": "3%"
+    },
+    "berserker_fixed_comprehensive": "9.27%",
+    "berserker_pct_comprehensive": "32.81%",
+    "swordsman_pct_comprehensive": "45.70%",
+    "marginal_duality": 4.93002,
+    "broken_synergy_phys_attk": 2743
+  }
+}
