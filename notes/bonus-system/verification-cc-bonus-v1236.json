@@ -1,0 +1,31 @@
+{
+  "version": "v1236",
+  "timestamp": "2026-07-02T18:36:00+08:00",
+  "task": 19,
+  "description": "CC套（宫廷套装）各职业加成数值稳态核查",
+  "cc_bonus_set": {
+    "strength": 310,
+    "phy_atk": 110,
+    "indep_atk": 120,
+    "cri_rate": 0.03
+  },
+  "berserker": {
+    "indep_gain_pct": 8.0,
+    "cri_gain_pct": 1.18,
+    "fixed_total_pct": 9.27,
+    "pct_str_gain_pct": 24.42,
+    "pct_phy_gain_pct": 5.5,
+    "pct_total_pct": 32.81
+  },
+  "swordsman": {
+    "str_gain_pct": 36.47,
+    "phy_gain_pct": 5.5,
+    "cri_gain_pct": 1.2,
+    "pct_total_pct": 45.7
+  },
+  "marginal_duality": 4.929881,
+  "swordsman_broken_phy": 2743,
+  "checks_passed": 16,
+  "checks_total": 16,
+  "pass_rate": "100%"
+}
