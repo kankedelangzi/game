@@ -1,0 +1,120 @@
+{
+  "version": "v1282",
+  "timestamp": "2026-07-03T04:17:07+08:00",
+  "summary": "CC套（宫廷套装）各职业加成数值",
+  "total_checks": 14,
+  "passed_checks": 14,
+  "pass_rate": "14/14",
+  "core_data": {
+    "cc_set_6": {
+      "力量": 310,
+      "物理攻击": 110,
+      "独立攻击": 120,
+      "暴击": 3.0
+    },
+    "berserker": {
+      "str_base": 728,
+      "str_enf": 1019.1999999999999,
+      "phy": 2000,
+      "ind": 1250,
+      "crit": 55.0,
+      "dmg_total": 9.27,
+      "perc_total": 32.81
+    },
+    "swordsman": {
+      "str": 600,
+      "phy": 2000,
+      "phy_poj": 2600,
+      "crit": 50.0,
+      "perc_total": 45.7
+    },
+    "marginal": 4.93002
+  },
+  "checks": [
+    {
+      "name": "CC套6件套力量合计",
+      "expected": 310,
+      "calculated": 310,
+      "pass": true
+    },
+    {
+      "name": "CC套6件套物理攻击合计",
+      "expected": 110,
+      "calculated": 110,
+      "pass": true
+    },
+    {
+      "name": "CC套6件套独立攻击合计",
+      "expected": 120,
+      "calculated": 120,
+      "pass": true
+    },
+    {
+      "name": "CC套6件套暴击合计",
+      "expected": 3.0,
+      "calculated": 3.0,
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤-独立攻击收益",
+      "expected": 0.08,
+      "calculated": 0.08,
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤-暴击收益",
+      "expected": 0.0118,
+      "calculated": 0.0118,
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤综合",
+      "expected": 0.0927,
+      "calculated": 0.0927,
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比-力量收益",
+      "expected": 0.2442,
+      "calculated": 0.2442,
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比-物理攻击收益",
+      "expected": 0.055,
+      "calculated": 0.055,
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比综合",
+      "expected": 0.3281,
+      "calculated": 0.3281,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比-力量收益",
+      "expected": 0.3647,
+      "calculated": 0.3647,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比-物理攻击收益",
+      "expected": 0.055,
+      "calculated": 0.055,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比综合",
+      "expected": 0.457,
+      "calculated": 0.457,
+      "pass": true
+    },
+    {
+      "name": "边际对偶（剑魂/狂战士固伤）",
+      "expected": 4.93002,
+      "calculated": 4.93002,
+      "pass": true
+    }
+  ],
+  "conclusion": "CC套6件属性全部正确，狂战士固伤综合+9.27%/百分比综合+32.81%，剑魂百分比综合+45.70%，边际对偶4.930020精确值确认，核心数据全部正确"
+}
