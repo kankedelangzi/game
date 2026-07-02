@@ -1,0 +1,99 @@
+{
+  "version": "v1229",
+  "timestamp": "2026-07-02 16:50:00",
+  "passed": 16,
+  "total": 16,
+  "all_pass": true,
+  "results": {
+    "cc_str": {
+      "actual": 310,
+      "expected": 310,
+      "pass": true
+    },
+    "cc_phy": {
+      "actual": 110,
+      "expected": 110,
+      "pass": true
+    },
+    "cc_ind": {
+      "actual": 120,
+      "expected": 120,
+      "pass": true
+    },
+    "cc_crit": {
+      "actual": 3.0,
+      "expected": 3.0,
+      "pass": true
+    },
+    "bers_ind_ratio": {
+      "actual": 8.0,
+      "expected": 8.0,
+      "pass": true
+    },
+    "bers_crit_ratio": {
+      "actual": 1.18,
+      "expected": 1.18,
+      "pass": true
+    },
+    "bers_fixed_total": {
+      "actual": 9.27,
+      "expected": 9.27,
+      "pass": true
+    },
+    "bers_str_p_ratio": {
+      "actual": 24.42,
+      "expected": 24.42,
+      "pass": true
+    },
+    "bers_phy_p_ratio": {
+      "actual": 5.5,
+      "expected": 5.5,
+      "pass": true
+    },
+    "bers_pct_total": {
+      "actual": 32.81,
+      "expected": 32.81,
+      "pass": true
+    },
+    "swd_str_ratio": {
+      "actual": 36.47,
+      "expected": 36.47,
+      "pass": true
+    },
+    "swd_phy_ratio": {
+      "actual": 5.5,
+      "expected": 5.5,
+      "pass": true
+    },
+    "swd_crit_ratio": {
+      "actual": 1.2,
+      "expected": 1.2,
+      "pass": true
+    },
+    "swd_pct_total": {
+      "actual": 45.7,
+      "expected": 45.7,
+      "pass": true
+    },
+    "marginal_dual": {
+      "actual": 4.93002,
+      "expected": 4.93002,
+      "pass": true
+    },
+    "swd_synergy": {
+      "actual": 2743,
+      "expected": 2743,
+      "pass": true
+    }
+  },
+  "summary": {
+    "cc_str": 310,
+    "cc_phy": 110,
+    "cc_ind": 120,
+    "cc_crit": 3.0,
+    "bers_fixed_total": 9.27,
+    "bers_pct_total": 32.81,
+    "swd_pct_total": 45.7,
+    "marginal_dual": 4.93002
+  }
+}
