@@ -1,32 +1,72 @@
 {
   "version": "v1276",
-  "timestamp": "2026-07-03 03:17:32",
-  "cc_set_6pc": {
+  "timestamp": "2026-07-03T03:21:00+08:00",
+  "cc_set_attributes": {
     "strength": 310,
     "physical_attack": 110,
     "independent_attack": 120,
-    "critical_rate": 0.03
+    "critical_rate": 3.0
   },
   "berserker": {
-    "fixed_damage_total": 0.0927,
-    "percent_damage_total": 0.3281,
-    "strength_to_dmg": "固伤不直接转换",
-    "phys_attack_to_dmg": "固伤不直接转换"
+    "fixed_independent_gain": 8.0,
+    "fixed_cri_gain": 1.18,
+    "fixed_total": 9.27,
+    "pct_str_gain": 24.42,
+    "pct_phy_gain": 5.5,
+    "pct_cri_gain": 1.18,
+    "pct_total": 32.81
   },
   "swordsman": {
-    "percent_damage_total": 0.457,
-    "pa_xinji_physical": 2743,
-    "strength_to_dmg": "+310 str = +310*4=1240 物攻(12%)",
-    "phys_attack_to_dmg": "+110 物攻(0.55%×2=1.1%×2500%)"
+    "pct_str_gain": 36.47,
+    "pct_phy_gain": 5.5,
+    "pct_cri_gain": 1.2,
+    "pct_total": 45.7
   },
-  "marginal_duality": 4.93002,
-  "faal_ratio": "百分比综合/固伤综合 = 45.70%/9.27% = 4.93倍",
-  "verification": {
-    "cc_set_attributes": "✅ 4/4 全部正确",
-    "berserker_fixed_damage": "✅ 9.27%",
-    "berserker_percent_damage": "✅ 32.81%",
-    "swordsman_percent_damage": "✅ 45.70%",
-    "marginal_duality_value": "✅ 4.930020",
-    "pa_xinji_physical_attack": "✅ 2743"
-  }
+  "synergy_physical_attack": 2743.0,
+  "marginal_duality": 1.333425,
+  "all_checks_passed": false,
+  "checks": [
+    {
+      "name": "CC套力量",
+      "calc": 310,
+      "expected": 310,
+      "pass": true
+    },
+    {
+      "name": "CC套物理攻击",
+      "calc": 110,
+      "expected": 110,
+      "pass": true
+    },
+    {
+      "name": "CC套独立攻击",
+      "calc": 120,
+      "expected": 120,
+      "pass": true
+    },
+    {
+      "name": "CC套暴击率",
+      "calc": 3.0,
+      "expected": 3.0,
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤综合",
+      "calc": 9.27,
+      "expected": 9.27,
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比综合",
+      "calc": 32.81,
+      "expected": 32.81,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比综合",
+      "calc": 45.7,
+      "expected": 45.7,
+      "pass": true
+    }
+  ]
 }
