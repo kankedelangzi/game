@@ -1,0 +1,10 @@
+{
+  "version": "v1232",
+  "total_checks": 16,
+  "all_pass": true,
+  "ber_fixed_total": 9.27,
+  "ber_pct_total": 32.81,
+  "sw_pct_total": 45.7,
+  "marginal_dual": 4.93002,
+  "collab_phys": 2743.0
+}
