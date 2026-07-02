@@ -1,0 +1,146 @@
+{
+  "version": "v1290",
+  "timestamp": "2026-07-03T05:32:00+08:00",
+  "round": 17,
+  "passed": 17,
+  "failed": 0,
+  "pass_rate": 100.0,
+  "core_data": {
+    "cc_set": {
+      "力量": 310,
+      "物理攻击": 110,
+      "独立攻击": 120,
+      "暴击率": 3
+    },
+    "berserker": {
+      "固伤综合": "+9.27%",
+      "百分比综合": "+32.81%"
+    },
+    "swordsman": {
+      "百分比综合": "+45.70%"
+    },
+    "marginal_duality": 4.93002,
+    "poji_synergy_phy": 2743.0
+  },
+  "checks": [
+    {
+      "check": "CC套6件-力量合计",
+      "expected": 310,
+      "computed": 310,
+      "pass": true,
+      "detail": "头部55+上衣50+裤子50+鞋子30+手镯30+项链95 = 310"
+    },
+    {
+      "check": "CC套6件-物理攻击合计",
+      "expected": 110,
+      "computed": 110,
+      "pass": true,
+      "detail": "上衣20+裤子20+鞋子20+手镯20+项链30 = 110"
+    },
+    {
+      "check": "CC套6件-独立攻击合计",
+      "expected": 120,
+      "computed": 120,
+      "pass": true,
+      "detail": "手镯30+项链90 = 120"
+    },
+    {
+      "check": "CC套6件-暴击率合计",
+      "expected": 3,
+      "computed": 3,
+      "pass": true,
+      "detail": "手镯+3%"
+    },
+    {
+      "check": "狂战士固伤-独立攻击收益",
+      "expected": 0.08,
+      "computed": 0.08,
+      "pass": true,
+      "detail": "(1+1370/250)/(1+1250/250)-1 = 0.0800"
+    },
+    {
+      "check": "狂战士固伤-暴击收益",
+      "expected": 0.012,
+      "computed": 0.0118,
+      "pass": true,
+      "detail": "期望系数: 1.275→1.29, 0.0118"
+    },
+    {
+      "check": "狂战士固伤综合",
+      "expected": 0.0927,
+      "computed": 0.0927,
+      "pass": true,
+      "detail": "1.08 × 1.0118 - 1 = 0.0927"
+    },
+    {
+      "check": "狂战士百分比-力量收益",
+      "expected": 0.2442,
+      "computed": 0.2442,
+      "pass": true,
+      "detail": "暴走后1019.2→1329.2, 收益0.2442"
+    },
+    {
+      "check": "狂战士百分比-物理攻击收益",
+      "expected": 0.055,
+      "computed": 0.055,
+      "pass": true,
+      "detail": "2000→2110, 0.0550"
+    },
+    {
+      "check": "狂战士百分比-暴击收益",
+      "expected": 0.012,
+      "computed": 0.0118,
+      "pass": true,
+      "detail": "期望系数: 1.275→1.29, 0.0118"
+    },
+    {
+      "check": "狂战士百分比综合",
+      "expected": 0.3281,
+      "computed": 0.3281,
+      "pass": true,
+      "detail": "1.2442×1.055×1.012-1 = 0.3281"
+    },
+    {
+      "check": "剑魂百分比-力量收益",
+      "expected": 0.3647,
+      "computed": 0.3647,
+      "pass": true,
+      "detail": "600→910, 0.3647"
+    },
+    {
+      "check": "剑魂百分比-物理攻击收益",
+      "expected": 0.055,
+      "computed": 0.055,
+      "pass": true,
+      "detail": "2000→2110, 0.0550"
+    },
+    {
+      "check": "剑魂百分比-暴击收益",
+      "expected": 0.012,
+      "computed": 0.012,
+      "pass": true,
+      "detail": "期望系数: 1.25→1.265, 0.0120"
+    },
+    {
+      "check": "剑魂百分比综合",
+      "expected": 0.457,
+      "computed": 0.457,
+      "pass": true,
+      "detail": "1.3647×1.055×1.012-1 = 0.4570"
+    },
+    {
+      "check": "边际对偶",
+      "expected": 4.93002,
+      "computed": 4.93002,
+      "pass": true,
+      "detail": "剑魂百分比综合+0.4570 / 狂战士固伤综合+0.0927 = 4.930020"
+    },
+    {
+      "check": "破极兵刃协同物理攻击",
+      "expected": 2743,
+      "computed": 2743.0,
+      "pass": true,
+      "detail": "CC套2110 × 破极兵刃1.30 = 2743.0"
+    }
+  ]
+}
