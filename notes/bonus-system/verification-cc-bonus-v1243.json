@@ -1,0 +1,111 @@
+{
+  "version": "v1243",
+  "timestamp": "2026-07-02T12:45:00Z",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "checks": {
+    "cc_6set_attributes": {
+      "strength": {
+        "expected": 310,
+        "actual": 310,
+        "pass": true
+      },
+      "physical_attack": {
+        "expected": 110,
+        "actual": 110,
+        "pass": true
+      },
+      "independent_attack": {
+        "expected": 120,
+        "actual": 120,
+        "pass": true
+      },
+      "critical_rate": {
+        "expected": 3.0,
+        "actual": 3.0,
+        "pass": true
+      }
+    },
+    "berserker_gains": {
+      "independent_attack_gain": {
+        "expected": 0.08,
+        "actual": 0.08,
+        "pass": true,
+        "detail": "1250→1370"
+      },
+      "critical_gain": {
+        "expected": 0.0118,
+        "actual": 0.0118,
+        "pass": true,
+        "detail": "55%→58%, 期望系数1.275→1.290"
+      },
+      "solid_total": {
+        "expected": 0.0927,
+        "actual": 0.0927,
+        "pass": true,
+        "detail": "固伤综合收益"
+      },
+      "strength_gain_fury": {
+        "expected": 0.2442,
+        "actual": 0.2442,
+        "pass": true,
+        "detail": "暴走后1019.2→1329.2"
+      },
+      "physical_attack_gain": {
+        "expected": 0.055,
+        "actual": 0.055,
+        "pass": true,
+        "detail": "2000→2110"
+      },
+      "pct_total": {
+        "expected": 0.3281,
+        "actual": 0.3281,
+        "pass": true,
+        "detail": "百分比综合收益"
+      }
+    },
+    "swordsman_gains": {
+      "strength_gain": {
+        "expected": 0.3647,
+        "actual": 0.3647,
+        "pass": true,
+        "detail": "600→910"
+      },
+      "physical_attack_gain": {
+        "expected": 0.055,
+        "actual": 0.055,
+        "pass": true,
+        "detail": "2000→2110"
+      },
+      "critical_gain": {
+        "expected": 0.012,
+        "actual": 0.012,
+        "pass": true,
+        "detail": "50%→53%"
+      },
+      "pct_total": {
+        "expected": 0.457,
+        "actual": 0.457,
+        "pass": true,
+        "detail": "百分比综合收益"
+      }
+    },
+    "marginal_duality": {
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true,
+      "detail": "45.70%/9.27%"
+    }
+  },
+  "summary": {
+    "passed": 15,
+    "total": 15,
+    "pass_rate": "100%",
+    "core_data": {
+      "cc_6set": "力量+310/物理攻击+110/独立攻击+120/暴击+3%",
+      "berserker_solid": "+9.27%",
+      "berserker_pct": "+32.81%",
+      "swordsman_pct": "+45.70%",
+      "marginal_duality": "4.930020倍"
+    }
+  }
+}
