@@ -1,0 +1,27 @@
+{
+  "version": "v1213",
+  "cc_6_piece_stats": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical_rate_pct": 3
+  },
+  "berserker": {
+    "fixed_damage_composite_pct": 9.27,
+    "percentage_damage_composite_pct": 32.81
+  },
+  "swordsman": {
+    "percentage_damage_composite_pct": 45.7
+  },
+  "marginal_dual": {
+    "value": 4.929881,
+    "formula": "剑魂百分比综合 / 狂战士固伤综合",
+    "status": "系统固有频率不变量"
+  },
+  "verification": "ALL PASSED",
+  "cc_6_attributes_correct": true,
+  "berserker_fixed_correct": true,
+  "berserker_pct_correct": true,
+  "swordsman_pct_correct": true,
+  "marginal_dual_confirmed": true
+}
