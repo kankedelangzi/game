@@ -1,0 +1,50 @@
+{
+  "version": "v1288",
+  "timestamp": "2026-07-03T04:55:00+08:00",
+  "cc_set_6piece": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击": 3.0
+  },
+  "berserker": {
+    "力量基数(暴走后)": 1019.2,
+    "独立攻击基数": 1250,
+    "物理攻击基数": 2000,
+    "暴击率基数": "55.0%",
+    "独立攻击收益": "8.00%",
+    "暴击收益": "1.1765%",
+    "固伤综合": "9.27%",
+    "力量收益(百分比)": "24.4248%",
+    "物攻收益": "5.50%",
+    "百分比综合": "32.81%"
+  },
+  "swordsman": {
+    "力量基数": 600,
+    "物理攻击基数": 2000,
+    "暴击率基数": "50.0%",
+    "力量收益": "36.4706%",
+    "物攻收益": "5.50%",
+    "暴击收益": "1.20%",
+    "百分比综合": "45.70%"
+  },
+  "marginal_dual": "4.930020",
+  "verification": {
+    "cc_6piece_strength": true,
+    "cc_6piece_phys_atk": true,
+    "cc_6piece_indep_atk": true,
+    "cc_6piece_crit": true,
+    "indep_gain_8_0": true,
+    "crit_gain_b_1_18": true,
+    "fixed_combined_9_27": true,
+    "str_gain_b_24_42": true,
+    "phys_gain_5_50": true,
+    "pct_combined_b_32_81": true,
+    "str_gain_s_36_47": true,
+    "crit_gain_s_1_20": true,
+    "pct_combined_s_45_70": true,
+    "marginal_dual_4_93": true
+  },
+  "passed": 14,
+  "total": 14
+}
