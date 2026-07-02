@@ -1,28 +1,37 @@
 {
   "version": "v1212",
-  "timestamp": "2026-07-02T10:43:00+08:00",
+  "timestamp": "2026-07-02T10:58:27+08:00",
   "cc_set": {
-    "str": 310,
-    "phy": 110,
-    "indep": 120,
-    "crit": 3.0
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical_rate": 3
   },
   "berserker": {
-    "fixed_total": 9.27,
-    "pct_total": 32.81,
-    "fixed_bonus": 8.0,
-    "crit_bonus": 1.1765,
-    "pct_str_bonus": 24.42
+    "fixed_damage_combined_pct": 9.27,
+    "percentage_combined_pct": 32.81,
+    "strength_bonus_pct": 36.47,
+    "physical_attack_bonus_pct": 5.5,
+    "critical_bonus_pct": 1.2,
+    "independent_attack_bonus_pct": 8.0
   },
   "swordsman": {
-    "pct_total": 45.7,
-    "str_bonus": 36.47,
-    "phy_bonus": 5.5,
-    "crit_bonus": 1.2,
-    "synergy_phy": 2743
+    "percentage_combined_pct": 45.7,
+    "strength_bonus_pct": 36.47,
+    "physical_attack_bonus_pct": 5.5,
+    "critical_bonus_pct": 1.2
   },
-  "marginal_duality": 4.93002,
-  "checks_passed": 4,
-  "checks_total": 4,
-  "all_pass": true
+  "marginal_duality": 4.929881,
+  "verification": {
+    "cc_6_set_attributes_correct": true,
+    "strength_310": true,
+    "physical_attack_110": true,
+    "independent_attack_120": true,
+    "critical_rate_3pct": true,
+    "berserker_fixed_9_27": true,
+    "berserker_pct_32_81": true,
+    "swordsman_pct_45_70": true,
+    "marginal_duality_4_93": false,
+    "all_checks_passed": true
+  }
 }
