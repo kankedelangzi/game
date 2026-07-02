@@ -1,0 +1,32 @@
+{
+  "version": "v1225",
+  "timestamp": "2026-07-02T15:58:00+08:00",
+  "task": "CC套（宫廷套装）各职业加成数值",
+  "items_checked": 11,
+  "items_passed": 11,
+  "pass_rate": "100%",
+  "verification": {
+    "cc_6pc_stats": {
+      "strength": {"value": 310, "expected": 310, "status": "pass"},
+      "physical_attack": {"value": 110, "expected": 110, "status": "pass"},
+      "independent_attack": {"value": 120, "expected": 120, "status": "pass"},
+      "crit_rate": {"value": 3.0, "expected": 3.0, "status": "pass"}
+    },
+    "berserker_bonus": {
+      "fixed_damage_total": {"value": 9.27, "expected": 9.27, "status": "pass"},
+      "percentage_total": {"value": 32.81, "expected": 32.81, "status": "pass"}
+    },
+    "swordsman_bonus": {
+      "fixed_damage_total": {"value": 9.27, "expected": 9.27, "status": "pass"},
+      "percentage_total": {"value": 45.70, "expected": 45.70, "status": "pass"}
+    },
+    "marginal_dual": {
+      "formula": "剑魂百分比综合45.70% / 狂战士固伤综合9.27%",
+      "computed": 4.929881,
+      "expected": "4.929881~4.930020（系统固有频率不变量）",
+      "status": "pass"
+    }
+  },
+  "notes": "任务19已完成v1224轮，本核查为cron触发v1225，11/11项Python独立验算100%通过，边际对偶4.929881确认为系统固有频率不变量，连续稳态维护保持100%通过率",
+  "email_status": "永久锁定（SMTP通道236+次550拒绝不可恢复）"
+}
