@@ -1,0 +1,116 @@
+{
+  "version": "v1270",
+  "pass": 18,
+  "fail": 0,
+  "items": [
+    {
+      "name": "力量合计",
+      "actual": 310,
+      "expected": 310,
+      "pass": true
+    },
+    {
+      "name": "物理攻击合计",
+      "actual": 110,
+      "expected": 110,
+      "pass": true
+    },
+    {
+      "name": "独立攻击合计",
+      "actual": 120,
+      "expected": 120,
+      "pass": true
+    },
+    {
+      "name": "暴击率合计",
+      "actual": 3.0,
+      "expected": 3.0,
+      "pass": true
+    },
+    {
+      "name": "狂战士独立攻击收益",
+      "actual": 8.0,
+      "expected": 8.0,
+      "pass": true
+    },
+    {
+      "name": "狂战士暴击收益",
+      "actual": 1.176471,
+      "expected": 1.18,
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤综合",
+      "actual": 9.270588,
+      "expected": 9.27,
+      "pass": true
+    },
+    {
+      "name": "狂战士力量收益",
+      "actual": 24.424835,
+      "expected": 24.42,
+      "pass": true
+    },
+    {
+      "name": "狂战士物理攻击收益",
+      "actual": 5.5,
+      "expected": 5.5,
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比综合",
+      "actual": 32.812532,
+      "expected": 32.81,
+      "pass": true
+    },
+    {
+      "name": "剑魂力量收益",
+      "actual": 36.470588,
+      "expected": 36.47,
+      "pass": true
+    },
+    {
+      "name": "剑魂物理攻击收益",
+      "actual": 5.5,
+      "expected": 5.5,
+      "pass": true
+    },
+    {
+      "name": "剑魂暴击收益",
+      "actual": 1.2,
+      "expected": 1.2,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比综合",
+      "actual": 45.704188,
+      "expected": 45.7,
+      "pass": true
+    },
+    {
+      "name": "边际对偶",
+      "actual": 4.93002,
+      "expected": 4.93002,
+      "pass": true
+    },
+    {
+      "name": "破极兵刃协同物理攻击",
+      "actual": 2743.0,
+      "expected": 2743,
+      "pass": true
+    },
+    {
+      "name": "剑魂破极前物理攻击",
+      "actual": 2000,
+      "expected": 2000,
+      "pass": true
+    },
+    {
+      "name": "剑魂破极后物理攻击",
+      "actual": 2600.0,
+      "expected": 2600,
+      "pass": true
+    }
+  ],
+  "summary": "18/18 Python独立验算通过"
+}
