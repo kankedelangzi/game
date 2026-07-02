@@ -1,0 +1,40 @@
+{
+  "version": "v1271",
+  "timestamp": "2026-07-03T02:28:00+08:00",
+  "cc_set_6piece_attributes": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker_benefits": {
+    "固伤综合": 9.27,
+    "百分比综合": 32.81
+  },
+  "swordsman_benefits": {
+    "百分比综合": 45.7
+  },
+  "marginal_dual": 4.93002,
+  "passed": 16,
+  "total": 16,
+  "details": [
+    {"check": "CC套-力量+310", "pass": true, "actual": 310, "expected": 310},
+    {"check": "CC套-物理攻击+110", "pass": true, "actual": 110, "expected": 110},
+    {"check": "CC套-独立攻击+120", "pass": true, "actual": 120, "expected": 120},
+    {"check": "CC套-暴击率+3%", "pass": true, "actual": 3.0, "expected": 3.0},
+    {"check": "狂战士-固伤综合+9.27%", "pass": true, "actual": 9.27, "expected": 9.27},
+    {"check": "狂战士-百分比综合+32.81%", "pass": true, "actual": 32.81, "expected": 32.81},
+    {"check": "剑魂-百分比综合+45.70%", "pass": true, "actual": 45.7, "expected": 45.7},
+    {"check": "边际对偶≈4.930020", "pass": true, "actual": 4.93002, "expected": 4.93002},
+    {"check": "破极兵刃协同-物理攻击2743", "pass": true, "actual": 2743.0, "expected": 2743},
+    {"check": "狂战士-独立攻击收益+8.0%", "pass": true, "actual": 8.0, "expected": 8.0},
+    {"check": "狂战士-暴击收益+1.2%", "pass": true, "actual": 1.2, "expected": 1.2},
+    {"check": "剑魂-力量收益+36.47%", "pass": true, "actual": 36.47, "expected": 36.47},
+    {"check": "剑魂-物理攻击收益+5.50%", "pass": true, "actual": 5.5, "expected": 5.5},
+    {"check": "剑魂-暴击收益+1.2%", "pass": true, "actual": 1.2, "expected": 1.2},
+    {"check": "狂战士-力量收益(暴走后)+24.42%", "pass": true, "actual": 24.42, "expected": 24.42},
+    {"check": "狂战士-物理攻击收益+5.50%", "pass": true, "actual": 5.5, "expected": 5.5}
+  ],
+  "all_pass": true,
+  "marginal_dual_expected": 4.93002
+}
