@@ -1,6 +1,6 @@
 {
   "version": "v1221",
-  "timestamp": "2026-07-02T13:25:00 CST",
+  "timestamp": "2026-07-02T15:19:28 CST",
   "cc_set": {
     "力量": 310,
     "物理攻击": 110,
@@ -23,5 +23,84 @@
   "checks_passed": 13,
   "checks_total": 13,
   "all_pass": true,
-  "marginal_dual_verify": 4.929881
+  "checks_detail": [
+    {
+      "item": "CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "item": "CC套物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "item": "CC套独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "item": "CC套暴击率",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    {
+      "item": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "item": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "item": "狂战士独立攻击收益",
+      "expected": 8.0,
+      "actual": 8.0,
+      "pass": true
+    },
+    {
+      "item": "狂战士暴击收益",
+      "expected": 1.2,
+      "actual": 1.2,
+      "pass": true
+    },
+    {
+      "item": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "item": "剑魂力量收益",
+      "expected": 11.17,
+      "actual": 11.17,
+      "pass": true
+    },
+    {
+      "item": "剑魂物理攻击收益",
+      "expected": 5.0,
+      "actual": 5.0,
+      "pass": true
+    },
+    {
+      "item": "剑魂暴击收益",
+      "expected": 1.2,
+      "actual": 1.2,
+      "pass": true
+    },
+    {
+      "item": "边际对偶",
+      "expected": 4.929881,
+      "actual": 4.929881,
+      "pass": true
+    }
+  ]
 }
