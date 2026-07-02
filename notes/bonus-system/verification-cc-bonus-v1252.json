@@ -1,53 +1,116 @@
 {
   "version": "v1252",
-  "timestamp": "2026-07-02T22:41:00+08:00",
-  "task": "任务19 CC套（宫廷套装）各职业加成数值",
+  "timestamp": "2026-07-02 22:48:46",
+  "passed": 16,
+  "total": 16,
+  "pass_rate": "16/16",
+  "results": [
+    {
+      "item": "力量合计",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "item": "物理攻击合计",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "item": "独立攻击合计",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "item": "暴击率合计",
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true
+    },
+    {
+      "item": "狂战士-独立攻击收益",
+      "expected": 8.0,
+      "actual": 8.0,
+      "pass": true
+    },
+    {
+      "item": "狂战士-暴击收益",
+      "expected": 1.18,
+      "actual": 1.18,
+      "pass": true
+    },
+    {
+      "item": "狂战士固伤综合收益",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "item": "狂战士-力量收益(百分比)",
+      "expected": 24.42,
+      "actual": 24.42,
+      "pass": true
+    },
+    {
+      "item": "狂战士-物理攻击收益(百分比)",
+      "expected": 5.5,
+      "actual": 5.5,
+      "pass": true
+    },
+    {
+      "item": "狂战士百分比综合收益",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "item": "剑魂-力量收益",
+      "expected": 36.47,
+      "actual": 36.47,
+      "pass": true
+    },
+    {
+      "item": "剑魂-物理攻击收益",
+      "expected": 5.5,
+      "actual": 5.5,
+      "pass": true
+    },
+    {
+      "item": "剑魂-暴击收益",
+      "expected": 1.2,
+      "actual": 1.2,
+      "pass": true
+    },
+    {
+      "item": "剑魂百分比综合收益",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "item": "边际对偶(剑魂综合/狂战士固伤综合)",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "item": "破极兵刃协同物理攻击",
+      "expected": 2743.0,
+      "actual": 2743.0,
+      "pass": true
+    }
+  ],
   "cc_set": {
     "str": 310,
-    "phys_atk": 110,
-    "indep_atk": 120,
-    "crit": 3
+    "phy": 110,
+    "ind": 120,
+    "crit": 0.03
   },
-  "base_values": {
-    "berserker": {
-      "indep_base": 1250,
-      "str_base": 728,
-      "str_burst": 1019.2,
-      "phys_atk": 2000,
-      "crit_old": 0.55
-    },
-    "swordsman": {
-      "str_base": 600,
-      "phys_atk": 2000,
-      "crit_old": 0.5
-    }
-  },
-  "berserker_results": {
-    "fixed_gain": 8.0,
-    "crit_gain": 1.176,
-    "fixed_total": 9.27,
-    "percent_str_gain": 24.42,
-    "percent_phys_gain": 5.5,
-    "percent_total": 32.81
-  },
-  "swordsman_results": {
-    "percent_str_gain": 36.47,
-    "percent_phys_gain": 5.5,
-    "crit_gain": 1.176,
-    "percent_total": 45.7
-  },
-  "marginal_dual": 4.93002,
-  "verifications": {
-    "cc_set_str_310": true,
-    "cc_set_phys_atk_110": true,
-    "cc_set_indep_atk_120": true,
-    "cc_set_crit_3": true,
-    "berserker_fixed_9.27": true,
-    "berserker_percent_32.81": true,
-    "swordsman_percent_45.70": true,
-    "marginal_dual_4.930020": true
-  },
-  "python_verify_count": 8,
-  "pass_count": 8,
-  "pass_rate": "100%"
+  "berserker_fix": 9.27,
+  "berserker_pct": 32.81,
+  "swordsman_pct": 45.7,
+  "marginal": 4.93002,
+  "synergy_phy": 2743.0
 }
