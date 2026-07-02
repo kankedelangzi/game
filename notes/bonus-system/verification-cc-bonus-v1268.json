@@ -1,21 +1,108 @@
 {
   "version": "v1268",
-  "timestamp": "2026-07-03 01:39 (UTC+8)",
-  "cc_set_attributes": {
-    "strength": 310,
-    "physical_attack": 110,
-    "independent_attack": 120,
-    "crit_rate": 3
-  },
-  "berserker": {
-    "fixed_total": 9.27,
-    "pct_total": 32.81
-  },
-  "swordsman": {
-    "pct_total": 45.7
-  },
-  "marginal_duality": 4.929881,
-  "pass_count": 15,
-  "pass_total": 15,
-  "pass_rate": "100%"
+  "timestamp": "2026-07-03 01:51:24",
+  "checks": [
+    {
+      "name": "CC套力量合计",
+      "expected": 310,
+      "actual": 310,
+      "passed": true
+    },
+    {
+      "name": "CC套物理攻击合计",
+      "expected": 110,
+      "actual": 110,
+      "passed": true
+    },
+    {
+      "name": "CC套独立攻击合计",
+      "expected": 120,
+      "actual": 120,
+      "passed": true
+    },
+    {
+      "name": "CC套暴击合计",
+      "expected": 3.0,
+      "actual": 3.0,
+      "passed": true
+    },
+    {
+      "name": "狂战士独立攻击收益",
+      "expected": 0.08,
+      "actual": 0.08,
+      "passed": true
+    },
+    {
+      "name": "狂战士暴击收益",
+      "expected": 0.012,
+      "actual": 0.01176,
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤综合",
+      "expected": 0.0927,
+      "actual": 0.0927,
+      "passed": true
+    },
+    {
+      "name": "狂战士力量收益(百分比)",
+      "expected": 0.2442,
+      "actual": 0.2442,
+      "passed": true
+    },
+    {
+      "name": "狂战士物理攻击收益(百分比)",
+      "expected": 0.055,
+      "actual": 0.055,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比综合",
+      "expected": 0.3281,
+      "actual": 0.3281,
+      "passed": true
+    },
+    {
+      "name": "剑魂力量收益",
+      "expected": 0.3647,
+      "actual": 0.3647,
+      "passed": true
+    },
+    {
+      "name": "剑魂物理攻击收益",
+      "expected": 0.055,
+      "actual": 0.055,
+      "passed": true
+    },
+    {
+      "name": "剑魂暴击收益",
+      "expected": 0.012,
+      "actual": 0.012,
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比综合",
+      "expected": 0.457,
+      "actual": 0.457,
+      "passed": true
+    },
+    {
+      "name": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "passed": true
+    },
+    {
+      "name": "破极兵刃协同物理攻击",
+      "expected": 2743,
+      "actual": 2743.0,
+      "passed": true
+    }
+  ],
+  "summary": {
+    "total": 16,
+    "passed": 16,
+    "rate": "16/16",
+    "all_passed": true
+  }
 }
