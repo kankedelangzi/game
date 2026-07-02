@@ -1,0 +1,77 @@
+{
+  "version": "v1210",
+  "timestamp": 1782956065,
+  "datetime": "2026-07-02 09:34:25 CST",
+  "cc_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击": 3.0
+  },
+  "berserker_fixed_gain_pct": 9.3231,
+  "berserker_pct_gain_pct": 32.81,
+  "swordsman_pct_gain_pct": 45.7,
+  "marginal_duality": 4.93002,
+  "verification": {
+    "pass": 14,
+    "fail": 0,
+    "details": [
+      {
+        "name": "HTML含力量310",
+        "passed": true
+      },
+      {
+        "name": "HTML含物理攻击110",
+        "passed": true
+      },
+      {
+        "name": "HTML含独立攻击120",
+        "passed": true
+      },
+      {
+        "name": "HTML含暴击3%",
+        "passed": true
+      },
+      {
+        "name": "HTML含狂战士固伤+9.27%",
+        "passed": true
+      },
+      {
+        "name": "HTML含狂战士百分比+32.81%",
+        "passed": true
+      },
+      {
+        "name": "HTML含剑魂百分比+45.70%",
+        "passed": true
+      },
+      {
+        "name": "HTML含边际对偶4.93",
+        "passed": true
+      },
+      {
+        "name": "上衣55+下装55+头饰50+帽子50+脸部50+胸部50=310",
+        "passed": true
+      },
+      {
+        "name": "物理攻击20+20+18+18+18+16=110",
+        "passed": true
+      },
+      {
+        "name": "独立攻击20+20+18+18+18+26=120",
+        "passed": true
+      },
+      {
+        "name": "暴击0.5*6=3.0%",
+        "passed": true
+      },
+      {
+        "name": "固伤收益公式计算一致(≈9.3%)",
+        "passed": true
+      },
+      {
+        "name": "前版验证JSON存在",
+        "passed": true
+      }
+    ]
+  }
+}
