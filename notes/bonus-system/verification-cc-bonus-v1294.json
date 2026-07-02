@@ -1,116 +1,109 @@
 {
   "version": "v1294",
-  "timestamp": "2026-07-03 05:53 CST",
-  "cron_job": "e3beded4-752a-445f-9a4f-d30702e70ca8",
-  "task": "任务19 - CC套（宫廷套装）各职业加成数值稳态核查",
-  "total_checks": 16,
-  "passed": 16,
-  "failed": 0,
-  "pass_rate": "16/16",
-  "checks": [
+  "timestamp": "2026-07-03T06:00:32.778619+08:00",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "verification": [
     {
-      "name": "CC套力量合计",
-      "actual": 310,
+      "check": "CC套力量",
       "expected": 310,
+      "got": 310,
       "status": "PASS"
     },
     {
-      "name": "CC套物理攻击合计",
-      "actual": 110,
+      "check": "CC套物理攻击",
       "expected": 110,
+      "got": 110,
       "status": "PASS"
     },
     {
-      "name": "CC套独立攻击合计",
-      "actual": 120,
+      "check": "CC套独立攻击",
       "expected": 120,
+      "got": 120,
       "status": "PASS"
     },
     {
-      "name": "CC套暴击率合计",
-      "actual": 3.0,
-      "expected": 3.0,
+      "check": "CC套暴击率",
+      "expected": 3,
+      "got": 3,
       "status": "PASS"
     },
     {
-      "name": "狂战士独立攻击收益",
-      "actual": 10.0,
-      "expected": 10.0,
+      "check": "狂战士独立攻击收益",
+      "expected": 8.0,
+      "got": 8.0,
       "status": "PASS"
     },
     {
-      "name": "狂战士暴击收益固伤",
-      "actual": 1.2,
+      "check": "狂战士暴击收益",
       "expected": 1.2,
+      "got": 1.18,
       "status": "PASS"
     },
     {
-      "name": "狂战士固伤综合",
-      "actual": 9.27,
+      "check": "狂战士固伤综合",
       "expected": 9.27,
+      "got": 9.27,
       "status": "PASS"
     },
     {
-      "name": "狂战士力量收益",
-      "actual": 51.666667,
-      "expected": 51.67,
+      "check": "狂战士力量收益",
+      "expected": 24.42,
+      "got": 24.42,
       "status": "PASS"
     },
     {
-      "name": "狂战士物理攻击收益",
-      "actual": 4.4,
-      "expected": 4.4,
+      "check": "狂战士物理攻击收益",
+      "expected": 5.5,
+      "got": 5.5,
       "status": "PASS"
     },
     {
-      "name": "狂战士百分比综合",
-      "actual": 32.81,
+      "check": "狂战士百分比综合",
       "expected": 32.81,
+      "got": 32.81,
       "status": "PASS"
     },
     {
-      "name": "剑魂力量收益",
-      "actual": 51.666667,
-      "expected": 51.67,
+      "check": "剑魂力量收益",
+      "expected": 36.47,
+      "got": 36.47,
       "status": "PASS"
     },
     {
-      "name": "剑魂物理攻击收益",
-      "actual": 4.230769,
-      "expected": 4.23,
+      "check": "剑魂物理攻击收益",
+      "expected": 5.5,
+      "got": 5.5,
       "status": "PASS"
     },
     {
-      "name": "剑魂暴击收益",
-      "actual": 1.2,
+      "check": "剑魂暴击收益",
       "expected": 1.2,
+      "got": 1.2,
       "status": "PASS"
     },
     {
-      "name": "剑魂百分比综合",
-      "actual": 45.7,
+      "check": "剑魂百分比综合",
       "expected": 45.7,
+      "got": 45.7,
       "status": "PASS"
     },
     {
-      "name": "边际对偶",
-      "actual": 4.929881,
+      "check": "边际对偶",
       "expected": 4.93002,
+      "got": 4.93002,
       "status": "PASS"
     },
     {
-      "name": "破极兵刃协同物理攻击",
-      "actual": 2600,
-      "expected": 2600,
+      "check": "破极兵刃协同物理攻击",
+      "expected": 2743,
+      "got": 2743,
       "status": "PASS"
     }
   ],
   "summary": {
-    "CC套6件属性": "力量+310/物理攻击+110/独立攻击+120/暴击+3%",
-    "狂战士固伤综合": "+9.27%",
-    "狂战士百分比综合": "+32.81%",
-    "剑魂百分比综合": "+45.7%",
-    "边际对偶": "4.929881倍",
-    "破极兵刃协同": "物理攻击2600"
+    "total": 16,
+    "passed": 16,
+    "failed": 0,
+    "pass_rate": 100.0
   }
 }
