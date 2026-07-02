@@ -1,0 +1,70 @@
+{
+  "version": "v1214",
+  "timestamp": "2026-07-02T11:35:00+08:00",
+  "cc_6_piece_stats": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical_rate_pct": 3
+  },
+  "berserker": {
+    "fixed_damage_composite_pct": 9.27,
+    "percentage_damage_composite_pct": 32.81,
+    "fixed_independent_bonus_pct": 8.0,
+    "fixed_crit_bonus_pct": 1.18,
+    "pct_str_bonus_pct": 24.42,
+    "pct_phy_bonus_pct": 5.5,
+    "pct_crit_bonus_pct": 1.18
+  },
+  "swordsman": {
+    "percentage_damage_composite_pct": 45.7,
+    "str_bonus_pct": 36.47,
+    "phy_bonus_pct": 5.5,
+    "crit_bonus_pct": 1.2
+  },
+  "marginal_dual": {
+    "value": 4.929881,
+    "formula": "剑魂百分比综合 / 狂战士固伤综合",
+    "status": "系统固有频率不变量"
+  },
+  "checks": [
+    {
+      "name": "CC套-力量+310",
+      "passed": true
+    },
+    {
+      "name": "CC套-物理攻击+110",
+      "passed": true
+    },
+    {
+      "name": "CC套-独立攻击+120",
+      "passed": true
+    },
+    {
+      "name": "CC套-暴击+3%",
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤综合≈9.27%",
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比综合≈32.81%",
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比综合≈45.70%",
+      "passed": true
+    },
+    {
+      "name": "边际对偶≈4.93",
+      "passed": true
+    }
+  ],
+  "verification": "ALL PASSED",
+  "cc_6_attributes_correct": true,
+  "berserker_fixed_correct": true,
+  "berserker_pct_correct": true,
+  "swordsman_pct_correct": true,
+  "marginal_dual_confirmed": true
+}
