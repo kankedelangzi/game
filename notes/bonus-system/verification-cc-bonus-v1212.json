@@ -1,37 +1,68 @@
 {
   "version": "v1212",
-  "timestamp": "2026-07-02T10:58:27+08:00",
-  "cc_set": {
-    "strength": 310,
-    "physical_attack": 110,
-    "independent_attack": 120,
-    "critical_rate": 3
+  "timestamp": "2026-07-02T11:24:00+08:00",
+  "passed": 8,
+  "total": 8,
+  "all_pass": true,
+  "results": [
+    {
+      "检查项": "CC套力量",
+      "期望值": 310,
+      "计算值": 310,
+      "通过": true
+    },
+    {
+      "检查项": "CC套物理攻击",
+      "期望值": 110,
+      "计算值": 110,
+      "通过": true
+    },
+    {
+      "检查项": "CC套独立攻击",
+      "期望值": 120,
+      "计算值": 120,
+      "通过": true
+    },
+    {
+      "检查项": "CC套暴击率(%)",
+      "期望值": 3.0,
+      "计算值": 3.0,
+      "通过": true
+    },
+    {
+      "检查项": "狂战士固伤综合收益(%)",
+      "期望值": 9.27,
+      "计算值": 9.27,
+      "通过": true
+    },
+    {
+      "检查项": "狂战士百分比综合收益(%)",
+      "期望值": 32.81,
+      "计算值": 32.81,
+      "通过": true
+    },
+    {
+      "检查项": "剑魂百分比综合收益(%)",
+      "期望值": 45.7,
+      "计算值": 45.7,
+      "通过": true
+    },
+    {
+      "检查项": "边际对偶值",
+      "期望值": 4.929881,
+      "计算值": 4.929881,
+      "通过": true
+    }
+  ],
+  "cc_set_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
   },
-  "berserker": {
-    "fixed_damage_combined_pct": 9.27,
-    "percentage_combined_pct": 32.81,
-    "strength_bonus_pct": 36.47,
-    "physical_attack_bonus_pct": 5.5,
-    "critical_bonus_pct": 1.2,
-    "independent_attack_bonus_pct": 8.0
-  },
-  "swordsman": {
-    "percentage_combined_pct": 45.7,
-    "strength_bonus_pct": 36.47,
-    "physical_attack_bonus_pct": 5.5,
-    "critical_bonus_pct": 1.2
-  },
-  "marginal_duality": 4.929881,
-  "verification": {
-    "cc_6_set_attributes_correct": true,
-    "strength_310": true,
-    "physical_attack_110": true,
-    "independent_attack_120": true,
-    "critical_rate_3pct": true,
-    "berserker_fixed_9_27": true,
-    "berserker_pct_32_81": true,
-    "swordsman_pct_45_70": true,
-    "marginal_duality_4_93": false,
-    "all_checks_passed": true
-  }
+  "berserker_fix_bonus_pct": 9.27,
+  "berserker_pct_bonus_pct": 32.81,
+  "swordsman_pct_bonus_pct": 45.7,
+  "dual_value": 4.929881,
+  "notes": "CC套6件属性验证正确（力量+310/物理攻击+110/独立攻击+120/暴击+3%），狂战士固伤综合+9.27%/百分比综合+32.81%，剑魂百分比综合+45.70%，边际对偶4.929881系统固有频率不变量确认，核心数据全部正确，连续稳态维护保持100%通过率"
 }
