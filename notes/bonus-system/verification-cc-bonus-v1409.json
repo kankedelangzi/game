@@ -1,0 +1,22 @@
+{
+  "version": "v1409",
+  "timestamp": "2026-07-04 07:03 CST",
+  "cc_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 0.03
+  },
+  "berserker_fixed_gain": 9.27,
+  "berserker_pct_gain": 32.81,
+  "swordsman_pct_gain": 45.7,
+  "marginal_duality": 4.93002,
+  "pjjp_cc_atk": 2710,
+  "faal_status": "固化",
+  "verification": {
+    "total": 9,
+    "cc_stats_match": 4,
+    "calibrated_match": 5,
+    "note": "CC套6件属性4/4精确匹配，核心综合值经1300+轮校准为定值"
+  }
+}
