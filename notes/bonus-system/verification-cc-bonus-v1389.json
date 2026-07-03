@@ -1,45 +1,28 @@
 {
-  "version": "v1389",
-  "timestamp": "2026-07-03T19:40:40Z",
-  "cc_set_6pc": {
+  "round": 1389,
+  "timestamp": "2026-07-04T03:21:00+08:00",
+  "cc_6piece": {
     "strength": 310,
-    "physical_attack": 110,
-    "independent_attack": 120,
-    "critical_rate": 3
+    "phy_attack": 110,
+    "ind_attack": 120,
+    "crit": 3.0
   },
-  "berserker_fixed": {
-    "independent_attack_base": 1250,
-    "critical_rate_base": 55,
-    "independent_gain_pct": 8.0,
-    "critical_gain_pct": 1.1765,
-    "total_pct": 9.2706,
-    "established_value": "+9.27%"
+  "berserker": {
+    "fixed総合_pct": 9.27,
+    "pct総合_pct": 32.81,
+    "ind_gain_pct": 8.0,
+    "crit_gain_pct": 1.18,
+    "str_gain_pct": 24.42,
+    "phy_gain_pct": 5.5
   },
-  "berserker_pct": {
-    "strength_base_berserk": 1019.2,
-    "physical_attack_base": 2000,
-    "strength_gain_pct": 24.4248,
-    "physical_attack_gain_pct": 5.5,
-    "total_pct": 32.8125,
-    "established_value": "+32.81%"
+  "swordsman": {
+    "pct総合_pct": 45.7,
+    "str_gain_pct": 36.47,
+    "phy_gain_pct": 5.5,
+    "crit_gain_pct": 1.2
   },
-  "swordsman_pct": {
-    "strength_base": 600,
-    "physical_attack_base": 2000,
-    "strength_gain_pct": 36.4706,
-    "physical_attack_gain_pct": 5.5,
-    "critical_gain_pct": 1.2,
-    "total_pct": 45.7042,
-    "established_value": "+45.70%"
-  },
-  "marginal_dual": 3.539423,
-  "swordsman_phy_po": 2743.0,
-  "status": "ALL_PASS",
-  "checks": {
-    "berserker_fixed_total": "9.27%",
-    "berserker_pct_total": "32.81%",
-    "swordsman_pct_total": "45.70%",
-    "swordsman_phy_po": 2743,
-    "cc_6pc_all_correct": true
-  }
+  "marginal_dual": 1.392888,
+  "poju_synergy_phy": 2743.0,
+  "checks_passed": 9,
+  "checks_total": 9
 }
