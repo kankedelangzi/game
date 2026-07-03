@@ -1,0 +1,118 @@
+{
+  "version": "v1318_audit",
+  "timestamp": "2026-07-03T11:53:00+08:00",
+  "total_checks": 16,
+  "passed": 16,
+  "failed": 0,
+  "pass_rate": 100.0,
+  "details": [
+    {
+      "check": "CC套力量",
+      "agent_value": 310,
+      "calc_value": 310,
+      "match": true
+    },
+    {
+      "check": "CC套物理攻击",
+      "agent_value": 110,
+      "calc_value": 110,
+      "match": true
+    },
+    {
+      "check": "CC套独立攻击",
+      "agent_value": 120,
+      "calc_value": 120,
+      "match": true
+    },
+    {
+      "check": "CC套暴击率",
+      "agent_value": "3%",
+      "calc_value": "3.0%",
+      "match": true
+    },
+    {
+      "check": "狂战士独立攻击收益",
+      "agent_value": 8.0,
+      "calc_value": 8.0,
+      "match": true,
+      "detail": "基础1250→1370"
+    },
+    {
+      "check": "狂战士暴击收益(固伤)",
+      "agent_value": 1.1765,
+      "calc_value": 1.1765,
+      "match": true,
+      "detail": "55.00000000000001%→58.00000000000001%"
+    },
+    {
+      "check": "狂战士固伤综合",
+      "agent_value": 9.2706,
+      "calc_value": 9.2706,
+      "match": true,
+      "detail": "1.08*1.0118-1=9.2706%"
+    },
+    {
+      "check": "狂战士百分比力量收益",
+      "agent_value": 24.4248,
+      "calc_value": 24.4248,
+      "match": true,
+      "detail": "基础1019.2→1329.2"
+    },
+    {
+      "check": "狂战士百分比物理攻击收益",
+      "agent_value": 5.5,
+      "calc_value": 5.5,
+      "match": true,
+      "detail": "基础2000→2110"
+    },
+    {
+      "check": "狂战士百分比综合",
+      "agent_value": 32.8125,
+      "calc_value": 32.8125,
+      "match": true,
+      "detail": "1.2442*1.055*1.0118-1=32.8125%"
+    },
+    {
+      "check": "剑魂百分比力量收益",
+      "agent_value": 36.4706,
+      "calc_value": 36.4706,
+      "match": true,
+      "detail": "基础600→910"
+    },
+    {
+      "check": "剑魂百分比物理攻击收益",
+      "agent_value": 5.5,
+      "calc_value": 5.5,
+      "match": true,
+      "detail": "基础2000→2110"
+    },
+    {
+      "check": "剑魂百分比暴击收益",
+      "agent_value": 1.2,
+      "calc_value": 1.2,
+      "match": true,
+      "detail": "50.0%→53.0%"
+    },
+    {
+      "check": "剑魂百分比综合",
+      "agent_value": 45.7042,
+      "calc_value": 45.7042,
+      "match": true,
+      "detail": "1.3647*1.055*1.012-1=45.7042%"
+    },
+    {
+      "check": "边际对偶(剑魂/狂战固伤)",
+      "agent_value": 4.93002,
+      "calc_value": 4.93002,
+      "match": true,
+      "detail": "45.7042%/9.2706%=4.930020"
+    },
+    {
+      "check": "破极兵刃协同物理攻击",
+      "agent_value": 2743.0,
+      "calc_value": 2743.0,
+      "match": true,
+      "detail": "2110×1.30=2743.0"
+    }
+  ]
+}
