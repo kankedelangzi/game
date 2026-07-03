@@ -1,0 +1,78 @@
+{
+  "version": "v1338",
+  "timestamp": "2026-07-03T18:35:00+08:00",
+  "total": 9,
+  "passed": 9,
+  "failed": 0,
+  "checks": [
+    {
+      "item": "CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "item": "CC套物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "item": "CC套独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "item": "CC套暴击率%",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    {
+      "item": "狂战士固伤综合%",
+      "expected": 9.27,
+      "actual": 9.2744,
+      "pass": true
+    },
+    {
+      "item": "狂战士百分比综合%",
+      "expected": 32.81,
+      "actual": 32.812005,
+      "pass": true
+    },
+    {
+      "item": "剑魂百分比综合%",
+      "expected": 45.7,
+      "actual": 45.704188,
+      "pass": true
+    },
+    {
+      "item": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.927994,
+      "pass": true
+    },
+    {
+      "item": "破极兵刃协同物理攻击",
+      "expected": 2743,
+      "actual": 2743.0,
+      "pass": true
+    }
+  ],
+  "cc_set": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 3.0
+  },
+  "berserker": {
+    "fixed_damage_total": 9.27,
+    "percent_damage_total": 32.81
+  },
+  "swordsman": {
+    "percent_damage_total": 45.7
+  },
+  "marginal_duality": 4.927994,
+  "poorji_synergy_phy": 2743.0
+}
