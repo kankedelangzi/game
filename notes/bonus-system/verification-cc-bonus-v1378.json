@@ -1,0 +1,63 @@
+{
+  "version": "v1378",
+  "timestamp": "2026-07-04T01:47:00+08:00",
+  "cc_attrs": {
+    "力量": {
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    "物理攻击": {
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    "独立攻击": {
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    "暴击率": {
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    }
+  },
+  "berserker": {
+    "固伤综合": {
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    "百分比综合": {
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    }
+  },
+  "swordsman": {
+    "百分比综合": {
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    }
+  },
+  "poji协同物理攻击": {
+    "expected": 2743,
+    "actual": 2743,
+    "pass": true
+  },
+  "marginal_dual": {
+    "expected": 4.93002,
+    "actual": 4.93002,
+    "pass": true
+  },
+  "faal框架": {
+    "expected": "已固化",
+    "actual": "已固化",
+    "pass": true
+  },
+  "summary": "10/10 Python独立验算通过",
+  "all_pass": true,
+  "status": "核心数据零漂移"
+}
