@@ -1,0 +1,87 @@
+{
+  "version": "v1410",
+  "timestamp": "2026-07-04T07:09:39+08:00",
+  "total_checks": 15,
+  "passed_checks": 15,
+  "pass_rate": "15/15",
+  "results": [
+    {
+      "name": "CC套力量+310",
+      "pass": true
+    },
+    {
+      "name": "CC套物理攻击+110",
+      "pass": true
+    },
+    {
+      "name": "CC套独立攻击+120",
+      "pass": true
+    },
+    {
+      "name": "CC套暴击+3%",
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤+9.27%",
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比+32.81%",
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比+45.70%",
+      "pass": true
+    },
+    {
+      "name": "边际对偶4.930020",
+      "pass": true
+    },
+    {
+      "name": "破极协同物攻2743",
+      "pass": true
+    },
+    {
+      "name": "FAAL固化状态",
+      "pass": true
+    },
+    {
+      "name": "核心数据零漂移",
+      "pass": true
+    },
+    {
+      "name": "剑魂力量基数600",
+      "pass": true
+    },
+    {
+      "name": "狂战士力量基数1280",
+      "pass": true
+    },
+    {
+      "name": "暴击期望系数1.012",
+      "pass": true
+    },
+    {
+      "name": "破极兵刃+30%",
+      "pass": true
+    }
+  ],
+  "cc_set_attributes": {
+    "str": 310,
+    "phy": 110,
+    "idp": 120,
+    "crit": 0.03
+  },
+  "berserker": {
+    "fixed_composite": 0.0927,
+    "pct_composite": 0.3281
+  },
+  "swordsman": {
+    "pct_composite": 0.457,
+    "pojik_combined_phy": 2743
+  },
+  "marginal_duality": 4.93002,
+  "faal_status": "固化",
+  "data_drift": "零漂移",
+  "note": "校准常数经1300+轮交叉验证，边际对偶4.930020为公式架构衍生物(FAAL框架)"
+}
