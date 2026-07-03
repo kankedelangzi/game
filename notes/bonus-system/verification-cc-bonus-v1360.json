@@ -1,0 +1,122 @@
+{
+  "version": "v1360",
+  "timestamp": "2026-07-03 23:24:38",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "total_checks": 16,
+  "passed": 12,
+  "failed": 4,
+  "pass_rate": "75.0%",
+  "cc_set_attributes": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker": {
+    "fixed_damage_bonus": 9.3,
+    "percent_damage_bonus": 32.64
+  },
+  "swordsman": {
+    "percent_damage_bonus": 45.7
+  },
+  "marginal_duality": 4.916543,
+  "pj_phys_attack": 2710,
+  "results": [
+    {
+      "item": "力量合计",
+      "calculated": 310,
+      "expected": 310,
+      "status": "PASS"
+    },
+    {
+      "item": "物理攻击合计",
+      "calculated": 110,
+      "expected": 110,
+      "status": "PASS"
+    },
+    {
+      "item": "独立攻击合计",
+      "calculated": 120,
+      "expected": 120,
+      "status": "PASS"
+    },
+    {
+      "item": "暴击率合计",
+      "calculated": 3.0,
+      "expected": 3.0,
+      "status": "PASS"
+    },
+    {
+      "item": "狂战士独立攻击收益",
+      "calculated": 8.0,
+      "expected": 8.0,
+      "status": "PASS"
+    },
+    {
+      "item": "狂战士暴击期望系数",
+      "calculated": 1.012,
+      "expected": 1.012,
+      "status": "PASS"
+    },
+    {
+      "item": "狂战士固伤综合收益",
+      "calculated": 9.3,
+      "expected": 9.27,
+      "status": "FAIL(calc=9.3, exp=9.27)"
+    },
+    {
+      "item": "狂战士力量收益",
+      "calculated": 24.2339,
+      "expected": 24.2339,
+      "status": "PASS"
+    },
+    {
+      "item": "狂战士物理攻击收益",
+      "calculated": 5.5,
+      "expected": 5.5,
+      "status": "PASS"
+    },
+    {
+      "item": "狂战士百分比综合收益",
+      "calculated": 32.64,
+      "expected": 32.81,
+      "status": "FAIL(calc=32.64, exp=32.81)"
+    },
+    {
+      "item": "剑魂力量收益",
+      "calculated": 36.4706,
+      "expected": 36.4706,
+      "status": "PASS"
+    },
+    {
+      "item": "剑魂物理攻击收益",
+      "calculated": 5.5,
+      "expected": 5.5,
+      "status": "PASS"
+    },
+    {
+      "item": "剑魂暴击期望系数",
+      "calculated": 1.012,
+      "expected": 1.012,
+      "status": "PASS"
+    },
+    {
+      "item": "剑魂百分比综合收益",
+      "calculated": 45.7,
+      "expected": 45.7,
+      "status": "PASS"
+    },
+    {
+      "item": "边际对偶",
+      "calculated": 4.916543,
+      "expected": 4.93002,
+      "status": "FAIL(calc=4.916543, exp=4.93002)"
+    },
+    {
+      "item": "破极兵刃协同物理攻击",
+      "calculated": 2710,
+      "expected": 2743,
+      "status": "FAIL(calc=2710, exp=2743)"
+    }
+  ]
+}
