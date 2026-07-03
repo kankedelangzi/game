@@ -1,0 +1,27 @@
+{
+  "version": "v1355",
+  "timestamp": "2026-07-03 22:34:43 CST",
+  "checks_total": 10,
+  "checks_passed": 10,
+  "all_pass": true,
+  "cc_6piece_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker": {
+    "固伤综合": "+9.27%",
+    "百分比综合": "+32.81%"
+  },
+  "swordsman": {
+    "百分比综合": "+45.70%"
+  },
+  "marginal_duality": {
+    "value": 4.929881,
+    "formula": "剑魂百分比综合 / 狂战士固伤综合",
+    "interpretation": "百分比3乘区 vs 固伤2乘区不对称公式架构的必然产物"
+  },
+  "poge_synergy": 2743,
+  "faal_framework": "三阶七维框架固化确认"
+}
