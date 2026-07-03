@@ -1,0 +1,147 @@
+{
+  "version": "v1357",
+  "timestamp": "2026-07-03T14:44:41Z",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "status": "PASS",
+  "total_checks": 17,
+  "passed": 17,
+  "failed": 0,
+  "pass_rate": "17/17",
+  "cc_set_6p": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical_rate": "3%"
+  },
+  "berserker": {
+    "fixed_damage_combined": "+9.27%",
+    "percentage_combined": "+32.81%"
+  },
+  "swordsman": {
+    "percentage_combined": "+45.7%"
+  },
+  "marginal_duality": "1.392888倍",
+  "po_break_synergy": "物理攻击2743.0",
+  "faal_framework": "已固化",
+  "checks": [
+    {
+      "check": "CC套力量",
+      "expected": 310,
+      "computed": 310,
+      "unit": "",
+      "status": "PASS"
+    },
+    {
+      "check": "CC套物理攻击",
+      "expected": 110,
+      "computed": 110,
+      "unit": "",
+      "status": "PASS"
+    },
+    {
+      "check": "CC套独立攻击",
+      "expected": 120,
+      "computed": 120,
+      "unit": "",
+      "status": "PASS"
+    },
+    {
+      "check": "CC套暴击率",
+      "expected": 3,
+      "computed": 3,
+      "unit": "%",
+      "status": "PASS"
+    },
+    {
+      "check": "狂战士固伤-独立攻击收益",
+      "expected": 8.0,
+      "computed": 8.0,
+      "unit": "%",
+      "status": "PASS"
+    },
+    {
+      "check": "狂战士固伤-暴击收益",
+      "expected": 1.18,
+      "computed": 1.18,
+      "unit": "%",
+      "status": "PASS"
+    },
+    {
+      "check": "狂战士固伤综合收益",
+      "expected": 9.27,
+      "computed": 9.27,
+      "unit": "%",
+      "status": "PASS"
+    },
+    {
+      "check": "狂战士百分比-力量收益",
+      "expected": 24.42,
+      "computed": 24.42,
+      "unit": "%",
+      "status": "PASS"
+    },
+    {
+      "check": "狂战士百分比-物理攻击收益",
+      "expected": 5.5,
+      "computed": 5.5,
+      "unit": "%",
+      "status": "PASS"
+    },
+    {
+      "check": "狂战士百分比综合收益",
+      "expected": 32.81,
+      "computed": 32.81,
+      "unit": "%",
+      "status": "PASS"
+    },
+    {
+      "check": "剑魂百分比-力量收益",
+      "expected": 36.47,
+      "computed": 36.47,
+      "unit": "%",
+      "status": "PASS"
+    },
+    {
+      "check": "剑魂百分比-物理攻击收益",
+      "expected": 5.5,
+      "computed": 5.5,
+      "unit": "%",
+      "status": "PASS"
+    },
+    {
+      "check": "剑魂百分比-暴击收益",
+      "expected": 1.2,
+      "computed": 1.2,
+      "unit": "%",
+      "status": "PASS"
+    },
+    {
+      "check": "剑魂百分比综合收益",
+      "expected": 45.7,
+      "computed": 45.7,
+      "unit": "%",
+      "status": "PASS"
+    },
+    {
+      "check": "边际对偶",
+      "expected": 1.392888,
+      "computed": 1.392888,
+      "unit": "倍",
+      "status": "PASS"
+    },
+    {
+      "check": "破极兵刃协同物理攻击",
+      "expected": 2743.0,
+      "computed": 2743.0,
+      "unit": "",
+      "status": "PASS"
+    },
+    {
+      "check": "FAAL三阶七维框架固化状态",
+      "expected": "已固化",
+      "computed": "已固化",
+      "unit": "",
+      "status": "PASS"
+    }
+  ]
+}
