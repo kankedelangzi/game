@@ -1,0 +1,42 @@
+{
+  "version": "v1322",
+  "timestamp": "2026-07-03T13:17:00+08:00",
+  "cc_set_stats": {
+    "str": 310,
+    "phys_atk": 110,
+    "independent": 120,
+    "crit_rate": 0.03
+  },
+  "berserker": {
+    "str": 728,
+    "phys_atk": 2000,
+    "independent": 1250,
+    "crit": 0.55,
+    "fixed_combined_pct": 9.27,
+    "pct_combined_pct": 32.81
+  },
+  "swordsman": {
+    "str": 680,
+    "phys_atk": 2000,
+    "independent": 100,
+    "crit": 0.50,
+    "pct_combined_pct": 45.70
+  },
+  "marginal_duality": 4.929881,
+  "marginal_duality_expected": 4.930020,
+  "poji_physics": 2743,
+  "faal_framework": "固化状态确认",
+  "checks": {
+    "cc_str_310": true,
+    "cc_phy_110": true,
+    "cc_ind_120": true,
+    "cc_crit_3pct": true,
+    "bers_fixed_9.27": true,
+    "bers_pct_32.81": true,
+    "sw_pct_45.70": true,
+    "marginal_duality": true,
+    "poji_2743": true,
+    "faal_framework": true
+  },
+  "pass_rate": "10/10 (100%)"
+}
