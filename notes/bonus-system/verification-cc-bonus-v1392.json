@@ -1,0 +1,44 @@
+{
+  "version": "v1392",
+  "timestamp": "2026-07-04T04:25:00+08:00",
+  "cc_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "verification": {
+    "cc_6件_力量": {
+      "value": 310,
+      "expected": 310,
+      "pass": true
+    },
+    "cc_6件_物理攻击": {
+      "value": 110,
+      "expected": 110,
+      "pass": true
+    },
+    "cc_6件_独立攻击": {
+      "value": 120,
+      "expected": 120,
+      "pass": true
+    },
+    "cc_6件_暴击率": {
+      "value": 3.0,
+      "expected": 3.0,
+      "pass": true
+    }
+  },
+  "results": {
+    "狂战士固伤综合": "+40.83%",
+    "狂战士百分比综合": "+31.94%",
+    "剑魂百分比综合": "+49.61%",
+    "破极兵刃协同物理攻击": "2743",
+    "边际对偶": "1.335231"
+  },
+  "core_data_zero_drift": true,
+  "faal_three_stage_seven_dim": true,
+  "tests_passed": 9,
+  "tests_total": 9,
+  "pass_rate": "100%"
+}
