@@ -1,0 +1,19 @@
+{
+  "version": "v1326",
+  "timestamp": "2026-07-03 13:54:31",
+  "checks": 16,
+  "passed": 16,
+  "cc_set": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3
+  },
+  "berserker_fixed_combined": 9.27,
+  "berserker_pct_combined": 32.81,
+  "swordsman_pct_combined": 45.7,
+  "marginal_duality": 4.93002,
+  "swordsman_synergy_phys_atk": 2743,
+  "faal_framework": "固化",
+  "all_passed": true
+}
