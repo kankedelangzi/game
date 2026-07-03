@@ -1,0 +1,31 @@
+{
+  "version": "v1309",
+  "timestamp": "20260703081538",
+  "cc_set_6pc": {
+    "str": 310,
+    "phy": 110,
+    "ind": 120,
+    "cri": 3
+  },
+  "berserker_fixed": {
+    "ind_gain": 8.0,
+    "cri_gain": 1.1765,
+    "total": 9.18
+  },
+  "berserker_pct": {
+    "str_gain": 24.4248,
+    "phy_gain": 5.5,
+    "cri_gain": 1.1765,
+    "total": 32.81
+  },
+  "swordsman_pct": {
+    "str_gain": 36.4706,
+    "phy_gain": 5.5,
+    "cri_gain": 1.2,
+    "total": 45.7
+  },
+  "marginal_duality": 4.980585,
+  "pojie_cc_phy": 2743.0,
+  "pass_rate": "100%",
+  "items_checked": 14
+}
