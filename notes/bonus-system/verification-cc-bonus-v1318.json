@@ -1,0 +1,37 @@
+{
+  "version": "v1318",
+  "timestamp": "2026-07-03T11:51:13.047637+08:00",
+  "cc_set_attributes": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 0.03
+  },
+  "berserker_fixed_bonus": {
+    "独立攻击收益": 8.0,
+    "暴击收益": 1.1765,
+    "固伤综合": 9.2706
+  },
+  "berserker_pct_bonus": {
+    "力量收益": 24.4248,
+    "物理攻击收益": 5.5,
+    "暴击收益": 1.1765,
+    "百分比综合": 32.8125
+  },
+  "swordsman_pct_bonus": {
+    "力量收益": 36.4706,
+    "物理攻击收益": 5.5,
+    "暴击收益": 1.2,
+    "百分比综合": 45.7042
+  },
+  "marginal_duality": 4.93002,
+  "po_ji_synergy_phys_atk": 2743.0,
+  "verification": {
+    "cc_set_attributes_correct": true,
+    "berserker_fixed_correct": true,
+    "berserker_pct_correct": true,
+    "swordsman_pct_correct": true,
+    "marginal_duality_correct": true,
+    "po_ji_synergy_correct": true
+  }
+}
