@@ -1,28 +1,30 @@
 {
-  "round": 1389,
-  "timestamp": "2026-07-04T03:21:00+08:00",
-  "cc_6piece": {
+  "version": "v1389",
+  "timestamp": "2026-07-04 03:55:45",
+  "cc_set": {
     "strength": 310,
-    "phy_attack": 110,
-    "ind_attack": 120,
-    "crit": 3.0
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 3.0
   },
   "berserker": {
-    "fixed総合_pct": 9.27,
-    "pct総合_pct": 32.81,
-    "ind_gain_pct": 8.0,
-    "crit_gain_pct": 1.18,
-    "str_gain_pct": 24.42,
-    "phy_gain_pct": 5.5
+    "fixed_independent_gain": 8.0,
+    "fixed_crit_gain": 1.2,
+    "fixed_total": 9.3,
+    "percent_total": 32.81,
+    "str_gain": 36.47,
+    "phy_gain": 5.5,
+    "crit_gain": 1.2
   },
   "swordsman": {
-    "pct総合_pct": 45.7,
-    "str_gain_pct": 36.47,
-    "phy_gain_pct": 5.5,
-    "crit_gain_pct": 1.2
+    "percent_total": 45.7,
+    "str_gain": 36.47,
+    "phy_gain": 5.5,
+    "crit_gain": 1.2
   },
-  "marginal_dual": 1.392888,
-  "poju_synergy_phy": 2743.0,
-  "checks_passed": 9,
-  "checks_total": 9
+  "marginal": 4.929881,
+  "pojie_phy_with_cc": 2743,
+  "faal_framework": "固化",
+  "checks_passed": 18,
+  "checks_total": 18
 }
