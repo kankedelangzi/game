@@ -1,19 +1,100 @@
 {
   "version": "v1326",
-  "timestamp": "2026-07-03 13:54:31",
-  "checks": 16,
-  "passed": 16,
+  "timestamp": "2026-07-03T15:14:39+08:00",
+  "total_checks": 12,
+  "passed": 11,
+  "pass_rate": "11/12",
   "cc_set": {
     "力量": 310,
     "物理攻击": 110,
     "独立攻击": 120,
-    "暴击率": 3
+    "暴击": 3.0
   },
-  "berserker_fixed_combined": 9.27,
-  "berserker_pct_combined": 32.81,
-  "swordsman_pct_combined": 45.7,
-  "marginal_duality": 4.93002,
-  "swordsman_synergy_phys_atk": 2743,
+  "berserker": {
+    "fixed_combined": 9.27,
+    "percent_combined": 32.81
+  },
+  "swordsman": {
+    "percent_combined": 45.7
+  },
+  "marginal_dual": 4.929881,
+  "po_synergy": {
+    "base_attack": 2110,
+    "po_attack": 2743
+  },
   "faal_framework": "固化",
-  "all_passed": true
+  "checks": [
+    {
+      "name": "CC套力量+310",
+      "passed": true,
+      "expected": 310,
+      "actual": 310
+    },
+    {
+      "name": "CC套物理攻击+110",
+      "passed": true,
+      "expected": 110,
+      "actual": 110
+    },
+    {
+      "name": "CC套独立攻击+120",
+      "passed": true,
+      "expected": 120,
+      "actual": 120
+    },
+    {
+      "name": "CC套暴击+3%",
+      "passed": true,
+      "expected": 3.0,
+      "actual": 3.0
+    },
+    {
+      "name": "狂战士固伤综合+9.27%",
+      "passed": true,
+      "expected": 9.27,
+      "actual": 9.27
+    },
+    {
+      "name": "狂战士百分比综合+32.81%",
+      "passed": true,
+      "expected": 32.81,
+      "actual": 32.81
+    },
+    {
+      "name": "剑魂百分比综合+45.70%",
+      "passed": true,
+      "expected": 45.7,
+      "actual": 45.7
+    },
+    {
+      "name": "破极兵刃基础物攻2110",
+      "passed": true,
+      "expected": 2110,
+      "actual": 2110
+    },
+    {
+      "name": "破极兵刃协同物攻2743",
+      "passed": true,
+      "expected": 2743.0,
+      "actual": 2743.0
+    },
+    {
+      "name": "边际对偶≈4.930020",
+      "passed": false,
+      "expected": 4.93002,
+      "actual": 4.929881
+    },
+    {
+      "name": "FAAL三阶七维框架固化",
+      "passed": true,
+      "expected": "固化",
+      "actual": "固化"
+    },
+    {
+      "name": "退休态自维持震荡",
+      "passed": true,
+      "expected": "震荡",
+      "actual": "震荡"
+    }
+  ]
 }
