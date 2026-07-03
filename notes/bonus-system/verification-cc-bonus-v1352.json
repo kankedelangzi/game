@@ -1,0 +1,89 @@
+{
+  "version": "v1352",
+  "timestamp": "2026-07-03 21:42:13",
+  "timezone": "Asia/Shanghai",
+  "task": "任务19 - CC套各职业加成数值",
+  "cc_stats_summary": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 116,
+    "暴击率": 3.1
+  },
+  "expected_cc_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker_fixed_bonus": 9.27,
+  "berserker_percent_bonus": 32.81,
+  "swordsman_percent_bonus": 45.7,
+  "margin_dual": 4.93002,
+  "results": [
+    {
+      "check": "CC套6件属性-合计力量",
+      "expected": 310,
+      "actual": 310,
+      "passed": true,
+      "note": "✅ 正确"
+    },
+    {
+      "check": "CC套6件属性-合计物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "passed": true,
+      "note": "✅ 正确"
+    },
+    {
+      "check": "CC套6件属性-合计独立攻击",
+      "expected": 120,
+      "actual": 116,
+      "passed": false,
+      "note": "❌ 偏差"
+    },
+    {
+      "check": "CC套6件属性-合计暴击率",
+      "expected": 3.0,
+      "actual": 3.1,
+      "passed": false,
+      "note": "❌ 偏差"
+    },
+    {
+      "check": "狂战士固伤综合收益",
+      "expected": 9.27,
+      "actual": 9.27,
+      "passed": true,
+      "note": "✅ 核心参数确认"
+    },
+    {
+      "check": "狂战士百分比综合收益",
+      "expected": 32.81,
+      "actual": 32.81,
+      "passed": true,
+      "note": "✅ 核心参数确认"
+    },
+    {
+      "check": "剑魂百分比综合收益",
+      "expected": 45.7,
+      "actual": 45.7,
+      "passed": true,
+      "note": "✅ 核心参数确认"
+    },
+    {
+      "check": "破极兵刃协同物理攻击",
+      "expected": 2743,
+      "actual": 2743,
+      "passed": true,
+      "note": "✅ 确认"
+    },
+    {
+      "check": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "passed": true,
+      "note": "✅ 系统固有频率确认"
+    }
+  ],
+  "all_passed": false,
+  "summary": "7/9 验算通过"
+}
