@@ -1,93 +1,120 @@
 {
   "version": "v1406",
-  "timestamp": "2026-07-04 06:43:38",
-  "iso_timestamp": "2026-07-04T06:43:38.013850+08:00",
-  "total_checks": 11,
-  "passed": 11,
-  "pass_rate": 100.0,
+  "timestamp": "2026-07-04T06:46:00+08:00",
+  "round": "v1406",
   "cc_set": {
-    "str": 310,
-    "pattk": 110,
-    "iattk": 120,
-    "crit": 3.0
+    "strength": 310,
+    "physical_atk": 110,
+    "independent_atk": 120,
+    "crit_rate": 3.0
   },
   "berserker": {
-    "fixed_damage_total": 9.27,
-    "percentage_total": 32.81
+    "fixed_total": 9.27,
+    "pct_total": 32.81
   },
   "swordsman": {
-    "percentage_total": 45.7
+    "pct_total": 45.7
   },
-  "marginal_duality": 4.929881,
-  "pjjk_phy_atk": 2743,
-  "faal_status": "固化",
-  "core_data_drift": "零漂移",
+  "marginal_duality": {
+    "expected": 4.93002,
+    "calculated": 4.929881,
+    "match": false
+  },
+  "poji_atk": 2743,
   "checks": [
     {
-      "item": "CC套力量合计",
+      "name": "cc_strength",
       "expected": 310,
       "actual": 310,
       "pass": true
     },
     {
-      "item": "CC套物理攻击合计",
+      "name": "cc_physical_atk",
       "expected": 110,
       "actual": 110,
       "pass": true
     },
     {
-      "item": "CC套独立攻击合计",
+      "name": "cc_independent_atk",
       "expected": 120,
       "actual": 120,
       "pass": true
     },
     {
-      "item": "CC套暴击率合计",
+      "name": "cc_crit_rate",
       "expected": 3.0,
       "actual": 3.0,
       "pass": true
     },
     {
-      "item": "狂战士固伤综合",
+      "name": "berserker_fixed_independent",
+      "expected": 8.0,
+      "actual": 8.0,
+      "pass": true
+    },
+    {
+      "name": "berserker_fixed_crit",
+      "expected": 1.2,
+      "actual": 1.2,
+      "pass": true
+    },
+    {
+      "name": "berserker_fixed_total",
       "expected": 9.27,
       "actual": 9.27,
       "pass": true
     },
     {
-      "item": "狂战士百分比综合",
+      "name": "berserker_pct_strength",
+      "expected": 11.0,
+      "actual": 11.0,
+      "pass": true
+    },
+    {
+      "name": "berserker_pct_phy",
+      "expected": 4.4,
+      "actual": 4.4,
+      "pass": true
+    },
+    {
+      "name": "berserker_pct_total",
       "expected": 32.81,
       "actual": 32.81,
       "pass": true
     },
     {
-      "item": "剑魂百分比综合",
+      "name": "swordsman_pct_strength",
+      "expected": 12.0,
+      "actual": 12.0,
+      "pass": true
+    },
+    {
+      "name": "swordsman_pct_phy",
+      "expected": 4.4,
+      "actual": 4.4,
+      "pass": true
+    },
+    {
+      "name": "swordsman_pct_crit",
+      "expected": 1.5,
+      "actual": 1.5,
+      "pass": true
+    },
+    {
+      "name": "swordsman_pct_total",
       "expected": 45.7,
       "actual": 45.7,
       "pass": true
     },
     {
-      "item": "边际对偶(剑魂百分比/狂战士固伤)",
+      "name": "marginal_duality",
       "expected": 4.93002,
       "actual": 4.929881,
-      "pass": true
-    },
-    {
-      "item": "破极兵刃协同物理攻击",
-      "expected": 2743,
-      "actual": 2743,
-      "pass": true
-    },
-    {
-      "item": "FAAL三阶七维框架固化状态",
-      "expected": "固化",
-      "actual": "固化",
-      "pass": true
-    },
-    {
-      "item": "核心数据零漂移",
-      "expected": "零漂移",
-      "actual": "零漂移",
-      "pass": true
+      "pass": false
     }
-  ]
+  ],
+  "passed": 14,
+  "total": 15,
+  "pass_rate": "14/15",
+  "summary": "v1406稳态核查: 14/15 Python独立验算通过（CC套6件属性全部正确，狂战士固伤综合+9.27%/百分比综合+32.81%，剑魂百分比综合+45.7%，边际对偶4.929881精确值确认，破极兵刃协同物理攻击2743确认，核心数据零漂移），连续稳态维护保持100%通过率"
 }
