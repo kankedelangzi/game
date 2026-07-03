@@ -1,0 +1,20 @@
+{
+  "version": "v1387",
+  "timestamp": "2026-07-04T03:19:43.461454+08:00",
+  "cc_set": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 0.03
+  },
+  "berserker_fixed_total": 0.0927,
+  "berserker_pct_total": 0.3281,
+  "swordsman_pct_total": 0.457,
+  "marginal_dual": 4.929881,
+  "verification": {
+    "passed": 4,
+    "total": 4,
+    "rate": "100%",
+    "errors": []
+  }
+}
