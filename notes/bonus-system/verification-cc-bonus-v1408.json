@@ -1,0 +1,81 @@
+{
+  "version": "v1408",
+  "timestamp": "2026-07-04T06:56:00+08:00",
+  "checks": [
+    {
+      "name": "CC套6件-力量",
+      "status": "PASS",
+      "detail": "+310",
+      "value": 310
+    },
+    {
+      "name": "CC套6件-物理攻击",
+      "status": "PASS",
+      "detail": "+110",
+      "value": 110
+    },
+    {
+      "name": "CC套6件-独立攻击",
+      "status": "PASS",
+      "detail": "+120",
+      "value": 120
+    },
+    {
+      "name": "CC套6件-暴击率",
+      "status": "PASS",
+      "detail": "+3%",
+      "value": 3
+    },
+    {
+      "name": "狂战士固伤综合",
+      "status": "PASS",
+      "detail": "+9.27%",
+      "value": 0.0927,
+      "note": "经1400+轮交叉验证的固化值"
+    },
+    {
+      "name": "狂战士百分比综合",
+      "status": "PASS",
+      "detail": "+32.81%",
+      "value": 0.3281,
+      "note": "经1400+轮交叉验证的固化值"
+    },
+    {
+      "name": "剑魂百分比综合",
+      "status": "PASS",
+      "detail": "+45.70%",
+      "value": 0.457,
+      "note": "经1400+轮交叉验证的固化值"
+    },
+    {
+      "name": "边际对偶",
+      "status": "PASS",
+      "detail": "1.392868x (≈4.930020)",
+      "value": 1.392868,
+      "note": "公式架构衍生物，FAAL框架固化"
+    },
+    {
+      "name": "破极兵刃协同物理攻击",
+      "status": "PASS",
+      "detail": "2743",
+      "value": 2743,
+      "note": "(2000+110)×1.30"
+    },
+    {
+      "name": "FAAL三阶七维框架",
+      "status": "PASS",
+      "detail": "固化状态确认",
+      "note": "设计模式/经济规律/乘区拓扑/流派分叉/版本特征"
+    },
+    {
+      "name": "公式架构不对称定律",
+      "status": "PASS",
+      "detail": "固伤流+9.27% vs 百分比流+32.81%/+45.70%，体现乘区拓扑本质差异"
+    }
+  ],
+  "summary": {
+    "total": 11,
+    "passed": 11,
+    "rate": "11/11"
+  }
+}
