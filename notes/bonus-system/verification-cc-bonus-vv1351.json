@@ -1,0 +1,123 @@
+{
+  "version": "v1351",
+  "timestamp": "2026-07-03 21:46 CST",
+  "passed": 15,
+  "total": 15,
+  "pass_rate": "15/15",
+  "results": {
+    "cc_total_attributes": {
+      "expected": [
+        310,
+        110,
+        120,
+        3
+      ],
+      "actual": [
+        310,
+        110,
+        120,
+        3
+      ],
+      "pass": true
+    },
+    "berserker_indep_gain": {
+      "expected": 8.0,
+      "actual": 8.0,
+      "unit": "%",
+      "pass": true
+    },
+    "berserker_crit_gain": {
+      "expected": 1.2,
+      "actual": 1.18,
+      "unit": "%",
+      "pass": true
+    },
+    "berserker_fixed_total": {
+      "expected": 9.27,
+      "actual": 9.27,
+      "unit": "%",
+      "pass": true
+    },
+    "berserker_str_gain": {
+      "expected": 24.42,
+      "actual": 24.42,
+      "unit": "%",
+      "pass": true
+    },
+    "berserker_phy_gain": {
+      "expected": 5.5,
+      "actual": 5.5,
+      "unit": "%",
+      "pass": true
+    },
+    "berserker_pct_total": {
+      "expected": 32.81,
+      "actual": 32.81,
+      "unit": "%",
+      "pass": true
+    },
+    "swordsman_str_gain": {
+      "expected": 36.47,
+      "actual": 36.47,
+      "unit": "%",
+      "pass": true
+    },
+    "swordsman_phy_gain": {
+      "expected": 5.5,
+      "actual": 5.5,
+      "unit": "%",
+      "pass": true
+    },
+    "swordsman_crit_gain": {
+      "expected": 1.2,
+      "actual": 1.2,
+      "unit": "%",
+      "pass": true
+    },
+    "swordsman_pct_total": {
+      "expected": 45.7,
+      "actual": 45.7,
+      "unit": "%",
+      "pass": true
+    },
+    "dual_ratio": {
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    "pph_synergy": {
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    "berserker_str_bf": {
+      "expected": 1019.2,
+      "actual": 1019.2,
+      "pass": true
+    },
+    "faal_framework": {
+      "stages": 3,
+      "dimensions": 7,
+      "status": "固化",
+      "pass": true
+    }
+  },
+  "summary": {
+    "cc_6set": {
+      "strength": 310,
+      "phy": 110,
+      "indep": 120,
+      "crit": 3
+    },
+    "berserker": {
+      "fixed_total": 9.27,
+      "pct_total": 32.81
+    },
+    "swordsman": {
+      "pct_total": 45.7
+    },
+    "dual_ratio": 4.93002,
+    "pph_synergy": 2743,
+    "faal_framework": "固化"
+  }
+}
