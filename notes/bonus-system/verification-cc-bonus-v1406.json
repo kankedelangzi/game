@@ -1,0 +1,93 @@
+{
+  "version": "v1406",
+  "timestamp": "2026-07-04 06:43:38",
+  "iso_timestamp": "2026-07-04T06:43:38.013850+08:00",
+  "total_checks": 11,
+  "passed": 11,
+  "pass_rate": 100.0,
+  "cc_set": {
+    "str": 310,
+    "pattk": 110,
+    "iattk": 120,
+    "crit": 3.0
+  },
+  "berserker": {
+    "fixed_damage_total": 9.27,
+    "percentage_total": 32.81
+  },
+  "swordsman": {
+    "percentage_total": 45.7
+  },
+  "marginal_duality": 4.929881,
+  "pjjk_phy_atk": 2743,
+  "faal_status": "固化",
+  "core_data_drift": "零漂移",
+  "checks": [
+    {
+      "item": "CC套力量合计",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "item": "CC套物理攻击合计",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "item": "CC套独立攻击合计",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "item": "CC套暴击率合计",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    {
+      "item": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "item": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "item": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "item": "边际对偶(剑魂百分比/狂战士固伤)",
+      "expected": 4.93002,
+      "actual": 4.929881,
+      "pass": true
+    },
+    {
+      "item": "破极兵刃协同物理攻击",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "item": "FAAL三阶七维框架固化状态",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "item": "核心数据零漂移",
+      "expected": "零漂移",
+      "actual": "零漂移",
+      "pass": true
+    }
+  ]
+}
