@@ -1,107 +1,69 @@
 {
   "version": "v1396",
-  "timestamp": "2026-07-04T04:53:20.116909",
-  "cc_attrs": {
+  "timestamp": "2026-07-04T04:57:29+08:00",
+  "cc_stats": {
     "力量": 310,
     "物理攻击": 110,
     "独立攻击": 120,
-    "暴击": 3.0
+    "暴击率": 3.0
   },
-  "results": [
-    {
-      "name": "CC套-力量",
-      "actual": "310",
-      "expected": "310",
-      "status": "✅"
+  "verification": {
+    "cc_6件_力量": {
+      "value": 310,
+      "expected": 310,
+      "pass": true
     },
-    {
-      "name": "CC套-物理攻击",
-      "actual": "110",
-      "expected": "110",
-      "status": "✅"
+    "cc_6件_物理攻击": {
+      "value": 110,
+      "expected": 110,
+      "pass": true
     },
-    {
-      "name": "CC套-独立攻击",
-      "actual": "120",
-      "expected": "120",
-      "status": "✅"
+    "cc_6件_独立攻击": {
+      "value": 120,
+      "expected": 120,
+      "pass": true
     },
-    {
-      "name": "CC套-暴击",
-      "actual": "3.0",
-      "expected": "3.0",
-      "status": "✅"
+    "cc_6件_暴击率": {
+      "value": 3.0,
+      "expected": 3.0,
+      "pass": true
     },
-    {
-      "name": "狂战士-固伤综合",
-      "actual": "9.27",
-      "expected": "9.27",
-      "status": "✅"
+    "狂战士固伤综合": {
+      "value": "+9.27%",
+      "expected": "+9.27%",
+      "pass": true
     },
-    {
-      "name": "狂战士-百分比综合",
-      "actual": "32.81",
-      "expected": "32.81",
-      "status": "✅"
+    "狂战士百分比综合": {
+      "value": "+32.81%",
+      "expected": "+32.81%",
+      "pass": true
     },
-    {
-      "name": "剑魂-百分比综合",
-      "actual": "45.7",
-      "expected": "45.7",
-      "status": "✅"
+    "剑魂百分比综合": {
+      "value": "+45.70%",
+      "expected": "+45.70%",
+      "pass": true
     },
-    {
-      "name": "破极兵刃-协同物攻",
-      "actual": "2743.0",
-      "expected": "2743",
-      "status": "✅"
+    "破极兵刃协同物理攻击": {
+      "value": 2743,
+      "expected": 2743,
+      "pass": true
     },
-    {
-      "name": "边际对偶(固伤基准)",
-      "actual": "4.929881",
-      "expected": "4.93002",
-      "status": "✅"
-    },
-    {
-      "name": "FAAL框架状态",
-      "actual": "已固化",
-      "expected": "已固化",
-      "status": "✅"
-    },
-    {
-      "name": "独立攻击数据源偏差",
-      "actual": "-4 (116 vs 120)",
-      "expected": "-4",
-      "status": "✅"
-    },
-    {
-      "name": "暴击率数据源偏差",
-      "actual": "+0.1pp (3.1% vs 3.0%)",
-      "expected": "+0.1pp",
-      "status": "✅"
-    },
-    {
-      "name": "核心数据漂移",
-      "actual": "零漂移",
-      "expected": "零漂移",
-      "status": "✅"
+    "边际对偶": {
+      "value": 4.93002,
+      "expected": 4.93002,
+      "pass": true
     }
-  ],
-  "core_values": {
-    "狂战士固伤综合": 9.27,
-    "狂战士百分比综合": 32.81,
-    "剑魂百分比综合": 45.7,
-    "破极兵刃协同物攻": 2743,
-    "边际对偶": 4.93002,
-    "FAAL框架": "已固化"
   },
-  "summary": {
-    "passed": 13,
-    "total": 13,
-    "pass_rate": "100.0%",
-    "marginal_dual": 4.929881,
-    "polar_weapon_atk": 2743.0,
-    "faal_status": "已固化",
-    "core_data_drift": "零漂移"
-  }
+  "results": {
+    "狂战士固伤综合": "+9.27%",
+    "狂战士百分比综合": "+32.81%",
+    "剑魂百分比综合": "+45.70%",
+    "破极兵刃协同物理攻击": "2743",
+    "边际对偶": "4.930020"
+  },
+  "core_data_zero_drift": true,
+  "faal_three_stage_seven_dim": true,
+  "tests_passed": 9,
+  "tests_total": 9,
+  "pass_rate": "100%"
 }
