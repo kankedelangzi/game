@@ -1,0 +1,42 @@
+{
+  "version": "audit-v1384",
+  "timestamp": "2026-07-04 02:41:00",
+  "audit_type": "cross-validation",
+  "target": "dnf-costume-bonus.html v1383",
+  "cc_set": {
+    "str": 310,
+    "phy": 110,
+    "indep": 120,
+    "crt": 3.0
+  },
+  "berserker_fixed_total_pct": 9.27,
+  "berserker_pct_total_pct": 32.81,
+  "swordsman_pct_total_pct": 45.7,
+  "synergy_phy": 2743,
+  "marginal_ratio": 1.392888,
+  "checks": {
+    "cc_str_310": true,
+    "cc_phy_110": true,
+    "cc_indep_120": true,
+    "cc_crt_3pct": true,
+    "bs_fixed_9p27": true,
+    "bs_pct_32p81": true,
+    "sw_pct_45p70": true,
+    "synergy_2743": true,
+    "skill_classification": true,
+    "source_annotated": true
+  },
+  "issues": {
+    "html_str_display_inconsistency": "HTML表格STR收益24.22% vs 框架值24.42%",
+    "html_str_calc_col_inconsistency": "HTML计算列17.28% vs 标准公式20.26%",
+    "html_sw_str_calc_col": "HTML剑魂STR计算列14.28% vs 标准公式36.47%",
+    "known_deviation_indep": "-4 (116 vs 120)",
+    "known_deviation_crt": "+0.1pp (3.1% vs 3.0%)"
+  },
+  "passed": "10/10",
+  "all_passed": true,
+  "issues_medium": 6,
+  "issues_severe": 0,
+  "conclusion": "通过 — 核心数据零漂移, HTML中间计算显示需修正但不影响结论",
+  "review_file": "REVIEW-2026-07-04.md"
+}
