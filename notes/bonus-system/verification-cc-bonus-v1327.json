@@ -1,0 +1,33 @@
+{
+  "version": "v1327",
+  "timestamp": "2026-07-03 15:47:46",
+  "cc_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker": {
+    "fixed_total": 0.092706,
+    "pct_total": 0.328125,
+    "ind_gain": 0.08,
+    "crit_gain": 0.011765,
+    "str_gain": 0.244248,
+    "phy_gain": 0.055
+  },
+  "swordsman": {
+    "pct_total": 0.457042,
+    "str_gain": 0.364706,
+    "phy_gain": 0.055,
+    "crit_gain": 0.012
+  },
+  "polar_synergy": {
+    "base_phy": 2000,
+    "polar_phy": 2743.0
+  },
+  "marginal_duality": 4.93002,
+  "verification_count": 16,
+  "passed": 16,
+  "failed": 0,
+  "errors": null
+}
