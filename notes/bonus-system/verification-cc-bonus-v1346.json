@@ -1,0 +1,79 @@
+{
+  "version": "v1346",
+  "timestamp": "2026-07-03 20:26 CST",
+  "cc_set_attributes": {
+    "strength": 310,
+    "phys_attack": 110,
+    "indep_attack": 120,
+    "crit_rate_pct": 3.0
+  },
+  "berserker": {
+    "fixed_damage_contribution_pct": 9.27,
+    "percentage_damage_contribution_pct": 32.81
+  },
+  "swordsman": {
+    "percentage_damage_contribution_pct": 45.7,
+    "pojie_synergy_phys_attack": 2743,
+    "pojie_formula": "2110×1.30"
+  },
+  "marginal_duality": {
+    "ratio": 4.929881,
+    "expected": 4.93002,
+    "delta": -0.000139
+  },
+  "verification": {
+    "total_checks": 8,
+    "passed": 8,
+    "pass_rate": "100%"
+  },
+  "checks": [
+    {
+      "item": "CC套力量+310",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "item": "CC套物理攻击+110",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "item": "CC套独立攻击+120",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "item": "CC套暴击+3%",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    {
+      "item": "狂战士固伤综合+9.27%",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "item": "狂战士百分比综合+32.81%",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "item": "剑魂百分比综合+45.70%",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "item": "边际对偶4.929881",
+      "expected": 4.93002,
+      "actual": 4.929881,
+      "pass": true
+    }
+  ]
+}
