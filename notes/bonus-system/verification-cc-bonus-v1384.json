@@ -1,0 +1,38 @@
+{
+  "version": "v1384",
+  "timestamp": "2026-07-04T02:51:00+08:00",
+  "cc_set_6piece": {
+    "strength": 310,
+    "physical_atk": 110,
+    "independent_atk": 120,
+    "crit_rate": 3.0
+  },
+  "berserker": {
+    "fixed_iatk_bonus": 8.0,
+    "fixed_crit_bonus": 1.18,
+    "fixed_total_bonus": 9.27,
+    "pct_str_bonus": 24.42,
+    "pct_phy_bonus": 5.5,
+    "pct_total_bonus": 32.81
+  },
+  "swordsman": {
+    "str_bonus": 36.47,
+    "phy_bonus": 5.5,
+    "crit_bonus": 1.2,
+    "pct_total_bonus": 45.7
+  },
+  "marginal_dual": 4.93002,
+  "pojie_cc_synergy_atk": 2743.0,
+  "verification_checks": {
+    "cc_6piece_strength": true,
+    "cc_6piece_physical": true,
+    "cc_6piece_independent": true,
+    "cc_6piece_crit": true,
+    "berserker_fixed_total": true,
+    "berserker_pct_total": true,
+    "swordsman_pct_total": true,
+    "marginal_dual": true,
+    "synergy_atk": true,
+    "faal_framework": true
+  }
+}
