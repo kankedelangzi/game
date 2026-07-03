@@ -1,0 +1,140 @@
+{
+  "version": "v1331",
+  "timestamp": "2026-07-03 16:50:00",
+  "cc_attrs": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker": {
+    "固伤综合收益": 9.2706,
+    "百分比综合收益": 32.8125,
+    "固伤独立收益": 8.0,
+    "固伤暴击收益": 1.1765,
+    "百分比力量收益": 24.4248,
+    "百分比物理攻击收益": 5.5
+  },
+  "swordsman": {
+    "力量收益": 36.4706,
+    "物理攻击收益": 5.5,
+    "暴击收益": 1.2,
+    "百分比综合收益": 45.7042
+  },
+  "破极兵刃协同物理攻击": 2743.0,
+  "边际对偶": 4.930015,
+  "verification": {
+    "total_checks": 18,
+    "passed": 18,
+    "details": [
+      {
+        "item": "力量+310",
+        "expected": 310,
+        "actual": 310,
+        "status": "PASS"
+      },
+      {
+        "item": "物理攻击+110",
+        "expected": 110,
+        "actual": 110,
+        "status": "PASS"
+      },
+      {
+        "item": "独立攻击+120",
+        "expected": 120,
+        "actual": 120,
+        "status": "PASS"
+      },
+      {
+        "item": "暴击率+3%",
+        "expected": 3.0,
+        "actual": 3.0,
+        "status": "PASS"
+      },
+      {
+        "item": "狂战士固伤综合+9.27%",
+        "expected": 9.2706,
+        "actual": 9.2706,
+        "status": "PASS"
+      },
+      {
+        "item": "狂战士百分比综合+32.81%",
+        "expected": 32.8125,
+        "actual": 32.8125,
+        "status": "PASS"
+      },
+      {
+        "item": "剑魂百分比综合+45.70%",
+        "expected": 45.7042,
+        "actual": 45.7042,
+        "status": "PASS"
+      },
+      {
+        "item": "破极兵刃协同物理攻击2743",
+        "expected": 2743.0,
+        "actual": 2743.0,
+        "status": "PASS"
+      },
+      {
+        "item": "边际对偶4.930020",
+        "expected": 4.93002,
+        "actual": 4.930015317239445,
+        "status": "PASS"
+      },
+      {
+        "item": "狂战士固伤独立+8.0%",
+        "expected": 8.0,
+        "actual": 8.0,
+        "status": "PASS"
+      },
+      {
+        "item": "狂战士固伤暴击+1.18%",
+        "expected": 1.1765,
+        "actual": 1.1765,
+        "status": "PASS"
+      },
+      {
+        "item": "狂战士百分比力量+24.42%",
+        "expected": 24.42,
+        "actual": 24.4248,
+        "status": "PASS"
+      },
+      {
+        "item": "狂战士百分比物攻+5.50%",
+        "expected": 5.5,
+        "actual": 5.5,
+        "status": "PASS"
+      },
+      {
+        "item": "剑魂力量+36.47%",
+        "expected": 36.47,
+        "actual": 36.4706,
+        "status": "PASS"
+      },
+      {
+        "item": "剑魂物攻+5.50%",
+        "expected": 5.5,
+        "actual": 5.5,
+        "status": "PASS"
+      },
+      {
+        "item": "剑魂暴击+1.2%",
+        "expected": 1.2,
+        "actual": 1.2,
+        "status": "PASS"
+      },
+      {
+        "item": "狂战士百分比力量精确+14.69%",
+        "expected": 14.69,
+        "actual": 14.691943127962084,
+        "status": "PASS"
+      },
+      {
+        "item": "剑魂力量精确+19.09%",
+        "expected": 19.09,
+        "actual": 19.09952606635071,
+        "status": "PASS"
+      }
+    ]
+  }
+}
