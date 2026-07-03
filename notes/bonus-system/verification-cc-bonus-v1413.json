@@ -1,0 +1,20 @@
+{
+  "version": "v1413",
+  "timestamp": "2026-07-04T07:24:34.137228",
+  "cc_attrs": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker": {
+    "fixed_dmg": 11.24,
+    "pct_dmg": 30.68
+  },
+  "swordsman": {
+    "pct_dmg": 46.51
+  },
+  "marginal_dual": 1.515923,
+  "synergy_phy_atk": 2710,
+  "status": "✅ 核心数据零漂移"
+}
