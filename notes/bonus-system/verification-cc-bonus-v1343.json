@@ -1,0 +1,81 @@
+{
+  "version": "v1343",
+  "timestamp": "2026-07-03 19:45",
+  "checks": [
+    {
+      "name": "CC力量",
+      "got": 310,
+      "expected": 310,
+      "pass": true
+    },
+    {
+      "name": "CC物理攻击",
+      "got": 110,
+      "expected": 110,
+      "pass": true
+    },
+    {
+      "name": "CC独立攻击",
+      "got": 120,
+      "expected": 120,
+      "pass": true
+    },
+    {
+      "name": "CC暴击率",
+      "got": 3,
+      "expected": 3,
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤综合",
+      "got": 9.27,
+      "expected": 9.27,
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比综合",
+      "got": 32.81,
+      "expected": 32.81,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比综合",
+      "got": 45.7,
+      "expected": 45.7,
+      "pass": true
+    },
+    {
+      "name": "破极兵刃协同",
+      "got": 2743,
+      "expected": 2743,
+      "pass": true
+    },
+    {
+      "name": "边际对偶",
+      "got": 4.93002,
+      "expected": 4.93002,
+      "pass": true
+    },
+    {
+      "name": "FAAL框架固化",
+      "got": true,
+      "expected": true,
+      "pass": true
+    }
+  ],
+  "summary": {
+    "total": 10,
+    "passed": 10,
+    "all_pass": true,
+    "cc_str": 310,
+    "cc_phy": 110,
+    "cc_ind": 120,
+    "cc_crit": 3,
+    "berserker_fixed": 9.27,
+    "berserker_pct": 32.81,
+    "swordsman_pct": 45.7,
+    "poji_physical_attack": 2743,
+    "marginal_duality": 4.93002,
+    "faal_framework_status": "固化"
+  }
+}
