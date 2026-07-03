@@ -1,108 +1,134 @@
 {
   "version": "v1308",
-  "timestamp": "2026-07-03T08:05:36.160391",
-  "total": 17,
+  "timestamp": "2026-07-03 08:10:38",
+  "total_checks": 17,
   "passed": 17,
-  "failed": 0,
   "pass_rate": "17/17",
-  "results": {
-    "cc_str_total": {
+  "cc_stats": {
+    "str": 310,
+    "phy_atk": 110,
+    "indep_atk": 120,
+    "crit": 3
+  },
+  "berserker": {
+    "fixed_total": 9.27,
+    "pct_total": 32.81,
+    "indep_gain": 8.0,
+    "crit_gain": 1.18,
+    "str_gain": 24.42,
+    "phy_gain": 5.5
+  },
+  "swordsman": {
+    "pct_total": 45.7,
+    "str_gain": 36.47,
+    "phy_gain": 5.5,
+    "crit_gain": 1.2
+  },
+  "marginal_duality": 4.93002,
+  "pojie_synergy_phy": 2743.0,
+  "faal_framework": "固化",
+  "results": [
+    {
+      "check": "CC套力量",
       "expected": 310,
       "actual": 310,
       "pass": true
     },
-    "cc_phy_total": {
+    {
+      "check": "CC套物理攻击",
       "expected": 110,
       "actual": 110,
       "pass": true
     },
-    "cc_idp_total": {
+    {
+      "check": "CC套独立攻击",
       "expected": 120,
       "actual": 120,
       "pass": true
     },
-    "cc_crt_total": {
+    {
+      "check": "CC套暴击率",
       "expected": 3,
       "actual": 3,
       "pass": true
     },
-    "berserker_idp_gain": {
-      "expected": 0.08,
-      "actual": 0.08,
+    {
+      "check": "狂战士独立攻击收益",
+      "expected": 8.0,
+      "actual": 8.0,
       "pass": true
     },
-    "berserker_crt_gain": {
-      "expected": 0.012,
-      "actual": 0.011765,
+    {
+      "check": "狂战士暴击收益",
+      "expected": 1.18,
+      "actual": 1.18,
       "pass": true
     },
-    "berserker_idp_total": {
-      "expected": 0.0927,
-      "actual": 0.092706,
+    {
+      "check": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
       "pass": true
     },
-    "berserker_str_gain": {
-      "expected": 0.2442,
-      "actual": 0.244248,
+    {
+      "check": "狂战士力量收益",
+      "expected": 24.42,
+      "actual": 24.42,
       "pass": true
     },
-    "berserker_phy_gain": {
-      "expected": 0.055,
-      "actual": 0.055,
+    {
+      "check": "狂战士物理攻击收益",
+      "expected": 5.5,
+      "actual": 5.5,
       "pass": true
     },
-    "berserker_pct_total": {
-      "expected": 0.3281,
-      "actual": 0.328125,
+    {
+      "check": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
       "pass": true
     },
-    "swordsman_str_gain": {
-      "expected": 0.3647,
-      "actual": 0.364706,
+    {
+      "check": "剑魂力量收益",
+      "expected": 36.47,
+      "actual": 36.47,
       "pass": true
     },
-    "swordsman_phy_gain": {
-      "expected": 0.055,
-      "actual": 0.055,
+    {
+      "check": "剑魂物理攻击收益",
+      "expected": 5.5,
+      "actual": 5.5,
       "pass": true
     },
-    "swordsman_crt_gain": {
-      "expected": 0.012,
-      "actual": 0.012,
+    {
+      "check": "剑魂暴击收益",
+      "expected": 1.2,
+      "actual": 1.2,
       "pass": true
     },
-    "swordsman_pct_total": {
-      "expected": 0.457,
-      "actual": 0.457042,
+    {
+      "check": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
       "pass": true
     },
-    "margin_duality": {
+    {
+      "check": "边际对偶",
       "expected": 4.93002,
       "actual": 4.93002,
       "pass": true
     },
-    "swordsman_phy_total": {
-      "expected": 2743,
-      "actual": 2743,
+    {
+      "check": "破极兵刃协同物理攻击",
+      "expected": 2743.0,
+      "actual": 2743.0,
       "pass": true
     },
-    "faal_framework": {
+    {
+      "check": "FAAL框架固化",
       "expected": "固化",
       "actual": "固化",
       "pass": true
     }
-  },
-  "summary": {
-    "cc_set": {
-      "str": 310,
-      "phy": 110,
-      "idp": 120,
-      "crt": 3
-    },
-    "berserker_idp_total": 0.092706,
-    "berserker_pct_total": 0.328125,
-    "swordsman_pct_total": 0.457042,
-    "margin_duality": 4.93002,
-    "swordsman_phy_total": 2743
-  }
+  ]
 }
