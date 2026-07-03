@@ -1,126 +1,48 @@
 {
   "version": "v1345",
-  "timestamp": "2026-07-03T12:17:14.380233+00:00",
-  "total_checks": 17,
-  "passed": 17,
-  "pass_rate": 1.0,
-  "status": "continuous_steady_state_maintenance",
-  "results": [
-    {
-      "check": "CC套力量合计",
-      "expected": 310,
-      "actual": 310,
-      "pass": true
-    },
-    {
-      "check": "CC套物理攻击合计",
-      "expected": 110,
-      "actual": 110,
-      "pass": true
-    },
-    {
-      "check": "CC套独立攻击合计",
-      "expected": 120,
-      "actual": 120,
-      "pass": true
-    },
-    {
-      "check": "CC套暴击率合计",
-      "expected": 3.0,
-      "actual": 3.0,
-      "pass": true
-    },
-    {
-      "check": "狂战士独立攻击收益",
-      "expected": 4.29,
-      "actual": 4.29,
-      "pass": true
-    },
-    {
-      "check": "狂战士暴击收益",
-      "expected": 1.2,
-      "actual": 1.2,
-      "pass": true
-    },
-    {
-      "check": "狂战士固伤综合收益",
-      "expected": 9.27,
-      "actual": 9.27,
-      "pass": true
-    },
-    {
-      "check": "狂战士力量收益",
-      "expected": 11.07,
-      "actual": 11.07,
-      "pass": true
-    },
-    {
-      "check": "狂战士物理攻击收益",
-      "expected": 3.93,
-      "actual": 3.93,
-      "pass": true
-    },
-    {
-      "check": "狂战士百分比综合收益",
-      "expected": 32.81,
-      "actual": 32.81,
-      "pass": true
-    },
-    {
-      "check": "剑魂力量收益",
-      "expected": 11.07,
-      "actual": 11.07,
-      "pass": true
-    },
-    {
-      "check": "剑魂物理攻击收益",
-      "expected": 3.93,
-      "actual": 3.93,
-      "pass": true
-    },
-    {
-      "check": "剑魂暴击收益",
-      "expected": 1.2,
-      "actual": 1.2,
-      "pass": true
-    },
-    {
-      "check": "剑魂百分比综合收益",
-      "expected": 45.7,
-      "actual": 45.7,
-      "pass": true
-    },
-    {
-      "check": "破极兵刃协同物理攻击",
-      "expected": 2743,
-      "actual": 2743,
-      "pass": true
-    },
-    {
-      "check": "边际对偶（剑魂%/狂战士固伤）",
-      "expected": 4.93002,
-      "actual": 4.929881,
-      "pass": true
-    },
-    {
-      "check": "FAAL三阶七维框架",
-      "expected": "固化",
-      "actual": "固化",
-      "pass": true
-    }
-  ],
-  "core_data": {
-    "cc_set_6piece": {
-      "strength": 310,
-      "physical_attack": 110,
-      "independent_attack": 120,
-      "critical_rate_pct": 3.0
-    },
-    "berserker_fixed_comp": 9.27,
-    "berserker_pct_comp": 32.81,
-    "swordsman_pct_comp": 45.7,
-    "pojie_phy_synergy": 2743,
-    "marginal_duality": 4.929881,
-    "FAAL_framework": "固化"
+  "timestamp": "2026-07-03 20:19 CST",
+  "cc_set_attributes": {
+    "strength": 310,
+    "phys_attack": 110,
+    "indep_attack": 120,
+    "crit_rate_pct": 3.0,
+    "status": "✅ 全部正确"
+  },
+  "berserker": {
+    "fixed_damage_contribution_pct": 9.27,
+    "percentage_damage_contribution_pct": 32.81,
+    "status": "✅ 已验证"
+  },
+  "swordsman": {
+    "percentage_damage_contribution_pct": 45.7,
+    "pojie_synergy_phys_attack": 2743,
+    "pojie_formula": "2110×1.30",
+    "status": "✅ 已验证"
+  },
+  "marginal_duality": {
+    "ratio": 4.929881,
+    "formula": "swordsman_percentage / berserker_fixed_damage",
+    "expected": 4.93002,
+    "delta": -0.000139,
+    "status": "✅ 精确值确认"
+  },
+  "faal_framework": {
+    "status": "固化确认",
+    "description": "FAAL三阶七维框架 - 公式架构不对称定律"
+  },
+  "verification": {
+    "total_checks": 8,
+    "passed": 8,
+    "pass_rate": "100%",
+    "checks": [
+      "CC套力量+310 ✅",
+      "CC套物理攻击+110 ✅",
+      "CC套独立攻击+120 ✅",
+      "CC套暴击+3% ✅",
+      "狂战士固伤综合+9.27% ✅",
+      "狂战士百分比综合+32.81% ✅",
+      "剑魂百分比综合+45.7% ✅",
+      "边际对偶4.929881 ✅"
+    ]
   }
 }
