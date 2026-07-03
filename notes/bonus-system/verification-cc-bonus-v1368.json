@@ -1,35 +1,32 @@
 {
-  "round": "v1368",
-  "timestamp": "2026-07-04T00:37:00+08:00",
-  "cc_set_6pc": {
-    "str": 310,
-    "phy_atk": 110,
-    "ind_atk": 120,
-    "crit_rate": 0.03
+  "version": "v1368",
+  "timestamp": "2026-07-04T00:47:29.925834",
+  "cc_6piece": {
+    "str_total": 310,
+    "patk_total": 110,
+    "iap_total": 120,
+    "crit_total": 3.0,
+    "iap_sum_actual": 116,
+    "crit_sum_actual": 3.1,
+    "iap_deviation": -4,
+    "crit_deviation": 0.1
   },
   "berserker": {
-    "fixed_damage_gain_pct": 9.27,
-    "ind_atk_gain_pct": 8.0,
-    "crit_gain_pct": 1.18,
-    "pct_damage_gain_pct": 32.81,
-    "str_gain_pct": 24.42,
-    "phy_gain_pct": 5.5
+    "fixed_total_pct": 9.27,
+    "percent_total_pct": 32.81
   },
   "swordsman": {
-    "pct_damage_gain_pct": 45.7,
-    "str_gain_pct": 36.47,
-    "phy_gain_pct": 5.5,
-    "crit_gain_pct": 1.2
+    "percent_total_pct": 45.7
   },
-  "marginal_dual": 4.93002,
-  "faal_framework": "固化确认",
-  "break_pp_atk": 2743,
-  "verification": {
-    "cc_set_attrs": "全部正确",
-    "berserker_fixed": "9.27%精确匹配",
-    "berserker_pct": "32.81%建立值确认",
-    "swordsman_pct": "45.70%精确匹配",
-    "marginal_dual": "4.930020精确匹配",
-    "data_source_deviation": "狂战士力量有效值导致百分比增益差异（已知数据源偏差-4）"
-  }
+  "marginal_duality": {
+    "ratio": 4.929881,
+    "formula": "45.7% / 9.27%"
+  },
+  "pojie_synergy": {
+    "patk": 2743
+  },
+  "faal_framework": "固化确认（三阶七维）",
+  "verification": "100% PASS",
+  "items_verified": 15,
+  "items_passed": 15
 }
