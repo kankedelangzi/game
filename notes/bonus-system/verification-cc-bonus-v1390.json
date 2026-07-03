@@ -1,0 +1,35 @@
+{
+  "version": "v1390",
+  "timestamp": "2026-07-04 04:12:26",
+  "cc_6pc_stats": {
+    "STR": 310,
+    "PAtk": 110,
+    "IAtk": 120,
+    "Crit": 3.0
+  },
+  "berserker": {
+    "base_iatk": 1500,
+    "base_str": 1280,
+    "base_patk": 2000,
+    "iatak_bonus_pct": 8.0,
+    "str_pct": 20.26,
+    "phy_pct": 5.5,
+    "crit_pct": 3.0,
+    "fixed_total": 11.24,
+    "pct_total": 30.68
+  },
+  "swordsman": {
+    "base_str": 370,
+    "base_patk": 2000,
+    "str_pct": 50.0,
+    "phy_pct": 5.5,
+    "crit_pct": 3.0,
+    "pct_total": 63.0,
+    "poji_attack": 2743
+  },
+  "marginal_duality": 2.729537,
+  "faal_framework": "固化",
+  "checks_passed": 6,
+  "checks_total": 10,
+  "all_pass": false
+}
