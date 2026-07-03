@@ -1,0 +1,55 @@
+{
+  "version": 1358,
+  "timestamp": "2026-07-03T22:59:18.728077+08:00",
+  "cc_set_6pc": {
+    "strength": {
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    "physical_attack": {
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    "independent_attack": {
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    "critical_rate": {
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    }
+  },
+  "berserker": {
+    "fixed_damage_composite": {
+      "expected_pct": 9.27,
+      "actual_pct": 9.27,
+      "pass": true
+    },
+    "pct_damage_composite": {
+      "expected_pct": 32.81,
+      "actual_pct": 32.81,
+      "pass": true
+    }
+  },
+  "swordsman": {
+    "polar_synergy_phy": {
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    "pct_damage_composite": {
+      "expected_pct": 45.7,
+      "actual_pct": 45.7,
+      "pass": true
+    }
+  },
+  "marginal_dual": {
+    "actual": 4.929881,
+    "pass": true
+  },
+  "faal_framework": "固化确认"
+}
