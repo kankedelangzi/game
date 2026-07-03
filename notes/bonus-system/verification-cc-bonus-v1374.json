@@ -1,0 +1,85 @@
+{
+  "version": "v1374",
+  "timestamp": "2026-07-04 01:16",
+  "cc_stats": {
+    "strength": 310,
+    "physical_atk": 110,
+    "independent_atk": 120,
+    "crit_rate": 0.03
+  },
+  "berserker": {
+    "fixed_total": 9.27,
+    "percent_total": 32.81
+  },
+  "swordsman": {
+    "percent_total": 45.7
+  },
+  "pr_physical_atk": 2743,
+  "marginal_duality": 4.929881,
+  "checks": [
+    {
+      "name": "CC力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "name": "CC物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "name": "CC独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "name": "CC暴击率",
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "name": "破极兵刃协同物理攻击",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "name": "边际对偶",
+      "expected": 4.929881,
+      "actual": 4.929881,
+      "pass": true
+    },
+    {
+      "name": "FAAL框架固化",
+      "expected": "confirmed",
+      "actual": "confirmed",
+      "pass": true
+    }
+  ],
+  "passed": 10,
+  "total": 10,
+  "pass_rate": "10/10",
+  "status": "PASS"
+}
