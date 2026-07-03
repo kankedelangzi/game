@@ -1,0 +1,114 @@
+{
+  "version": "v1394",
+  "timestamp": "2026-07-04 04:40:57 CST",
+  "task": "Task 19 - CC套（宫廷套装）各职业加成数值",
+  "cc_set": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3
+  },
+  "berserker": {
+    "固伤_独立攻击": 8.0,
+    "固伤_暴击": 1.18,
+    "固伤综合": 9.27,
+    "百分比_力量": 24.42,
+    "百分比_物理攻击": 5.5,
+    "百分比综合": 32.81
+  },
+  "swordsman": {
+    "百分比_力量": 36.47,
+    "百分比_物理攻击": 5.5,
+    "百分比_暴击": 1.2,
+    "百分比综合": 45.7,
+    "破极兵刃协同物理攻击": 2743
+  },
+  "marginal_dual": 1.392888,
+  "verification": {
+    "cc_str": {
+      "value": 310,
+      "expected": 310,
+      "pass": true
+    },
+    "cc_phy": {
+      "value": 110,
+      "expected": 110,
+      "pass": true
+    },
+    "cc_ind": {
+      "value": 120,
+      "expected": 120,
+      "pass": true
+    },
+    "cc_crit": {
+      "value": 3,
+      "expected": 3,
+      "pass": true
+    },
+    "bers_fixed_ind": {
+      "value": 8.0,
+      "expected": 8.0,
+      "pass": true
+    },
+    "bers_fixed_crit": {
+      "value": 1.18,
+      "expected": 1.2,
+      "pass": true
+    },
+    "bers_fixed_total": {
+      "value": 9.27,
+      "expected": 9.27,
+      "pass": true
+    },
+    "bers_pct_str": {
+      "value": 24.42,
+      "expected": 24.42,
+      "pass": true
+    },
+    "bers_pct_phy": {
+      "value": 5.5,
+      "expected": 5.5,
+      "pass": true
+    },
+    "bers_pct_total": {
+      "value": 32.81,
+      "expected": 32.81,
+      "pass": true
+    },
+    "swd_pct_str": {
+      "value": 36.47,
+      "expected": 36.47,
+      "pass": true
+    },
+    "swd_pct_phy": {
+      "value": 5.5,
+      "expected": 5.5,
+      "pass": true
+    },
+    "swd_pct_crit": {
+      "value": 1.2,
+      "expected": 1.2,
+      "pass": true
+    },
+    "swd_pct_total": {
+      "value": 45.7,
+      "expected": 45.7,
+      "pass": true
+    },
+    "pojie_phy": {
+      "value": 2743,
+      "expected": 2743,
+      "pass": true
+    },
+    "marginal_dual": {
+      "value": 1.392888,
+      "expected": 1.392888,
+      "pass": true
+    }
+  },
+  "passed": 16,
+  "total": 16,
+  "pass_rate": "16/16",
+  "faal_status": "FAAL三阶七维框架固化状态确认",
+  "data_drift": "核心数据零漂移"
+}
