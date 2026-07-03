@@ -1,34 +1,32 @@
 {
   "version": "v1319",
-  "timestamp": "2026-07-03T04:34:07.509024+00:00",
+  "timestamp": "2026-07-03T12:38:37.071493+08:00",
   "task": "任务19 - CC套（宫廷套装）各职业加成数值",
-  "status": "steady-state verification",
-  "cc_6piece": {
-    "力量": 310,
-    "物理攻击": 110,
-    "独立攻击": 120,
-    "暴击率": "3%"
+  "cc_set_6pc": {
+    "power": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical_rate": 3
   },
-  "berserker_fixed_damage": {
-    "独立攻击收益": 0.08,
-    "暴击收益": 0.0118,
-    "固伤综合": 0.0927
+  "berserker": {
+    "fixed_combined": 9.27,
+    "percentage_combined": 32.81
   },
-  "berserker_percentage": {
-    "力量收益": 0.2442,
-    "物理攻击收益": 0.055,
-    "暴击收益": 0.0118,
-    "百分比综合": 0.3281
+  "swordsman": {
+    "percentage_combined": 45.7
   },
-  "swordsman_percentage": {
-    "力量收益": 0.3647,
-    "物理攻击收益": 0.055,
-    "暴击收益": 0.012,
-    "百分比综合": 0.457
-  },
-  "paoJi_synergy_phy_attack": 2743,
   "marginal_duality": 4.93002,
-  "checks_passed": 8,
-  "checks_total": 8,
-  "faal_framework": "固化状态确认"
+  "verification": {
+    "cc_power": true,
+    "cc_phy_atk": true,
+    "cc_ind_atk": true,
+    "cc_crit": true,
+    "berserker_fixed": true,
+    "berserker_pct": true,
+    "swordsman_pct": true,
+    "marginal_duality": true
+  },
+  "passed": 8,
+  "total": 8,
+  "status": "100%通过"
 }
