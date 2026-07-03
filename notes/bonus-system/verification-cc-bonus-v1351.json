@@ -1,0 +1,115 @@
+{
+  "version": "v1351",
+  "timestamp": "2026-07-03T13:26:49Z",
+  "results": {
+    "cc_attributes": {
+      "cc_str": {
+        "expected": 310,
+        "actual": 310,
+        "pass": true
+      },
+      "cc_phy": {
+        "expected": 110,
+        "actual": 110,
+        "pass": true
+      },
+      "cc_ind": {
+        "expected": 120,
+        "actual": 120,
+        "pass": true
+      },
+      "cc_crit": {
+        "expected": 0.03,
+        "actual": 0.03,
+        "pass": true
+      }
+    },
+    "berserker_fixed": {
+      "independent_benefit": {
+        "expected": 8.0,
+        "actual": 8.0,
+        "pass": true
+      },
+      "critical_benefit": {
+        "expected": 1.2,
+        "actual": 1.18,
+        "pass": false
+      },
+      "fixed_combined": {
+        "expected": 9.27,
+        "actual": 9.27,
+        "pass": true
+      }
+    },
+    "berserker_percentage": {
+      "strength_benefit": {
+        "expected": 24.42,
+        "actual": 24.42,
+        "pass": true
+      },
+      "physical_attack_benefit": {
+        "expected": 5.5,
+        "actual": 5.5,
+        "pass": true
+      },
+      "pct_combined": {
+        "expected": 32.81,
+        "actual": 32.81,
+        "pass": true
+      }
+    },
+    "swordsman_percentage": {
+      "strength_benefit": {
+        "expected": 36.47,
+        "actual": 36.47,
+        "pass": true
+      },
+      "physical_attack_benefit": {
+        "expected": 5.5,
+        "actual": 5.5,
+        "pass": true
+      },
+      "critical_benefit": {
+        "expected": 1.2,
+        "actual": 1.2,
+        "pass": true
+      },
+      "pct_combined": {
+        "expected": 45.7,
+        "actual": 45.7,
+        "pass": true
+      }
+    },
+    "marginal_duality": {
+      "marginal_duality": {
+        "expected": 4.93002,
+        "actual": 4.93002,
+        "pass": true
+      }
+    },
+    "poorji_synergy": {
+      "poorji_physical_attack": {
+        "expected": 2600,
+        "actual": 2600,
+        "pass": true
+      },
+      "poorji_cc_physical_attack": {
+        "expected": 2743,
+        "actual": 2743,
+        "pass": true
+      }
+    }
+  },
+  "summary": {
+    "total_checks": 17,
+    "passed": 16,
+    "pass_rate": 94.1,
+    "cc_attributes": "力量+310/物理攻击+110/独立攻击+120/暴击+3%",
+    "berserker_fixed_combined": 9.27,
+    "berserker_pct_combined": 32.81,
+    "swordsman_pct_combined": 45.7,
+    "marginal_duality": 4.93002,
+    "poorji_cc_phy": 2743,
+    "faal_framework": "FAAL三阶七维框架固化状态确认"
+  }
+}
