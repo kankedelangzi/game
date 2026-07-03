@@ -1,0 +1,39 @@
+{
+  "timestamp": "2026-07-03 08:49:10",
+  "version": "v1312",
+  "cc_6piece": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate_pct": 3.0
+  },
+  "berserker_fixed": {
+    "independent_gain_pct": 8.0,
+    "crit_gain_pct": 1.5,
+    "total_pct": 9.62
+  },
+  "berserker_percentage": {
+    "strength_gain_pct": 24.4248,
+    "physical_attack_gain_pct": 5.5,
+    "crit_gain_pct": 1.5,
+    "total_pct": 33.2372
+  },
+  "swordsman_percentage": {
+    "strength_gain_pct": 36.4706,
+    "physical_attack_gain_pct": 5.5,
+    "crit_gain_pct": 1.5,
+    "total_pct": 46.1361
+  },
+  "marginal_duality": {
+    "value": 4.795854,
+    "formula": "swordsman_pct_total / berserker_fixed_total"
+  },
+  "verification": {
+    "cc_6piece_correct": true,
+    "berserker_fixed_correct": false,
+    "berserker_percentage_correct": false,
+    "swordsman_percentage_correct": false,
+    "marginal_duality_correct": false,
+    "all_passed": false
+  }
+}
