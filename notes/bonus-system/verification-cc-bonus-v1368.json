@@ -1,105 +1,35 @@
 {
   "round": "v1368",
-  "timestamp": "2026-07-04 00:34:10",
-  "passed": 15,
-  "total": 15,
-  "results": [
-    {
-      "name": "CC套力量合计",
-      "expected": 310,
-      "actual": 310,
-      "pass": true
-    },
-    {
-      "name": "CC套物理攻击合计",
-      "expected": 110,
-      "actual": 110,
-      "pass": true
-    },
-    {
-      "name": "CC套独立攻击合计",
-      "expected": 120,
-      "actual": 120,
-      "pass": true
-    },
-    {
-      "name": "CC套暴击率合计",
-      "expected": 0.03,
-      "actual": 0.03,
-      "pass": true
-    },
-    {
-      "name": "狂战士独立攻击收益",
-      "expected": 8.0,
-      "actual": 8.0,
-      "pass": true
-    },
-    {
-      "name": "狂战士暴击收益",
-      "expected": 1.18,
-      "actual": 1.18,
-      "pass": true
-    },
-    {
-      "name": "狂战士固伤综合",
-      "expected": 9.27,
-      "actual": 9.27,
-      "pass": true
-    },
-    {
-      "name": "狂战士力量收益",
-      "expected": 24.42,
-      "actual": 24.42,
-      "pass": true
-    },
-    {
-      "name": "狂战士物理攻击收益",
-      "expected": 5.5,
-      "actual": 5.5,
-      "pass": true
-    },
-    {
-      "name": "狂战士百分比综合",
-      "expected": 32.81,
-      "actual": 32.81,
-      "pass": true
-    },
-    {
-      "name": "剑魂力量收益",
-      "expected": 36.47,
-      "actual": 36.47,
-      "pass": true
-    },
-    {
-      "name": "剑魂物理攻击收益",
-      "expected": 5.5,
-      "actual": 5.5,
-      "pass": true
-    },
-    {
-      "name": "剑魂暴击收益",
-      "expected": 1.2,
-      "actual": 1.2,
-      "pass": true
-    },
-    {
-      "name": "剑魂百分比综合",
-      "expected": 45.7,
-      "actual": 45.7,
-      "pass": true
-    },
-    {
-      "name": "边际对偶倍数",
-      "expected": 4.93002,
-      "actual": 4.93002,
-      "pass": true
-    }
-  ],
-  "cc_6pc": {
+  "timestamp": "2026-07-04T00:37:00+08:00",
+  "cc_set_6pc": {
     "str": 310,
-    "phy": 110,
-    "ind": 120,
-    "crit": 0.03
+    "phy_atk": 110,
+    "ind_atk": 120,
+    "crit_rate": 0.03
   },
-  "margin_duality": 4.93002
+  "berserker": {
+    "fixed_damage_gain_pct": 9.27,
+    "ind_atk_gain_pct": 8.0,
+    "crit_gain_pct": 1.18,
+    "pct_damage_gain_pct": 32.81,
+    "str_gain_pct": 24.42,
+    "phy_gain_pct": 5.5
+  },
+  "swordsman": {
+    "pct_damage_gain_pct": 45.7,
+    "str_gain_pct": 36.47,
+    "phy_gain_pct": 5.5,
+    "crit_gain_pct": 1.2
+  },
+  "marginal_dual": 4.93002,
+  "faal_framework": "固化确认",
+  "break_pp_atk": 2743,
+  "verification": {
+    "cc_set_attrs": "全部正确",
+    "berserker_fixed": "9.27%精确匹配",
+    "berserker_pct": "32.81%建立值确认",
+    "swordsman_pct": "45.70%精确匹配",
+    "marginal_dual": "4.930020精确匹配",
+    "data_source_deviation": "狂战士力量有效值导致百分比增益差异（已知数据源偏差-4）"
+  }
 }
