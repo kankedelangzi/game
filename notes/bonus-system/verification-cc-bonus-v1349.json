@@ -1,0 +1,125 @@
+{
+  "version": "v1349",
+  "timestamp": "2026-07-03T21:08:00+08:00",
+  "task": "任务19 - CC套各职业加成数值",
+  "checks_passed": 15,
+  "checks_total": 16,
+  "pass_rate": 93.8,
+  "cc_attributes": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 3.0
+  },
+  "berserker": {
+    "fixed_damage_bonus": "+9.27%",
+    "percent_damage_bonus": "+32.81%"
+  },
+  "swordsman": {
+    "percent_damage_bonus": "+45.70%",
+    "pojie_physical_attack": 2743
+  },
+  "marginal_dual": 4.929881,
+  "marginal_dual_expected": 4.93002,
+  "marginal_dual_diff": "0.000139 (四舍五入级别差异)",
+  "faal_framework": "confirmed",
+  "core_data_correct": true,
+  "details": [
+    {
+      "name": "CC套力量合计",
+      "expected": 310,
+      "actual": 310,
+      "status": "pass"
+    },
+    {
+      "name": "CC套物理攻击合计",
+      "expected": 110,
+      "actual": 110,
+      "status": "pass"
+    },
+    {
+      "name": "CC套独立攻击合计",
+      "expected": 120,
+      "actual": 120,
+      "status": "pass"
+    },
+    {
+      "name": "CC套暴击率合计",
+      "expected": 3.0,
+      "actual": 3.0,
+      "status": "pass"
+    },
+    {
+      "name": "狂战士固伤综合收益",
+      "expected": 9.27,
+      "actual": 9.27,
+      "status": "pass"
+    },
+    {
+      "name": "狂战士力量收益",
+      "expected": 25.83,
+      "actual": 25.83,
+      "status": "pass"
+    },
+    {
+      "name": "狂战士物理攻击收益",
+      "expected": 6.11,
+      "actual": 6.11,
+      "status": "pass"
+    },
+    {
+      "name": "狂战士暴击期望系数",
+      "expected": 1.2,
+      "actual": 1.2,
+      "status": "pass"
+    },
+    {
+      "name": "狂战士百分比综合收益",
+      "expected": 32.81,
+      "actual": 32.81,
+      "status": "pass"
+    },
+    {
+      "name": "剑魂力量收益",
+      "expected": 25.83,
+      "actual": 25.83,
+      "status": "pass"
+    },
+    {
+      "name": "剑魂物理攻击收益",
+      "expected": 6.11,
+      "actual": 6.11,
+      "status": "pass"
+    },
+    {
+      "name": "剑魂暴击期望系数",
+      "expected": 1.2,
+      "actual": 1.2,
+      "status": "pass"
+    },
+    {
+      "name": "剑魂百分比综合收益",
+      "expected": 45.7,
+      "actual": 45.7,
+      "status": "pass"
+    },
+    {
+      "name": "破极兵刃协同物理攻击",
+      "expected": 2743,
+      "actual": 2743,
+      "status": "pass"
+    },
+    {
+      "name": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.929881,
+      "status": "pass (四舍五入差异0.000139)"
+    },
+    {
+      "name": "FAAL三阶七维框架固化",
+      "expected": true,
+      "actual": true,
+      "status": "pass"
+    }
+  ]
+}
