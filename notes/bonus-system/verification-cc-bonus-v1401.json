@@ -1,0 +1,97 @@
+{
+  "version": "v1401",
+  "timestamp": "2026-07-04T05:56:19+08:00",
+  "task": "任务19 - CC套各职业加成数值稳态核查",
+  "checks": [
+    {
+      "name": "力量合计",
+      "actual": 310,
+      "expected": 310,
+      "diff": 0,
+      "passed": true
+    },
+    {
+      "name": "物理攻击合计",
+      "actual": 110,
+      "expected": 110,
+      "diff": 0,
+      "passed": true
+    },
+    {
+      "name": "独立攻击合计",
+      "actual": 120,
+      "expected": 120,
+      "diff": 0,
+      "passed": true
+    },
+    {
+      "name": "暴击率合计",
+      "actual": 3.0,
+      "expected": 3.0,
+      "diff": 0.0,
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤综合",
+      "actual": 9.27,
+      "expected": 9.27,
+      "diff": 0.0,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比综合",
+      "actual": 32.81,
+      "expected": 32.81,
+      "diff": 0.0,
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比综合",
+      "actual": 45.7,
+      "expected": 45.7,
+      "diff": 0.0,
+      "passed": true
+    },
+    {
+      "name": "破极兵刃协同物理攻击",
+      "actual": 2743,
+      "expected": 2743,
+      "diff": 0,
+      "passed": true
+    },
+    {
+      "name": "边际对偶",
+      "actual": 4.93002,
+      "expected": 4.93002,
+      "diff": 0.0,
+      "passed": true
+    }
+  ],
+  "passed": 9,
+  "total": 9,
+  "status": "✅ 全部通过",
+  "core_data": {
+    "cc_6piece": {
+      "力量": 310,
+      "物理攻击": 110,
+      "独立攻击": 120,
+      "暴击率": 3.0
+    },
+    "berserker_fixed": {
+      "独立攻击收益": 9.27
+    },
+    "berserker_pct": {
+      "力量+310收益": 1.96,
+      "物理攻击+110收益": 2.01,
+      "百分比综合": 32.81
+    },
+    "swordsman": {
+      "力量+310收益": 1.96,
+      "物理攻击+110收益": 2.01,
+      "暴击+3%收益": 3.0,
+      "百分比综合": 45.7
+    },
+    "po_break_ph_atk": 2743,
+    "marginal_ratio": 4.93002
+  }
+}
