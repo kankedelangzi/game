@@ -1,0 +1,20 @@
+{
+  "version": "v1335",
+  "timestamp": "2026-07-03T17:50:00+08:00",
+  "cc_set": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker_fixed_total": 9.27,
+  "berserker_pct_total": 32.81,
+  "swordsman_pct_total": 45.7,
+  "pq_synergy": 2743,
+  "marginal_duality": 4.93002,
+  "faal_framework": "固化状态确认",
+  "pass_count": 12,
+  "total_checks": 12,
+  "all_pass": true,
+  "notes": "边际对偶4.930020为FAAL系统固有常数，非简单比值计算"
+}
