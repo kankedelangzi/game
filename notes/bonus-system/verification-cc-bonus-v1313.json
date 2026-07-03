@@ -1,0 +1,106 @@
+{
+  "timestamp": "2026-07-03 08:57:52",
+  "version": "v1313",
+  "cc_6piece": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate_pct": 3.0
+  },
+  "berserker_fixed": {
+    "independent_gain_pct": 8.0,
+    "crit_gain_pct": 1.1765,
+    "total_pct": 9.2706
+  },
+  "berserker_percentage": {
+    "strength_gain_pct": 24.4248,
+    "physical_attack_gain_pct": 5.5,
+    "crit_gain_pct": 1.1765,
+    "total_pct": 32.8125
+  },
+  "swordsman_percentage": {
+    "strength_gain_pct": 36.4706,
+    "physical_attack_gain_pct": 5.5,
+    "crit_gain_pct": 1.2,
+    "total_pct": 45.7042
+  },
+  "marginal_duality": {
+    "value": 4.93002,
+    "formula": "swordsman_pct_total / berserker_fixed_total"
+  },
+  "poji_synergy_phys_attack": 2743,
+  "verification": {
+    "cc_6piece_correct": true,
+    "berserker_fixed_correct": true,
+    "berserker_percentage_correct": true,
+    "swordsman_percentage_correct": true,
+    "marginal_duality_correct": true,
+    "all_passed": true
+  },
+  "checks": [
+    {
+      "name": "CC套力量+310",
+      "passed": true
+    },
+    {
+      "name": "CC套物理攻击+110",
+      "passed": true
+    },
+    {
+      "name": "CC套独立攻击+120",
+      "passed": true
+    },
+    {
+      "name": "CC套暴击+3%",
+      "passed": true
+    },
+    {
+      "name": "狂战士独立攻击收益≈8.00%",
+      "passed": true
+    },
+    {
+      "name": "狂战士暴击收益≈1.18%",
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤综合≈9.27%",
+      "passed": true
+    },
+    {
+      "name": "狂战士力量收益≈24.42%",
+      "passed": true
+    },
+    {
+      "name": "狂战士物理攻击收益≈5.50%",
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比综合≈32.81%",
+      "passed": true
+    },
+    {
+      "name": "剑魂力量收益≈36.47%",
+      "passed": true
+    },
+    {
+      "name": "剑魂物理攻击收益≈5.50%",
+      "passed": true
+    },
+    {
+      "name": "剑魂暴击收益≈1.20%",
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比综合≈45.70%",
+      "passed": true
+    },
+    {
+      "name": "边际对偶≈4.930020",
+      "passed": true
+    },
+    {
+      "name": "破极兵刃协同物理攻击=2743",
+      "passed": true
+    }
+  ]
+}
