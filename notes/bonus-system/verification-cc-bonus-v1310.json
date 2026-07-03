@@ -1,0 +1,41 @@
+{
+  "version": "v1310",
+  "timestamp": "2026-07-03T08:26:10.370894",
+  "cc_set": {
+    "strength": 310,
+    "phy_atk": 110,
+    "indep_atk": 120,
+    "crit": 3
+  },
+  "berserker": {
+    "fixed_indep": 8.0,
+    "fixed_crit": 1.1765,
+    "fixed_total": 9.2706,
+    "pct_strength": 24.4248,
+    "pct_phy": 5.5,
+    "pct_crit": 1.1765,
+    "pct_total": 32.8125
+  },
+  "swordsman": {
+    "pct_strength": 36.4706,
+    "pct_phy": 5.5,
+    "pct_crit": 1.2,
+    "pct_total": 45.7042
+  },
+  "marginal_duality": 4.93002,
+  "poji_synergy": 2743.0,
+  "checks": {
+    "cc_6pc_strength": true,
+    "cc_6pc_phy_atk": true,
+    "cc_6pc_indep_atk": true,
+    "cc_6pc_crit": true,
+    "berserker_fixed_total": true,
+    "berserker_pct_total": true,
+    "swordsman_pct_total": true,
+    "marginal_duality": true,
+    "poji_synergy": true
+  },
+  "all_pass": true,
+  "passed": 9,
+  "total": 9
+}
