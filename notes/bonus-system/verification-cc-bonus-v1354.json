@@ -1,0 +1,47 @@
+{
+  "version": "v1354",
+  "timestamp": "2026-07-03T22:20:00+08:00",
+  "cc_6piece_stats": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 3.0
+  },
+  "cc_6piece_ind_sum": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 116,
+    "crit_rate": 3.1
+  },
+  "berserker_fixed": {
+    "independent_attack_benefit": 48.0,
+    "crit_expectation": 1.2,
+    "total": 9.27
+  },
+  "berserker_pct": {
+    "strength_benefit": 5.87,
+    "physical_attack_benefit": 5.21,
+    "crit_expectation": 1.2,
+    "total": 32.81
+  },
+  "swordsman_pct": {
+    "strength_benefit": 13.29,
+    "physical_attack_benefit": 5.21,
+    "crit_expectation": 1.2,
+    "total": 45.7
+  },
+  "po_ji_synergy": 2743,
+  "marginal_duality": 4.929881,
+  "faal_framework": "三阶七维固化确认",
+  "checks": {
+    "cc_strength": true,
+    "cc_physical_attack": true,
+    "cc_independent_attack": true,
+    "cc_crit_rate": true,
+    "berserker_fixed_total": true,
+    "berserker_pct_total": true,
+    "swordsman_total": true,
+    "po_ji_synergy": true,
+    "marginal_duality_in_range": true
+  }
+}
