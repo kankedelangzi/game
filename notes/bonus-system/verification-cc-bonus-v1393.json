@@ -1,0 +1,40 @@
+{
+  "version": "v1393",
+  "timestamp": "2026-07-04T04:32:00+08:00",
+  "cc_6piece_stats": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 3.0
+  },
+  "berserker": {
+    "fixed_skill_bonus_pct": 9.27,
+    "percent_skill_bonus_pct": 32.81,
+    "strength_gain_pct": 20.2614,
+    "physical_attack_gain_pct": 5.5,
+    "crit_gain_pct": 1.2
+  },
+  "swordsman": {
+    "percent_skill_bonus_pct": 45.7,
+    "strength_gain_pct": 36.4706,
+    "physical_attack_gain_pct": 4.2308,
+    "crit_gain_pct": 1.2,
+    "pp_synergy_phy": 2743
+  },
+  "marginal_duality": 4.93002,
+  "faal_framework": "固化状态",
+  "checks": {
+    "cc_6piece_attributes": 4,
+    "berserker_fixed_skill": 1,
+    "berserker_percent_skill": 1,
+    "swordsman_percent_skill": 1,
+    "marginal_duality": 1,
+    "pp_synergy": 1,
+    "faal_framework": 1,
+    "total": 10
+  },
+  "all_passed": true,
+  "pass_rate": "100%",
+  "data_drift": "零漂移",
+  "smtp_status": "永久不可恢复"
+}
