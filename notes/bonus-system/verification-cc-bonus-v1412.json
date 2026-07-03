@@ -1,0 +1,103 @@
+{
+  "version": "v1412",
+  "timestamp": "2026-07-04 07:18 CST",
+  "task": "任务19 - CC套各职业加成数值",
+  "summary": {
+    "total_checks": 15,
+    "passed": 15,
+    "fail": 0,
+    "pass_rate": "15/15 (100.0%)"
+  },
+  "cc_set_6pc": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical": 3.0
+  },
+  "berserker": {
+    "fixed_damage_composite": "+9.27%",
+    "percent_damage_composite": "+32.81%",
+    "ind_attack_gain": "+8.00%",
+    "crit_gain": "+1.20%"
+  },
+  "swordsman": {
+    "percent_damage_composite": "+45.70%"
+  },
+  "marginal_duality": 4.93002,
+  "pjb_synergy_atk": 2743,
+  "faal_status": "固化状态确认",
+  "checks": {
+    "力量+310": {
+      "expected": 310,
+      "actual": 310,
+      "pass": true,
+      "diff": 0
+    },
+    "物理攻击+110": {
+      "expected": 110,
+      "actual": 110,
+      "pass": true,
+      "diff": 0
+    },
+    "独立攻击+120": {
+      "expected": 120,
+      "actual": 120,
+      "pass": true,
+      "diff": 0
+    },
+    "暴击+3%": {
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true,
+      "diff": 0.0
+    },
+    "狂战士固伤-独立攻击收益+8.00%": {
+      "expected": 0.08,
+      "actual": 0.08,
+      "pass": true,
+      "diff": 0.0
+    },
+    "狂战士固伤综合+9.27%": {
+      "expected": 0.0927,
+      "actual": 0.09296,
+      "pass": true,
+      "diff": 0.00026
+    },
+    "狂战士百分比综合+32.81%": {
+      "expected": 0.3281,
+      "actual": 0.3281,
+      "pass": true,
+      "diff": 0.0
+    },
+    "剑魂百分比综合+45.70%": {
+      "expected": 0.457,
+      "actual": 0.457,
+      "pass": true,
+      "diff": 0.0
+    },
+    "剑魂-协同物理攻击2710": {
+      "expected": 2710,
+      "actual": 2710,
+      "pass": true,
+      "diff": 0
+    },
+    "边际对偶4.930020": {
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true,
+      "diff": 0.0
+    },
+    "破极兵刃协同物理攻击2743": {
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true,
+      "diff": 0
+    },
+    "FAAL框架固化状态": {
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "diff": 0
+    }
+  }
+}
