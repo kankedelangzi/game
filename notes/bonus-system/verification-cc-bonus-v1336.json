@@ -1,0 +1,84 @@
+{
+  "version": "v1336",
+  "verification_time": "2026-07-03T18:02:00+08:00",
+  "cc_set_6pc": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical_rate": 0.03
+  },
+  "berserker": {
+    "fixed_damage_total": 9.27,
+    "fixed_damage_ind": 8.07,
+    "fixed_damage_cri": 1.2,
+    "pct_damage_total": 32.81
+  },
+  "swordsman": {
+    "pct_damage_total": 45.7
+  },
+  "marginal_duality": {
+    "value": 4.929881,
+    "expected": 4.929881,
+    "formula": "剑魂百分比综合/狂战士固伤综合",
+    "calculation": "45.70/9.27"
+  },
+  "po_ji_synergy": {
+    "base_phy_attack": 2110,
+    "po_ji_bonus_pct": 0.3,
+    "po_ji_result": 2743
+  },
+  "faal_framework": "固化状态确认（七维：增伤/冷却/属性地基/攻击力道/暴击概率/特殊力学/FAAL）",
+  "checks_passed": 12,
+  "checks_total": 12,
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "CC套力量+310",
+      "pass": true
+    },
+    {
+      "name": "CC套物理攻击+110",
+      "pass": true
+    },
+    {
+      "name": "CC套独立攻击+120",
+      "pass": true
+    },
+    {
+      "name": "CC套暴击率+3%",
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤独立攻击+8.07%",
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤暴击+1.20%",
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤综合+9.27%",
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比综合+32.81%",
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比综合+45.70%",
+      "pass": true
+    },
+    {
+      "name": "边际对偶4.929881",
+      "pass": true
+    },
+    {
+      "name": "破极兵刃协同物理攻击2743",
+      "pass": true
+    },
+    {
+      "name": "FAAL三阶七维框架固化",
+      "pass": true
+    }
+  ]
+}
