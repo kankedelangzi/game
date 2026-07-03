@@ -1,0 +1,68 @@
+{
+  "version": "v1388",
+  "timestamp": "2026-07-03T19:27:00Z",
+  "cron_id": "e3beded4-752a-445f-9a4f-d30702e70ca8",
+  "passed": 9,
+  "total": 9,
+  "pass_rate": "100%",
+  "marginal_duality": 4.93002,
+  "core_data_drift": "zero",
+  "cc_set_attributes": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical_rate": 0.03
+  },
+  "berserker_fix_total": 9.2706,
+  "berserker_pct_total": 32.8125,
+  "swordsman_total": 45.7042,
+  "pojie_synergy_phy": 2743,
+  "faal_framework": "solidified",
+  "details": {
+    "CC力量": {
+      "actual": 310,
+      "expected": 310,
+      "pass": true
+    },
+    "CC物理攻击": {
+      "actual": 110,
+      "expected": 110,
+      "pass": true
+    },
+    "CC独立攻击": {
+      "actual": 120,
+      "expected": 120,
+      "pass": true
+    },
+    "CC暴击": {
+      "actual": 0.03,
+      "expected": 0.03,
+      "pass": true
+    },
+    "狂战士固伤综合": {
+      "actual": 9.27,
+      "expected": 9.27,
+      "pass": true
+    },
+    "狂战士百分比综合": {
+      "actual": 32.81,
+      "expected": 32.81,
+      "pass": true
+    },
+    "剑魂百分比综合": {
+      "actual": 45.7,
+      "expected": 45.7,
+      "pass": true
+    },
+    "破极兵刃协同物理攻击": {
+      "actual": 2743,
+      "expected": 2743,
+      "pass": true
+    },
+    "边际对偶": {
+      "actual": 4.93002,
+      "expected": 4.93002,
+      "pass": true
+    }
+  }
+}
