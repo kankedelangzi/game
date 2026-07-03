@@ -1,0 +1,112 @@
+{
+  "version": "v1364",
+  "timestamp": "2026-07-03T23:48+08:00",
+  "passed": 16,
+  "total": 16,
+  "core_summary": {
+    "CC套6件": "力量+310/物理攻击+110/独立攻击+120/暴击+3%",
+    "狂战士固伤综合": 9.27,
+    "狂战士百分比综合": 32.81,
+    "剑魂百分比综合": 45.7,
+    "边际对偶": 4.93002,
+    "破极协同": 2743
+  },
+  "results": [
+    {
+      "item": "CC套属性-力量",
+      "calc": 310,
+      "expected": 310,
+      "pass": true
+    },
+    {
+      "item": "CC套属性-物理攻击",
+      "calc": 110,
+      "expected": 110,
+      "pass": true
+    },
+    {
+      "item": "CC套属性-独立攻击",
+      "calc": 120,
+      "expected": 120,
+      "pass": true
+    },
+    {
+      "item": "CC套属性-暴击率",
+      "calc": 0.03,
+      "expected": 0.03,
+      "pass": true
+    },
+    {
+      "item": "狂战士-固伤独立攻击收益",
+      "calc": 8.0,
+      "expected": 8.0,
+      "pass": true
+    },
+    {
+      "item": "狂战士-固伤暴击收益",
+      "calc": 1.18,
+      "expected": 1.18,
+      "pass": true
+    },
+    {
+      "item": "狂战士-固伤综合收益",
+      "calc": 9.27,
+      "expected": 9.27,
+      "pass": true
+    },
+    {
+      "item": "狂战士-百分比力量收益",
+      "calc": 24.42,
+      "expected": 24.42,
+      "pass": true
+    },
+    {
+      "item": "狂战士-百分比物理攻击收益",
+      "calc": 5.5,
+      "expected": 5.5,
+      "pass": true
+    },
+    {
+      "item": "狂战士-百分比综合收益",
+      "calc": 32.81,
+      "expected": 32.81,
+      "pass": true
+    },
+    {
+      "item": "剑魂-力量收益",
+      "calc": 36.47,
+      "expected": 36.47,
+      "pass": true
+    },
+    {
+      "item": "剑魂-物理攻击收益",
+      "calc": 5.5,
+      "expected": 5.5,
+      "pass": true
+    },
+    {
+      "item": "剑魂-暴击收益",
+      "calc": 1.2,
+      "expected": 1.2,
+      "pass": true
+    },
+    {
+      "item": "剑魂-百分比综合收益",
+      "calc": 45.7,
+      "expected": 45.7,
+      "pass": true
+    },
+    {
+      "item": "边际对偶倍数",
+      "calc": 4.93002,
+      "expected": 4.93002,
+      "pass": true
+    },
+    {
+      "item": "破极兵刃协同物理攻击",
+      "calc": 2743,
+      "expected": 2743,
+      "pass": true
+    }
+  ]
+}
