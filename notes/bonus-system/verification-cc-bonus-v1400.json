@@ -1,0 +1,134 @@
+{
+  "version": "v1400",
+  "timestamp": "2026-07-04T05:46:00+08:00",
+  "checks": [
+    {
+      "check": "CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "passed": true
+    },
+    {
+      "check": "CC套物攻",
+      "expected": 110,
+      "actual": 110,
+      "passed": true
+    },
+    {
+      "check": "CC套独攻",
+      "expected": 120,
+      "actual": 120,
+      "passed": true
+    },
+    {
+      "check": "CC套暴击%",
+      "expected": 0.03,
+      "actual": 0.03,
+      "passed": true
+    },
+    {
+      "check": "狂战士-独立攻击收益",
+      "expected": 8.0,
+      "actual": 8.0,
+      "passed": true
+    },
+    {
+      "check": "狂战士-暴击收益",
+      "expected": 1.18,
+      "actual": 1.18,
+      "passed": true
+    },
+    {
+      "check": "狂战士-固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "passed": true
+    },
+    {
+      "check": "狂战士-力量收益",
+      "expected": 24.42,
+      "actual": 24.42,
+      "passed": true
+    },
+    {
+      "check": "狂战士-物理攻击收益",
+      "expected": 5.5,
+      "actual": 5.5,
+      "passed": true
+    },
+    {
+      "check": "狂战士-百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "passed": true
+    },
+    {
+      "check": "剑魂-力量收益",
+      "expected": 19.05,
+      "actual": 36.47,
+      "passed": false
+    },
+    {
+      "check": "剑魂-物理攻击收益",
+      "expected": 5.5,
+      "actual": 5.5,
+      "passed": true
+    },
+    {
+      "check": "剑魂-暴击收益",
+      "expected": 1.18,
+      "actual": 1.2,
+      "passed": false
+    },
+    {
+      "check": "剑魂-百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "passed": true
+    },
+    {
+      "check": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "passed": true
+    },
+    {
+      "check": "破极兵刃协同物理攻击",
+      "expected": 2743,
+      "actual": 2743,
+      "passed": true
+    },
+    {
+      "check": "FAAL三阶七维框架固化",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "check": "CC套属性不变",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "check": "核心数据零漂移",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    }
+  ],
+  "summary": {
+    "total": 19,
+    "passed": 17,
+    "failed": 2,
+    "pass_rate": "17/19",
+    "cc_6pc": "力量+310/物理攻击+110/独立攻击+120/暴击+3%",
+    "berserker_fixed_total_pct": 9.27,
+    "berserker_pct_total_pct": 32.81,
+    "swordsman_pct_total_pct": 45.7,
+    "marginal_dual": 4.93002,
+    "poji_phy_attack": 2743,
+    "faal_framework": "固化状态",
+    "core_data_drift": "零漂移"
+  }
+}
