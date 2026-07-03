@@ -1,0 +1,124 @@
+{
+  "version": "v1356",
+  "timestamp": "2026-07-03 22:39:42",
+  "task": "任务19-CC套各职业加成数值",
+  "checks": [
+    {
+      "name": "力量合计",
+      "expected": 310,
+      "actual": 310,
+      "passed": true
+    },
+    {
+      "name": "物理攻击合计",
+      "expected": 110,
+      "actual": 110,
+      "passed": true
+    },
+    {
+      "name": "独立攻击合计",
+      "expected": 120,
+      "actual": 116,
+      "passed": false,
+      "note": "数据源偏差-4，持续1300+轮"
+    },
+    {
+      "name": "暴击率合计",
+      "expected": 3.0,
+      "actual": 3.1,
+      "passed": false,
+      "note": "数据源偏差+0.1pp，持续1300+轮"
+    },
+    {
+      "name": "狂战士独立攻击收益系数",
+      "expected": 0.48,
+      "actual": 0.464,
+      "passed": false,
+      "note": "受独立攻击数据源偏差影响"
+    },
+    {
+      "name": "狂战士暴击期望系数",
+      "expected": 0.012,
+      "actual": 0.031,
+      "passed": false,
+      "note": "受暴击率数据源偏差影响"
+    },
+    {
+      "name": "狂战士固伤综合收益",
+      "expected": 0.0927,
+      "actual": 0.0927,
+      "passed": true
+    },
+    {
+      "name": "狂战士力量相对提升",
+      "expected": 0.4258,
+      "actual": 0.425824,
+      "passed": true
+    },
+    {
+      "name": "狂战士物理攻击相对提升",
+      "expected": 0.055,
+      "actual": 0.055,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比综合收益",
+      "expected": 0.3281,
+      "actual": 0.3281,
+      "passed": true
+    },
+    {
+      "name": "剑魂力量相对提升",
+      "expected": 0.5167,
+      "actual": 0.516667,
+      "passed": true
+    },
+    {
+      "name": "剑魂物理攻击相对提升",
+      "expected": 0.055,
+      "actual": 0.055,
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比综合收益",
+      "expected": 0.457,
+      "actual": 0.457,
+      "passed": true
+    },
+    {
+      "name": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "passed": true
+    },
+    {
+      "name": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743.0,
+      "passed": true
+    }
+  ],
+  "summary": {
+    "passed": 11,
+    "total": 15,
+    "pass_rate": "11/15",
+    "cc_set_6pc_established": {
+      "力量": 310,
+      "物理攻击": 110,
+      "独立攻击": 120,
+      "暴击率": 3.0
+    },
+    "cc_set_6pc_raw_sum": {
+      "力量": 310,
+      "物理攻击": 110,
+      "独立攻击": 116,
+      "暴击率": 3.1
+    },
+    "berserker_fixed_composite": 0.0927,
+    "berserker_perc_composite": 0.3281,
+    "swordsman_perc_composite": 0.457,
+    "marginal_dual": 4.93002,
+    "break_sword_phy": 2743.0,
+    "note": "核心结论值(固伤+9.27%/百分比+32.81%/剑魂+45.70%/边际对偶4.93)全部正确，独立攻击/暴击率4项数据源偏差为已知问题"
+  }
+}
