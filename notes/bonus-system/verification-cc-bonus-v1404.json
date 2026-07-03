@@ -1,0 +1,22 @@
+{
+  "version": "v1404",
+  "timestamp": "2026-07-04T06:23:00+08:00",
+  "cc_set_attributes": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": "3%"
+  },
+  "berserker": {
+    "固伤综合": "+9.23%",
+    "百分比综合": "+32.81%"
+  },
+  "swordsman": {
+    "百分比综合": "+45.70%"
+  },
+  "marginal_duality": 4.93002,
+  "pojie_physical_attack": 2743,
+  "faal_framework": "固化状态",
+  "core_data_drift": "零漂移",
+  "pass_rate": "100%"
+}
