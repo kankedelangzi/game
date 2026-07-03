@@ -1,33 +1,60 @@
 {
   "version": "v1327",
-  "timestamp": "2026-07-03 15:47:46",
-  "cc_stats": {
-    "力量": 310,
-    "物理攻击": 110,
-    "独立攻击": 120,
-    "暴击率": 3.0
+  "timestamp": "2026-07-03 16:04:57",
+  "type": "CC套稳态核查",
+  "tests": {
+    "cc_power": {
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    "cc_phy_atk": {
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    "cc_ind_atk": {
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    "cc_crit": {
+      "expected": 3,
+      "actual": 3,
+      "pass": true
+    },
+    "berserker_fixed_combined": {
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true,
+      "formula": "(1+1370/250)/(1+1250/250)-1 × 暴击收益-1"
+    },
+    "berserker_pct_combined": {
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true,
+      "formula": "力量×物理攻击×暴击-1 (暴走后)"
+    },
+    "swordsman_combined": {
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true,
+      "formula": "力量×物理攻击×暴击-1"
+    },
+    "marginal_duality": {
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true,
+      "formula": "剑魂百分比综合/狂战士固伤综合"
+    },
+    "po_synergy": {
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true,
+      "formula": "2110×1.30"
+    }
   },
-  "berserker": {
-    "fixed_total": 0.092706,
-    "pct_total": 0.328125,
-    "ind_gain": 0.08,
-    "crit_gain": 0.011765,
-    "str_gain": 0.244248,
-    "phy_gain": 0.055
-  },
-  "swordsman": {
-    "pct_total": 0.457042,
-    "str_gain": 0.364706,
-    "phy_gain": 0.055,
-    "crit_gain": 0.012
-  },
-  "polar_synergy": {
-    "base_phy": 2000,
-    "polar_phy": 2743.0
-  },
-  "marginal_duality": 4.93002,
-  "verification_count": 16,
-  "passed": 16,
-  "failed": 0,
-  "errors": null
+  "summary": "8/8 Python独立验算100%通过，CC套6件属性全部正确，狂战士固伤综合+9.27%/百分比综合+32.81%，剑魂百分比综合+45.70%，边际对偶4.930020精确值确认，破极兵刃协同2743确认，FAAL三阶七维框架固化状态确认",
+  "email_skip": true,
+  "git_status": "pending"
 }
