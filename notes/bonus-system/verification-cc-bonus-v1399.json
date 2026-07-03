@@ -1,32 +1,145 @@
 {
   "version": "v1399",
-  "timestamp": "2026-07-04T05:31:00+08:00",
-  "cc_set": {
+  "timestamp": "2026-07-04 05:37:12",
+  "cc_attributes": {
     "strength": 310,
-    "phy_attack": 110,
-    "indep_attack": 120,
+    "weapon_damage": 110,
+    "independent_damage": 120,
     "crit_rate": 3.0
   },
-  "berserker": {
-    "fixed_composite_pct": 9.27,
-    "pct_composite_pct": 32.81
-  },
-  "swordsman": {
-    "pct_composite_pct": 45.7,
-    "pojj_synergy_phy": 2743
-  },
-  "marginal_dual": 4.93002,
-  "verification": {
-    "cc_str_match": true,
-    "cc_phy_match": true,
-    "cc_ind_match": true,
-    "cc_crit_match": true,
-    "berserker_fixed_composite_match": true,
-    "berserker_pct_composite_match": true,
-    "swordsman_pct_composite_match": true,
-    "marginal_dual_match": true,
-    "pojj_synergy_match": true,
-    "faal_framework_match": true,
-    "core_data_zero_drift": true
-  }
+  "checks": [
+    {
+      "name": "CC力量",
+      "expected": 310,
+      "actual": 310,
+      "label": "",
+      "passed": true
+    },
+    {
+      "name": "CC物攻",
+      "expected": 110,
+      "actual": 110,
+      "label": "",
+      "passed": true
+    },
+    {
+      "name": "CC独立",
+      "expected": 120,
+      "actual": 120,
+      "label": "",
+      "passed": true
+    },
+    {
+      "name": "CC暴击",
+      "expected": 3.0,
+      "actual": 3.0,
+      "label": "",
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤-独立攻击",
+      "expected": 61.54,
+      "actual": 61.54,
+      "label": "",
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤-暴击",
+      "expected": 3.0,
+      "actual": 3.0,
+      "label": "",
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤综合",
+      "expected": 64.54,
+      "actual": 64.54,
+      "label": "",
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比-力量",
+      "expected": 62.0,
+      "actual": 62.0,
+      "label": "",
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比-物攻",
+      "expected": 68.75,
+      "actual": 68.75,
+      "label": "",
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比综合",
+      "expected": 130.75,
+      "actual": 130.75,
+      "label": "",
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比-力量",
+      "expected": 62.0,
+      "actual": 62.0,
+      "label": "",
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比-物攻",
+      "expected": 73.33,
+      "actual": 73.33,
+      "label": "",
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比-暴击",
+      "expected": 3.0,
+      "actual": 3.0,
+      "label": "",
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比综合",
+      "expected": 138.33,
+      "actual": 138.33,
+      "label": "",
+      "passed": true
+    },
+    {
+      "name": "边际对偶",
+      "expected": 4.93,
+      "actual": 49.36,
+      "label": "",
+      "passed": false
+    },
+    {
+      "name": "破极兵刃协同物理攻击",
+      "expected": 2743,
+      "actual": 2743,
+      "label": "",
+      "passed": true
+    },
+    {
+      "name": "FAAL三阶七维框架固化",
+      "expected": true,
+      "actual": true,
+      "label": "",
+      "passed": true
+    },
+    {
+      "name": "CC套属性不变",
+      "expected": true,
+      "actual": true,
+      "label": "",
+      "passed": true
+    },
+    {
+      "name": "核心数据零漂移",
+      "expected": true,
+      "actual": true,
+      "label": "",
+      "passed": true
+    }
+  ]
 }
