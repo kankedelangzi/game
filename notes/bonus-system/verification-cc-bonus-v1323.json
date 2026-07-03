@@ -1,0 +1,57 @@
+{
+  "version": "v1323",
+  "timestamp": "2026-07-03T13:24:35+08:00",
+  "cc_set_6piece_attributes": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker_benefits": {
+    "固伤综合": 9.27,
+    "百分比综合": 32.81
+  },
+  "swordsman_benefits": {
+    "百分比综合": 45.7
+  },
+  "polearm_synergy": 2743.0,
+  "marginal_dual": 4.93002,
+  "marginal_dual_expected": 4.93002,
+  "all_pass": true,
+  "passed": 8,
+  "total": 8,
+  "checks": [
+    {
+      "check": "CC套-力量+310",
+      "pass": true
+    },
+    {
+      "check": "CC套-物理攻击+110",
+      "pass": true
+    },
+    {
+      "check": "CC套-独立攻击+120",
+      "pass": true
+    },
+    {
+      "check": "CC套-暴击率+3%",
+      "pass": true
+    },
+    {
+      "check": "狂战士-固伤综合+9.27%",
+      "pass": true
+    },
+    {
+      "check": "狂战士-百分比综合+32.81%",
+      "pass": true
+    },
+    {
+      "check": "剑魂-百分比综合+45.70%",
+      "pass": true
+    },
+    {
+      "check": "边际对偶≈4.930020",
+      "pass": true
+    }
+  ]
+}
