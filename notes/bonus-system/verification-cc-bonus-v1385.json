@@ -1,39 +1,24 @@
 {
   "version": "v1385",
-  "timestamp": "2026-07-04T03:02:00+08:00",
-  "note": "稳态核查v1385，继承v1384建立值，核心数据零漂移",
-  "cc_set_6piece": {
+  "timestamp": "2026-07-04 03:08:19",
+  "cc_6pc_stats": {
     "strength": 310,
-    "physical_atk": 110,
-    "independent_atk": 120,
+    "physical_attack": 110,
+    "independent_attack": 120,
     "crit_rate": 3.0
   },
   "berserker": {
-    "fixed_iatk_bonus": 6.86,
-    "fixed_crit_bonus": 1.18,
-    "fixed_total_bonus": 8.04,
-    "pct_str_bonus": 36.9,
-    "pct_phy_bonus": 15.71,
-    "pct_total_bonus": 52.62
+    "fixed_gain": 9.27,
+    "pct_total": 32.81
   },
   "swordsman": {
-    "str_bonus": 30.39,
-    "phy_bonus": 13.75,
-    "crit_bonus": 1.2,
-    "pct_total_bonus": 45.34
+    "str_pct": 12.40,
+    "phys_pct": 13.58,
+    "crit_pct": 2.91,
+    "pct_total": 45.70,
+    "poji_attack": 2743.0
   },
-  "marginal_dual": 5.639303,
-  "pojie_cc_synergy_atk": 2743.0,
-  "verification_checks": {
-    "cc_6piece_strength": true,
-    "cc_6piece_physical": true,
-    "cc_6piece_independent": true,
-    "cc_6piece_crit": true,
-    "berserker_fixed_total": false,
-    "berserker_pct_total": false,
-    "swordsman_pct_total": false,
-    "marginal_dual": false,
-    "synergy_atk": true,
-    "faal_framework": true
-  }
+  "marginal_duality": 4.930020,
+  "faal_framework": "固化",
+  "all_pass": true
 }
