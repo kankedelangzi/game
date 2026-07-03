@@ -1,0 +1,28 @@
+{
+  "version": "v1373",
+  "timestamp": "2026-07-04 01:10",
+  "cc_stats": {
+    "strength": 310,
+    "physical_atk": 110,
+    "independent_atk": 120,
+    "crit_rate": 0.03
+  },
+  "berserker": {
+    "fixed_total": 9.27,
+    "percent_total": 32.81
+  },
+  "swordsman": {
+    "percent_total": 30.57
+  },
+  "marginal_duality": 4.929881,
+  "verification": {
+    "cc_strength": true,
+    "cc_physical_atk": true,
+    "cc_independent_atk": true,
+    "cc_crit_rate": true,
+    "br_fixed": true,
+    "br_percent": true,
+    "sm_percent": false,
+    "marginal": true
+  }
+}
