@@ -1,0 +1,22 @@
+{
+  "version": "v1329",
+  "timestamp": "2026-07-03 15:27:34",
+  "cc_set": {
+    "power": 310,
+    "phys_atk": 110,
+    "indep_atk": 120,
+    "crit": 3
+  },
+  "berserker": {
+    "indep_bonus_pct": 12.0,
+    "crit_expect_pct": 3.0,
+    "indep_comprehensive_pct": 9.27,
+    "phys_comprehensive_pct": 32.81
+  },
+  "swordsman": {
+    "phys_comprehensive_pct": 45.7
+  },
+  "marginal_pair": 4.929881,
+  "polar_attack": 2743.0,
+  "verdict": "✅ ALL PASS - 核心数据全部正确"
+}
