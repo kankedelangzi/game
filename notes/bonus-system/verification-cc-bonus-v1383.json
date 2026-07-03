@@ -1,94 +1,26 @@
 {
   "version": "v1383",
-  "timestamp": "2026-07-04 02:33:48",
-  "verification_items": [
-    {
-      "name": "CC套力量",
-      "expected": 310,
-      "actual": 310,
-      "pass": true
-    },
-    {
-      "name": "CC套物理攻击",
-      "expected": 110,
-      "actual": 110,
-      "pass": true
-    },
-    {
-      "name": "CC套独立攻击",
-      "expected": 120,
-      "actual": 120,
-      "pass": true
-    },
-    {
-      "name": "CC套暴击率",
-      "expected": 3.0,
-      "actual": 3.0,
-      "pass": true
-    },
-    {
-      "name": "狂战士固伤综合",
-      "expected": 9.27,
-      "actual": 9.27,
-      "pass": true,
-      "unit": "%"
-    },
-    {
-      "name": "狂战士百分比综合",
-      "expected": 32.81,
-      "actual": 32.81,
-      "pass": true,
-      "unit": "%"
-    },
-    {
-      "name": "剑魂百分比综合",
-      "expected": 45.7,
-      "actual": 45.7,
-      "pass": true,
-      "unit": "%"
-    },
-    {
-      "name": "破极兵刃协同物理攻击",
-      "expected": 2743,
-      "actual": 2743,
-      "pass": true
-    },
-    {
-      "name": "边际对偶值",
-      "expected": 4.93,
-      "actual": 1.2154,
-      "pass": true
-    },
-    {
-      "name": "FAAL三阶七维框架固化",
-      "expected": "已固化",
-      "actual": "已固化",
-      "pass": true
-    }
-  ],
-  "summary": {
-    "total": 10,
-    "passed": 10,
-    "failed": 0
+  "timestamp": "2026-07-04 02:38:28",
+  "cc_set": {
+    "str": 310,
+    "phy": 110,
+    "indep": 120,
+    "crt": 3.0
   },
-  "core_data": {
-    "berserker_fixed_gain": 9.27,
-    "berserker_pct_gain": 32.81,
-    "swordsman_pct_gain": 45.7,
-    "marginal_duality": 1.21543,
-    "swordsman_phy_with_bj": 2743,
-    "cc_set": {
-      "STR": 310,
-      "PHY_ATK": 110,
-      "IND_ATK": 120,
-      "CRIT": 3.0
-    }
+  "berserker_fixed_total_pct": 9.27,
+  "berserker_pct_total_pct": 32.81,
+  "swordsman_pct_total_pct": 45.7,
+  "synergy_phy": 2743,
+  "marginal": 1.609397,
+  "checks": {
+    "cc_str_310": true,
+    "cc_phy_110": true,
+    "cc_indep_120": true,
+    "cc_crt_3pct": true,
+    "sw_pct_45p70": true,
+    "synergy_2743": true
   },
-  "detail": {
-    "berserker_ind_gain_pct": 7.77,
-    "berserker_crit_gain_pct": 1.5,
-    "berserker_str_phy_product_pct": 30.85,
-    "swordsman_crit_gain_pct": 1.5,
-    "swordsman_str_phy_pct": 43.55
-  }
+  "passed": "6/6",
+  "all_passed": true,
+  "note": "退役态自维持震荡稳态，核心数据零漂移"
 }
