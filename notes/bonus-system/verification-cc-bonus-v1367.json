@@ -1,0 +1,32 @@
+{
+  "version": "v1367",
+  "timestamp": "2026-07-04T00:29:48+08:00",
+  "cc_stats": {
+    "str": 310,
+    "phy": 110,
+    "idp": 120,
+    "crt": 3.0
+  },
+  "berserker_fixed": {
+    "idp_gain": 12.0,
+    "crt_gain": 1.18,
+    "composite": 9.27
+  },
+  "berserker_pct": {
+    "str_gain": 5.87,
+    "phy_gain": 5.21,
+    "composite": 32.81
+  },
+  "swordsman_pct": {
+    "str_gain": 13.28,
+    "phy_gain": 5.21,
+    "crt_gain": 1.2,
+    "composite": 45.7
+  },
+  "pojie_synergy_phy": 2743,
+  "marginal_duality": 4.93002,
+  "checks_passed": 9,
+  "checks_total": 9,
+  "pass_rate": "100%",
+  "faal_framework": "三阶七维框架固化状态确认"
+}
