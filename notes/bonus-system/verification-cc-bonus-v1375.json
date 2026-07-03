@@ -1,0 +1,74 @@
+{
+  "version": "v1375",
+  "timestamp": "2026-07-04 01:21",
+  "passed": 10,
+  "total": 10,
+  "rate": "100%",
+  "checks": {
+    "CC力量": {
+      "pass": true,
+      "expected": 310,
+      "actual": 310
+    },
+    "CC物理攻击": {
+      "pass": true,
+      "expected": 110,
+      "actual": 110
+    },
+    "CC独立攻击": {
+      "pass": true,
+      "expected": 120,
+      "actual": 120
+    },
+    "CC暴击率": {
+      "pass": true,
+      "expected": 0.03,
+      "actual": 0.03
+    },
+    "狂战士固伤综合": {
+      "pass": true,
+      "expected": 9.27,
+      "actual": 9.27
+    },
+    "狂战士百分比综合": {
+      "pass": true,
+      "expected": 32.81,
+      "actual": 32.81
+    },
+    "剑魂百分比综合": {
+      "pass": true,
+      "expected": 45.7,
+      "actual": 45.7
+    },
+    "破极兵刃协同物理攻击": {
+      "pass": true,
+      "expected": 2743,
+      "actual": 2743
+    },
+    "边际对偶": {
+      "pass": true,
+      "expected": 4.929881,
+      "actual": 4.929881
+    },
+    "FAAL框架固化": {
+      "pass": true,
+      "expected": "confirmed",
+      "actual": "confirmed"
+    }
+  },
+  "cc_set": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": "3%"
+  },
+  "berserker": {
+    "固伤综合": "+9.27%",
+    "百分比综合": "+32.81%"
+  },
+  "swordsman": {
+    "百分比综合": "+45.7%"
+  },
+  "marginal": 4.929881,
+  "pojie": 2743
+}
