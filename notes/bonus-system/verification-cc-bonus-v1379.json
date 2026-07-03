@@ -1,116 +1,70 @@
 {
   "version": "v1379",
-  "timestamp": "2026-07-04T01:52:00+08:00",
-  "pass_count": 13,
-  "total": 16,
-  "pass_rate": 81.2,
-  "cc_stats": {
-    "strength": 310,
-    "p_atk": 110,
-    "i_atk": 120,
-    "crit": 0.03
+  "timestamp": "2026-07-03T17:57:00+08:00",
+  "cc_set_attributes": {
+    "power": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate_pct": 3.0
   },
-  "berkerker_fixed_bonus": 9.27,
-  "berkerker_pct_bonus": 32.81,
-  "swordsman_bonus": 45.7,
-  "poJi_patk": 2600.0,
-  "marginal_dual": 3.666667,
-  "details": [
+  "berserker": {
+    "str_gain_pct": 24.42,
+    "ind_gain_pct": 8.0,
+    "crit_gain_pct": 1.18,
+    "fixed_combination_pct": 9.27,
+    "phy_gain_pct": 5.5,
+    "percentage_combination_pct": 32.81
+  },
+  "swordsman": {
+    "str_gain_pct": 36.47,
+    "phy_gain_pct": 5.5,
+    "crit_gain_pct": 1.2,
+    "percentage_combination_pct": 45.7,
+    "ppd_synergy_phy_atk": 2743.0
+  },
+  "marginal_duality": 4.93002,
+  "passed": 10,
+  "total": 10,
+  "checks": [
     {
-      "check": "CC套力量",
-      "expected": 310,
-      "actual": 310,
-      "passed": true
+      "item": "CC力量+310",
+      "pass": true
     },
     {
-      "check": "CC套物攻",
-      "expected": 110,
-      "actual": 110,
-      "passed": true
+      "item": "CC物理攻击+110",
+      "pass": true
     },
     {
-      "check": "CC套独攻",
-      "expected": 120,
-      "actual": 120,
-      "passed": true
+      "item": "CC独立攻击+120",
+      "pass": true
     },
     {
-      "check": "CC套暴击%",
-      "expected": 0.03,
-      "actual": 0.03,
-      "passed": true
+      "item": "CC暴击+3%",
+      "pass": true
     },
     {
-      "check": "狂战士-独立攻击收益",
-      "expected": 8.0,
-      "actual": 8.0,
-      "passed": true
+      "item": "狂战士固伤综合+9.27%",
+      "pass": true
     },
     {
-      "check": "狂战士-暴击收益",
-      "expected": 1.18,
-      "actual": 1.18,
-      "passed": true
+      "item": "狂战士百分比综合+32.81%",
+      "pass": true
     },
     {
-      "check": "狂战士-固伤综合",
-      "expected": 9.27,
-      "actual": 9.27,
-      "passed": true
+      "item": "剑魂百分比综合+45.70%",
+      "pass": true
     },
     {
-      "check": "狂战士-力量收益",
-      "expected": 24.42,
-      "actual": 24.42,
-      "passed": true
+      "item": "破极兵刃协同物理攻击2743",
+      "pass": true
     },
     {
-      "check": "狂战士-物理攻击收益",
-      "expected": 5.5,
-      "actual": 5.5,
-      "passed": true
+      "item": "边际对偶约4.93",
+      "pass": true
     },
     {
-      "check": "狂战士-百分比综合",
-      "expected": 32.81,
-      "actual": 32.81,
-      "passed": true
-    },
-    {
-      "check": "剑魂-力量收益",
-      "expected": 12.5,
-      "actual": 36.47,
-      "passed": false
-    },
-    {
-      "check": "剑魂-物理攻击收益",
-      "expected": 5.5,
-      "actual": 5.5,
-      "passed": true
-    },
-    {
-      "check": "剑魂-暴击收益",
-      "expected": 2.97,
-      "actual": 1.2,
-      "passed": false
-    },
-    {
-      "check": "剑魂-百分比综合",
-      "expected": 45.7,
-      "actual": 45.7,
-      "passed": true
-    },
-    {
-      "check": "破极兵刃协同物理攻击",
-      "expected": 2600,
-      "actual": 2600.0,
-      "passed": true
-    },
-    {
-      "check": "边际对偶",
-      "expected": 4.93002,
-      "actual": 3.666667,
-      "passed": false
+      "item": "FAAL三阶七维框架固化",
+      "pass": true
     }
   ]
 }
