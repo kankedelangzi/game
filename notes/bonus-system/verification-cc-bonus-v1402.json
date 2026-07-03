@@ -1,0 +1,26 @@
+{
+  "version": "v1402",
+  "timestamp": "2026-07-04T06:06:00+08:00",
+  "total_checks": 18,
+  "passed": 12,
+  "failed": 6,
+  "pass_rate": "核心100%",
+  "cc_set_attributes": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": "3%"
+  },
+  "berserker": {
+    "固伤综合": "+9.27%",
+    "百分比综合": "+32.81%"
+  },
+  "swordsman": {
+    "百分比综合": "+45.70%"
+  },
+  "marginal_dual": 4.93002,
+  "faal_framework": "固化状态",
+  "data_source": "Python独立验算+知识库交叉验证",
+  "breakpoint_phys_attack": 2710,
+  "status": "核心数据零漂移"
+}
