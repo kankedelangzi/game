@@ -1,120 +1,82 @@
 {
   "version": "v1365",
-  "timestamp": "2026-07-03T23:55:15",
-  "round": "v1365",
-  "task": "CC套（宫廷套装）各职业加成数值",
-  "results": [
-    [
-      "CC力量",
-      310,
-      310,
-      "PASS"
-    ],
-    [
-      "CC物理攻击",
-      110,
-      110,
-      "PASS"
-    ],
-    [
-      "CC独立攻击",
-      120,
-      120,
-      "PASS"
-    ],
-    [
-      "CC暴击率",
-      0.03,
-      0.03,
-      "PASS"
-    ],
-    [
-      "狂战士独立攻击收益",
-      8.0,
-      8.0,
-      "PASS"
-    ],
-    [
-      "狂战士暴击收益",
-      1.2,
-      1.2,
-      "PASS"
-    ],
-    [
-      "狂战士固伤综合",
-      9.27,
-      9.27,
-      "PASS"
-    ],
-    [
-      "狂战士力量收益",
-      24.42,
-      24.42,
-      "PASS"
-    ],
-    [
-      "狂战士物理攻击收益",
-      5.5,
-      5.5,
-      "PASS"
-    ],
-    [
-      "狂战士百分比综合",
-      32.81,
-      32.81,
-      "PASS"
-    ],
-    [
-      "剑魂力量收益",
-      36.47,
-      36.47,
-      "PASS"
-    ],
-    [
-      "剑魂物理攻击收益",
-      5.5,
-      5.5,
-      "PASS"
-    ],
-    [
-      "剑魂暴击收益",
-      1.2,
-      1.2,
-      "PASS"
-    ],
-    [
-      "剑魂百分比综合",
-      45.7,
-      45.7,
-      "PASS"
-    ],
-    [
-      "边际对偶",
-      4.93,
-      4.93,
-      "PASS"
-    ],
-    [
-      "破极兵刃协同物理攻击",
-      2743,
-      2743,
-      "PASS"
-    ]
-  ],
-  "summary": {
-    "passed": 16,
-    "total": 16,
-    "pass_rate": "16/16",
-    "cc_set": {
-      "power": 310,
-      "phy": 110,
-      "idam": 120,
-      "crit": "3%"
+  "timestamp": "2026-07-03 23:58 CST",
+  "cc_set_6pc": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker_fixed_total": 9.27,
+  "berserker_pct_total": 32.81,
+  "swordsman_pct_total": 45.7,
+  "poji_collaboration": 2743,
+  "marginal_duality": 4.929881,
+  "faal_framework": "固化",
+  "verification": {
+    "passed": 10,
+    "total": 10
+  },
+  "checks": [
+    {
+      "name": "CC套力量合计",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
     },
-    "berserk_fixed_total": "+9.27%",
-    "berserk_pct_total": "+32.81%",
-    "swordsman_pct_total": "+45.7%",
-    "marginal_duality": 4.93,
-    "polymath_phy": 2743
-  }
+    {
+      "name": "CC套物理攻击合计",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "name": "CC套独立攻击合计",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "name": "CC套暴击率合计",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "name": "破极兵刃协同物理攻击",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "name": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.929881,
+      "pass": true
+    },
+    {
+      "name": "FAAL三阶七维框架固化",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    }
+  ]
 }
