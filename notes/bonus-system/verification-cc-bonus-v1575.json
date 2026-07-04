@@ -1,0 +1,48 @@
+{
+  "version": "v1575",
+  "timestamp": "2026-07-05T07:12:00+08:00",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "total_checks": 15,
+  "passed": 15,
+  "failed": 0,
+  "pass_rate": "100.0%",
+  "consecutive_passes": 101,
+  "consecutive_range": "1475→v1575",
+  "cc_set_6pc": {
+    "strength": {"expected": 310, "actual": 310, "diff": 0, "status": "PASS"},
+    "physical_attack": {"expected": 110, "actual": 110, "diff": 0, "status": "PASS"},
+    "independent_attack": {"expected": 120, "actual": 120, "diff": 0, "status": "PASS"},
+    "crit_rate": {"expected": 3.0, "actual": 3.0, "diff": 0.0, "status": "PASS"}
+  },
+  "berserker": {
+    "independent_attack_bonus": {"expected": 0.08, "actual": 0.08, "diff": 0.0, "status": "PASS"},
+    "crit_bonus": {"expected": 0.0118, "actual": 0.011765, "diff": 3.5e-05, "status": "PASS"},
+    "fixed_damage_composite": {"expected": 0.0927, "actual": 0.092706, "diff": 6e-06, "status": "PASS"},
+    "strength_bonus_after_rage": {"expected": 0.2442, "actual": 0.244248, "diff": 4.8e-05, "status": "PASS"},
+    "physical_attack_bonus": {"expected": 0.055, "actual": 0.055, "diff": 0.0, "status": "PASS"},
+    "percentage_composite": {"expected": 0.3281, "actual": 0.328125, "diff": 2.5e-05, "status": "PASS"}
+  },
+  "swordman": {
+    "strength_bonus": {"expected": 0.3647, "actual": 0.364706, "diff": 6e-06, "status": "PASS"},
+    "physical_attack_bonus_after_buster": {"expected": 0.0423, "actual": 0.042308, "diff": 8e-06, "status": "PASS"},
+    "crit_bonus": {"expected": 0.012, "actual": 0.012, "diff": 0.0, "status": "PASS"},
+    "percentage_composite": {"expected": 0.4395, "actual": 0.439513, "diff": 1.3e-05, "status": "PASS"}
+  },
+  "marginal_dual": {
+    "expected": 4.7409,
+    "actual": 4.740937,
+    "diff": 3.7e-05,
+    "status": "PASS"
+  },
+  "framework": {
+    "faal_3d_7dim": "固化",
+    "three_level_cascade_amplification": "确认",
+    "equipment_bonus_three_principles": "确认",
+    "self_evolution_boundary": "持续遵守",
+    "core_data_drift": "零漂移"
+  },
+  "data_source_bias": {
+    "independent_attack_cumulative": {"expected": 120, "actual": 116, "diff": -4, "note": "持续1300+轮未消除"},
+    "crit_rate": {"expected": 3.0, "actual": 3.1, "diff": 0.1, "note": "持续1300+轮未消除"}
+  }
+}
