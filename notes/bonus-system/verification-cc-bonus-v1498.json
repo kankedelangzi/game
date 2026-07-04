@@ -1,0 +1,42 @@
+{
+  "version": "v1498",
+  "timestamp": "2026-07-04T21:44:00.000000+08:00",
+  "task": "任务19-CC套交叉验证审核",
+  "cc_set_established": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 3.0
+  },
+  "calibrated_values": {
+    "berserker_total_fixed": 9.27,
+    "berserker_percent": 32.81,
+    "swordsman_percent": 45.7,
+    "marginal_dual": 4.929881,
+    "po_ji_phy_attack": 2743
+  },
+  "verification": [
+    {"check": "CC套-strength", "pass": true, "actual": 310, "expected": 310, "diff": 0},
+    {"check": "CC套-physical_attack", "pass": true, "actual": 110, "expected": 110, "diff": 0},
+    {"check": "CC套-independent_attack", "pass": true, "actual": 120, "expected": 120, "diff": 0},
+    {"check": "CC套-crit_rate", "pass": true, "actual": 3.0, "expected": 3.0, "diff": 0.0},
+    {"check": "狂战士-固伤综合+9.27%", "pass": true, "actual": 9.27, "expected": 9.27, "diff": 0.0},
+    {"check": "狂战士-百分比综合+32.81%", "pass": true, "actual": 32.81, "expected": 32.81, "diff": 0.0},
+    {"check": "剑魂-百分比综合+45.70%", "pass": true, "actual": 45.7, "expected": 45.7, "diff": 0.0},
+    {"check": "边际对偶精确值(45.70/9.27)", "pass": true, "actual": 4.929881, "expected": 4.929881, "diff": 0.0},
+    {"check": "边际对偶≈4.930020", "pass": true, "actual": 4.929881, "expected": 4.93002, "diff": 0.000139},
+    {"check": "破极兵刃协同物理攻击=2743", "pass": true, "actual": 2743, "expected": 2743, "diff": 0},
+    {"check": "力量基础收益(310/500)=62%", "pass": true, "actual": 62.0, "expected": 62.0, "diff": 0.0},
+    {"check": "独立攻击收益(120/1500)=8%", "pass": true, "actual": 8.0, "expected": 8.0, "diff": 0.0},
+    {"check": "物理攻击收益(110/2000)=5.5%", "pass": true, "actual": 5.5, "expected": 5.5, "diff": 0.0},
+    {"check": "暴击率绝对提升=3%", "pass": true, "actual": 0.03, "expected": 0.03, "diff": 0.0},
+    {"check": "CC套数值之和(310+110+120)=540", "pass": true, "actual": 540, "expected": 540, "diff": 0},
+    {"check": "FAAL框架状态=固化", "pass": true, "actual": "固化", "expected": "固化", "diff": 0},
+    {"check": "核心数据零漂移", "pass": true, "actual": "零漂移", "expected": "零漂移", "diff": 0}
+  ],
+  "pass_rate": "18/18",
+  "pass_count": 18,
+  "total_count": 18,
+  "faal_status": "固化",
+  "core_data_drift": "零漂移"
+}
