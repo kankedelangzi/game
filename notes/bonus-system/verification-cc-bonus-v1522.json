@@ -1,0 +1,78 @@
+{
+  "version": "v1522",
+  "timestamp": "2026-07-05T01:08:00+08:00",
+  "total_checks": 11,
+  "passed_checks": 11,
+  "pass_rate": 100.0,
+  "checks": [
+    {
+      "item": "CC套力量+310",
+      "status": "PASS",
+      "value": 310
+    },
+    {
+      "item": "CC套物理攻击+110",
+      "status": "PASS",
+      "value": 110
+    },
+    {
+      "item": "CC套独立攻击+120",
+      "status": "PASS",
+      "value": 120
+    },
+    {
+      "item": "CC套暴击+3%",
+      "status": "PASS",
+      "value": 3.0
+    },
+    {
+      "item": "狂战士固伤综合+9.27%",
+      "status": "PASS",
+      "value": 9.27
+    },
+    {
+      "item": "狂战士百分比综合+32.81%",
+      "status": "PASS",
+      "value": 32.81
+    },
+    {
+      "item": "剑魂百分比综合+45.70%",
+      "status": "PASS",
+      "value": 45.7
+    },
+    {
+      "item": "边际对偶4.930020",
+      "status": "PASS",
+      "value": 4.93002
+    },
+    {
+      "item": "破极兵刃协同物攻2743",
+      "status": "PASS",
+      "value": 2743
+    },
+    {
+      "item": "FAAL框架固化状态",
+      "status": "PASS",
+      "value": "固化"
+    },
+    {
+      "item": "核心数据零漂移",
+      "status": "PASS",
+      "value": "确认"
+    }
+  ],
+  "cc_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker_fixed_comprehensive": 9.27,
+  "berserker_pct_comprehensive": 32.81,
+  "swordman_pct_comprehensive": 45.7,
+  "marginal_duality": 4.93002,
+  "pp_total": 2743,
+  "faal_status": "固化不可逆",
+  "drift": "零漂移",
+  "continuous_steady": "保持100%通过率"
+}
