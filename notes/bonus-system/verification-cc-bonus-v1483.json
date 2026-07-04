@@ -1,0 +1,19 @@
+{
+  "version": "v1483",
+  "timestamp": "2026-07-04T18:33:00+08:00",
+  "cc_stats": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical_rate": 0.03
+  },
+  "berserker_fixed_total": 9.35,
+  "berserker_pct_total": 73.05,
+  "swordsman_pct_total": 73.05,
+  "marginal_duality": 7.812447,
+  "pjb_physical_attack": 2743,
+  "checks_passed": 11,
+  "checks_total": 11,
+  "pass_rate": "100%",
+  "faal_status": "固化"
+}
