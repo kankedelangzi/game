@@ -1,32 +1,20 @@
 {
-  "round": "v1477",
-  "timestamp": "2026-07-04T17:19:00+08:00",
-  "cc_set_6pc": {
+  "version": "v1477",
+  "timestamp": "2026-07-04T17:26:10.308133+08:00",
+  "total_checks": 10,
+  "passed": 9,
+  "pass_rate": 90.0,
+  "cc_set": {
     "strength": 310,
     "physical_attack": 110,
     "independent_attack": 120,
-    "critical": 3.0
+    "crit_rate": "3.0%"
   },
-  "berserker": {
-    "fixed_combined": 9.27,
-    "percentage_combined": 32.81
-  },
-  "swordsman": {
-    "percentage_combined": 45.7
-  },
-  "margin_dual": 4.929881,
-  "verification": {
-    "CC套6件-力量+310": "✅ +310",
-    "CC套6件-物理攻击+110": "✅ +110",
-    "CC套6件-独立攻击+120": "✅ +120",
-    "CC套6件-暴击率+3%": "✅ +3%",
-    "狂战士固伤综合+9.27%": "✅ +9.27%",
-    "狂战士百分比综合+32.81%": "✅ +32.81%",
-    "剑魂百分比综合+45.70%": "✅ +45.7%",
-    "边际对偶≈4.9300": "✅ 4.929881"
-  },
-  "checks_passed": 8,
-  "checks_total": 8,
-  "faal_framework": "FAAL三阶七维框架固化状态确认",
-  "core_data_drift": "核心数据零漂移"
+  "berserker_fixed_total": 9.27,
+  "berserker_percentage_total": 32.81,
+  "swordsman_percentage_total": 45.7,
+  "marginal_dual": 4.929881,
+  "poji_bingren_phy": 2743,
+  "faal_framework": "固化状态",
+  "core_drift": "零漂移"
 }
