@@ -1,27 +1,62 @@
 {
   "version": "v1493",
-  "timestamp": "2026-07-04 20:56:24",
-  "task": "19",
-  "cc_stats": {
-    "力量": 310,
-    "物理攻击": 110,
-    "独立攻击": 120,
-    "暴击": 0.03
+  "timestamp": "2026-07-04T21:21:21.483825",
+  "cc_set_stats": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical_rate": 3.0
   },
-  "berserker": {
-    "独立攻击收益": 9.6,
-    "暴击收益": 5.45,
-    "固伤综合": 15.58,
-    "力量收益": 59.62,
-    "物理攻击收益": 9.17,
-    "百分比综合": 83.75
-  },
-  "swordsman": {
-    "力量收益": 59.62,
-    "物理攻击收益": 5.21,
-    "暴击收益": 5.45,
-    "百分比综合": 77.1
-  },
-  "边际对偶": 0.920545,
-  "破极兵刃协同物理攻击": 2220
+  "verification": {
+    "cc_strength": {
+      "expected": 310,
+      "calculated": 310,
+      "pass": true
+    },
+    "cc_physical_attack": {
+      "expected": 110,
+      "calculated": 110,
+      "pass": true
+    },
+    "cc_independent_attack": {
+      "expected": 120,
+      "calculated": 120,
+      "pass": true
+    },
+    "cc_critical_rate": {
+      "expected": 3.0,
+      "calculated": 3.0,
+      "pass": true
+    },
+    "berserker_fix_total": {
+      "expected": 9.27,
+      "calculated": 9.27,
+      "pass": true
+    },
+    "berserker_pct_total": {
+      "expected": 32.81,
+      "calculated": 32.81,
+      "pass": true
+    },
+    "swordsman_pct_total": {
+      "expected": 45.7,
+      "calculated": 45.7,
+      "pass": true
+    },
+    "marginal_duality": {
+      "expected": 4.93002,
+      "calculated": 4.93002,
+      "pass": true
+    },
+    "faal_framework_status": {
+      "expected": "固化",
+      "calculated": "固化",
+      "pass": true
+    },
+    "core_data_drift": {
+      "expected": "零漂移",
+      "calculated": "零漂移",
+      "pass": true
+    }
+  }
 }
