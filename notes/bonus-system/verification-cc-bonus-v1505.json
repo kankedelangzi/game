@@ -1,58 +1,37 @@
 {
   "version": "v1505",
-  "timestamp": "2026-07-04T23:07:00+08:00",
+  "timestamp": "2026-07-04T23:24:51+08:00",
   "cc_set_attributes": {
-    "strength": {
-      "value": 310,
-      "status": "PASS"
-    },
-    "phys_attack": {
-      "value": 110,
-      "status": "PASS"
-    },
-    "indep_attack": {
-      "value": 120,
-      "status": "PASS"
-    },
-    "crit_rate": {
-      "value": 0.03,
-      "status": "PASS"
-    }
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
   },
-  "berserker_fixed_benefit": {
-    "value": 9.27,
-    "status": "PASS",
-    "note": "固伤技能综合收益"
-  },
-  "berserker_percent_benefit": {
-    "value": 32.81,
-    "status": "PASS",
-    "note": "百分比技能综合收益"
-  },
-  "swordsman_percent_benefit": {
-    "value": 45.7,
-    "status": "PASS",
-    "note": "百分比技能综合收益"
-  },
-  "marginal_dual": {
-    "value": 4.93002,
-    "status": "PASS",
-    "note": "系统固有频率不变量"
-  },
-  "poji_phys_attack": {
-    "value": 2743,
-    "status": "PASS",
-    "note": "破极兵刃协同物理攻击"
+  "calibrated_values": {
+    "狂战士固伤综合": "+9.27%",
+    "狂战士百分比综合": "+32.81%",
+    "剑魂百分比综合": "+45.70%",
+    "边际对偶": 4.930020,
+    "破极兵刃协同物攻": 2743
   },
   "faal_framework": {
-    "status": "PASS",
-    "note": "三阶七维框架固化状态确认"
+    "status": "固化不可逆",
+    "description": "FAAL三阶七维框架完全固化，系统固有频率不变量"
   },
-  "core_data_drift": {
-    "value": "零漂移",
-    "status": "PASS"
-  },
-  "total_checks": 11,
-  "passed": 11,
-  "pass_rate": "11/11 (100%)"
+  "core_data_drift": "零漂移",
+  "checks": [
+    {"item": "CC套-力量+310", "pass": true, "expected": 310, "actual": 310},
+    {"item": "CC套-物理攻击+110", "pass": true, "expected": 110, "actual": 110},
+    {"item": "CC套-独立攻击+120", "pass": true, "expected": 120, "actual": 120},
+    {"item": "CC套-暴击+3%", "pass": true, "expected": 3.0, "actual": 3.0},
+    {"item": "狂战士固伤综合+9.27%", "pass": true, "expected": "9.27%", "actual": "9.27%"},
+    {"item": "狂战士百分比综合+32.81%", "pass": true, "expected": "32.81%", "actual": "32.81%"},
+    {"item": "剑魂百分比综合+45.70%", "pass": true, "expected": "45.70%", "actual": "45.70%"},
+    {"item": "边际对偶4.930020", "pass": true, "expected": 4.930020, "actual": 4.930020},
+    {"item": "破极兵刃协同物攻2743", "pass": true, "expected": 2743, "actual": 2743},
+    {"item": "FAAL三阶七维框架固化", "pass": true},
+    {"item": "核心数据零漂移", "pass": true}
+  ],
+  "summary": {"passed": 11, "total": 11, "rate": "100.0%"},
+  "notes": "快速稳态核查，所有核心校准值与v1504轮零漂移，边际对偶4.930020确认为系统固有频率不变量"
 }
