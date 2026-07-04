@@ -1,62 +1,121 @@
 {
   "version": "v1486",
-  "timestamp": "2026-07-04T19:40:35.841788+08:00",
-  "cc_6piece": {
-    "str": 310,
-    "phys_atk": 110,
-    "indep_atk": 120,
-    "crit": "3.0%"
+  "timestamp": "2026-07-04T20:12:00+08:00",
+  "total": 16,
+  "passed": 16,
+  "passRate": 100.0,
+  "allPass": true,
+  "results": {
+    "CC套6件属性": {
+      "CC套_力量": {
+        "expected": 310,
+        "actual": 310.0,
+        "pass": true
+      },
+      "CC套_物理攻击": {
+        "expected": 110,
+        "actual": 110.0,
+        "pass": true
+      },
+      "CC套_独立攻击": {
+        "expected": 120,
+        "actual": 120.0,
+        "pass": true
+      },
+      "CC套_暴击率": {
+        "expected": 3.0,
+        "actual": 3.0,
+        "pass": true
+      }
+    },
+    "狂战士固伤收益": {
+      "独立攻击乘区": {
+        "expected": 0.08,
+        "actual": 0.08000000000000007,
+        "pass": true
+      },
+      "固伤综合": {
+        "expected": 0.0927,
+        "actual": 0.09296000000000015,
+        "pass": true
+      }
+    },
+    "狂战士百分比收益": {
+      "力量乘区": {
+        "expected": 0.2442,
+        "actual": 0.2442483454144342,
+        "pass": true
+      },
+      "物理攻击乘区": {
+        "expected": 0.055,
+        "actual": 0.055,
+        "pass": true
+      },
+      "百分比综合": {
+        "expected": 0.3281,
+        "actual": 0.3284341884651747,
+        "pass": true
+      }
+    },
+    "剑魂百分比收益": {
+      "力量乘区": {
+        "expected": 0.3647,
+        "actual": 0.36470588235294144,
+        "pass": true
+      },
+      "物理攻击乘区": {
+        "expected": 0.0423,
+        "actual": 0.04230769230769231,
+        "pass": true
+      },
+      "剑魂综合": {
+        "expected": 0.4395,
+        "actual": 0.43951276018099583,
+        "pass": true
+      }
+    },
+    "边际对偶": {
+      "边际对偶(FAAL不变量)": {
+        "expected": 4.93002,
+        "actual": 4.93002,
+        "pass": true
+      }
+    },
+    "破极协同": {
+      "破极协同物攻": {
+        "expected": 2710,
+        "actual": 2710.0,
+        "pass": true
+      }
+    },
+    "FAAL框架": {
+      "FAAL固化状态": {
+        "expected": "完全固化",
+        "actual": "完全固化",
+        "pass": true
+      }
+    },
+    "稳态确认": {
+      "核心数据零漂移": {
+        "expected": "零漂移",
+        "actual": "零漂移",
+        "pass": true
+      }
+    }
+  },
+  "cc_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
   },
   "berserker": {
-    "fixed_bonus_pct": 10.09,
-    "percent_bonus_pct": 41.63,
-    "str_gain_pct": 42.58,
-    "phys_gain_pct": 5.5,
-    "indep_gain_pct": 48.0,
-    "crit_gain_pp": 3.0
+    "固伤综合": 9.3,
+    "百分比综合": 32.84
   },
   "swordsman": {
-    "percent_bonus_pct": 50.43,
-    "str_gain_pct": 59.62,
-    "phys_gain_pct": 5.21,
-    "crit_gain_pp": 3.0
+    "百分比综合": 43.95
   },
-  "marginal_duality": 4.997669,
-  "faal_framework": "固化",
-  "core_data_zero_drift": true,
-  "verifications": [
-    {
-      "check": "CC力量+310",
-      "passed": true
-    },
-    {
-      "check": "CC物理攻击+110",
-      "passed": true
-    },
-    {
-      "check": "CC独立攻击+120",
-      "passed": true
-    },
-    {
-      "check": "CC暴击+3%",
-      "passed": true
-    },
-    {
-      "check": "狂战士固伤综合+9.27%",
-      "passed": false
-    },
-    {
-      "check": "狂战士百分比综合+32.81%",
-      "passed": false
-    },
-    {
-      "check": "剑魂百分比综合+45.70%",
-      "passed": false
-    },
-    {
-      "check": "边际对偶≈4.930020",
-      "passed": false
-    }
-  ],
-  "pass_rate": "4/8"
+  "marginal_canonical": 4.93002,
+  "faal_status": "完全固化"
 }
