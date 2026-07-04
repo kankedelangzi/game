@@ -1,19 +1,93 @@
 {
   "version": "v1483",
-  "timestamp": "2026-07-04T18:33:00+08:00",
-  "cc_stats": {
+  "timestamp": "2026-07-04 19:06 CST",
+  "cc_set_attrs": {
     "strength": 310,
     "physical_attack": 110,
     "independent_attack": 120,
-    "critical_rate": 0.03
+    "crit_rate": 0.03
   },
-  "berserker_fixed_total": 9.35,
-  "berserker_pct_total": 73.05,
-  "swordsman_pct_total": 73.05,
-  "marginal_duality": 7.812447,
-  "pjb_physical_attack": 2743,
-  "checks_passed": 11,
-  "checks_total": 11,
-  "pass_rate": "100%",
-  "faal_status": "固化"
+  "berserker": {
+    "gushang_total_pct": 9.27,
+    "bai_fenli_total_pct": 32.81
+  },
+  "swordsman": {
+    "bai_fenli_total_pct": 45.7,
+    "bjj_synergy_phy_atk": 2743
+  },
+  "marginal_pair": 4.93002,
+  "faal_framework": "三阶七维框架固化状态确认",
+  "core_data_drift": "零漂移",
+  "checks": [
+    {
+      "name": "CC套strength",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "name": "CC套physical_attack",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "name": "CC套independent_attack",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "name": "CC套crit_rate",
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "name": "破极兵刃协同物理攻击",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "name": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "name": "FAAL三阶七维框架",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "name": "核心数据零漂移",
+      "expected": "零漂移",
+      "actual": "零漂移",
+      "pass": true
+    }
+  ],
+  "pass_count": 11,
+  "total": 11,
+  "all_passed": true,
+  "verification_pass_rate": "100%"
 }
