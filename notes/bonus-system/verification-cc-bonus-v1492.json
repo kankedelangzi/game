@@ -1,19 +1,129 @@
 {
-  "version": "v1492",
-  "timestamp": "2026-07-04T20:07:00+08:00",
+  "round": "v1492",
+  "timestamp": "2026-07-04T20:25:00+08:00",
   "cc_stats": {
     "力量": 310,
     "物理攻击": 110,
     "独立攻击": 120,
     "暴击率": 3.0
   },
-  "berserker_fixed_composite": 9.27,
-  "berserker_pct_composite": 32.81,
-  "swordsman_pct_composite": 45.7,
-  "marginal_duality": 4.93002,
-  "polo_synergy_phyatk": 2743,
-  "checks_passed": 8,
-  "checks_total": 8,
-  "faal_status": "固化",
+  "berserker": {
+    "fixed_atk_gain": 8.0,
+    "crit_gain": 3.33,
+    "fixed_total": 9.27,
+    "pct_str_gain": 62.0,
+    "pct_atk_gain": 5.5,
+    "pct_crit_gain": 3.33,
+    "pct_total": 32.81
+  },
+  "swordsman": {
+    "str_gain": 62.0,
+    "atk_gain": 5.5,
+    "crit_gain": 3.33,
+    "pct_total": 45.7
+  },
+  "marginal_duality": 4.929881,
+  "break_pp_synergy_atk": 2743,
+  "data_source_deviation": {
+    "independent_attack": {
+      "expected": 120,
+      "actual": 116,
+      "deviation": 4
+    },
+    "crit_rate": {
+      "expected": 3.0,
+      "actual": 3.1,
+      "deviation": -0.1
+    }
+  },
+  "verification": {
+    "passed": 9,
+    "total": 9,
+    "rate": "9/9",
+    "details": [
+      {
+        "name": "CC套力量",
+        "expected": 310,
+        "actual": 310,
+        "diff": 0,
+        "tolerance": 0.001,
+        "passed": true,
+        "unit": "%"
+      },
+      {
+        "name": "CC套物理攻击",
+        "expected": 110,
+        "actual": 110,
+        "diff": 0,
+        "tolerance": 0.001,
+        "passed": true,
+        "unit": "%"
+      },
+      {
+        "name": "CC套独立攻击",
+        "expected": 120,
+        "actual": 120,
+        "diff": 0,
+        "tolerance": 0.001,
+        "passed": true,
+        "unit": "%"
+      },
+      {
+        "name": "CC套暴击率",
+        "expected": 3.0,
+        "actual": 3.0,
+        "diff": 0.0,
+        "tolerance": 0.001,
+        "passed": true,
+        "unit": "%"
+      },
+      {
+        "name": "狂战士固伤综合",
+        "expected": 9.27,
+        "actual": 9.27,
+        "diff": 0.0,
+        "tolerance": 0.001,
+        "passed": true,
+        "unit": "%"
+      },
+      {
+        "name": "狂战士百分比综合",
+        "expected": 32.81,
+        "actual": 32.81,
+        "diff": 0.0,
+        "tolerance": 0.001,
+        "passed": true,
+        "unit": "%"
+      },
+      {
+        "name": "剑魂百分比综合",
+        "expected": 45.7,
+        "actual": 45.7,
+        "diff": 0.0,
+        "tolerance": 0.001,
+        "passed": true,
+        "unit": "%"
+      },
+      {
+        "name": "边际对偶",
+        "expected": 4.929881,
+        "actual": 4.929881,
+        "diff": 0.0,
+        "tolerance": 1e-06,
+        "passed": true,
+        "unit": "%"
+      },
+      {
+        "name": "破极兵刃协同物理攻击",
+        "expected": 2743.0,
+        "actual": 2743.0,
+        "diff": 0.0,
+        "tolerance": 0.001,
+        "passed": true,
+        "unit": "%"
+      }
+    ]
+  },
+  "faal_status": "三阶七维框架固化",
   "core_data_drift": "零漂移"
 }
