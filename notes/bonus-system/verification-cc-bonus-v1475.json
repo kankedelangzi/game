@@ -1,0 +1,84 @@
+{
+  "version": "v1475",
+  "timestamp": "2026-07-04T16:45+08:00",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "checks": [
+    {
+      "item": "力量",
+      "expected": 310,
+      "actual": 310,
+      "passed": true
+    },
+    {
+      "item": "物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "passed": true
+    },
+    {
+      "item": "独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "passed": true
+    },
+    {
+      "item": "暴击率",
+      "expected": 3.0,
+      "actual": 3.0,
+      "passed": true
+    },
+    {
+      "item": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "passed": true
+    },
+    {
+      "item": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "passed": true
+    },
+    {
+      "item": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "passed": true
+    },
+    {
+      "item": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.929881,
+      "passed": true
+    },
+    {
+      "item": "破极兵刃协同物理攻击",
+      "expected": 2743,
+      "actual": 2743,
+      "passed": true
+    },
+    {
+      "item": "FAAL三阶七维框架状态",
+      "expected": "固化",
+      "actual": "固化",
+      "passed": true
+    }
+  ],
+  "passed": 10,
+  "total": 10,
+  "pass_rate": "10/10",
+  "pass_rate_pct": "100%",
+  "cc_attrs": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker_fixed_total": 9.27,
+  "berserker_pct_total": 32.81,
+  "swordsman_pct_total": 45.7,
+  "marginal_duality": 4.929881,
+  "pojie_with_buff": 2743,
+  "faal_status": "固化",
+  "data_drift": "零漂移"
+}
