@@ -1,25 +1,20 @@
 {
-  "timestamp": "2026-07-04T18:51:23+08:00",
   "version": "v1484",
-  "cc_set_stats": {
+  "timestamp": "2026-07-04T19:02:12+08:00",
+  "pass": 14,
+  "total": 14,
+  "pass_rate": "14/14",
+  "cc_set": {
     "力量": 310,
     "物理攻击": 110,
     "独立攻击": 120,
-    "暴击": 3.0
+    "暴击率": "3%"
   },
-  "berserker": {
-    "fixed_bonus_pct": 51.0,
-    "pct_bonus_pct": 43.52,
-    "fixed_indp_bonus": 48.0,
-    "fixed_cri_bonus": 3.0
-  },
-  "swordsman": {
-    "pct_bonus_pct": 43.52,
-    "str_bonus": 29.52,
-    "phy_bonus": 11.0,
-    "cri_bonus": 3.0
-  },
-  "marginal_dual": 0.853333,
-  "faal_status": "FAAL三阶七维框架完全固化",
-  "pass_rate": "100%"
+  "berserker_fixed": "+9.27%",
+  "berserker_pct": "+32.81%",
+  "swordsman_pct": "+45.70%",
+  "marginal_pair": 4.929881,
+  "pbr_attack": 2743,
+  "faal_status": "固化",
+  "core_drift": false
 }
