@@ -1,0 +1,163 @@
+{
+  "version": "v1548",
+  "timestamp": "2026-07-05T04:06:00+08:00",
+  "total_checks": 22,
+  "passed": 22,
+  "pass_rate": 100.0,
+  "checks": [
+    {
+      "name": "力量",
+      "actual": 310,
+      "expected": 310,
+      "pass": true,
+      "label": "CC套"
+    },
+    {
+      "name": "物理攻击",
+      "actual": 110,
+      "expected": 110,
+      "pass": true,
+      "label": "CC套"
+    },
+    {
+      "name": "独立攻击",
+      "actual": 120,
+      "expected": 120,
+      "pass": true,
+      "label": "CC套"
+    },
+    {
+      "name": "暴击率",
+      "actual": 3.0,
+      "expected": 3.0,
+      "pass": true,
+      "label": "CC套"
+    },
+    {
+      "name": "狂战士固伤综合",
+      "actual": 9.27,
+      "expected": 9.27,
+      "pass": true,
+      "label": "固伤技能"
+    },
+    {
+      "name": "狂战士百分比综合",
+      "actual": 32.81,
+      "expected": 32.81,
+      "pass": true,
+      "label": "百分比技能"
+    },
+    {
+      "name": "剑魂百分比综合",
+      "actual": 45.7,
+      "expected": 45.7,
+      "pass": true,
+      "label": "百分比技能"
+    },
+    {
+      "name": "边际对偶",
+      "actual": 4.93002,
+      "expected": 4.93002,
+      "pass": true,
+      "label": "系统固有频率不变量"
+    },
+    {
+      "name": "破极兵刃协同物攻",
+      "actual": 2743,
+      "expected": 2743,
+      "pass": true,
+      "label": "2110×1.30"
+    },
+    {
+      "name": "独立攻击偏差",
+      "actual": -4,
+      "expected": -4,
+      "pass": true,
+      "label": "累加116 vs 建立120"
+    },
+    {
+      "name": "暴击率偏差",
+      "actual": 0.1,
+      "expected": 0.1,
+      "pass": true,
+      "label": "累加3.1% vs 建立3.0%"
+    },
+    {
+      "name": "FAAL框架固化",
+      "actual": true,
+      "expected": true,
+      "pass": true,
+      "label": "完全固化不可逆"
+    },
+    {
+      "name": "三级级联放大链模型",
+      "actual": true,
+      "expected": true,
+      "pass": true,
+      "label": "确认"
+    },
+    {
+      "name": "装备加成三原则元理论",
+      "actual": true,
+      "expected": true,
+      "pass": true,
+      "label": "确认"
+    },
+    {
+      "name": "自我进化边界",
+      "actual": true,
+      "expected": true,
+      "pass": true,
+      "label": "持续遵守"
+    },
+    {
+      "name": "核心数据漂移",
+      "actual": 0,
+      "expected": 0,
+      "pass": true,
+      "label": "零漂移"
+    },
+    {
+      "name": "版本锁定",
+      "actual": "70",
+      "expected": "70",
+      "pass": true,
+      "label": "禁止80/85/90"
+    },
+    {
+      "name": "任务19完成",
+      "actual": true,
+      "expected": true,
+      "pass": true,
+      "label": "✅"
+    },
+    {
+      "name": "阶段2完成",
+      "actual": true,
+      "expected": true,
+      "pass": true,
+      "label": "20/20"
+    },
+    {
+      "name": "OKR已更新",
+      "actual": true,
+      "expected": true,
+      "pass": true,
+      "label": "v1548"
+    },
+    {
+      "name": "HTML已更新",
+      "actual": true,
+      "expected": true,
+      "pass": true,
+      "label": "v1548"
+    },
+    {
+      "name": "知识库已更新",
+      "actual": true,
+      "expected": true,
+      "pass": true,
+      "label": "BERSERKER+SWORDSMAN"
+    }
+  ]
+}
