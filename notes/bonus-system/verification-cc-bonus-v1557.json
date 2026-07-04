@@ -1,0 +1,24 @@
+{
+  "v": "v1557",
+  "time": "2026-07-05T05:20:00+08:00",
+  "passed": 15,
+  "total": 15,
+  "result": "15/15 Python独立验算100%通过",
+  "cc_set": {
+    "power": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical_rate": 0.03
+  },
+  "berserker_fixed": 0.0927,
+  "berserker_pct": 0.3281,
+  "swordsman_pct": 0.4570,
+  "marginal": 4.930020,
+  "pojie_atk": 2743,
+  "faal_status": "固化",
+  "cascade_model": "确认",
+  "bonus_principles": "确认",
+  "self_evolution": "持续遵守",
+  "data_drift": "零漂移",
+  "continuous_steady": "连续64轮(1475→v1557) 100%通过率"
+}
