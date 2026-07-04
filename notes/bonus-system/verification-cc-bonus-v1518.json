@@ -1,0 +1,67 @@
+{
+  "version": "v1518",
+  "timestamp": "2026-07-05 00:43",
+  "verification": [
+    {
+      "item": "力量",
+      "expected": 310,
+      "actual": 310,
+      "status": "PASS"
+    },
+    {
+      "item": "物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "status": "PASS"
+    },
+    {
+      "item": "独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "status": "PASS"
+    },
+    {
+      "item": "暴击率",
+      "expected": 0.03,
+      "actual": 0.03,
+      "status": "PASS"
+    },
+    {
+      "item": "狂战士-固伤技能",
+      "expected": 0.0927,
+      "actual": 0.0927,
+      "status": "PASS"
+    },
+    {
+      "item": "狂战士-百分比技能",
+      "expected": 0.3281,
+      "actual": 0.3281,
+      "status": "PASS"
+    },
+    {
+      "item": "剑魂-百分比技能",
+      "expected": 0.457,
+      "actual": 0.457,
+      "status": "PASS"
+    },
+    {
+      "item": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "status": "PASS"
+    },
+    {
+      "item": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "status": "PASS"
+    }
+  ],
+  "summary": {
+    "total": 9,
+    "passed": 9,
+    "rate": "9/9"
+  },
+  "faal_status": "三阶七维框架固化状态确认",
+  "core_drift": "核心数据零漂移"
+}
