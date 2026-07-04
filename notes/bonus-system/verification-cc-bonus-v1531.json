@@ -1,0 +1,29 @@
+{
+  "version": "v1531",
+  "timestamp": "2026-07-05T02:06:00+08:00",
+  "task": "CC套各职业加成数值 - 稳态核查",
+  "cc_set": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 3.0
+  },
+  "berserker": {
+    "fixed_damage_bonus": 9.27,
+    "percentage_bonus": 32.81
+  },
+  "swordsman": {
+    "percentage_bonus": 45.7
+  },
+  "faal_framework": {
+    "marginal_dual": 4.93002,
+    "broken_blade_phys_atk": 2743,
+    "framework_status": "固化不可逆",
+    "core_data_drift": "零漂移"
+  },
+  "verification": {
+    "total": 14,
+    "passed": 14,
+    "rate": "100%"
+  }
+}
