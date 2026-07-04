@@ -1,0 +1,109 @@
+{
+  "version": "v1457",
+  "timestamp": "2026-07-04 14:52:00",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "cc_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 0.03
+  },
+  "berserker": {
+    "fixed_total": 0.0927,
+    "pct_total": 0.3281
+  },
+  "swordsman": {
+    "pct_total": 0.457
+  },
+  "pp_break_phyatk": 2743,
+  "dual": 4.929881,
+  "expected_values": {
+    "cc_force": 310,
+    "cc_phyatk": 110,
+    "cc_indep": 120,
+    "cc_crit": 0.03,
+    "berserker_fixed": 0.0927,
+    "berserker_pct": 0.3281,
+    "swordsman_pct": 0.457,
+    "pp_break_phyatk": 2743,
+    "dual": 4.93002
+  },
+  "results": [
+    {
+      "item": "CC套-力量",
+      "actual": 310,
+      "expected": 310,
+      "tolerance": 0,
+      "status": "✅",
+      "note": "FAAL固化值"
+    },
+    {
+      "item": "CC套-物理攻击",
+      "actual": 110,
+      "expected": 110,
+      "tolerance": 0,
+      "status": "✅",
+      "note": "FAAL固化值"
+    },
+    {
+      "item": "CC套-独立攻击",
+      "actual": 120,
+      "expected": 120,
+      "tolerance": 0,
+      "status": "✅",
+      "note": "FAAL固化值"
+    },
+    {
+      "item": "CC套-暴击率",
+      "actual": 0.03,
+      "expected": 0.03,
+      "tolerance": 0,
+      "status": "✅",
+      "note": "FAAL固化值"
+    },
+    {
+      "item": "狂战士-固伤综合",
+      "actual": 0.0927,
+      "expected": 0.0927,
+      "tolerance": 0.0001,
+      "status": "✅",
+      "note": "FAAL固化值"
+    },
+    {
+      "item": "狂战士-百分比综合",
+      "actual": 0.3281,
+      "expected": 0.3281,
+      "tolerance": 0.001,
+      "status": "✅",
+      "note": "FAAL固化值"
+    },
+    {
+      "item": "剑魂-百分比综合",
+      "actual": 0.457,
+      "expected": 0.457,
+      "tolerance": 0.001,
+      "status": "✅",
+      "note": "FAAL固化值"
+    },
+    {
+      "item": "破极兵刃协同物攻",
+      "actual": 2743,
+      "expected": 2743,
+      "tolerance": 5,
+      "status": "✅",
+      "note": "FAAL固化值"
+    },
+    {
+      "item": "边际对偶",
+      "actual": 4.929881,
+      "expected": 4.93002,
+      "tolerance": 0.001,
+      "status": "✅",
+      "note": "FAAL固化值"
+    }
+  ],
+  "passed": 9,
+  "total": 9,
+  "pass_rate": 100.0,
+  "status": "STABLE"
+}
