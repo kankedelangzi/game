@@ -1,0 +1,28 @@
+{
+  "version": "v1449",
+  "timestamp": "2026-07-04T13:22:00+08:00",
+  "cc_set": {
+    "STR": 310,
+    "PHY_ATK": 110,
+    "INDEPENDENT": 120,
+    "CRIT": 0.03
+  },
+  "berserker": {
+    "fixed_independent_bonus": 8.0,
+    "fixed_crit_bonus": 1.3636,
+    "fixed_total": 9.4727,
+    "str_bonus": 29.5238,
+    "phy_atk_bonus": 5.5,
+    "crit_bonus_pct": 1.3636,
+    "pct_total": 38.511
+  },
+  "swordsman": {
+    "str_bonus": 29.5238,
+    "phy_atk_bonus": 5.5,
+    "crit_bonus_pct": 1.3636,
+    "pct_total": 38.511
+  },
+  "marginal_duality": 4.06546,
+  "break_edge_atk": "2743",
+  "faal_framework": "三阶七维框架固化状态确认"
+}
