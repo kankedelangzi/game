@@ -1,0 +1,25 @@
+{
+  "version": "v1524",
+  "timestamp": "2026-07-05 01:28 (Asia/Shanghai)",
+  "total_checks": 14,
+  "passed": 14,
+  "pass_rate": "14/14",
+  "cc_set": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击": "3%"
+  },
+  "berserker": {
+    "固伤综合": 9.27,
+    "百分比综合": 32.81
+  },
+  "swordsman": {
+    "百分比综合": 45.7
+  },
+  "marginal_dual": 4.93002,
+  "poji_ph_atk": 2743,
+  "framework": "FAAL三阶七维框架固化",
+  "drift": "零漂移",
+  "theory": "三级级联放大链模型与装备加成三原则元理论确认"
+}
