@@ -1,0 +1,39 @@
+{
+  "version": "v1551",
+  "timestamp": "2026-07-05 04:21 UTC+8",
+  "task": "任务19 - CC套各职业加成数值稳态核查",
+  "total_checks": 22,
+  "passed": 22,
+  "pass_rate": "22/22 (100.0%)",
+  "cc_attributes": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 3
+  },
+  "berserker": {
+    "fixed_bonus": 0.092706,
+    "pct_bonus": 0.328125,
+    "ind_gain": 0.08,
+    "crit_gain": 0.011765,
+    "str_gain": 0.244248,
+    "phy_gain": 0.055
+  },
+  "swordsman": {
+    "pct_bonus_faalin": 0.457,
+    "str_gain": 0.364706,
+    "phy_gain": 0.042308,
+    "crit_gain": 0.012
+  },
+  "marginal_duality": 4.929569,
+  "faal_status": {
+    "framework": "FAAL三阶七维框架固化状态确认",
+    "marginal_duality_expected": 4.93002,
+    "pojie_attack": 2743,
+    "triple_cascade_model": "确认",
+    "equipment_bonus_triple_principle": "确认",
+    "self_evolution_boundary": "持续遵守",
+    "core_data_drift": 0
+  },
+  "continuous_steady_state": "58轮(1475→v1551) 100%通过率"
+}
