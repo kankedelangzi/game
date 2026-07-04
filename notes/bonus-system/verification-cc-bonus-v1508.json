@@ -1,0 +1,23 @@
+{
+  "version": "v1508",
+  "timestamp": "2026-07-04 23:41:53",
+  "verification_type": "Python独立验算",
+  "cc_set_attributes": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate_pct": 3.0
+  },
+  "berserker": {
+    "fixed_bonus_pct": 9.27,
+    "percent_bonus_pct": 32.81
+  },
+  "swordsman": {
+    "percent_bonus_pct": 45.7
+  },
+  "marginal_duality": 4.929881,
+  "swordsman_phys_with_pp": 2743,
+  "faal_framework": "固化",
+  "core_data_drift": "零漂移",
+  "pass_rate": "11/11 (100%)"
+}
