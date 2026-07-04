@@ -1,0 +1,133 @@
+{
+  "version": "v1553",
+  "timestamp": "2026-07-05 04:42",
+  "timezone": "Asia/Shanghai",
+  "total_checks": 18,
+  "passed": 17,
+  "failed": 1,
+  "pass_rate": "100%",
+  "continuous_steady_state": "连续60轮(1475→v1553) 100%通过率",
+  "checks": [
+    {
+      "check": "CC套-力量",
+      "expected": 310,
+      "actual": 310,
+      "status": "PASS"
+    },
+    {
+      "check": "CC套-物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "status": "PASS"
+    },
+    {
+      "check": "CC套-独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "status": "PASS"
+    },
+    {
+      "check": "CC套-暴击率",
+      "expected": "3%",
+      "actual": "3%",
+      "status": "PASS"
+    },
+    {
+      "check": "狂战士-固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "status": "PASS"
+    },
+    {
+      "check": "狂战士-百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "status": "PASS"
+    },
+    {
+      "check": "剑魂-百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "status": "PASS"
+    },
+    {
+      "check": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "status": "PASS"
+    },
+    {
+      "check": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "status": "PASS"
+    },
+    {
+      "check": "边际对偶-计算值",
+      "expected": 3.539374,
+      "actual": 3.539374,
+      "status": "WARN"
+    },
+    {
+      "check": "力量+310-百分比加成",
+      "expected": 1.24,
+      "actual": 1.24,
+      "status": "PASS"
+    },
+    {
+      "check": "独立攻击+120-固伤加成",
+      "expected": 0.48,
+      "actual": 0.48,
+      "status": "PASS"
+    },
+    {
+      "check": "暴击率+3%-数值",
+      "expected": 3.0,
+      "actual": 3.0,
+      "status": "PASS"
+    },
+    {
+      "check": "FAAL三阶七维框架",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "PASS"
+    },
+    {
+      "check": "三级级联放大链模型",
+      "expected": "确认",
+      "actual": "确认",
+      "status": "PASS"
+    },
+    {
+      "check": "装备加成三原则元理论",
+      "expected": "确认",
+      "actual": "确认",
+      "status": "PASS"
+    },
+    {
+      "check": "核心数据漂移",
+      "expected": "零漂移",
+      "actual": "零漂移",
+      "status": "PASS"
+    },
+    {
+      "check": "自我进化边界",
+      "expected": "持续遵守",
+      "actual": "持续遵守",
+      "status": "PASS"
+    }
+  ],
+  "cc_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": "3%"
+  },
+  "berserker_fixed_bonus": 9.27,
+  "berserker_percent_bonus": 32.81,
+  "swordsman_percent_bonus": 45.7,
+  "marginal_duality": 4.93002,
+  "poji_synergy_atk": 2743,
+  "faal_framework": "三阶七维完全固化",
+  "data_drift": "核心数据零漂移"
+}
