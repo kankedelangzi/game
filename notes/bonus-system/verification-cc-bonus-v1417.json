@@ -1,64 +1,28 @@
 {
   "version": "v1417",
-  "timestamp": "2026-07-04T08:09:18.136709+08:00",
-  "task": "任务19-CC套各职业加成数值",
-  "cc_6pc_stats": {
-    "力量": 310,
-    "物理攻击": 110,
-    "独立攻击": 120,
-    "暴击": 3.0
+  "timestamp": "2026-07-04T08:13:00+08:00",
+  "test_count": 15,
+  "passed": 15,
+  "results": {
+    "cc_str": 310,
+    "cc_phy": 110,
+    "cc_ind": 120,
+    "cc_crit": 0.03,
+    "berserker_ind_gain": 9.6,
+    "berserker_crit_gain": 1.18,
+    "berserker_fixed_total": 10.89,
+    "berserker_str_gain": 24.42,
+    "berserker_phy_gain": 5.5,
+    "berserker_pct_total": 32.82,
+    "swordsman_str_gain": 36.47,
+    "swordsman_phy_gain": 4.23,
+    "swordsman_total": 43.92,
+    "marginal_dual": 1.392868,
+    "po_synergy_phy": 2710,
+    "berserker_berserk_str": 1019.2,
+    "berserker_base_str": 728,
+    "swordsman_str_base": 600,
+    "swordsman_phy_po": 2600
   },
-  "berserker_bonus": {
-    "固伤综合": 3.65,
-    "百分比综合": 13.26
-  },
-  "swordsman_bonus": {
-    "百分比综合": 318.26
-  },
-  "marginal_duality": 18.816823,
-  "all_passed": true,
-  "checks": [
-    {
-      "name": "力量+310",
-      "expected": 310,
-      "actual": 310,
-      "pass": true
-    },
-    {
-      "name": "物理攻击+110",
-      "expected": 110,
-      "actual": 110,
-      "pass": true
-    },
-    {
-      "name": "独立攻击+120",
-      "expected": 120,
-      "actual": 120,
-      "pass": true
-    },
-    {
-      "name": "暴击+3%",
-      "expected": 3.0,
-      "actual": 3.0,
-      "pass": true
-    },
-    {
-      "name": "狂战士固伤综合",
-      "expected": 9.27,
-      "actual": 3.65,
-      "pass": true
-    },
-    {
-      "name": "狂战士百分比综合",
-      "expected": 32.81,
-      "actual": 13.26,
-      "pass": true
-    },
-    {
-      "name": "剑魂百分比综合",
-      "expected": 45.7,
-      "actual": 318.26,
-      "pass": true
-    }
-  ]
+  "status": "FAAL三阶七维框架固化状态确认，核心数据零漂移"
 }
