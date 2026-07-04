@@ -1,0 +1,89 @@
+{
+  "version": "v1421",
+  "timestamp": "2026-07-04 09:03:37",
+  "checks": [
+    {
+      "item": "CC套属性-力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "item": "CC套属性-物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "item": "CC套属性-独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "item": "CC套属性-暴击率",
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true
+    },
+    {
+      "item": "狂战士固伤综合+9.27%",
+      "expected": 0.0927,
+      "actual": 0.0927,
+      "pass": true
+    },
+    {
+      "item": "狂战士百分比综合+32.81%",
+      "expected": 0.3281,
+      "actual": 0.3281,
+      "pass": true
+    },
+    {
+      "item": "剑魂百分比综合+45.70%",
+      "expected": 0.457,
+      "actual": 0.457,
+      "pass": true
+    },
+    {
+      "item": "破极兵刃协同物攻2710",
+      "expected": 2710,
+      "actual": 2710,
+      "pass": true
+    },
+    {
+      "item": "边际对偶4.930020",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "item": "FAAL三阶七维框架固化",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "item": "边际对偶推导验证(45.70/32.81)",
+      "expected": 1.392868,
+      "actual": 1.392868,
+      "pass": true
+    },
+    {
+      "item": "固伤综合计算推导(13.40%)",
+      "expected": 0.0927,
+      "actual": 0.134,
+      "pass": false
+    }
+  ],
+  "summary": "11/12 passed",
+  "all_pass": false,
+  "calibrated_values": {
+    "berserk_fixed": 0.0927,
+    "berserk_percent": 0.3281,
+    "swordsman_percent": 0.457,
+    "pojie_pa": 2710,
+    "marginal_duo": 4.93002
+  },
+  "faal_framework": "固化状态-三阶七维",
+  "zero_drift": true
+}
