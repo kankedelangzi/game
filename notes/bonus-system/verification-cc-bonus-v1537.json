@@ -1,0 +1,103 @@
+{
+  "version": "v1537",
+  "timestamp": "2026-07-05T02:48:00+08:00",
+  "total": 11,
+  "passed": 9,
+  "rate": "81.8%",
+  "cc_attrs": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击": 3.0
+  },
+  "berserker": {
+    "fixed_composite": 9.27,
+    "pct_composite": 32.81
+  },
+  "swordman": {
+    "pct_composite": 45.7
+  },
+  "marginal_duality": 4.929881,
+  "poji_synergy_patk": 2743,
+  "faal_status": "固化",
+  "core_data_drift": "零",
+  "checks": [
+    {
+      "name": "CC套力量",
+      "actual": 310,
+      "expected": 310,
+      "status": "PASS",
+      "diff": 0
+    },
+    {
+      "name": "CC套物理攻击",
+      "actual": 110,
+      "expected": 110,
+      "status": "PASS",
+      "diff": 0
+    },
+    {
+      "name": "CC套独立攻击",
+      "actual": 120,
+      "expected": 120,
+      "status": "PASS",
+      "diff": 0
+    },
+    {
+      "name": "CC套暴击",
+      "actual": 3.0,
+      "expected": 3.0,
+      "status": "PASS",
+      "diff": 0.0
+    },
+    {
+      "name": "狂战士固伤综合",
+      "actual": 9.27,
+      "expected": 9.27,
+      "status": "PASS",
+      "diff": 0.0
+    },
+    {
+      "name": "狂战士百分比综合",
+      "actual": 32.81,
+      "expected": 32.81,
+      "status": "PASS",
+      "diff": 0.0
+    },
+    {
+      "name": "剑魂百分比综合",
+      "actual": 45.7,
+      "expected": 45.7,
+      "status": "PASS",
+      "diff": 0.0
+    },
+    {
+      "name": "边际对偶",
+      "actual": 4.929881,
+      "expected": 4.93002,
+      "status": "FAIL",
+      "diff": -0.000139
+    },
+    {
+      "name": "破极兵刃协同物攻",
+      "actual": 2743,
+      "expected": 2743,
+      "status": "PASS",
+      "diff": 0
+    },
+    {
+      "name": "力量相对提升",
+      "actual": 0.101539,
+      "expected": 0.11301494713816988,
+      "status": "FAIL",
+      "diff": -0.011475
+    },
+    {
+      "name": "独立攻击固伤系数",
+      "actual": 1.48,
+      "expected": 1.48,
+      "status": "PASS",
+      "diff": 0.0
+    }
+  ]
+}
