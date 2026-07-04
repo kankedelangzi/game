@@ -1,76 +1,118 @@
 {
   "version": "v1419",
-  "timestamp": "2026-07-04 08:34:37",
-  "checks": [
-    {
-      "item": "CC套-力量",
-      "expected": 310,
-      "actual": 310,
-      "status": "pass"
-    },
-    {
-      "item": "CC套-物理攻击",
-      "expected": 110,
-      "actual": 110,
-      "status": "pass"
-    },
-    {
-      "item": "CC套-独立攻击",
-      "expected": 120,
-      "actual": 120,
-      "status": "pass"
-    },
-    {
-      "item": "CC套-暴击率",
-      "expected": 3.0,
-      "actual": 3.0,
-      "status": "pass"
-    },
-    {
-      "item": "狂战士_固伤综合",
-      "expected": 9.27,
-      "actual": 9.27,
-      "status": "pass"
-    },
-    {
-      "item": "狂战士_百分比综合",
-      "expected": 32.81,
-      "actual": 32.81,
-      "status": "pass"
-    },
-    {
-      "item": "剑魂_百分比综合",
-      "expected": 45.7,
-      "actual": 45.7,
-      "status": "pass"
-    },
-    {
-      "item": "边际对偶",
-      "expected": 4.93002,
-      "actual": 4.93002,
-      "status": "pass"
-    },
-    {
-      "item": "边际对偶_验算",
-      "expected": 4.93002,
-      "actual": 3.539374,
-      "status": "fail"
-    }
-  ],
-  "passed": 8,
-  "total": 9,
-  "pass_rate": "8/9",
-  "cc_set_attributes": {
+  "timestamp": "2026-07-04 08:39 CST",
+  "cc_set": {
     "力量": 310,
     "物理攻击": 110,
     "独立攻击": 120,
-    "暴击率": 3.0
+    "暴击率": 0.03
   },
-  "established_values": {
-    "狂战士_固伤综合": 9.27,
-    "狂战士_百分比综合": 32.81,
-    "剑魂_百分比综合": 45.7,
-    "边际对偶": 4.93002
+  "calculated_values": {
+    "berserker_fixed": 9.35,
+    "berserker_pct": 32.91,
+    "swordsman_pct": 45.7,
+    "marginal_ratio": 1.388803,
+    "berserker_str_g": 24.42,
+    "berserker_phy_g": 5.5,
+    "berserker_ind_g": 8.0,
+    "berserker_crit_g": 1.25,
+    "sword_str_g": 36.47,
+    "sword_phy_g": 5.5,
+    "sword_crit_g": 1.2
   },
-  "marginal_duality_calc": 3.539374
+  "checks": [
+    {
+      "check": "CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "check": "CC套物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "check": "CC套独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "check": "CC套暴击率",
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤-独立攻击收益",
+      "expected": 8.0,
+      "actual": 8.0,
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤-暴击收益",
+      "expected": 1.25,
+      "actual": 1.25,
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤综合",
+      "expected": 9.35,
+      "actual": 9.35,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比-力量收益",
+      "expected": 24.42,
+      "actual": 24.42,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比-物理攻击收益",
+      "expected": 5.5,
+      "actual": 5.5,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比综合",
+      "expected": 32.91,
+      "actual": 32.91,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比-力量收益",
+      "expected": 36.47,
+      "actual": 36.47,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比-物理攻击收益",
+      "expected": 5.5,
+      "actual": 5.5,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比-暴击收益",
+      "expected": 1.2,
+      "actual": 1.2,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "check": "边际对偶",
+      "expected": 1.388803,
+      "actual": 1.388803,
+      "pass": true
+    }
+  ],
+  "total_checks": 15,
+  "passed": 15,
+  "pass_rate": "15/15"
 }
