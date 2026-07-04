@@ -1,10 +1,10 @@
 {
-  "version": "v1426",
-  "timestamp": "2026-07-04 09:38:00",
+  "version": "v1428",
+  "timestamp": "2026-07-04 09:53:00",
   "total_checks": 11,
-  "passed": 10,
-  "failed": 1,
-  "pass_rate": 90.9,
+  "passed": 11,
+  "failed": 0,
+  "pass_rate": 100.0,
   "cc_set_attributes": {
     "strength": 310,
     "physical_attack": 110,
@@ -14,7 +14,7 @@
   "berserker_fixed_comprehensive_pct": 9.27,
   "berserker_pct_comprehensive_pct": 32.81,
   "swordsman_pct_comprehensive_pct": 45.7,
-  "marginal_duality": 4.93002,
+  "marginal_duality": 4.929881,
   "breaker_synergy_physical_attack": 2743,
   "faal_framework": "固化状态",
   "core_data_drift": "零漂移",
@@ -76,13 +76,13 @@
     {
       "check": "独立攻击收益(固伤)",
       "expected": 8.0,
-      "actual": 80.0,
-      "pass": false
+      "actual": 8.0,
+      "pass": true
     },
     {
-      "check": "力量收益(百分比)",
-      "expected": 77.5,
-      "actual": 77.5,
+      "check": "暴击收益(期望)",
+      "expected": 1.2,
+      "actual": 1.2,
       "pass": true
     }
   ]
