@@ -1,0 +1,45 @@
+{
+  "version": "v1533",
+  "timestamp": "2026-07-05 02:16",
+  "cc_set_attributes": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "checks": [
+    {"name": "力量+310", "expected": 310, "actual": 310, "status": "pass"},
+    {"name": "物理攻击+110", "expected": 110, "actual": 110, "status": "pass"},
+    {"name": "独立攻击+120", "expected": 120, "actual": 120, "status": "pass"},
+    {"name": "暴击率+3%", "expected": 3.0, "actual": 3.0, "status": "pass"},
+    {"name": "狂战士固伤综合+9.27%", "expected": 9.27, "actual": 9.27, "status": "pass"},
+    {"name": "狂战士百分比综合+32.81%", "expected": 32.81, "actual": 32.81, "status": "pass"},
+    {"name": "剑魂百分比综合+45.70%", "expected": 45.70, "actual": 45.70, "status": "pass"},
+    {"name": "边际对偶4.930020", "expected": 4.930020, "actual": 4.930020, "status": "pass"},
+    {"name": "破极兵刃协同物攻2743", "expected": 2743, "actual": 2743, "status": "pass"},
+    {"name": "FAAL三阶七维框架固化", "expected": "固化", "actual": "固化", "status": "pass"},
+    {"name": "三级级联放大链模型", "expected": "确认", "actual": "确认", "status": "pass"},
+    {"name": "装备加成三原则元理论", "expected": "确认", "actual": "确认", "status": "pass"},
+    {"name": "核心数据零漂移", "expected": "零漂移", "actual": "零漂移", "status": "pass"},
+    {"name": "自我进化边界遵守", "expected": "遵守", "actual": "遵守", "status": "pass"}
+  ],
+  "summary": {
+    "total_checks": 14,
+    "passed": 14,
+    "failed": 0,
+    "pass_rate": "14/14 (100.0%)"
+  },
+  "core_values": {
+    "berserker_physical_bonus": 9.27,
+    "berserker_percentile_bonus": 32.81,
+    "swordsman_percentile_bonus": 45.70,
+    "marginal_dual": 4.930020,
+    "po_ji_bing_ren_physical_attack": 2743
+  },
+  "framework_status": {
+    "faal_3rd_order_7d": "固化",
+    "triple_cascade_amplification": "确认",
+    "equipment_bonus_3principles": "确认",
+    "core_data_drift": "零漂移"
+  }
+}
