@@ -1,0 +1,27 @@
+{
+  "version": "v1529",
+  "timestamp": "2026-07-05T01:51:06.799456+08:00",
+  "pass_rate": "14/14",
+  "total_checks": 14,
+  "passed_checks": 14,
+  "cc_set_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": "3%"
+  },
+  "berserker": {
+    "固伤综合": "+9.27%",
+    "百分比综合": "+32.81%"
+  },
+  "swordman": {
+    "百分比综合": "+45.70%"
+  },
+  "marginal_duality": 4.93002,
+  "ppj_attack": 2743,
+  "faal_status": "固化",
+  "core_data_drift": "零漂移",
+  "cascade_model": "三级级联放大链模型确认",
+  "three_principles": "装备加成三原则元理论确认",
+  "evolution_boundary": "自我进化边界遵守"
+}
