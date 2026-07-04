@@ -1,0 +1,50 @@
+{
+  "version": "v1437",
+  "timestamp": "2026-07-04 11:41:03",
+  "cc_stats": {
+    "strength": 310,
+    "phys_attack": 110,
+    "indep_attack": 120,
+    "crit_rate": 0.03
+  },
+  "berserker_base": {
+    "base_indep": 1500,
+    "base_crit": 0.4,
+    "base_strength": 500,
+    "base_phys_attack": 2000
+  },
+  "swordsman_base": {
+    "base_strength": 500,
+    "base_phys_attack": 2000,
+    "base_crit": 0.4
+  },
+  "results": {
+    "cc_stats_sum": {
+      "strength": 310,
+      "phys_attack": 110,
+      "indep_attack": 120,
+      "crit_rate": 0.03,
+      "expected": {
+        "strength": 310,
+        "phys_attack": 110,
+        "indep_attack": 120,
+        "crit_rate": 0.03
+      },
+      "match": true
+    },
+    "berserker_fixed_indep": 8.0,
+    "berserker_fixed_crit": 3.0,
+    "berserker_fixed_combined": 11.24,
+    "berserker_pct_strength": 62.0,
+    "berserker_pct_phys_attack": 5.5,
+    "berserker_pct_combined": 76.04,
+    "swordsman_strength": 62.0,
+    "swordsman_phys_attack": 5.5,
+    "swordsman_combined": 76.04,
+    "margin_duality": 6.764884,
+    "margin_duality_expected": 4.93002,
+    "pajie_combined": 2743
+  },
+  "faal_status": "solidified",
+  "data_drift": "none"
+}
