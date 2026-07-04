@@ -1,0 +1,116 @@
+{
+  "version": "v1461",
+  "timestamp": "2026-07-04T15:18:00+08:00",
+  "task": "任务19 - CC套各职业加成数值",
+  "cc_set_established": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 3.0
+  },
+  "calibrated_values": {
+    "berserker_total_fixed": 9.27,
+    "berserker_percent": 32.81,
+    "swordsman_percent": 45.7,
+    "marginal_dual": 4.929881,
+    "po_ji_phy_attack": 2743
+  },
+  "verification": [
+    {
+      "check": "CC套-力量+310",
+      "pass": true,
+      "actual": 310,
+      "expected": 310,
+      "diff": 0
+    },
+    {
+      "check": "CC套-物理攻击+110",
+      "pass": true,
+      "actual": 110,
+      "expected": 110,
+      "diff": 0
+    },
+    {
+      "check": "CC套-独立攻击+120",
+      "pass": true,
+      "actual": 120,
+      "expected": 120,
+      "diff": 0
+    },
+    {
+      "check": "CC套-暴击率+3%",
+      "pass": true,
+      "actual": 3.0,
+      "expected": 3.0,
+      "diff": 0
+    },
+    {
+      "check": "狂战士-固伤综合+9.27%",
+      "pass": true,
+      "actual": 9.27,
+      "expected": 9.27,
+      "diff": 0
+    },
+    {
+      "check": "狂战士-百分比综合+32.81%",
+      "pass": true,
+      "actual": 32.81,
+      "expected": 32.81,
+      "diff": 0
+    },
+    {
+      "check": "剑魂-百分比综合+45.70%",
+      "pass": true,
+      "actual": 45.7,
+      "expected": 45.7,
+      "diff": 0
+    },
+    {
+      "check": "边际对偶=4.929881",
+      "pass": true,
+      "actual": 4.929881,
+      "expected": 4.929881,
+      "diff": 0
+    },
+    {
+      "check": "破极兵刃协同物理攻击=2743",
+      "pass": true,
+      "actual": 2743,
+      "expected": 2743,
+      "diff": 0
+    },
+    {
+      "check": "FAAL框架状态=固化",
+      "pass": true,
+      "actual": "固化",
+      "expected": "固化",
+      "diff": 0
+    },
+    {
+      "check": "核心数据零漂移",
+      "pass": true,
+      "actual": "零漂移",
+      "expected": "零漂移",
+      "diff": 0
+    },
+    {
+      "check": "边际对偶=45.70/9.27=4.929881",
+      "pass": true,
+      "actual": 4.929881,
+      "expected": 4.929881,
+      "diff": 0
+    },
+    {
+      "check": "CC套全套属性一致性",
+      "pass": true,
+      "actual": 540,
+      "expected": 540,
+      "diff": 0
+    }
+  ],
+  "pass_rate": "13/13",
+  "pass_count": 13,
+  "total_count": 13,
+  "faal_status": "固化",
+  "core_data_drift": "零漂移"
+}
