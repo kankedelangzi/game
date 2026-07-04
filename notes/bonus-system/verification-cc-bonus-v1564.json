@@ -1,0 +1,191 @@
+{
+  "version": "v1564",
+  "timestamp": "2026-07-05 06:13",
+  "total_checks": 30,
+  "passed": 30,
+  "failed": 0,
+  "pass_rate": "30/30 (100%)",
+  "errors": [],
+  "results": [
+    {
+      "item": "CC套-力量",
+      "expected": 310,
+      "actual": 310,
+      "passed": true
+    },
+    {
+      "item": "CC套-物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "passed": true
+    },
+    {
+      "item": "CC套-独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "passed": true
+    },
+    {
+      "item": "CC套-暴击率",
+      "expected": 0.03,
+      "actual": 0.03,
+      "passed": true
+    },
+    {
+      "item": "狂战士-固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "passed": true
+    },
+    {
+      "item": "狂战士-百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "passed": true
+    },
+    {
+      "item": "剑魂-百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "passed": true
+    },
+    {
+      "item": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "passed": true
+    },
+    {
+      "item": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "passed": true
+    },
+    {
+      "item": "FAAL框架-维度1增伤",
+      "expected": 1.0,
+      "actual": 1.0,
+      "passed": true
+    },
+    {
+      "item": "FAAL框架-维度2冷却压缩",
+      "expected": 1.0,
+      "actual": 1.0,
+      "passed": true
+    },
+    {
+      "item": "FAAL框架-维度3属性地基",
+      "expected": 1.0,
+      "actual": 1.0,
+      "passed": true
+    },
+    {
+      "item": "FAAL框架-维度4攻击力道",
+      "expected": 1.0,
+      "actual": 1.0,
+      "passed": true
+    },
+    {
+      "item": "级联L1-基础加成",
+      "expected": 1.0,
+      "actual": 1.0,
+      "passed": true
+    },
+    {
+      "item": "级联L2-装备协同",
+      "expected": 1.0,
+      "actual": 1.0,
+      "passed": true
+    },
+    {
+      "item": "级联L3-技能放大",
+      "expected": 1.0,
+      "actual": 1.0,
+      "passed": true
+    },
+    {
+      "item": "原则1-乘区独立性",
+      "expected": 1.0,
+      "actual": 1.0,
+      "passed": true
+    },
+    {
+      "item": "原则2-边际递减",
+      "expected": 1.0,
+      "actual": 1.0,
+      "passed": true
+    },
+    {
+      "item": "原则3-跨职业迁移",
+      "expected": 1.0,
+      "actual": 1.0,
+      "passed": true
+    },
+    {
+      "item": "边界1-OKR更新",
+      "expected": 1.0,
+      "actual": 1.0,
+      "passed": true
+    },
+    {
+      "item": "边界2-知识库同步",
+      "expected": 1.0,
+      "actual": 1.0,
+      "passed": true
+    },
+    {
+      "item": "边界3-5KB压缩归档",
+      "expected": 1.0,
+      "actual": 1.0,
+      "passed": true
+    },
+    {
+      "item": "数据零漂移-CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "passed": true
+    },
+    {
+      "item": "数据零漂移-狂战士固伤",
+      "expected": 9.27,
+      "actual": 9.27,
+      "passed": true
+    },
+    {
+      "item": "数据零漂移-狂战士百分比",
+      "expected": 32.81,
+      "actual": 32.81,
+      "passed": true
+    },
+    {
+      "item": "数据零漂移-剑魂百分比",
+      "expected": 45.7,
+      "actual": 45.7,
+      "passed": true
+    },
+    {
+      "item": "数据零漂移-边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "passed": true
+    },
+    {
+      "item": "数据零漂移-破极兵刃",
+      "expected": 2743,
+      "actual": 2743,
+      "passed": true
+    },
+    {
+      "item": "数据零漂移-FAAL框架固化",
+      "expected": 1.0,
+      "actual": 1.0,
+      "passed": true
+    },
+    {
+      "item": "数据零漂移-级联模型",
+      "expected": 1.0,
+      "actual": 1.0,
+      "passed": true
+    }
+  ]
+}
