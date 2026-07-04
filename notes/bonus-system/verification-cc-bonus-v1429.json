@@ -1,0 +1,43 @@
+{
+  "version": "v1429",
+  "timestamp": "2026-07-04T10:09:05+08:00",
+  "cc_set_total": {
+    "strength": 310,
+    "physical_atk": 110,
+    "independent_atk": 120,
+    "crit_rate": 3.0
+  },
+  "cc_set_base_values": {
+    "strength": 310,
+    "physical_atk": 110,
+    "independent_atk": 120,
+    "crit_rate": 3.0
+  },
+  "cc_set_match": {
+    "strength_match": true,
+    "physical_atk_match": true,
+    "independent_atk_match": true,
+    "crit_rate_match": true,
+    "all_match": true
+  },
+  "berserker_fixed_damage": {
+    "total_gain": 9.27
+  },
+  "berserker_pct_damage": {
+    "total_gain": 32.81
+  },
+  "swordsman_pct_damage": {
+    "total_gain": 45.7
+  },
+  "marginal_duality": {
+    "value": 4.929881,
+    "formula": "swordsman_pct_total / berserker_fixed_total",
+    "faal_framework": "公式架构不对称定律",
+    "duality_type": "百分比职业3乘区vs固伤职业2弱乘区"
+  },
+  "pojj_synergy": 2743,
+  "verification_count": 9,
+  "verification_pass": 9,
+  "faal_framework_confirmed": true,
+  "core_data_drift": 0
+}
