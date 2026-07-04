@@ -1,0 +1,92 @@
+{
+  "version": "v1471",
+  "timestamp": "2026-07-04T16:03:57.519443+08:00",
+  "cc_set_attributes": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker_base": {
+    "base_str": 500,
+    "base_phys_atk": 2000,
+    "base_indep_atk": 1500,
+    "base_cri_rate": 40.0
+  },
+  "swordsman_base": {
+    "base_str": 500,
+    "base_phys_atk": 2000,
+    "base_indep_atk": 1500,
+    "base_cri_rate": 40.0
+  },
+  "expected_values": {
+    "berserker_fudong": 9.27,
+    "berserker_percent": 32.81,
+    "swordsman_percent": 45.7,
+    "marginal_duality": 4.93002,
+    "po_ji_attack": 2743
+  },
+  "verifications": {
+    "cc_力量": {
+      "actual": 310,
+      "expected": 310,
+      "delta": 0,
+      "pass": true
+    },
+    "cc_物理攻击": {
+      "actual": 110,
+      "expected": 110,
+      "delta": 0,
+      "pass": true
+    },
+    "cc_独立攻击": {
+      "actual": 120,
+      "expected": 120,
+      "delta": 0,
+      "pass": true
+    },
+    "cc_暴击率": {
+      "actual": 3.0,
+      "expected": 3.0,
+      "delta": 0.0,
+      "pass": true
+    },
+    "狂战士固伤综合": {
+      "actual": 9.27,
+      "expected": 9.27,
+      "delta": 0.0,
+      "pass": true
+    },
+    "狂战士百分比综合": {
+      "actual": 32.81,
+      "expected": 32.81,
+      "delta": 0.0,
+      "pass": true
+    },
+    "剑魂百分比综合": {
+      "actual": 45.7,
+      "expected": 45.7,
+      "delta": 0.0,
+      "pass": true
+    },
+    "边际对偶": {
+      "actual": 3.539374,
+      "expected": 4.93002,
+      "delta": -1.390646,
+      "pass": false
+    },
+    "破极兵刃协同物理攻击": {
+      "actual": 2743,
+      "expected": 2743,
+      "delta": 0,
+      "pass": true
+    }
+  },
+  "summary": {
+    "total": 9,
+    "passed": 8,
+    "failed": 1,
+    "pass_rate": "8/9 = 88.9%"
+  },
+  "core_data_zero_drift": false
+}
