@@ -1,0 +1,252 @@
+{
+  "version": "v1563",
+  "timestamp": "2026-07-05 05:59",
+  "total_checks": 38,
+  "passed": 38,
+  "failed": 0,
+  "pass_rate": "100%",
+  "errors": [],
+  "results": [
+    {
+      "item": "CC套-力量",
+      "expected": 310,
+      "actual": 310,
+      "passed": true
+    },
+    {
+      "item": "CC套-物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "passed": true
+    },
+    {
+      "item": "CC套-独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "passed": true
+    },
+    {
+      "item": "CC套-暴击率",
+      "expected": 0.03,
+      "actual": 0.03,
+      "passed": true
+    },
+    {
+      "item": "狂战士-固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "passed": true
+    },
+    {
+      "item": "狂战士-百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "passed": true
+    },
+    {
+      "item": "剑魂-百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "passed": true
+    },
+    {
+      "item": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.929881,
+      "passed": true
+    },
+    {
+      "item": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "passed": true
+    },
+    {
+      "item": "FAAL三阶七维框架固化",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "item": "三级级联放大链模型",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "item": "装备加成三原则元理论",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "item": "自我进化边界持续遵守",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "item": "核心数据零漂移",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "item": "原则1-力量百分比贡献(狂战士)",
+      "expected": 15.5,
+      "actual": 15.5,
+      "passed": true
+    },
+    {
+      "item": "原则2-独立攻击乘区加成",
+      "expected": 48.0,
+      "actual": 48.0,
+      "passed": true
+    },
+    {
+      "item": "原则3-暴击率加成",
+      "expected": 3.0,
+      "actual": 3.0,
+      "passed": true
+    },
+    {
+      "item": "物理攻击加成-狂战士",
+      "expected": 9.17,
+      "actual": 9.1667,
+      "passed": true
+    },
+    {
+      "item": "物理攻击加成-剑魂",
+      "expected": 7.86,
+      "actual": 7.8571,
+      "passed": true
+    },
+    {
+      "item": "力量加成-狂战士",
+      "expected": 15.5,
+      "actual": 15.5,
+      "passed": true
+    },
+    {
+      "item": "力量加成-剑魂",
+      "expected": 17.22,
+      "actual": 17.2222,
+      "passed": true
+    },
+    {
+      "item": "独立攻击加成-狂战士",
+      "expected": 48.0,
+      "actual": 48.0,
+      "passed": true
+    },
+    {
+      "item": "独立攻击加成-剑魂",
+      "expected": 40.0,
+      "actual": 40.0,
+      "passed": true
+    },
+    {
+      "item": "暴击加成(%)",
+      "expected": 3.0,
+      "actual": 3.0,
+      "passed": true
+    },
+    {
+      "item": "剑魂+CC+破极兵刃物攻",
+      "expected": 1930.0,
+      "actual": 1930.0,
+      "passed": true
+    },
+    {
+      "item": "CC套属性总和(力+物+独)",
+      "expected": 540,
+      "actual": 540,
+      "passed": true
+    },
+    {
+      "item": "边际对偶验算",
+      "expected": 4.93002,
+      "actual": 4.9299,
+      "passed": true
+    },
+    {
+      "item": "狂战百分比/固伤比",
+      "expected": 3.539374,
+      "actual": 3.5394,
+      "passed": true
+    },
+    {
+      "item": "剑魂百分比/狂战百分比",
+      "expected": 1.3929,
+      "actual": 1.3929,
+      "passed": true
+    },
+    {
+      "item": "狂战士+CC总力量",
+      "expected": 2310,
+      "actual": 2310,
+      "passed": true
+    },
+    {
+      "item": "狂战士+CC总物攻",
+      "expected": 1310,
+      "actual": 1310,
+      "passed": true
+    },
+    {
+      "item": "狂战士+CC总独立",
+      "expected": 370,
+      "actual": 370,
+      "passed": true
+    },
+    {
+      "item": "剑魂+CC总力量",
+      "expected": 2110,
+      "actual": 2110,
+      "passed": true
+    },
+    {
+      "item": "剑魂+CC总物攻",
+      "expected": 1510,
+      "actual": 1510,
+      "passed": true
+    },
+    {
+      "item": "剑魂+CC总独立",
+      "expected": 420,
+      "actual": 420,
+      "passed": true
+    },
+    {
+      "item": "CC套独立对固伤乘区",
+      "expected": 0.48,
+      "actual": 0.48,
+      "passed": true
+    },
+    {
+      "item": "狂战士固伤乘区(有CC)",
+      "expected": 2.48,
+      "actual": 2.48,
+      "passed": true
+    },
+    {
+      "item": "狂战士固伤乘区(无CC)",
+      "expected": 2.0,
+      "actual": 2.0,
+      "passed": true
+    }
+  ],
+  "summary": {
+    "cc_str": 310,
+    "cc_phy_att": 110,
+    "cc_indep_att": 120,
+    "cc_crit": 0.03,
+    "berserker_gushang": 9.27,
+    "berserker_pct": 32.81,
+    "swordsman_pct": 45.7,
+    "marginal_duality": 4.93002,
+    "polar_physics": 2743,
+    "faal_stable": true,
+    "zero_drift": true
+  }
+}
