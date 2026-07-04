@@ -1,0 +1,104 @@
+{
+  "timestamp": "2026-07-04T12:08:12.311602",
+  "version": "v1441",
+  "results": {
+    "cc_str_total": {
+      "value": 310,
+      "expected": 310,
+      "pass": true
+    },
+    "cc_phy_total": {
+      "value": 110,
+      "expected": 110,
+      "pass": true
+    },
+    "cc_ind_total": {
+      "value": 120,
+      "expected": 120,
+      "pass": true
+    },
+    "cc_crit_total": {
+      "value": 3.0,
+      "expected": 3.0,
+      "pass": true
+    },
+    "bers_ind_gain": {
+      "value": 8.0,
+      "expected": 8.0,
+      "pass": true
+    },
+    "bers_crit_gain": {
+      "value": 1.25,
+      "expected": 1.25,
+      "pass": true
+    },
+    "bers_fg_total": {
+      "value": 9.35,
+      "expected": 9.27,
+      "pass": false
+    },
+    "bers_str_gain": {
+      "value": 21.3793,
+      "expected": 21.38,
+      "pass": true
+    },
+    "bers_phy_gain": {
+      "value": 6.1111,
+      "expected": 6.11,
+      "pass": true
+    },
+    "bers_pct_total": {
+      "value": 30.4069,
+      "expected": 32.81,
+      "pass": false
+    },
+    "sword_str_gain": {
+      "value": 21.3793,
+      "expected": 21.38,
+      "pass": true
+    },
+    "sword_phy_gain": {
+      "value": 5.5,
+      "expected": 5.5,
+      "pass": true
+    },
+    "sword_crit_gain": {
+      "value": 1.25,
+      "expected": 1.25,
+      "pass": true
+    },
+    "sword_pct_total": {
+      "value": 29.6559,
+      "expected": 45.7,
+      "pass": false
+    },
+    "marginal_dual": {
+      "value": 3.17175,
+      "expected": 4.93002,
+      "pass": false
+    },
+    "break_blade_phy": {
+      "value": 2710.0,
+      "expected": 2710,
+      "pass": true
+    }
+  },
+  "summary": {
+    "passed": 12,
+    "total": 16,
+    "pass_rate": "12/16"
+  },
+  "core_values": {
+    "cc_6piece": {
+      "力量": 310,
+      "物理攻击": 110,
+      "独立攻击": 120,
+      "暴击率": "3%"
+    },
+    "berserker_fguang": 9.35,
+    "berserker_percent": 30.41,
+    "swordman_percent": 29.66,
+    "marginal_dual": 3.17175,
+    "break_blade_phy": 2710.0
+  }
+}
