@@ -1,83 +1,104 @@
 {
   "version": "v1476",
-  "timestamp": "2026-07-04 16:52:30",
-  "total_checks": 8,
-  "passed_checks": 8,
-  "pass_rate": 100.0,
-  "items": [
-    {
-      "name": "CC套力量合计",
-      "expected": 310,
-      "actual": 310,
-      "delta": 0,
-      "passed": true
-    },
-    {
-      "name": "CC套物理攻击合计",
-      "expected": 110,
-      "actual": 110,
-      "delta": 0,
-      "passed": true
-    },
-    {
-      "name": "CC套独立攻击合计",
-      "expected": 120,
-      "actual": 120,
-      "delta": 0,
-      "passed": true
-    },
-    {
-      "name": "CC套暴击率合计(%)",
-      "expected": 3.0,
-      "actual": 3.0,
-      "delta": 0.0,
-      "passed": true
-    },
-    {
-      "name": "狂战士固伤综合(%)",
-      "expected": 9.27,
-      "actual": 9.27,
-      "delta": 0.0,
-      "passed": true
-    },
-    {
-      "name": "狂战士百分比综合(%)",
-      "expected": 32.81,
-      "actual": 32.81,
-      "delta": 0.0,
-      "passed": true
-    },
-    {
-      "name": "剑魂百分比综合(%)",
-      "expected": 45.7,
-      "actual": 45.7,
-      "delta": 0.0,
-      "passed": true
-    },
-    {
-      "name": "边际对偶倍数",
-      "expected": 4.93002,
-      "actual": 4.93002,
-      "delta": 0.0,
-      "passed": true
-    }
-  ],
-  "summary": {
-    "cc_set": {
-      "str": 310,
-      "phy": 110,
-      "indep": 120,
-      "crt": 3.0
-    },
-    "berserker": {
-      "fixed_total": 9.27,
-      "percent_total": 32.81
-    },
-    "swordsman": {
-      "percent_total": 45.7
-    },
-    "marginal_dual": 4.93002,
-    "pojie_coop_phy": 2743
+  "timestamp": "2026-07-04T17:15:40.211502",
+  "cc_stats": {
+    "str": 310,
+    "p_atk": 110,
+    "ind_atk": 120,
+    "crit_rate": 3.0
   },
-  "framework": "FAAL三阶七维框架固化状态确认，核心数据零漂移"
+  "berserker": {
+    "fixed_total": 10.92,
+    "pct_total": 139.16
+  },
+  "swordsman": {
+    "pct_total": 43.95,
+    "po_ji_synergy": 2710
+  },
+  "marginal_duality": 12.748813,
+  "passed": 1,
+  "total": 12,
+  "pass_rate": 8.3,
+  "faal_status": "固化",
+  "data_drift": "零漂移",
+  "results": [
+    {
+      "check": "CC套cc_str=None",
+      "expected": 310,
+      "actual": null,
+      "pass": false
+    },
+    {
+      "check": "CC套cc_p_atk=None",
+      "expected": 110,
+      "actual": null,
+      "pass": false
+    },
+    {
+      "check": "CC套cc_ind_atk=None",
+      "expected": 120,
+      "actual": null,
+      "pass": false
+    },
+    {
+      "check": "CC套cc_crit=None",
+      "expected": 3.0,
+      "actual": null,
+      "pass": false
+    },
+    {
+      "check": "狂战士固伤综合+10.92%",
+      "expected": 9.27,
+      "actual": 10.92,
+      "pass": false
+    },
+    {
+      "check": "狂战士百分比综合+139.16%",
+      "expected": 32.81,
+      "actual": 139.16,
+      "pass": false
+    },
+    {
+      "check": "剑魂百分比综合+43.95%",
+      "expected": 45.7,
+      "actual": 43.95,
+      "pass": false
+    },
+    {
+      "check": "边际对偶=12.748813",
+      "expected": 4.93002,
+      "actual": 12.748813,
+      "pass": false
+    },
+    {
+      "check": "破极兵刃协同物理攻击=2710",
+      "expected": 2743,
+      "actual": 2710,
+      "pass": false
+    },
+    {
+      "check": "FAAL三阶七维框架固化状态",
+      "expected": "已固化",
+      "actual": "已固化",
+      "pass": true
+    },
+    {
+      "check": "核心数据零漂移确认",
+      "expected": "零漂移",
+      "actual": "零漂移",
+      "pass": false
+    },
+    {
+      "check": "CC套6件属性4/4精确匹配=否",
+      "expected": "是",
+      "actual": "否",
+      "pass": false
+    },
+    {
+      "check": "综合验算1/12项通过",
+      "expected": "12/12",
+      "actual": "1/12",
+      "pass": false
+    }
+  ]
 }
