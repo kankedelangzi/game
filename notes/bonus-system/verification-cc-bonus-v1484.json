@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-07-04T18:51:23+08:00",
+  "version": "v1484",
+  "cc_set_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击": 3.0
+  },
+  "berserker": {
+    "fixed_bonus_pct": 51.0,
+    "pct_bonus_pct": 43.52,
+    "fixed_indp_bonus": 48.0,
+    "fixed_cri_bonus": 3.0
+  },
+  "swordsman": {
+    "pct_bonus_pct": 43.52,
+    "str_bonus": 29.52,
+    "phy_bonus": 11.0,
+    "cri_bonus": 3.0
+  },
+  "marginal_dual": 0.853333,
+  "faal_status": "FAAL三阶七维框架完全固化",
+  "pass_rate": "100%"
+}
