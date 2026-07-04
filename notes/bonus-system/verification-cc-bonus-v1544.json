@@ -1,0 +1,114 @@
+{
+  "version": "v1544",
+  "timestamp": "2026-07-05 03:32",
+  "pass_count": 14,
+  "total_count": 14,
+  "pass_rate": 100.0,
+  "cc_set": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "composites": {
+    "狂战士固伤综合": 9.27,
+    "狂战士百分比综合": 32.81,
+    "剑魂百分比综合": 45.7
+  },
+  "framework": {
+    "marginal_duality": 4.93002,
+    "poji_bin_synergy": 2743,
+    "faal_frozen": true,
+    "cascade_model": true,
+    "three_principles": true,
+    "boundary_observed": true,
+    "zero_drift": true
+  },
+  "verifications": [
+    {
+      "check": "CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "check": "CC套物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "check": "CC套独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "check": "CC套暴击率",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "check": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "check": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "check": "三级级联放大链模型",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "check": "装备加成三原则元理论",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "check": "自我进化边界遵守",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "check": "核心数据零漂移",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "check": "FAAL三阶七维框架固化",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    }
+  ],
+  "status": "PASS"
+}
