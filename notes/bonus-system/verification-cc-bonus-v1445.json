@@ -1,0 +1,77 @@
+{
+  "version": "v1445",
+  "timestamp": "2026-07-04 12:57",
+  "cc_attributes_all_correct": true,
+  "berserker_fixed_total": 9.27,
+  "berserker_pct_total": 32.81,
+  "swordsman_pct_total": 45.7,
+  "marginal_duality": 4.929881,
+  "poji": 2743.0,
+  "faal_framework": "固化状态确认",
+  "core_drift": "零漂移",
+  "passed": 10,
+  "total": 10,
+  "pass_rate": "10/10 (100%)",
+  "checks": [
+    {
+      "item": "cc_str",
+      "computed": 310,
+      "expected": 310,
+      "pass": true
+    },
+    {
+      "item": "cc_phy",
+      "computed": 110,
+      "expected": 110,
+      "pass": true
+    },
+    {
+      "item": "cc_ind",
+      "computed": 120,
+      "expected": 120,
+      "pass": true
+    },
+    {
+      "item": "cc_crit",
+      "computed": 3,
+      "expected": 3,
+      "pass": true
+    },
+    {
+      "item": "berserker_ind_gain",
+      "computed": 8.0,
+      "expected": 8.0,
+      "pass": true
+    },
+    {
+      "item": "berserker_fixed_total",
+      "computed": 9.27,
+      "expected": 9.27,
+      "pass": true
+    },
+    {
+      "item": "berserker_pct_total",
+      "computed": 32.81,
+      "expected": 32.81,
+      "pass": true
+    },
+    {
+      "item": "swordsman_pct_total",
+      "computed": 45.7,
+      "expected": 45.7,
+      "pass": true
+    },
+    {
+      "item": "poji",
+      "computed": 2743.0,
+      "expected": 2743,
+      "pass": true
+    },
+    {
+      "item": "marginal_duality",
+      "computed": 4.929881,
+      "expected": 4.93002,
+      "pass": true
+    }
+  ]
+}
