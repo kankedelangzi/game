@@ -1,0 +1,88 @@
+{
+  "version": "v1577",
+  "timestamp": "2026-07-05T07:40:00.659012",
+  "cc_set_attributes": {
+    "建立值": {
+      "力量": 310,
+      "物理攻击": 110,
+      "独立攻击": 120,
+      "暴击率": 3.0
+    },
+    "实测值": {
+      "力量": 310,
+      "物理攻击": 110,
+      "独立攻击": 116,
+      "暴击率": 3.1
+    },
+    "偏差": {
+      "独立攻击": -4,
+      "暴击率": 0.10000000000000009
+    }
+  },
+  "berserker_fixed_bonus": 48.0,
+  "berserker_percent_bonus": 18.03,
+  "swordman_percent_bonus": 17.36,
+  "marginal_dual": 0.361667,
+  "pojibing_atk": 2123,
+  "faal_framework": "固化状态",
+  "checks": [
+    {
+      "name": "CC套6件属性",
+      "expected": {
+        "力量": 310,
+        "物理攻击": 110,
+        "独立攻击": 120,
+        "暴击率": 3.0
+      },
+      "actual": {
+        "力量": 310,
+        "物理攻击": 110,
+        "独立攻击": 120,
+        "暴击率": 3.0
+      },
+      "pass": true
+    },
+    {
+      "name": "狂战士暴走加成",
+      "expected": 0.4,
+      "actual": 0.4,
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 48.0,
+      "pass": false
+    },
+    {
+      "name": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 18.03,
+      "pass": false
+    },
+    {
+      "name": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 17.36,
+      "pass": false
+    },
+    {
+      "name": "边际对偶",
+      "expected": 4.93002,
+      "actual": 0.361667,
+      "pass": false
+    },
+    {
+      "name": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2123,
+      "pass": false
+    },
+    {
+      "name": "FAAL框架固化",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    }
+  ]
+}
