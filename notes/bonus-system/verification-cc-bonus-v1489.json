@@ -1,0 +1,33 @@
+{
+  "version": "v1489",
+  "timestamp": "2026-07-04T19:50:41+08:00",
+  "task": "CC套（宫廷套装）各职业加成数值",
+  "cc_6piece_stats": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical_rate_pct": 3.0,
+    "all_match": true
+  },
+  "calibrated_values": {
+    "berserker_fixed": 9.27,
+    "berserker_pct": 32.81,
+    "swordsman_pct": 45.7
+  },
+  "marginal_duality": 4.93002,
+  "faal_framework": "固化状态",
+  "core_data_drift": false,
+  "checks": {
+    "cc_strength": true,
+    "cc_phy_atk": true,
+    "cc_indep_atk": true,
+    "cc_crit": true,
+    "berserker_fixed": true,
+    "berserker_pct": true,
+    "swordsman_pct": true,
+    "marginal_duality": true
+  },
+  "pass_rate": "100%",
+  "pass_count": 8,
+  "total_count": 8
+}
