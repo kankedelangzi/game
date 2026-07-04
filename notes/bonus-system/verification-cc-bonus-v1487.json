@@ -1,0 +1,93 @@
+{
+  "version": "v1487",
+  "timestamp": "2026-07-04T19:36:01.522283+08:00",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "phase": "无终点稳态监测维护",
+  "total_checks": 11,
+  "passed_checks": 10,
+  "pass_rate": "10/11",
+  "cc_attrs": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 0.03
+  },
+  "berserker": {
+    "固伤综合": "+9.27%",
+    "百分比综合": "+32.81%"
+  },
+  "swordsman": {
+    "百分比综合": "+45.7%"
+  },
+  "marginal_dual": 4.93002,
+  "faal_framework": "FAAL三阶七维框架完全固化",
+  "data_drift": "核心数据零漂移",
+  "results": [
+    {
+      "check": "力量+310",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "check": "物理攻击+110",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "check": "独立攻击+120",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "check": "暴击+3%",
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤综合+9.27%",
+      "expected": 0.0927,
+      "actual": 0.0927,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比综合+32.81%",
+      "expected": 0.3281,
+      "actual": 0.3281,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比综合+45.70%",
+      "expected": 0.457,
+      "actual": 0.457,
+      "pass": true
+    },
+    {
+      "check": "破极兵刃协同物攻2743",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "check": "边际对偶=剑魂综合/狂战士固伤",
+      "expected": 4.929881,
+      "actual": 4.93002,
+      "pass": false
+    },
+    {
+      "check": "FAAL框架固化",
+      "expected": "完全固化",
+      "actual": "完全固化",
+      "pass": true
+    },
+    {
+      "check": "核心数据零漂移",
+      "expected": "零漂移",
+      "actual": "零漂移",
+      "pass": true
+    }
+  ]
+}
