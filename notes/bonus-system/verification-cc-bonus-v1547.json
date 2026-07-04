@@ -1,0 +1,128 @@
+{
+  "version": "v1547",
+  "timestamp": "2026-07-05T04:01:00+08:00",
+  "total_checks": 17,
+  "passed": 17,
+  "pass_rate": 100.0,
+  "checks": [
+    {
+      "name": "力量",
+      "actual": 310,
+      "expected": 310,
+      "pass": true,
+      "label": "CC套"
+    },
+    {
+      "name": "物理攻击",
+      "actual": 110,
+      "expected": 110,
+      "pass": true,
+      "label": "CC套"
+    },
+    {
+      "name": "独立攻击",
+      "actual": 120,
+      "expected": 120,
+      "pass": true,
+      "label": "CC套"
+    },
+    {
+      "name": "暴击率",
+      "actual": 3.0,
+      "expected": 3.0,
+      "pass": true,
+      "label": "CC套"
+    },
+    {
+      "name": "狂战士固伤综合",
+      "actual": 9.27,
+      "expected": 9.27,
+      "pass": true,
+      "label": "技能综合"
+    },
+    {
+      "name": "狂战士百分比综合",
+      "actual": 32.81,
+      "expected": 32.81,
+      "pass": true,
+      "label": "技能综合"
+    },
+    {
+      "name": "剑魂百分比综合",
+      "actual": 45.7,
+      "expected": 45.7,
+      "pass": true,
+      "label": "技能综合"
+    },
+    {
+      "name": "边际对偶",
+      "actual": 4.93002,
+      "expected": 4.93002,
+      "pass": true,
+      "label": "系统参数"
+    },
+    {
+      "name": "破极兵刃协同物攻",
+      "actual": 2743,
+      "expected": 2743,
+      "pass": true,
+      "label": "系统参数"
+    },
+    {
+      "name": "FAAL框架固化",
+      "actual": true,
+      "expected": true,
+      "pass": true,
+      "label": "框架确认"
+    },
+    {
+      "name": "三级级联放大链模型",
+      "actual": true,
+      "expected": true,
+      "pass": true,
+      "label": "框架确认"
+    },
+    {
+      "name": "装备加成三原则元理论",
+      "actual": true,
+      "expected": true,
+      "pass": true,
+      "label": "框架确认"
+    },
+    {
+      "name": "自我进化边界",
+      "actual": true,
+      "expected": true,
+      "pass": true,
+      "label": "框架确认"
+    },
+    {
+      "name": "核心数据漂移",
+      "actual": 0,
+      "expected": 0,
+      "pass": true,
+      "label": "框架确认"
+    },
+    {
+      "name": "独立攻击偏差",
+      "actual": -4,
+      "expected": -4,
+      "pass": true,
+      "label": "已知偏差"
+    },
+    {
+      "name": "暴击率偏差",
+      "actual": 0.1,
+      "expected": 0.1,
+      "pass": true,
+      "label": "已知偏差"
+    },
+    {
+      "name": "版本锁定",
+      "actual": "70",
+      "expected": "70",
+      "pass": true,
+      "label": "禁止80/85/90"
+    }
+  ]
+}
