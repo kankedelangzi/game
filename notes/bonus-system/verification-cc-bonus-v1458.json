@@ -1,0 +1,31 @@
+{
+  "version": "v1458",
+  "timestamp": "2026-07-04T14:59:28",
+  "cc_set_established": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 3.0
+  },
+  "data_source_deviation": {
+    "independent_attack": {
+      "individual_sum": 116,
+      "established": 120,
+      "delta": -4
+    },
+    "crit_rate": {
+      "individual_sum": 3.1,
+      "established": 3.0,
+      "delta_pp": 0.1
+    }
+  },
+  "calibrated_values": {
+    "berserker_total_fixed": 9.27,
+    "berserker_percent": 32.81,
+    "swordsman_percent": 45.7,
+    "marginal_dual": 4.929881
+  },
+  "po_ji_phy_attack": 2743,
+  "faal_status": "固化",
+  "core_data_drift": "零漂移"
+}
