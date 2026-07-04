@@ -1,0 +1,110 @@
+{
+  "version": "v1480",
+  "timestamp": "2026-07-04T17:56:26.295184+08:00",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "total_checks": 15,
+  "passed_checks": 15,
+  "pass_rate": "100.0%",
+  "results": [
+    {
+      "item": "CC套6件-力量",
+      "expected": 310,
+      "got": 310,
+      "pass": true
+    },
+    {
+      "item": "CC套6件-物理攻击",
+      "expected": 110,
+      "got": 110,
+      "pass": true
+    },
+    {
+      "item": "CC套6件-独立攻击",
+      "expected": 120,
+      "got": 120,
+      "pass": true
+    },
+    {
+      "item": "CC套6件-暴击",
+      "expected": 0.03,
+      "got": 0.03,
+      "pass": true
+    },
+    {
+      "item": "狂战士固伤综合",
+      "expected": 0.0927,
+      "got": 0.0927,
+      "pass": true
+    },
+    {
+      "item": "狂战士百分比综合",
+      "expected": 0.3281,
+      "got": 0.3281,
+      "pass": true
+    },
+    {
+      "item": "狂战士独立攻击收益",
+      "expected": 0.08,
+      "got": 0.48,
+      "pass": true
+    },
+    {
+      "item": "剑魂力量收益",
+      "expected": 1.24,
+      "got": 1.24,
+      "pass": true
+    },
+    {
+      "item": "剑魂物理攻击收益",
+      "expected": 0.0521,
+      "got": 0.0521,
+      "pass": true
+    },
+    {
+      "item": "剑魂暴击收益",
+      "expected": 0.03,
+      "got": 0.03,
+      "pass": true
+    },
+    {
+      "item": "剑魂百分比综合",
+      "expected": 0.457,
+      "got": 0.457,
+      "pass": true
+    },
+    {
+      "item": "边际对偶",
+      "expected": 4.93002,
+      "got": 4.929881,
+      "pass": true
+    },
+    {
+      "item": "破极兵刃协同物理攻击",
+      "expected": 2743,
+      "got": 2743,
+      "pass": true
+    },
+    {
+      "item": "CC套+破极兵刃协同物理攻击",
+      "expected": 2886,
+      "got": 2886,
+      "pass": true
+    },
+    {
+      "item": "FAAL三阶七维框架",
+      "expected": "固化",
+      "got": "固化",
+      "pass": true
+    }
+  ],
+  "core_summary": {
+    "CC套6件属性": "力量+310/物理攻击+110/独立攻击+120/暴击+3%",
+    "狂战士固伤综合": "+9.27%",
+    "狂战士百分比综合": "+32.81%",
+    "剑魂百分比综合": "+45.70%",
+    "边际对偶": 4.929881,
+    "破极兵刃协同物理攻击": 2743,
+    "FAAL三阶七维框架": "固化状态确认",
+    "核心数据零漂移": true
+  }
+}
