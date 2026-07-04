@@ -1,0 +1,97 @@
+{
+  "version": "v1477",
+  "timestamp": "2026-07-04 17:02:53",
+  "total_checks": 10,
+  "passed_checks": 10,
+  "pass_rate": 100.0,
+  "items": [
+    {
+      "name": "CC套力量合计",
+      "expected": 310,
+      "actual": 310,
+      "delta": 0,
+      "passed": true
+    },
+    {
+      "name": "CC套物理攻击合计",
+      "expected": 110,
+      "actual": 110,
+      "delta": 0,
+      "passed": true
+    },
+    {
+      "name": "CC套独立攻击合计",
+      "expected": 120,
+      "actual": 120,
+      "delta": 0,
+      "passed": true
+    },
+    {
+      "name": "CC套暴击率合计(%)",
+      "expected": 3.0,
+      "actual": 3.0,
+      "delta": 0.0,
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤综合(%)",
+      "expected": 9.27,
+      "actual": 9.27,
+      "delta": 0.0,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比综合(%)",
+      "expected": 32.81,
+      "actual": 32.81,
+      "delta": 0.0,
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比综合(%)",
+      "expected": 45.7,
+      "actual": 45.7,
+      "delta": 0.0,
+      "passed": true
+    },
+    {
+      "name": "边际对偶倍数",
+      "expected": 4.93002,
+      "actual": 4.92988,
+      "delta": 0.00014,
+      "passed": true
+    },
+    {
+      "name": "破极兵刃协同物理攻击",
+      "expected": 2743,
+      "actual": 2743.0,
+      "delta": 0.0,
+      "passed": true
+    },
+    {
+      "name": "FAAL框架固化状态",
+      "expected": "已固化",
+      "actual": "已固化",
+      "delta": 0,
+      "passed": true
+    }
+  ],
+  "summary": {
+    "cc_set": {
+      "str": 310,
+      "phy": 110,
+      "indep": 120,
+      "crt": 3.0
+    },
+    "berserker": {
+      "fixed_total": 9.27,
+      "percent_total": 32.81
+    },
+    "swordsman": {
+      "percent_total": 45.7
+    },
+    "marginal_dual": 4.93002,
+    "pojie_coop_phy": 2743
+  },
+  "framework": "FAAL三阶七维框架固化状态确认，核心数据零漂移"
+}
