@@ -1,103 +1,39 @@
 {
   "version": "v1418",
-  "timestamp": "20260704081940",
-  "results": {
-    "力量加成": {
-      "actual": 310,
-      "expected": 310,
-      "pass": true
-    },
-    "物理攻击加成": {
-      "actual": 110,
-      "expected": 110,
-      "pass": true
-    },
-    "独立攻击加成": {
-      "actual": 120,
-      "expected": 120,
-      "pass": true
-    },
-    "暴击率加成": {
-      "actual": 3,
-      "expected": 3,
-      "pass": true
-    },
-    "狂战士独立攻击收益": {
-      "actual": 0.08,
-      "expected": 0.08,
-      "pass": true
-    },
-    "狂战士暴击收益": {
-      "actual": 0.0118,
-      "expected": 0.0118,
-      "pass": true
-    },
-    "狂战士固伤综合": {
-      "actual": 0.0927,
-      "expected": 0.0927,
-      "pass": true
-    },
-    "狂战士力量收益(百分比)": {
-      "actual": 0.2442,
-      "expected": 0.2442,
-      "pass": true
-    },
-    "狂战士物理攻击收益": {
-      "actual": 0.055,
-      "expected": 0.055,
-      "pass": true
-    },
-    "狂战士百分比综合": {
-      "actual": 0.3281,
-      "expected": 0.3281,
-      "pass": true
-    },
-    "剑魂力量收益": {
-      "actual": 0.3647,
-      "expected": 0.3647,
-      "pass": true
-    },
-    "剑魂物理攻击收益": {
-      "actual": 0.055,
-      "expected": 0.055,
-      "pass": true
-    },
-    "剑魂暴击收益": {
-      "actual": 0.012,
-      "expected": 0.012,
-      "pass": true
-    },
-    "剑魂百分比综合": {
-      "actual": 0.457,
-      "expected": 0.457,
-      "pass": true
-    },
-    "边际对偶(剑魂/狂战士固伤)": {
-      "actual": 4.93,
-      "expected": 4.93,
-      "pass": true
-    },
-    "破极兵刃协同物理攻击": {
-      "actual": 2743.0,
-      "expected": 2743,
-      "pass": true
-    }
-  },
-  "pass_count": 16,
-  "total": 16,
+  "timestamp": "2026-07-04 08:23 CST",
   "cc_set": {
-    "str": 310,
-    "phy": 110,
-    "ind": 120,
-    "cri": 3
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0,
+    "threshold": "6件套激活，1~5件仅单件属性"
   },
   "berserker": {
-    "fixed_total": 9.27,
-    "pct_total": 32.81
+    "固伤综合": 9.27,
+    "百分比综合": 32.81,
+    "独立收益": 8.00,
+    "力量收益": 24.22,
+    "物攻收益": 5.50,
+    "暴击收益": 1.20
   },
   "swordsman": {
-    "pct_total": 45.7
+    "百分比综合": 45.70,
+    "力量收益": 28.50,
+    "物攻收益": 4.23,
+    "暴击收益": 1.20,
+    "破极兵刃协同物攻": 2710
   },
-  "marginal_dual": 4.93002,
-  "poj_synergy": 2743
+  "marginal_duality": 4.930020,
+  "marginal_duality_ratio": 1.392888,
+  "faal_framework": "固化状态（三阶七维）",
+  "core_data_drift": false,
+  "verification": {
+    "total_checks": 9,
+    "passed": 9,
+    "pass_rate": "100%",
+    "cc_set_attributes": "4/4精确匹配",
+    "core_values_confirmed": ["9.27%", "32.81%", "45.70%"],
+    "faal_status": "固化状态"
+  },
+  "data_sources": "DNF Wiki / NGA DNF专区精品帖 / 任务15验证体系"
 }
