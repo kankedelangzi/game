@@ -1,0 +1,72 @@
+{
+  "version": "v1493",
+  "timestamp": "2026-07-04T20:44:00+08:00",
+  "cc_stats": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 0.03
+  },
+  "berserker": {
+    "phys_comprehensive": 9.27,
+    "pct_comprehensive": 32.81
+  },
+  "swordsman": {
+    "comprehensive": 45.7
+  },
+  "marginal_duality": 4.93002,
+  "poji_synergy_pa": 2743,
+  "faal_status": "固化",
+  "core_data_drift": false,
+  "checks": [
+    {
+      "name": "CC套力量",
+      "pass": true,
+      "expected": 310,
+      "actual": 310
+    },
+    {
+      "name": "CC套物理攻击",
+      "pass": true,
+      "expected": 110,
+      "actual": 110
+    },
+    {
+      "name": "CC套独立攻击",
+      "pass": true,
+      "expected": 120,
+      "actual": 120
+    },
+    {
+      "name": "CC套暴击率",
+      "pass": true,
+      "expected": 0.03,
+      "actual": 0.03
+    },
+    {
+      "name": "狂战士固伤综合",
+      "pass": true,
+      "expected": 9.27,
+      "actual": 9.27
+    },
+    {
+      "name": "狂战士百分比综合",
+      "pass": true,
+      "expected": 32.81,
+      "actual": 32.81
+    },
+    {
+      "name": "剑魂百分比综合",
+      "pass": true,
+      "expected": 45.7,
+      "actual": 45.7
+    },
+    {
+      "name": "破极兵刃协同",
+      "pass": true,
+      "expected": 2743,
+      "actual": 2743
+    }
+  ],
+  "pass_rate": "8/8"
+}
