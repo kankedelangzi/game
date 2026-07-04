@@ -1,0 +1,64 @@
+{
+  "version": "v1417",
+  "timestamp": "2026-07-04T08:09:18.136709+08:00",
+  "task": "任务19-CC套各职业加成数值",
+  "cc_6pc_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击": 3.0
+  },
+  "berserker_bonus": {
+    "固伤综合": 3.65,
+    "百分比综合": 13.26
+  },
+  "swordsman_bonus": {
+    "百分比综合": 318.26
+  },
+  "marginal_duality": 18.816823,
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "力量+310",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "name": "物理攻击+110",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "name": "独立攻击+120",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "name": "暴击+3%",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 3.65,
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 13.26,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 318.26,
+      "pass": true
+    }
+  ]
+}
