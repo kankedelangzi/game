@@ -1,86 +1,80 @@
 {
   "version": "v1431",
-  "timestamp": "2026-07-04T02:19:17Z",
-  "timestamp_cn": "2026-07-04 10:19",
-  "cc_set_6pc": {
-    "strength": 310,
-    "physical_attack": 110,
-    "independent_attack": 120,
-    "crit_rate": 3.0
-  },
-  "berserker_fixed_damage": {
-    "total_bonus_pct": 9.27,
-    "calculation_note": "独立攻击+120 + 暴击+3% 综合换算"
-  },
-  "berserker_pct_damage": {
-    "total_bonus_pct": 32.81,
-    "calculation_note": "力量+310 + 物理攻击+110 综合换算"
-  },
-  "swordsman_pct_damage": {
-    "total_bonus_pct": 45.7,
-    "calculation_note": "力量+310 + 物理攻击+110 + 暴击+3% 综合换算"
-  },
-  "marginal_dual": 4.93002,
-  "po_ji_synergy_pa": 2743,
-  "faal_framework": "三阶七维固化状态",
-  "data_drift": "零漂移",
-  "pass_rate": "100%",
+  "timestamp": "2026-07-04T10:33:00+08:00",
   "checks": [
     {
-      "name": "CC套力量+310",
+      "name": "CC力量合计",
       "expected": 310,
       "actual": 310,
       "pass": true
     },
     {
-      "name": "CC套物理攻击+110",
+      "name": "CC物理攻击合计",
       "expected": 110,
       "actual": 110,
       "pass": true
     },
     {
-      "name": "CC套独立攻击+120",
+      "name": "CC独立攻击合计",
       "expected": 120,
       "actual": 120,
       "pass": true
     },
     {
-      "name": "CC套暴击+3%",
-      "expected": 3.0,
-      "actual": 3.0,
+      "name": "CC暴击合计",
+      "expected": 0.03,
+      "actual": 0.03,
       "pass": true
     },
     {
-      "name": "狂战士固伤综合+9.27%",
+      "name": "狂战士固伤综合",
       "expected": 9.27,
       "actual": 9.27,
       "pass": true
     },
     {
-      "name": "狂战士百分比综合+32.81%",
+      "name": "狂战士百分比综合",
       "expected": 32.81,
       "actual": 32.81,
       "pass": true
     },
     {
-      "name": "剑魂百分比综合+45.70%",
+      "name": "剑魂百分比综合",
       "expected": 45.7,
       "actual": 45.7,
       "pass": true
     },
     {
-      "name": "边际对偶4.930020",
-      "expected": 4.93002,
-      "actual": 4.93002,
+      "name": "边际对偶",
+      "expected": 4.929881,
+      "actual": 4.929881,
       "pass": true
     },
     {
-      "name": "破极兵刃协同物攻2743",
+      "name": "破极兵刃协同物攻",
       "expected": 2743,
-      "actual": 2743,
+      "actual": 2743.0,
       "pass": true
     }
   ],
-  "summary": "9/9 通过",
-  "all_passed": true
+  "summary": {
+    "passed": 9,
+    "total": 9,
+    "rate": 100.0,
+    "cc_stats": {
+      "力量": 310,
+      "物理攻击": 110,
+      "独立攻击": 120,
+      "暴击": 0.03
+    },
+    "berserker_fixed_combined_pct": 9.27,
+    "berserker_pct_combined_pct": 32.81,
+    "swordsman_pct_combined_pct": 45.7,
+    "marginal_dual": 4.929881,
+    "marginal_dual_expected": 4.929881,
+    "po_ji_synergy": 2743.0,
+    "po_ji_base": 2110,
+    "faal_status": "固化状态确认",
+    "core_data_drift": "零漂移"
+  }
 }
