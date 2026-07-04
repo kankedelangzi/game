@@ -1,58 +1,97 @@
 {
   "version": "v1504",
-  "timestamp": "2026-07-04T22:50:00+08:00",
-  "cc_set_attributes": {
-    "strength": {
-      "value": 310,
-      "status": "PASS"
+  "timestamp": "2026-07-04 23:13:18",
+  "total_checks": 12,
+  "passed_checks": 12,
+  "pass_rate": "100.0%",
+  "cc_set": {
+    "str": 310,
+    "atk": 110,
+    "ip": 120,
+    "crit": 3.0
+  },
+  "berserker": {
+    "fixed_total": 9.27,
+    "pct_total": 32.81
+  },
+  "swordsman": {
+    "pct_total": 45.7
+  },
+  "dual_number": 4.93002,
+  "polestar_atk": 2743,
+  "faal_frame": "固化不可逆",
+  "checks": [
+    {
+      "item": "CC套-力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
     },
-    "phys_attack": {
-      "value": 110,
-      "status": "PASS"
+    {
+      "item": "CC套-物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
     },
-    "indep_attack": {
-      "value": 120,
-      "status": "PASS"
+    {
+      "item": "CC套-独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
     },
-    "crit_rate": {
-      "value": 0.03,
-      "status": "PASS"
+    {
+      "item": "CC套-暴击",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    {
+      "item": "狂战士-固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "item": "狂战士-固伤综合值精确",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "item": "狂战士-百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "item": "剑魂-百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "item": "剑魂-百分比综合值精确",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "item": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "item": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "item": "FAAL三阶七维框架固化",
+      "expected": true,
+      "actual": true,
+      "pass": true
     }
-  },
-  "berserker_fixed_benefit": {
-    "value": 9.27,
-    "status": "PASS",
-    "note": "固伤技能综合收益"
-  },
-  "berserker_percent_benefit": {
-    "value": 32.81,
-    "status": "PASS",
-    "note": "百分比技能综合收益"
-  },
-  "swordsman_percent_benefit": {
-    "value": 45.7,
-    "status": "PASS",
-    "note": "百分比技能综合收益"
-  },
-  "marginal_dual": {
-    "value": 4.93002,
-    "status": "PASS",
-    "note": "系统固有频率不变量"
-  },
-  "poji_phys_attack": {
-    "value": 2743,
-    "status": "PASS",
-    "note": "破极兵刃协同物理攻击"
-  },
-  "faal_framework": {
-    "status": "PASS",
-    "note": "三阶七维框架固化状态确认"
-  },
-  "core_data_drift": {
-    "value": "零漂移",
-    "status": "PASS"
-  },
-  "total_checks": 11,
-  "passed": 11,
-  "pass_rate": "11/11 (100%)"
+  ]
 }
