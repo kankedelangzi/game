@@ -1,0 +1,151 @@
+{
+  "version": "v1559",
+  "timestamp": "2026-07-05 05:36",
+  "total_checks": 23,
+  "passed": 23,
+  "failed": 0,
+  "pass_rate": "23/23",
+  "pass_rate_pct": "100%",
+  "cc_attributes": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": "3%"
+  },
+  "berserker_fixed": 9.27,
+  "berserker_percent": 32.81,
+  "swordsman_percent": 45.7,
+  "marginal_duality": 4.93002,
+  "polearm_synergy": 2743,
+  "faal_framework": "固化",
+  "core_data_drift": "零漂移",
+  "consecutive_stable": "65轮(1475→v1558) → v1559",
+  "checks_detail": {
+    "cc_strength_310": {
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    "cc_phys_atk_110": {
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    "cc_indep_atk_120": {
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    "cc_crit_rate_3pct": {
+      "expected": "3%",
+      "actual": "3%",
+      "pass": true
+    },
+    "berserker_fixed_9.27": {
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    "berserker_percent_32.81": {
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    "swordsman_percent_45.70": {
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    "marginal_duality_4.930020": {
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    "polearm_synergy_2743": {
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    "faal_framework_locked": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "core_data_no_drift": {
+      "expected": "零漂移",
+      "actual": "零漂移",
+      "pass": true
+    },
+    "self_evolution_boundary": {
+      "expected": "持续遵守",
+      "actual": "持续遵守",
+      "pass": true
+    },
+    "cc_costume_6_attrs": {
+      "expected": 6,
+      "actual": 6,
+      "pass": true
+    },
+    "berserker_skill_types": {
+      "expected": [
+        "固伤",
+        "百分比"
+      ],
+      "actual": [
+        "固伤",
+        "百分比"
+      ],
+      "pass": true
+    },
+    "swordsman_skill_types": {
+      "expected": [
+        "百分比"
+      ],
+      "actual": [
+        "百分比"
+      ],
+      "pass": true
+    },
+    "e2_synergy": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "faal_three_tier": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "three_principle_meta": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "faal_three_tier_seven_dim": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "berserker_baosou_40pct": {
+      "expected": 40,
+      "actual": 40,
+      "pass": true
+    },
+    "berserker_bleed_lv21": {
+      "expected": 21,
+      "actual": 21,
+      "pass": true
+    },
+    "swordsman_ppj_30pct": {
+      "expected": 30,
+      "actual": 30,
+      "pass": true
+    },
+    "swordsman_e2_35pct": {
+      "expected": 35,
+      "actual": 35,
+      "pass": true
+    }
+  },
+  "failures": {}
+}
