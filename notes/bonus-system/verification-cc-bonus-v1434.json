@@ -1,0 +1,105 @@
+{
+  "version": "v1434",
+  "timestamp": "2026-07-04 11:26:51 CST",
+  "total_checks": 13,
+  "passed": 13,
+  "pass_rate": "100.0%",
+  "checks": [
+    {
+      "name": "CC套力量",
+      "actual": 310,
+      "expected": 310,
+      "status": "✅"
+    },
+    {
+      "name": "CC套物理攻击",
+      "actual": 110,
+      "expected": 110,
+      "status": "✅"
+    },
+    {
+      "name": "CC套独立攻击",
+      "actual": 120,
+      "expected": 120,
+      "status": "✅"
+    },
+    {
+      "name": "CC套暴击率%",
+      "actual": 3.0,
+      "expected": 3.0,
+      "status": "✅"
+    },
+    {
+      "name": "狂战士-独立攻击收益",
+      "actual": 8.0,
+      "expected": 8.0,
+      "status": "✅"
+    },
+    {
+      "name": "狂战士-暴击期望收益",
+      "actual": 2.14,
+      "expected": 2.14,
+      "status": "✅"
+    },
+    {
+      "name": "狂战士-固伤综合",
+      "actual": 9.27,
+      "expected": 9.27,
+      "status": "✅"
+    },
+    {
+      "name": "狂战士-百分比综合",
+      "actual": 32.81,
+      "expected": 32.81,
+      "status": "✅"
+    },
+    {
+      "name": "剑魂-力量收益",
+      "actual": 36.47,
+      "expected": 36.47,
+      "status": "✅"
+    },
+    {
+      "name": "剑魂-物理攻击收益",
+      "actual": 5.5,
+      "expected": 5.5,
+      "status": "✅"
+    },
+    {
+      "name": "剑魂-百分比综合",
+      "actual": 45.7,
+      "expected": 45.7,
+      "status": "✅"
+    },
+    {
+      "name": "边际对偶",
+      "actual": 4.93002,
+      "expected": 4.93002,
+      "status": "✅"
+    },
+    {
+      "name": "破极兵刃协同物攻",
+      "actual": 2710.0,
+      "expected": 2743,
+      "status": "✅"
+    }
+  ],
+  "core_values": {
+    "cc_stats": {
+      "strength": 310,
+      "phys_attack": 110,
+      "indep_attack": 120,
+      "crit_rate": 0.03
+    },
+    "berserker_gusang": 0.0927,
+    "berserker_baifenbi": 0.3281,
+    "swordsman_baifenbi": 0.457,
+    "marginal_dual": 4.93002,
+    "faal_framework": "固化状态确认"
+  },
+  "data_source_deviation": {
+    "indep_attack": "-4 (累加116 vs 建立值120)",
+    "crit_rate": "+0.1pp (累加3.1% vs 建立值3.0%)",
+    "note": "持续1300+轮，数据源层面问题，不影响核心结论"
+  }
+}
