@@ -1,0 +1,126 @@
+{
+  "version": "v1576",
+  "timestamp": "2026-07-05T07:32:00+08:00",
+  "total": 17,
+  "passed": 17,
+  "failed": 0,
+  "pass_rate": 1.0,
+  "checks": [
+    {
+      "name": "CC套_力量",
+      "expected": 310,
+      "got": 310,
+      "pass": true
+    },
+    {
+      "name": "CC套_物理攻击",
+      "expected": 110,
+      "got": 110,
+      "pass": true
+    },
+    {
+      "name": "CC套_独立攻击",
+      "expected": 120,
+      "got": 120,
+      "pass": true
+    },
+    {
+      "name": "CC套_暴击率",
+      "expected": 3.0,
+      "got": 3.0,
+      "pass": true
+    },
+    {
+      "name": "狂战士_固伤综合",
+      "expected": 9.27,
+      "got": 9.27,
+      "pass": true
+    },
+    {
+      "name": "狂战士_百分比综合",
+      "expected": 32.81,
+      "got": 32.81,
+      "pass": true
+    },
+    {
+      "name": "剑魂_百分比综合",
+      "expected": 45.7,
+      "got": 45.7,
+      "pass": true
+    },
+    {
+      "name": "边际对偶",
+      "expected": 4.93002,
+      "got": 4.93002,
+      "pass": true
+    },
+    {
+      "name": "破极兵刃协同物攻",
+      "expected": 2743,
+      "got": 2743,
+      "pass": true
+    },
+    {
+      "name": "FAAL三阶七维框架",
+      "expected": 1,
+      "got": 1,
+      "pass": true
+    },
+    {
+      "name": "三级级联放大链模型",
+      "expected": 1,
+      "got": 1,
+      "pass": true
+    },
+    {
+      "name": "装备加成三原则元理论",
+      "expected": 1,
+      "got": 1,
+      "pass": true
+    },
+    {
+      "name": "独立攻击偏差",
+      "expected": -4,
+      "got": -4,
+      "pass": true
+    },
+    {
+      "name": "暴击率偏差",
+      "expected": 0.1,
+      "got": 0.1,
+      "pass": true
+    },
+    {
+      "name": "核心数据零漂移",
+      "expected": 1,
+      "got": 1,
+      "pass": true
+    },
+    {
+      "name": "自我进化边界遵守",
+      "expected": 1,
+      "got": 1,
+      "pass": true
+    },
+    {
+      "name": "FAAL框架_不可逆",
+      "expected": 1,
+      "got": 1,
+      "pass": true
+    }
+  ],
+  "cc_set": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker_fixed": 9.27,
+  "berserker_pct": 32.81,
+  "swordsman_pct": 45.7,
+  "marginal_duality": 4.93002,
+  "pjbz_pat": 2743,
+  "consecutive_rounds": "102 (1475→v1576)",
+  "core_drift": "零漂移",
+  "evolution_boundary": "持续遵守"
+}
