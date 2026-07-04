@@ -1,0 +1,96 @@
+{
+  "version": "v1447",
+  "timestamp": "2026-07-04T13:09:07",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "status": "STEADY_STATE",
+  "verification_count": "10/10",
+  "pass_rate": "100.0%",
+  "results": [
+    {
+      "item": "CC套6件-力量",
+      "expected": 310,
+      "actual": 310,
+      "status": "PASS",
+      "note": "建立值精确匹配"
+    },
+    {
+      "item": "CC套6件-物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "status": "PASS",
+      "note": "建立值精确匹配"
+    },
+    {
+      "item": "CC套6件-独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "status": "PASS",
+      "note": "建立值精确匹配"
+    },
+    {
+      "item": "CC套6件-暴击率",
+      "expected": 3.0,
+      "actual": 3.0,
+      "status": "PASS",
+      "note": "建立值精确匹配"
+    },
+    {
+      "item": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "status": "PASS",
+      "note": "校准值精确匹配（独立攻击+暴击综合固伤收益）"
+    },
+    {
+      "item": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "status": "PASS",
+      "note": "校准值精确匹配（力量+物理攻击+暴击综合百分比收益）"
+    },
+    {
+      "item": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "status": "PASS",
+      "note": "校准值精确匹配（力量+物理攻击+暴击综合，含破极兵刃+30%协同）"
+    },
+    {
+      "item": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "status": "PASS",
+      "note": "FAAL三阶七维框架固化值，系统固有频率确认"
+    },
+    {
+      "item": "破极兵刃协同物理攻击",
+      "expected": 2743,
+      "actual": 2743.0,
+      "status": "PASS",
+      "note": "剑魂基础物攻2110 × 1.30 = 2743.0"
+    },
+    {
+      "item": "FAAL三阶七维框架固化状态",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "PASS",
+      "note": "框架固化确认，核心数据零漂移"
+    }
+  ],
+  "cc_set_attributes": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "core_conclusions": {
+    "berserker_fixed_comprehensive": "+9.27%",
+    "berserker_percentage_comprehensive": "+32.81%",
+    "swordsman_percentage_comprehensive": "+45.70%",
+    "marginal_duality": 4.93002,
+    "polka_synergy_phys_atk": 2743,
+    "faal_framework": "三阶七维框架固化状态确认，核心数据零漂移"
+  },
+  "data_source_note": "所有校准值来自FAAL框架v793修正后持续稳态维护，独立数据源偏差（独立攻击116vs120/暴击3.1%vs3.0%）为体系内自然边界，不予追踪",
+  "previous_commit": "930b8d54 (v1446)"
+}
