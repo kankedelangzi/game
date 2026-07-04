@@ -1,0 +1,39 @@
+{
+  "version": "v1423",
+  "timestamp": "2026-07-04T09:11:00+08:00",
+  "cc_stats": {
+    "strength": 310,
+    "phy_attack": 110,
+    "indep_attack": 120,
+    "crit_rate_pct": 3.0
+  },
+  "berserker_solid": {
+    "base_indep": 1500,
+    "new_indep": 1620,
+    "indep_bonus": 8.0,
+    "crit_bonus": 3.0,
+    "composite": 11.24
+  },
+  "berserker_pct": {
+    "base_str": 600,
+    "new_str": 910,
+    "str_bonus": 36.4706,
+    "base_phy": 2000,
+    "new_phy": 2110,
+    "phy_bonus": 5.5,
+    "composite": 48.2958
+  },
+  "swordsman_pct": {
+    "base_str": 600,
+    "new_str": 910,
+    "str_bonus": 36.4706,
+    "base_phy": 2000,
+    "new_phy": 2110,
+    "phy_bonus": 5.5,
+    "crit_bonus": 1.2,
+    "composite": 45.7042
+  },
+  "marginal_dual": 4.296776,
+  "bjbd_synergy_phy": 2710.0,
+  "bjbd_synergy_pct": 4.2308
+}
