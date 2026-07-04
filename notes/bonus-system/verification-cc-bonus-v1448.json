@@ -1,0 +1,46 @@
+{
+  "version": "v1448",
+  "timestamp": "2026-07-04 13:13:44",
+  "verification": {
+    "cc_6pc_strength": {
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    "cc_6pc_phy_attack": {
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    "cc_6pc_indep_attack": {
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    "cc_6pc_crit_rate": {
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    "berserker_fixed_gain": {
+      "expected": 9.27,
+      "actual": 49.5,
+      "pass": false
+    },
+    "berserker_percent_gain": {
+      "expected": 32.81,
+      "actual": 131.59,
+      "pass": false
+    },
+    "swordsman_percent_gain": {
+      "expected": 45.7,
+      "actual": 134.67,
+      "pass": false
+    },
+    "marginal_ratio": {
+      "expected": 4.93,
+      "actual": 2.7205,
+      "pass": false
+    }
+  }
+}
