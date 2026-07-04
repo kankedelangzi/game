@@ -1,0 +1,25 @@
+{
+  "version": "v1482",
+  "timestamp": "2026-07-04 18:26:29",
+  "cc_set_attrs": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 0.03
+  },
+  "berserker": {
+    "gushang_total_pct": 9.27,
+    "bai_fenli_total_pct": 32.81,
+    "ind_gain_pct": 8.0,
+    "crit_gain_pct": 1.18
+  },
+  "swordsman": {
+    "bai_fenli_total_pct": 45.7,
+    "bjj_synergy_phy_atk": 2743
+  },
+  "marginal_pair": 4.929881,
+  "faal_framework": "三阶七维框架固化状态确认",
+  "core_data_drift": "零漂移",
+  "verification_pass_rate": "100%",
+  "git_push": "进行中"
+}
