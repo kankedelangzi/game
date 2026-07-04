@@ -1,0 +1,35 @@
+{
+  "version": "v1438",
+  "timestamp": "2026-07-04T11:45:00+08:00",
+  "passed": 10,
+  "total": 10,
+  "status": "✅",
+  "cc_set_6p": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击": 0.03
+  },
+  "berserker": {
+    "fixed_bonus": "+9.27%",
+    "percent_bonus": "+32.81%"
+  },
+  "swordsman": {
+    "percent_bonus": "+45.70%"
+  },
+  "marginal_dual": 4.930020,
+  "poji_synergy_attk": 2743,
+  "faal_status": "三阶七维框架固化",
+  "checks": [
+    {"item": "力量+310", "result": "✅"},
+    {"item": "物理攻击+110", "result": "✅"},
+    {"item": "独立攻击+120", "result": "✅"},
+    {"item": "暴击+3%", "result": "✅"},
+    {"item": "狂战士固伤综合+9.27%", "result": "✅"},
+    {"item": "狂战士百分比综合+32.81%", "result": "✅"},
+    {"item": "剑魂百分比综合+45.70%", "result": "✅"},
+    {"item": "边际对偶4.930020", "result": "✅"},
+    {"item": "破极兵刃协同物攻2743", "result": "✅"},
+    {"item": "FAAL三阶七维框架固化", "result": "✅"}
+  ]
+}
