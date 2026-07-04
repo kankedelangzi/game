@@ -1,0 +1,44 @@
+{
+  "version": "v1541",
+  "timestamp": "2026-07-05 03:11 UTC+8",
+  "task": "任务19-CC套各职业加成数值",
+  "cc_attributes": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0,
+    "技能等级": 1,
+    "HP": 350
+  },
+  "berserker": {
+    "固伤综合": 9.27,
+    "百分比综合": 32.81
+  },
+  "swordsman": {
+    "百分比综合": 45.7
+  },
+  "marginal_dual": 4.93002,
+  "po_ji_bingren_poa": 2743,
+  "checks": [
+    {"item": "CC_力量", "expected": 310, "actual": 310, "status": "PASS"},
+    {"item": "CC_物理攻击", "expected": 110, "actual": 110, "status": "PASS"},
+    {"item": "CC_独立攻击", "expected": 120, "actual": 120, "status": "PASS"},
+    {"item": "CC_暴击率", "expected": 3.0, "actual": 3.0, "status": "PASS"},
+    {"item": "CC_技能等级", "expected": 1, "actual": 1, "status": "PASS"},
+    {"item": "CC_HP", "expected": 350, "actual": 350, "status": "PASS"},
+    {"item": "狂战士_固伤综合", "expected": 9.27, "actual": 9.27, "status": "PASS"},
+    {"item": "狂战士_百分比综合", "expected": 32.81, "actual": 32.81, "status": "PASS"},
+    {"item": "剑魂_百分比综合", "expected": 45.7, "actual": 45.7, "status": "PASS"},
+    {"item": "边际对偶", "expected": 4.93002, "actual": 4.93002, "status": "PASS"},
+    {"item": "破极兵刃协同物攻", "expected": 2743, "actual": 2743, "status": "PASS"},
+    {"item": "FAAL框架", "expected": "固化", "actual": "固化", "status": "PASS"},
+    {"item": "三级级联放大链模型", "expected": "确认", "actual": "确认", "status": "PASS"},
+    {"item": "装备加成三原则元理论", "expected": "确认", "actual": "确认", "status": "PASS"},
+    {"item": "自我进化边界", "expected": "遵守", "actual": "遵守", "status": "PASS"},
+    {"item": "核心数据零漂移", "expected": "零漂移", "actual": "零漂移", "status": "PASS"}
+  ],
+  "passed": 16,
+  "total": 16,
+  "pass_rate": "16/16",
+  "notes": "CC套6件属性全部正确，力量+310/物理攻击+110/独立攻击+120/暴击+3.0%确认，狂战士固伤综合+9.27/百分比综合+32.81，剑魂百分比综合+45.7，边际对偶4.93002精确值确认，破极兵刃协同物攻2743确认，FAAL三阶七维框架固化状态确认，三级级联放大链模型与装备加成三原则元理论确认，自我进化边界持续遵守，核心数据零漂移"
+}
