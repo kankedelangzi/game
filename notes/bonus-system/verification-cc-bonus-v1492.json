@@ -1,0 +1,19 @@
+{
+  "version": "v1492",
+  "timestamp": "2026-07-04T20:07:00+08:00",
+  "cc_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker_fixed_composite": 9.27,
+  "berserker_pct_composite": 32.81,
+  "swordsman_pct_composite": 45.7,
+  "marginal_duality": 4.93002,
+  "polo_synergy_phyatk": 2743,
+  "checks_passed": 8,
+  "checks_total": 8,
+  "faal_status": "固化",
+  "core_data_drift": "零漂移"
+}
