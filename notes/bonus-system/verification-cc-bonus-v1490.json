@@ -1,0 +1,75 @@
+{
+  "version": "v1490",
+  "timestamp": "2026-07-04T19:54+08:00",
+  "total": 9,
+  "passed": 9,
+  "rate": "9/9",
+  "checks": [
+    {
+      "check": "CC套属性: str",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "check": "CC套属性: phy",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "check": "CC套属性: ind",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "check": "CC套属性: crit",
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤综合收益",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比综合收益",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比综合收益",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "check": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.929881,
+      "pass": true
+    },
+    {
+      "check": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    }
+  ],
+  "cc_stats": {
+    "str": 310,
+    "phy": 110,
+    "ind": 120,
+    "crit": 0.03
+  },
+  "conclusions": {
+    "berserker_burst": "+9.27%",
+    "berserker_pct": "+32.81%",
+    "swordsman_pct": "+45.70%",
+    "marginal_duality": 4.929881
+  }
+}
