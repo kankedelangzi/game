@@ -1,0 +1,110 @@
+{
+  "version": "v1535",
+  "timestamp": "2026-07-05T02:38:00+08:00",
+  "task": "CC套（宫廷套装）各职业加成数值 - 稳态核查",
+  "total_checks": 14,
+  "passed": 14,
+  "pass_rate": "14/14",
+  "cc_set_attributes": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker_fixed": 9.27,
+  "berserker_pct": 32.81,
+  "swordsman_pct": 45.7,
+  "marginal_dual": 4.93002,
+  "breaking_point_phys": 2743,
+  "faal_framework": "固化",
+  "three_level_cascade": "确认",
+  "equipment_bonus_triple_principle": "确认",
+  "zero_drift": true,
+  "self_evolution_boundary": true,
+  "checks": [
+    {
+      "check": "CC套-力量",
+      "expected": 310,
+      "actual": 310,
+      "status": "PASS"
+    },
+    {
+      "check": "CC套-物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "status": "PASS"
+    },
+    {
+      "check": "CC套-独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "status": "PASS"
+    },
+    {
+      "check": "CC套-暴击率",
+      "expected": 3.0,
+      "actual": 3.0,
+      "status": "PASS"
+    },
+    {
+      "check": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "status": "PASS"
+    },
+    {
+      "check": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "status": "PASS"
+    },
+    {
+      "check": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "status": "PASS"
+    },
+    {
+      "check": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "status": "PASS"
+    },
+    {
+      "check": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "status": "PASS"
+    },
+    {
+      "check": "FAAL框架固化",
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    {
+      "check": "三级级联放大链模型",
+      "expected": "确认",
+      "actual": "确认",
+      "status": "PASS"
+    },
+    {
+      "check": "装备加成三原则元理论",
+      "expected": "确认",
+      "actual": "确认",
+      "status": "PASS"
+    },
+    {
+      "check": "核心数据零漂移",
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    {
+      "check": "自我进化边界遵守",
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    }
+  ]
+}
