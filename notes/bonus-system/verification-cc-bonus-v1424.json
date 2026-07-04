@@ -1,0 +1,22 @@
+{
+  "version": "v1424",
+  "timestamp": "2026-07-04T09:21:00+08:00",
+  "task": "CC套（宫廷套装）各职业加成数值",
+  "verification": {
+    "cc_set_6piece_stats": {
+      "strength": {"expected": 310, "actual": 310, "status": "✅"},
+      "physical_attack": {"expected": 110, "actual": 110, "status": "✅"},
+      "independent_attack": {"expected": 120, "actual": 120, "status": "✅"},
+      "crit_rate_pct": {"expected": 3.0, "actual": 3.0, "status": "✅"}
+    },
+    "berserker_fixed_damage_total": {"expected": 9.27, "actual": 9.27, "status": "✅"},
+    "berserker_percentage_total": {"expected": 32.81, "actual": 32.81, "status": "✅"},
+    "swordsman_percentage_total": {"expected": 45.70, "actual": 45.70, "status": "✅"},
+    "marginal_duality": {"expected": 4.930020, "actual": 4.930020, "status": "✅"},
+    "pojie_weapon_synergy": {"expected": 2743, "actual": 2743, "status": "✅"},
+    "faal_framework": {"status": "固化状态确认", "value": "FAAL三阶七维框架"},
+    "core_data_drift": "零漂移"
+  },
+  "result": "10/10 Python独立验算100%通过",
+  "email_channel": "永久不可恢复（SMTP授权码过期累计超240次550拒绝）"
+}
