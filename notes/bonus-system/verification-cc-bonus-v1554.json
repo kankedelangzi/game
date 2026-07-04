@@ -1,0 +1,116 @@
+{
+  "version": "v1554",
+  "time": "2026-07-05 04:47",
+  "passed": 18,
+  "failed": 0,
+  "items": [
+    {
+      "name": "CC套-力量",
+      "actual": 310,
+      "expected": 310,
+      "passed": true
+    },
+    {
+      "name": "CC套-物理攻击",
+      "actual": 110,
+      "expected": 110,
+      "passed": true
+    },
+    {
+      "name": "CC套-独立攻击",
+      "actual": 120,
+      "expected": 120,
+      "passed": true
+    },
+    {
+      "name": "CC套-暴击率",
+      "actual": 0.03,
+      "expected": 0.03,
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤综合",
+      "actual": 9.27,
+      "expected": 9.27,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比综合",
+      "actual": 32.81,
+      "expected": 32.81,
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比综合",
+      "actual": 45.7,
+      "expected": 45.7,
+      "passed": true
+    },
+    {
+      "name": "边际对偶",
+      "actual": 4.93002,
+      "expected": 4.93002,
+      "passed": true
+    },
+    {
+      "name": "破极兵刃协同物攻",
+      "actual": 2743,
+      "expected": 2743,
+      "passed": true
+    },
+    {
+      "name": "核心数据漂移",
+      "actual": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "CC套属性完整",
+      "actual": 6,
+      "expected": 6,
+      "passed": true
+    },
+    {
+      "name": "边际对偶精度校验",
+      "actual": 4.93002,
+      "expected": 4.93002,
+      "passed": true
+    },
+    {
+      "name": "破极兵刃2743计算",
+      "actual": 2743.0,
+      "expected": 2743.0,
+      "passed": true
+    },
+    {
+      "name": "FAAL框架固化",
+      "actual": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "name": "三级级联放大链",
+      "actual": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "name": "装备加成三原则",
+      "actual": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "name": "自我进化边界",
+      "actual": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比45.70%",
+      "actual": 45.7,
+      "expected": 45.7,
+      "passed": true
+    }
+  ]
+}
