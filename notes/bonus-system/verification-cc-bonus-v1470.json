@@ -1,0 +1,27 @@
+{
+  "version": "v1470",
+  "timestamp": "2026-07-04T15:51:16.432836+08:00",
+  "cc_set_attributes": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker": {
+    "damage_skill_total_gain_pct": 9.27,
+    "pct_skill_total_gain_pct": 32.81,
+    "independent_attack_gain_pct": 48.0,
+    "strength_gain_pct": 20.67,
+    "phys_attack_gain_pct": 5.5
+  },
+  "swordsman": {
+    "pct_skill_total_gain_pct": 45.7,
+    "strength_gain_pct": 20.67,
+    "phys_attack_gain_pct": 5.5,
+    "crit_gain_pct": 1.5
+  },
+  "marginal_duality": 4.93002,
+  "po_break_phy": 2743,
+  "faal_framework": "三阶七维框架固化状态确认",
+  "core_data_drift": "零漂移"
+}
