@@ -1,0 +1,106 @@
+{
+  "version": "v1527",
+  "timestamp": "2026-07-05 01:40",
+  "total_checks": 13,
+  "passed": 13,
+  "failed": 0,
+  "pass_rate": "13/13 (100%)",
+  "checks": [
+    {
+      "check": "CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "status": "PASS"
+    },
+    {
+      "check": "CC套物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "status": "PASS"
+    },
+    {
+      "check": "CC套独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "status": "PASS"
+    },
+    {
+      "check": "CC套暴击率",
+      "expected": 3.0,
+      "actual": 3.0,
+      "status": "PASS"
+    },
+    {
+      "check": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "status": "PASS"
+    },
+    {
+      "check": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "status": "PASS"
+    },
+    {
+      "check": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "status": "PASS"
+    },
+    {
+      "check": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "status": "PASS"
+    },
+    {
+      "check": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "status": "PASS"
+    },
+    {
+      "check": "FAAL三阶七维框架",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "PASS"
+    },
+    {
+      "check": "核心数据漂移",
+      "expected": "零漂移",
+      "actual": "零漂移",
+      "status": "PASS"
+    },
+    {
+      "check": "三级级联放大链模型",
+      "expected": "确认",
+      "actual": "确认",
+      "status": "PASS"
+    },
+    {
+      "check": "装备加成三原则元理论",
+      "expected": "确认",
+      "actual": "确认",
+      "status": "PASS"
+    }
+  ],
+  "cc_set_attributes": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker_fixed_bonus": 9.27,
+  "berserker_pct_bonus": 32.81,
+  "swordman_pct_bonus": 45.7,
+  "marginal_dual": 4.93002,
+  "ppjg_sync_attack": 2743,
+  "faal_status": "固化",
+  "data_drift": "零漂移",
+  "theory_layers": [
+    "FAAL三阶七维框架",
+    "三级级联放大链模型",
+    "装备加成三原则元理论"
+  ]
+}
