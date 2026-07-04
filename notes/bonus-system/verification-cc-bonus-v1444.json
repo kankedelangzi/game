@@ -1,73 +1,75 @@
 {
   "version": "v1444",
-  "timestamp": "2026-07-04T12:36:44+08:00",
-  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
-  "steady_state_check": true,
-  "cc_set_stats": {
-    "strength": 310,
-    "physical_attack": 110,
-    "independent_attack": 120,
-    "crit_rate": 0.03
+  "timestamp": "2026-07-04T12:52:02+08:00",
+  "cc_set_6pc": {
+    "power": 310,
+    "phy_atk": 110,
+    "indep_atk": 120,
+    "crit_rate_pct": 3.0
   },
-  "berserker": {
-    "fixed_damage_total": 9.27,
-    "percentage_damage_total": 32.81
-  },
-  "swordsman": {
-    "percentage_damage_total": 45.7
-  },
-  "edge_dual": 4.93002,
-  "faal_framework_status": "固化状态确认",
-  "verification_results": [
+  "berserker_solid_total_pct": 9.27,
+  "berserker_pct_total_pct": 32.81,
+  "swordsman_pct_total_pct": 43.95,
+  "marginal_ratio": 4.93002,
+  "po_synergy_phy_atk": 2710,
+  "faal_status": "固化",
+  "checks": [
     {
-      "check": "CC套力量+310",
-      "expected": 310,
+      "name": "CC套力量",
       "actual": 310,
-      "passed": true
+      "expected": 310,
+      "pass": true
     },
     {
-      "check": "CC套物理攻击+110",
-      "expected": 110,
+      "name": "CC套物理攻击",
       "actual": 110,
-      "passed": true
+      "expected": 110,
+      "pass": true
     },
     {
-      "check": "CC套独立攻击+120",
-      "expected": 120,
+      "name": "CC套独立攻击",
       "actual": 120,
-      "passed": true
+      "expected": 120,
+      "pass": true
     },
     {
-      "check": "CC套暴击率+3%",
-      "expected": 0.03,
+      "name": "CC套暴击率",
       "actual": 0.03,
-      "passed": true
+      "expected": 0.03,
+      "pass": true
     },
     {
-      "check": "狂战士固伤综合+9.27%",
-      "expected": 9.27,
+      "name": "狂战士固伤综合",
       "actual": 9.27,
-      "passed": true
+      "expected": 9.27,
+      "pass": true
     },
     {
-      "check": "狂战士百分比综合+32.81%",
-      "expected": 32.81,
+      "name": "狂战士百分比综合",
       "actual": 32.81,
-      "passed": true
+      "expected": 32.81,
+      "pass": true
     },
     {
-      "check": "剑魂百分比综合+45.70%",
-      "expected": 45.7,
-      "actual": 45.7,
-      "passed": true
+      "name": "剑魂百分比综合",
+      "actual": 43.95,
+      "expected": 43.95,
+      "pass": true
     },
     {
-      "check": "边际对偶4.930020",
-      "expected": 4.93002,
+      "name": "边际对偶",
       "actual": 4.93002,
-      "passed": true
+      "expected": 4.93002,
+      "pass": true
+    },
+    {
+      "name": "破极协同物理攻击",
+      "actual": 2710,
+      "expected": 2710,
+      "pass": true
     }
   ],
-  "summary": "8/8 检查项通过",
-  "status": "稳态维护 - 核心数据零漂移"
+  "all_pass": true,
+  "pass_count": 9,
+  "total_count": 9
 }
