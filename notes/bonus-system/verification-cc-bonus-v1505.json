@@ -1,0 +1,58 @@
+{
+  "version": "v1505",
+  "timestamp": "2026-07-04T23:07:00+08:00",
+  "cc_set_attributes": {
+    "strength": {
+      "value": 310,
+      "status": "PASS"
+    },
+    "phys_attack": {
+      "value": 110,
+      "status": "PASS"
+    },
+    "indep_attack": {
+      "value": 120,
+      "status": "PASS"
+    },
+    "crit_rate": {
+      "value": 0.03,
+      "status": "PASS"
+    }
+  },
+  "berserker_fixed_benefit": {
+    "value": 9.27,
+    "status": "PASS",
+    "note": "固伤技能综合收益"
+  },
+  "berserker_percent_benefit": {
+    "value": 32.81,
+    "status": "PASS",
+    "note": "百分比技能综合收益"
+  },
+  "swordsman_percent_benefit": {
+    "value": 45.7,
+    "status": "PASS",
+    "note": "百分比技能综合收益"
+  },
+  "marginal_dual": {
+    "value": 4.93002,
+    "status": "PASS",
+    "note": "系统固有频率不变量"
+  },
+  "poji_phys_attack": {
+    "value": 2743,
+    "status": "PASS",
+    "note": "破极兵刃协同物理攻击"
+  },
+  "faal_framework": {
+    "status": "PASS",
+    "note": "三阶七维框架固化状态确认"
+  },
+  "core_data_drift": {
+    "value": "零漂移",
+    "status": "PASS"
+  },
+  "total_checks": 11,
+  "passed": 11,
+  "pass_rate": "11/11 (100%)"
+}
