@@ -1,81 +1,28 @@
 {
   "version": "v1415",
-  "timestamp": "2026-07-04T07:47:46.345298",
-  "checks": [
-    {
-      "name": "CC套6件-力量",
-      "status": "PASS",
-      "detail": "+310",
-      "value": 310
-    },
-    {
-      "name": "CC套6件-物理攻击",
-      "status": "PASS",
-      "detail": "+110",
-      "value": 110
-    },
-    {
-      "name": "CC套6件-独立攻击",
-      "status": "PASS",
-      "detail": "+120",
-      "value": 120
-    },
-    {
-      "name": "CC套6件-暴击率",
-      "status": "PASS",
-      "detail": "+3%",
-      "value": 3
-    },
-    {
-      "name": "狂战士固伤综合",
-      "status": "PASS",
-      "detail": "+9.27%",
-      "value": 0.0927,
-      "note": "经1400+轮交叉验证的固化值"
-    },
-    {
-      "name": "狂战士百分比综合",
-      "status": "PASS",
-      "detail": "+32.81%",
-      "value": 0.3281,
-      "note": "经1400+轮交叉验证的固化值"
-    },
-    {
-      "name": "剑魂百分比综合",
-      "status": "PASS",
-      "detail": "+45.70%",
-      "value": 0.457,
-      "note": "经1400+轮交叉验证的固化值"
-    },
-    {
-      "name": "边际对偶",
-      "status": "PASS",
-      "detail": "4.930020x",
-      "value": 4.93002,
-      "note": "公式架构衍生物，FAAL框架固化"
-    },
-    {
-      "name": "破极兵刃协同物理攻击",
-      "status": "PASS",
-      "detail": "2743",
-      "value": 2743,
-      "note": "(2000+110)×1.30"
-    },
-    {
-      "name": "FAAL三阶七维框架",
-      "status": "PASS",
-      "detail": "固化状态确认",
-      "note": "设计模式/经济规律/乘区拓扑/流派分叉/版本特征"
-    },
-    {
-      "name": "核心数据零漂移",
-      "status": "PASS",
-      "detail": "CC套6件属性4/4精确匹配，核心综合值持续确认"
-    }
-  ],
-  "summary": {
-    "total": 11,
-    "passed": 11,
-    "rate": "11/11"
+  "timestamp": "2026-07-04T07:52:07.071027+08:00",
+  "cc_set": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 0.03
+  },
+  "berserker": {
+    "fixed_damage_bonus_pct": 52.44,
+    "pct_damage_bonus_pct": 143.41
+  },
+  "swordsman": {
+    "pct_damage_bonus_pct": 142.75
+  },
+  "marginal_duality": 2.734737,
+  "poje_pma": 2743,
+  "verification": {
+    "cc_6pcs_strength": 310,
+    "cc_6pcs_pma": 110,
+    "cc_6pcs_ia": 120,
+    "cc_6pcs_crt": 0.03,
+    "bers_fixed_match": false,
+    "bers_pct_match": false,
+    "sw_pct_match": false
   }
 }

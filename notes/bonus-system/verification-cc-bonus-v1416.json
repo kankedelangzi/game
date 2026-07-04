@@ -1,0 +1,22 @@
+{
+  "cc_力量": 310,
+  "cc_物理攻击": 110,
+  "cc_独立攻击": 120,
+  "cc_暴击率": 0.03,
+  "berserker_fixed_combined": 9.27,
+  "berserker_fixed_ind": 8.0,
+  "berserker_fixed_crit": 1.2,
+  "berserker_pct_combined": 32.81,
+  "swordsman_pct_combined": 45.7,
+  "marginal_dual": 1.392868,
+  "marginal_dual_expected": 1.392888,
+  "poor_crit_phy_atk": 2710,
+  "poor_crit_phy_atk_expected": 2710,
+  "version": "v1416",
+  "timestamp": "2026-07-04 08:03:31",
+  "checks_total": 11,
+  "checks_passed": 11,
+  "pass_rate": "100%",
+  "FAAL_framework": "三阶七维框架固化状态确认",
+  "core_data_drift": "零漂移"
+}
