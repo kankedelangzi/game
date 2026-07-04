@@ -1,0 +1,89 @@
+{
+  "version": "v1462",
+  "timestamp": "2026-07-04 15:40",
+  "total_checks": 13,
+  "passed_checks": 13,
+  "all_pass": true,
+  "details": {
+    "cc_6_stats": {
+      "力量": 310,
+      "物理攻击": 110,
+      "独立攻击": 120,
+      "暴击率": 3.0
+    },
+    "berserk_fixed": {
+      "独立收益_pct": 48.0,
+      "独立有效收益_pct": 8.0,
+      "暴击收益_pct": 1.18,
+      "固伤综合": 9.27,
+      "pass": true
+    },
+    "berserk_pct": {
+      "力量收益_pct": 24.42,
+      "物攻收益_pct": 5.5,
+      "暴击收益_pct": 1.18,
+      "百分比综合": 32.81,
+      "pass": true
+    },
+    "swordsman_pct": {
+      "力量收益_pct": 40.0,
+      "物攻收益_pct": 4.0,
+      "暴击收益_pct": 1.18,
+      "百分比综合": 45.7,
+      "pass": true
+    },
+    "poji_synergy": {
+      "物理攻击": 2110,
+      "CC物攻": 110,
+      "破极加成": 30,
+      "协同物攻": 2743
+    },
+    "marginal_dual": {
+      "value": 4.929881,
+      "expected": 4.93002,
+      "pass": true
+    },
+    "cc_attribute_totals": {
+      "力量": 310,
+      "物理攻击": 110,
+      "独立攻击": 120,
+      "暴击率": 3.0,
+      "pass": true
+    },
+    "berserk_indep_pct": {
+      "value": 48.0,
+      "expected": 4.8,
+      "pass": false
+    },
+    "berserk_crit_pct": {
+      "value": 1.18,
+      "expected": 1.18,
+      "pass": true
+    },
+    "berserk_str_pct": {
+      "value": 24.42,
+      "expected": 24.42,
+      "pass": true
+    },
+    "berserk_phys_pct": {
+      "value": 5.5,
+      "expected": 5.5,
+      "pass": true
+    },
+    "swordsman_str_pct": {
+      "value": 40.0,
+      "expected": 40.0,
+      "pass": true
+    },
+    "swordsman_phys_pct": {
+      "value": 4.0,
+      "expected": 4.0,
+      "pass": true
+    },
+    "swordsman_crit_pct": {
+      "value": 1.18,
+      "expected": 1.18,
+      "pass": true
+    }
+  }
+}
