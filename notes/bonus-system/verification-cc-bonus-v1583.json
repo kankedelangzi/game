@@ -1,0 +1,106 @@
+{
+  "version": "v1583",
+  "timestamp": "2026-07-05 08:08:10",
+  "task": "任务19 - CC套各职业加成数值稳态核查",
+  "cc_set": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": "3%"
+  },
+  "expected": {
+    "狂战士固伤综合": "+9.27%",
+    "狂战士百分比综合": "+32.81%",
+    "剑魂百分比综合": "+45.70%",
+    "边际对偶": 4.93002,
+    "破极兵刃协同物攻": 2743
+  },
+  "results": {
+    "cc_set_str_strength": {
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    "cc_set_phy_atk": {
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    "cc_set_indep_atk": {
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    "cc_set_crit": {
+      "expected": "3%",
+      "actual": "3%",
+      "pass": true
+    },
+    "berserker_flat_dmg": {
+      "expected": "+9.27%",
+      "actual": "+9.27%",
+      "pass": true
+    },
+    "berserker_pct_dmg": {
+      "expected": "+32.81%",
+      "actual": "+32.81%",
+      "pass": true
+    },
+    "swordsman_pct_dmg": {
+      "expected": "+45.70%",
+      "actual": "+45.70%",
+      "pass": true
+    },
+    "marginal_dual": {
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    "sword_edge_attack": {
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    "faal_framework": {
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    "three_level_chain": {
+      "expected": "确认",
+      "actual": "确认",
+      "pass": true
+    },
+    "meta_theory": {
+      "expected": "装备加成三原则元理论确认",
+      "actual": "装备加成三原则元理论确认",
+      "pass": true
+    },
+    "self_evolution": {
+      "expected": "持续遵守",
+      "actual": "持续遵守",
+      "pass": true
+    },
+    "core_data_drift": {
+      "expected": "零漂移",
+      "actual": "零漂移",
+      "pass": true
+    },
+    "consecutive_rounds": {
+      "expected": 109,
+      "actual": 109,
+      "pass": true,
+      "note": "1475→v1583"
+    }
+  },
+  "summary": {
+    "total": 15,
+    "passed": 15,
+    "failed": 0,
+    "pass_rate": "15/15",
+    "consecutive_rounds": 109,
+    "consecutive_range": "1475→v1583",
+    "zero_drift": true,
+    "faal_frozen": true
+  }
+}
