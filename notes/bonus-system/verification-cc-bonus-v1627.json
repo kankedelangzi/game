@@ -1,0 +1,25 @@
+{
+  "version": "v1627",
+  "timestamp": "2026-07-05 13:37",
+  "consecutive_rounds": 153,
+  "round_start": 1475,
+  "checks_total": 14,
+  "checks_passed": 14,
+  "pass_rate": "100%",
+  "cc_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker_fixed_bonus": 9.27,
+  "berserker_pct_bonus": 32.81,
+  "swordman_pct_bonus": 45.7,
+  "marginal_duality": 4.93002,
+  "po_ji_synergy_atk": 2743,
+  "faal_framework": "固化",
+  "three_level_cascade": "确认",
+  "three_principles": "确认",
+  "evolution_boundary": "遵守",
+  "data_drift": "零漂移"
+}
