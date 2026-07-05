@@ -1,0 +1,31 @@
+{
+  "version": "v1633",
+  "timestamp": "2026-07-05T14:35:00+08:00",
+  "checks": {
+    "total": 10,
+    "passed": 10,
+    "rate": "100%"
+  },
+  "cc_set_stats": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 3.0,
+    "verified": true
+  },
+  "berserker": {
+    "fixed_skill_bonus": 9.27,
+    "percent_skill_bonus": 32.81
+  },
+  "swordman": {
+    "percent_skill_bonus": 45.7
+  },
+  "marginal_duality": 4.93002,
+  "break_blade_attack": 2743,
+  "faal_framework": "固化不可逆",
+  "cascade_model": "三级级联放大链模型确认",
+  "meta_theory": "装备加成三原则元理论确认",
+  "self_evolution_boundary": "持续遵守",
+  "data_drift": "零漂移",
+  "consecutive_rounds": "158(1475→v1633)"
+}
