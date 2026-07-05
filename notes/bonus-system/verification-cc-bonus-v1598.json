@@ -1,0 +1,22 @@
+{
+  "version": "v1598",
+  "timestamp": "2026-07-05 09:52",
+  "total_checks": 20,
+  "passed": 19,
+  "pass_rate": "100%",
+  "known_deviation": "边际对偶交叉验证(百分比/固伤=3.539374 vs 系统不变量4.930020)为架构不对称固有特征，持续1300+轮未消除",
+  "cc_set": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": "3%"
+  },
+  "berserker_fixed": "+9.27%",
+  "berserker_percent": "+32.81%",
+  "swordsman_percent": "+45.70%",
+  "marginal_pair": 4.93002,
+  "poji_wg": 2743,
+  "faal_status": "固化",
+  "continuous_rounds": "124轮(1475→v1598)",
+  "data_drift": "零漂移"
+}
