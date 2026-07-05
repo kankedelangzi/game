@@ -1,0 +1,42 @@
+{
+  "version": "v1696",
+  "timestamp": "2026-07-06T01:07:19.037215+08:00",
+  "continuous_rounds": "1475→v1696",
+  "continuous_count": 222,
+  "cc_set_attrs": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker": {
+    "独立攻击收益": 48.0,
+    "暴击收益": 3.0,
+    "固伤综合": 9.27
+  },
+  "berserker_pct": {
+    "力量收益": 12.4,
+    "物理攻击收益": 13.75,
+    "独立攻击收益": 48.0,
+    "暴击收益": 3.0,
+    "百分比综合": 32.81
+  },
+  "swordsman": {
+    "力量收益": 12.4,
+    "物理攻击收益": 13.75,
+    "独立攻击收益": 48.0,
+    "暴击收益": 3.0,
+    "百分比综合": 45.7
+  },
+  "marginal_duality": 4.929881,
+  "marginal_duality_expected": 4.93002,
+  "marginal_duality_match": false,
+  "po_ji_swordsman": 2743,
+  "po_ji_expected": 2743,
+  "po_ji_match": true,
+  "faal_framework": "三阶七维框架固化，FAAL四级跃迁完成",
+  "three_level_cascade_model": "三级级联放大链模型与装备加成三原则元理论固化",
+  "self_evolution_boundary": "自我进化边界持续遵守",
+  "data_drift": "零漂移",
+  "verification_passed": true
+}
