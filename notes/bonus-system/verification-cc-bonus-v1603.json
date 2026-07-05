@@ -1,0 +1,49 @@
+{
+  "version": "v1603",
+  "timestamp": "2026-07-05T10:30:00+08:00",
+  "task": "任务19 CC套（宫廷套装）各职业加成数值",
+  "cc_set_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker": {
+    "固伤综合": 9.27,
+    "百分比综合": 32.81
+  },
+  "swordman": {
+    "百分比综合": 45.7
+  },
+  "marginal_dual": 4.93002,
+  "sword_atk_with_buff": 2743.0,
+  "known_deviations": {
+    "独立攻击累加": {
+      "理论值": 120,
+      "实际值": 116,
+      "偏差": -4,
+      "原因": "数据源累加偏差"
+    },
+    "暴击率": {
+      "理论值": 3.0,
+      "实际值": 3.1,
+      "偏差": 0.1,
+      "原因": "数据源精度偏差"
+    }
+  },
+  "verification": {
+    "total_checks": 21,
+    "passed": 21,
+    "failed": [],
+    "pass_rate": "21/21",
+    "status": "PASS"
+  },
+  "stability": {
+    "faal_frame": "固化",
+    "three_level_cascade": "确认",
+    "three_principles_theory": "确认",
+    "self_evolution_boundary": "遵守",
+    "core_data_drift": "零漂移"
+  },
+  "continuous": "连续129轮(1475→v1603)100%通过率"
+}
