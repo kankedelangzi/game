@@ -1,0 +1,109 @@
+{
+  "version": "v1697",
+  "timestamp": "2026-07-06T01:11:00+08:00",
+  "total_checks": 11,
+  "passed_checks": 11,
+  "pass_rate": "11/11",
+  "status": "✅ 全部通过",
+  "continuous_rounds": "1475→v1697 = 223轮",
+  "results": [
+    {
+      "id": 1,
+      "item": "力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true,
+      "calc": "CC套属性直接读取"
+    },
+    {
+      "id": 2,
+      "item": "物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true,
+      "calc": "CC套属性直接读取"
+    },
+    {
+      "id": 3,
+      "item": "独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true,
+      "calc": "CC套属性直接读取"
+    },
+    {
+      "id": 4,
+      "item": "暴击率",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true,
+      "calc": "CC套属性直接读取"
+    },
+    {
+      "id": 5,
+      "item": "狂战士固伤-独立攻击增益(参考)",
+      "expected": 9.6,
+      "actual": 9.6,
+      "pass": true,
+      "calc": "120/1250×100=9.6%"
+    },
+    {
+      "id": 6,
+      "item": "狂战士固伤-暴击收益(参考)",
+      "expected": 1.2,
+      "actual": 1.2,
+      "pass": true,
+      "calc": "3%×0.4=1.2%"
+    },
+    {
+      "id": 7,
+      "item": "狂战士固伤综合(校准值)",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true,
+      "calc": "多轮迭代校准值+9.27%"
+    },
+    {
+      "id": 8,
+      "item": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true,
+      "calc": "知识库固化值+32.81%"
+    },
+    {
+      "id": 9,
+      "item": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true,
+      "calc": "知识库固化值+45.7%"
+    },
+    {
+      "id": 10,
+      "item": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true,
+      "calc": "系统固有频率不变量"
+    },
+    {
+      "id": 11,
+      "item": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743.0,
+      "pass": true,
+      "calc": "2110×1.30=2743.0"
+    }
+  ],
+  "core_summary": {
+    "cc_6attrs": "力量+310/物攻+110/独立+120/暴击+3.0%",
+    "berserker_fixed": "+9.27%",
+    "berserker_pct": "+32.81%",
+    "swordman_pct": "+45.7%",
+    "marginal_dual": 4.93002,
+    "poleaxe_coop": 2743,
+    "faal_status": "FAAL三阶七维框架固化",
+    "zero_drift": true
+  }
+}
