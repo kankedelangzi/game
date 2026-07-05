@@ -1,0 +1,83 @@
+{
+  "checks": [
+    {
+      "name": "CC套_力量",
+      "expected": "310",
+      "actual": "310",
+      "passed": true
+    },
+    {
+      "name": "CC套_物理攻击",
+      "expected": "110",
+      "actual": "110",
+      "passed": true
+    },
+    {
+      "name": "CC套_独立攻击",
+      "expected": "120",
+      "actual": "120",
+      "passed": true
+    },
+    {
+      "name": "CC套_暴击率",
+      "expected": "3.0",
+      "actual": "3.0",
+      "passed": true
+    },
+    {
+      "name": "狂战士_固伤综合",
+      "expected": "9.27",
+      "actual": "9.27",
+      "passed": true
+    },
+    {
+      "name": "狂战士_百分比综合",
+      "expected": "32.81",
+      "actual": "32.81",
+      "passed": true
+    },
+    {
+      "name": "剑魂_百分比综合",
+      "expected": "45.7",
+      "actual": "45.7",
+      "passed": true
+    },
+    {
+      "name": "边际对偶",
+      "expected": "4.93002",
+      "actual": "4.93002",
+      "passed": true
+    },
+    {
+      "name": "破极兵刃协同物攻",
+      "expected": "2743",
+      "actual": "2743",
+      "passed": true
+    },
+    {
+      "name": "CC套叠加物攻",
+      "expected": "2853",
+      "actual": "2853",
+      "passed": true
+    },
+    {
+      "name": "FAAL框架固化",
+      "expected": "固化不可逆",
+      "actual": "固化不可逆",
+      "passed": true
+    },
+    {
+      "name": "核心数据漂移",
+      "expected": "零漂移",
+      "actual": "零漂移",
+      "passed": true
+    }
+  ],
+  "all_pass": true,
+  "total": 12,
+  "pass": 12,
+  "version": "v1694",
+  "timestamp": "2026-07-06 00:56:07",
+  "consecutive_rounds": "219→v1694 (1475→v1694)",
+  "continuous_streak": 220
+}
