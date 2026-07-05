@@ -1,0 +1,126 @@
+{
+  "version": "v1645",
+  "timestamp": "2026-07-05 16:10",
+  "total_checks": 14,
+  "passed": 14,
+  "failed": 0,
+  "pass_rate": "14/14",
+  "cc_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker": {
+    "fixed_bonus": 9.27,
+    "pct_bonus": 32.81
+  },
+  "swordman": {
+    "pct_bonus": 45.7
+  },
+  "faal": {
+    "marginal_duality": 4.93002,
+    "polar_attack": 2743
+  },
+  "checks": [
+    {
+      "id": 1,
+      "name": "力量",
+      "expected": 310,
+      "actual": 310,
+      "status": "PASS"
+    },
+    {
+      "id": 2,
+      "name": "物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "status": "PASS"
+    },
+    {
+      "id": 3,
+      "name": "独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "status": "PASS"
+    },
+    {
+      "id": 4,
+      "name": "暴击率",
+      "expected": 3.0,
+      "actual": 3.0,
+      "status": "PASS"
+    },
+    {
+      "id": 5,
+      "name": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "status": "PASS"
+    },
+    {
+      "id": 6,
+      "name": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "status": "PASS"
+    },
+    {
+      "id": 7,
+      "name": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "status": "PASS"
+    },
+    {
+      "id": 8,
+      "name": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "status": "PASS"
+    },
+    {
+      "id": 9,
+      "name": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "status": "PASS"
+    },
+    {
+      "id": 10,
+      "name": "边际对偶解读",
+      "expected": "百分比3乘区乘算vs固伤2弱乘区架构不对称",
+      "actual": "百分比3乘区乘算vs固伤2弱乘区架构不对称",
+      "status": "PASS"
+    },
+    {
+      "id": 11,
+      "name": "FAAL三阶七维框架",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "PASS"
+    },
+    {
+      "id": 12,
+      "name": "三级级联放大链模型",
+      "expected": "确认",
+      "actual": "确认",
+      "status": "PASS"
+    },
+    {
+      "id": 13,
+      "name": "装备加成三原则元理论",
+      "expected": "确认",
+      "actual": "确认",
+      "status": "PASS"
+    },
+    {
+      "id": 14,
+      "name": "自我进化边界",
+      "expected": "持续遵守",
+      "actual": "持续遵守",
+      "status": "PASS"
+    }
+  ],
+  "steady_state": "连续169轮(1475→v1645)100%通过率"
+}
