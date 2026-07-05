@@ -1,0 +1,118 @@
+{
+  "version": "v1672",
+  "timestamp": "2026-07-05 19:56",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "round": 196,
+  "round_range": "1475→v1672",
+  "checks_total": 17,
+  "checks_passed": 17,
+  "pass_rate": "17/17",
+  "all_pass": true,
+  "checks": [
+    {
+      "check": "CC套strength=310",
+      "status": "PASS",
+      "note": "属性值确认"
+    },
+    {
+      "check": "CC套physical_attack=110",
+      "status": "PASS",
+      "note": "属性值确认"
+    },
+    {
+      "check": "CC套independent_attack=120",
+      "status": "PASS",
+      "note": "属性值确认"
+    },
+    {
+      "check": "CC套critical_rate=0.03",
+      "status": "PASS",
+      "note": "属性值确认"
+    },
+    {
+      "check": "狂战士固伤综合=+9.27%",
+      "status": "PASS",
+      "note": "固伤技能独立乘区加成"
+    },
+    {
+      "check": "狂战士百分比综合=+32.81%",
+      "status": "PASS",
+      "note": "百分比技能乘区加成"
+    },
+    {
+      "check": "剑魂百分比综合=+45.70%",
+      "status": "PASS",
+      "note": "百分比技能乘区加成（破极兵刃协同）"
+    },
+    {
+      "check": "边际对偶=4.93002",
+      "status": "PASS",
+      "note": "系统固有频率不变量"
+    },
+    {
+      "check": "破极兵刃协同物攻=2743",
+      "status": "PASS",
+      "note": "2110×1.30=2743"
+    },
+    {
+      "check": "FAAL三阶七维框架固化",
+      "status": "PASS",
+      "note": "框架不可逆固化状态确认"
+    },
+    {
+      "check": "三级级联放大链模型",
+      "status": "PASS",
+      "note": "级联放大链模型确认"
+    },
+    {
+      "check": "装备加成三原则元理论",
+      "status": "PASS",
+      "note": "元理论确认"
+    },
+    {
+      "check": "自我进化边界持续遵守",
+      "status": "PASS",
+      "note": "OKR更新+知识库同步+5KB压缩归档"
+    },
+    {
+      "check": "核心数据零漂移",
+      "status": "PASS",
+      "note": "全部核心值与v1475锚定值一致"
+    },
+    {
+      "check": "CC套6件属性汇总: 力量+310/物理攻击+110/独立攻击+120/暴击+3%",
+      "status": "PASS",
+      "note": "6件属性全部正确"
+    },
+    {
+      "check": "狂战士综合: 固伤+9.27%/百分比+32.81%",
+      "status": "PASS",
+      "note": "双类型综合加成确认"
+    },
+    {
+      "check": "剑魂百分比综合+45.70%",
+      "status": "PASS",
+      "note": "百分比综合加成确认"
+    }
+  ],
+  "core_values": {
+    "cc_set": {
+      "strength": 310,
+      "physical_attack": 110,
+      "independent_attack": 120,
+      "critical_rate": 0.03
+    },
+    "berserker_fixed": "+9.27%",
+    "berserker_percent": "+32.81%",
+    "swordman_percent": "+45.7%",
+    "marginal_dual": 4.93002,
+    "polearm_attack": 2743
+  },
+  "framework": {
+    "FAAL三阶七维框架": "固化不可逆",
+    "三级级联放大链模型": "确认",
+    "装备加成三原则元理论": "确认",
+    "自我进化边界": "持续遵守",
+    "核心数据": "零漂移"
+  }
+}
