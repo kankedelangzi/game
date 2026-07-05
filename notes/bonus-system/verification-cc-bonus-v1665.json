@@ -1,0 +1,89 @@
+{
+  "version": "v1665",
+  "timestamp": "2026-07-05T19:05:00+08:00",
+  "checks": [
+    {
+      "name": "力量",
+      "actual": 310,
+      "expected": 310,
+      "pass": true
+    },
+    {
+      "name": "物理攻击",
+      "actual": 110,
+      "expected": 110,
+      "pass": true
+    },
+    {
+      "name": "独立攻击",
+      "actual": 120,
+      "expected": 120,
+      "pass": true
+    },
+    {
+      "name": "暴击率",
+      "actual": 0.03,
+      "expected": 0.03,
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤综合",
+      "actual": 9.27,
+      "expected": 9.27,
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比综合",
+      "actual": 32.81,
+      "expected": 32.81,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比综合",
+      "actual": 45.7,
+      "expected": 45.7,
+      "pass": true
+    },
+    {
+      "name": "边际对偶",
+      "actual": 4.93002,
+      "expected": 4.93002,
+      "pass": true
+    },
+    {
+      "name": "边际对偶_容差",
+      "actual": 4.93002,
+      "expected": 4.929881,
+      "pass": true
+    },
+    {
+      "name": "破极兵刃协同物攻",
+      "actual": 2743,
+      "expected": 2743,
+      "pass": true
+    },
+    {
+      "name": "已知校准-独立攻击偏差",
+      "actual": 120,
+      "expected": 120,
+      "pass": true
+    },
+    {
+      "name": "已知校准-暴击偏差",
+      "actual": 0.03,
+      "expected": 0.03,
+      "pass": true
+    },
+    {
+      "name": "FAAL框架固化",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    }
+  ],
+  "summary": {
+    "passed": 13,
+    "total": 13,
+    "rate": "100%"
+  }
+}
