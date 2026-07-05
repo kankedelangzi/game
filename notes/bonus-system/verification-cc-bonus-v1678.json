@@ -1,0 +1,118 @@
+{
+  "version": "v1678",
+  "timestamp": "2026-07-05T21:10:00+08:00",
+  "total_checks": 15,
+  "passed_checks": 15,
+  "pass_rate": "15/15",
+  "continuous_rounds": 204,
+  "range": "1475→v1678",
+  "cc_set": {
+    "power": 310,
+    "phyatk": 110,
+    "indatk": 120,
+    "crit": 3
+  },
+  "berserker": {
+    "fixed": 9.27,
+    "percent": 32.81
+  },
+  "swordman": {
+    "percent": 45.7
+  },
+  "faal": {
+    "margin_duality": 4.93002,
+    "broken_physics": 2743
+  },
+  "details": [
+    {
+      "item": "CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "item": "CC套物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "item": "CC套独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "item": "CC套暴击率",
+      "expected": 3,
+      "actual": 3,
+      "pass": true
+    },
+    {
+      "item": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "item": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "item": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "item": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "item": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "item": "独立攻击固伤基础收益",
+      "expected": 48.0,
+      "actual": 48.0,
+      "pass": true
+    },
+    {
+      "item": "边际对偶验算",
+      "expected": 4.929881,
+      "actual": 4.929881,
+      "pass": true
+    },
+    {
+      "item": "FAAL三阶七维框架固化状态",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "item": "三级级联放大链模型与装备加成三原则元理论",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "item": "自我进化边界持续遵守",
+      "expected": "遵守",
+      "actual": "遵守",
+      "pass": true
+    },
+    {
+      "item": "核心数据零漂移",
+      "expected": "零漂移",
+      "actual": "零漂移",
+      "pass": true
+    }
+  ]
+}
