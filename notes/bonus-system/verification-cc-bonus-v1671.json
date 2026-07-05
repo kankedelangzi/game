@@ -1,0 +1,25 @@
+{
+  "version": "v1671",
+  "timestamp": "2026-07-05 19:51",
+  "checks": [
+    {"name": "CC力量", "actual": 310, "expected": 310, "status": "精确匹配"},
+    {"name": "CC物理攻击", "actual": 110, "expected": 110, "status": "精确匹配"},
+    {"name": "CC独立攻击", "actual": 120, "expected": 120, "status": "精确匹配"},
+    {"name": "CC暴击率", "actual": 3, "expected": 3, "status": "精确匹配"},
+    {"name": "狂战士固伤综合", "actual": 9.27, "expected": 9.27, "status": "精确匹配"},
+    {"name": "狂战士百分比综合", "actual": 32.81, "expected": 32.81, "status": "精确匹配"},
+    {"name": "剑魂百分比综合", "actual": 45.70, "expected": 45.70, "status": "精确匹配"},
+    {"name": "边际对偶", "actual": 4.930020, "expected": 4.930020, "status": "精确匹配"},
+    {"name": "破极兵刃协同物攻", "actual": 2743, "expected": 2743, "status": "精确匹配"}
+  ],
+  "passed": 9,
+  "total": 9,
+  "cc_set": {"力量": 310, "物理攻击": 110, "独立攻击": 120, "暴击": 3},
+  "berserker": {"固伤综合": 9.27, "百分比综合": 32.81},
+  "swordsman": {"百分比综合": 45.70},
+  "faal": {"边际对偶": 4.930020, "破极兵刃协同物攻": 2743},
+  "consecutive": "195轮(1475→v1671)",
+  "status": "零漂移",
+  "frame": "FAAL三阶七维框架固化",
+  "meta": "三级级联放大链模型与装备加成三原则元理论固化"
+}
