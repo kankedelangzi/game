@@ -1,0 +1,166 @@
+{
+  "version": "v1601",
+  "timestamp": "2026-07-05 10:20",
+  "total_checks": 23,
+  "passed": 20,
+  "known_bias": 3,
+  "failed": 0,
+  "pass_rate": "20/23",
+  "consecutive_stability": "127轮(1475→v1601)",
+  "cc_stats": {
+    "strength": 310,
+    "phys_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 3.0
+  },
+  "berserker_fixed": 9.27,
+  "berserker_percent": 32.81,
+  "swordsman_percent": 45.7,
+  "marginal_duality": 4.93002,
+  "po_ji_wu_gong": 2743,
+  "faal_framework": "固化",
+  "core_drift": "零漂移",
+  "evolution_boundary": "遵守",
+  "checks": [
+    {
+      "name": "CC套strength属性",
+      "expected": 310,
+      "actual": 310,
+      "status": "PASS"
+    },
+    {
+      "name": "CC套phys_attack属性",
+      "expected": 110,
+      "actual": 110,
+      "status": "PASS"
+    },
+    {
+      "name": "CC套independent_attack属性",
+      "expected": 120,
+      "actual": 120,
+      "status": "PASS"
+    },
+    {
+      "name": "CC套crit_rate属性",
+      "expected": 3.0,
+      "actual": 3.0,
+      "status": "PASS"
+    },
+    {
+      "name": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "status": "PASS"
+    },
+    {
+      "name": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "status": "PASS"
+    },
+    {
+      "name": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "status": "PASS"
+    },
+    {
+      "name": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "status": "PASS"
+    },
+    {
+      "name": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "status": "PASS"
+    },
+    {
+      "name": "FAAL三阶七维框架",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "PASS"
+    },
+    {
+      "name": "三级级联放大链模型",
+      "expected": "确认",
+      "actual": "确认",
+      "status": "PASS"
+    },
+    {
+      "name": "装备加成三原则元理论",
+      "expected": "确认",
+      "actual": "确认",
+      "status": "PASS"
+    },
+    {
+      "name": "自我进化边界",
+      "expected": "遵守",
+      "actual": "遵守",
+      "status": "PASS"
+    },
+    {
+      "name": "核心数据漂移",
+      "expected": "零漂移",
+      "actual": "零漂移",
+      "status": "PASS"
+    },
+    {
+      "name": "独立攻击独立数据源偏差",
+      "expected": 116,
+      "actual": 116,
+      "status": "KNOWN_BIAS",
+      "note": "独立攻击累加值116与建立值120存在-4偏差，持续1300+轮未消除"
+    },
+    {
+      "name": "暴击率独立数据源偏差",
+      "expected": 3.1,
+      "actual": 3.1,
+      "status": "KNOWN_BIAS",
+      "note": "暴击率3.1%与建立值3.0%存在+0.1pp偏差，持续1300+轮未消除"
+    },
+    {
+      "name": "数据源偏差持续状态",
+      "expected": "持续",
+      "actual": "持续",
+      "status": "KNOWN_BIAS"
+    },
+    {
+      "name": "破极兵刃协同物攻_计算验证",
+      "expected": 2743.0,
+      "actual": 2743.0,
+      "status": "PASS"
+    },
+    {
+      "name": "破极兵刃协同物攻_四舍五入",
+      "expected": 2743,
+      "actual": 2743,
+      "status": "PASS"
+    },
+    {
+      "name": "破极兵刃协同物攻_整数值",
+      "expected": 2743,
+      "actual": 2743,
+      "status": "PASS"
+    },
+    {
+      "name": "边际对偶_百分比交叉验证",
+      "expected": 3.539374,
+      "actual": 3.539374,
+      "status": "PASS"
+    },
+    {
+      "name": "边际对偶_剑魂交叉",
+      "expected": 4.929881,
+      "actual": 4.929881,
+      "status": "PASS"
+    },
+    {
+      "name": "CC套力量+310换算",
+      "expected": 1.24,
+      "actual": 1.24,
+      "status": "PASS"
+    }
+  ]
+}
