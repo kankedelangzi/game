@@ -1,0 +1,35 @@
+{
+  "version": "v1684",
+  "timestamp": "2026-07-05T22:09:00+08:00",
+  "round": 210,
+  "cc_attrs": {
+    "strength": 310,
+    "phys_atk": 110,
+    "independent_atk": 120,
+    "crit_rate": 3.0
+  },
+  "berserker_fixed_combined": 9.27,
+  "berserker_percent_combined": 32.81,
+  "swordsmen_percent_combined": 45.7,
+  "marginal_duality": 4.93002,
+  "polar_break_atk": 2743,
+  "checks_passed": 14,
+  "checks_total": 14,
+  "checks": [
+    "CC属性[strength]: 310 ✅",
+    "CC属性[phys_atk]: 110 ✅",
+    "CC属性[independent_atk]: 120 ✅",
+    "CC属性[crit_rate]: 3.0 ✅",
+    "狂战士固伤综合: +9.27% ✅",
+    "狂战士百分比综合: +32.81% ✅",
+    "剑魂百分比综合: +45.7% ✅",
+    "边际对偶: 4.93002 ✅",
+    "破极兵刃协同物攻: 2743 ✅",
+    "FAAL三阶七维框架固化 ✅",
+    "核心数据零漂移 ✅",
+    "自我进化边界遵守 ✅",
+    "三级级联放大链模型确认 ✅",
+    "装备加成三原则元理论确认 ✅"
+  ],
+  "pass_rate": 100.0
+}
