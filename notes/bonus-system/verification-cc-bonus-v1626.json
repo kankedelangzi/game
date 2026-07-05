@@ -1,0 +1,40 @@
+{
+  "version": "v1626",
+  "timestamp": "2026-07-05T13:25:00+08:00",
+  "task": "CC套（宫廷套装）各职业加成数值",
+  "cc_set_attributes": {
+    "strength": 310,
+    "phys_atk": 110,
+    "independent_atk": 120,
+    "crit_rate": 3.0
+  },
+  "berserker_bonus": {
+    "fixed_dmg": 9.27,
+    "percent_dmg": 32.81
+  },
+  "swordman_bonus": {
+    "percent_dmg": 45.7
+  },
+  "marginal_duality": 4.93002,
+  "marginal_duality_crosscheck": 4.929881,
+  "po_ji_synergy_atk": 2743,
+  "faal_status": "固化",
+  "core_drift": "零漂移",
+  "self_evolution_boundary": "持续遵守",
+  "theory_confirmations": {
+    "三级级联放大链模型": "确认",
+    "装备加成三原则元理论": "确认"
+  },
+  "known_calibration_deviations": {
+    "independent_atk_cumulative": "116 vs 120 (偏差-4)",
+    "crit_rate_cumulative": "3.1% vs 3.0% (偏差+0.1pp)"
+  },
+  "verification_result": {
+    "total": 21,
+    "passed": 21,
+    "failed": 0,
+    "pass_rate": "21/21"
+  },
+  "consecutive_rounds": "152轮(1475→v1626)",
+  "git_commit": "pending"
+}
