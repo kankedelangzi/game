@@ -1,0 +1,35 @@
+{
+  "version": "v1613",
+  "timestamp": "2026-07-05 11:51",
+  "last_version": "v1612",
+  "last_rounds": 138,
+  "cc_set_attributes": {
+    "str_310": true,
+    "p_atk_110": true,
+    "indp_atk_120": true,
+    "crit_rate_3pct": true
+  },
+  "damage_bonuses": {
+    "berserker_fixed_9.27pct": true,
+    "berserker_pct_32.81pct": true,
+    "swordman_pct_45.70pct": true
+  },
+  "system_invariants": {
+    "marginal_duoid_4.930020": true,
+    "pbj_atk_2743": true,
+    "faal_three_stage_seven_dim": true,
+    "three_tier_cascade_model": true,
+    "equipment_bonus_three_principles": true,
+    "core_data_drift": false,
+    "self_evolution_boundary": true
+  },
+  "frame_status": {},
+  "summary": {
+    "total_checks": 14,
+    "passed": 13,
+    "pass_rate": "13/14",
+    "all_pass": false,
+    "consecutive_rounds": 139,
+    "consecutive_range": "(1475→v1613)"
+  }
+}
