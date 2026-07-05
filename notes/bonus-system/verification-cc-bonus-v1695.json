@@ -1,0 +1,26 @@
+{
+  "version": "v1695",
+  "timestamp": "2026-07-06T01:01:00+08:00",
+  "total_checks": 9,
+  "passed": 9,
+  "failures": 0,
+  "pass_rate": "9/9",
+  "continuous_stable": "221轮(1475→v1695)",
+  "cc_set_attributes": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率%": 3.0
+  },
+  "berserker": {
+    "固伤综合%": 9.27,
+    "百分比综合%": 32.81
+  },
+  "swordman": {
+    "百分比综合%": 45.7
+  },
+  "marginal_dual": 4.93002,
+  "pjb_synergy_phy_atk": 2743,
+  "faal_framework": "三阶七维固化",
+  "core_data_drift": "零漂移"
+}
