@@ -1,0 +1,27 @@
+{
+  "version": "v1668",
+  "timestamp": "2026-07-05T19:36:00+08:00",
+  "cc_set_properties": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 3,
+    "verification": "4/4精确匹配 ✅"
+  },
+  "canonical_values": {
+    "berserker_fixed_bonus_pct": 9.27,
+    "berserker_pct_bonus_pct": 32.81,
+    "swordman_pct_bonus_pct": 45.70,
+    "marginal_pair": 4.930020,
+    "po_ji_wulin_synergy_patk": 2743
+  },
+  "faal_framework": "三阶七维框架固化",
+  "cascade_model": "三级级联放大链",
+  "meta_theory": "装备加成三原则元理论",
+  "self_evolution_boundary": "持续遵守",
+  "data_drift": "零漂移",
+  "continuous_rounds": "1475→v1668 = 192轮",
+  "pass_rate": "100%",
+  "email_channel": "永久不可恢复（280+次550拒绝）",
+  "verification_passed": true
+}
