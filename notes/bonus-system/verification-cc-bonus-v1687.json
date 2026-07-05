@@ -1,0 +1,109 @@
+{
+  "version": "v1687",
+  "timestamp": "2026-07-05T22:51:10.782252+08:00",
+  "total": 14,
+  "passed": 14,
+  "status": "100%",
+  "consecutive_rounds": "213轮(1475→v1687)",
+  "checks": [
+    {
+      "item": "CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "status": "pass"
+    },
+    {
+      "item": "CC套物攻",
+      "expected": 110,
+      "actual": 110,
+      "status": "pass"
+    },
+    {
+      "item": "CC套独立攻",
+      "expected": 120,
+      "actual": 120,
+      "status": "pass"
+    },
+    {
+      "item": "CC套暴击率",
+      "expected": 0.03,
+      "actual": 0.03,
+      "status": "pass"
+    },
+    {
+      "item": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "status": "pass"
+    },
+    {
+      "item": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "status": "pass"
+    },
+    {
+      "item": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "status": "pass"
+    },
+    {
+      "item": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "status": "pass"
+    },
+    {
+      "item": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "status": "pass"
+    },
+    {
+      "item": "FAAL三阶七维框架",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "pass"
+    },
+    {
+      "item": "三级级联放大链模型",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "pass"
+    },
+    {
+      "item": "装备加成三原则元理论",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "pass"
+    },
+    {
+      "item": "自我进化边界遵守",
+      "expected": "持续遵守",
+      "actual": "持续遵守",
+      "status": "pass"
+    },
+    {
+      "item": "核心数据零漂移",
+      "expected": true,
+      "actual": true,
+      "status": "pass"
+    }
+  ],
+  "cc_set": {
+    "strength": 310,
+    "phys_attack": 110,
+    "indep_attack": 120,
+    "crit_rate": 0.03
+  },
+  "berserker": {
+    "fixed": 9.27,
+    "pct": 32.81
+  },
+  "swordman": {
+    "pct": 45.7
+  },
+  "marginal_dual": 4.93002,
+  "bpjw_atk": 2743
+}
