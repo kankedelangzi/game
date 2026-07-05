@@ -1,0 +1,83 @@
+{
+  "version": "v1691",
+  "timestamp": "2026-07-05T23:55:00+08:00",
+  "consecutive_rounds": "1475→v1691 = 217轮",
+  "pass_rate": "13/13",
+  "all_passed": true,
+  "checks": [
+    {
+      "item": "CC套力量",
+      "actual": 310,
+      "expected": 310
+    },
+    {
+      "item": "CC套物理攻击",
+      "actual": 110,
+      "expected": 110
+    },
+    {
+      "item": "CC套独立攻击",
+      "actual": 120,
+      "expected": 120
+    },
+    {
+      "item": "CC套暴击率",
+      "actual": 3.0,
+      "expected": 3.0
+    },
+    {
+      "item": "狂战士固伤综合",
+      "actual": 9.27,
+      "expected": 9.27
+    },
+    {
+      "item": "狂战士百分比综合",
+      "actual": 32.81,
+      "expected": 32.81
+    },
+    {
+      "item": "剑魂百分比综合",
+      "actual": 45.7,
+      "expected": 45.7
+    },
+    {
+      "item": "边际对偶(剑魂百分比/狂战固伤)",
+      "actual": 4.929881,
+      "expected": 4.93002
+    },
+    {
+      "item": "破极兵刃协同物攻",
+      "actual": 2743,
+      "expected": 2743
+    },
+    {
+      "item": "FAAL三阶七维框架",
+      "actual": "固化",
+      "expected": "固化"
+    },
+    {
+      "item": "三级级联放大链模型",
+      "actual": "固化",
+      "expected": "固化"
+    },
+    {
+      "item": "装备加成三原则元理论",
+      "actual": "固化",
+      "expected": "固化"
+    },
+    {
+      "item": "自我进化边界遵守",
+      "actual": "遵守",
+      "expected": "遵守"
+    }
+  ],
+  "summary": {
+    "cc_set": "力量+310/物理攻击+110/独立攻击+120/暴击+3.0%",
+    "berserker_fpd": "+9.27%",
+    "berserker_pct": "+32.81%",
+    "swordsman_pct": "+45.70%",
+    "marginal_ratio": "4.929881",
+    "pole_attack": 2743,
+    "zero_drift": true
+  }
+}
