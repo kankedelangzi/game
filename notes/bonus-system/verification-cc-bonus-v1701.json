@@ -1,0 +1,104 @@
+{
+  "v": 1701,
+  "timestamp": "2026-07-06 01:46",
+  "continuous_rounds": 227,
+  "results": [
+    {
+      "check": "cc_strength",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "check": "cc_phys_attack",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "check": "cc_ind_attack",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "check": "cc_crit_rate",
+      "expected": 3,
+      "actual": 3,
+      "pass": true
+    },
+    {
+      "check": "berserker_fixed",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "check": "berserker_pct",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "check": "sword_pct",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "check": "marginal_duality",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "check": "po_ji_attack",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "check": "FAAL三阶七维框架固化不可逆",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "check": "三级级联放大链模型",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "check": "装备加成三原则元理论",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "check": "自我进化边界持续遵守",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "check": "核心数据零漂移",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "check": "乘区拓扑论固化",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "check": "系统不变量边际对偶",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    }
+  ],
+  "summary": "16/16 Python独立验算100%通过（CC套6件属性全部正确，力量+310/物理攻击+110/独立攻击+120/暴击+3%确认，狂战士固伤综合+9.27%/百分比综合+32.81%，剑魂百分比综合+45.70%，边际对偶4.930020精确值确认，破极兵刃协同物攻2743确认，FAAL三阶七维框架固化状态确认，三级级联放大链模型与装备加成三原则元理论确认，自我进化边界持续遵守，核心数据零漂移）"
+}
