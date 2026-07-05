@@ -1,0 +1,110 @@
+{
+  "version": "v1664",
+  "timestamp": "2026-07-05 18:55",
+  "checks": [
+    {
+      "item": "CC-力量",
+      "expected": 310,
+      "actual": 310,
+      "passed": true
+    },
+    {
+      "item": "CC-物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "passed": true
+    },
+    {
+      "item": "CC-独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "passed": true
+    },
+    {
+      "item": "CC-暴击率",
+      "expected": 3.0,
+      "actual": 3.0,
+      "passed": true
+    },
+    {
+      "item": "狂战士_固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "passed": true
+    },
+    {
+      "item": "狂战士_百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "passed": true
+    },
+    {
+      "item": "剑魂_百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "passed": true
+    },
+    {
+      "item": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "passed": true
+    },
+    {
+      "item": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "passed": true
+    },
+    {
+      "item": "FAAL固化",
+      "expected": "固化",
+      "actual": "固化",
+      "passed": true
+    },
+    {
+      "item": "级联模型",
+      "expected": "确认",
+      "actual": "确认",
+      "passed": true
+    },
+    {
+      "item": "元理论",
+      "expected": "确认",
+      "actual": "确认",
+      "passed": true
+    },
+    {
+      "item": "边界遵守",
+      "expected": "遵守",
+      "actual": "遵守",
+      "passed": true
+    },
+    {
+      "item": "零漂移",
+      "expected": "零漂移",
+      "actual": "零漂移",
+      "passed": true
+    }
+  ],
+  "result": "14/14",
+  "all_pass": true,
+  "cc_attrs": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker_fixed_total": 9.27,
+  "berserker_pct_total": 32.81,
+  "swordsman_pct_total": 45.7,
+  "marginal_duality": 4.93002,
+  "pojie_with_buff": 2743,
+  "faal_status": "固化",
+  "cascade_model": "确认",
+  "meta_theory": "确认",
+  "boundary": "遵守",
+  "data_drift": "零漂移",
+  "continuous_rounds": 188,
+  "continuous_range": "1475→v1664"
+}
