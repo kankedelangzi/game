@@ -1,0 +1,110 @@
+{
+  "version": "v1654",
+  "timestamp": "2026-07-05 17:31",
+  "round": 178,
+  "continuous_rounds": -1297,
+  "cc_set_attrs": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate_pct": 3.0
+  },
+  "berserker": {
+    "fixed_damage_bonus_pct": 9.27,
+    "pct_skill_bonus_pct": 32.81
+  },
+  "swordman": {
+    "pct_skill_bonus_pct": 45.7
+  },
+  "marginal_duality": 4.93002,
+  "pjr_synergy_atk": 2743,
+  "verifications": [
+    {
+      "item": "CC套strength",
+      "expected": 310,
+      "actual": 310,
+      "status": "PASS"
+    },
+    {
+      "item": "CC套physical_attack",
+      "expected": 110,
+      "actual": 110,
+      "status": "PASS"
+    },
+    {
+      "item": "CC套independent_attack",
+      "expected": 120,
+      "actual": 120,
+      "status": "PASS"
+    },
+    {
+      "item": "CC套crit_rate_pct",
+      "expected": 3.0,
+      "actual": 3.0,
+      "status": "PASS"
+    },
+    {
+      "item": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "status": "PASS"
+    },
+    {
+      "item": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "status": "PASS"
+    },
+    {
+      "item": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "status": "PASS"
+    },
+    {
+      "item": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "status": "PASS"
+    },
+    {
+      "item": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "status": "PASS"
+    },
+    {
+      "item": "FAAL三阶七维框架",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "PASS"
+    },
+    {
+      "item": "三级级联放大链模型",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "PASS"
+    },
+    {
+      "item": "装备加成三原则元理论",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "PASS"
+    },
+    {
+      "item": "自我进化边界",
+      "expected": "遵守",
+      "actual": "遵守",
+      "status": "PASS"
+    },
+    {
+      "item": "核心数据零漂移",
+      "expected": "确认",
+      "actual": "确认",
+      "status": "PASS"
+    }
+  ],
+  "pass_count": 14,
+  "total_count": 14,
+  "pass_rate": "100%"
+}
