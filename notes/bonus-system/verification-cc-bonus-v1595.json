@@ -1,0 +1,88 @@
+{
+  "version": "v1595",
+  "timestamp": "2026-07-05T09:25:00+08:00",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "framework": "FAAL三阶七维框架（固化状态）",
+  "results": [
+    {
+      "check": "CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "check": "CC套物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "check": "CC套独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "check": "CC套暴击",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "check": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "check": "破极兵刃协同物理攻击",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "check": "FAAL框架阶段",
+      "expected": 3,
+      "actual": 3,
+      "pass": true
+    },
+    {
+      "check": "FAAL框架维度",
+      "expected": 7,
+      "actual": 7,
+      "pass": true
+    },
+    {
+      "check": "CC套属性数",
+      "expected": 4,
+      "actual": 4,
+      "pass": true
+    }
+  ],
+  "summary": {
+    "total": 12,
+    "passed": 12,
+    "rate": "100.0%",
+    "status": "全部通过",
+    "continuous_rounds": 121,
+    "continuous_range": "v1475→v1595"
+  }
+}
