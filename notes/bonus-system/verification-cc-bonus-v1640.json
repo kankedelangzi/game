@@ -1,0 +1,118 @@
+{
+  "version": "v1640",
+  "timestamp": "2026-07-05T15:25:00+08:00",
+  "summary": "14/14 Python独立验算通过",
+  "cc_set": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0,
+    "件数": 6
+  },
+  "berserker": {
+    "固伤综合": 9.27,
+    "百分比综合": 32.81,
+    "暴走固伤增益": 0.0,
+    "死亡左眼独立": 18,
+    "血气分流暴击": 20
+  },
+  "swordman": {
+    "百分比综合": 45.7,
+    "破极兵刃物攻加成": 30,
+    "破极兵刃协同物攻": 2743,
+    "武器精通加成": 30
+  },
+  "faal": {
+    "边际对偶": 4.93002,
+    "三级级联放大链": true,
+    "装备加成三原则元理论": true,
+    "自我进化边界": "OKR更新+知识库同步+5KB压缩归档"
+  },
+  "results": [
+    {
+      "item": "CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "item": "CC套物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "item": "CC套独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "item": "CC套暴击率",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    {
+      "item": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "item": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "item": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "item": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "item": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "item": "暴走固伤增益",
+      "expected": 0.0,
+      "actual": 0.0,
+      "pass": true
+    },
+    {
+      "item": "CC套件数",
+      "expected": 6,
+      "actual": 6,
+      "pass": true
+    },
+    {
+      "item": "死亡左眼独立攻击",
+      "expected": 18,
+      "actual": 18,
+      "pass": true
+    },
+    {
+      "item": "FAAL三级级联放大链",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "item": "装备加成三原则元理论",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    }
+  ],
+  "all_pass": true
+}
