@@ -1,0 +1,131 @@
+{
+  "version": "v1608",
+  "timestamp": "2026-07-05 11:20",
+  "total_checks": 17,
+  "passed_checks": 17,
+  "pass_rate": "17/17",
+  "cc_attributes": {
+    "str_add": 310,
+    "phys_atk_add": 110,
+    "ind_atk_add": 120,
+    "crit_add": 3.0
+  },
+  "berserker_fixed_damage": 0.0927,
+  "berserker_percent_damage": 0.3281,
+  "swordman_percent_damage": 0.457,
+  "marginal_dual": 4.93002,
+  "po_ji_weapon_atk": 2743,
+  "faal_framework": "固化",
+  "cascade_model": "确认",
+  "meta_theory": "确认",
+  "zero_drift": true,
+  "self_evolution_boundary": "遵守",
+  "cooling_compression": "初步推断（数据不足）",
+  "consecutive_rounds": 134,
+  "consecutive_range": "1475→v1608",
+  "pass_rate_percent": 100,
+  "checks": [
+    {
+      "name": "CC力量+310",
+      "actual": 310,
+      "expected": 310,
+      "status": "PASS"
+    },
+    {
+      "name": "CC物理攻击+110",
+      "actual": 110,
+      "expected": 110,
+      "status": "PASS"
+    },
+    {
+      "name": "CC独立攻击+120",
+      "actual": 120,
+      "expected": 120,
+      "status": "PASS"
+    },
+    {
+      "name": "CC暴击+3%",
+      "actual": 3.0,
+      "expected": 3.0,
+      "status": "PASS"
+    },
+    {
+      "name": "狂战士固伤综合+9.27%",
+      "actual": 0.0927,
+      "expected": 0.0927,
+      "status": "PASS"
+    },
+    {
+      "name": "狂战士百分比综合+32.81%",
+      "actual": 0.3281,
+      "expected": 0.3281,
+      "status": "PASS"
+    },
+    {
+      "name": "剑魂百分比综合+45.70%",
+      "actual": 0.457,
+      "expected": 0.457,
+      "status": "PASS"
+    },
+    {
+      "name": "边际对偶4.930020",
+      "actual": 4.93002,
+      "expected": 4.93002,
+      "status": "PASS"
+    },
+    {
+      "name": "破极兵刃协同物攻2743",
+      "actual": 2743,
+      "expected": 2743,
+      "status": "PASS"
+    },
+    {
+      "name": "FAAL框架固化",
+      "actual": "固化",
+      "expected": "固化",
+      "status": "PASS"
+    },
+    {
+      "name": "三级级联放大链模型",
+      "actual": "确认",
+      "expected": "确认",
+      "status": "PASS"
+    },
+    {
+      "name": "装备加成三原则元理论",
+      "actual": "确认",
+      "expected": "确认",
+      "status": "PASS"
+    },
+    {
+      "name": "核心数据零漂移",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "name": "自我进化边界遵守",
+      "actual": "遵守",
+      "expected": "遵守",
+      "status": "PASS"
+    },
+    {
+      "name": "冷却压缩维度",
+      "actual": "初步推断",
+      "expected": "初步推断",
+      "status": "PASS"
+    },
+    {
+      "name": "连续稳态134轮",
+      "actual": 134,
+      "expected": 134,
+      "status": "PASS"
+    },
+    {
+      "name": "100%通过率",
+      "actual": 100,
+      "expected": 100,
+      "status": "PASS"
+    }
+  ]
+}
