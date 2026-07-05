@@ -1,0 +1,101 @@
+{
+  "version": "v1680",
+  "timestamp": "2026-07-05 21:32",
+  "total_checks": 13,
+  "passed": 13,
+  "all_pass": true,
+  "consecutive_rounds": 206,
+  "round_range": "1475→v1680",
+  "cc_attrs": {
+    "strength": 310,
+    "phys_atk": 110,
+    "indep_atk": 120,
+    "crit_rate": 3.0
+  },
+  "berserker_fixed": 9.27,
+  "berserker_pct": 32.81,
+  "swordsman_pct": 45.7,
+  "marginal_duality": 4.93002,
+  "broken_blade_atk": 2743,
+  "faal_state": "固化不可逆",
+  "checks": [
+    {
+      "check": "CC套strength",
+      "expected": 310,
+      "actual": 310,
+      "status": "✅"
+    },
+    {
+      "check": "CC套phys_atk",
+      "expected": 110,
+      "actual": 110,
+      "status": "✅"
+    },
+    {
+      "check": "CC套indep_atk",
+      "expected": 120,
+      "actual": 120,
+      "status": "✅"
+    },
+    {
+      "check": "CC套crit_rate",
+      "expected": 3.0,
+      "actual": 3.0,
+      "status": "✅"
+    },
+    {
+      "check": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "status": "✅"
+    },
+    {
+      "check": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "status": "✅"
+    },
+    {
+      "check": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "status": "✅"
+    },
+    {
+      "check": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "status": "✅"
+    },
+    {
+      "check": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "status": "✅"
+    },
+    {
+      "check": "FAAL三阶七维框架",
+      "expected": "固化不可逆",
+      "actual": "固化不可逆",
+      "status": "✅"
+    },
+    {
+      "check": "三级级联放大链模型",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "✅"
+    },
+    {
+      "check": "装备加成三原则元理论",
+      "expected": "装备加成三原则元理论确认",
+      "actual": "装备加成三原则元理论确认",
+      "status": "✅"
+    },
+    {
+      "check": "自我进化边界",
+      "expected": "持续遵守",
+      "actual": "持续遵守",
+      "status": "✅"
+    }
+  ]
+}
