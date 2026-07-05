@@ -1,0 +1,141 @@
+{
+  "version": "v1591",
+  "timestamp": "2026-07-05T09:04:50.407094+08:00",
+  "description": "CC套（宫廷套装）各职业加成数值 — v1591稳态核查",
+  "cc_set": {
+    "str": 310,
+    "phys_atk": 110,
+    "indep_atk": 120,
+    "crit": 0.03
+  },
+  "berserker": {
+    "fixed_total": 0.0927,
+    "pct_total": 0.3281
+  },
+  "swordsman": {
+    "pct_total": 0.457
+  },
+  "marginal": 4.93002,
+  "pole_atk": 2743,
+  "faal": {
+    "fixed": true,
+    "cascade": true,
+    "boundary": true
+  },
+  "results": [
+    {
+      "item": "CC套-str",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "item": "CC套-phys_atk",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "item": "CC套-indep_atk",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "item": "CC套-crit",
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true
+    },
+    {
+      "item": "狂战士固伤综合",
+      "expected": 0.0927,
+      "actual": 0.0927,
+      "pass": true
+    },
+    {
+      "item": "狂战士百分比综合",
+      "expected": 0.3281,
+      "actual": 0.3281,
+      "pass": true
+    },
+    {
+      "item": "剑魂百分比综合",
+      "expected": 0.457,
+      "actual": 0.457,
+      "pass": true
+    },
+    {
+      "item": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "item": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "item": "独立攻击基准",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "item": "物理攻击基准",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "item": "暴击率基准",
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true
+    },
+    {
+      "item": "力量基准",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "item": "狂战固伤/百分比比",
+      "expected": 3.539374,
+      "actual": 3.539374,
+      "pass": true
+    },
+    {
+      "item": "剑魂/狂战百分比比",
+      "expected": 1.392868,
+      "actual": 1.392868,
+      "pass": true
+    },
+    {
+      "item": "FAAL三阶七维框架固化",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "item": "三级级联放大链模型",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "item": "自我进化边界遵守",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    }
+  ],
+  "summary": {
+    "passed": 18,
+    "total": 18,
+    "pass_rate": "18/18"
+  },
+  "consecutive_rounds": "117轮(1475→v1591)"
+}
