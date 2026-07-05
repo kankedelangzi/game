@@ -1,0 +1,27 @@
+{
+  "version": "v1606",
+  "timestamp": "2026-07-05 11:06",
+  "total_checks": 16,
+  "passed_checks": 16,
+  "pass_rate": "16/16",
+  "cc_attributes": {
+    "str_add": 310,
+    "phys_atk_add": 110,
+    "ind_atk_add": 120,
+    "crit_add": 3.0
+  },
+  "berserker_fixed_damage": 0.0927,
+  "berserker_percent_damage": 0.3281,
+  "swordman_percent_damage": 0.457,
+  "marginal_dual": 4.93002,
+  "po_ji_weapon_atk": 2743,
+  "faal_framework": "固化",
+  "cascade_model": "确认",
+  "meta_theory": "确认",
+  "zero_drift": true,
+  "self_evolution_boundary": "遵守",
+  "cooling_compression": "初步推断（数据不足）",
+  "consecutive_rounds": 132,
+  "consecutive_range": "1475→v1606",
+  "pass_rate_percent": 100
+}
