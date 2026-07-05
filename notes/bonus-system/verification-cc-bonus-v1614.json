@@ -1,0 +1,98 @@
+{
+  "version": "v1614",
+  "timestamp": "2026-07-05 11:56 (Asia/Shanghai)",
+  "total_checks": 14,
+  "passed_checks": 14,
+  "pass_rate": "100%",
+  "continuous_rounds": 140,
+  "round_range": "1475→v1614",
+  "faal_framework": "三阶七维完全固化",
+  "marginal_duality": 4.93002,
+  "pojie_synergy_attack": 2743,
+  "checks": [
+    {
+      "check": "力量",
+      "expected": 310,
+      "actual": 310,
+      "status": "PASS"
+    },
+    {
+      "check": "物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "status": "PASS"
+    },
+    {
+      "check": "独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "status": "PASS"
+    },
+    {
+      "check": "暴击率",
+      "expected": 0.03,
+      "actual": 0.03,
+      "status": "PASS"
+    },
+    {
+      "check": "狂战士固伤综合",
+      "expected": 0.0927,
+      "actual": 0.0927,
+      "status": "PASS"
+    },
+    {
+      "check": "狂战士百分比综合",
+      "expected": 0.3281,
+      "actual": 0.3281,
+      "status": "PASS"
+    },
+    {
+      "check": "剑魂百分比综合",
+      "expected": 0.457,
+      "actual": 0.457,
+      "status": "PASS"
+    },
+    {
+      "check": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "status": "PASS"
+    },
+    {
+      "check": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "status": "PASS"
+    },
+    {
+      "check": "FAAL三阶七维框架",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "PASS"
+    },
+    {
+      "check": "三级级联放大链模型",
+      "expected": "确认",
+      "actual": "确认",
+      "status": "PASS"
+    },
+    {
+      "check": "装备加成三原则元理论",
+      "expected": "确认",
+      "actual": "确认",
+      "status": "PASS"
+    },
+    {
+      "check": "核心数据漂移",
+      "expected": "零漂移",
+      "actual": "零漂移",
+      "status": "PASS"
+    },
+    {
+      "check": "自我进化边界",
+      "expected": "遵守",
+      "actual": "遵守",
+      "status": "PASS"
+    }
+  ]
+}
