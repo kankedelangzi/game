@@ -1,0 +1,86 @@
+{
+  "version": "v1656",
+  "timestamp": "2026-07-05T18:02:00+08:00",
+  "cc_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 0.03
+  },
+  "berserker_fixed_gain": 0.4944,
+  "berserker_pct_gain": 1.36385,
+  "swordman_pct_gain": 0.881947,
+  "marginal_ratio": 1.783873,
+  "expected_marginal": 4.93002,
+  "results": [
+    {
+      "name": "狂战士固伤综合",
+      "actual": 0.4944,
+      "expected": 0.0927,
+      "passed": false,
+      "diff": 0.4017
+    },
+    {
+      "name": "狂战士百分比综合",
+      "actual": 1.36385,
+      "expected": 0.3281,
+      "passed": false,
+      "diff": 1.03575
+    },
+    {
+      "name": "剑魂百分比综合",
+      "actual": 0.881947,
+      "expected": 0.457,
+      "passed": false,
+      "diff": 0.424947
+    },
+    {
+      "name": "边际对偶",
+      "actual": 1.783873,
+      "expected": 4.93002,
+      "passed": false,
+      "diff": -3.146147
+    },
+    {
+      "name": "CC力量",
+      "actual": 310,
+      "expected": 310,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "CC物理攻击",
+      "actual": 110,
+      "expected": 110,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "CC独立攻击",
+      "actual": 120,
+      "expected": 120,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "CC暴击率",
+      "actual": 0.03,
+      "expected": 0.03,
+      "passed": true,
+      "diff": 0.0
+    },
+    {
+      "name": "破极兵刃协同物攻",
+      "actual": 2110,
+      "expected": 2743,
+      "passed": false,
+      "diff": -633
+    }
+  ],
+  "passed_count": 4,
+  "total": 9,
+  "pass_rate": "4/9",
+  "continuous_rounds": 180,
+  "continuous_from": 1475,
+  "continuous_to": 1656
+}
