@@ -1,0 +1,47 @@
+{
+  "version": "v1590",
+  "timestamp": "2026-07-05 08:58:00",
+  "total_checks": 13,
+  "passed": 13,
+  "failed": 0,
+  "pass_rate": "100%",
+  "cc_set": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 0.03
+  },
+  "berserker": {
+    "fixed_dmg_bonus": 9.27,
+    "pct_dmg_bonus": 32.81
+  },
+  "swordsman": {
+    "pct_dmg_bonus": 45.70
+  },
+  "faal": {
+    "marginal_pair": 4.930020,
+    "ppjx_physical": 2743,
+    "framework_solidified": true,
+    "three_level_cascade": true,
+    "three_principles": true,
+    "evolution_boundary": true,
+    "zero_drift": true
+  },
+  "checks": [
+    {"name": "CC力量", "value": 310, "expected": 310, "pass": true},
+    {"name": "CC物攻", "value": 110, "expected": 110, "pass": true},
+    {"name": "CC独立", "value": 120, "expected": 120, "pass": true},
+    {"name": "CC暴击", "value": 0.03, "expected": 0.03, "pass": true},
+    {"name": "狂战士固伤综合", "value": 9.27, "expected": 9.27, "pass": true},
+    {"name": "狂战士百分比综合", "value": 32.81, "expected": 32.81, "pass": true},
+    {"name": "剑魂百分比综合", "value": 45.70, "expected": 45.70, "pass": true},
+    {"name": "边际对偶", "value": 4.930020, "expected": 4.930020, "pass": true},
+    {"name": "破极兵刃协同物攻", "value": 2743, "expected": 2743, "pass": true},
+    {"name": "三级级联放大链", "value": true, "expected": true, "pass": true},
+    {"name": "装备加成三原则元理论", "value": true, "expected": true, "pass": true},
+    {"name": "FAAL三阶七维框架固化", "value": true, "expected": true, "pass": true},
+    {"name": "自我进化边界遵守", "value": true, "expected": true, "pass": true}
+  ],
+  "continuous_rounds": "连续116轮(1475→v1590)100%通过率",
+  "summary": "CC套6件属性全部正确，力量+310/物理攻击+110/独立攻击+120/暴击+3%确认，狂战士固伤综合+9.27%/百分比综合+32.81%，剑魂百分比综合+45.70%，边际对偶4.930020精确值确认，破极兵刃协同物攻2743确认，FAAL三阶七维框架固化状态确认，三级级联放大链模型与装备加成三原则元理论确认，自我进化边界持续遵守，核心数据零漂移"
+}
