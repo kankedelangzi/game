@@ -1,0 +1,131 @@
+{
+  "version": "v1649",
+  "timestamp": "2026-07-05T16:33:37.757992",
+  "total_checks": 17,
+  "passed_checks": 16,
+  "pass_rate": "16/17",
+  "cc_stats": {
+    "strength": 310,
+    "p_atk": 110,
+    "independent_atk": 120,
+    "crit_rate": 3.0
+  },
+  "berserker_fixed": 9.27,
+  "berserker_percent": 32.81,
+  "swordman_percent": 45.7,
+  "marginal_dual": 4.93002,
+  "po_atk": 2743,
+  "faal_frame": {
+    "fixed_damage_chain": 9.27,
+    "percent_chain": 32.81,
+    "crit_chain": 3.0,
+    "marginal_dual": 4.93002,
+    "po_atk": 2743
+  },
+  "continuous_rounds": 173,
+  "base_round": 1475,
+  "results": [
+    {
+      "name": "力量",
+      "expected": 310,
+      "actual": 310,
+      "passed": true
+    },
+    {
+      "name": "物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "passed": true
+    },
+    {
+      "name": "独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "passed": true
+    },
+    {
+      "name": "暴击率",
+      "expected": 3.0,
+      "actual": 3.0,
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "passed": true
+    },
+    {
+      "name": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "passed": true
+    },
+    {
+      "name": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "passed": true
+    },
+    {
+      "name": "破极兵刃物攻",
+      "expected": 2743.0,
+      "actual": 2743,
+      "passed": true
+    },
+    {
+      "name": "边际对偶验证(剑魂/固伤)",
+      "expected": 4.93002,
+      "actual": 4.929881,
+      "passed": true
+    },
+    {
+      "name": "固伤独立收益",
+      "expected": 120,
+      "actual": 120.0,
+      "passed": true
+    },
+    {
+      "name": "CC套固伤边际",
+      "expected": 9.27,
+      "actual": 9.27,
+      "passed": true
+    },
+    {
+      "name": "百分比加成",
+      "expected": 20.47,
+      "actual": 19.91,
+      "passed": false
+    },
+    {
+      "name": "破极兵刃独立物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "passed": true
+    },
+    {
+      "name": "固伤链",
+      "expected": 9.27,
+      "actual": 9.27,
+      "passed": true
+    },
+    {
+      "name": "FAAL边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "passed": true
+    }
+  ]
+}
