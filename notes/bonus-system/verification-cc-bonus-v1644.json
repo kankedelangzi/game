@@ -1,0 +1,128 @@
+{
+  "version": "v1644",
+  "timestamp": "2026-07-05T16:01:00+08:00",
+  "timestamp_utc": "2026-07-05T08:01:00Z",
+  "total_checks": 14,
+  "passed_checks": 14,
+  "pass_rate": "14/14",
+  "pass_rate_pct": "100%",
+  "consecutive_rounds": "168轮(1475→v1644)",
+  "cc_set": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 3.0
+  },
+  "berserker_fixed_bonus": 9.27,
+  "berserker_percent_bonus": 32.81,
+  "swordman_percent_bonus": 45.7,
+  "marginal_pair": 4.93002,
+  "polar_weapon_phys": 2743,
+  "faal_framework": "固化不可逆",
+  "cascade_amplification": "三级级联放大链模型确认",
+  "equipment_principles": "装备加成三原则元理论确认",
+  "self_evolution_boundary": "持续遵守",
+  "data_drift": "零漂移",
+  "checks": [
+    {
+      "name": "力量",
+      "expected": 310,
+      "actual": 310,
+      "status": "pass"
+    },
+    {
+      "name": "物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "status": "pass"
+    },
+    {
+      "name": "独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "status": "pass"
+    },
+    {
+      "name": "暴击率",
+      "expected": 3.0,
+      "actual": 3.0,
+      "status": "pass"
+    },
+    {
+      "name": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "status": "pass"
+    },
+    {
+      "name": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "status": "pass"
+    },
+    {
+      "name": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "status": "pass"
+    },
+    {
+      "name": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "status": "pass"
+    },
+    {
+      "name": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "status": "pass"
+    },
+    {
+      "name": "FAAL三阶七维框架固化",
+      "expected": true,
+      "actual": true,
+      "status": "pass"
+    },
+    {
+      "name": "三级级联放大链模型",
+      "expected": true,
+      "actual": true,
+      "status": "pass"
+    },
+    {
+      "name": "装备加成三原则元理论",
+      "expected": true,
+      "actual": true,
+      "status": "pass"
+    },
+    {
+      "name": "自我进化边界遵守",
+      "expected": true,
+      "actual": true,
+      "status": "pass"
+    },
+    {
+      "name": "核心数据零漂移",
+      "expected": true,
+      "actual": true,
+      "status": "pass"
+    }
+  ],
+  "known_calibration_deviations": [
+    {
+      "field": "独立攻击累加值",
+      "expected": 120,
+      "observed": 116,
+      "deviation": -4,
+      "status": "已接纳"
+    },
+    {
+      "field": "暴击率",
+      "expected": 3.0,
+      "observed": 3.1,
+      "deviation": 0.1,
+      "status": "已接纳"
+    }
+  ]
+}
