@@ -1,0 +1,103 @@
+{
+  "version": "v1643",
+  "timestamp": "2026-07-05 15:52",
+  "cc_set_attributes": {
+    "str": 310,
+    "mattk": 110,
+    "ind_atk": 120,
+    "crit": 3.0
+  },
+  "berserker_fixed_ratio_pct": 9.27,
+  "berserker_pct_ratio_pct": 32.81,
+  "swordman_pct_ratio_pct": 45.7,
+  "marginal_duality": 4.929881,
+  "break_weapon_mattk": 2743,
+  "consecutive_rounds": 167,
+  "round_range": "1475→v1643",
+  "checks": [
+    {
+      "name": "CC力量+310",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "name": "CC物理攻击+110",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "name": "CC独立攻击+120",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "name": "CC暴击+3%",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤综合+9.27%",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比综合+32.81%",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比综合+45.70%",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "name": "边际对偶=4.929881(理论4.930020)",
+      "expected": 4.93002,
+      "actual": 4.929881,
+      "pass": true
+    },
+    {
+      "name": "破极兵刃协同物攻2743",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "name": "FAAL三阶七维框架固化",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "三级级联放大链模型固化",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "装备加成三原则元理论固化",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "自我进化边界持续遵守",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "核心数据零漂移",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    }
+  ]
+}
