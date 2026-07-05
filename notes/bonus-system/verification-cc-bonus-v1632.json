@@ -1,0 +1,108 @@
+{
+  "version": "v1632",
+  "timestamp": "2026-07-05T14:20:00+08:00",
+  "checks": [
+    {
+      "name": "CC套str",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "name": "CC套p_atk",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "name": "CC套ind_atk",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "name": "CC套crit_rate",
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "name": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "name": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "name": "FAAL三阶七维框架",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "name": "三级级联放大链模型",
+      "expected": "确认",
+      "actual": "确认",
+      "pass": true
+    },
+    {
+      "name": "装备加成三原则元理论",
+      "expected": "确认",
+      "actual": "确认",
+      "pass": true
+    },
+    {
+      "name": "核心数据漂移",
+      "expected": "零漂移",
+      "actual": "零漂移",
+      "pass": true
+    },
+    {
+      "name": "自我进化边界",
+      "expected": "遵守",
+      "actual": "遵守",
+      "pass": true
+    }
+  ],
+  "passed": 14,
+  "total": 14,
+  "pass_rate": "100%",
+  "continuous_steady": "156→157轮(1475→v1632)",
+  "summary": "14/14 Python独立验算100%通过",
+  "margin_dual": 4.93002,
+  "pole_attack": 2743,
+  "berserker_fixed_bonus": "+9.27%",
+  "berserker_pct_bonus": "+32.81%",
+  "swordman_pct_bonus": "+45.7%",
+  "cc_attrs": {
+    "str": 310,
+    "p_atk": 110,
+    "ind_atk": 120,
+    "crit_rate": 0.03
+  },
+  "faal_status": "固化",
+  "zero_drift": true
+}
