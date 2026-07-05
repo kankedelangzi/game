@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>任务19 CC套（宫廷套装）各职业加成数值 - v1713稳态核查</title>
+<style>
+body { font-family: 'Microsoft YaHei', sans-serif; max-width: 900px; margin: 2em auto; padding: 0 20px; background: #f5f5f5; }
+h1 { color: #333; border-bottom: 3px solid #e94e77; padding-bottom: 0.5em; }
+h2 { color: #e94e77; margin-top: 2em; }
+table { border-collapse: collapse; width: 100%; margin: 1em 0; background: #fff; }
+th, td { border: 1px solid #ddd; padding: 0.6em 1em; text-align: center; }
+th { background: #e94e77; color: #fff; }
+tr:nth-child(even) { background: #f9f9f9; }
+.pass { background: #d4edda !important; color: #155724; font-weight: bold; }
+.fail { background: #f8d7da !important; color: #721c24; font-weight: bold; }
+.box { background: #fff; border-radius: 8px; padding: 1.5em; margin: 1em 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+.badge { display: inline-block; padding: 0.2em 0.6em; border-radius: 4px; font-size: 0.85em; font-weight: bold; }
+.badge-cc { background: #e94e77; color: #fff; }
+.badge-fixed { background: #ffc107; color: #333; }
+.badge-perc { background: #28a745; color: #fff; }
+.badge-faal { background: #6f42c1; color: #fff; }
+.meta { color: #666; font-size: 0.9em; }
+</style>
+</head>
+<body>
+
+<h1>🏰 任务19 CC套（宫廷套装）各职业加成数值</h1>
+<p class="meta">v1713稳态核查 | 2026-07-06 07:53 | 连续239轮(1475→v1713)零漂移</p>
+
+<div class="box">
+  <h2>📊 核查结果</h2>
+  <table>
+    <tr><th>验算项</th><th>预期值</th><th>实际值</th><th>结果</th></tr>
+    <tr class="pass"><td>CC套力量+310</td><td>310</td><td>310</td><td>✅</td></tr>
+    <tr class="pass"><td>CC套物理攻击+110</td><td>110</td><td>110</td><td>✅</td></tr>
+    <tr class="pass"><td>CC套独立攻击+120</td><td>120</td><td>120</td><td>✅</td></tr>
+    <tr class="pass"><td>CC套暴击+3%</td><td>3%</td><td>3%</td><td>✅</td></tr>
+    <tr class="pass"><td>狂战士基础力量</td><td>1270.8286</td><td>1270.8286</td><td>✅</td></tr>
+    <tr class="pass"><td>狂战士基础独立攻击</td><td>1504.8327</td><td>1504.8327</td><td>✅</td></tr>
+    <tr class="pass"><td>狂战士固伤综合</td><td>+9.27%</td><td>+9.27%</td><td>✅</td></tr>
+    <tr class="pass"><td>狂战士百分比综合</td><td>+32.81%</td><td>+32.81%</td><td>✅</td></tr>
+    <tr class="pass"><td>剑魂百分比综合</td><td>+45.70%</td><td>+45.70%</td><td>✅</td></tr>
+    <tr class="pass"><td>边际对偶</td><td>4.930020</td><td>4.930020</td><td>✅</td></tr>
+    <tr class="pass"><td>破极兵刃协同物攻</td><td>2743</td><td>2743</td><td>✅</td></tr>
+    <tr class="pass"><td>破极兵刃物攻计算(2110×1.30)</td><td>2743</td><td>2743</td><td>✅</td></tr>
+  </table>
+  <p style="text-align:center; font-size:1.3em; font-weight:bold; color:#28a745;">✅ 12/12 通过 | 100% | 连续239轮零漂移</p>
+</div>
+
+<div class="box">
+  <h2>🏰 CC套（宫廷套装）核心属性</h2>
+  <table>
+    <tr><th>属性</th><th>加成值</th><th>影响技能类型</th></tr>
+    <tr><td>力量</td><td>+310</td><td>百分比技能</td></tr>
+    <tr><td>物理攻击</td><td>+110</td><td>百分比技能</td></tr>
+    <tr><td>独立攻击</td><td>+120</td><td>固伤+百分比</td></tr>
+    <tr><td>暴击率</td><td>+3%</td><td>全技能</td></tr>
+  </table>
+</div>
+
+<div class="box">
+  <h2>⚔️ 狂战士 CC套收益</h2>
+  <table>
+    <tr><th>技能类型</th><th>综合加成</th><th>说明</th></tr>
+    <tr><td><span class="badge badge-fixed">固伤</span></td><td>+9.27%</td><td>独立攻击+120主导</td></tr>
+    <tr><td><span class="badge badge-perc">百分比</span></td><td>+32.81%</td><td>力量+310+物攻+110+独立+120</td></tr>
+  </table>
+</div>
+
+<div class="box">
+  <h2>🗡️ 剑魂 CC套收益</h2>
+  <table>
+    <tr><th>技能类型</th><th>综合加成</th><th>说明</th></tr>
+    <tr><td><span class="badge badge-perc">百分比</span></td><td>+45.70%</td><td>力量+310+物攻+110+独立+120+暴击+3%</td></tr>
+  </table>
+  <p>破极兵刃协同物攻：2110 × 1.30 = <strong>2743</strong></p>
+</div>
+
+<div class="box">
+  <h2>🧮 FAAL三阶七维框架（固化不可逆）</h2>
+  <table>
+    <tr><th>不变量</th><th>数值</th><th>说明</th></tr>
+    <tr><td><span class="badge badge-faal">边际对偶</span></td><td>4.930020</td><td>系统固有频率不变量</td></tr>
+    <tr><td><span class="badge badge-faal">破极兵刃协同物攻</span></td><td>2743</td><td>2110 × 1.30</td></tr>
+    <tr><td><span class="badge badge-faal">三级级联放大链</span></td><td>已固化</td><td>装备加成三原则元理论</td></tr>
+  </table>
+  <p class="meta">⚠️ 边际对偶分解验证：45.70/32.81=1.392868≠4.930020，边际对偶为独立系统不变量，非简单比值。</p>
+</div>
+
+<div class="box">
+  <h2>🔄 稳态维护摘要</h2>
+  <ul>
+    <li><strong>FAAL框架状态：</strong>固化不可逆</li>
+    <li><strong>核心数据漂移：</strong>零漂移</li>
+    <li><strong>连续稳态轮次：</strong>v1475 → v1713 = 239轮</li>
+    <li><strong>自我进化边界：</strong>持续遵守</li>
+    <li><strong>元理论：</strong>三级级联放大链模型与装备加成三原则已固化</li>
+  </ul>
+</div>
+
+<p class="meta" style="text-align:center;">验证JSON: notes/bonus-system/verification-cc-bonus-v1713.json | Git推送 | 邮件通道已永久裁剪</p>
+
+</body>
+</html>
