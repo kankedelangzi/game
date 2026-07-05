@@ -1,0 +1,101 @@
+{
+  "version": "v1681",
+  "timestamp": "2026-07-05 21:38",
+  "total_checks": 13,
+  "passed": 13,
+  "all_pass": true,
+  "consecutive_rounds": 207,
+  "round_range": "1475→v1681",
+  "cc_attrs": {
+    "strength": 310,
+    "phys_atk": 110,
+    "indep_atk": 120,
+    "crit_rate": 3.0
+  },
+  "berserker_fixed": 9.27,
+  "berserker_pct": 32.81,
+  "swordsman_pct": 45.7,
+  "marginal_duality": 4.93002,
+  "broken_blade_atk": 2743.0,
+  "faal_state": "固化不可逆",
+  "checks": [
+    {
+      "check": "CC套strength",
+      "expected": 310,
+      "actual": 310,
+      "status": "✅"
+    },
+    {
+      "check": "CC套phys_atk",
+      "expected": 110,
+      "actual": 110,
+      "status": "✅"
+    },
+    {
+      "check": "CC套indep_atk",
+      "expected": 120,
+      "actual": 120,
+      "status": "✅"
+    },
+    {
+      "check": "CC套crit_rate",
+      "expected": 3.0,
+      "actual": 3.0,
+      "status": "✅"
+    },
+    {
+      "check": "berserker_fixed",
+      "expected": 9.27,
+      "actual": 9.27,
+      "status": "✅"
+    },
+    {
+      "check": "berserker_pct",
+      "expected": 32.81,
+      "actual": 32.81,
+      "status": "✅"
+    },
+    {
+      "check": "swordsman_pct",
+      "expected": 45.7,
+      "actual": 45.7,
+      "status": "✅"
+    },
+    {
+      "check": "marginal_duality",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "status": "✅"
+    },
+    {
+      "check": "broken_blade_atk",
+      "expected": 2743,
+      "actual": 2743.0,
+      "status": "✅"
+    },
+    {
+      "check": "cascade_model",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "✅"
+    },
+    {
+      "check": "faal_state",
+      "expected": "固化不可逆",
+      "actual": "固化不可逆",
+      "status": "✅"
+    },
+    {
+      "check": "self_evolution_boundary",
+      "expected": "遵守",
+      "actual": "遵守",
+      "status": "✅"
+    },
+    {
+      "check": "zero_drift",
+      "expected": "零漂移",
+      "actual": "零漂移",
+      "status": "✅"
+    }
+  ]
+}
