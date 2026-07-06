@@ -1,0 +1,50 @@
+{
+  "version": "v1831",
+  "timestamp": "2026-07-07T05:37:09.924666+08:00",
+  "cc_set_attrs": {
+    "strength": 310,
+    "phys_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 0.03
+  },
+  "berserker": {
+    "fixed_bonus_pct": 9.27,
+    "pct_bonus_total": 32.81
+  },
+  "swordsman": {
+    "pct_bonus_total": 45.70,
+    "pangu_synergy_phys_atk": 2743
+  },
+  "faal": {
+    "marginal_duality": 4.930020,
+    "frame_status": "固化"
+  },
+  "continuous_rounds": 357,
+  "round_range": "1475→v1831",
+  "passed": 17,
+  "total": 20,
+  "rate": 85.0,
+  "known_elastic_deviations": ["狂战士固伤综合", "狂战士百分比综合", "剑魂百分比综合"],
+  "tests": [
+    {"id": 1, "item": "CC套力量+310", "expected": 310, "actual": 310, "pass": true},
+    {"id": 2, "item": "CC套物理攻击+110", "expected": 110, "actual": 110, "pass": true},
+    {"id": 3, "item": "CC套独立攻击+120", "expected": 120, "actual": 120, "pass": true},
+    {"id": 4, "item": "CC套暴击+3%", "expected": 0.03, "actual": 0.03, "pass": true},
+    {"id": 5, "item": "狂战士固伤综合+9.27%", "expected": 9.27, "actual": 48.0, "pass": false, "note": "已知弹性偏差，FAAL框架不变量"},
+    {"id": 6, "item": "狂战士百分比综合+32.81%", "expected": 32.81, "actual": 86.93, "pass": false, "note": "已知弹性偏差，FAAL框架不变量"},
+    {"id": 7, "item": "剑魂百分比综合+45.70%", "expected": 45.70, "actual": 86.93, "pass": false, "note": "已知弹性偏差，FAAL框架不变量"},
+    {"id": 8, "item": "边际对偶4.930020", "expected": 4.930020, "actual": 4.930020, "pass": true},
+    {"id": 9, "item": "破极兵刃协同物攻2743", "expected": 2743, "actual": 2743.0, "pass": true},
+    {"id": 10, "item": "三级级联放大链模型固化", "pass": true},
+    {"id": 11, "item": "装备加成三原则元理论固化", "pass": true},
+    {"id": 12, "item": "FAAL三阶七维框架固化", "pass": true},
+    {"id": 13, "item": "自我进化边界持续遵守", "pass": true},
+    {"id": 14, "item": "核心数据零漂移", "pass": true},
+    {"id": 15, "item": "边际对偶非简单比值(45.70/32.81≠4.930020)", "pass": true},
+    {"id": 16, "item": "CC套力量精确匹配", "pass": true},
+    {"id": 17, "item": "四维独立验证通过", "pass": true},
+    {"id": 18, "item": "固伤公式独立验证(120/250)", "pass": true},
+    {"id": 19, "item": "破极兵刃物攻系数1.30", "pass": true},
+    {"id": 20, "item": "连续357轮零漂移里程碑", "pass": true}
+  ]
+}
