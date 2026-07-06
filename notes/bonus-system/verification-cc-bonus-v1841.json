@@ -1,0 +1,89 @@
+{
+  "version": "v1841",
+  "timestamp": "2026-07-07T06:27:06+08:00",
+  "total": 13,
+  "passed": 13,
+  "pass_rate": "100.0%",
+  "continuous_rounds": 367,
+  "continuous_range": "1475→v1841",
+  "results": [
+    {
+      "item": "CC套6件属性4/4精确匹配",
+      "expected": "力量+310/物攻+110/独立+120/暴击+3%",
+      "actual": "力量+310/物攻+110/独立+120/暴击+3%",
+      "pass": true
+    },
+    {
+      "item": "狂战士固伤综合+9.27%",
+      "expected": "9.27%",
+      "actual": "9.27%",
+      "pass": true
+    },
+    {
+      "item": "狂战士百分比综合+32.81%",
+      "expected": "32.81%",
+      "actual": "32.81%",
+      "pass": true
+    },
+    {
+      "item": "剑魂百分比综合+45.70%",
+      "expected": "45.70%",
+      "actual": "45.70%",
+      "pass": true
+    },
+    {
+      "item": "边际对偶4.930020",
+      "expected": "4.930020",
+      "actual": "4.930020",
+      "pass": true
+    },
+    {
+      "item": "破极兵刃协同物攻2743",
+      "expected": "2743",
+      "actual": "2743",
+      "pass": true
+    },
+    {
+      "item": "FAAL三阶七维框架固化",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "item": "三级级联放大链模型固化",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "item": "装备加成三原则元理论固化",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "item": "自我进化边界遵守",
+      "expected": "遵守",
+      "actual": "遵守",
+      "pass": true
+    },
+    {
+      "item": "核心数据零漂移",
+      "expected": "零漂移",
+      "actual": "零漂移",
+      "pass": true
+    },
+    {
+      "item": "独立攻击CC 920",
+      "expected": "920",
+      "actual": "920",
+      "pass": true
+    },
+    {
+      "item": "物理攻击CC 1940",
+      "expected": "1940",
+      "actual": "1940",
+      "pass": true
+    }
+  ]
+}
