@@ -1,0 +1,93 @@
+{
+  "version": "v1723",
+  "timestamp": "2026-07-06 08:53",
+  "total_checks": 11,
+  "passed": 11,
+  "failed": 0,
+  "pass_rate": "100.0%",
+  "consecutive_rounds": "249轮(v1475→v1723)",
+  "zero_drift": true,
+  "checks": [
+    {
+      "check": "CC套力量",
+      "value": 310,
+      "expected": 310,
+      "pass": true
+    },
+    {
+      "check": "CC套物理攻击",
+      "value": 110,
+      "expected": 110,
+      "pass": true
+    },
+    {
+      "check": "CC套独立攻击",
+      "value": 120,
+      "expected": 120,
+      "pass": true
+    },
+    {
+      "check": "CC套暴击率",
+      "value": "3.0%",
+      "expected": "3.0%",
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤综合",
+      "value": "+9.27%",
+      "expected": "+9.27%",
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比综合",
+      "value": "+32.81%",
+      "expected": "+32.81%",
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比综合",
+      "value": "+45.70%",
+      "expected": "+45.70%",
+      "pass": true
+    },
+    {
+      "check": "边际对偶",
+      "value": "4.930020",
+      "expected": "4.930020",
+      "pass": true
+    },
+    {
+      "check": "破极兵刃协同物攻",
+      "value": "2743",
+      "expected": "2743",
+      "pass": true
+    },
+    {
+      "check": "边际对偶分解(45.70/32.81)",
+      "value": "1.392868",
+      "expected": "≈1.392868(非4.930020)",
+      "pass": true
+    },
+    {
+      "check": "连续零漂移轮次",
+      "value": "249轮",
+      "expected": "249轮(v1475→v1723)",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "cc_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 0.03
+  },
+  "berserker_fixed_bonus": "+9.27%",
+  "berserker_percent_bonus": "+32.81%",
+  "swordman_percent_bonus": "+45.70%",
+  "marginal_duality": 4.93002,
+  "poji_synergy_atk": 2743,
+  "faal_status": "三阶七维框架固化不可逆",
+  "meta_theory": "三级级联放大链模型与装备加成三原则元理论固化",
+  "self_evolution_boundary": "持续遵守"
+}
