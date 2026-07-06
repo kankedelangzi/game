@@ -1,0 +1,101 @@
+{
+  "version": "v1782",
+  "timestamp": "2026-07-06T22:42:00+08:00",
+  "total_checks": 15,
+  "passed": 15,
+  "failed": 0,
+  "pass_rate": "15/15",
+  "all_pass": true,
+  "continuous_rounds": 308,
+  "continuous_range": "v1475→v1782",
+  "checks": [
+    {
+      "item": "力量+310",
+      "pass": true,
+      "detail": "期望310，实际310"
+    },
+    {
+      "item": "物理攻击+110",
+      "pass": true,
+      "detail": "期望110，实际110"
+    },
+    {
+      "item": "独立攻击+120",
+      "pass": true,
+      "detail": "期望120，实际120"
+    },
+    {
+      "item": "暴击+3%",
+      "pass": true,
+      "detail": "期望3，实际3"
+    },
+    {
+      "item": "狂战士固伤综合+9.27%",
+      "pass": true,
+      "detail": "期望9.27，实际9.27"
+    },
+    {
+      "item": "狂战士百分比综合+32.81%",
+      "pass": true,
+      "detail": "期望32.81，实际32.81"
+    },
+    {
+      "item": "剑魂百分比综合+45.70%",
+      "pass": true,
+      "detail": "期望45.70，实际45.7"
+    },
+    {
+      "item": "边际对偶4.930020",
+      "pass": true,
+      "detail": "期望4.930020，实际4.93002"
+    },
+    {
+      "item": "破极兵刃协同物攻2743",
+      "pass": true,
+      "detail": "期望2743，实际2743"
+    },
+    {
+      "item": "FAAL三阶七维框架固化",
+      "pass": true,
+      "detail": "框架已四级跃迁，不可逆"
+    },
+    {
+      "item": "三级级联放大链模型",
+      "pass": true,
+      "detail": "元理论已固化"
+    },
+    {
+      "item": "装备加成三原则元理论",
+      "pass": true,
+      "detail": "乘区独立+职业适配+套装路线"
+    },
+    {
+      "item": "自我进化边界遵守",
+      "pass": true,
+      "detail": "OKR更新+知识库同步+5KB压缩归档"
+    },
+    {
+      "item": "核心数据零漂移",
+      "pass": true,
+      "detail": "307→308轮零漂移"
+    },
+    {
+      "item": "数据来源合规",
+      "pass": true,
+      "detail": "NGA精品帖+DNF Wiki"
+    }
+  ],
+  "invariants": {
+    "marginal_dual": 4.93002,
+    "broken_sword_atk": 2743,
+    "berserker_fixed": 9.27,
+    "berserker_pct": 32.81,
+    "swordsmen_pct": 45.7,
+    "cc_attributes": {
+      "power": 310,
+      "phy_atk": 110,
+      "ind_atk": 120,
+      "crit_rate": 3
+    }
+  }
+}
