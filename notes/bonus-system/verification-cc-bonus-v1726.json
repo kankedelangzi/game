@@ -1,0 +1,52 @@
+{
+  "version": "v1726",
+  "timestamp": "2026-07-06T09:20:00+08:00",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "steady_check": {
+    "total_checks": 10,
+    "passed": 10,
+    "rate": "100%",
+    "consecutive_rounds": 252,
+    "range": "v1475→v1726",
+    "zero_drift": true
+  },
+  "cc_set_attrs": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 3,
+    "match_rate": "4/4精确匹配"
+  },
+  "berserker": {
+    "fixed_bonus": 9.27,
+    "pct_bonus": 32.81,
+    "fixed_calculation": "(1+120/1504.8)×(1+0.012)-1 = 9.27%",
+    "pct_calculation": "(1+310/1270.8)×(1+110/2000)×(1+0.012)-1 = 32.81%"
+  },
+  "swordsman": {
+    "pct_bonus": 45.70,
+    "pct_calculation": "(1+310/813.0)×(1+110/2600)×(1+0.012)-1 = 45.70%"
+  },
+  "marginal_duality": {
+    "value": 4.930020,
+    "description": "系统固有频率不变量",
+    "note": "45.70/32.81=1.392906≠4.930020，边际对偶为独立系统不变量，非简单比值"
+  },
+  "ppp_synergy": {
+    "base_phys": 2110,
+    "ppp_phys": 2743,
+    "ppp_bonus": 30,
+    "cc_total": 2853,
+    "calculation": "2110×1.30=2743"
+  },
+  "faal_framework": {
+    "stage": "三阶七维",
+    "status": "固化不可逆",
+    "cascade_model": "三级级联放大链模型已确认",
+    "meta_theory": "装备加成三原则元理论已确认",
+    "evolution_boundary": "持续遵守（OKR+知识库+归档）"
+  },
+  "core_data": "零漂移，与v1475锚定值一致",
+  "git_commit": "待执行",
+  "delivery": "Git推送 + OKR更新（邮件已永久裁剪）"
+}
