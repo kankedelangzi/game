@@ -1,0 +1,131 @@
+{
+  "version": "v1826",
+  "timestamp": "2026-07-07T04:55:00+08:00",
+  "round": 352,
+  "consecutive_rounds": "352轮(1475→v1826)",
+  "passed": 20,
+  "total": 20,
+  "pass_rate": "100%",
+  "checks": [
+    {
+      "name": "CC套strength",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "name": "CC套phy_atk",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "name": "CC套indep_atk",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "name": "CC套crit_rate",
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true
+    },
+    {
+      "name": "固伤倍率基准",
+      "expected": 3.2,
+      "actual": 3.2,
+      "pass": true
+    },
+    {
+      "name": "固伤倍率CC",
+      "expected": 3.68,
+      "actual": 3.68,
+      "pass": true
+    },
+    {
+      "name": "独立攻击CC",
+      "expected": 920,
+      "actual": 920,
+      "pass": true
+    },
+    {
+      "name": "固伤倍率提升",
+      "expected": 0.15,
+      "actual": 0.1499999999999999,
+      "pass": true
+    },
+    {
+      "name": "暴击贡献基准",
+      "expected": 0.28,
+      "actual": 0.28,
+      "pass": true
+    },
+    {
+      "name": "暴击贡献CC",
+      "expected": 0.34,
+      "actual": 0.34,
+      "pass": true
+    },
+    {
+      "name": "基础暴击率",
+      "expected": 0.14,
+      "actual": 0.14,
+      "pass": true
+    },
+    {
+      "name": "CC暴击率",
+      "expected": 0.17,
+      "actual": 0.17,
+      "pass": true
+    },
+    {
+      "name": "FAAL边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "name": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743.0,
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤综合",
+      "expected": 0.0927,
+      "actual": 0.0927,
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比综合",
+      "expected": 0.3281,
+      "actual": 0.3281,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比综合",
+      "expected": 0.457,
+      "actual": 0.457,
+      "pass": true
+    },
+    {
+      "name": "破极兵刃基础物攻",
+      "expected": 2110,
+      "actual": 2110,
+      "pass": true
+    },
+    {
+      "name": "破极兵刃加成",
+      "expected": 0.3,
+      "actual": 0.3,
+      "pass": true
+    },
+    {
+      "name": "FAAL框架固化",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    }
+  ]
+}
