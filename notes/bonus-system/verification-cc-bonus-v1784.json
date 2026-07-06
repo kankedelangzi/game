@@ -1,0 +1,116 @@
+{
+  "version": "v1784",
+  "timestamp": "2026-07-06 23:12",
+  "checks": [
+    {
+      "name": "CC套6件属性-力量",
+      "actual": 310,
+      "expected": 310,
+      "pass": true
+    },
+    {
+      "name": "CC套6件属性-物理攻击",
+      "actual": 110,
+      "expected": 110,
+      "pass": true
+    },
+    {
+      "name": "CC套6件属性-独立攻击",
+      "actual": 120,
+      "expected": 120,
+      "pass": true
+    },
+    {
+      "name": "CC套6件属性-暴击",
+      "actual": 3.0,
+      "expected": 3.0,
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤综合",
+      "actual": 9.27,
+      "expected": 9.27,
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比综合",
+      "actual": 32.81,
+      "expected": 32.81,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比综合",
+      "actual": 45.7,
+      "expected": 45.7,
+      "pass": true
+    },
+    {
+      "name": "边际对偶",
+      "actual": 4.93002,
+      "expected": 4.93002,
+      "pass": true
+    },
+    {
+      "name": "破极兵刃协同物攻",
+      "actual": 2743,
+      "expected": 2743,
+      "pass": true
+    },
+    {
+      "name": "FAAL三阶七维框架固化",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "三级级联放大链模型",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "装备加成三原则元理论",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "自我进化边界遵守",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "核心数据零漂移",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "弹性偏差体系",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    }
+  ],
+  "passed": 15,
+  "total": 15,
+  "cc_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击": 3.0
+  },
+  "berserker": {
+    "fixed": 9.27,
+    "pct": 32.81
+  },
+  "sword": {
+    "pct": 45.7
+  },
+  "faal": {
+    "margin_dual": 4.93002,
+    "pojian_atk": 2743
+  },
+  "continuous": 310
+}
