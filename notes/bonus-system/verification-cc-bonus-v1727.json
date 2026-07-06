@@ -1,0 +1,26 @@
+{
+  "version": "v1727",
+  "timestamp": "2026-07-06 09:36:00",
+  "total_checks": 14,
+  "passed": 14,
+  "failed": 0,
+  "pass_rate": "100%",
+  "consecutive_rounds": "253轮(1475→v1727)",
+  "cc_set_attrs": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击": "3%"
+  },
+  "berserker": {
+    "固伤综合": "+9.27%",
+    "百分比综合": "+32.81%"
+  },
+  "swordman": {
+    "百分比综合": "+45.70%"
+  },
+  "marginal_duality": 4.93002,
+  "ppj_synergy": 2743,
+  "faal_framework": "固化不可逆",
+  "zero_drift": true
+}
