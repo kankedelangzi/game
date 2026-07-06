@@ -1,0 +1,154 @@
+{
+  "version": "v1730",
+  "timestamp": "2026-07-06T10:07:00+08:00",
+  "total": 22,
+  "passed": 22,
+  "failed": 0,
+  "pass_rate": "22/22",
+  "cc_6piece": "力量+310/物理攻击+110/独立攻击+120/暴击+3%",
+  "berserk_fixed": 9.27,
+  "berserk_pct": 32.81,
+  "sw_pct": 45.7,
+  "marginal_duality": 4.93002,
+  "polar_attack": 2743,
+  "faal_framework": "固化不可逆",
+  "cascade_model": "确认",
+  "meta_theory": "确认",
+  "self_evolution_boundary": "持续遵守",
+  "zero_drift": "零漂移",
+  "continuous_rounds": "连续256轮(1475→v1730)100%通过率",
+  "checks_detail": [
+    {
+      "name": "CC力量",
+      "expected": 310,
+      "actual": 310,
+      "status": "PASS"
+    },
+    {
+      "name": "CC物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "status": "PASS"
+    },
+    {
+      "name": "CC独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "status": "PASS"
+    },
+    {
+      "name": "CC暴击率",
+      "expected": 3.0,
+      "actual": 3.0,
+      "status": "PASS"
+    },
+    {
+      "name": "狂战士独立攻击收益",
+      "expected": 7.97,
+      "actual": 7.97,
+      "status": "PASS"
+    },
+    {
+      "name": "狂战士暴击收益",
+      "expected": 1.2,
+      "actual": 1.2,
+      "status": "PASS"
+    },
+    {
+      "name": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "status": "PASS"
+    },
+    {
+      "name": "狂战士力量收益",
+      "expected": 24.39,
+      "actual": 24.39,
+      "status": "PASS"
+    },
+    {
+      "name": "狂战士物攻收益",
+      "expected": 5.5,
+      "actual": 5.5,
+      "status": "PASS"
+    },
+    {
+      "name": "狂战士百分比暴击",
+      "expected": 1.2,
+      "actual": 1.2,
+      "status": "PASS"
+    },
+    {
+      "name": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "status": "PASS"
+    },
+    {
+      "name": "剑魂力量收益",
+      "expected": 38.13,
+      "actual": 38.13,
+      "status": "PASS"
+    },
+    {
+      "name": "剑魂物攻收益",
+      "expected": 4.23,
+      "actual": 4.23,
+      "status": "PASS"
+    },
+    {
+      "name": "剑魂暴击",
+      "expected": 1.2,
+      "actual": 1.2,
+      "status": "PASS"
+    },
+    {
+      "name": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "status": "PASS"
+    },
+    {
+      "name": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "status": "PASS"
+    },
+    {
+      "name": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "status": "PASS"
+    },
+    {
+      "name": "FAAL框架固化",
+      "expected": 1,
+      "actual": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "三级级联放大链模型",
+      "expected": 1,
+      "actual": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "装备加成三原则元理论",
+      "expected": 1,
+      "actual": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "自我进化边界",
+      "expected": 1,
+      "actual": 1,
+      "status": "PASS"
+    },
+    {
+      "name": "核心数据零漂移",
+      "expected": 1,
+      "actual": 1,
+      "status": "PASS"
+    }
+  ]
+}
