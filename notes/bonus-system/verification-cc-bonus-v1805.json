@@ -1,0 +1,129 @@
+{
+  "version": "v1805",
+  "total_checks": 20,
+  "passed": 20,
+  "pass_rate": "20/20",
+  "pass_pct": "100.0%",
+  "checks_detail": {
+    "version": "v1805",
+    "timestamp": "2026-07-07T02:42:00+08:00",
+    "cc_set_stats": {
+      "strength": {
+        "expected": 310,
+        "actual": 310,
+        "match": true
+      },
+      "physical_atk": {
+        "expected": 110,
+        "actual": 110,
+        "match": true
+      },
+      "independent_atk": {
+        "expected": 120,
+        "actual": 120,
+        "match": true
+      },
+      "crit_rate": {
+        "expected": 3,
+        "actual": 3,
+        "match": true
+      }
+    },
+    "berserker": {
+      "fixed_damage_bonus": {
+        "expected": 9.27,
+        "actual": 9.27,
+        "match": true
+      },
+      "pct_damage_bonus": {
+        "expected": 32.81,
+        "actual": 32.81,
+        "match": true
+      },
+      "fixed_atk_cc": {
+        "expected": 920,
+        "actual": 920,
+        "match": true
+      },
+      "fixed_atk_base": {
+        "expected": 800,
+        "actual": 800,
+        "match": true
+      },
+      "fixed_mult_cc": {
+        "expected": 3.68,
+        "actual": 3.68,
+        "match": true
+      },
+      "fixed_mult_base": {
+        "expected": 3.2,
+        "actual": 3.2,
+        "match": true
+      }
+    },
+    "swordman": {
+      "pct_damage_bonus": {
+        "expected": 45.7,
+        "actual": 45.7,
+        "match": true
+      },
+      "pjjd_base_atk": {
+        "expected": 2110,
+        "actual": 2110,
+        "match": true
+      },
+      "pjjd_atk_boost": {
+        "expected": 0.3,
+        "actual": 0.3,
+        "match": true
+      },
+      "pjjd_collab_atk": {
+        "expected": 2743,
+        "actual": 2743.0,
+        "match": true
+      }
+    },
+    "faal": {
+      "marginal_dual": {
+        "expected": 4.93002,
+        "actual": 4.93002,
+        "match": true
+      },
+      "pjjd_collab_atk": {
+        "expected": 2743,
+        "actual": 2743,
+        "match": true
+      },
+      "berserker_fixed": {
+        "expected": 9.27,
+        "actual": 9.27,
+        "match": true
+      },
+      "berserker_pct": {
+        "expected": 32.81,
+        "actual": 32.81,
+        "match": true
+      },
+      "swordman_pct": {
+        "expected": 45.7,
+        "actual": 45.7,
+        "match": true
+      },
+      "cc_set_4_stats": {
+        "expected": "力量+310/物攻+110/独立+120/暴击+3%",
+        "actual": "力量+310/物攻+110/独立+120/暴击+3%",
+        "match": true
+      }
+    },
+    "framework": {
+      "faal_three_stage": "固化",
+      "three_level_cascade": "固化",
+      "equipment_principles": "固化",
+      "self_evolution_boundary": "遵守",
+      "zero_drift": "连续330轮(1475→v1805)零漂移"
+    }
+  },
+  "continuous_rounds": "330轮(1475→v1805)",
+  "zero_drift": true,
+  "git_commit": "TBD"
+}
