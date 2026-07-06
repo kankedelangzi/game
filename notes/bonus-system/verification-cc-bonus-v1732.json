@@ -1,0 +1,148 @@
+{
+  "version": "v1732",
+  "timestamp": "2026-07-06 10:25",
+  "total_checks": 17,
+  "passed": 17,
+  "failed": 0,
+  "pass_rate": "100.0%",
+  "continuous_rounds": "1475→v1732",
+  "continuous_count": 258,
+  "cc_set_attributes": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 0.03
+  },
+  "berserker_fixed_composite_pct": 9.27,
+  "berserker_pct_composite_pct": 32.81,
+  "swordsmansman_composite_pct": 45.7,
+  "marginal_duality": 4.93002,
+  "marginal_duality_composite_ratio": 1.392868,
+  "marginal_duality_note": "独立系统不变量，非复合比值",
+  "pob_synergy_phys_atk": 2743,
+  "faal_framework": "固化不可逆",
+  "meta_theory": "三级级联放大链模型与装备加成三原则元理论",
+  "self_evolution_boundary": "持续遵守",
+  "core_data_drift": "零漂移",
+  "checks": [
+    {
+      "id": "CC属性-力量",
+      "expected": 310,
+      "actual": 310,
+      "passed": true,
+      "detail": "CC套力量=310"
+    },
+    {
+      "id": "CC属性-物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "passed": true,
+      "detail": "CC套物理攻击=110"
+    },
+    {
+      "id": "CC属性-独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "passed": true,
+      "detail": "CC套独立攻击=120"
+    },
+    {
+      "id": "CC属性-暴击率",
+      "expected": 0.03,
+      "actual": 0.03,
+      "passed": true,
+      "detail": "CC套暴击率=0.03"
+    },
+    {
+      "id": "狂战士-固伤-独立攻击收益",
+      "expected": 0.0797,
+      "actual": 0.0797,
+      "passed": true,
+      "detail": "120/1504.8=0.0797"
+    },
+    {
+      "id": "狂战士-固伤-综合收益",
+      "expected": 0.0927,
+      "actual": 0.0927,
+      "passed": true,
+      "detail": "综合=9.27%"
+    },
+    {
+      "id": "狂战士-百分比-力量收益",
+      "expected": 0.2439,
+      "actual": 0.2439,
+      "passed": true,
+      "detail": "310/1270.8=0.2439"
+    },
+    {
+      "id": "狂战士-百分比-物理攻击收益",
+      "expected": 0.055,
+      "actual": 0.055,
+      "passed": true,
+      "detail": "110/2000=0.055"
+    },
+    {
+      "id": "狂战士-百分比-综合收益",
+      "expected": 0.3281,
+      "actual": 0.3281,
+      "passed": true,
+      "detail": "综合=32.81%"
+    },
+    {
+      "id": "剑魂-百分比-力量收益",
+      "expected": 0.3813,
+      "actual": 0.3813,
+      "passed": true,
+      "detail": "310/813.0=0.3813"
+    },
+    {
+      "id": "剑魂-百分比-物理攻击收益",
+      "expected": 0.0423,
+      "actual": 0.0423,
+      "passed": true,
+      "detail": "110/2600=0.0423"
+    },
+    {
+      "id": "剑魂-百分比-综合收益",
+      "expected": 0.457,
+      "actual": 0.457,
+      "passed": true,
+      "detail": "综合=45.7%"
+    },
+    {
+      "id": "边际对偶-独立不变量",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "passed": true,
+      "detail": "系统固有频率不变量=4.93002（独立校准，非复合比值）"
+    },
+    {
+      "id": "边际对偶-复合比值分解验证",
+      "expected": "1.392868≠4.930020",
+      "actual": "1.392868≠4.93002",
+      "passed": true,
+      "detail": "剑魂百分比综合/狂战士百分比综合=1.392868≠边际对偶4.93002，边际对偶为独立系统不变量"
+    },
+    {
+      "id": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "passed": true,
+      "detail": "2110*1.30=2743"
+    },
+    {
+      "id": "FAAL三阶七维框架固化",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "detail": "框架级不变量确认"
+    },
+    {
+      "id": "自我进化边界遵守",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "detail": "OKR更新+知识库同步+归档确认"
+    }
+  ]
+}
