@@ -1,0 +1,27 @@
+{
+  "version": "v1743",
+  "timestamp": "2026-07-06 13:21",
+  "continuous_rounds": 268,
+  "checks_passed": 22,
+  "checks_total": 22,
+  "pass_rate": "22/22",
+  "cc_set": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical_rate": 3
+  },
+  "berserker": {
+    "solid_bonus": 9.27,
+    "percent_bonus": 32.81
+  },
+  "swordsmen": {
+    "percent_bonus_standard": 45.7,
+    "percent_bonus_calculated": 58.8
+  },
+  "marginal_dual": 4.93002,
+  "poji_final": 2743,
+  "faal_status": "固化不可逆",
+  "elastic_deviation": "2项已知弹性偏差",
+  "core_drift": "零漂移"
+}
