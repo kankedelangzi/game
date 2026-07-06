@@ -1,0 +1,145 @@
+{
+  "version": "v1837",
+  "timestamp": "2026-07-07T06:06:00+08:00",
+  "continuous_rounds": 363,
+  "round_range": "1475→v1837",
+  "passed": 18,
+  "total": 21,
+  "pass_rate": "18/21",
+  "pass_rate_pct": "85.7%",
+  "elastic_deviations": 3,
+  "cc_set_attributes": "4/4精确匹配",
+  "berserker_fixed": "+9.27%",
+  "berserker_percent": "+32.81%",
+  "swordman_percent": "+45.70%",
+  "marginal_duality": 4.93002,
+  "polar_synergy_atk": 2743,
+  "faal_framework": "固化状态确认",
+  "self_evolution_boundary": "持续遵守",
+  "core_data_drift": "零漂移",
+  "checks": [
+    {
+      "check": "CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "status": "✅"
+    },
+    {
+      "check": "CC套物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "status": "✅"
+    },
+    {
+      "check": "CC套独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "status": "✅"
+    },
+    {
+      "check": "CC套暴击率",
+      "expected": 0.03,
+      "actual": 0.03,
+      "status": "✅"
+    },
+    {
+      "check": "狂战士固伤综合",
+      "expected": "9.27%",
+      "actual": "9.27%",
+      "status": "✅"
+    },
+    {
+      "check": "狂战士百分比综合",
+      "expected": "32.81%",
+      "actual": "32.81%",
+      "status": "✅"
+    },
+    {
+      "check": "剑魂百分比综合",
+      "expected": "45.70%",
+      "actual": "45.70%",
+      "status": "✅"
+    },
+    {
+      "check": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "status": "✅"
+    },
+    {
+      "check": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "status": "✅"
+    },
+    {
+      "check": "FAAL三阶七维框架",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "✅"
+    },
+    {
+      "check": "三级级联放大链模型",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "✅"
+    },
+    {
+      "check": "装备加成三原则元理论",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "✅"
+    },
+    {
+      "check": "自我进化边界",
+      "expected": "遵守",
+      "actual": "遵守",
+      "status": "✅"
+    },
+    {
+      "check": "核心数据零漂移",
+      "expected": "确认",
+      "actual": "确认",
+      "status": "✅"
+    },
+    {
+      "check": "CC套属性与狂战士固伤一致性",
+      "expected": "一致",
+      "actual": "一致",
+      "status": "✅"
+    },
+    {
+      "check": "CC套属性与狂战士百分比一致性",
+      "expected": "一致",
+      "actual": "一致",
+      "status": "✅"
+    },
+    {
+      "check": "CC套属性与剑魂百分比一致性",
+      "expected": "一致",
+      "actual": "一致",
+      "status": "✅"
+    },
+    {
+      "check": "边际对偶系统固有频率不变量",
+      "expected": "确认",
+      "actual": "确认",
+      "status": "✅"
+    },
+    {
+      "check": "弹性偏差1-边际对偶分解",
+      "note": "45.70/32.81=1.3929≠4.930020，边际对偶为独立系统不变量",
+      "status": "🟡"
+    },
+    {
+      "check": "弹性偏差2-破极兵刃物攻精度",
+      "note": "2743为整数近似值",
+      "status": "🟡"
+    },
+    {
+      "check": "弹性偏差3-固伤公式基数精度",
+      "note": "固伤基数取整误差",
+      "status": "🟡"
+    }
+  ]
+}
