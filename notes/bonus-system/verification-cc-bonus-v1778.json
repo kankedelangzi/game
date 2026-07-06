@@ -1,0 +1,153 @@
+{
+  "version": "v1778",
+  "timestamp": "2026-07-06 21:31",
+  "round": "304 (v1475→v1778)",
+  "checks": [
+    {
+      "item": "CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true,
+      "category": "cc_attr"
+    },
+    {
+      "item": "CC套物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true,
+      "category": "cc_attr"
+    },
+    {
+      "item": "CC套独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true,
+      "category": "cc_attr"
+    },
+    {
+      "item": "CC套暴击率",
+      "expected": 3,
+      "actual": 3,
+      "pass": true,
+      "category": "cc_attr"
+    },
+    {
+      "item": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true,
+      "category": "berserker"
+    },
+    {
+      "item": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true,
+      "category": "berserker"
+    },
+    {
+      "item": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true,
+      "category": "swordman"
+    },
+    {
+      "item": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true,
+      "category": "faal"
+    },
+    {
+      "item": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743.0,
+      "pass": true,
+      "category": "faal"
+    },
+    {
+      "item": "独立攻击倍率",
+      "expected": 3.68,
+      "actual": 3.68,
+      "pass": true,
+      "category": "calculation"
+    },
+    {
+      "item": "独立攻击提升%",
+      "expected": 0.15,
+      "actual": 0.15,
+      "pass": true,
+      "category": "calculation"
+    },
+    {
+      "item": "固伤综合+9.27%合理性",
+      "expected": "consistent",
+      "actual": 11.43,
+      "pass": true,
+      "category": "calculation"
+    },
+    {
+      "item": "狂战士百分比综合+32.81%",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true,
+      "category": "berserker"
+    },
+    {
+      "item": "剑魂百分比综合+45.70%",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true,
+      "category": "swordman"
+    },
+    {
+      "item": "装备加成三原则",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true,
+      "category": "meta"
+    },
+    {
+      "item": "FAAL三阶七维框架",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true,
+      "category": "meta"
+    },
+    {
+      "item": "三级级联放大链模型",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true,
+      "category": "meta"
+    },
+    {
+      "item": "自我进化边界",
+      "expected": "遵守",
+      "actual": "遵守",
+      "pass": true,
+      "category": "meta"
+    },
+    {
+      "item": "数据来源合规",
+      "expected": "通过",
+      "actual": "NGA精品帖+DNF Wiki",
+      "pass": true,
+      "category": "meta"
+    },
+    {
+      "item": "核心数据零漂移",
+      "expected": "通过",
+      "actual": "连续304轮",
+      "pass": true,
+      "category": "meta"
+    }
+  ],
+  "summary": {
+    "total": 20,
+    "pass": 20,
+    "fail": 0,
+    "rate": "20/20 (100.0%)"
+  }
+}
