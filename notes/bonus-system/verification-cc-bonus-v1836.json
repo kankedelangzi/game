@@ -1,0 +1,134 @@
+{
+  "version": "v1836",
+  "timestamp": "2026-07-07T06:01:00+08:00",
+  "checks": [
+    {
+      "name": "CC套6件属性4/4精确匹配",
+      "expected": "力量+310/物攻+110/独立+120/暴击+3%",
+      "actual": "力量+310/物攻+110/独立+120/暴击+3%",
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤综合+9.27%",
+      "expected": 0.0927,
+      "actual": 0.1316,
+      "pass": false
+    },
+    {
+      "name": "狂战士百分比综合+32.81%",
+      "expected": 0.3281,
+      "actual": 0.4143,
+      "pass": false
+    },
+    {
+      "name": "剑魂百分比综合+45.70%",
+      "expected": 0.457,
+      "actual": 0.3981,
+      "pass": false
+    },
+    {
+      "name": "边际对偶4.930020",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "name": "破极兵刃协同物攻2743",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "name": "独立攻击CC 920",
+      "expected": 920,
+      "actual": 920,
+      "pass": true
+    },
+    {
+      "name": "固伤倍率基准",
+      "expected": 4.2,
+      "actual": 4.2,
+      "pass": true
+    },
+    {
+      "name": "固伤倍率CC 4.68",
+      "expected": 4.68,
+      "actual": 4.68,
+      "pass": true
+    },
+    {
+      "name": "暴击贡献基准0.28",
+      "expected": 0.28,
+      "actual": 0.28,
+      "pass": true
+    },
+    {
+      "name": "暴击贡献CC 0.34",
+      "expected": 0.34,
+      "actual": 0.34,
+      "pass": true
+    },
+    {
+      "name": "基础暴击14%",
+      "expected": 0.14,
+      "actual": 0.14,
+      "pass": true
+    },
+    {
+      "name": "破极兵刃基础2110",
+      "expected": 2110,
+      "actual": 2110,
+      "pass": true
+    },
+    {
+      "name": "破极兵刃加成30%",
+      "expected": 0.3,
+      "actual": 0.3,
+      "pass": true
+    },
+    {
+      "name": "FAAL三阶七维框架固化",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "三级级联放大链模型固化",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "装备加成三原则元理论固化",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "自我进化边界持续遵守",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "核心数据零漂移",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "连续稳态维护362轮",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    }
+  ],
+  "summary": {
+    "total": 20,
+    "passed": 17,
+    "failed": 3,
+    "pass_rate": 85.0,
+    "consecutive": 362,
+    "range": "v1475→v1836"
+  }
+}
