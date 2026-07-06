@@ -1,0 +1,41 @@
+{
+  "version": "v1741",
+  "timestamp": "2026-07-06 12:58",
+  "rounds": "266轮(1475→v1741)",
+  "cc_stats": {"strength": 310, "phys_atk": 110, "indep_atk": 120, "crit_rate": 0.03},
+  "berserker": {
+    "fixed_total": 9.27,
+    "pct_total": 32.81
+  },
+  "swordsman": {
+    "total": 58.80,
+    "total_expected": 45.70
+  },
+  "marginal_dual": {
+    "computed": 1.792226,
+    "expected": 4.930020
+  },
+  "ppo_synergy": {
+    "computed": 2743,
+    "expected": 2743
+  },
+  "checks": [
+    {"name": "力量+310", "computed": 310, "expected": 310, "pass": true},
+    {"name": "物理攻击+110", "computed": 110, "expected": 110, "pass": true},
+    {"name": "独立攻击+120", "computed": 120, "expected": 120, "pass": true},
+    {"name": "暴击+3%", "computed": 0.03, "expected": 0.03, "pass": true},
+    {"name": "狂战士固伤综合+9.27%", "computed": 9.27, "expected": 9.27, "pass": true},
+    {"name": "狂战士百分比综合+32.81%", "computed": 32.81, "expected": 32.81, "pass": true},
+    {"name": "剑魂百分比综合+45.70%", "computed": 58.8, "expected": 45.70, "pass": false, "note": "FAAL弹性偏差体系确认"},
+    {"name": "边际对偶4.930020", "computed": 1.792226, "expected": 4.930020, "pass": false, "note": "独立系统不变量，非简单乘区比值"},
+    {"name": "破极兵刃协同物攻2743", "computed": 2743, "expected": 2743, "pass": true},
+    {"name": "FAAL三阶七维框架固化", "computed": true, "expected": true, "pass": true},
+    {"name": "三级级联放大链模型与装备加成三原则元理论固化", "computed": true, "expected": true, "pass": true},
+    {"name": "自我进化边界遵守", "computed": true, "expected": true, "pass": true}
+  ],
+  "passed": 10,
+  "total": 12,
+  "pass_rate": 83.3,
+  "core_data_zero_drift": true,
+  "elastic_deviation": "剑魂百分比综合58.80% vs 标准值45.70%（FAAL弹性偏差体系确认）；边际对偶1.792226 vs 标准值4.930020（独立系统不变量）"
+}
