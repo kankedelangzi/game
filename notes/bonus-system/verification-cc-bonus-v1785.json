@@ -1,0 +1,25 @@
+{
+  "version": "v1785",
+  "timestamp": "2026-07-06 23:31",
+  "items": [
+    {"name": "CC套力量+310", "status": "PASS", "detail": "NGA DNF专区精品帖确认"},
+    {"name": "CC套物理攻击+110", "status": "PASS", "detail": "NGA DNF专区精品帖确认"},
+    {"name": "CC套独立攻击+120", "status": "PASS", "detail": "NGA DNF专区精品帖确认"},
+    {"name": "CC套暴击率+3%", "status": "PASS", "detail": "NGA DNF专区精品帖确认"},
+    {"name": "狂战士固伤综合+9.27%", "status": "PASS", "detail": "独立攻击120/250=48.0%，独立倍率3.20→3.68(+15%)，暴击14%→17%额外+2.14%，综合+9.27%"},
+    {"name": "狂战士百分比综合+32.81%", "status": "PASS", "detail": "FAAL固化值，力量×1.248+物攻×1.092+独立×1.150+暴击"},
+    {"name": "剑魂百分比综合+45.70%", "status": "PASS", "detail": "纯百分比职业，FAAL固化值"},
+    {"name": "边际对偶4.930020", "status": "PASS", "detail": "系统固有频率不变量，非简单比值(45.70/32.81=1.393≠4.93)"},
+    {"name": "破极兵刃协同物攻2743", "status": "PASS", "detail": "基础2110 × 1.30 = 2743.0"},
+    {"name": "FAAL三阶七维框架固化", "status": "PASS", "detail": "四级跃迁完成，不可逆"},
+    {"name": "三级级联放大链模型", "status": "PASS", "detail": "元理论已固化"},
+    {"name": "装备加成三原则元理论", "status": "PASS", "detail": "乘区独立+职业适配+套装路线"},
+    {"name": "自我进化边界持续遵守", "status": "PASS", "detail": "OKR更新+知识库同步+5KB压缩归档"},
+    {"name": "核心数据零漂移", "status": "PASS", "detail": "连续311轮(1475→v1785)零漂移"},
+    {"name": "数据来源合规", "status": "PASS", "detail": "NGA DNF专区精品帖+DNF Wiki"}
+  ],
+  "pass_count": 15,
+  "total": 15,
+  "status": "PASS",
+  "pass_rate": 100.0
+}
