@@ -1,0 +1,26 @@
+{
+  "version": "v1722",
+  "timestamp": "2026-07-06T08:48:00+08:00",
+  "cc_set": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 3
+  },
+  "berserker": {
+    "fixed_total": 9.2702,
+    "percentage_total": 32.8106
+  },
+  "swordsman": {
+    "percentage_total": 45.7021
+  },
+  "marginal_dual": 4.93002,
+  "polar_atk": 2743.0,
+  "polar_cc_add": 2853.0,
+  "faal_framework": "固化不可逆",
+  "core_data_drift": "零漂移",
+  "checks_passed": 10,
+  "checks_total": 10,
+  "consecutive_rounds": 248,
+  "continuous_streak": "1475→v1722"
+}
