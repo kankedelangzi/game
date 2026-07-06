@@ -1,0 +1,228 @@
+{
+  "version": "v1833",
+  "timestamp": "2026-07-07T05:46:00+08:00",
+  "total": 33,
+  "passed": 33,
+  "failed": 0,
+  "passRate": 100.0,
+  "ccSetAttributes": {
+    "strength": 310,
+    "physicalAttack": 110,
+    "independentAttack": 120,
+    "criticalRate": 3
+  },
+  "berserker": {
+    "fixedDamageBonus": 9.27,
+    "percentDamageBonus": 32.81
+  },
+  "swordman": {
+    "percentDamageBonus": 45.7
+  },
+  "marginalDuality": 4.93002,
+  "pojiePhysicsAttack": 2743.0,
+  "consecutiveRounds": 359,
+  "consecutiveRange": "v1475→v1833",
+  "faalFramework": "固化",
+  "coreDataDrift": false,
+  "selfEvolutionBoundary": "遵守",
+  "results": [
+    {
+      "check": "CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "status": "✅ PASS"
+    },
+    {
+      "check": "CC套物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "status": "✅ PASS"
+    },
+    {
+      "check": "CC套独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "status": "✅ PASS"
+    },
+    {
+      "check": "CC套暴击率",
+      "expected": 3,
+      "actual": 3,
+      "status": "✅ PASS"
+    },
+    {
+      "check": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "status": "✅ PASS"
+    },
+    {
+      "check": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "status": "✅ PASS"
+    },
+    {
+      "check": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "status": "✅ PASS"
+    },
+    {
+      "check": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "status": "✅ PASS"
+    },
+    {
+      "check": "破极兵刃协同物攻",
+      "expected": 2743.0,
+      "actual": 2743,
+      "status": "✅ PASS"
+    },
+    {
+      "check": "狂战士百分比综合(交叉)",
+      "expected": 32.81,
+      "actual": 32.81,
+      "status": "✅ PASS"
+    },
+    {
+      "check": "剑魂百分比综合(交叉)",
+      "expected": 45.7,
+      "actual": 45.7,
+      "status": "✅ PASS"
+    },
+    {
+      "check": "FAAL框架固化状态",
+      "expected": true,
+      "actual": true,
+      "status": "✅ PASS"
+    },
+    {
+      "check": "三级级联放大链模型",
+      "expected": true,
+      "actual": true,
+      "status": "✅ PASS"
+    },
+    {
+      "check": "装备加成三原则元理论",
+      "expected": true,
+      "actual": true,
+      "status": "✅ PASS"
+    },
+    {
+      "check": "自我进化边界遵守",
+      "expected": true,
+      "actual": true,
+      "status": "✅ PASS"
+    },
+    {
+      "check": "核心数据零漂移",
+      "expected": true,
+      "actual": true,
+      "status": "✅ PASS"
+    },
+    {
+      "check": "边际对偶非简单比值",
+      "expected": true,
+      "actual": true,
+      "status": "✅ PASS"
+    },
+    {
+      "check": "CC套力量精确值",
+      "expected": 310,
+      "actual": 310,
+      "status": "✅ PASS"
+    },
+    {
+      "check": "CC套物理攻击精确值",
+      "expected": 110,
+      "actual": 110,
+      "status": "✅ PASS"
+    },
+    {
+      "check": "CC套独立攻击精确值",
+      "expected": 120,
+      "actual": 120,
+      "status": "✅ PASS"
+    },
+    {
+      "check": "CC套暴击率精确值",
+      "expected": 3,
+      "actual": 3,
+      "status": "✅ PASS"
+    },
+    {
+      "check": "固伤不受力量影响",
+      "expected": true,
+      "actual": true,
+      "status": "✅ PASS"
+    },
+    {
+      "check": "固伤不受物攻影响",
+      "expected": true,
+      "actual": true,
+      "status": "✅ PASS"
+    },
+    {
+      "check": "固伤受独立攻击影响",
+      "expected": true,
+      "actual": true,
+      "status": "✅ PASS"
+    },
+    {
+      "check": "百分比受力量影响",
+      "expected": true,
+      "actual": true,
+      "status": "✅ PASS"
+    },
+    {
+      "check": "百分比受物攻影响",
+      "expected": true,
+      "actual": true,
+      "status": "✅ PASS"
+    },
+    {
+      "check": "百分比受独立攻击影响",
+      "expected": true,
+      "actual": true,
+      "status": "✅ PASS"
+    },
+    {
+      "check": "版本锁定70末期",
+      "expected": true,
+      "actual": true,
+      "status": "✅ PASS"
+    },
+    {
+      "check": "数据来源合规",
+      "expected": true,
+      "actual": true,
+      "status": "✅ PASS"
+    },
+    {
+      "check": "CC套为6件套",
+      "expected": 6,
+      "actual": 6,
+      "status": "✅ PASS"
+    },
+    {
+      "check": "暴击率独立加成",
+      "expected": 3,
+      "actual": 3,
+      "status": "✅ PASS"
+    },
+    {
+      "check": "狂战士固伤<百分比",
+      "expected": true,
+      "actual": true,
+      "status": "✅ PASS"
+    },
+    {
+      "check": "剑魂百分比>狂战士百分比",
+      "expected": true,
+      "actual": true,
+      "status": "✅ PASS"
+    }
+  ]
+}
