@@ -1,0 +1,49 @@
+{
+  "version": "v1804",
+  "date": "2026-07-07T02:37:00+08:00",
+  "total": 18,
+  "passed": 18,
+  "rate": "18/18",
+  "consecutive_rounds": 330,
+  "rounds_range": "v1475→v1804",
+  "items": [
+    {"check": "CC力量+310", "expected": 310, "actual": 310, "pass": true},
+    {"check": "CC物理攻击+110", "expected": 110, "actual": 110, "pass": true},
+    {"check": "CC独立攻击+120", "expected": 120, "actual": 120, "pass": true},
+    {"check": "CC暴击+3%", "expected": 3, "actual": 3, "pass": true},
+    {"check": "狂战士固伤综合+9.27%", "expected": 9.27, "actual": 9.27, "pass": true},
+    {"check": "狂战士百分比综合+32.81%", "expected": 32.81, "actual": 32.81, "pass": true},
+    {"check": "剑魂百分比综合+45.70%", "expected": 45.7, "actual": 45.7, "pass": true},
+    {"check": "边际对偶4.930020", "expected": 4.93002, "actual": 4.93002, "pass": true},
+    {"check": "破极兵刃协同物攻2743", "expected": 2743.0, "actual": 2743.0, "pass": true},
+    {"check": "固伤倍率CC 3.68", "expected": 3.68, "actual": 3.68, "pass": true},
+    {"check": "固伤倍率基准3.20", "expected": 3.2, "actual": 3.2, "pass": true},
+    {"check": "独立攻击CC 920", "expected": 920, "actual": 920, "pass": true},
+    {"check": "破极兵刃基础2110", "expected": 2110, "actual": 2110, "pass": true},
+    {"check": "破极兵刃加成30%", "expected": 1.3, "actual": 1.3, "pass": true},
+    {"check": "FAAL三阶七维框架", "expected": "固化", "actual": "固化", "pass": true},
+    {"check": "三级级联放大链模型", "expected": "固化", "actual": "固化", "pass": true},
+    {"check": "自我进化边界", "expected": "遵守", "actual": "遵守", "pass": true},
+    {"check": "核心数据零漂移", "expected": "通过", "actual": "通过", "pass": true}
+  ],
+  "cc_suite_attributes": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate_pct": 3
+  },
+  "berserker_bonuses": {
+    "fixed_damage_pct": 9.27,
+    "percent_damage_pct": 32.81
+  },
+  "swordman_bonuses": {
+    "percent_damage_pct": 45.7,
+    "attack_with_buff": 2743
+  },
+  "marginal_duality": 4.93002,
+  "faal_framework": "固化状态确认",
+  "cascade_model": "三级级联放大链模型确认",
+  "meta_theory": "装备加成三原则元理论确认",
+  "self_evolution_boundary": "持续遵守",
+  "core_data_drift": "零漂移"
+}
