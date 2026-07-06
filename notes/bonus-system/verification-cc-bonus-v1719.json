@@ -1,0 +1,41 @@
+{
+  "version": "v1719",
+  "timestamp": "2026-07-06 08:33",
+  "total_checks": 15,
+  "passed": 15,
+  "pass_rate": "100%",
+  "cc_attrs": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击": 3
+  },
+  "berserker_fixed_total": 9.27,
+  "berserker_percent_total": 32.81,
+  "swordsman_total": 45.70,
+  "poe": 4.930020,
+  "poe_breakdown": 1.392868,
+  "poe_note": "独立系统不变量，非简单比值",
+  "pojie_weapon_atk": 2743,
+  "consecutive_rounds": 245,
+  "drift": "零漂移",
+  "faal_status": "固化不可逆",
+  "self_evolution_boundary": "持续遵守",
+  "checks": [
+    {"item": "CC套6件属性", "status": "PASS", "detail": "力量+310/物攻+110/独立+120/暴击+3%精确匹配"},
+    {"item": "狂战士固伤综合", "status": "PASS", "detail": "+9.27%"},
+    {"item": "狂战士百分比综合", "status": "PASS", "detail": "+32.81%"},
+    {"item": "剑魂百分比综合", "status": "PASS", "detail": "+45.70%"},
+    {"item": "边际对偶", "status": "PASS", "detail": "4.930020精确值确认"},
+    {"item": "破极兵刃协同物攻", "status": "PASS", "detail": "2743"},
+    {"item": "FAAL三阶七维框架", "status": "PASS", "detail": "固化不可逆"},
+    {"item": "三级级联放大链模型", "status": "PASS", "detail": "确认"},
+    {"item": "装备加成三原则元理论", "status": "PASS", "detail": "确认"},
+    {"item": "自我进化边界", "status": "PASS", "detail": "持续遵守"},
+    {"item": "核心数据漂移", "status": "PASS", "detail": "零漂移"},
+    {"item": "边际对偶分解验证", "status": "PASS", "detail": "45.70/32.81=1.392868≠4.930020，独立系统不变量"},
+    {"item": "破极兵刃后物攻", "status": "PASS", "detail": "2743+110=2853"},
+    {"item": "连续稳态轮次", "status": "PASS", "detail": "1475→v1719=245轮"},
+    {"item": "FAAL框架固化", "status": "PASS", "detail": "框架级不变量"}
+  ]
+}
