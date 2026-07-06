@@ -1,0 +1,39 @@
+{
+  "version": "v1824",
+  "timestamp": "2026-07-07T04:45:00+08:00",
+  "total_checks": 15,
+  "passed_checks": 15,
+  "pass_rate": 1.0,
+  "checks": {
+    "cc_str_310": true,
+    "cc_phy_atk_110": true,
+    "cc_ind_atk_120": true,
+    "cc_crit_3pct": true,
+    "marginal_duality_493": true,
+    "po_bing_xian_phy_atk_2743": true,
+    "ind_atk_cc_920": true,
+    "fixed_mult_base_320": true,
+    "fixed_mult_cc_368": true,
+    "fixed_mult_boost_15pct": true,
+    "crit_contribution_base": true,
+    "crit_contribution_cc": true,
+    "berserker_fixed_927": true,
+    "berserker_pct_3281": true,
+    "sword_pct_4570": true
+  },
+  "cc_set_attributes": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical_rate_pct": 3
+  },
+  "core_invariants": {
+    "marginal_duality": 4.93002,
+    "po_bing_xian_phy_atk": 2743,
+    "berserker_fixed_bonus_pct": 9.27,
+    "berserker_pct_bonus_pct": 32.81,
+    "sword_pct_bonus_pct": 45.7
+  },
+  "continuous_stability": "349轮(1475→v1823)零漂移",
+  "current_run": "v1824"
+}
