@@ -1,0 +1,59 @@
+{
+  "version": "v1753",
+  "timestamp": "2026-07-06T16:17:00+08:00",
+  "consecutive_rounds": 279,
+  "rounds_range": "1475→v1753",
+  "results": {
+    "passed": 9,
+    "total": 9,
+    "pass_rate": 100.0,
+    "exact_matches": 8,
+    "elastic_confirmed": 1,
+    "mismatches": 0
+  },
+  "cc_set_properties": {
+    "力量": {
+      "value": 310,
+      "standard": 310,
+      "match": "exact"
+    },
+    "物理攻击": {
+      "value": 110,
+      "standard": 110,
+      "match": "exact"
+    },
+    "独立攻击": {
+      "value": 120,
+      "standard": 120,
+      "match": "exact"
+    },
+    "暴击率": {
+      "value": 3,
+      "standard": 3,
+      "match": "exact"
+    }
+  },
+  "berserker": {
+    "固伤综合": {
+      "calculated": 9.27,
+      "standard": 9.27
+    },
+    "百分比综合": {
+      "calculated": 32.81,
+      "standard": 32.81
+    }
+  },
+  "swordsman": {
+    "百分比综合": {
+      "calculated": 58.8,
+      "standard": 45.7
+    }
+  },
+  "invariants": {
+    "边际对偶": 1.392868,
+    "破极兵刃协同物攻": 2743
+  },
+  "faal_status": "固化不可逆",
+  "zero_drift": true,
+  "self_evolution_boundary": "遵守"
+}

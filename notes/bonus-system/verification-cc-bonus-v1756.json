@@ -1,0 +1,22 @@
+{
+  "version": "v1756",
+  "timestamp": "2026-07-06 17:26",
+  "rounds": "282轮(1475→v1756)",
+  "total_checks": 9,
+  "passed_checks": 9,
+  "pass_rate": "9/9",
+  "cc_attrs": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker_fixed_composite": 0.0927,
+  "berserker_pct_composite": 0.3281,
+  "swordman_pct_composite": 0.457,
+  "marginal_duality": 4.93002,
+  "pjb_break_attack": 2743.0,
+  "core_data_zero_drift": true,
+  "faal_framework_frozen": true,
+  "self_evolution_boundary_obeyed": true
+}
