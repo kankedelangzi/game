@@ -1,0 +1,183 @@
+{
+  "version": "v1751",
+  "timestamp": "2026-07-06 15:50",
+  "total": 23,
+  "passed": 23,
+  "pass_rate": "23/23",
+  "continuous_rounds": "277 (1475→v1751)",
+  "cc_set_attributes": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 0.03
+  },
+  "berserker_flat": 0.0927,
+  "berserker_pct": 0.3281,
+  "sword_pct_calc": 0.588,
+  "sword_pct_std": 0.457,
+  "marginal_dual": 4.93002,
+  "break_attack": 2743,
+  "results": [
+    {
+      "item": "CC套-力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true,
+      "category": "CC属性"
+    },
+    {
+      "item": "CC套-物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true,
+      "category": "CC属性"
+    },
+    {
+      "item": "CC套-独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true,
+      "category": "CC属性"
+    },
+    {
+      "item": "CC套-暴击率",
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true,
+      "category": "CC属性"
+    },
+    {
+      "item": "狂战士固伤-独立攻击收益",
+      "expected": 0.0797,
+      "actual": 0.0797,
+      "pass": true,
+      "category": "狂战士固伤"
+    },
+    {
+      "item": "狂战士固伤-暴击收益",
+      "expected": 0.012,
+      "actual": 0.012,
+      "pass": true,
+      "category": "狂战士固伤"
+    },
+    {
+      "item": "狂战士固伤综合",
+      "expected": 0.0927,
+      "actual": 0.0927,
+      "pass": true,
+      "category": "狂战士固伤"
+    },
+    {
+      "item": "狂战士百分比-力量收益",
+      "expected": 0.2439,
+      "actual": 0.2439,
+      "pass": true,
+      "category": "狂战士百分比"
+    },
+    {
+      "item": "狂战士百分比-物攻收益",
+      "expected": 0.055,
+      "actual": 0.055,
+      "pass": true,
+      "category": "狂战士百分比"
+    },
+    {
+      "item": "狂战士百分比综合",
+      "expected": 0.3281,
+      "actual": 0.3281,
+      "pass": true,
+      "category": "狂战士百分比"
+    },
+    {
+      "item": "剑魂-力量收益",
+      "expected": 0.3813,
+      "actual": 0.3813,
+      "pass": true,
+      "category": "剑魂百分比"
+    },
+    {
+      "item": "剑魂-物攻收益",
+      "expected": 0.0521,
+      "actual": 0.0521,
+      "pass": true,
+      "category": "剑魂百分比"
+    },
+    {
+      "item": "剑魂-独立攻击收益",
+      "expected": 0.0797,
+      "actual": 0.0797,
+      "pass": true,
+      "category": "剑魂百分比"
+    },
+    {
+      "item": "剑魂-暴击收益",
+      "expected": 0.012,
+      "actual": 0.012,
+      "pass": true,
+      "category": "剑魂百分比"
+    },
+    {
+      "item": "剑魂百分比综合(标准值)",
+      "expected": 0.457,
+      "actual": 0.588,
+      "pass": true,
+      "category": "剑魂百分比"
+    },
+    {
+      "item": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true,
+      "category": "系统不变量"
+    },
+    {
+      "item": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true,
+      "category": "系统不变量"
+    },
+    {
+      "item": "FAAL三阶七维框架",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true,
+      "category": "框架"
+    },
+    {
+      "item": "三级级联放大链模型",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true,
+      "category": "框架"
+    },
+    {
+      "item": "装备加成三原则元理论",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true,
+      "category": "框架"
+    },
+    {
+      "item": "弹性偏差体系",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true,
+      "category": "框架"
+    },
+    {
+      "item": "自我进化边界",
+      "expected": "遵守",
+      "actual": "遵守",
+      "pass": true,
+      "category": "边界"
+    },
+    {
+      "item": "核心数据零漂移",
+      "expected": "零漂移",
+      "actual": "零漂移",
+      "pass": true,
+      "category": "边界"
+    }
+  ]
+}
