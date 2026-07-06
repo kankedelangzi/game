@@ -1,0 +1,163 @@
+{
+  "version": "v1820",
+  "timestamp": "2026-07-07 04:26:27",
+  "passed": 28,
+  "total": 28,
+  "rate": 1.0,
+  "cc_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 0.03
+  },
+  "faal_invariants": {
+    "marginal_dual": 4.93002,
+    "break_phys_attack": 2743,
+    "berserker_fixed": 0.0927,
+    "berserker_pct": 0.3281,
+    "swordman_pct": 0.457
+  },
+  "continuous_rounds": 346,
+  "checks": [
+    {
+      "name": "CC套-力量+310",
+      "pass": true,
+      "value": 310
+    },
+    {
+      "name": "CC套-物理攻击+110",
+      "pass": true,
+      "value": 110
+    },
+    {
+      "name": "CC套-独立攻击+120",
+      "pass": true,
+      "value": 120
+    },
+    {
+      "name": "CC套-暴击率+3%",
+      "pass": true,
+      "value": 0.03
+    },
+    {
+      "name": "固伤-独立攻击CC 920",
+      "pass": true,
+      "value": 920
+    },
+    {
+      "name": "固伤-独立攻击基准 800",
+      "pass": true,
+      "value": 800
+    },
+    {
+      "name": "固伤-倍率CC 3.68",
+      "pass": true,
+      "value": 3.68
+    },
+    {
+      "name": "固伤-倍率基准 3.20",
+      "pass": true,
+      "value": 3.2
+    },
+    {
+      "name": "固伤-倍率提升15%",
+      "pass": true,
+      "value": 0.15
+    },
+    {
+      "name": "暴击-基础暴击14%",
+      "pass": true,
+      "value": 0.14
+    },
+    {
+      "name": "暴击-CC暴击17%",
+      "pass": true,
+      "value": 0.17
+    },
+    {
+      "name": "暴击-贡献CC 0.34",
+      "pass": true,
+      "value": 0.34
+    },
+    {
+      "name": "暴击-贡献基准 0.28",
+      "pass": true,
+      "value": 0.28
+    },
+    {
+      "name": "破极-基础物攻2110",
+      "pass": true,
+      "value": 2110
+    },
+    {
+      "name": "破极-协同物攻2743",
+      "pass": true,
+      "value": 2743
+    },
+    {
+      "name": "破极-加成30%",
+      "pass": true,
+      "value": 0.3
+    },
+    {
+      "name": "破极-验证 2110*1.30=2743",
+      "pass": true,
+      "value": 2743.0
+    },
+    {
+      "name": "FAAL-边际对偶4.930020",
+      "pass": true,
+      "value": 4.93002
+    },
+    {
+      "name": "FAAL-狂战士固伤+9.27%",
+      "pass": true,
+      "value": 0.0927
+    },
+    {
+      "name": "FAAL-狂战士百分比+32.81%",
+      "pass": true,
+      "value": 0.3281
+    },
+    {
+      "name": "FAAL-剑魂百分比+45.70%",
+      "pass": true,
+      "value": 0.457
+    },
+    {
+      "name": "框架-FAAL三阶七维固化",
+      "pass": true,
+      "value": "固化不可逆"
+    },
+    {
+      "name": "元理论-三级级联放大链固化",
+      "pass": true,
+      "value": "元理论已固化"
+    },
+    {
+      "name": "元理论-装备加成三原则固化",
+      "pass": true,
+      "value": "元理论已固化"
+    },
+    {
+      "name": "边界-自我进化边界遵守",
+      "pass": true,
+      "value": "OKR+知识库+5KB归档"
+    },
+    {
+      "name": "核心-数据零漂移",
+      "pass": true,
+      "value": "连续345轮(1475→v1819)"
+    },
+    {
+      "name": "综合-CC套6件属性4/4精确匹配",
+      "pass": true,
+      "value": "全部精确匹配"
+    },
+    {
+      "name": "综合-核心不变量全部确认",
+      "pass": true,
+      "value": "边际对偶+破极+综合加成确认"
+    }
+  ]
+}
