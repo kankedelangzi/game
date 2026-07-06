@@ -1,0 +1,29 @@
+{
+  "version": "v1780",
+  "timestamp": "2026-07-06T21:56:00Z",
+  "consecutive_rounds": 306,
+  "rounds_range": "v1475→v1780",
+  "passed": 11,
+  "total": 12,
+  "pass_rate": "11/12",
+  "cc_suite_attributes": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate_pct": 3
+  },
+  "berserker_bonuses": {
+    "fixed_damage_pct": 9.27,
+    "percent_damage_pct": 32.81
+  },
+  "swordman_bonuses": {
+    "percent_damage_pct": 45.7,
+    "attack_with_buff": 2743
+  },
+  "marginal_duality": 4.93002,
+  "faal_framework": "固化状态确认",
+  "cascade_model": "三级级联放大链模型确认",
+  "meta_theory": "装备加成三原则元理论确认",
+  "self_evolution_boundary": "持续遵守",
+  "core_data_drift": "零漂移"
+}
