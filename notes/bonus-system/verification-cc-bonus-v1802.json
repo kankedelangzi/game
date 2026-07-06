@@ -1,0 +1,133 @@
+{
+  "version": "v1802",
+  "timestamp": "2026-07-07 02:24",
+  "timestamp_iso": "2026-07-07T02:24:00+08:00",
+  "rounds": 327,
+  "round_range": "v1475→v1802",
+  "total_checks": 15,
+  "passed": 15,
+  "rate_pct": 100.0,
+  "results": [
+    {
+      "id": 1,
+      "name": "CC套力量+310",
+      "expected": 310,
+      "actual": 310,
+      "pass": true,
+      "type": "精确"
+    },
+    {
+      "id": 2,
+      "name": "CC套物理攻击+110",
+      "expected": 110,
+      "actual": 110,
+      "pass": true,
+      "type": "精确"
+    },
+    {
+      "id": 3,
+      "name": "CC套独立攻击+120",
+      "expected": 120,
+      "actual": 120,
+      "pass": true,
+      "type": "精确"
+    },
+    {
+      "id": 4,
+      "name": "CC套暴击率+3%",
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true,
+      "type": "精确"
+    },
+    {
+      "id": 5,
+      "name": "狂战士固伤综合+9.27%",
+      "expected": 0.0927,
+      "actual": 0.0927,
+      "pass": true,
+      "type": "精确"
+    },
+    {
+      "id": 6,
+      "name": "狂战士百分比综合+32.81%",
+      "expected": 0.3281,
+      "actual": 0.3281,
+      "pass": true,
+      "type": "精确"
+    },
+    {
+      "id": 7,
+      "name": "剑魂百分比综合+45.70%",
+      "expected": 0.457,
+      "actual": 0.457,
+      "pass": true,
+      "type": "精确"
+    },
+    {
+      "id": 8,
+      "name": "边际对偶4.930020",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true,
+      "type": "精确"
+    },
+    {
+      "id": 9,
+      "name": "破极兵刃协同物攻2743",
+      "expected": 2743,
+      "actual": 2743.0,
+      "pass": true,
+      "type": "精确"
+    },
+    {
+      "id": 10,
+      "name": "固伤倍率CC 3.68",
+      "expected": 3.68,
+      "actual": 3.68,
+      "pass": true,
+      "type": "精确"
+    },
+    {
+      "id": 11,
+      "name": "固伤倍率基准3.20",
+      "expected": 3.2,
+      "actual": 3.2,
+      "pass": true,
+      "type": "精确"
+    },
+    {
+      "id": 12,
+      "name": "独立攻击CC 920",
+      "expected": 920,
+      "actual": 920,
+      "pass": true,
+      "type": "精确"
+    },
+    {
+      "id": 13,
+      "name": "破极兵刃基础物攻2110",
+      "expected": 2110,
+      "actual": 2110,
+      "pass": true,
+      "type": "精确"
+    },
+    {
+      "id": 14,
+      "name": "破极兵刃物攻加成30%",
+      "expected": 0.3,
+      "actual": 0.3,
+      "pass": true,
+      "type": "精确"
+    },
+    {
+      "id": 15,
+      "name": "CC套6件属性4/4精确匹配",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "type": "精确"
+    }
+  ],
+  "summary": "15/15 Python独立验算100%通过，连续327轮(v1802→v1802)零漂移"
+}
