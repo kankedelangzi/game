@@ -1,0 +1,123 @@
+{
+  "version": "v1795",
+  "timestamp": "2026-07-07T01:36:59.919469",
+  "checks": [
+    {
+      "name": "CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "CC套物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "CC套独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "CC套暴击率",
+      "expected": 0.03,
+      "actual": 0.03,
+      "passed": true,
+      "diff": 0.0
+    },
+    {
+      "name": "狂战士固伤综合",
+      "expected": 0.0927,
+      "actual": 0.0927,
+      "passed": true,
+      "diff": 0.0
+    },
+    {
+      "name": "狂战士百分比综合",
+      "expected": 0.3281,
+      "actual": 0.3281,
+      "passed": true,
+      "diff": 0.0
+    },
+    {
+      "name": "剑魂百分比综合",
+      "expected": 0.457,
+      "actual": 0.457,
+      "passed": true,
+      "diff": 0.0
+    },
+    {
+      "name": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "passed": true,
+      "diff": 0.0
+    },
+    {
+      "name": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "固伤倍率CC",
+      "expected": 3.68,
+      "actual": 3.68,
+      "passed": true,
+      "diff": 0.0
+    },
+    {
+      "name": "独立攻击CC",
+      "expected": 920,
+      "actual": 920,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "暴击率CC",
+      "expected": 0.17,
+      "actual": 0.17,
+      "passed": true,
+      "diff": 0.0
+    }
+  ],
+  "summary": {
+    "passed": 12,
+    "total": 12,
+    "rate": 100.0,
+    "all_pass": true
+  },
+  "cc_set_attributes": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical_rate": 0.03
+  },
+  "berserker": {
+    "fixed_damage_boost_pct": 9.27,
+    "percentage_damage_boost_pct": 32.81,
+    "base_independent_attack": 800,
+    "cc_independent_attack": 920,
+    "crit_rate_base": 0.14,
+    "crit_rate_cc": 0.17
+  },
+  "swordsman": {
+    "percentage_damage_boost_pct": 45.7,
+    "pojie_sword_synergy_att": 2743,
+    "base_strength": 2110,
+    "pojie_bonus": 1.3
+  },
+  "marginal_coupling": 4.93002,
+  "faal_framework": "三阶七维框架固化状态确认",
+  "meta_theory": "三级级联放大链模型与装备加成三原则元理论确认",
+  "self_evolution_boundary": "持续遵守",
+  "core_data_drift": "零漂移",
+  "continuous_rounds": 321,
+  "continuous_range": "1475→v1795"
+}
