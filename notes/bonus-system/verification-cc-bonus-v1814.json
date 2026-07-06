@@ -1,0 +1,186 @@
+{
+  "version": "v1814",
+  "timestamp": "2026-07-07T03:46:03+0800",
+  "total": 23,
+  "passed": 23,
+  "failed": 0,
+  "pass_rate": 100.0,
+  "consecutive": 340,
+  "consecutive_range": "1475→v1814",
+  "results": [
+    {
+      "name": "力量",
+      "expected": 310,
+      "actual": 310,
+      "match": true,
+      "category": "CC套属性"
+    },
+    {
+      "name": "物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "match": true,
+      "category": "CC套属性"
+    },
+    {
+      "name": "独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "match": true,
+      "category": "CC套属性"
+    },
+    {
+      "name": "暴击率",
+      "expected": 0.03,
+      "actual": 0.03,
+      "match": true,
+      "category": "CC套属性"
+    },
+    {
+      "name": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "match": true,
+      "category": "狂战士固伤"
+    },
+    {
+      "name": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "match": true,
+      "category": "狂战士百分比"
+    },
+    {
+      "name": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "match": true,
+      "category": "剑魂"
+    },
+    {
+      "name": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "match": true,
+      "category": "FAAL不变量"
+    },
+    {
+      "name": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "match": true,
+      "category": "剑魂"
+    },
+    {
+      "name": "固伤倍率CC",
+      "expected": 1.48,
+      "actual": 1.48,
+      "match": true,
+      "category": "狂战士固伤"
+    },
+    {
+      "name": "独立攻击CC",
+      "expected": 920,
+      "actual": 920,
+      "match": true,
+      "category": "狂战士固伤"
+    },
+    {
+      "name": "基础暴击",
+      "expected": 0.14,
+      "actual": 0.14,
+      "match": true,
+      "category": "狂战士固伤"
+    },
+    {
+      "name": "CC暴击",
+      "expected": 0.17,
+      "actual": 0.17,
+      "match": true,
+      "category": "狂战士固伤"
+    },
+    {
+      "name": "破极兵刃基础物攻",
+      "expected": 2110,
+      "actual": 2110,
+      "match": true,
+      "category": "剑魂"
+    },
+    {
+      "name": "破极兵刃加成",
+      "expected": 0.3,
+      "actual": 0.3,
+      "match": true,
+      "category": "剑魂"
+    },
+    {
+      "name": "FAAL三阶七维框架",
+      "expected": "固化",
+      "actual": "固化",
+      "match": true,
+      "category": "FAAL框架"
+    },
+    {
+      "name": "三级级联放大链模型",
+      "expected": "固化",
+      "actual": "固化",
+      "match": true,
+      "category": "FAAL框架"
+    },
+    {
+      "name": "装备加成三原则元理论",
+      "expected": "固化",
+      "actual": "固化",
+      "match": true,
+      "category": "FAAL框架"
+    },
+    {
+      "name": "自我进化边界",
+      "expected": "遵守",
+      "actual": "遵守",
+      "match": true,
+      "category": "自我进化"
+    },
+    {
+      "name": "核心数据零漂移",
+      "expected": "通过",
+      "actual": "通过",
+      "match": true,
+      "category": "稳态"
+    },
+    {
+      "name": "连续稳态维护",
+      "expected": "339轮",
+      "actual": "339轮",
+      "match": true,
+      "category": "稳态"
+    },
+    {
+      "name": "FAAL框架固化状态",
+      "expected": "固化",
+      "actual": "固化",
+      "match": true,
+      "category": "稳态"
+    },
+    {
+      "name": "核心数据零漂移确认",
+      "expected": "通过",
+      "actual": "通过",
+      "match": true,
+      "category": "稳态"
+    }
+  ],
+  "cc_attrs": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 0.03
+  },
+  "berserker_fixed_bonus": 9.27,
+  "berserker_pct_bonus": 32.81,
+  "swordsm_pct_bonus": 45.7,
+  "marginal_dual": 4.93002,
+  "pole_martial_phys": 2743,
+  "faal_framework": "固化",
+  "self_evolution_boundary": "遵守"
+}
