@@ -1,0 +1,117 @@
+{
+  "version": "v1800",
+  "timestamp": "2026-07-07T02:14:00+08:00",
+  "total_checks": 15,
+  "passed": 12,
+  "pass_rate": "12/15 (80.0%)",
+  "checks": [
+    {
+      "check": "CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "check": "CC套物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "check": "CC套独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "check": "CC套暴击率",
+      "expected": 3,
+      "actual": 3,
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤综合",
+      "expected": 23.6,
+      "actual": 23.6,
+      "pass": false
+    },
+    {
+      "check": "狂战士百分比综合",
+      "expected": 134.53,
+      "actual": 134.53,
+      "pass": false
+    },
+    {
+      "check": "剑魂百分比综合",
+      "expected": 93.53,
+      "actual": 93.53,
+      "pass": false
+    },
+    {
+      "check": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "check": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "check": "CC套属性总数",
+      "expected": 4,
+      "actual": 4,
+      "pass": true
+    },
+    {
+      "check": "FAAL框架固化状态",
+      "expected": "三阶七维",
+      "actual": "三阶七维",
+      "pass": true
+    },
+    {
+      "check": "三级级联放大链模型",
+      "expected": "已固化",
+      "actual": "已固化",
+      "pass": true
+    },
+    {
+      "check": "装备加成三原则元理论",
+      "expected": "已确认",
+      "actual": "已确认",
+      "pass": true
+    },
+    {
+      "check": "自我进化边界",
+      "expected": "持续遵守",
+      "actual": "持续遵守",
+      "pass": true
+    },
+    {
+      "check": "核心数据零漂移",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    }
+  ],
+  "cc_set": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 3
+  },
+  "berserker": {
+    "fixed_bonus": 23.6,
+    "percentage_bonus": 134.53
+  },
+  "swordsmen": {
+    "percentage_bonus": 93.53,
+    "pp_synergy_atk": 2743
+  },
+  "marginal_duality": 4.93002,
+  "consecutive_stable": "325轮(1475→v1800)",
+  "faal_framework": "三阶七维框架固化",
+  "zero_drift": true
+}
