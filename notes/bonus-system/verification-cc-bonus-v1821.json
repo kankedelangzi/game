@@ -1,0 +1,45 @@
+{
+  "version": "v1821",
+  "timestamp": "2026-07-07T04:31:33.841372",
+  "cc_set": {
+    "power": 310,
+    "phy_atk": 110,
+    "indep_atk": 120,
+    "crit": 3
+  },
+  "berserker": {
+    "fixed_total_bonus": 9.27,
+    "pct_total_bonus": 32.81,
+    "indep_atk_total": 920,
+    "indep_mult_base": 3.2,
+    "indep_mult_cc": 3.68,
+    "mult_lift_pct": 15.0,
+    "base_crit": 0.14,
+    "cc_crit_rate": 0.17,
+    "crit_contrib_base": 0.28,
+    "crit_contrib_cc": 0.34,
+    "crit_bonus_pct": 21.43
+  },
+  "swordman": {
+    "pct_total_bonus": 45.70
+  },
+  "faal": {
+    "marginal_dual": 4.930020,
+    "po_bond": 2743.0
+  },
+  "verification": {
+    "cc_attr_match": true,
+    "indep_calc": true,
+    "mult_base": true,
+    "mult_cc": true,
+    "mult_lift": true,
+    "crit_base": true,
+    "crit_cc": true,
+    "po_bond": true,
+    "marginal_dual": true,
+    "berserk_fixed": true,
+    "berserk_pct": true,
+    "swordman_pct": true
+  },
+  "result": "12/12 通过（100%），CC套6件属性4/4精确匹配，核心数据零漂移"
+}
