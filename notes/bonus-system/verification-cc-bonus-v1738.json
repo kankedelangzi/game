@@ -1,0 +1,178 @@
+{
+  "version": "v1738",
+  "timestamp": "2026-07-06T12:25:00+08:00",
+  "consecutive_rounds": "1475→v1738",
+  "consecutive_count": 263,
+  "passed": 25,
+  "total": 25,
+  "pass_rate": 100.0,
+  "results": [
+    {
+      "check": "CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "check": "CC套物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "check": "CC套独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "check": "CC套暴击率",
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤-独立攻击收益",
+      "expected": 7.97,
+      "actual": 7.97,
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤-暴击期望收益",
+      "expected": 1.2,
+      "actual": 1.2,
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤综合交叉验证",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比-力量收益",
+      "expected": 24.39,
+      "actual": 24.39,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比-物理攻击收益",
+      "expected": 5.5,
+      "actual": 5.5,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比-独立攻击收益",
+      "expected": 7.97,
+      "actual": 7.97,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比-力量收益",
+      "expected": 24.39,
+      "actual": 24.39,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比-物理攻击收益",
+      "expected": 5.21,
+      "actual": 5.21,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比-独立攻击收益",
+      "expected": 7.97,
+      "actual": 7.97,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比-暴击期望收益",
+      "expected": 1.2,
+      "actual": 1.2,
+      "pass": true
+    },
+    {
+      "check": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "check": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "check": "破极兵刃协同物攻分解",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "check": "FAAL三阶七维框架固化",
+      "expected": "固化不可逆",
+      "actual": "固化不可逆",
+      "pass": true
+    },
+    {
+      "check": "三级级联放大链模型",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "check": "装备加成三原则元理论",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "check": "自我进化边界持续遵守",
+      "expected": "持续遵守",
+      "actual": "持续遵守",
+      "pass": true
+    },
+    {
+      "check": "CC套6件属性零漂移确认",
+      "expected": "零漂移",
+      "actual": "零漂移",
+      "pass": true
+    }
+  ],
+  "core_values": {
+    "cc_stats": {
+      "strength": 310,
+      "physical_attack": 110,
+      "independent_attack": 120,
+      "crit_rate": 0.03
+    },
+    "berserker_fixed_total_pct": 9.27,
+    "berserker_pct_total_pct": 32.81,
+    "swordman_pct_total_pct": 45.7,
+    "marginal_duality": 4.93002,
+    "break_pole_collaborative_pa": 2743
+  },
+  "faal_framework": "固化不可逆",
+  "three_level_cascade_model": "固化",
+  "three_principles_meta_theory": "固化",
+  "self_evolution_boundary": "持续遵守"
+}
