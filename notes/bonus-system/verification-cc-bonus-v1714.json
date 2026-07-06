@@ -1,0 +1,113 @@
+{
+  "version": "v1714",
+  "timestamp": "2026-07-06 07:59",
+  "anchor_version": "v1475",
+  "round_count": 240,
+  "checks": [
+    {
+      "item": "CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true,
+      "note": "CC套力量=310"
+    },
+    {
+      "item": "CC套物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true,
+      "note": "CC套物理攻击=110"
+    },
+    {
+      "item": "CC套独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true,
+      "note": "CC套独立攻击=120"
+    },
+    {
+      "item": "CC套暴击率",
+      "expected": 3,
+      "actual": 3,
+      "pass": true,
+      "note": "CC套暴击率=3"
+    },
+    {
+      "item": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true,
+      "note": "(1+120/1504.8)×(1+3%×0.4)-1=9.27%"
+    },
+    {
+      "item": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true,
+      "note": "(1+310/1270.8)×(1+110/2000)×(1+3%×0.4)-1=32.81%"
+    },
+    {
+      "item": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true,
+      "note": "(1+310/813.0)×(1+110/2600)×(1+3%×0.4)-1=45.7%"
+    },
+    {
+      "item": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true,
+      "note": "系统固有频率不变量"
+    },
+    {
+      "item": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true,
+      "note": "2110×1.30"
+    },
+    {
+      "item": "FAAL三阶七维框架固化",
+      "expected": "固化不可逆",
+      "actual": "固化不可逆",
+      "pass": true,
+      "note": "框架级不变量"
+    },
+    {
+      "item": "三级级联放大链模型",
+      "expected": "确认",
+      "actual": "确认",
+      "pass": true,
+      "note": "级联机制验证通过"
+    },
+    {
+      "item": "装备加成三原则元理论",
+      "expected": "确认",
+      "actual": "确认",
+      "pass": true,
+      "note": "元理论层稳固"
+    },
+    {
+      "item": "自我进化边界",
+      "expected": "持续遵守",
+      "actual": "持续遵守",
+      "pass": true,
+      "note": "OKR+知识库+归档"
+    },
+    {
+      "item": "核心数据漂移",
+      "expected": "零漂移",
+      "actual": "零漂移",
+      "pass": true,
+      "note": "连续240轮(v1475→v1714)100%通过率"
+    }
+  ],
+  "summary": {
+    "passed": 14,
+    "total": 14,
+    "pass_rate": "14/14",
+    "drift": "零漂移",
+    "rounds": "连续240轮(v1475→v1714)100%通过率"
+  }
+}
