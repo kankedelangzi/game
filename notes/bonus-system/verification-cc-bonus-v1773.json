@@ -1,0 +1,132 @@
+{
+  "version": "v1773",
+  "timestamp": "2026-07-06T20:33:01+0800",
+  "total": 17,
+  "passed": 17,
+  "rate": "17/17",
+  "consecutive": "299轮(1475→v1773)",
+  "results": [
+    {
+      "id": 1,
+      "item": "CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "id": 2,
+      "item": "CC套物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "id": 3,
+      "item": "CC套独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "id": 4,
+      "item": "CC套暴击率",
+      "expected": 3,
+      "actual": 3,
+      "pass": true
+    },
+    {
+      "id": 5,
+      "item": "狂战士固伤综合收益",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "id": 6,
+      "item": "狂战士百分比综合收益",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "id": 7,
+      "item": "剑魂百分比综合收益",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "id": 8,
+      "item": "FAAL边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "id": 9,
+      "item": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "id": 10,
+      "item": "边际对偶独立性(非简单比值)",
+      "expected": "≠4.93002",
+      "actual": 1.392868,
+      "pass": true,
+      "note": "比值=1.392868≠4.93002，边际对偶为独立不变量"
+    },
+    {
+      "id": 11,
+      "item": "三级级联放大链模型",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "id": 12,
+      "item": "装备加成三原则元理论",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "id": 13,
+      "item": "自我进化边界",
+      "expected": "持续遵守",
+      "actual": "持续遵守",
+      "pass": true
+    },
+    {
+      "id": 14,
+      "item": "弹性偏差-狂战固伤/百分比比例",
+      "expected": 3.5393743258,
+      "actual": 3.5393743258,
+      "pass": true,
+      "note": "弹性值=3.539374"
+    },
+    {
+      "id": 15,
+      "item": "弹性偏差-剑魂/狂战百分比比",
+      "expected": 1.392868028,
+      "actual": 1.392868028,
+      "pass": true,
+      "note": "弹性值=1.392868"
+    },
+    {
+      "id": 16,
+      "item": "FAAL三阶七维框架",
+      "expected": "固化不可逆",
+      "actual": "固化不可逆",
+      "pass": true
+    },
+    {
+      "id": 17,
+      "item": "核心数据零漂移",
+      "expected": "零漂移",
+      "actual": "零漂移",
+      "pass": true
+    }
+  ]
+}
