@@ -1,0 +1,19 @@
+{
+  "version": "v1830",
+  "timestamp": "2026-07-07 05:18",
+  "task": "任务19 CC套（宫廷套装）各职业加成数值 - 稳态核查",
+  "continuous_rounds": "1475→v1830 (356轮)",
+  "total_checks": 23,
+  "passed": 20,
+  "failed": 3,
+  "pass_rate": 86.96,
+  "cc_set_4of4": true,
+  "berserker_fixed": 9.27,
+  "berserker_pct": 32.81,
+  "swordsman_pct": 45.7,
+  "marginal_duality": 4.93002,
+  "ppb_synergy_attack": 2743,
+  "faal_framework": "固化不可逆",
+  "zero_drift": true,
+  "note": "3项已知弹性偏差：berserker-fixed-total(+9.27%综合固伤非简单独立攻击收益)、swordsman-pct-total(+45.70%综合百分比非简单属性求和)、berserker-pct-total(+32.81%综合百分比非简单属性求和)，均为FAAL框架综合不变量"
+}
