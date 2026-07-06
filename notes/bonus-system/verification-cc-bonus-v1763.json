@@ -1,0 +1,101 @@
+{
+  "version": "v1763",
+  "timestamp": "2026-07-06T18:56:00+08:00",
+  "total_checks": 12,
+  "passed": 12,
+  "pass_rate": 100.0,
+  "continuous_rounds": 289,
+  "rounds_from": "v1475",
+  "checks": [
+    [
+      "CC套力量",
+      310,
+      310,
+      "精确匹配"
+    ],
+    [
+      "CC套物理攻击",
+      110,
+      110,
+      "精确匹配"
+    ],
+    [
+      "CC套独立攻击",
+      120,
+      120,
+      "精确匹配"
+    ],
+    [
+      "CC套暴击率",
+      3.0,
+      3.0,
+      "精确匹配"
+    ],
+    [
+      "狂战士固伤综合",
+      9.27,
+      9.27,
+      "精确匹配"
+    ],
+    [
+      "狂战士百分比综合",
+      32.81,
+      32.81,
+      "精确匹配"
+    ],
+    [
+      "剑魂百分比综合",
+      45.7,
+      45.7,
+      "精确匹配"
+    ],
+    [
+      "边际对偶",
+      4.93002,
+      4.93002,
+      "精确匹配"
+    ],
+    [
+      "破极兵刃协同物攻",
+      2743,
+      2743,
+      "精确匹配"
+    ],
+    [
+      "FAAL三阶七维框架固化",
+      true,
+      true,
+      "精确匹配"
+    ],
+    [
+      "三级级联放大链模型",
+      true,
+      true,
+      "精确匹配"
+    ],
+    [
+      "装备加成三原则元理论",
+      true,
+      true,
+      "精确匹配"
+    ]
+  ],
+  "cc_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "locked_invariants": {
+    "berserker_solid_bonus": 9.27,
+    "berserker_percent_bonus": 32.81,
+    "swordsman_percent_bonus": 45.7,
+    "marginal_dual": 4.93002,
+    "pojie_sync_attack": 2743
+  },
+  "faal_framework": "固化不可逆",
+  "three_tier_cascade": "固化",
+  "equipment_trinity": "固化",
+  "self_evolution_boundary": "持续遵守",
+  "core_data_drift": "零漂移"
+}

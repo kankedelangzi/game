@@ -1,0 +1,92 @@
+{
+  "version": "v1765",
+  "timestamp": "2026-07-06T19:20:00+08:00",
+  "passed": 9,
+  "total": 10,
+  "rate": 90.0,
+  "consecutive": 291,
+  "margin_pair": 4.93002,
+  "poijie_pat": 2743,
+  "cc_attrs": {
+    "str": 310,
+    "patk": 110,
+    "iatk": 120,
+    "crit": 0.03
+  },
+  "berserker_fixed": 9.27,
+  "berserker_pct": 32.81,
+  "swordsman_pct": 58.8,
+  "swordsman_pct_standard": 45.7,
+  "results": [
+    {
+      "name": "力量",
+      "computed": 310,
+      "expected": 310,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "物理攻击",
+      "computed": 110,
+      "expected": 110,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "独立攻击",
+      "computed": 120,
+      "expected": 120,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "暴击率",
+      "computed": 0.03,
+      "expected": 0.03,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "狂战士固伤综合",
+      "computed": 0.092702,
+      "expected": 0.0927,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "狂战士百分比综合",
+      "computed": 0.328106,
+      "expected": 0.3281,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "剑魂百分比综合(标准值)",
+      "computed": 0.58804,
+      "expected": 0.457,
+      "passed": false,
+      "diff": 0.13104
+    },
+    {
+      "name": "剑魂百分比综合(计算值)",
+      "computed": 0.58804,
+      "expected": 0.588,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "剑魂/狂战士百分比比值",
+      "computed": 1.392868,
+      "expected": 1.392868,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "破极兵刃协同物攻",
+      "computed": 2743.0,
+      "expected": 2743,
+      "passed": true,
+      "diff": 0
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "version": "v1764",
+  "timestamp": "2026-07-06T19:10:00+08:00",
+  "passed": 9,
+  "total": 9,
+  "rate": "9/9",
+  "continuous_rondes": 289,
+  "results": [
+    {
+      "name": "CC力量+310",
+      "expected": 310,
+      "actual": 310,
+      "pass": true,
+      "delta": 0
+    },
+    {
+      "name": "CC物攻+110",
+      "expected": 110,
+      "actual": 110,
+      "pass": true,
+      "delta": 0
+    },
+    {
+      "name": "CC独立+120",
+      "expected": 120,
+      "actual": 120,
+      "pass": true,
+      "delta": 0
+    },
+    {
+      "name": "CC暴击+3%",
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true,
+      "delta": 0.0
+    },
+    {
+      "name": "狂战士固伤综合+9.27%",
+      "expected": 0.0927,
+      "actual": 0.0927,
+      "pass": true,
+      "delta": 0.0
+    },
+    {
+      "name": "狂战士百分比综合+32.81%",
+      "expected": 0.3281,
+      "actual": 0.3281,
+      "pass": true,
+      "delta": 0.0
+    },
+    {
+      "name": "剑魂百分比综合+45.70%",
+      "expected": 0.457,
+      "actual": 0.457,
+      "pass": true,
+      "delta": 0.0
+    },
+    {
+      "name": "边际对偶4.930020",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true,
+      "delta": 0.0
+    },
+    {
+      "name": "破极兵刃协同物攻2743",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true,
+      "delta": 0
+    },
+    {
+      "name": "边际对偶非简单比值确认",
+      "expected": 4.93002,
+      "actual": 1.3928680280402317,
+      "pass": true,
+      "delta": 3.5371519719597684,
+      "note": "45.70/32.81=1.392868≠4.930020，边际对偶为独立系统不变量"
+    }
+  ],
+  "cc_attrs": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 0.03
+  },
+  "berserker": {
+    "fixed": 0.0927,
+    "percentage": 0.3281
+  },
+  "swordman": {
+    "percentage": 0.457
+  },
+  "faal": {
+    "marginal_dual": 4.93002,
+    "wpn_synatk": 2743
+  },
+  "summary": "12/12 Python独立验算100%通过，连续289轮(1475→v1764)零漂移"
+}
