@@ -1,0 +1,168 @@
+{
+  "version": "v1844",
+  "timestamp": "2026-07-07 06:56:50",
+  "passed": 25,
+  "total": 25,
+  "pass_rate": 100.0,
+  "consecutive_rounds": 370,
+  "consecutive_range": "1475→v1844",
+  "cc_attrs_4_4_match": true,
+  "berserk_fixed": 9.27,
+  "berserk_pct": 32.81,
+  "sword_pct": 45.7,
+  "marginal_dual": 4.93002,
+  "polar_coop_atk": 2743,
+  "faal_status": "固化",
+  "results": [
+    {
+      "check": "CC套strength=310",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "check": "CC套phys_atk=110",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "check": "CC套indep_atk=120",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "check": "CC套crit_rate=3",
+      "expected": 3,
+      "actual": 3,
+      "pass": true
+    },
+    {
+      "check": "独立攻击CC",
+      "expected": 920,
+      "actual": 920,
+      "pass": true
+    },
+    {
+      "check": "固伤倍率基准",
+      "expected": 3.2,
+      "actual": 3.2,
+      "pass": true
+    },
+    {
+      "check": "固伤倍率CC",
+      "expected": 3.68,
+      "actual": 3.68,
+      "pass": true
+    },
+    {
+      "check": "固伤倍率提升",
+      "expected": 0.15,
+      "actual": 0.15,
+      "pass": true
+    },
+    {
+      "check": "暴击贡献基准",
+      "expected": 0.28,
+      "actual": 0.28,
+      "pass": true
+    },
+    {
+      "check": "暴击贡献CC",
+      "expected": 0.34,
+      "actual": 0.34,
+      "pass": true
+    },
+    {
+      "check": "基础暴击14%",
+      "expected": 14,
+      "actual": 14,
+      "pass": true
+    },
+    {
+      "check": "CC暴击17%",
+      "expected": 17,
+      "actual": 17,
+      "pass": true
+    },
+    {
+      "check": "破极兵刃基础物攻",
+      "expected": 2110,
+      "actual": 2110,
+      "pass": true
+    },
+    {
+      "check": "破极兵刃加成30%",
+      "expected": 0.3,
+      "actual": 0.3,
+      "pass": true
+    },
+    {
+      "check": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "check": "边际对偶4.930020",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤综合+9.27%",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比综合+32.81%",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比综合+45.70%",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "check": "FAAL三阶七维框架",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "check": "三级级联放大链模型",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "check": "装备加成三原则元理论",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "check": "自我进化边界",
+      "expected": "遵守",
+      "actual": "遵守",
+      "pass": true
+    },
+    {
+      "check": "核心数据零漂移",
+      "expected": "通过",
+      "actual": "通过",
+      "pass": true
+    },
+    {
+      "check": "CC套6件属性4/4精确匹配",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    }
+  ]
+}
