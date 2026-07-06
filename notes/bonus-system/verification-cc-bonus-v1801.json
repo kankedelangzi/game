@@ -1,0 +1,113 @@
+{
+  "version": "v1801",
+  "timestamp": "2026-07-07 02:19",
+  "continuous_rounds": "326轮(1475→v1801)",
+  "total_checks": 15,
+  "passed_checks": 15,
+  "pass_rate": 100.0,
+  "results": [
+    {
+      "name": "CC套力量+310",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "name": "CC套物理攻击+110",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "name": "CC套独立攻击+120",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "name": "CC套暴击率+3%",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    {
+      "name": "独立攻击CC=920",
+      "expected": 920,
+      "actual": 920,
+      "pass": true
+    },
+    {
+      "name": "固伤倍率CC=3.68",
+      "expected": 3.68,
+      "actual": 3.68,
+      "pass": true
+    },
+    {
+      "name": "固伤倍率基准=3.20",
+      "expected": 3.2,
+      "actual": 3.2,
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤综合+9.27%",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比综合+32.81%",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比综合+45.70%",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "name": "边际对偶4.930020",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "name": "破极兵刃协同物攻2743",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "name": "破极兵刃基础物攻2110",
+      "expected": 2110,
+      "actual": 2110,
+      "pass": true
+    },
+    {
+      "name": "破极兵刃加成30%",
+      "expected": 0.3,
+      "actual": 0.3,
+      "pass": true
+    },
+    {
+      "name": "FAAL三阶七维框架固化",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    }
+  ],
+  "faal_invariants": {
+    "marginal_dual": 4.93002,
+    "pojiweblong_synergy": 2743,
+    "berserker_fixed_total": 9.27,
+    "berserker_pct_total": 32.81,
+    "swordman_pct_total": 45.7,
+    "cc_stats": {
+      "力量": 310,
+      "物理攻击": 110,
+      "独立攻击": 120,
+      "暴击率": 3.0
+    }
+  }
+}
