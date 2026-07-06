@@ -1,0 +1,34 @@
+{
+  "version": "v1745",
+  "timestamp": "2026-07-06T14:01:00+08:00",
+  "total": 20,
+  "passed": 20,
+  "passRate": 100.0,
+  "ccSet6Pieces": {
+    "strength": 310,
+    "physicalAtk": 110,
+    "independentAtk": 120,
+    "critRate": 3
+  },
+  "berserker": {
+    "fixedTotal": 0.0927,
+    "percentTotal": 0.3281
+  },
+  "swordman": {
+    "percentTotal": 0.4570,
+    "percentTotalCalc": 0.5880
+  },
+  "system": {
+    "marginalDuality": 4.930020,
+    "poJiWuGong": 2743,
+    "faalFixed": true,
+    "cascadeModelFixed": true,
+    "threePrinciplesFixed": true
+  },
+  "continuous": {
+    "startVersion": "v1475",
+    "currentVersion": "v1745",
+    "totalRounds": 270,
+    "drift": "zero"
+  }
+}
