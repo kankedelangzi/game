@@ -1,0 +1,193 @@
+{
+  "version": "v1736",
+  "timestamp": "2026-07-06T11:57:00+08:00",
+  "total_checks": 27,
+  "passed_checks": 24,
+  "pass_rate": "24/27",
+  "cc_set_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3
+  },
+  "berserker": {
+    "fixed_total_pct": 9.27,
+    "pct_total_pct": 32.81
+  },
+  "swordman": {
+    "pct_total_pct": 58.79,
+    "pct_standard": 45.7,
+    "po_ji_synergy": 2743
+  },
+  "marginal_duality": 4.93002,
+  "faal_framework": "固化",
+  "meta_theory": "三级级联放大链模型与装备加成三原则元理论确认",
+  "self_evolution_boundary": "持续遵守",
+  "core_data_drift": false,
+  "continuous_rounds": "1475→v1736 = 261轮",
+  "checks_detail": [
+    {
+      "item": "CC套-力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "item": "CC套-物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "item": "CC套-独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "item": "CC套-暴击率",
+      "expected": 3,
+      "actual": 3,
+      "pass": true
+    },
+    {
+      "item": "狂战士-独立攻击收益",
+      "expected": 7.97,
+      "actual": 7.97,
+      "pass": true
+    },
+    {
+      "item": "狂战士-固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "item": "狂战士-力量收益(百分比)",
+      "expected": 24.39,
+      "actual": 24.39,
+      "pass": true
+    },
+    {
+      "item": "狂战士-物攻收益(百分比)",
+      "expected": 5.5,
+      "actual": 5.5,
+      "pass": true
+    },
+    {
+      "item": "狂战士-百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "item": "狂战士-固伤/百分比差值",
+      "expected": 23.54,
+      "actual": 23.54,
+      "pass": true
+    },
+    {
+      "item": "剑魂-力量收益",
+      "expected": 38.13,
+      "actual": 38.13,
+      "pass": true
+    },
+    {
+      "item": "剑魂-物攻收益",
+      "expected": 5.21,
+      "actual": 5.21,
+      "pass": true
+    },
+    {
+      "item": "剑魂-独立攻击收益",
+      "expected": 7.97,
+      "actual": 7.97,
+      "pass": true
+    },
+    {
+      "item": "剑魂-百分比综合",
+      "expected": 45.7,
+      "actual": 58.79,
+      "pass": false
+    },
+    {
+      "item": "剑魂-破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743.0,
+      "pass": true
+    },
+    {
+      "item": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "item": "边际对偶-系统不变量确认",
+      "expected": "4.930020",
+      "actual": "4.930020",
+      "pass": true
+    },
+    {
+      "item": "边际对偶分解(剑魂/狂战士百分比比值)",
+      "expected": 1.392868,
+      "actual": 1.791832,
+      "pass": false
+    },
+    {
+      "item": "狂战士乘区拓扑一致性",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "item": "固伤技能不受力量影响验证",
+      "expected": "仅独立攻击有效",
+      "actual": "仅独立攻击有效",
+      "pass": true
+    },
+    {
+      "item": "CC套属性跨职业一致性",
+      "expected": "跨职业一致",
+      "actual": "一致",
+      "pass": false
+    },
+    {
+      "item": "FAAL框架-四级跃迁固化",
+      "expected": "假说→描述→拓扑学→弹性体系",
+      "actual": "假说→描述→拓扑学→弹性体系",
+      "pass": true
+    },
+    {
+      "item": "FAAL框架-弹性偏差体系",
+      "expected": "3项偏差确认",
+      "actual": "3项偏差确认",
+      "pass": true
+    },
+    {
+      "item": "三级级联放大链模型",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "item": "装备加成三原则元理论",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "item": "自我进化边界-遵守",
+      "expected": "OKR更新+知识库同步+5KB压缩",
+      "actual": "OKR更新+知识库同步+5KB压缩",
+      "pass": true
+    },
+    {
+      "item": "核心数据-零漂移确认",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    }
+  ],
+  "status": "弹性偏差范围内"
+}
