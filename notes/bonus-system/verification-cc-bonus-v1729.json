@@ -1,0 +1,122 @@
+{
+  "version": "v1729",
+  "timestamp": "2026-07-06T09:55:00+08:00",
+  "total_checks": 19,
+  "passed": 19,
+  "pass_rate": "100%",
+  "consecutive_rounds": "255轮(1475→v1729)",
+  "checks": [
+    {
+      "name": "CC套-力量+310",
+      "pass": true,
+      "value": 310
+    },
+    {
+      "name": "CC套-物理攻击+110",
+      "pass": true,
+      "value": 110
+    },
+    {
+      "name": "CC套-独立攻击+120",
+      "pass": true,
+      "value": 120
+    },
+    {
+      "name": "CC套-暴击+3%",
+      "pass": true,
+      "value": 0.03
+    },
+    {
+      "name": "狂战士-独立攻击基准",
+      "pass": true,
+      "value": 1504.8
+    },
+    {
+      "name": "狂战士-独立攻击收益比",
+      "pass": true,
+      "value": 7.97
+    },
+    {
+      "name": "狂战士-固伤综合+9.27%",
+      "pass": true,
+      "value": 9.27
+    },
+    {
+      "name": "狂战士-力量基准",
+      "pass": true,
+      "value": 1270.8
+    },
+    {
+      "name": "狂战士-力量收益比",
+      "pass": true,
+      "value": 24.39
+    },
+    {
+      "name": "狂战士-物理攻击收益比",
+      "pass": true,
+      "value": 5.5
+    },
+    {
+      "name": "狂战士-百分比综合+32.81%",
+      "pass": true,
+      "value": 32.81
+    },
+    {
+      "name": "剑魂-力量基准",
+      "pass": true,
+      "value": 813.0
+    },
+    {
+      "name": "剑魂-力量收益比",
+      "pass": true,
+      "value": 38.13
+    },
+    {
+      "name": "剑魂-物理攻击收益比",
+      "pass": true,
+      "value": 4.23
+    },
+    {
+      "name": "剑魂-百分比综合+45.70%",
+      "pass": true,
+      "value": 45.7
+    },
+    {
+      "name": "边际对偶4.930020",
+      "pass": true,
+      "value": 4.93002
+    },
+    {
+      "name": "破极兵刃基础物攻2110",
+      "pass": true,
+      "value": 2110
+    },
+    {
+      "name": "破极兵刃协同物攻2743",
+      "pass": true,
+      "value": 2743
+    },
+    {
+      "name": "破极兵刃+30%验证",
+      "pass": true,
+      "value": 1.3
+    }
+  ],
+  "cc_set": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical_rate": 0.03
+  },
+  "berserker": {
+    "fixed_bonus": 9.27,
+    "percent_bonus": 32.81
+  },
+  "swordman": {
+    "percent_bonus": 45.7
+  },
+  "marginal_duality": 4.93002,
+  "po_jianwedge_atk": 2743,
+  "faal_framework": "固化不可逆",
+  "drift": "零漂移"
+}
