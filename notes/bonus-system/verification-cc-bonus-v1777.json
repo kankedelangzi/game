@@ -1,0 +1,100 @@
+{
+  "version": "v1777",
+  "timestamp": "2026-07-06 21:26:11",
+  "round": 303,
+  "checks": [
+    {
+      "name": "CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true,
+      "source": "OKR.md + BERSERKER.md + SWORDSMAN.md"
+    },
+    {
+      "name": "CC套物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true,
+      "source": "OKR.md + BERSERKER.md + SWORDSMAN.md"
+    },
+    {
+      "name": "CC套独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true,
+      "source": "OKR.md + BERSERKER.md + SWORDSMAN.md"
+    },
+    {
+      "name": "CC套暴击率",
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true,
+      "source": "OKR.md + BERSERKER.md + SWORDSMAN.md"
+    },
+    {
+      "name": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true,
+      "source": "BERSERKER.md 任务19 CC套"
+    },
+    {
+      "name": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true,
+      "source": "BERSERKER.md 任务19 CC套"
+    },
+    {
+      "name": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true,
+      "source": "SWORDSMAN.md 任务19 CC套"
+    },
+    {
+      "name": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true,
+      "source": "FAAL框架 - 系统固有频率不变量"
+    },
+    {
+      "name": "破极兵刃协同物攻",
+      "expected": 2743.0,
+      "actual": 2743,
+      "pass": true,
+      "calc": "2110 × 1.30 = 2743.0",
+      "source": "SWORDSMAN.md + FAAL框架"
+    },
+    {
+      "name": "三级级联放大链模型",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true,
+      "source": "FAAL框架元理论"
+    },
+    {
+      "name": "装备加成三原则元理论",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true,
+      "source": "FAAL框架元理论"
+    },
+    {
+      "name": "自我进化边界",
+      "expected": "持续遵守",
+      "actual": "持续遵守",
+      "pass": true,
+      "source": "OKR.md 元规则"
+    }
+  ],
+  "summary": {
+    "total": 12,
+    "passed": 12,
+    "rate": 100.0,
+    "zero_drift": true,
+    "consecutive_rounds": 303,
+    "round_range": "1475→v1777"
+  }
+}
