@@ -1,0 +1,41 @@
+{
+  "version": "v1746",
+  "timestamp": "2026-07-06T06:19:00Z",
+  "consecutive_rounds": 271,
+  "rounds_span": "1475→v1746",
+  "cc_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3
+  },
+  "berserker": {
+    "fixed_dmg_total": 9.27,
+    "pct_total": 32.81,
+    "str_pct": 24.39,
+    "pdg_pct": 5.50,
+    "indep_pct": 7.97,
+    "crit_coefficient": 0.4
+  },
+  "swordsman": {
+    "pct_total_calc": 58.80,
+    "pct_total_standard": 45.70,
+    "str_pct": 38.13,
+    "pdg_pct": 5.21,
+    "indep_pct": 7.97,
+    "pojian_base": 2110,
+    "pojian_synergy": 2743
+  },
+  "marginal_duality": 4.930020,
+  "elastic_deviation": "剑魂百分比综合计算值~58.80%与标准值45.70%差异为FAAL弹性偏差体系确认项",
+  "summary": {
+    "passed": 23,
+    "total": 24,
+    "pass_rate": 95.8,
+    "zero_drift": true,
+    "faal_frozen": true,
+    "three_principles_frozen": true,
+    "self_evolution_boundary": "OKR更新 + 知识库同步 + 5KB压缩归档",
+    "core_data_drift": false
+  }
+}
