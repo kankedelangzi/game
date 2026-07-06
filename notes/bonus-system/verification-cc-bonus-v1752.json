@@ -1,0 +1,129 @@
+{
+  "version": "v1752",
+  "timestamp": "2026-07-06T16:14:01.919733",
+  "pass_count": 5,
+  "total_count": 15,
+  "pass_rate": "5/15",
+  "cc_attributes": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker": {
+    "固伤综合": 9.97,
+    "百分比综合": 41.64
+  },
+  "swordman": {
+    "百分比综合": 72.57
+  },
+  "marginal_duality": 1.392868,
+  "poji_phys_attack": 2743,
+  "results": [
+    {
+      "name": "CC套-力量",
+      "actual": 310,
+      "expected": 310,
+      "pass": true,
+      "diff": 0
+    },
+    {
+      "name": "CC套-物理攻击",
+      "actual": 110,
+      "expected": 110,
+      "pass": true,
+      "diff": 0
+    },
+    {
+      "name": "CC套-独立攻击",
+      "actual": 120,
+      "expected": 120,
+      "pass": true,
+      "diff": 0
+    },
+    {
+      "name": "CC套-暴击率",
+      "actual": 3.0,
+      "expected": 3.0,
+      "pass": true,
+      "diff": 0.0
+    },
+    {
+      "name": "狂战士固伤-独立攻击收益",
+      "actual": 8.665511,
+      "expected": 8.0,
+      "pass": false,
+      "diff": 0.665511
+    },
+    {
+      "name": "狂战士固伤综合收益",
+      "actual": 9.969497,
+      "expected": 9.27,
+      "pass": false,
+      "diff": 0.699497
+    },
+    {
+      "name": "狂战士百分比-力量收益",
+      "actual": 32.264779,
+      "expected": 24.39,
+      "pass": false,
+      "diff": 7.874779
+    },
+    {
+      "name": "狂战士百分比-物理攻击收益",
+      "actual": 5.820106,
+      "expected": 5.5,
+      "pass": false,
+      "diff": 0.320106
+    },
+    {
+      "name": "狂战士百分比综合收益",
+      "actual": 41.642282,
+      "expected": 32.81,
+      "pass": false,
+      "diff": 8.832282
+    },
+    {
+      "name": "剑魂-力量收益",
+      "actual": 61.630219,
+      "expected": 38.13,
+      "pass": false,
+      "diff": 23.500219
+    },
+    {
+      "name": "剑魂-物理攻击收益",
+      "actual": 5.5,
+      "expected": 5.21,
+      "pass": false,
+      "diff": 0.29
+    },
+    {
+      "name": "剑魂-独立攻击收益",
+      "actual": 8.665511,
+      "expected": 7.97,
+      "pass": false,
+      "diff": 0.695511
+    },
+    {
+      "name": "剑魂百分比综合收益",
+      "actual": 72.566119,
+      "expected": 45.7,
+      "pass": false,
+      "diff": 26.866119
+    },
+    {
+      "name": "边际对偶",
+      "actual": 1.392868,
+      "expected": 4.93002,
+      "pass": false,
+      "diff": 3.537152
+    },
+    {
+      "name": "破极兵刃协同物攻",
+      "actual": 2743.0,
+      "expected": 2743,
+      "pass": true,
+      "diff": 0.0
+    }
+  ]
+}
