@@ -1,0 +1,167 @@
+{
+  "version": "v1848",
+  "timestamp": "2026-07-07T07:19:22.661073",
+  "consecutive": "374 (v1475→v1848)",
+  "passed": 19,
+  "total": 19,
+  "rate": 100.0,
+  "cc_set": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3
+  },
+  "berserker": {
+    "固伤综合": 0.0927,
+    "百分比综合": 0.3281
+  },
+  "swordman": {
+    "百分比综合": 0.457
+  },
+  "faal": {
+    "边际对偶": 4.93002,
+    "破极兵刃协同物攻": 2743
+  },
+  "framework": {
+    "三阶七维框架": "固化",
+    "三级级联放大链模型": "固化",
+    "装备加成三原则元理论": "固化",
+    "自我进化边界": "遵守",
+    "核心数据": "零漂移"
+  },
+  "results": [
+    {
+      "item": "CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true,
+      "delta": null
+    },
+    {
+      "item": "CC套物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true,
+      "delta": null
+    },
+    {
+      "item": "CC套独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true,
+      "delta": null
+    },
+    {
+      "item": "CC套暴击率",
+      "expected": 3,
+      "actual": 3,
+      "pass": true,
+      "delta": null
+    },
+    {
+      "item": "狂战士固伤综合",
+      "expected": 0.0927,
+      "actual": 0.0927,
+      "pass": true,
+      "delta": 0.0
+    },
+    {
+      "item": "狂战士百分比综合",
+      "expected": 0.3281,
+      "actual": 0.3281,
+      "pass": true,
+      "delta": 0.0
+    },
+    {
+      "item": "剑魂百分比综合",
+      "expected": 0.457,
+      "actual": 0.457,
+      "pass": true,
+      "delta": 0.0
+    },
+    {
+      "item": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true,
+      "delta": 0.0
+    },
+    {
+      "item": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743.0,
+      "pass": true,
+      "delta": null
+    },
+    {
+      "item": "CC套力量/独立比值",
+      "expected": 2.5833,
+      "actual": 2.5833,
+      "pass": true,
+      "delta": 0.0
+    },
+    {
+      "item": "CC套物攻/独立比值",
+      "expected": 0.9167,
+      "actual": 0.9167,
+      "pass": true,
+      "delta": 0.0
+    },
+    {
+      "item": "固伤/百分比综合比值",
+      "expected": 0.282536,
+      "actual": 0.282536,
+      "pass": true,
+      "delta": 0.0
+    },
+    {
+      "item": "百分比/固伤综合比值",
+      "expected": 3.539374,
+      "actual": 3.539374,
+      "pass": true,
+      "delta": 0.0
+    },
+    {
+      "item": "边际对偶独立于固伤百分比比值",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true,
+      "delta": 0.0
+    },
+    {
+      "item": "FAAL框架完整",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "delta": null
+    },
+    {
+      "item": "三级级联放大链模型",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "delta": null
+    },
+    {
+      "item": "装备加成三原则元理论",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "delta": null
+    },
+    {
+      "item": "自我进化边界遵守",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "delta": null
+    },
+    {
+      "item": "核心数据零漂移",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "delta": null
+    }
+  ]
+}
