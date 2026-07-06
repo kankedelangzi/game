@@ -1,0 +1,105 @@
+{
+  "version": "v1818",
+  "passed": 15,
+  "total": 15,
+  "rate": 100.0,
+  "errors": [],
+  "cc_attrs_match": true,
+  "berserker_固伤": 9.27,
+  "berserker_百分比": 32.81,
+  "swordsman_综合": 43.95,
+  "marginal": 4.74,
+  "break_attack": 2710.0,
+  "checks": [
+    {
+      "check": "CC-力量",
+      "expected": 310,
+      "actual": 310,
+      "ok": true
+    },
+    {
+      "check": "CC-物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "ok": true
+    },
+    {
+      "check": "CC-独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "ok": true
+    },
+    {
+      "check": "CC-暴击率",
+      "expected": 3.0,
+      "actual": 3.0,
+      "ok": true
+    },
+    {
+      "check": "狂战士-独立攻击收益",
+      "expected": 0.08,
+      "actual": 0.08,
+      "ok": true
+    },
+    {
+      "check": "狂战士-力量收益(暴走后)",
+      "expected": 0.2442,
+      "actual": 0.2442,
+      "ok": true
+    },
+    {
+      "check": "狂战士-物理攻击收益",
+      "expected": 0.055,
+      "actual": 0.055,
+      "ok": true
+    },
+    {
+      "check": "狂战士-固伤综合",
+      "expected": 0.0927,
+      "actual": 0.0927,
+      "ok": true
+    },
+    {
+      "check": "狂战士-百分比综合",
+      "expected": 0.3281,
+      "actual": 0.3281,
+      "ok": true
+    },
+    {
+      "check": "剑魂-力量收益",
+      "expected": 0.3647,
+      "actual": 0.3647,
+      "ok": true
+    },
+    {
+      "check": "剑魂-破极后物攻",
+      "expected": 2600,
+      "actual": 2600.0,
+      "ok": true
+    },
+    {
+      "check": "剑魂-物理攻击收益(破极后)",
+      "expected": 0.0423,
+      "actual": 0.0423,
+      "ok": true
+    },
+    {
+      "check": "剑魂-综合",
+      "expected": 0.4395,
+      "actual": 0.4395,
+      "ok": true
+    },
+    {
+      "check": "边际对偶",
+      "expected": 4.74,
+      "actual": 4.74,
+      "ok": true
+    },
+    {
+      "check": "破极兵刃协同物攻",
+      "expected": 2710,
+      "actual": 2710.0,
+      "ok": true
+    }
+  ]
+}
