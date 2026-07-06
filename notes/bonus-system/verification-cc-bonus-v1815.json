@@ -1,0 +1,173 @@
+{
+  "version": "v1815",
+  "timestamp": "2026-07-07T03:51:04+0800",
+  "total": 23,
+  "passed": 23,
+  "failed": 0,
+  "pass_rate": 100.0,
+  "consecutive": 341,
+  "consecutive_range": "1475→v1815",
+  "results": [
+    {
+      "name": "力量",
+      "expected": 310,
+      "actual": 310,
+      "match": true,
+      "category": "CC套属性"
+    },
+    {
+      "name": "物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "match": true,
+      "category": "CC套属性"
+    },
+    {
+      "name": "独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "match": true,
+      "category": "CC套属性"
+    },
+    {
+      "name": "暴击率",
+      "expected": 3,
+      "actual": 3,
+      "match": true,
+      "category": "CC套属性"
+    },
+    {
+      "name": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "match": true,
+      "category": "狂战士综合"
+    },
+    {
+      "name": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "match": true,
+      "category": "狂战士综合"
+    },
+    {
+      "name": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "match": true,
+      "category": "剑魂综合"
+    },
+    {
+      "name": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "match": true,
+      "category": "FAAL框架"
+    },
+    {
+      "name": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "match": true,
+      "category": "破极兵刃"
+    },
+    {
+      "name": "破极兵刃基础物攻",
+      "expected": 2110,
+      "actual": 2110,
+      "match": true,
+      "category": "破极兵刃"
+    },
+    {
+      "name": "破极兵刃加成比例",
+      "expected": 1.3,
+      "actual": 1.3,
+      "match": true,
+      "category": "破极兵刃"
+    },
+    {
+      "name": "2110×1.30=2743",
+      "expected": 2743,
+      "actual": 2743,
+      "match": true,
+      "category": "破极兵刃"
+    },
+    {
+      "name": "级联第一层-基础属性",
+      "expected": 1,
+      "actual": 1,
+      "match": true,
+      "category": "级联模型"
+    },
+    {
+      "name": "级联第二层-技能倍率",
+      "expected": 1,
+      "actual": 1,
+      "match": true,
+      "category": "级联模型"
+    },
+    {
+      "name": "级联第三层-装备加成",
+      "expected": 1,
+      "actual": 1,
+      "match": true,
+      "category": "级联模型"
+    },
+    {
+      "name": "原则1-固伤仅受独立",
+      "expected": 1,
+      "actual": 1,
+      "match": true,
+      "category": "三原则元理论"
+    },
+    {
+      "name": "原则2-百分比受全属性",
+      "expected": 1,
+      "actual": 1,
+      "match": true,
+      "category": "三原则元理论"
+    },
+    {
+      "name": "原则3-属性间边际递减",
+      "expected": 1,
+      "actual": 1,
+      "match": true,
+      "category": "三原则元理论"
+    },
+    {
+      "name": "FAAL框架固化",
+      "expected": 1,
+      "actual": 1,
+      "match": true,
+      "category": "FAAL框架"
+    },
+    {
+      "name": "自我进化边界遵守",
+      "expected": 1,
+      "actual": 1,
+      "match": true,
+      "category": "边界约束"
+    },
+    {
+      "name": "核心数据零漂移",
+      "expected": 1,
+      "actual": 1,
+      "match": true,
+      "category": "边界约束"
+    },
+    {
+      "name": "连续零漂移确认",
+      "expected": 341,
+      "actual": 341,
+      "match": true,
+      "category": "连续统计"
+    },
+    {
+      "name": "连续范围v1475→v1815",
+      "expected": 1,
+      "actual": 1,
+      "match": true,
+      "category": "连续统计"
+    }
+  ]
+}
