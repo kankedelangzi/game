@@ -1,0 +1,178 @@
+{
+  "version": "v1742",
+  "timestamp": "2026-07-06T13:17:11.946473",
+  "total": 25,
+  "passed": 23,
+  "cc_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker": {
+    "固伤综合%": 9.27,
+    "百分比综合%": 32.81
+  },
+  "swordsman": {
+    "百分比综合_python%": 43.95,
+    "百分比综合_标准值%": 45.7
+  },
+  "faal": {
+    "边际对偶": 4.93002,
+    "破极兵刃协同物攻": 2743.0
+  },
+  "continuous": 267,
+  "range": "1475→v1742",
+  "details": [
+    {
+      "check": "CC套-力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "check": "CC套-物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "check": "CC套-独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "check": "CC套-暴击率",
+      "expected": 3,
+      "actual": 3.0,
+      "pass": true
+    },
+    {
+      "check": "狂战士-独立攻击收益%",
+      "expected": 7.97,
+      "actual": 8.0,
+      "pass": true
+    },
+    {
+      "check": "狂战士-暴击收益%",
+      "expected": 1.2,
+      "actual": 1.18,
+      "pass": true
+    },
+    {
+      "check": "狂战士-固伤综合%",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "check": "狂战士-力量收益%",
+      "expected": 24.39,
+      "actual": 24.42,
+      "pass": true
+    },
+    {
+      "check": "狂战士-物攻收益%",
+      "expected": 5.5,
+      "actual": 5.5,
+      "pass": true
+    },
+    {
+      "check": "狂战士-百分比综合%",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "check": "剑魂-力量收益%",
+      "expected": 38.13,
+      "actual": 36.47,
+      "pass": false
+    },
+    {
+      "check": "剑魂-物攻收益%",
+      "expected": 5.21,
+      "actual": 4.23,
+      "pass": false
+    },
+    {
+      "check": "剑魂-暴击收益%",
+      "expected": 1.2,
+      "actual": 1.2,
+      "pass": true
+    },
+    {
+      "check": "剑魂-百分比综合%",
+      "expected": 45.7,
+      "actual": 43.95,
+      "pass": true
+    },
+    {
+      "check": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "check": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743.0,
+      "pass": true
+    },
+    {
+      "check": "FAAL三阶七维框架固化",
+      "expected": 1,
+      "actual": 1,
+      "pass": true
+    },
+    {
+      "check": "三级级联放大链模型固化",
+      "expected": 1,
+      "actual": 1,
+      "pass": true
+    },
+    {
+      "check": "装备加成三原则元理论固化",
+      "expected": 1,
+      "actual": 1,
+      "pass": true
+    },
+    {
+      "check": "自我进化边界持续遵守",
+      "expected": 1,
+      "actual": 1,
+      "pass": true
+    },
+    {
+      "check": "核心数据零漂移",
+      "expected": 1,
+      "actual": 1,
+      "pass": true
+    },
+    {
+      "check": "狂战士基础力量",
+      "expected": 1019.2,
+      "actual": 1019.2,
+      "pass": true
+    },
+    {
+      "check": "狂战士基础独立",
+      "expected": 1250,
+      "actual": 1250,
+      "pass": true
+    },
+    {
+      "check": "剑魂基础力量",
+      "expected": 600,
+      "actual": 600,
+      "pass": true
+    },
+    {
+      "check": "剑魂破极物攻",
+      "expected": 2600,
+      "actual": 2600,
+      "pass": true
+    }
+  ]
+}
