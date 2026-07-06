@@ -1,0 +1,100 @@
+{
+  "version": "v1767",
+  "timestamp": "2026-07-06T19:44:00+08:00",
+  "round": 293,
+  "range": "1475→v1767",
+  "total_checks": 12,
+  "passed": 12,
+  "pass_rate": "100.0%",
+  "cc_stats": {
+    "strength": 310,
+    "phys_atk": 110,
+    "indep_atk": 120,
+    "crit_rate": 0.03,
+    "time_costume_slots": 2
+  },
+  "berserker": {
+    "fixed": 9.27,
+    "pct": 32.81
+  },
+  "swordman": {
+    "pct": 45.7
+  },
+  "marginal_dual": 4.93002,
+  "po_ji_collab": 2743.0,
+  "faal_status": "固化不可逆",
+  "checks": [
+    {
+      "name": "CC套力量+310",
+      "passed": true,
+      "actual": 310,
+      "expected": 310
+    },
+    {
+      "name": "CC套物理攻击+110",
+      "passed": true,
+      "actual": 110,
+      "expected": 110
+    },
+    {
+      "name": "CC套独立攻击+120",
+      "passed": true,
+      "actual": 120,
+      "expected": 120
+    },
+    {
+      "name": "CC套暴击率+3%",
+      "passed": true,
+      "actual": 0.03,
+      "expected": 0.03
+    },
+    {
+      "name": "狂战士固伤综合+9.27%",
+      "passed": true,
+      "actual": 9.27,
+      "expected": 9.27
+    },
+    {
+      "name": "狂战士百分比综合+32.81%",
+      "passed": true,
+      "actual": 32.81,
+      "expected": 32.81
+    },
+    {
+      "name": "剑魂百分比综合+45.70%",
+      "passed": true,
+      "actual": 45.7,
+      "expected": 45.7
+    },
+    {
+      "name": "边际对偶4.930020",
+      "passed": true,
+      "actual": 4.93002,
+      "expected": 4.93002
+    },
+    {
+      "name": "破极兵刃协同物攻2743",
+      "passed": true,
+      "actual": 2743.0,
+      "expected": 2743
+    },
+    {
+      "name": "FAAL三阶七维框架固化",
+      "passed": true,
+      "actual": "固化",
+      "expected": "固化"
+    },
+    {
+      "name": "三级级联放大链模型固化",
+      "passed": true,
+      "actual": "固化",
+      "expected": "固化"
+    },
+    {
+      "name": "装备加成三原则元理论固化",
+      "passed": true,
+      "actual": "固化",
+      "expected": "固化"
+    }
+  ]
+}
