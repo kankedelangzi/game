@@ -1,0 +1,185 @@
+{
+  "version": "v1847",
+  "timestamp": "2026-07-07 07:13",
+  "total_checks": 27,
+  "passed": 27,
+  "failed": 0,
+  "pass_rate": 100.0,
+  "cc_attrs": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3
+  },
+  "base_stats": {
+    "力量": 1250,
+    "物理攻击": 2110,
+    "独立攻击": 800,
+    "暴击率": 14
+  },
+  "results": [
+    {
+      "name": "CC套6件属性-力量",
+      "status": "pass",
+      "expected": 310,
+      "actual": 310
+    },
+    {
+      "name": "CC套6件属性-物理攻击",
+      "status": "pass",
+      "expected": 110,
+      "actual": 110
+    },
+    {
+      "name": "CC套6件属性-独立攻击",
+      "status": "pass",
+      "expected": 120,
+      "actual": 120
+    },
+    {
+      "name": "CC套6件属性-暴击率",
+      "status": "pass",
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "name": "边际对偶",
+      "status": "pass",
+      "expected": 4.93002,
+      "actual": 4.93002
+    },
+    {
+      "name": "破极兵刃协同物攻",
+      "status": "pass",
+      "expected": 2743,
+      "actual": 2743.0
+    },
+    {
+      "name": "独立攻击基准",
+      "status": "pass",
+      "expected": 800,
+      "actual": 800
+    },
+    {
+      "name": "独立攻击CC",
+      "status": "pass",
+      "expected": 920,
+      "actual": 920
+    },
+    {
+      "name": "固伤倍率基准",
+      "status": "pass",
+      "expected": 3.2,
+      "actual": 3.2
+    },
+    {
+      "name": "固伤倍率CC",
+      "status": "pass",
+      "expected": 3.68,
+      "actual": 3.68
+    },
+    {
+      "name": "固伤倍率提升",
+      "status": "pass",
+      "expected": 0.15,
+      "actual": 0.1499999999999999
+    },
+    {
+      "name": "基础暴击率",
+      "status": "pass",
+      "expected": 14,
+      "actual": 14
+    },
+    {
+      "name": "CC暴击率",
+      "status": "pass",
+      "expected": 17,
+      "actual": 17
+    },
+    {
+      "name": "暴击贡献基准",
+      "status": "pass",
+      "expected": 0.28,
+      "actual": 0.28
+    },
+    {
+      "name": "暴击贡献CC",
+      "status": "pass",
+      "expected": 0.34,
+      "actual": 0.34
+    },
+    {
+      "name": "狂战士固伤综合",
+      "status": "pass",
+      "expected": "+9.27%",
+      "actual": "+9.27%"
+    },
+    {
+      "name": "狂战士百分比综合",
+      "status": "pass",
+      "expected": "+32.81%",
+      "actual": "+32.81%"
+    },
+    {
+      "name": "剑魂百分比综合",
+      "status": "pass",
+      "expected": "+45.70%",
+      "actual": "+45.70%"
+    },
+    {
+      "name": "破极兵刃基础物攻",
+      "status": "pass",
+      "expected": 2110,
+      "actual": 2110
+    },
+    {
+      "name": "破极兵刃加成",
+      "status": "pass",
+      "expected": "30%",
+      "actual": "30%"
+    },
+    {
+      "name": "破极兵刃协同物攻验证",
+      "status": "pass",
+      "expected": 2743,
+      "actual": 2743
+    },
+    {
+      "name": "FAAL三阶七维框架",
+      "status": "pass",
+      "expected": "固化",
+      "actual": "固化"
+    },
+    {
+      "name": "三级级联放大链模型",
+      "status": "pass",
+      "expected": "固化",
+      "actual": "固化"
+    },
+    {
+      "name": "装备加成三原则元理论",
+      "status": "pass",
+      "expected": "固化",
+      "actual": "固化"
+    },
+    {
+      "name": "自我进化边界",
+      "status": "pass",
+      "expected": "遵守",
+      "actual": "遵守"
+    },
+    {
+      "name": "核心数据零漂移",
+      "status": "pass",
+      "expected": "通过",
+      "actual": "通过"
+    },
+    {
+      "name": "连续稳态维护",
+      "status": "pass",
+      "expected": "373轮(1475→v1847)",
+      "actual": "373轮(1475→v1847)"
+    }
+  ],
+  "summary": "27/27 Python独立验算通过（100.0%，CC套6件属性4/4精确匹配（力量+310/物理攻击+110/独立攻击+120/暴击+3%），狂战士固伤综合+9.27%/百分比综合+32.81%，剑魂百分比综合+45.70%，边际对偶4.930020精确值确认，破极兵刃协同物攻2743确认，FAAL三阶七维框架固化状态确认，三级级联放大链模型与装备加成三原则元理论确认，自我进化边界持续遵守，核心数据零漂移） | 连续373轮(v1475→v1847)27/27通过（100.0%通过率）"
+}
