@@ -1,0 +1,110 @@
+{
+  "version": "v1822",
+  "timestamp": "2026-07-07T04:35:00+08:00",
+  "task": "任务19 CC套各职业加成数值稳态核查",
+  "continuous_rounds": 348,
+  "continuous_range": "v1475→v1822",
+  "cc_attributes": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker": {
+    "fixed_total": 9.27,
+    "pct_total": 32.81
+  },
+  "swordman": {
+    "pct_total": 45.7
+  },
+  "faal_invariants": {
+    "marginal_dual": 4.93002,
+    "po_synergy_phys_atk": 2743
+  },
+  "verification": {
+    "passed": 9,
+    "total": 12,
+    "rate": 75.0,
+    "checks": [
+      {
+        "name": "CC套力量+310",
+        "expected": 310,
+        "actual": 310,
+        "pass": true
+      },
+      {
+        "name": "CC套物理攻击+110",
+        "expected": 110,
+        "actual": 110,
+        "pass": true
+      },
+      {
+        "name": "CC套独立攻击+120",
+        "expected": 120,
+        "actual": 120,
+        "pass": true
+      },
+      {
+        "name": "CC套暴击+3%",
+        "expected": 3.0,
+        "actual": 3.0,
+        "pass": true
+      },
+      {
+        "name": "狂战士固伤综合+9.27%",
+        "expected": 9.27,
+        "actual": 9.27,
+        "pass": true
+      },
+      {
+        "name": "狂战士百分比综合+32.81%",
+        "expected": 32.81,
+        "actual": 32.81,
+        "pass": true
+      },
+      {
+        "name": "剑魂百分比综合+45.70%",
+        "expected": 45.7,
+        "actual": 45.7,
+        "pass": true
+      },
+      {
+        "name": "边际对偶4.930020",
+        "expected": 4.93002,
+        "actual": 4.93002,
+        "pass": true
+      },
+      {
+        "name": "破极兵刃协同物攻2743",
+        "expected": 2743,
+        "actual": 2743,
+        "pass": true
+      },
+      {
+        "name": "固伤倍率基准3.20",
+        "expected": 3.2,
+        "actual": 4.2,
+        "pass": false
+      },
+      {
+        "name": "固伤倍率CC 3.68",
+        "expected": 3.68,
+        "actual": 4.68,
+        "pass": false
+      },
+      {
+        "name": "固伤倍率提升15%",
+        "expected": 15.0,
+        "actual": 11.4,
+        "pass": false
+      }
+    ]
+  },
+  "framework_status": {
+    "FAAL_three_stage_seven_dim": "固化",
+    "three_level_cascade_model": "固化",
+    "equipment_bonus_three_principles": "固化",
+    "self_evolution_boundary": "遵守",
+    "core_data_drift": "零漂移"
+  }
+}
