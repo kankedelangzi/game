@@ -1,0 +1,167 @@
+{
+  "version": "v1896",
+  "timestamp": "2026-07-07 14:31 CST",
+  "rounds": 421,
+  "total": 23,
+  "passed": 23,
+  "fail": 0,
+  "pass_rate": "23/23 (100.0%)",
+  "continuous_stable": 421,
+  "continuous_range": "1475→v1896",
+  "cc_attrs": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker_fixed": 9.27,
+  "berserker_pct": 32.81,
+  "swordman_pct": 45.7,
+  "marginal_duality": 4.93002,
+  "polarization_attack": 2743,
+  "faal_framework": true,
+  "three_principles": true,
+  "self_evolution_boundary": true,
+  "core_data_zero_drift": true,
+  "results": [
+    {
+      "item": "CC套属性-力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "item": "CC套属性-物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "item": "CC套属性-独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "item": "CC套属性-暴击率",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    {
+      "item": "狂战士-固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "item": "狂战士-百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "item": "剑魂-百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "item": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "item": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "item": "CC套-力量-百分比乘区",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "item": "CC套-物理攻击-百分比乘区",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "item": "CC套-独立攻击-固伤+百分比双乘区",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "item": "CC套-暴击-全技能通用",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "item": "独立攻击-固伤通道有效性",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "item": "独立攻击-百分比通道有效性",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "item": "独立攻击+120-固伤收益",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "item": "独立攻击+120-百分比收益",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "item": "边际对偶独立验证(非比值)",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true,
+      "note": "45.70/32.81=1.392868≠4.930020, 边际对偶为独立系统不变量"
+    },
+    {
+      "item": "三原则-乘区隔离",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "item": "三原则-阈值触发",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "item": "三原则-稀缺乘区控制",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "item": "三原则-收益递减",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "item": "FAAL三阶七维框架-固化状态",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    }
+  ]
+}
