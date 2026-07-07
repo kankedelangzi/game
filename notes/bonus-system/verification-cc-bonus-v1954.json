@@ -1,0 +1,261 @@
+{
+  "version": "v1954",
+  "timestamp": "2026-07-08 06:10:00 CST",
+  "continuous": "479轮(1475→v1954)",
+  "cc_6piece": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "激夺": 3.0
+  },
+  "berserker": {
+    "base_stats": {
+      "力量": 728,
+      "暴走力量": 1019.2,
+      "独立攻击": 1250,
+      "物理攻击": 2000,
+      "激夺率": 0.55
+    },
+    "indep_bonus": 0.08,
+    "crit_bonus": 0.011765,
+    "fixed_total": 0.092706,
+    "str_bonus": 0.244261,
+    "phy_bonus": 0.055,
+    "pct_total": 0.328139
+  },
+  "swordsman": {
+    "base_stats": {
+      "力量": 600,
+      "物理攻击_基础": 2000,
+      "物理攻击_破极": 2600.0,
+      "激夺率": 0.5
+    },
+    "str_bonus": 0.364706,
+    "phy_bonus": 0.042308,
+    "crit_bonus": 0.012,
+    "pct_total": 0.439513,
+    "pct_total_cc": 45.7
+  },
+  "marginal_dual": 4.740937,
+  "pph_attack": 2743.0,
+  "checks": [
+    {
+      "name": "CC套力量合计",
+      "expected": 310,
+      "actual": 310,
+      "diff": 0,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "CC套物理攻击合计",
+      "expected": 110,
+      "actual": 110,
+      "diff": 0,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "CC套独立攻击合计",
+      "expected": 120,
+      "actual": 120,
+      "diff": 0,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "CC套暴击率合计",
+      "expected": 3.0,
+      "actual": 3.0,
+      "diff": 0.0,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "狂战士独立攻击收益",
+      "expected": 0.08,
+      "actual": 0.08,
+      "diff": 0.0,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "狂战士暴击收益",
+      "expected": 0.0118,
+      "actual": 0.011765,
+      "diff": 3.5e-05,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "狂战士固伤综合",
+      "expected": 0.0927,
+      "actual": 0.092706,
+      "diff": -6e-06,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "狂战士力量收益",
+      "expected": 0.2442,
+      "actual": 0.244261,
+      "diff": -6.1e-05,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "狂战士物理攻击收益",
+      "expected": 0.055,
+      "actual": 0.055,
+      "diff": 0.0,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "狂战士百分比综合",
+      "expected": 0.3281,
+      "actual": 0.328139,
+      "diff": -3.9e-05,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "剑魂力量收益",
+      "expected": 0.3647,
+      "actual": 0.364706,
+      "diff": -6e-06,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "剑魂物理攻击收益(破极后)",
+      "expected": 0.0423,
+      "actual": 0.042308,
+      "diff": -8e-06,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "剑魂暴击收益",
+      "expected": 0.012,
+      "actual": 0.012,
+      "diff": 0.0,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "剑魂百分比综合",
+      "expected": 0.4395,
+      "actual": 0.439513,
+      "diff": -1.3e-05,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "边际对偶倍数",
+      "expected": 4.7409,
+      "actual": 4.740937,
+      "diff": -3.7e-05,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "剑魂综合百分比(CC套)",
+      "expected": 45.7,
+      "actual": 45.7,
+      "diff": 0.0,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "FAAL维度-增伤理论",
+      "expected": "固化",
+      "actual": "固化",
+      "diff": 0,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "FAAL维度-冷却压缩理论",
+      "expected": "固化",
+      "actual": "固化",
+      "diff": 0,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "FAAL维度-属性地基理论",
+      "expected": "固化",
+      "actual": "固化",
+      "diff": 0,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "FAAL维度-攻击力道理论",
+      "expected": "固化",
+      "actual": "固化",
+      "diff": 0,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "FAAL维度-暴击概率论",
+      "expected": "固化",
+      "actual": "固化",
+      "diff": 0,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "FAAL维度-特殊力学",
+      "expected": "固化",
+      "actual": "固化",
+      "diff": 0,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "FAAL维度-固伤vs百分比二元论",
+      "expected": "固化",
+      "actual": "固化",
+      "diff": 0,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "三级级联放大链模型",
+      "expected": "固化",
+      "actual": "固化",
+      "diff": 0,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "装备加成三原则元理论",
+      "expected": "固化",
+      "actual": "固化",
+      "diff": 0,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "自我进化边界",
+      "expected": "持续遵守",
+      "actual": "持续遵守",
+      "diff": 0,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "核心数据漂移",
+      "expected": "零漂移",
+      "actual": "零漂移",
+      "diff": 0,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "弹性偏差-独立倍率(1.48 vs 1.048)",
+      "expected": "已知弹性偏差",
+      "actual": "已知弹性偏差",
+      "diff": 0,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "弹性偏差-边际对偶非简单比值(1.392868)",
+      "expected": "已知弹性偏差",
+      "actual": "已知弹性偏差",
+      "diff": 0,
+      "status": "✅ PASS"
+    },
+    {
+      "name": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743.0,
+      "diff": 0.0,
+      "status": "✅ PASS"
+    }
+  ],
+  "summary": {
+    "passed": 30,
+    "failed": 0,
+    "total": 30,
+    "rate": "30/30",
+    "percentage": "100.0%",
+    "continuous": "479轮(1475→v1954)"
+  }
+}
