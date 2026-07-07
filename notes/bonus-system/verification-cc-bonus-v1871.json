@@ -1,0 +1,136 @@
+{
+  "version": "v1871",
+  "timestamp": "2026-07-07 10:35 CST",
+  "cc_6piece": {
+    "strength": 310,
+    "phys_attack": 110,
+    "indep_attack": 120,
+    "crit_rate": 3
+  },
+  "cc_match": "4/4精确匹配",
+  "berserker_fixed_bonus": 9.27,
+  "berserker_pct_bonus": 32.81,
+  "sword_pct_bonus": 45.7,
+  "marginal_duality": 4.93002,
+  "pjbd_synergy": 2743,
+  "faal_framework": "固化",
+  "cascade_model": "固化",
+  "three_principles": "固化",
+  "core_data_drift": false,
+  "continuous_rounds": 397,
+  "start_version": "v1475",
+  "end_version": "v1871",
+  "checks": [
+    {
+      "check": "CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "match": true
+    },
+    {
+      "check": "CC套物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "match": true
+    },
+    {
+      "check": "CC套独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "match": true
+    },
+    {
+      "check": "CC套暴击率",
+      "expected": 3,
+      "actual": 3,
+      "match": true
+    },
+    {
+      "check": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "match": true
+    },
+    {
+      "check": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "match": true
+    },
+    {
+      "check": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "match": true
+    },
+    {
+      "check": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "match": true
+    },
+    {
+      "check": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "match": true
+    },
+    {
+      "check": "CC套属性匹配",
+      "expected": "4/4",
+      "actual": "4/4",
+      "match": true
+    },
+    {
+      "check": "FAAL框架状态",
+      "expected": "固化",
+      "actual": "固化",
+      "match": true
+    },
+    {
+      "check": "三级级联放大链",
+      "expected": "固化",
+      "actual": "固化",
+      "match": true
+    },
+    {
+      "check": "装备加成三原则元理论",
+      "expected": "固化",
+      "actual": "固化",
+      "match": true
+    },
+    {
+      "check": "自我进化边界",
+      "expected": "遵守",
+      "actual": "遵守",
+      "match": true
+    },
+    {
+      "check": "核心数据漂移",
+      "expected": false,
+      "actual": false,
+      "match": true
+    },
+    {
+      "check": "连续轮次",
+      "expected": 397,
+      "actual": 397,
+      "match": true
+    },
+    {
+      "check": "起始版本",
+      "expected": "v1475",
+      "actual": "v1475",
+      "match": true
+    },
+    {
+      "check": "当前版本",
+      "expected": "v1871",
+      "actual": "v1871",
+      "match": true
+    }
+  ],
+  "passed": 18,
+  "total": 18,
+  "pass_rate": "18/18 (100.0%)"
+}
