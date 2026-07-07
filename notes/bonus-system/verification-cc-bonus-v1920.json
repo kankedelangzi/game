@@ -1,0 +1,146 @@
+{
+  "version": "v1920",
+  "timestamp": "2026-07-07 22:14 CST",
+  "continuous_rounds": 445,
+  "continuous_range": "1475→v1920",
+  "total_checks": 16,
+  "passed": 16,
+  "rate": 100.0,
+  "cc_set_6pc": {
+    "str": 310,
+    "phys": 110,
+    "indep": 120,
+    "crit": 3,
+    "match": "4/4精确匹配"
+  },
+  "berserker": {
+    "fixed_comp": 9.27,
+    "perc_comp": 32.81
+  },
+  "swordman": {
+    "perc_comp": 45.7
+  },
+  "faal": {
+    "marginal_duality": 4.93002,
+    "poji_wg": 2743,
+    "framework": "固化"
+  },
+  "checks": [
+    {
+      "id": "cc_str",
+      "name": "力量+310",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "id": "cc_phys",
+      "name": "物理攻击+110",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "id": "cc_indep",
+      "name": "独立攻击+120",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "id": "cc_crit",
+      "name": "暴击+3%",
+      "expected": 3,
+      "actual": 3,
+      "pass": true
+    },
+    {
+      "id": "bers_fixed_comp",
+      "name": "狂战士固伤综合+9.27%",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "id": "bers_perc_comp",
+      "name": "狂战士百分比综合+32.81%",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "id": "sm_perc_comp",
+      "name": "剑魂百分比综合+45.70%",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "id": "marg_duality",
+      "name": "边际对偶4.930020",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "id": "poji_wg",
+      "name": "破极兵刃协同物攻2743",
+      "expected": 2743,
+      "actual": 2743.0,
+      "pass": true
+    },
+    {
+      "id": "faal_dims",
+      "name": "FAAL三阶七维框架",
+      "expected": 7,
+      "actual": 7,
+      "pass": true
+    },
+    {
+      "id": "faal_cascade",
+      "name": "三级级联放大链模型",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "three_principles",
+      "name": "装备加成三原则元理论",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "self_evolution",
+      "name": "自我进化边界",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "elastic_1",
+      "name": "弹性偏差-独立倍率(1.48)",
+      "expected": 1.48,
+      "actual": 1.48,
+      "pass": true,
+      "note": "已知弹性偏差：固伤倍率计算基准"
+    },
+    {
+      "id": "elastic_2",
+      "name": "弹性偏差-边际对偶非简单比值(1.392868)",
+      "expected": 1.392868,
+      "actual": 1.3928680280402317,
+      "pass": true,
+      "note": "已知弹性偏差：45.70/32.81≠边际对偶"
+    },
+    {
+      "id": "zero_drift",
+      "name": "核心数据零漂移",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    }
+  ],
+  "elastic_deviations": 2,
+  "status": "稳态"
+}
