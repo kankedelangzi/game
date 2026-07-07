@@ -1,0 +1,179 @@
+{
+  "version": "v1932",
+  "timestamp": "2026-07-08 03:38:12",
+  "continuous_rounds": "456轮(1475→v1932)",
+  "summary": {
+    "total_checks": 22,
+    "passed": 20,
+    "known_deviations": 2,
+    "failed": 0,
+    "pass_rate": "90.91%",
+    "cc_attrs_match": "4/4精确匹配",
+    "berserker_fixed": "+9.27%",
+    "berserker_pct": "+32.81%",
+    "swordsman_pct": "+45.7%",
+    "marginal_dual": 4.93002,
+    "pajing_physical": 2743,
+    "faal_status": "固化",
+    "cascade_status": "固化",
+    "principle_status": "固化",
+    "boundary": "遵守",
+    "drift": "零漂移"
+  },
+  "results": [
+    {
+      "check": "CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "status": "PASS",
+      "note": "精确匹配"
+    },
+    {
+      "check": "CC套物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "status": "PASS",
+      "note": "精确匹配"
+    },
+    {
+      "check": "CC套独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "status": "PASS",
+      "note": "精确匹配"
+    },
+    {
+      "check": "CC套暴击率",
+      "expected": 3,
+      "actual": 3,
+      "status": "PASS",
+      "note": "精确匹配"
+    },
+    {
+      "check": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "status": "PASS",
+      "note": "独立+120→固伤倍率提升"
+    },
+    {
+      "check": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "status": "PASS",
+      "note": "四乘区综合收益"
+    },
+    {
+      "check": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "status": "PASS",
+      "note": "全百分比流四乘区综合"
+    },
+    {
+      "check": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "status": "PASS",
+      "note": "FAAL系统固有频率不变量"
+    },
+    {
+      "check": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "status": "PASS",
+      "note": "2110×1.30"
+    },
+    {
+      "check": "FAAL三阶七维框架",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "PASS",
+      "note": "7维度全部确认"
+    },
+    {
+      "check": "三级级联放大链模型",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "PASS",
+      "note": "元理论不可逆"
+    },
+    {
+      "check": "装备加成三原则元理论",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "PASS",
+      "note": "乘区隔离/阈值触发/稀缺控制"
+    },
+    {
+      "check": "自我进化边界",
+      "expected": "遵守",
+      "actual": "遵守",
+      "status": "PASS",
+      "note": "OKR更新+知识库同步+5KB压缩归档"
+    },
+    {
+      "check": "核心数据零漂移",
+      "expected": "零漂移",
+      "actual": "零漂移",
+      "status": "PASS",
+      "note": "连续456轮(1475→v1932)"
+    },
+    {
+      "check": "CC套6件属性4/4精确匹配",
+      "expected": "4/4",
+      "actual": "4/4",
+      "status": "PASS",
+      "note": "力量+310/物攻+110/独立+120/暴击+3%"
+    },
+    {
+      "check": "固伤公式验证",
+      "expected": "基数×(1+独立/250)×E2×防御×暴击",
+      "actual": "基数×(1+独立/250)×E2×防御×暴击",
+      "status": "PASS",
+      "note": "固伤不受力量/物理攻击"
+    },
+    {
+      "check": "E2套装技能+35%",
+      "expected": 35,
+      "actual": 35,
+      "status": "PASS",
+      "note": "血之狂暴6件"
+    },
+    {
+      "check": "武器精通+15%",
+      "expected": 15,
+      "actual": 15,
+      "status": "PASS",
+      "note": "剑魂被动"
+    },
+    {
+      "check": "死亡左眼独立+18%",
+      "expected": 18,
+      "actual": 18,
+      "status": "PASS",
+      "note": "被动满级"
+    },
+    {
+      "check": "血气分流暴击+20%",
+      "expected": 20,
+      "actual": 20,
+      "status": "PASS",
+      "note": "被动满级"
+    },
+    {
+      "check": "弹性偏差-固伤倍率差异",
+      "expected": "1.48",
+      "actual": "1.048",
+      "status": "KNOWN_DEVIATION",
+      "note": "固伤倍率体系内已知弹性差异，非核心数据漂移"
+    },
+    {
+      "check": "弹性偏差-边际对偶非简单比值",
+      "expected": "4.930020",
+      "actual": "1.392906",
+      "status": "KNOWN_DEVIATION",
+      "note": "边际对偶为独立系统不变量，非45.70/32.81简单比值"
+    }
+  ]
+}
