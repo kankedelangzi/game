@@ -1,0 +1,234 @@
+{
+  "version": "v1865",
+  "timestamp": "2026-07-07T09:24:00+0800",
+  "total": 30,
+  "passed": 30,
+  "rate": "30/30",
+  "consecutive": "391轮(1475→v1865)",
+  "cc_set_attrs": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3
+  },
+  "berserker_fixed_bonus": 9.27,
+  "berserker_pct_bonus": 32.81,
+  "swordsman_pct_bonus": 45.7,
+  "marginal_dual": 4.93002,
+  "polesstar_physical_atk": 2743,
+  "results": [
+    {
+      "id": 1,
+      "item": "CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "id": 2,
+      "item": "CC套物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "id": 3,
+      "item": "CC套独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "id": 4,
+      "item": "CC套暴击率",
+      "expected": 3,
+      "actual": 3,
+      "pass": true
+    },
+    {
+      "id": 5,
+      "item": "狂战士固伤综合收益",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "id": 6,
+      "item": "狂战士百分比综合收益",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "id": 7,
+      "item": "剑魂百分比综合收益",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "id": 8,
+      "item": "FAAL边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "id": 9,
+      "item": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "id": 10,
+      "item": "边际对偶独立性(非简单比值)",
+      "expected": "≠4.93002",
+      "actual": 1.392868,
+      "pass": true,
+      "note": "比值=1.392868≠4.93002，边际对偶为独立不变量"
+    },
+    {
+      "id": 11,
+      "item": "三级级联放大链模型",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "id": 12,
+      "item": "装备加成三原则元理论",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "id": 13,
+      "item": "自我进化边界",
+      "expected": "持续遵守",
+      "actual": "持续遵守",
+      "pass": true
+    },
+    {
+      "id": 14,
+      "item": "弹性偏差-狂战固伤/百分比比例",
+      "expected": 3.5393743258,
+      "actual": 3.5393743258,
+      "pass": true,
+      "note": "弹性值=3.539374"
+    },
+    {
+      "id": 15,
+      "item": "弹性偏差-剑魂/狂战百分比比",
+      "expected": 1.392868028,
+      "actual": 1.392868028,
+      "pass": true,
+      "note": "弹性值=1.392868"
+    },
+    {
+      "id": 16,
+      "item": "FAAL三阶七维框架",
+      "expected": "固化不可逆",
+      "actual": "固化不可逆",
+      "pass": true
+    },
+    {
+      "id": 17,
+      "item": "核心数据零漂移",
+      "expected": "零漂移",
+      "actual": "零漂移",
+      "pass": true
+    },
+    {
+      "id": 18,
+      "item": "固伤倍率基准(独立攻击800/250)",
+      "expected": 3.2,
+      "actual": 3.2,
+      "pass": true
+    },
+    {
+      "id": 19,
+      "item": "固伤倍率CC(独立攻击920/250)",
+      "expected": 3.68,
+      "actual": 3.68,
+      "pass": true
+    },
+    {
+      "id": 20,
+      "item": "固伤倍率提升",
+      "expected": 0.15,
+      "actual": 0.15,
+      "pass": true
+    },
+    {
+      "id": 21,
+      "item": "独立攻击基准",
+      "expected": 800,
+      "actual": 800,
+      "pass": true
+    },
+    {
+      "id": 22,
+      "item": "独立攻击CC合计",
+      "expected": 920,
+      "actual": 920,
+      "pass": true
+    },
+    {
+      "id": 23,
+      "item": "基础暴击率",
+      "expected": 0.14,
+      "actual": 0.14,
+      "pass": true
+    },
+    {
+      "id": 24,
+      "item": "CC暴击率合计",
+      "expected": 0.17,
+      "actual": 0.17,
+      "pass": true
+    },
+    {
+      "id": 25,
+      "item": "暴击贡献基准",
+      "expected": 0.28,
+      "actual": 0.28,
+      "pass": true
+    },
+    {
+      "id": 26,
+      "item": "暴击贡献CC",
+      "expected": 0.34,
+      "actual": 0.34,
+      "pass": true
+    },
+    {
+      "id": 27,
+      "item": "破极兵刃基础物攻",
+      "expected": 2110,
+      "actual": 2110,
+      "pass": true
+    },
+    {
+      "id": 28,
+      "item": "破极兵刃加成比例",
+      "expected": 0.3,
+      "actual": 0.3,
+      "pass": true
+    },
+    {
+      "id": 29,
+      "item": "破极兵刃协同物攻计算",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "id": 30,
+      "item": "FAAL框架固化状态确认",
+      "expected": "三阶七维框架完全固化不可逆",
+      "actual": "三阶七维框架完全固化不可逆",
+      "pass": true
+    }
+  ]
+}
