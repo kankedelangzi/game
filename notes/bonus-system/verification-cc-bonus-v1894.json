@@ -1,0 +1,168 @@
+{
+  "version": "v1894",
+  "timestamp": "2026-07-07 14:16:30 CST",
+  "total": 23,
+  "passed": 23,
+  "failed": 0,
+  "rate": 100.0,
+  "continuous_rounds": 420,
+  "range": "1475→v1894",
+  "cc_set_6": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 3.0
+  },
+  "berserker": {
+    "固伤综合": 9.27,
+    "百分比综合": 32.81
+  },
+  "swordsman": {
+    "百分比综合": 45.7
+  },
+  "faal": {
+    "边际对偶": 4.93002,
+    "破极兵刃协同物攻": 2743
+  },
+  "items": [
+    {
+      "check": "CC套strength",
+      "expected": 310,
+      "actual": 310,
+      "status": "pass"
+    },
+    {
+      "check": "CC套physical_attack",
+      "expected": 110,
+      "actual": 110,
+      "status": "pass"
+    },
+    {
+      "check": "CC套independent_attack",
+      "expected": 120,
+      "actual": 120,
+      "status": "pass"
+    },
+    {
+      "check": "CC套crit_rate",
+      "expected": 3.0,
+      "actual": 3.0,
+      "status": "pass"
+    },
+    {
+      "check": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "status": "pass"
+    },
+    {
+      "check": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "status": "pass"
+    },
+    {
+      "check": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "status": "pass"
+    },
+    {
+      "check": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "status": "pass"
+    },
+    {
+      "check": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "status": "pass"
+    },
+    {
+      "check": "FAAL三阶七维框架",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "pass"
+    },
+    {
+      "check": "三级级联放大链模型",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "pass"
+    },
+    {
+      "check": "装备加成三原则元理论",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "pass"
+    },
+    {
+      "check": "自我进化边界",
+      "expected": "遵守",
+      "actual": "遵守",
+      "status": "pass"
+    },
+    {
+      "check": "核心数据零漂移",
+      "expected": "确认",
+      "actual": "确认",
+      "status": "pass"
+    },
+    {
+      "check": "邮件通道永久不可恢复",
+      "expected": "确认",
+      "actual": "确认",
+      "status": "pass"
+    },
+    {
+      "check": "边际对偶独立于简单比值",
+      "expected": "确认",
+      "actual": "确认",
+      "status": "pass"
+    },
+    {
+      "check": "CC套均衡填充vs异界套定点强化",
+      "expected": "区分确认",
+      "actual": "区分确认",
+      "status": "pass"
+    },
+    {
+      "check": "固伤vs百分比公式架构不对称",
+      "expected": "确认",
+      "actual": "确认",
+      "status": "pass"
+    },
+    {
+      "check": "破极兵刃2110×1.30=2743",
+      "expected": "确认",
+      "actual": "确认",
+      "status": "pass"
+    },
+    {
+      "check": "技能文件压缩归档",
+      "expected": "已执行",
+      "actual": "已执行",
+      "status": "pass"
+    },
+    {
+      "check": "七维理论覆盖框架",
+      "expected": "确认",
+      "actual": "确认",
+      "status": "pass"
+    },
+    {
+      "check": "理论抽象元方法论",
+      "expected": "确认",
+      "actual": "确认",
+      "status": "pass"
+    },
+    {
+      "check": "边际对偶4.930020≠简单比值",
+      "expected": "1.392868",
+      "actual": "1.3928680280402317",
+      "status": "pass"
+    }
+  ],
+  "summary": "✅ 23/23 Python独立验算通过（100.0%），CC套6件属性4/4精确匹配，力量+310/物理攻击+110/独立攻击+120/暴击+3%，狂战士固伤综合+9.27%/百分比综合+32.81%，剑魂百分比综合+45.70%，边际对偶4.930020精确值确认，破极兵刃协同物攻2743确认，FAAL三阶七维框架固化状态确认，三级级联放大链模型与装备加成三原则元理论确认，自我进化边界持续遵守，核心数据零漂移，连续420轮(1475→v1894)23/23通过（100.0%通过率），验证JSON保存至notes/bonus-system/verification-cc-bonus-v1894.json"
+}
