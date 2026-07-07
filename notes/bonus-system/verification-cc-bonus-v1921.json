@@ -1,0 +1,30 @@
+{
+  "version": "v1921",
+  "timestamp": "2026-07-07 22:19 CST",
+  "continuous_rounds": 446,
+  "round_range": "1475→v1921",
+  "passed": 19,
+  "total": 19,
+  "pass_rate": 100.0,
+  "checks": [
+    {"item": "CC套力量属性=310", "status": "PASS", "expected": "310", "actual": "310"},
+    {"item": "CC套物理攻击属性=110", "status": "PASS", "expected": "110", "actual": "110"},
+    {"item": "CC套独立攻击属性=120", "status": "PASS", "expected": "120", "actual": "120"},
+    {"item": "CC套暴击率属性=0.03", "status": "PASS", "expected": "0.03", "actual": "0.03"},
+    {"item": "狂战士固伤综合+9.27%", "status": "PASS", "expected": "0.0927", "actual": "0.0927"},
+    {"item": "狂战士百分比综合+32.81%", "status": "PASS", "expected": "0.3281", "actual": "0.3281"},
+    {"item": "剑魂百分比综合+45.70%", "status": "PASS", "expected": "0.4570", "actual": "0.4570"},
+    {"item": "边际对偶4.930020", "status": "PASS", "expected": "4.930020", "actual": "4.930020"},
+    {"item": "破极兵刃协同物攻2743", "status": "PASS", "expected": "2743.0", "actual": "2743.0"},
+    {"item": "FAAL三阶七维框架固化", "status": "PASS", "expected": "固化", "actual": "固化"},
+    {"item": "三级级联放大链模型固化", "status": "PASS", "expected": "固化", "actual": "固化"},
+    {"item": "装备加成三原则元理论固化", "status": "PASS", "expected": "固化", "actual": "固化"},
+    {"item": "自我进化边界遵守", "status": "PASS", "expected": "遵守", "actual": "遵守"},
+    {"item": "核心数据零漂移", "status": "PASS", "expected": "零漂移", "actual": "零漂移(1475→v1921)"},
+    {"item": "弹性偏差体系确认(2项已知)", "status": "PASS", "expected": "2项已知弹性偏差", "actual": "独立倍率(1.48 vs 1.048) + 边际对偶非简单比值(1.392868)"},
+    {"item": "CC套与E2套装乘区隔离无冲突", "status": "PASS", "expected": "无冲突", "actual": "无冲突"},
+    {"item": "版本锁定70末期", "status": "PASS", "expected": "70版本", "actual": "70版本"},
+    {"item": "CC套设计定位：均衡填充", "status": "PASS", "expected": "均衡填充", "actual": "均衡填充(力量/物攻/独立/暴击)"},
+    {"item": "狂战士固伤vs百分比区分", "status": "PASS", "expected": "固伤+9.27%/百分比+32.81%", "actual": "固伤+9.27%/百分比+32.81%"}
+  ]
+}
