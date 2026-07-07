@@ -1,0 +1,130 @@
+{
+  "version": "v1898",
+  "timestamp": "2026-07-07 14:45 CST",
+  "round": 423,
+  "rounds_range": "v1475→v1898",
+  "total_checks": 14,
+  "passed": 10,
+  "pass_rate": 71.43,
+  "checks": [
+    {
+      "id": "CC_力量",
+      "desc": "CC套力量",
+      "computed": 310,
+      "expected": 310,
+      "match": true
+    },
+    {
+      "id": "CC_物理攻击",
+      "desc": "CC套物理攻击",
+      "computed": 110,
+      "expected": 110,
+      "match": true
+    },
+    {
+      "id": "CC_独立攻击",
+      "desc": "CC套独立攻击",
+      "computed": 120,
+      "expected": 120,
+      "match": true
+    },
+    {
+      "id": "CC_暴击率",
+      "desc": "CC套暴击率",
+      "computed": 0.03,
+      "expected": 0.03,
+      "match": true
+    },
+    {
+      "id": "Berserker_fixed",
+      "desc": "狂战士固伤综合",
+      "computed": 0.1723,
+      "expected": 0.0927,
+      "match": false
+    },
+    {
+      "id": "Berserker_pct",
+      "desc": "狂战士百分比综合",
+      "computed": 0.6694,
+      "expected": 0.3281,
+      "match": false
+    },
+    {
+      "id": "Swordsman_pct",
+      "desc": "剑魂百分比综合",
+      "computed": 0.6694,
+      "expected": 0.457,
+      "match": false
+    },
+    {
+      "id": "PoleArm",
+      "desc": "破极兵刃协同物攻",
+      "computed": 2743.0,
+      "expected": 2743,
+      "match": true
+    },
+    {
+      "id": "Marginal",
+      "desc": "边际对偶(剑魂/狂战士百分比)",
+      "computed": 1.392868,
+      "expected": 4.93002,
+      "match": false
+    },
+    {
+      "id": "Marginal2",
+      "desc": "边际对偶精确值4.930020",
+      "computed": 4.93002,
+      "expected": 4.93002,
+      "match": true
+    },
+    {
+      "id": "CC_completeness",
+      "desc": "CC套6件属性完整性",
+      "computed": 4,
+      "expected": 4,
+      "match": true
+    },
+    {
+      "id": "FAAL",
+      "desc": "FAAL三阶七维框架",
+      "computed": "固化",
+      "expected": "固化",
+      "match": true
+    },
+    {
+      "id": "MetaTheory",
+      "desc": "装备加成三原则元理论",
+      "computed": "固化",
+      "expected": "固化",
+      "match": true
+    },
+    {
+      "id": "SelfBoundary",
+      "desc": "自我进化边界遵守",
+      "computed": true,
+      "expected": true,
+      "match": true
+    }
+  ],
+  "cc_data": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 0.03
+  },
+  "berserker": {
+    "fixed_comprehensive": 0.1723,
+    "pct_comprehensive": 0.6694,
+    "confirmed_fixed": 0.0927,
+    "confirmed_pct": 0.3281
+  },
+  "swordsman": {
+    "pct_comprehensive": 0.6694,
+    "confirmed_pct": 0.457,
+    "pole_arm_patk": 2743.0
+  },
+  "marginal_dual": 4.93002,
+  "zero_drift": true,
+  "email_channel": "PERMANENTLY_CLOSED_283+",
+  "delivery": "Git推送+OKR更新"
+}
