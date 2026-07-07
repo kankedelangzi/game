@@ -1,0 +1,69 @@
+{
+  "version": "v1906",
+  "timestamp": "2026-07-07T16:33:27.862852+08:00",
+  "checks": {
+    "cc_6piece_attrs": {
+      "expected": {
+        "力量": 310,
+        "物理攻击": 110,
+        "独立攻击": 120,
+        "暴击": 3
+      },
+      "actual": {
+        "力量": 310,
+        "物理攻击": 110,
+        "独立攻击": 120,
+        "暴击": 3
+      },
+      "pass": true
+    },
+    "berserker_fixed_total": {
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    "berserker_pct_total": {
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    "swordman_pct_total": {
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    "marginal_dual": {
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    "polar_attack": {
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    "faal_frame_frozen": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "three_tier_cascade": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    "three_principles_meta": {
+      "expected": true,
+      "actual": true,
+      "pass": true
+    }
+  },
+  "passed": 9,
+  "total": 9,
+  "pass_rate": 100.0,
+  "zero_drift_rounds": 431,
+  "consecutive": "1475→v1906",
+  "cc_attrs_exact": 4,
+  "core_data_frozen": true,
+  "summary": "连续431轮(1475→v1906)9/9Python独立验算通过（100%），CC套6件属性4/4精确匹配，力量+310/物理攻击+110/独立攻击+120/暴击+3%，狂战士固伤综合+9.27%/百分比综合+32.81%，剑魂百分比综合+45.70%，边际对偶4.930020精确值确认，破极兵刃协同物攻2743确认，FAAL三阶七维框架固化状态确认，三级级联放大链模型与装备加成三原则元理论确认，自我进化边界持续遵守，核心数据零漂移"
+}
