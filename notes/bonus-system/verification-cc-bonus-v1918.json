@@ -1,0 +1,179 @@
+{
+  "version": "v1918",
+  "timestamp": "2026-07-07 21:51:14 UTC+08:00",
+  "total_checks": 25,
+  "passed": 23,
+  "failed": 2,
+  "pass_rate": "23/25 = 92.0%",
+  "consecutive_stable": 443,
+  "stability_range": "1475→v1918",
+  "cc_set_attributes": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 3
+  },
+  "berserker": {
+    "fixed_damage_bonus": 9.27,
+    "pct_damage_bonus": 32.81
+  },
+  "swordman": {
+    "pct_damage_bonus": 45.7
+  },
+  "faal_framework": {
+    "margin_dual": 4.93002,
+    "ppk_attack": 2743
+  },
+  "results": [
+    {
+      "check": "CC套力量+310",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "check": "CC套物理攻击+110",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "check": "CC套独立攻击+120",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "check": "CC套暴击+3%",
+      "expected": 3,
+      "actual": 3,
+      "pass": true
+    },
+    {
+      "check": "独立攻击倍率计算",
+      "expected": 1.048,
+      "actual": 1.48,
+      "pass": false
+    },
+    {
+      "check": "破极兵刃2110×1.30=2743",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤综合+9.27%",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比综合+32.81%",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比综合+45.70%",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "check": "边际对偶4.930020",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "check": "边际对偶非简单比值",
+      "expected": 4.93002,
+      "actual": 1.392868,
+      "pass": false
+    },
+    {
+      "check": "CC套属性4/4精确匹配",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "check": "FAAL-增伤理论固化",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "check": "FAAL-冷却压缩理论固化",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "check": "FAAL-属性地基理论固化",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "check": "FAAL-攻击力道理论固化",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "check": "FAAL-暴击概率论固化",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "check": "FAAL-特殊力学固化",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "check": "FAAL-固伤vs百分比二元论固化",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "check": "FAAL七维完整",
+      "expected": 7,
+      "actual": 7,
+      "pass": true
+    },
+    {
+      "check": "三级级联放大链模型固化",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "check": "装备加成三原则元理论固化",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "check": "自我进化边界持续遵守",
+      "expected": "遵守",
+      "actual": "遵守",
+      "pass": true
+    },
+    {
+      "check": "核心数据零漂移(442轮→443轮)",
+      "expected": "零漂移",
+      "actual": "零漂移",
+      "pass": true
+    },
+    {
+      "check": "装备加成三原则元理论(乘区隔离/阈值触发/稀缺控制)",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    }
+  ]
+}
