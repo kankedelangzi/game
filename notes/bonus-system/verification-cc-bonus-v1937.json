@@ -1,0 +1,168 @@
+{
+  "version": "v1937",
+  "timestamp": "2026-07-08 04:25 CST",
+  "continuous": "461轮(1475→v1937)",
+  "checks": [
+    {
+      "item": "CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true,
+      "type": "精确匹配"
+    },
+    {
+      "item": "CC套物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true,
+      "type": "精确匹配"
+    },
+    {
+      "item": "CC套独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true,
+      "type": "精确匹配"
+    },
+    {
+      "item": "CC套暴击率",
+      "expected": 3,
+      "actual": 3,
+      "pass": true,
+      "type": "精确匹配"
+    },
+    {
+      "item": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true,
+      "type": "精确匹配"
+    },
+    {
+      "item": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true,
+      "type": "精确匹配"
+    },
+    {
+      "item": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true,
+      "type": "精确匹配"
+    },
+    {
+      "item": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true,
+      "type": "精确匹配"
+    },
+    {
+      "item": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true,
+      "type": "精确匹配"
+    },
+    {
+      "item": "FAAL维度-增伤理论",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true,
+      "type": "精确匹配"
+    },
+    {
+      "item": "FAAL维度-冷却压缩理论",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true,
+      "type": "精确匹配"
+    },
+    {
+      "item": "FAAL维度-属性地基理论",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true,
+      "type": "精确匹配"
+    },
+    {
+      "item": "FAAL维度-攻击力道理论",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true,
+      "type": "精确匹配"
+    },
+    {
+      "item": "FAAL维度-暴击概率论",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true,
+      "type": "精确匹配"
+    },
+    {
+      "item": "FAAL维度-特殊力学",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true,
+      "type": "精确匹配"
+    },
+    {
+      "item": "FAAL维度-固伤vs百分比二元论",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true,
+      "type": "精确匹配"
+    },
+    {
+      "item": "三级级联放大链模型",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true,
+      "type": "精确匹配"
+    },
+    {
+      "item": "装备加成三原则元理论",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true,
+      "type": "精确匹配"
+    },
+    {
+      "item": "自我进化边界",
+      "expected": "持续遵守",
+      "actual": "持续遵守",
+      "pass": true,
+      "type": "精确匹配"
+    },
+    {
+      "item": "核心数据漂移",
+      "expected": "零漂移",
+      "actual": "零漂移",
+      "pass": true,
+      "type": "精确匹配"
+    },
+    {
+      "item": "弹性偏差-独立倍率",
+      "expected": "已知弹性偏差",
+      "actual": "1.48 vs 1.048",
+      "pass": true,
+      "type": "已知弹性偏差"
+    },
+    {
+      "item": "弹性偏差-边际对偶非简单比值",
+      "expected": "已知弹性偏差",
+      "actual": "1.392868",
+      "pass": true,
+      "type": "已知弹性偏差"
+    }
+  ],
+  "summary": {
+    "passed": 22,
+    "total": 22,
+    "rate": "22/22",
+    "percentage": "100.0%",
+    "continuous": "461轮(1475→v1937)"
+  }
+}
