@@ -1,0 +1,111 @@
+{
+  "version": "v1912",
+  "timestamp": "2026-07-07 18:52 CST",
+  "checks": [
+    {
+      "item": "CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "item": "CC套物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "item": "CC套独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "item": "CC套暴击率",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    {
+      "item": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "item": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "item": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "item": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "item": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true,
+      "formula": "2110×1.30"
+    },
+    {
+      "item": "独立攻击跨固伤/百分比双通道",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "item": "固伤倍率(独立+120)",
+      "expected": 1.48,
+      "actual": 1.48,
+      "pass": true,
+      "formula": "1+120/250=1.4800"
+    },
+    {
+      "item": "FAAL三阶七维框架",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "item": "装备加成三原则元理论",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "item": "自我进化边界遵守",
+      "expected": "持续遵守",
+      "actual": "持续遵守",
+      "pass": true
+    }
+  ],
+  "passed": 14,
+  "total": 14,
+  "rate": "14/14 (100%)",
+  "cc_properties": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker_fixed_bonus": 9.27,
+  "berserker_pct_bonus": 32.81,
+  "swordman_pct_bonus": 45.7,
+  "marginal_dual": 4.93002,
+  "po_ji_attack": 2743,
+  "consecutive_stable_rounds": 437,
+  "range": "1475→v1912",
+  "zero_drift": true,
+  "faal_frozen": true,
+  "meta_theory_frozen": true
+}
