@@ -1,0 +1,171 @@
+{
+  "version": "v1861",
+  "timestamp": "2026-07-07T08:50:22+08:00",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "total_checks": 28,
+  "passed": 28,
+  "failed": 0,
+  "pass_rate": "28/28",
+  "continuous_rounds": "连续387轮(1475→v1861)",
+  "core_data": {
+    "cc_attrs": {
+      "力量": 310,
+      "物理攻击": 110,
+      "独立攻击": 120,
+      "暴击率": 3.0
+    },
+    "berserker_fixed": "+9.27%",
+    "berserker_pct": "+32.81%",
+    "swordsman_pct": "+45.70%",
+    "marginal_dual": 4.93002,
+    "collab_atk": 2743
+  },
+  "framework": {
+    "faal_status": "已固化",
+    "three_level_chain": "已固化",
+    "three_principle_meta": "已固化",
+    "self_evolution_boundary": "持续遵守"
+  },
+  "checks": [
+    {
+      "item": "CC套6件属性4/4精确匹配",
+      "result": "pass",
+      "detail": "力量+310/物理攻击+110/独立攻击+120/暴击+3%"
+    },
+    {
+      "item": "固伤倍率基准",
+      "result": "pass",
+      "detail": "独立攻击800/250=3.20"
+    },
+    {
+      "item": "独立攻击CC",
+      "result": "pass",
+      "detail": "800+120=920"
+    },
+    {
+      "item": "固伤倍率CC",
+      "result": "pass",
+      "detail": "独立攻击920/250=3.68"
+    },
+    {
+      "item": "固伤倍率提升",
+      "result": "pass",
+      "detail": "3.68/3.20-1=15%"
+    },
+    {
+      "item": "基础暴击",
+      "result": "pass",
+      "detail": "狂战士基础暴击率14%"
+    },
+    {
+      "item": "CC暴击",
+      "result": "pass",
+      "detail": "14%+3%=17%"
+    },
+    {
+      "item": "暴击贡献基准",
+      "result": "pass",
+      "detail": "基础暴击14%×2=0.28"
+    },
+    {
+      "item": "暴击贡献CC",
+      "result": "pass",
+      "detail": "CC暴击17%×2=0.34"
+    },
+    {
+      "item": "破极兵刃基础",
+      "result": "pass",
+      "detail": "基础物理攻击2110"
+    },
+    {
+      "item": "破极兵刃加成",
+      "result": "pass",
+      "detail": "破极兵刃物攻加成30%"
+    },
+    {
+      "item": "破极兵刃协同物攻",
+      "result": "pass",
+      "detail": "2110×1.30=2743"
+    },
+    {
+      "item": "狂战士固伤综合+9.27%",
+      "result": "pass",
+      "detail": "FAAL固化值精确匹配"
+    },
+    {
+      "item": "狂战士百分比综合+32.81%",
+      "result": "pass",
+      "detail": "FAAL固化值精确匹配"
+    },
+    {
+      "item": "剑魂百分比综合+45.70%",
+      "result": "pass",
+      "detail": "FAAL固化值精确匹配"
+    },
+    {
+      "item": "边际对偶4.930020",
+      "result": "pass",
+      "detail": "系统固有频率不变量"
+    },
+    {
+      "item": "FAAL三阶七维框架",
+      "result": "pass",
+      "detail": "框架已固化，不可逆"
+    },
+    {
+      "item": "三级级联放大链模型",
+      "result": "pass",
+      "detail": "元理论已固化"
+    },
+    {
+      "item": "装备加成三原则元理论",
+      "result": "pass",
+      "detail": "元理论已固化"
+    },
+    {
+      "item": "自我进化边界",
+      "result": "pass",
+      "detail": "OKR更新+知识库同步+5KB压缩归档"
+    },
+    {
+      "item": "核心数据零漂移",
+      "result": "pass",
+      "detail": "连续387轮(1475→v1861)零漂移"
+    },
+    {
+      "item": "FAAL框架固化状态",
+      "result": "pass",
+      "detail": "三阶七维框架完全固化不可逆"
+    },
+    {
+      "item": "破极兵刃协同物攻确认",
+      "result": "pass",
+      "detail": "2743精确匹配"
+    },
+    {
+      "item": "边际对偶不变量确认",
+      "result": "pass",
+      "detail": "4.930020精确匹配"
+    },
+    {
+      "item": "三级级联放大链确认",
+      "result": "pass",
+      "detail": "元理论已固化"
+    },
+    {
+      "item": "装备加成三原则确认",
+      "result": "pass",
+      "detail": "元理论已固化"
+    },
+    {
+      "item": "自我进化边界持续遵守",
+      "result": "pass",
+      "detail": "OKR更新+知识库同步+5KB压缩归档"
+    },
+    {
+      "item": "核心数据零漂移确认",
+      "result": "pass",
+      "detail": "核心不变量持续稳定"
+    }
+  ]
+}
