@@ -1,0 +1,73 @@
+{
+  "version": "v1943",
+  "timestamp": "2026-07-08 04:57:28",
+  "cc_set_attributes": {
+    "strength": {
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    "phys_atk": {
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    "ind_atk": {
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    "crit_rate": {
+      "expected": 3,
+      "actual": 3,
+      "pass": true
+    }
+  },
+  "berserker_fixed_bonus_pct": 9.27,
+  "berserker_percentage_bonus_pct": 32.81,
+  "swordsman_percentage_bonus_pct": 45.7,
+  "faal_constants": {
+    "marginal_dual": 4.93002,
+    "broken_sword_synergy": 2743
+  },
+  "self_evolution_boundary": "遵守",
+  "zero_drift": true,
+  "passing_checks": {
+    "cc_str_310": true,
+    "cc_atk_110": true,
+    "cc_ind_120": true,
+    "cc_crit_3pct": true,
+    "marginal_dual_4930020": true,
+    "broken_sword_2743": true,
+    "berserker_fixed_927": true,
+    "berserker_pct_3281": true,
+    "swordsman_pct_4570": true
+  },
+  "failing_checks": {},
+  "summary": {
+    "total_checks": 9,
+    "passed": 9,
+    "rate": "9/9",
+    "pass_pct": 100.0
+  },
+  "derived_checks": {
+    "cc_attr_4of4": true,
+    "faal_framework_stable": true,
+    "core_data_zero_drift": true,
+    "berserker_fixed_stable": true,
+    "berserker_pct_stable": true,
+    "swordsman_pct_stable": true
+  },
+  "derived_summary": {
+    "total": 6,
+    "passed": 6,
+    "rate": "6/6",
+    "pass_pct": 100.0
+  },
+  "overall": {
+    "total": 15,
+    "passed": 15,
+    "rate": "15/15",
+    "pass_pct": 100.0
+  }
+}
