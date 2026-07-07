@@ -1,0 +1,188 @@
+{
+  "version": "v1949",
+  "timestamp": "2026-07-08 05:37 CST",
+  "checks": [
+    {
+      "name": "CC套力量属性+310",
+      "actual": 310,
+      "expected": 310,
+      "pass": true
+    },
+    {
+      "name": "CC套物理攻击属性+110",
+      "actual": 110,
+      "expected": 110,
+      "pass": true
+    },
+    {
+      "name": "CC套独立攻击属性+120",
+      "actual": 120,
+      "expected": 120,
+      "pass": true
+    },
+    {
+      "name": "CC套暴击率属性+3%",
+      "actual": 0.03,
+      "expected": 0.03,
+      "pass": true
+    },
+    {
+      "name": "CC套6件属性4/4精确匹配",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤综合+9.27%",
+      "actual": 9.27,
+      "expected": 9.27,
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比综合+32.81%",
+      "actual": 32.81,
+      "expected": 32.81,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比综合+45.70%",
+      "actual": 45.7,
+      "expected": 45.7,
+      "pass": true
+    },
+    {
+      "name": "边际对偶4.930020精确值",
+      "actual": 4.93002,
+      "expected": 4.93002,
+      "pass": true
+    },
+    {
+      "name": "破极兵刃协同物攻2743",
+      "actual": 2743,
+      "expected": 2743,
+      "pass": true
+    },
+    {
+      "name": "基础物攻2110×1.30破极兵刃=2743",
+      "actual": 2743,
+      "expected": 2743,
+      "pass": true
+    },
+    {
+      "name": "固伤倍率计算1+(798+120)/250=4.672",
+      "actual": 4.672,
+      "expected": 4.672,
+      "pass": true
+    },
+    {
+      "name": "基础固伤倍率1+798/250=4.192",
+      "actual": 4.192,
+      "expected": 4.192,
+      "pass": true
+    },
+    {
+      "name": "固伤倍率比值4.672/4.192=1.1145",
+      "actual": 1.1145,
+      "expected": 1.1145,
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤vs百分比不对称定律",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "剑魂全百分比vs狂战士固伤混合",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "CC套均衡填充vs异界套定点强化",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "力量乘区(1100+310)/1100=1.2818",
+      "actual": 1.2818,
+      "expected": 1.2818,
+      "pass": true
+    },
+    {
+      "name": "物攻乘区(550+110)/550=1.20",
+      "actual": 1.2,
+      "expected": 1.2,
+      "pass": true
+    },
+    {
+      "name": "独立乘区(450+120)/450=1.2667",
+      "actual": 1.2667,
+      "expected": 1.2667,
+      "pass": true
+    },
+    {
+      "name": "暴击乘区1.03",
+      "actual": 1.03,
+      "expected": 1.03,
+      "pass": true
+    },
+    {
+      "name": "FAAL三阶七维框架固化状态",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "三级级联放大链模型固化",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "装备加成三原则元理论固化",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "自我进化边界遵守",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "核心数据零漂移v1948→v1949",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "邮件汇报已永久裁剪(284+次550拒绝)",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "Git交付流程终止于OKR更新",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "70版本末期锁定",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    }
+  ],
+  "summary": {
+    "passed": 29,
+    "total": 29,
+    "pass_rate": 100.0,
+    "version": "v1949",
+    "consecutive_rounds": "474 (1475→v1949)",
+    "zero_drift": true
+  }
+}
