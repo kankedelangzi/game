@@ -1,0 +1,14 @@
+{
+  "version": "v1965",
+  "timestamp": "2026-07-08 07:32 CST",
+  "total_tests": 21,
+  "passed": 21,
+  "rate": 100.0,
+  "cc_set_match": "4/4精确匹配",
+  "berserker_fixed": "+9.27%",
+  "berserker_percent": "+32.81%",
+  "swordsman_percent": "+45.70%",
+  "faal_duality": 4.93002,
+  "break_weapon_atk": 2743,
+  "consecutive_rounds": 491
+}
