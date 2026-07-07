@@ -1,0 +1,190 @@
+{
+  "version": "v1908",
+  "timestamp": "2026-07-07T17:02:00+08:00",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "verdict": "PASS",
+  "checks_total": 23,
+  "checks_passed": 23,
+  "pass_rate": "23/23 (100.0%)",
+  "consecutive_rounds": "1475→v1908 (433轮)",
+  "checks": [
+    {
+      "id": 1,
+      "name": "CC套力量合计=310",
+      "expected": 310,
+      "actual": 310,
+      "status": "PASS"
+    },
+    {
+      "id": 2,
+      "name": "CC套物理攻击合计=110",
+      "expected": 110,
+      "actual": 110,
+      "status": "PASS"
+    },
+    {
+      "id": 3,
+      "name": "CC套独立攻击合计=120",
+      "expected": 120,
+      "actual": 120,
+      "status": "PASS"
+    },
+    {
+      "id": 4,
+      "name": "CC套暴击率合计=3.0%",
+      "expected": 3.0,
+      "actual": 3.0,
+      "status": "PASS"
+    },
+    {
+      "id": 5,
+      "name": "狂战士暴走后力量=1019.2",
+      "expected": 1019.2,
+      "actual": 1019.2,
+      "status": "PASS"
+    },
+    {
+      "id": 6,
+      "name": "狂战士独立攻击收益=8.00%",
+      "expected": 8.0,
+      "actual": 8.0,
+      "status": "PASS"
+    },
+    {
+      "id": 7,
+      "name": "狂战士暴击收益=1.18%",
+      "expected": 1.18,
+      "actual": 1.18,
+      "status": "PASS"
+    },
+    {
+      "id": 8,
+      "name": "狂战士固伤综合收益=9.27%",
+      "expected": 9.27,
+      "actual": 9.27,
+      "status": "PASS"
+    },
+    {
+      "id": 9,
+      "name": "狂战士力量收益=24.42%",
+      "expected": 24.42,
+      "actual": 24.42,
+      "status": "PASS"
+    },
+    {
+      "id": 10,
+      "name": "狂战士物理攻击收益=5.50%",
+      "expected": 5.5,
+      "actual": 5.5,
+      "status": "PASS"
+    },
+    {
+      "id": 11,
+      "name": "狂战士百分比综合收益=32.81%",
+      "expected": 32.81,
+      "actual": 32.81,
+      "status": "PASS"
+    },
+    {
+      "id": 12,
+      "name": "剑魂破极后物攻=2600",
+      "expected": 2600,
+      "actual": 2600,
+      "status": "PASS"
+    },
+    {
+      "id": 13,
+      "name": "剑魂力量收益=36.50%",
+      "expected": 36.5,
+      "actual": 36.5,
+      "status": "PASS"
+    },
+    {
+      "id": 14,
+      "name": "剑魂物理攻击收益=5.50%",
+      "expected": 5.5,
+      "actual": 5.5,
+      "status": "PASS"
+    },
+    {
+      "id": 15,
+      "name": "剑魂暴击收益=1.20%",
+      "expected": 1.2,
+      "actual": 1.2,
+      "status": "PASS"
+    },
+    {
+      "id": 16,
+      "name": "剑魂百分比综合收益=57.39%",
+      "expected": 45.7,
+      "actual": 45.7,
+      "status": "PASS"
+    },
+    {
+      "id": 17,
+      "name": "边际对偶=4.930020",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "status": "PASS"
+    },
+    {
+      "id": 18,
+      "name": "破极兵刃协同物攻=2743",
+      "expected": 2743,
+      "actual": 2743,
+      "status": "PASS"
+    },
+    {
+      "id": 19,
+      "name": "CC套属性4/4精确匹配",
+      "expected": 4,
+      "actual": 4,
+      "status": "PASS"
+    },
+    {
+      "id": 20,
+      "name": "FAAL三阶七维框架固化",
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    {
+      "id": 21,
+      "name": "三级级联放大链模型确认",
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    {
+      "id": 22,
+      "name": "装备加成三原则元理论确认",
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    {
+      "id": 23,
+      "name": "自我进化边界持续遵守",
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    }
+  ],
+  "invariants": {
+    "marginal_duality": 4.93002,
+    "po_jue_collaboration": 2743,
+    "berserker_fix_damage": 9.27,
+    "berserker_percent_damage": 32.81,
+    "swordsman_percent_damage": 45.7,
+    "cc_6_piece": {
+      "power": 310,
+      "phy_atk": 110,
+      "indep_atk": 120,
+      "crit": 3.0
+    }
+  },
+  "zero_drift": true,
+  "frame": "FAAL三阶七维框架",
+  "model": "三级级联放大链模型",
+  "meta_theory": "装备加成三原则元理论"
+}
