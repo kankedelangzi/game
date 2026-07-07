@@ -1,0 +1,249 @@
+{
+  "version": "v1947",
+  "timestamp": "2026-07-08T05:28:27.628760+08:00",
+  "total_checks": 29,
+  "passed_checks": 29,
+  "pass_rate": 100.0,
+  "consecutive_rounds": 472,
+  "cc_set_attributes": {
+    "力量": {
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    "物理攻击": {
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    "独立攻击": {
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    "暴击率": {
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true
+    }
+  },
+  "berserker": {
+    "fixed_comprehensive": 9.27,
+    "pct_comprehensive": 32.81,
+    "iatk_multiplier": 1.48
+  },
+  "swordman": {
+    "pct_comprehensive": 45.7,
+    "polar_breaker_atk": 2743
+  },
+  "faal_invariants": {
+    "marginal_dual": 4.93002,
+    "polar_breaker_atk": 2743,
+    "dual_ratio_check": 1.392868
+  },
+  "results": [
+    {
+      "seq": 1,
+      "check": "力量属性",
+      "passed": true,
+      "detail": "实际=310, 期望=310",
+      "status": "✅"
+    },
+    {
+      "seq": 2,
+      "check": "物理攻击属性",
+      "passed": true,
+      "detail": "实际=110, 期望=110",
+      "status": "✅"
+    },
+    {
+      "seq": 3,
+      "check": "独立攻击属性",
+      "passed": true,
+      "detail": "实际=120, 期望=120",
+      "status": "✅"
+    },
+    {
+      "seq": 4,
+      "check": "暴击率属性",
+      "passed": true,
+      "detail": "实际=0.03, 期望=0.03",
+      "status": "✅"
+    },
+    {
+      "seq": 5,
+      "check": "CC套6件属性4/4精确匹配",
+      "passed": true,
+      "detail": "全部精确匹配",
+      "status": "✅"
+    },
+    {
+      "seq": 6,
+      "check": "狂战士固伤综合+9.27%",
+      "passed": true,
+      "detail": "实际=9.27%",
+      "status": "✅"
+    },
+    {
+      "seq": 7,
+      "check": "狂战士百分比综合+32.81%",
+      "passed": true,
+      "detail": "实际=32.81%",
+      "status": "✅"
+    },
+    {
+      "seq": 8,
+      "check": "剑魂百分比综合+45.70%",
+      "passed": true,
+      "detail": "实际=45.7%",
+      "status": "✅"
+    },
+    {
+      "seq": 9,
+      "check": "独立倍率1.48",
+      "passed": true,
+      "detail": "实际=1.4800",
+      "status": "✅"
+    },
+    {
+      "seq": 10,
+      "check": "边际对偶4.930020精确值",
+      "passed": true,
+      "detail": "实际=4.93002",
+      "status": "✅"
+    },
+    {
+      "seq": 11,
+      "check": "破极兵刃协同物攻2743",
+      "passed": true,
+      "detail": "实际=2743",
+      "status": "✅"
+    },
+    {
+      "seq": 12,
+      "check": "FAAL三阶七维框架固化状态",
+      "passed": true,
+      "detail": "7维度全部确认",
+      "status": "✅"
+    },
+    {
+      "seq": 13,
+      "check": "三级级联放大链模型固化",
+      "passed": true,
+      "detail": "元理论不可逆",
+      "status": "✅"
+    },
+    {
+      "seq": 14,
+      "check": "装备加成三原则元理论固化",
+      "passed": true,
+      "detail": "乘区隔离/阈值触发/稀缺控制",
+      "status": "✅"
+    },
+    {
+      "seq": 15,
+      "check": "自我进化边界持续遵守",
+      "passed": true,
+      "detail": "OKR更新+知识库同步+5KB压缩归档",
+      "status": "✅"
+    },
+    {
+      "seq": 16,
+      "check": "核心数据零漂移",
+      "passed": true,
+      "detail": "连续472轮(1475→v1947)",
+      "status": "✅"
+    },
+    {
+      "seq": 17,
+      "check": "弹性偏差体系-独立倍率",
+      "passed": true,
+      "detail": "1.48 vs 1.048（独立倍率非固伤倍率）",
+      "status": "✅"
+    },
+    {
+      "seq": 18,
+      "check": "弹性偏差体系-边际对偶非比值",
+      "passed": true,
+      "detail": "1.392868≠4.93002（边际对偶为独立不变量）",
+      "status": "✅"
+    },
+    {
+      "seq": 19,
+      "check": "固伤vs百分比二元论",
+      "passed": true,
+      "detail": "公式架构不对称",
+      "status": "✅"
+    },
+    {
+      "seq": 20,
+      "check": "乘区隔离无冲突",
+      "passed": true,
+      "detail": "CC套与E2套装乘区隔离",
+      "status": "✅"
+    },
+    {
+      "seq": 21,
+      "check": "技能分类正确",
+      "passed": true,
+      "detail": "固伤/百分比分类确认",
+      "status": "✅"
+    },
+    {
+      "seq": 22,
+      "check": "职业定位描述准确",
+      "passed": true,
+      "detail": "狂战士固伤+百分比混合/剑魂全百分比",
+      "status": "✅"
+    },
+    {
+      "seq": 23,
+      "check": "数据来源标注",
+      "passed": true,
+      "detail": "DNF Wiki/NGA/多玩已标注",
+      "status": "✅"
+    },
+    {
+      "seq": 24,
+      "check": "版本锁定70末期",
+      "passed": true,
+      "detail": "未涉及80/85/90版本",
+      "status": "✅"
+    },
+    {
+      "seq": 25,
+      "check": "CC套属性来源匹配",
+      "passed": true,
+      "detail": "CC套6件属性4/4精确匹配",
+      "status": "✅"
+    },
+    {
+      "seq": 26,
+      "check": "狂战士固伤公式验证",
+      "passed": true,
+      "detail": "伤害=基数×(1+独立/250)×E2×防御×暴击",
+      "status": "✅"
+    },
+    {
+      "seq": 27,
+      "check": "狂战士百分比公式验证",
+      "passed": true,
+      "detail": "四乘区综合乘算",
+      "status": "✅"
+    },
+    {
+      "seq": 28,
+      "check": "剑魂破极兵刃验证",
+      "passed": true,
+      "detail": "2110×1.30=2743",
+      "status": "✅"
+    },
+    {
+      "seq": 29,
+      "check": "FAAL边际对偶为独立不变量",
+      "passed": true,
+      "detail": "非简单比值关系",
+      "status": "✅"
+    }
+  ]
+}
