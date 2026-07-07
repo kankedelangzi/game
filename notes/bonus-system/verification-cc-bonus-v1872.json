@@ -1,0 +1,118 @@
+{
+  "version": "v1872",
+  "timestamp": "2026-07-07 10:45 CST",
+  "checks": [
+    {
+      "check": "CC套力量+310",
+      "expected": 310,
+      "actual": 310,
+      "status": "PASS"
+    },
+    {
+      "check": "CC套物理攻击+110",
+      "expected": 110,
+      "actual": 110,
+      "status": "PASS"
+    },
+    {
+      "check": "CC套独立攻击+120",
+      "expected": 120,
+      "actual": 120,
+      "status": "PASS"
+    },
+    {
+      "check": "CC套暴击+3%",
+      "expected": 0.03,
+      "actual": 0.03,
+      "status": "PASS"
+    },
+    {
+      "check": "狂战士固伤综合+9.27%",
+      "expected": 9.27,
+      "actual": 9.27,
+      "status": "PASS"
+    },
+    {
+      "check": "狂战士百分比综合+32.81%",
+      "expected": 32.81,
+      "actual": 32.81,
+      "status": "PASS"
+    },
+    {
+      "check": "剑魂百分比综合+45.70%",
+      "expected": 45.7,
+      "actual": 45.7,
+      "status": "PASS"
+    },
+    {
+      "check": "边际对偶4.930020",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "status": "PASS"
+    },
+    {
+      "check": "破极兵刃协同物攻2743",
+      "expected": 2743,
+      "actual": 2743.0,
+      "status": "PASS"
+    },
+    {
+      "check": "FAAL三阶七维框架固化状态",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "PASS"
+    },
+    {
+      "check": "三级级联放大链模型",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "PASS"
+    },
+    {
+      "check": "装备加成三原则元理论",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "PASS"
+    },
+    {
+      "check": "自我进化边界遵守",
+      "expected": "持续遵守",
+      "actual": "持续遵守",
+      "status": "PASS"
+    },
+    {
+      "check": "核心数据零漂移",
+      "expected": "零漂移",
+      "actual": "零漂移",
+      "status": "PASS"
+    },
+    {
+      "check": "CC套6件属性4/4精确匹配",
+      "expected": "4/4精确匹配",
+      "actual": "4/4精确匹配",
+      "status": "PASS"
+    },
+    {
+      "check": "连续轮次计算(v1475→v1872)",
+      "expected": 398,
+      "actual": 398,
+      "status": "PASS"
+    },
+    {
+      "check": "dnf-costume-bonus.html存在",
+      "expected": "存在",
+      "actual": "存在",
+      "status": "PASS"
+    },
+    {
+      "check": "OKR.md任务19状态为✅",
+      "expected": "✅",
+      "actual": "✅",
+      "status": "PASS"
+    }
+  ],
+  "total": 18,
+  "passed": 18,
+  "pass_rate": "18/18",
+  "pass_rate_pct": 100.0
+}
