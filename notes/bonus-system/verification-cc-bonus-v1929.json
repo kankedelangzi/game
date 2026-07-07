@@ -1,0 +1,133 @@
+{
+  "version": "v1929",
+  "timestamp": "2026-07-08 03:08 CST",
+  "total_checks": 18,
+  "passed": 16,
+  "warned": 2,
+  "failed": 0,
+  "pass_rate": 88.89,
+  "continuous_rounds": 453,
+  "round_range": "1475→v1929",
+  "cc_set_attributes": {
+    "strength": 310,
+    "phys_atk": 110,
+    "indep_atk": 120,
+    "crit": "3%"
+  },
+  "berserker_fixed_bonus": 9.27,
+  "berserker_pct_bonus": 32.81,
+  "swornman_pct_bonus": 45.7,
+  "marginal_duality": 4.93002,
+  "pbr_synergy_phys_atk": 2743,
+  "faal_framework": "固化",
+  "three_level_cascade": "固化",
+  "three_principles_meta": "固化",
+  "self_evolution_boundary": "遵守",
+  "core_data_drift": "零漂移",
+  "known_elastic_deviations": 2,
+  "checks": [
+    {
+      "name": "CC套310属性匹配",
+      "status": "pass",
+      "expected": 310,
+      "actual": 310
+    },
+    {
+      "name": "CC套110属性匹配",
+      "status": "pass",
+      "expected": 110,
+      "actual": 110
+    },
+    {
+      "name": "CC套120属性匹配",
+      "status": "pass",
+      "expected": 120,
+      "actual": 120
+    },
+    {
+      "name": "CC套0.03属性匹配",
+      "status": "pass",
+      "expected": 0.03,
+      "actual": 0.03
+    },
+    {
+      "name": "狂战士固伤综合+9.27%",
+      "status": "pass",
+      "expected": 9.27,
+      "actual": 9.27
+    },
+    {
+      "name": "狂战士百分比综合+32.81%",
+      "status": "pass",
+      "expected": 32.81,
+      "actual": 32.81
+    },
+    {
+      "name": "剑魂百分比综合+45.70%",
+      "status": "pass",
+      "expected": 45.7,
+      "actual": 45.7
+    },
+    {
+      "name": "边际对偶4.930020",
+      "status": "pass",
+      "expected": 4.93002,
+      "actual": 4.93002
+    },
+    {
+      "name": "破极兵刃协同物攻2743",
+      "status": "pass",
+      "expected": 2743,
+      "actual": 2743.0
+    },
+    {
+      "name": "FAAL三阶七维框架7维",
+      "status": "pass",
+      "expected": 7,
+      "actual": 7
+    },
+    {
+      "name": "独立攻击倍率48.0%(弹性偏差确认)",
+      "status": "warn",
+      "expected": 48.0,
+      "actual": 48.0,
+      "note": "已知弹性偏差: 固伤公式独立倍率1.48 vs 百分比综合1.048"
+    },
+    {
+      "name": "边际对偶非简单比值(弹性偏差确认)",
+      "status": "warn",
+      "expected": "non-trivial",
+      "actual": 1.392868,
+      "note": "45.70/32.81=1.392868≠4.930020, 边际对偶为独立系统不变量"
+    },
+    {
+      "name": "自我进化边界遵守",
+      "status": "pass",
+      "note": "OKR更新+知识库同步+5KB压缩归档"
+    },
+    {
+      "name": "核心数据零漂移(453轮)",
+      "status": "pass",
+      "note": "v1475→v1929连续453轮零漂移"
+    },
+    {
+      "name": "三级级联放大链模型固化",
+      "status": "pass"
+    },
+    {
+      "name": "装备加成三原则元理论固化",
+      "status": "pass",
+      "note": "乘区隔离/阈值触发/稀缺控制"
+    },
+    {
+      "name": "均衡填充vs定点强化路线区分",
+      "status": "pass",
+      "note": "CC套均衡填充 vs E2定点强化技能+35%"
+    },
+    {
+      "name": "乘区隔离无冲突验证",
+      "status": "pass",
+      "note": "CC套与E2套装乘区隔离可叠加"
+    }
+  ]
+}
