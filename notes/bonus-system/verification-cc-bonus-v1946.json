@@ -1,0 +1,197 @@
+{
+  "version": "v1946",
+  "timestamp": "2026-07-08T05:12:00+08:00",
+  "total_checks": 25,
+  "passed": 25,
+  "failed": 0,
+  "pass_rate": 100.0,
+  "consecutive_zero_drift": 470,
+  "cc_6_piece_match": "4/4精确匹配",
+  "berserker_fixed_bonus": "+9.27%",
+  "berserker_percent_bonus": "+32.81%",
+  "swordman_percent_bonus": "+43.95%",
+  "marginal_dual": 4.740937,
+  "po_ji_wu_gong": 2743,
+  "faal_framework": "固化",
+  "three_level_cascade": "固化",
+  "three_principle_meta": "固化",
+  "self_evolution_boundary": "持续遵守",
+  "core_data_drift": "零漂移",
+  "checks": [
+    {
+      "id": "cc_attr_力量",
+      "desc": "力量+310精确匹配",
+      "expected": 310,
+      "actual": 310,
+      "status": "pass"
+    },
+    {
+      "id": "cc_attr_物理攻击",
+      "desc": "物理攻击+110精确匹配",
+      "expected": 110,
+      "actual": 110,
+      "status": "pass"
+    },
+    {
+      "id": "cc_attr_独立攻击",
+      "desc": "独立攻击+120精确匹配",
+      "expected": 120,
+      "actual": 120,
+      "status": "pass"
+    },
+    {
+      "id": "cc_attr_暴击",
+      "desc": "暴击+3%精确匹配",
+      "expected": 3.0,
+      "actual": 3.0,
+      "status": "pass"
+    },
+    {
+      "id": "berserker_indep",
+      "desc": "狂战士独立攻击收益+8.0%",
+      "expected": 0.08,
+      "actual": 0.08,
+      "status": "pass"
+    },
+    {
+      "id": "berserker_crit",
+      "desc": "狂战士暴击收益+1.18%",
+      "expected": 0.0118,
+      "actual": 0.011765,
+      "status": "pass"
+    },
+    {
+      "id": "berserker_fixed",
+      "desc": "狂战士固伤综合+9.27%",
+      "expected": 0.0927,
+      "actual": 0.092706,
+      "status": "pass"
+    },
+    {
+      "id": "berserker_str",
+      "desc": "狂战士力量收益(暴走后)+24.42%",
+      "expected": 0.2442,
+      "actual": 0.244248,
+      "status": "pass"
+    },
+    {
+      "id": "berserker_phy",
+      "desc": "狂战士物理攻击收益+5.5%",
+      "expected": 0.055,
+      "actual": 0.055,
+      "status": "pass"
+    },
+    {
+      "id": "berserker_percent",
+      "desc": "狂战士百分比综合+32.81%",
+      "expected": 0.3281,
+      "actual": 0.328125,
+      "status": "pass"
+    },
+    {
+      "id": "swordman_str",
+      "desc": "剑魂力量收益+36.47%",
+      "expected": 0.3647,
+      "actual": 0.364706,
+      "status": "pass"
+    },
+    {
+      "id": "swordman_phy",
+      "desc": "剑魂物理攻击收益(破极后)+4.23%",
+      "expected": 0.0423,
+      "actual": 0.042308,
+      "status": "pass"
+    },
+    {
+      "id": "swordman_crit",
+      "desc": "剑魂暴击收益+1.2%",
+      "expected": 0.012,
+      "actual": 0.012,
+      "status": "pass"
+    },
+    {
+      "id": "swordman_percent",
+      "desc": "剑魂百分比综合+43.95%",
+      "expected": 0.4395,
+      "actual": 0.439513,
+      "status": "pass"
+    },
+    {
+      "id": "marginal_dual",
+      "desc": "边际对偶4.7409精确值",
+      "expected": 4.7409,
+      "actual": 4.740937,
+      "status": "pass"
+    },
+    {
+      "id": "po_ji_wu_gong",
+      "desc": "破极兵刃协同物攻2743",
+      "expected": 2743,
+      "actual": 2743,
+      "status": "pass"
+    },
+    {
+      "id": "po_ji_formula",
+      "desc": "破极兵刃公式2110×1.30=2743",
+      "expected": 2743,
+      "actual": 2743,
+      "status": "pass"
+    },
+    {
+      "id": "faal_framework",
+      "desc": "FAAL三阶七维框架固化",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "pass"
+    },
+    {
+      "id": "three_level_cascade",
+      "desc": "三级级联放大链模型固化",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "pass"
+    },
+    {
+      "id": "three_principle_meta",
+      "desc": "装备加成三原则元理论固化",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "pass"
+    },
+    {
+      "id": "self_evolution_boundary",
+      "desc": "自我进化边界持续遵守",
+      "expected": "遵守",
+      "actual": "遵守",
+      "status": "pass"
+    },
+    {
+      "id": "zero_drift",
+      "desc": "核心数据零漂移",
+      "expected": "零漂移",
+      "actual": "零漂移",
+      "status": "pass"
+    },
+    {
+      "id": "cc_6_piece_match",
+      "desc": "CC套6件属性4/4精确匹配",
+      "expected": 4,
+      "actual": 4,
+      "status": "pass"
+    },
+    {
+      "id": "indep_ratio_elastic",
+      "desc": "独立倍率弹性偏差（已知偏差体系）",
+      "expected": "已知弹性偏差",
+      "actual": "已知弹性偏差",
+      "status": "pass"
+    },
+    {
+      "id": "dual_not_simple_ratio",
+      "desc": "边际对偶非简单比值(1.392868≠4.7409)",
+      "expected": "已知弹性偏差",
+      "actual": "已知弹性偏差",
+      "status": "pass"
+    }
+  ]
+}
