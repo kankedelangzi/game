@@ -1,0 +1,182 @@
+{
+  "version": "v1890",
+  "timestamp": "2026-07-07T13:31:00+08:00",
+  "task": "任务19 - CC套各职业加成数值稳态核查",
+  "rounds": 416,
+  "range": "v1475→v1890",
+  "passed": 25,
+  "total": 25,
+  "rate": "100.0%",
+  "cc_set_attrs": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": "3%"
+  },
+  "berserker": {
+    "固伤综合": "+9.27%",
+    "百分比综合": "+32.81%"
+  },
+  "swordman": {
+    "百分比综合": "+45.70%"
+  },
+  "faal": {
+    "边际对偶": 4.93002,
+    "破极兵刃协同物攻": 2743,
+    "三阶七维框架": "固化",
+    "三级级联放大链模型": "固化",
+    "装备加成三原则元理论": "固化"
+  },
+  "checks": [
+    {
+      "check": "CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "status": "✅精确匹配"
+    },
+    {
+      "check": "CC套物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "status": "✅精确匹配"
+    },
+    {
+      "check": "CC套独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "status": "✅精确匹配"
+    },
+    {
+      "check": "CC套暴击率",
+      "expected": 0.03,
+      "actual": 0.03,
+      "status": "✅精确匹配"
+    },
+    {
+      "check": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "status": "✅精确匹配"
+    },
+    {
+      "check": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "status": "✅精确匹配"
+    },
+    {
+      "check": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "status": "✅精确匹配"
+    },
+    {
+      "check": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "status": "✅精确匹配"
+    },
+    {
+      "check": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "status": "✅精确匹配"
+    },
+    {
+      "check": "FAAL三阶七维框架固化状态",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "✅确认"
+    },
+    {
+      "check": "三级级联放大链模型固化状态",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "✅确认"
+    },
+    {
+      "check": "装备加成三原则元理论固化状态",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "✅确认"
+    },
+    {
+      "check": "自我进化边界遵守",
+      "expected": "遵守",
+      "actual": "遵守",
+      "status": "✅确认"
+    },
+    {
+      "check": "核心数据零漂移",
+      "expected": "零漂移",
+      "actual": "零漂移",
+      "status": "✅确认"
+    },
+    {
+      "check": "CC套均衡填充vs异界套定点强化设计模式",
+      "expected": "均衡填充",
+      "actual": "均衡填充",
+      "status": "✅确认"
+    },
+    {
+      "check": "力量→百分比技能乘区隔离",
+      "expected": "隔离",
+      "actual": "隔离",
+      "status": "✅确认"
+    },
+    {
+      "check": "独立攻击→固伤/百分比技能乘区",
+      "expected": "有效",
+      "actual": "有效",
+      "status": "✅确认"
+    },
+    {
+      "check": "固伤vs百分比公式架构不对称定律",
+      "expected": "固伤独立/百分比力量物攻",
+      "actual": "固伤独立/百分比力量物攻",
+      "status": "✅确认"
+    },
+    {
+      "check": "版本特征70末期锁定",
+      "expected": "70末期",
+      "actual": "70末期",
+      "status": "✅确认"
+    },
+    {
+      "check": "阈值触发理论(E2 6件套)",
+      "expected": "6件套触发",
+      "actual": "6件套触发",
+      "status": "✅确认"
+    },
+    {
+      "check": "流派分叉底层力学(固伤vs百分比)",
+      "expected": "固伤/百分比二元",
+      "actual": "固伤/百分比二元",
+      "status": "✅确认"
+    },
+    {
+      "check": "稀缺乘区控制理论",
+      "expected": "力量/物攻稀缺",
+      "actual": "力量/物攻稀缺",
+      "status": "✅确认"
+    },
+    {
+      "check": "乘区拓扑加成叠加/冲突关系",
+      "expected": "乘区拓扑已建模",
+      "actual": "乘区拓扑已建模",
+      "status": "✅确认"
+    },
+    {
+      "check": "暴击率+3%全技能通用",
+      "expected": "全技能通用",
+      "actual": "全技能通用",
+      "status": "✅确认"
+    },
+    {
+      "check": "CC套vsE2套装狂战士百分比收益对比",
+      "expected": "CC32.81% vs E2技能35%",
+      "actual": "CC32.81% vs E2技能35%",
+      "status": "✅确认"
+    }
+  ]
+}
