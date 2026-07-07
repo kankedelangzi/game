@@ -1,0 +1,154 @@
+{
+  "version": "v1859",
+  "timestamp": "2026-07-07T08:39:58.890+08:00",
+  "checks_total": 21,
+  "checks_passed": 21,
+  "pass_rate": 100.0,
+  "cc_set_stats": {
+    "strength": 310,
+    "phys_atk": 110,
+    "indep_atk": 120,
+    "crit_rate": 3.0
+  },
+  "berserker": {
+    "fixed_total": 9.27,
+    "percent_total": 32.81
+  },
+  "swordsman": {
+    "percent_total": 45.7
+  },
+  "faal": {
+    "marginal_duality": 4.93002,
+    "poji_weapon_attack": 2743
+  },
+  "consecutive_stable": "385轮(1475→v1859)",
+  "zero_drift": true,
+  "checks": [
+    {
+      "name": "CC套力量",
+      "value": 310,
+      "expected": 310,
+      "passed": true
+    },
+    {
+      "name": "CC套物理攻击",
+      "value": 110,
+      "expected": 110,
+      "passed": true
+    },
+    {
+      "name": "CC套独立攻击",
+      "value": 120,
+      "expected": 120,
+      "passed": true
+    },
+    {
+      "name": "CC套暴击率",
+      "value": 3.0,
+      "expected": 3.0,
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤综合",
+      "value": 9.27,
+      "expected": 9.27,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比综合",
+      "value": 32.81,
+      "expected": 32.81,
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比综合",
+      "value": 45.7,
+      "expected": 45.7,
+      "passed": true
+    },
+    {
+      "name": "边际对偶",
+      "value": 4.93002,
+      "expected": 4.93002,
+      "passed": true
+    },
+    {
+      "name": "破极兵刃协同物攻",
+      "value": 2743,
+      "expected": 2743,
+      "passed": true
+    },
+    {
+      "name": "破极兵刃基础物攻",
+      "value": 2110,
+      "expected": 2110,
+      "passed": true
+    },
+    {
+      "name": "破极兵刃协同物攻(计算)",
+      "value": 2743,
+      "expected": 2743,
+      "passed": true
+    },
+    {
+      "name": "破极兵刃+30%验证",
+      "value": 2743,
+      "expected": 2743.0,
+      "passed": true
+    },
+    {
+      "name": "独立攻击对固伤贡献",
+      "value": 5.3333,
+      "expected": 5.3333,
+      "passed": true
+    },
+    {
+      "name": "力量对百分比贡献",
+      "value": 15.5,
+      "expected": 15.5,
+      "passed": true
+    },
+    {
+      "name": "物理攻击对百分比贡献",
+      "value": 13.75,
+      "expected": 13.75,
+      "passed": true
+    },
+    {
+      "name": "百分比乘区叠加(力量×物攻)",
+      "value": 31.38,
+      "expected": 31.380000000000003,
+      "passed": true
+    },
+    {
+      "name": "CC套百分比综合乘积验证",
+      "value": 31.38,
+      "expected": 31.38,
+      "passed": true
+    },
+    {
+      "name": "剑魂/狂战士百分比比值",
+      "value": 1.392868,
+      "expected": 1.392868,
+      "passed": true
+    },
+    {
+      "name": "边际对偶≠简单比值",
+      "value": 4.93002,
+      "expected": 4.93002,
+      "passed": true
+    },
+    {
+      "name": "FAAL框架完整性",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "三级级联放大链模型固化",
+      "value": true,
+      "expected": true,
+      "passed": true
+    }
+  ]
+}
