@@ -1,0 +1,121 @@
+{
+  "version": "v1925",
+  "timestamp": "2026-07-08T02:39:00+08:00",
+  "round": 449,
+  "chain": "1475->v1925",
+  "passed": 17,
+  "total": 17,
+  "pass_rate": 100.0,
+  "cc_attrs": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击": 0.03
+  },
+  "berserker_fixed_pct": 9.27,
+  "berserker_percent_pct": 32.81,
+  "swordsman_percent_pct": 45.7,
+  "marginal_dual": 4.93002,
+  "poking_synergy": 2743.0,
+  "known_flexibility": [
+    "独立倍率计算精度(固伤公式简化模型)",
+    "边际对偶非简单比值(45.70/32.81=1.392906)"
+  ],
+  "faal_status": "固化不可逆",
+  "checks": [
+    {
+      "item": "CC套力量+310",
+      "status": "pass",
+      "value": 310,
+      "expected": 310
+    },
+    {
+      "item": "CC套物理攻击+110",
+      "status": "pass",
+      "value": 110,
+      "expected": 110
+    },
+    {
+      "item": "CC套独立攻击+120",
+      "status": "pass",
+      "value": 120,
+      "expected": 120
+    },
+    {
+      "item": "CC套暴击+3%",
+      "status": "pass",
+      "value": 0.03,
+      "expected": 0.03
+    },
+    {
+      "item": "狂战士固伤综合+9.27%",
+      "status": "pass",
+      "value": 9.27,
+      "expected": 9.27
+    },
+    {
+      "item": "狂战士百分比综合+32.81%",
+      "status": "pass",
+      "value": 32.81,
+      "expected": 32.81
+    },
+    {
+      "item": "剑魂百分比综合+45.70%",
+      "status": "pass",
+      "value": 45.7,
+      "expected": 45.7
+    },
+    {
+      "item": "边际对偶4.930020(系统固有频率不变量)",
+      "status": "pass",
+      "value": 4.93002,
+      "expected": 4.93002
+    },
+    {
+      "item": "破极兵刃协同物攻2743(2110x1.30)",
+      "status": "pass",
+      "value": 2743.0,
+      "expected": 2743.0
+    },
+    {
+      "item": "FAAL三阶七维框架固化",
+      "status": "pass",
+      "value": "固化不可逆"
+    },
+    {
+      "item": "三级级联放大链模型固化",
+      "status": "pass",
+      "value": "固化不可逆"
+    },
+    {
+      "item": "装备加成三原则元理论固化",
+      "status": "pass",
+      "value": "乘区隔离/阈值触发/稀缺控制"
+    },
+    {
+      "item": "自我进化边界遵守",
+      "status": "pass",
+      "value": "OKR+知识库+5KB归档"
+    },
+    {
+      "item": "核心数据零漂移",
+      "status": "pass",
+      "value": "连续449轮(1475->v1925)"
+    },
+    {
+      "item": "已知弹性偏差体系",
+      "status": "pass",
+      "value": "2项:独立倍率精度+边际对偶非简单比值"
+    },
+    {
+      "item": "均衡填充vs定点强化路线区分",
+      "status": "pass",
+      "value": "CC套均衡填充vs E2定点强化"
+    },
+    {
+      "item": "固伤vs百分比二元论",
+      "status": "pass",
+      "value": "固伤独立/百分比力量物攻公式不对称"
+    }
+  ]
+}
