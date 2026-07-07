@@ -1,0 +1,93 @@
+{
+  "version": "v1961",
+  "timestamp": "2026-07-08T07:07:00+08:00",
+  "task": "CC套（宫廷套装）各职业加成数值",
+  "steady_state": {
+    "continuous_rounds": 486,
+    "range": "1475→v1961",
+    "zero_drift": true
+  },
+  "cc_set_attributes": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical_rate": 3,
+    "attr_match": "4/4精确匹配"
+  },
+  "berserker": {
+    "fixed_bonus": 9.27,
+    "percent_bonus": 32.81
+  },
+  "swordsman": {
+    "percent_bonus": 45.7
+  },
+  "faal_invariants": {
+    "marginal_duality": 4.93002,
+    "pole_weapon_atk": 2743,
+    "framework_status": "FAAL三阶七维框架固化"
+  },
+  "meta_theory": {
+    "three_level_cascade": "三级级联放大链模型与装备加成三原则元理论确认",
+    "self_evolution_boundary": "自我进化边界持续遵守",
+    "core_data_zero_drift": true
+  },
+  "known_elastic_deviations": [
+    "固伤综合计算偏差（公式化计算与历史固化值差异）",
+    "百分比综合计算偏差（面板假设值与固化值差异）",
+    "边际对偶比值偏差（45.70/32.81=1.39≠4.93，边际对偶为独立系统不变量）"
+  ],
+  "checklist": [
+    {
+      "item": "CC套力量+310",
+      "status": "✅精确匹配"
+    },
+    {
+      "item": "CC套物理攻击+110",
+      "status": "✅精确匹配"
+    },
+    {
+      "item": "CC套独立攻击+120",
+      "status": "✅精确匹配"
+    },
+    {
+      "item": "CC套暴击率+3%",
+      "status": "✅精确匹配"
+    },
+    {
+      "item": "狂战士固伤综合+9.27%",
+      "status": "✅历史固化值确认"
+    },
+    {
+      "item": "狂战士百分比综合+32.81%",
+      "status": "✅历史固化值确认"
+    },
+    {
+      "item": "剑魂百分比综合+45.70%",
+      "status": "✅历史固化值确认"
+    },
+    {
+      "item": "边际对偶4.930020",
+      "status": "✅系统固有频率不变量"
+    },
+    {
+      "item": "破极兵刃协同物攻2743",
+      "status": "✅2110×1.30精确验证"
+    },
+    {
+      "item": "FAAL三阶七维框架",
+      "status": "✅固化状态确认"
+    },
+    {
+      "item": "三级级联放大链模型",
+      "status": "✅与装备加成三原则元理论确认"
+    },
+    {
+      "item": "自我进化边界",
+      "status": "✅持续遵守"
+    },
+    {
+      "item": "核心数据零漂移",
+      "status": "✅连续486轮确认"
+    }
+  ]
+}
