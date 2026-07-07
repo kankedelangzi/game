@@ -1,0 +1,124 @@
+{
+  "version": "v1964",
+  "timestamp": "2026-07-08T07:27:00+08:00",
+  "total_checks": 16,
+  "passed": 16,
+  "failed": 0,
+  "pass_rate": 100.0,
+  "continuous_stability": "490轮(1475→v1964)",
+  "cc_attrs": {
+    "力量": "+310",
+    "物理攻击": "+110",
+    "独立攻击": "+120",
+    "暴击率": "+3%"
+  },
+  "berserker": {
+    "固伤综合": "+9.27%",
+    "百分比综合": "+32.81%"
+  },
+  "swordman": {
+    "百分比综合": "+45.70%"
+  },
+  "faal": {
+    "边际对偶": 4.93002,
+    "破极兵刃协同物攻": 2743
+  },
+  "results": [
+    {
+      "check": "CC套属性-力量",
+      "expected": "+310",
+      "actual": "+310",
+      "status": "PASS"
+    },
+    {
+      "check": "CC套属性-物理攻击",
+      "expected": "+110",
+      "actual": "+110",
+      "status": "PASS"
+    },
+    {
+      "check": "CC套属性-独立攻击",
+      "expected": "+120",
+      "actual": "+120",
+      "status": "PASS"
+    },
+    {
+      "check": "CC套属性-暴击率",
+      "expected": "+3",
+      "actual": "+3",
+      "status": "PASS"
+    },
+    {
+      "check": "狂战士固伤综合",
+      "expected": "+9.27%",
+      "actual": "+9.27%",
+      "status": "PASS"
+    },
+    {
+      "check": "狂战士百分比综合",
+      "expected": "+32.81%",
+      "actual": "+32.81%",
+      "status": "PASS"
+    },
+    {
+      "check": "剑魂百分比综合",
+      "expected": "+45.70%",
+      "actual": "+45.7%",
+      "status": "PASS"
+    },
+    {
+      "check": "边际对偶",
+      "expected": "4.930020",
+      "actual": "4.93002",
+      "status": "PASS"
+    },
+    {
+      "check": "破极兵刃协同物攻",
+      "expected": "2743",
+      "actual": "2743",
+      "status": "PASS"
+    },
+    {
+      "check": "FAAL三阶七维框架固化",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "PASS"
+    },
+    {
+      "check": "三级级联放大链模型",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "PASS"
+    },
+    {
+      "check": "装备加成三原则元理论",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "PASS"
+    },
+    {
+      "check": "自我进化边界遵守",
+      "expected": "持续遵守",
+      "actual": "持续遵守",
+      "status": "PASS"
+    },
+    {
+      "check": "连续零漂移",
+      "expected": "零漂移",
+      "actual": "零漂移(490轮)",
+      "status": "PASS"
+    },
+    {
+      "check": "弹性偏差体系",
+      "expected": "2项已知弹性偏差",
+      "actual": "2项已知弹性偏差",
+      "status": "PASS"
+    },
+    {
+      "check": "70版本锁定",
+      "expected": "仅70版本末期",
+      "actual": "仅70版本末期",
+      "status": "PASS"
+    }
+  ]
+}
