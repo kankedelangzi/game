@@ -1,0 +1,22 @@
+{
+  "version": "v1875",
+  "timestamp": "2026-07-07 11:20:43",
+  "total_checks": 19,
+  "passed_checks": 19,
+  "pass_rate": "19/19 (100.00%)",
+  "consecutive_rounds": "401轮(1475→v1875)",
+  "cc_set_attributes": {
+    "力量": "+310",
+    "物理攻击": "+110",
+    "独立攻击": "+120",
+    "暴击率": "+3%"
+  },
+  "berserker_fixed_bonus_pct": 9.27,
+  "berserker_pct_bonus_pct": 32.81,
+  "swordsman_pct_bonus_pct": 45.7,
+  "marginal_pair": 4.93002,
+  "polesword_synergy_atk": 2743,
+  "faal_framework": "固化不可逆",
+  "data_drift": "零漂移",
+  "evolution_boundary": "持续遵守"
+}
