@@ -1,0 +1,19 @@
+{
+  "version": "v1855",
+  "timestamp": "2026-07-07T08:15:00+08:00",
+  "total_checks": 20,
+  "passed": 20,
+  "pass_rate": "100%",
+  "continuous_rounds": 381,
+  "rounds_from": 1475,
+  "cc_stats_match": true,
+  "berserker_fixed": 9.27,
+  "berserker_pct": 32.81,
+  "swordman_pct": 45.7,
+  "marginal_dual": 4.93002,
+  "po_ji_synergy": 2743,
+  "faal_framework": "固化",
+  "meta_theory": "三级级联放大链模型与装备加成三原则元理论已固化",
+  "evolution_boundary": "OKR更新+知识库同步+5KB压缩归档",
+  "data_drift": "零漂移"
+}
