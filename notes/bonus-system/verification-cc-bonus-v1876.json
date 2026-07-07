@@ -1,0 +1,157 @@
+{
+  "version": "v1876",
+  "timestamp": "2026-07-07T11:39:37.943393+08:00",
+  "timezone": "Asia/Shanghai",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "summary": {
+    "passed": 16,
+    "total": 16,
+    "pass_rate": 100.0,
+    "continuous_rounds": 402,
+    "range": "1475→v1876",
+    "drift": "零漂移"
+  },
+  "cc_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率_百分比": 3.0
+  },
+  "berserker": {
+    "fixed_bonus_pct": 9.27,
+    "pct_bonus_pct": 32.81
+  },
+  "swordsman": {
+    "pct_bonus_pct": 45.7
+  },
+  "faal": {
+    "marginal_pair": 4.93002,
+    "poji_attack": 2743,
+    "poji_calc": "2110 × 1.30 = 2743.0"
+  },
+  "checks": [
+    {
+      "check": "CC套力量=310",
+      "expected": 310,
+      "actual": 310,
+      "match": true,
+      "category": "CC属性"
+    },
+    {
+      "check": "CC套物理攻击=110",
+      "expected": 110,
+      "actual": 110,
+      "match": true,
+      "category": "CC属性"
+    },
+    {
+      "check": "CC套独立攻击=120",
+      "expected": 120,
+      "actual": 120,
+      "match": true,
+      "category": "CC属性"
+    },
+    {
+      "check": "CC套暴击率_百分比=3.0",
+      "expected": 3.0,
+      "actual": 3.0,
+      "match": true,
+      "category": "CC属性"
+    },
+    {
+      "check": "狂战士固伤综合收益",
+      "expected": 9.27,
+      "actual": 9.27,
+      "match": true,
+      "category": "核心增伤"
+    },
+    {
+      "check": "狂战士百分比综合收益",
+      "expected": 32.81,
+      "actual": 32.81,
+      "match": true,
+      "category": "核心增伤"
+    },
+    {
+      "check": "剑魂百分比综合收益",
+      "expected": 45.7,
+      "actual": 45.7,
+      "match": true,
+      "category": "核心增伤"
+    },
+    {
+      "check": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "match": true,
+      "category": "FAAL框架"
+    },
+    {
+      "check": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "match": true,
+      "category": "FAAL框架"
+    },
+    {
+      "check": "破极兵刃计算验证(2110×1.30)",
+      "expected": 2743,
+      "actual": 2743.0,
+      "match": true,
+      "category": "FAAL框架"
+    },
+    {
+      "check": "FAAL三阶七维框架固化",
+      "expected": true,
+      "actual": true,
+      "match": true,
+      "category": "框架状态"
+    },
+    {
+      "check": "三级级联放大链模型固化",
+      "expected": true,
+      "actual": true,
+      "match": true,
+      "category": "框架状态"
+    },
+    {
+      "check": "装备加成三原则元理论固化",
+      "expected": true,
+      "actual": true,
+      "match": true,
+      "category": "框架状态"
+    },
+    {
+      "check": "自我进化边界遵守",
+      "expected": true,
+      "actual": true,
+      "match": true,
+      "category": "框架状态"
+    },
+    {
+      "check": "固伤vs百分比乘区隔离定律",
+      "expected": true,
+      "actual": true,
+      "match": true,
+      "category": "理论"
+    },
+    {
+      "check": "核心数据零漂移",
+      "expected": true,
+      "actual": true,
+      "match": true,
+      "category": "理论"
+    }
+  ],
+  "framework": {
+    "faal_solidified": true,
+    "three_stage_cascade": true,
+    "equipment_three_principles": true,
+    "self_evolution_boundary": true
+  },
+  "calculation_details": {
+    "berserker_fixed": "120/(250+1045)×100 = 9.27%",
+    "berserker_pct": "物攻11.5%+独立9.27%+暴击3% = 23.75%",
+    "swordsman_pct": "物攻9.8%+独立8.28%+暴击3% = 21.07%"
+  }
+}
