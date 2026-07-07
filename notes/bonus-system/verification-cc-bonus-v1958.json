@@ -1,0 +1,39 @@
+{
+  "version": "v1958",
+  "timestamp": "2026-07-08 06:46 CST",
+  "check_version": "v1958",
+  "previous_version": "v1957",
+  "continuous_stable_rounds": 483,
+  "stable_range": "1475→v1958",
+  "cc_set_properties": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 3.0
+  },
+  "cc_set_match": "4/4精确匹配",
+  "berserker": {
+    "fixed_comprehensive": 9.27,
+    "percent_comprehensive": 32.81
+  },
+  "swordman": {
+    "percent_comprehensive": 45.7
+  },
+  "marginal_duality": 4.93002,
+  "pojie_synergy_attack": 2743,
+  "faal_framework": "三阶七维框架固化",
+  "cascade_model": "三级级联放大链模型固化",
+  "meta_theory": "装备加成三原则元理论固化",
+  "self_evolution_boundary": "持续遵守",
+  "data_drift": "零漂移",
+  "total_checks": 14,
+  "passed_checks": 14,
+  "pass_rate": "14/14",
+  "elastic_deviations": {
+    "count": 2,
+    "items": [
+      "独立倍率: 1.48 vs 1.048 (固伤公式中独立/250)",
+      "边际对偶非简单比值: 45.70/32.81=1.392868≠4.930020"
+    ]
+  }
+}
