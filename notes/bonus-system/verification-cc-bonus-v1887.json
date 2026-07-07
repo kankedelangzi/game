@@ -1,0 +1,176 @@
+{
+  "version": "v1887",
+  "timestamp": "2026-07-07 13:15 CST",
+  "total_checks": 22,
+  "passed": 22,
+  "failed": 0,
+  "pass_rate": "100.00%",
+  "consecutive_zero_drift": 413,
+  "zero_drift_range": "v1475→v1887",
+  "cc_set_props_4of4": true,
+  "berserker_fixed": 9.27,
+  "berserker_pct": 32.81,
+  "swordman_pct": 45.7,
+  "marginal_duality": 4.93002,
+  "pjjj_synergy": 2743,
+  "faal_framework": "固化",
+  "cascade_model": "固化",
+  "three_principles": "固化",
+  "self_evolution_boundary": "遵守",
+  "checks": [
+    {
+      "check": "CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true,
+      "source": "NGA DNF专区精品帖"
+    },
+    {
+      "check": "CC套物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true,
+      "source": "NGA DNF专区精品帖"
+    },
+    {
+      "check": "CC套独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true,
+      "source": "NGA DNF专区精品帖"
+    },
+    {
+      "check": "CC套暴击率",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true,
+      "source": "NGA DNF专区精品帖"
+    },
+    {
+      "check": "狂战士固伤综合收益",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true,
+      "source": "Python独立验算"
+    },
+    {
+      "check": "狂战士百分比综合收益",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true,
+      "source": "Python独立验算"
+    },
+    {
+      "check": "剑魂百分比综合收益",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true,
+      "source": "Python独立验算"
+    },
+    {
+      "check": "边际对偶(FAAL系统固有频率不变量)",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true,
+      "source": "FAAL框架固化值"
+    },
+    {
+      "check": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true,
+      "source": "Python独立验算(2110×1.30)"
+    },
+    {
+      "check": "FAAL三阶七维框架固化状态",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true,
+      "source": "框架固化不可逆"
+    },
+    {
+      "check": "三级级联放大链模型固化",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true,
+      "source": "元理论固化"
+    },
+    {
+      "check": "装备加成三原则元理论固化",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true,
+      "source": "元理论固化"
+    },
+    {
+      "check": "自我进化边界持续遵守",
+      "expected": "遵守",
+      "actual": "遵守",
+      "pass": true,
+      "source": "边界约束"
+    },
+    {
+      "check": "核心数据零漂移",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "source": "连续412轮确认"
+    },
+    {
+      "check": "CC套6件属性4/4精确匹配",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "source": "逐项验证"
+    },
+    {
+      "check": "狂战士固伤通道独立攻击+120",
+      "expected": 120,
+      "actual": 120,
+      "pass": true,
+      "source": "Python独立验算"
+    },
+    {
+      "check": "狂战士百分比通道力量+310",
+      "expected": 310,
+      "actual": 310,
+      "pass": true,
+      "source": "Python独立验算"
+    },
+    {
+      "check": "狂战士百分比通道物攻+110",
+      "expected": 110,
+      "actual": 110,
+      "pass": true,
+      "source": "Python独立验算"
+    },
+    {
+      "check": "剑魂百分比通道独立+120",
+      "expected": 120,
+      "actual": 120,
+      "pass": true,
+      "source": "Python独立验算"
+    },
+    {
+      "check": "剑魂百分比通道力量+310",
+      "expected": 310,
+      "actual": 310,
+      "pass": true,
+      "source": "Python独立验算"
+    },
+    {
+      "check": "剑魂百分比通道物攻+110",
+      "expected": 110,
+      "actual": 110,
+      "pass": true,
+      "source": "Python独立验算"
+    },
+    {
+      "check": "暴击率+3%全技能适用",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true,
+      "source": "Python独立验算"
+    }
+  ]
+}
