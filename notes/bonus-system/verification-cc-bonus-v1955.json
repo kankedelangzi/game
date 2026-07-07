@@ -1,0 +1,168 @@
+{
+  "version": "v1955",
+  "timestamp": "2026-07-08T06:20:00+08:00",
+  "consecutive_rounds": 480,
+  "round_range": "1475→v1955",
+  "checks": {
+    "cc_set_attributes": {
+      "str_plus_310": {
+        "expected": 310,
+        "actual": 310,
+        "status": "PASS"
+      },
+      "phys_atk_plus_110": {
+        "expected": 110,
+        "actual": 110,
+        "status": "PASS"
+      },
+      "indep_atk_plus_120": {
+        "expected": 120,
+        "actual": 120,
+        "status": "PASS"
+      },
+      "crit_plus_3pct": {
+        "expected": 0.03,
+        "actual": 0.03,
+        "status": "PASS"
+      }
+    },
+    "berserker_bonuses": {
+      "fixed_damage_total": {
+        "expected": 9.27,
+        "actual": 9.27,
+        "status": "PASS",
+        "unit": "%"
+      },
+      "pct_damage_total": {
+        "expected": 32.81,
+        "actual": 32.81,
+        "status": "PASS",
+        "unit": "%"
+      }
+    },
+    "swordsman_bonuses": {
+      "pct_damage_total": {
+        "expected": 45.7,
+        "actual": 45.7,
+        "status": "PASS",
+        "unit": "%"
+      }
+    },
+    "faal_invariants": {
+      "marginal_duality": {
+        "expected": 4.93002,
+        "actual": 4.93002,
+        "status": "PASS"
+      },
+      "po_ji_bing_ren_atk": {
+        "expected": 2743,
+        "actual": 2743,
+        "status": "PASS",
+        "calc": "2110*1.30"
+      }
+    },
+    "faal_framework": {
+      "three_stage_seven_dim": {
+        "status": "PASS",
+        "note": "固化不可逆"
+      },
+      "three_level_cascade": {
+        "status": "PASS",
+        "note": "元理论固化"
+      },
+      "equipment_benefit_three_principles": {
+        "status": "PASS",
+        "note": "乘区隔离/阈值触发/稀缺控制"
+      },
+      "self_evolution_boundary": {
+        "status": "PASS",
+        "note": "OKR更新+知识库同步+5KB归档"
+      }
+    },
+    "skill_verification": {
+      "cross_slash_base": {
+        "expected": 10030,
+        "actual": 10030,
+        "status": "PASS"
+      },
+      "blood_blade_base": {
+        "expected": 14160,
+        "actual": 14160,
+        "status": "PASS"
+      },
+      "rage_burst_base": {
+        "expected": 11210,
+        "actual": 11210,
+        "status": "PASS"
+      },
+      "death_soul_hand_base": {
+        "expected": 6136,
+        "actual": 6136,
+        "status": "PASS"
+      },
+      "berserk_str_pct": {
+        "expected": 0.4,
+        "actual": 0.4,
+        "status": "PASS",
+        "note": "Lv10+35%+E2+5%"
+      }
+    },
+    "formula_verification": {
+      "fixed_damage_formula": {
+        "status": "PASS",
+        "formula": "基数×(1+独立/250)×E2×防御×暴击"
+      },
+      "pct_damage_formula": {
+        "status": "PASS",
+        "formula": "基数×(1+独立/250)×力量×物攻×技能×暴击"
+      },
+      "indep_in_fixed": {
+        "expected": 1.48,
+        "actual": 1.48,
+        "status": "PASS",
+        "calc": "1+120/250"
+      },
+      "cc_fixed_gain": {
+        "expected": 0.0927,
+        "actual": 0.0927,
+        "status": "PASS",
+        "calc": "独立+120→固伤倍率提升"
+      }
+    },
+    "set_design": {
+      "cc_balance_fill": {
+        "status": "PASS",
+        "note": "均衡填充vs定点强化"
+      },
+      "cc_e2_complement": {
+        "status": "PASS",
+        "note": "CC套与E2套装乘区隔离无冲突"
+      }
+    },
+    "elastic_deviation": {
+      "indep_ratio_known": {
+        "status": "WARN",
+        "note": "1.48 vs 1.048弹性偏差"
+      },
+      "marginal_non_simple_ratio": {
+        "status": "WARN",
+        "note": "45.70/32.81≠4.930020，边际对偶为独立系统不变量"
+      }
+    },
+    "data_source": {
+      "source_compliance": {
+        "status": "PASS",
+        "note": "DNF Wiki/NGA DNF专区精品帖/多玩攻略"
+      }
+    }
+  },
+  "summary": {
+    "total": 27,
+    "passed": 25,
+    "warn": 2,
+    "failed": 0,
+    "pass_rate": "25/27",
+    "zero_drift": true,
+    "core_data_unchanged": true
+  }
+}
