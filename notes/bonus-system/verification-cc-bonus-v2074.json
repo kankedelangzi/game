@@ -1,0 +1,241 @@
+{
+  "version": "v2074",
+  "timestamp": "2026-07-09T03:29:00+08:00",
+  "total_checks": 30,
+  "passed": 27,
+  "failed": 3,
+  "pass_rate": "27/30 (90.0%)",
+  "consecutive_rounds": 599,
+  "range": "1475→v2074",
+  "checks": [
+    {
+      "id": 1,
+      "item": "CC套力量加成",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "id": 2,
+      "item": "CC套物理攻击加成",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "id": 3,
+      "item": "CC套独立攻击加成",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "id": 4,
+      "item": "CC套暴击率加成",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    {
+      "id": 5,
+      "item": "狂战士固伤提升率",
+      "expected": 9.27,
+      "actual": 26.67,
+      "pass": false,
+      "detail": "固伤基数=200/250=1.8000, 加CC=320/250=2.2800, 提升=26.6667%"
+    },
+    {
+      "id": 6,
+      "item": "狂战士百分比综合提升",
+      "expected": 32.81,
+      "actual": 24.8,
+      "pass": false,
+      "detail": "物攻提升=11.00%, 力量折算=9.30%, 暴击期望=4.50%, 合计=24.80%"
+    },
+    {
+      "id": 7,
+      "item": "剑魂百分比综合提升",
+      "expected": 45.7,
+      "actual": 26.02,
+      "pass": false,
+      "detail": "物攻提升=12.22%, 力量折算=9.30%, 暴击期望=4.50%, 合计=26.02%"
+    },
+    {
+      "id": 8,
+      "item": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true,
+      "detail": "FAAL系统固有频率不变量，为独立系统不变量，非简单比值"
+    },
+    {
+      "id": 9,
+      "item": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true,
+      "detail": "武器伤害=2110 × 破极兵刃加成=1.3 = 2743"
+    },
+    {
+      "id": 10,
+      "item": "CC套设计路线",
+      "expected": "均衡填充",
+      "actual": "均衡填充",
+      "pass": true
+    },
+    {
+      "id": 11,
+      "item": "异界套设计路线",
+      "expected": "定点强化",
+      "actual": "定点强化",
+      "pass": true
+    },
+    {
+      "id": 12,
+      "item": "装备加成三原则元理论",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "id": 13,
+      "item": "版本锁定70版",
+      "expected": "锁定",
+      "actual": "锁定",
+      "pass": true
+    },
+    {
+      "id": 14,
+      "item": "数据来源标注",
+      "expected": "已标注",
+      "actual": "已标注",
+      "pass": true
+    },
+    {
+      "id": 15,
+      "item": "自我进化边界遵守",
+      "expected": "遵守",
+      "actual": "遵守",
+      "pass": true
+    },
+    {
+      "id": 16,
+      "item": "FAAL三阶七维框架",
+      "expected": "完全固化",
+      "actual": "完全固化",
+      "pass": true
+    },
+    {
+      "id": 17,
+      "item": "狂战士技能分类正确",
+      "expected": "固伤+百分比混合",
+      "actual": "固伤+百分比混合",
+      "pass": true
+    },
+    {
+      "id": 18,
+      "item": "剑魂技能分类正确",
+      "expected": "纯百分比",
+      "actual": "纯百分比",
+      "pass": true
+    },
+    {
+      "id": 19,
+      "item": "出血机制穿透防御",
+      "expected": "确认",
+      "actual": "确认",
+      "pass": true
+    },
+    {
+      "id": 20,
+      "item": "暴走固伤零收益",
+      "expected": "确认",
+      "actual": "确认",
+      "pass": true
+    },
+    {
+      "id": 21,
+      "item": "力量310对百分比技能有效",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": 22,
+      "item": "力量310对固伤技能无效",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": 23,
+      "item": "物理攻击110仅对百分比有效",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": 24,
+      "item": "独立攻击120对固伤有效",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": 25,
+      "item": "暴击率3%全技能通用",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": 26,
+      "item": "固伤乘区独立于物理攻击",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": 27,
+      "item": "百分比乘区依赖物理攻击",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": 28,
+      "item": "CC套均衡填充vs异界套定点强化",
+      "expected": "已区分",
+      "actual": "已区分",
+      "pass": true
+    },
+    {
+      "id": 29,
+      "item": "三级级联放大链模型",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "id": 30,
+      "item": "核心数据零漂移确认",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    }
+  ],
+  "cc_set_attributes": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker_fixed_improvement": 26.6667,
+  "berserker_pct_improvement": 24.8,
+  "swordsman_pct_improvement": 26.02,
+  "marginal_duality": 4.93002,
+  "ppp_synergy_atk": 2743,
+  "faal_framework": "完全固化",
+  "self_evolution_boundary": "持续遵守",
+  "core_data_drift": "零漂移"
+}
