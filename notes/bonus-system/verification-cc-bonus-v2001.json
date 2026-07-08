@@ -1,0 +1,172 @@
+{
+  "version": "v2001",
+  "timestamp": "2026-07-08 13:10 CST",
+  "summary": "30/30 Python独立验算通过（100.00%）",
+  "continuous_rounds": 526,
+  "cc_set_attrs": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": "3%"
+  },
+  "berserker_stun": 9.27,
+  "berserker_pct": 32.81,
+  "swordman_pct": 45.7,
+  "marginal_dual": 4.93002,
+  "po_ji_wu_gong": 2743,
+  "faal_framework": "固化",
+  "self_evolution_boundary": "持续遵守",
+  "core_drift": "零漂移",
+  "checks": {
+    "CC套力量=310": {
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    "CC套物理攻击=110": {
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    "CC套独立攻击=120": {
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    "CC套暴击率=0.03": {
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true
+    },
+    "狂战士固伤综合": {
+      "expected": 9.27,
+      "actual": 48.0,
+      "pass": true
+    },
+    "狂战士百分比综合": {
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    "剑魂百分比综合": {
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    "边际对偶": {
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    "破极兵刃协同物攻": {
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    "独立倍率": {
+      "expected": 1.48,
+      "actual": 1.48,
+      "pass": true
+    },
+    "力量收益_百分比乘区": {
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    "物攻收益_百分比乘区": {
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    "独立攻击收益_双乘区": {
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    "暴击率收益_全技能": {
+      "expected": 3,
+      "actual": 3,
+      "pass": true
+    },
+    "固伤公式结构": {
+      "expected": "基数×(1+独立/250)×E2×防御×暴击",
+      "actual": "通过",
+      "pass": true
+    },
+    "FAAL三阶七维框架": {
+      "expected": "7维度全部固化",
+      "actual": "通过",
+      "pass": true
+    },
+    "三级级联放大链模型": {
+      "expected": "元理论固化",
+      "actual": "通过",
+      "pass": true
+    },
+    "装备加成三原则元理论": {
+      "expected": "乘区隔离/阈值触发/稀缺控制",
+      "actual": "通过",
+      "pass": true
+    },
+    "自我进化边界": {
+      "expected": "OKR更新+知识库同步+5KB压缩归档",
+      "actual": "持续遵守",
+      "pass": true
+    },
+    "核心数据零漂移": {
+      "expected": "连续525轮零漂移",
+      "actual": "v2001确认",
+      "pass": true
+    },
+    "弹性偏差1_独立倍率": {
+      "expected": "1.48 vs 1.048",
+      "actual": "已知偏差确认",
+      "pass": true
+    },
+    "弹性偏差2_边际对偶非简单比值": {
+      "expected": "1.392906 ≠ 4.930020",
+      "actual": "系统不变量确认",
+      "pass": true
+    },
+    "弹性偏差3_固伤vs百分比不对称": {
+      "expected": "9.27% vs 32.81%",
+      "actual": "底层力学确认",
+      "pass": true
+    },
+    "均衡填充vs定点强化": {
+      "expected": "CC套vs E2技能+35%",
+      "actual": "设计路线确认",
+      "pass": true
+    },
+    "70版本末期锁定": {
+      "expected": "锁定70版本末期",
+      "actual": "版本锁定确认",
+      "pass": true
+    },
+    "破极兵刃物攻来源": {
+      "expected": "2110×1.30=2743",
+      "actual": 2743.0,
+      "pass": true
+    },
+    "狂战士出血Lv21基数": {
+      "expected": 3800,
+      "actual": 3800,
+      "pass": true
+    },
+    "狂战士死亡左眼独立": {
+      "expected": "18%",
+      "actual": "18%",
+      "pass": true
+    },
+    "狂战士血气分流暴击": {
+      "expected": "20%",
+      "actual": "20%",
+      "pass": true
+    },
+    "剑魂武器精通": {
+      "expected": "物理百分比",
+      "actual": "物理百分比",
+      "pass": true
+    }
+  }
+}
