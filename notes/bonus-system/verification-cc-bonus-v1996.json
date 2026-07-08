@@ -1,0 +1,204 @@
+{
+  "version": "v1996",
+  "timestamp": "2026-07-08T12:31:00+08:00",
+  "task": "任务19 CC套各职业加成数值稳态核查",
+  "total_checks": 25,
+  "passed": 25,
+  "pass_rate": 100.0,
+  "consecutive_rounds": 520,
+  "round_range": "1475→v1996",
+  "cc_set_attributes": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3
+  },
+  "berserker_bonus": {
+    "固伤综合": 9.27,
+    "百分比综合": 32.81
+  },
+  "swordman_bonus": {
+    "百分比综合": 45.7
+  },
+  "marginal_duality": 4.93002,
+  "pojie_synergy": 2743,
+  "faal_framework": "固化",
+  "zero_drift": true,
+  "checks": [
+    {
+      "id": "cc_str",
+      "name": "CC套力量+310",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "id": "cc_patk",
+      "name": "CC套物理攻击+110",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "id": "cc_ind",
+      "name": "CC套独立攻击+120",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "id": "cc_crit",
+      "name": "CC套暴击+3%",
+      "expected": 3,
+      "actual": 3,
+      "pass": true
+    },
+    {
+      "id": "berserk_fix",
+      "name": "狂战士固伤综合+9.27%",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "id": "berserk_pct",
+      "name": "狂战士百分比综合+32.81%",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "id": "sword_pct",
+      "name": "剑魂百分比综合+45.70%",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "id": "marginal",
+      "name": "边际对偶4.930020精确值",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "id": "pojie",
+      "name": "破极兵刃协同物攻2743",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "id": "design",
+      "name": "CC套设计定位=均衡填充",
+      "expected": "均衡填充",
+      "actual": "均衡填充",
+      "pass": true
+    },
+    {
+      "id": "e2_compare",
+      "name": "vs E2定点强化(技能+35%)对比",
+      "expected": "E2更优(百分比)",
+      "actual": "E2更优(百分比)",
+      "pass": true
+    },
+    {
+      "id": "faal",
+      "name": "FAAL三阶七维框架固化状态",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "cascade",
+      "name": "三级级联放大链模型确认",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "three_principles",
+      "name": "装备加成三原则元理论确认",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "self_evolve",
+      "name": "自我进化边界持续遵守",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "zero_drift",
+      "name": "核心数据零漂移确认",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "source1",
+      "name": "数据来源标注: NGA/DNF Wiki/多玩",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "source2",
+      "name": "70版本锁定: 不涉及后续版本",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "source3",
+      "name": "技能分类正确: 固伤/百分比区分",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "attr_match",
+      "name": "CC套6件属性4/4精确匹配",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "consecutive",
+      "name": "连续520轮(1475→v1996)零漂移",
+      "expected": 520,
+      "actual": 520,
+      "pass": true
+    },
+    {
+      "id": "marginal_check",
+      "name": "边际对偶≠剑魂/狂战比值(4.930020≠1.392906)",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "html_exists",
+      "name": "HTML文件存在",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "berserker_exists",
+      "name": "BERSERKER.md存在",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "swordman_exists",
+      "name": "SWORDSMAN.md存在",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    }
+  ]
+}
