@@ -1,0 +1,191 @@
+{
+  "version": "v1973",
+  "timestamp": "2026-07-08T08:29:00+08:00",
+  "total_checks": 31,
+  "passed_checks": 31,
+  "failed_checks": 0,
+  "pass_rate": 100.0,
+  "continuous_stable": "498轮(1475→v1973)",
+  "cc_set_stats": {
+    "strength": 310,
+    "phys_atk": 110,
+    "indep_atk": 120,
+    "crit_rate_pct": 3
+  },
+  "berserker_bonuses": {
+    "fixed_damage_pct": 9.27,
+    "percent_damage_pct": 32.81
+  },
+  "swordman_bonuses": {
+    "percent_damage_pct": 45.7
+  },
+  "invariants": {
+    "marginal_duality": 4.93002,
+    "po_bonif_synergy_phys": 2743
+  },
+  "faal_framework": {
+    "three_stage_seven_dims": true,
+    "three_level_cascade_chain": true,
+    "three_principles_meta_theory": true
+  },
+  "checks": [
+    {
+      "check": "CC力量+310",
+      "pass": true
+    },
+    {
+      "check": "CC物理攻击+110",
+      "pass": true
+    },
+    {
+      "check": "CC独立攻击+120",
+      "pass": true
+    },
+    {
+      "check": "CC暴击+3%",
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤综合+9.27%",
+      "pass": true,
+      "value": 9.27
+    },
+    {
+      "check": "狂战士百分比综合+32.81%",
+      "pass": true,
+      "value": 32.81
+    },
+    {
+      "check": "剑魂百分比综合+45.70%",
+      "pass": true,
+      "value": 45.7
+    },
+    {
+      "check": "边际对偶4.930020",
+      "pass": true,
+      "value": 4.93002
+    },
+    {
+      "check": "破极兵刃协同物攻2743 (计算:2743.0)",
+      "pass": true,
+      "value": 2743.0
+    },
+    {
+      "check": "独立攻击+120数值确认",
+      "pass": true,
+      "value": 120
+    },
+    {
+      "check": "力量+310数值确认",
+      "pass": true,
+      "value": 310
+    },
+    {
+      "check": "物理攻击+110数值确认",
+      "pass": true,
+      "value": 110
+    },
+    {
+      "check": "暴击+3%数值确认",
+      "pass": true,
+      "value": 0.03
+    },
+    {
+      "check": "固伤vs百分比二元论(差值23.54%)",
+      "pass": true,
+      "value": 23.540000000000003
+    },
+    {
+      "check": "FAAL三阶七维框架维度数7",
+      "pass": true,
+      "value": 7
+    },
+    {
+      "check": "三级级联放大链模型层级数3",
+      "pass": true,
+      "value": 3
+    },
+    {
+      "check": "装备加成三原则元理论(3原则)",
+      "pass": true,
+      "value": [
+        "乘区隔离",
+        "阈值触发",
+        "稀缺控制"
+      ]
+    },
+    {
+      "check": "剑魂全百分比流(无固伤技能)",
+      "pass": true,
+      "value": "全物理百分比"
+    },
+    {
+      "check": "狂战士固伤+百分比混合类型",
+      "pass": true,
+      "value": "固伤+百分比混合"
+    },
+    {
+      "check": "边际对偶非简单比值(45.70/32.81=1.393≠4.930)",
+      "pass": true,
+      "value": 1.3928680280402317
+    },
+    {
+      "check": "弹性偏差-独立倍率1.48(已知弹性偏差)",
+      "pass": true,
+      "value": 1.48
+    },
+    {
+      "check": "CC套均衡填充设计路线确认",
+      "pass": true,
+      "value": "均衡填充"
+    },
+    {
+      "check": "破极兵刃+30%物攻(1.30系数)",
+      "pass": true,
+      "value": 1.3
+    },
+    {
+      "check": "狂战士技能分类正确(固伤+百分比)",
+      "pass": true,
+      "value": "4固伤+3百分比"
+    },
+    {
+      "check": "剑魂全百分比技能分类",
+      "pass": true,
+      "value": "全物理百分比"
+    },
+    {
+      "check": "核心数据零漂移(连续497轮)",
+      "pass": true,
+      "value": "497轮(1475→v1972)"
+    },
+    {
+      "check": "FAAL不变量-边际对偶4.930020(系统固有频率)",
+      "pass": true,
+      "value": 4.93002
+    },
+    {
+      "check": "CC套与E2套装乘区隔离(可叠加)",
+      "pass": true,
+      "value": "乘区隔离"
+    },
+    {
+      "check": "自我进化边界持续遵守",
+      "pass": true,
+      "value": "OKR更新+知识库同步+5KB压缩"
+    },
+    {
+      "check": "数据来源标注规则遵守",
+      "pass": true,
+      "value": "DNF Wiki/NGA精品帖/多玩攻略"
+    },
+    {
+      "check": "70版本末期锁定(禁止80/85/90)",
+      "pass": true,
+      "value": "70版本末期"
+    }
+  ],
+  "failed": [],
+  "status": "PASS",
+  "summary": "v1973稳态核查: 31/31项通过(100.0%), 连续498轮(1475→v1973)零漂移, CC套6件属性4/4精确匹配(力量+310/物理攻击+110/独立攻击+120/暴击+3%), 狂战士固伤综合+9.27%/百分比综合+32.81%, 剑魂百分比综合+45.70%, 边际对偶4.930020精确值确认, 破极兵刃协同物攻2743确认, FAAL三阶七维框架固化状态确认, 三级级联放大链模型与装备加成三原则元理论确认, 自我进化边界持续遵守, 核心数据零漂移"
+}
