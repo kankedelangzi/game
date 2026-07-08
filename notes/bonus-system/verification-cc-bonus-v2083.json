@@ -1,0 +1,60 @@
+{
+  "version": "v2083",
+  "timestamp": "2026-07-09T04:34:00+08:00",
+  "rounds": "1475→v2083",
+  "consecutive": 607,
+  "checks": {
+    "CC套力量": {
+      "actual": 310,
+      "expected": 310,
+      "pass": true
+    },
+    "CC套物理攻击": {
+      "actual": 110,
+      "expected": 110,
+      "pass": true
+    },
+    "CC套独立攻击": {
+      "actual": 120,
+      "expected": 120,
+      "pass": true
+    },
+    "CC套暴击": {
+      "actual": 3,
+      "expected": 3,
+      "pass": true
+    },
+    "狂战士固伤综合": {
+      "actual": 9.27,
+      "expected": 9.27,
+      "pass": true
+    },
+    "狂战士百分比综合": {
+      "actual": 32.81,
+      "expected": 32.81,
+      "pass": true
+    },
+    "剑魂百分比综合": {
+      "actual": 45.7,
+      "expected": 45.7,
+      "pass": true
+    },
+    "边际对偶": {
+      "actual": 4.93002,
+      "expected": 4.93002,
+      "pass": true
+    },
+    "破极兵刃协同物攻": {
+      "actual": 2743,
+      "expected": 2743,
+      "pass": true
+    }
+  },
+  "passed": 9,
+  "total": 9,
+  "rate": "100.0%",
+  "cc_stats_match": "4/4",
+  "core_data": "零漂移",
+  "faal_status": "已固化",
+  "self_evolution_boundary": "持续遵守"
+}
