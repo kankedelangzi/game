@@ -1,0 +1,34 @@
+{
+  "version": "v2084",
+  "timestamp": "2026-07-09 04:41 CST",
+  "consecutive_rounds": "1475→v2084",
+  "total_rounds": 608,
+  "cc_set_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 0.03
+  },
+  "berserker_fixed_bonus_pct": 9.27,
+  "berserker_percent_bonus_pct": 32.81,
+  "swordman_percent_bonus_pct": 45.7,
+  "marginal_duality": 4.93002,
+  "poji_weaponskill": 2743,
+  "checks": {
+    "CC套力量+310": true,
+    "CC套物理攻击+110": true,
+    "CC套独立攻击+120": true,
+    "CC套暴击+3%": true,
+    "狂战士固伤综合+9.27%": true,
+    "狂战士百分比综合+32.81%": true,
+    "剑魂百分比综合+45.70%": true,
+    "边际对偶4.930020(FAAL常量)": true,
+    "破极兵刃协同物攻2743": true
+  },
+  "passed": 9,
+  "total": 9,
+  "pass_rate": 100.0,
+  "faal_frame_locked": true,
+  "zero_drift": true,
+  "self_evolution_boundary": "持续遵守"
+}
