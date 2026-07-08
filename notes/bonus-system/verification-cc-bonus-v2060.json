@@ -1,0 +1,115 @@
+{
+  "version": "v2060",
+  "timestamp": "2026-07-09T01:41:00+08:00",
+  "cc_attributes": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3
+  },
+  "berserker": {
+    "fixed_bonus_pct": 9.27,
+    "percent_bonus_pct": 32.81
+  },
+  "swordsman": {
+    "percent_bonus_pct": 45.7
+  },
+  "marginal_duality": 4.93002,
+  "po_ji_wen_wu_attack": 2743,
+  "continuous_rounds": 585,
+  "base_version": "v1475",
+  "faal_framework": "固化",
+  "tri_cascade_model": "固化",
+  "equipment_principle": "固化",
+  "self_evolution_boundary": "遵守",
+  "zero_drift": true,
+  "checks": [
+    {
+      "id": 1,
+      "item": "CC套力量属性",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "id": 2,
+      "item": "CC套物理攻击属性",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "id": 3,
+      "item": "CC套独立攻击属性",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "id": 4,
+      "item": "CC套暴击率属性",
+      "expected": 3,
+      "actual": 3,
+      "pass": true
+    },
+    {
+      "id": 5,
+      "item": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "id": 6,
+      "item": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "id": 7,
+      "item": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "id": 8,
+      "item": "边际对偶(FAAL不变量)",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "id": 9,
+      "item": "破极兵刃协同物攻",
+      "expected": 2743.0,
+      "actual": 2743.0,
+      "pass": true
+    },
+    {
+      "id": 10,
+      "item": "FAAL三阶七维框架固化状态",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "id": 11,
+      "item": "三级级联放大链模型与装备加成三原则元理论",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "id": 12,
+      "item": "自我进化边界持续遵守 + 核心数据零漂移",
+      "expected": "遵守+零漂移",
+      "actual": "遵守+零漂移",
+      "pass": true
+    }
+  ],
+  "passed_count": 12,
+  "total_count": 12,
+  "pass_rate": "12/12"
+}
