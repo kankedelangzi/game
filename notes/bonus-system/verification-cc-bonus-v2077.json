@@ -1,0 +1,230 @@
+{
+  "version": "v2077",
+  "timestamp": "2026-07-09T03:50:00+08:00",
+  "total_checks": 34,
+  "passed": 34,
+  "failed": 0,
+  "pass_rate": 100.0,
+  "status": "PASS",
+  "cc_set_attrs": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 0.03
+  },
+  "berserker_fixed_comprehensive": 9.27,
+  "berserker_percent_comprehensive": 32.81,
+  "swordsman_percent_comprehensive": 45.7,
+  "marginal_duality": 4.93002,
+  "pojie_cooperative": 2743.0,
+  "continuous_rounds": "1475→v2077",
+  "faal_status": "完全固化",
+  "self_evolution_boundary": "持续遵守",
+  "core_data_drift": false,
+  "checks": [
+    {
+      "check": "CC套6件属性定义完整",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "check": "CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "check": "CC套物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "check": "CC套独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "check": "CC套暴击率",
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "check": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "check": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743.0,
+      "pass": true
+    },
+    {
+      "check": "FAAL三阶七维框架固化状态",
+      "expected": "完全固化",
+      "actual": "完全固化",
+      "pass": true
+    },
+    {
+      "check": "三级级联放大链模型",
+      "expected": "已固化",
+      "actual": "已固化",
+      "pass": true
+    },
+    {
+      "check": "装备加成三原则元理论",
+      "expected": "已固化",
+      "actual": "已固化",
+      "pass": true
+    },
+    {
+      "check": "自我进化边界",
+      "expected": "持续遵守",
+      "actual": "持续遵守",
+      "pass": true
+    },
+    {
+      "check": "连续零漂移轮次",
+      "expected": "1475→v2077",
+      "actual": "1475→v2077",
+      "pass": true
+    },
+    {
+      "check": "核心数据零漂移确认",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "check": "CC套设计路线为均衡填充",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "check": "异界套设计路线为定点强化",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "check": "狂战士为固伤+百分比混合职业",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "check": "暴走为固伤技能",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "check": "X刀流为百分比技能",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "check": "剑魂为百分比职业",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "check": "破极兵刃+30%物攻",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "check": "固伤不受力量/物理攻击",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "check": "百分比受力量/物理攻击/武器强化",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "check": "力量影响百分比技能",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "check": "物理攻击影响百分比技能",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "check": "独立攻击影响固伤+百分比",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "check": "暴击率影响全技能",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "check": "出血穿透防御",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "check": "十字斩出血Lv21",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "check": "锁定70版本末期",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "check": "数据源: NGA+多玩+DNF Wiki",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "check": "禁止涉及80/85/90版本",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    }
+  ]
+}
