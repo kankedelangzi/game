@@ -1,0 +1,24 @@
+{
+  "version": "v2041",
+  "timestamp": "2026-07-08T21:50:00+08:00",
+  "total_checks": 17,
+  "passed": 17,
+  "pass_rate": "100%",
+  "continuous_rounds": "566轮(1475→v2041)",
+  "cc_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserk_fixed_total": 9.27,
+  "berserk_pct_total": 32.81,
+  "swordman_pct_total": 45.7,
+  "ppc_synergy": 2743,
+  "marginal_duality": 4.93002,
+  "faal_frozen": true,
+  "cascade_chain_frozen": true,
+  "equipment_principles_frozen": true,
+  "self_evolution_boundary_kept": true,
+  "zero_drift": true
+}
