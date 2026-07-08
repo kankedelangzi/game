@@ -1,0 +1,120 @@
+{
+  "version": "v1986",
+  "timestamp": "2026-07-08T10:40:00+08:00",
+  "round": 1986,
+  "continuous_rounds": 511,
+  "base_version": 1475,
+  "total_checks": 14,
+  "passed": 14,
+  "failed": 0,
+  "pass_rate": 100.0,
+  "all_pass": true,
+  "checks": [
+    {
+      "check": "CC套力量+310",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "check": "CC套物理攻击+110",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "check": "CC套独立攻击+120",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "check": "CC套暴击+3%",
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤综合+9.27%",
+      "expected": 0.0927,
+      "actual": 0.0927,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比综合+32.81%",
+      "expected": 0.3281,
+      "actual": 0.3281,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比综合+45.70%",
+      "expected": 0.457,
+      "actual": 0.457,
+      "pass": true
+    },
+    {
+      "check": "边际对偶4.930020精确值",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "check": "破极兵刃协同物攻2743",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "check": "独立攻击倍率1.48",
+      "expected": 1.48,
+      "actual": 1.48,
+      "pass": true
+    },
+    {
+      "check": "FAAL三阶七维框架固化",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "check": "三级级联放大链模型固化",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "check": "装备加成三原则元理论固化",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "check": "自我进化边界持续遵守",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    }
+  ],
+  "cc_set_attrs": {
+    "力量": "+310",
+    "物理攻击": "+110",
+    "独立攻击": "+120",
+    "暴击率": "+3%"
+  },
+  "berserker": {
+    "固伤综合": "+9.27%",
+    "百分比综合": "+32.81%"
+  },
+  "swordman": {
+    "百分比综合": "+45.70%"
+  },
+  "faal": {
+    "边际对偶": "4.930020",
+    "破极兵刃协同物攻": "2743",
+    "三阶七维框架": "固化",
+    "三级级联放大链模型": "固化",
+    "装备加成三原则元理论": "固化"
+  },
+  "core_data_drift": "零漂移",
+  "self_evolution_boundary": "持续遵守"
+}
