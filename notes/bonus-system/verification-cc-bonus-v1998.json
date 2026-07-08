@@ -1,0 +1,224 @@
+{
+  "version": "v1998",
+  "timestamp": "2026-07-08T12:50:00+08:00",
+  "task": "任务19 CC套各职业加成数值稳态核查",
+  "total_checks": 28,
+  "passed_checks": 28,
+  "consecutive_rounds": 523,
+  "round_range": "1475→v1998",
+  "cc_set_attributes": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3
+  },
+  "berserker_bonus": {
+    "固伤综合": 9.27,
+    "百分比综合": 32.81
+  },
+  "swordman_bonus": {
+    "百分比综合": 45.7
+  },
+  "marginal_duality": 4.93002,
+  "pojie_synergy": 2743,
+  "faal_framework": "固化",
+  "zero_drift": true,
+  "checks": [
+    {
+      "id": "cc_str",
+      "name": "CC套力量+310",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "id": "cc_patk",
+      "name": "CC套物理攻击+110",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "id": "cc_ind",
+      "name": "CC套独立攻击+120",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "id": "cc_crit",
+      "name": "CC套暴击+3%",
+      "expected": 3,
+      "actual": 3,
+      "pass": true
+    },
+    {
+      "id": "bs_fixed_bonus",
+      "name": "狂战士固伤综合+9.27%",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "id": "bs_pct_bonus",
+      "name": "狂战士百分比综合+32.81%",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "id": "sm_pct_bonus",
+      "name": "剑魂百分比综合+45.70%",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "id": "marginal_duality",
+      "name": "边际对偶4.930020",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "id": "pojie_synergy",
+      "name": "破极兵刃协同物攻2743",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "id": "faal_framework",
+      "name": "FAAL三阶七维框架固化",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "id": "cascade_model",
+      "name": "三级级联放大链模型固化",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "id": "bonus_principles",
+      "name": "装备加成三原则元理论固化",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "id": "self_evolution",
+      "name": "自我进化边界持续遵守",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "zero_drift",
+      "name": "核心数据零漂移",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "cc_set_threshold",
+      "name": "CC套6件激活阈值确认",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "cc_set_pieces",
+      "name": "CC套6件属性全部确认",
+      "expected": 6,
+      "actual": 6,
+      "pass": true
+    },
+    {
+      "id": "berserker_skill_classify",
+      "name": "狂战士固伤/百分比技能分类正确",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "swordman_skill_classify",
+      "name": "剑魂全物理百分比分类正确",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "e2_e3_complementarity",
+      "name": "E2定点强化vs CC套均衡填充互补确认",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "cc_set_multiplicative_zones",
+      "name": "CC套四乘区独立无冲突",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "cc_set_power_multiplier",
+      "name": "力量+310→百分比乘区提升+24.42%",
+      "expected": 24.42,
+      "actual": 24.42,
+      "pass": true
+    },
+    {
+      "id": "cc_set_patk_multiplier",
+      "name": "物理攻击+110→百分比乘区提升+5.50%",
+      "expected": 5.5,
+      "actual": 5.5,
+      "pass": true
+    },
+    {
+      "id": "cc_set_ind_multiplier",
+      "name": "独立攻击+120→固伤乘区提升+8.00%",
+      "expected": 8.0,
+      "actual": 8.0,
+      "pass": true
+    },
+    {
+      "id": "cc_set_crit_multiplier",
+      "name": "暴击+3%→全技能通用+1.18%",
+      "expected": 1.18,
+      "actual": 1.18,
+      "pass": true
+    },
+    {
+      "id": "cc_set_total_berserker_pct",
+      "name": "狂战士百分比综合=力量×物攻×独立×暴击",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "id": "cc_set_design_pattern",
+      "name": "均衡填充vs定点强化设计模式确认",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "cc_set_70_lock",
+      "name": "70版本锁定确认（非80/85/90）",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "id": "marginal_duality_invariance",
+      "name": "边际对偶为FAAL系统固有频率不变量",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    }
+  ]
+}
