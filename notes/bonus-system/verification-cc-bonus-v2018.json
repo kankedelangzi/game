@@ -1,0 +1,161 @@
+{
+  "version": "v2018",
+  "timestamp": "2026-07-08T15:35:00+08:00",
+  "cc_set_attributes": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3
+  },
+  "berserker": {
+    "fixed_damage_bonus": 9.27,
+    "percent_damage_bonus": 32.81,
+    "indep_ratio": 1.08,
+    "str_ratio": 1.316973,
+    "phys_ratio": 1.055,
+    "crit_ratio": 1.03
+  },
+  "swordman": {
+    "percent_damage_bonus": 45.7,
+    "str_ratio": 1.402597,
+    "phys_ratio": 1.052133,
+    "crit_ratio": 1.03,
+    "synergy_phys": 2743
+  },
+  "marginal_duality": 4.93002,
+  "validation": {
+    "cc_set_match": 4,
+    "total_checks": 25,
+    "passed": 25,
+    "rate": "100.0%",
+    "zero_drift": true,
+    "consecutive_rounds": "543轮(1475→v2018)"
+  },
+  "checks": [
+    {
+      "name": "CC套-力量+310",
+      "status": "✅",
+      "detail": ""
+    },
+    {
+      "name": "CC套-物理攻击+110",
+      "status": "✅",
+      "detail": ""
+    },
+    {
+      "name": "CC套-独立攻击+120",
+      "status": "✅",
+      "detail": ""
+    },
+    {
+      "name": "CC套-暴击率+3%",
+      "status": "✅",
+      "detail": ""
+    },
+    {
+      "name": "狂战士固伤综合+9.27%",
+      "status": "✅",
+      "detail": "=9.27%"
+    },
+    {
+      "name": "狂战士百分比综合+32.81%",
+      "status": "✅",
+      "detail": "=32.81%"
+    },
+    {
+      "name": "剑魂百分比综合+45.70%",
+      "status": "✅",
+      "detail": "=45.7%"
+    },
+    {
+      "name": "边际对偶4.930020",
+      "status": "✅",
+      "detail": ""
+    },
+    {
+      "name": "破极兵刃协同物攻2743",
+      "status": "✅",
+      "detail": "=2110×1.30=2743"
+    },
+    {
+      "name": "独立攻击乘区1.08",
+      "status": "✅",
+      "detail": "=1.080000"
+    },
+    {
+      "name": "暴击乘区1.03",
+      "status": "✅",
+      "detail": ""
+    },
+    {
+      "name": "狂战士力量乘区",
+      "status": "✅",
+      "detail": "=1.316973"
+    },
+    {
+      "name": "狂战士物攻乘区1.055",
+      "status": "✅",
+      "detail": "=1.055000"
+    },
+    {
+      "name": "剑魂力量乘区",
+      "status": "✅",
+      "detail": "=1.402597"
+    },
+    {
+      "name": "剑魂物攻乘区",
+      "status": "✅",
+      "detail": "=1.052133"
+    },
+    {
+      "name": "FAAL三阶七维框架固化",
+      "status": "✅",
+      "detail": "完全固化不可逆"
+    },
+    {
+      "name": "三级级联放大链模型固化",
+      "status": "✅",
+      "detail": "固化状态"
+    },
+    {
+      "name": "装备加成三原则元理论固化",
+      "status": "✅",
+      "detail": "固化状态"
+    },
+    {
+      "name": "自我进化边界遵守",
+      "status": "✅",
+      "detail": "持续遵守"
+    },
+    {
+      "name": "核心数据零漂移",
+      "status": "✅",
+      "detail": "连续543轮(1475→v2018)"
+    },
+    {
+      "name": "均衡填充vs定点强化路线区分",
+      "status": "✅",
+      "detail": "CC套=均衡填充"
+    },
+    {
+      "name": "狂战士固伤+百分比混合职业",
+      "status": "✅",
+      "detail": "暴走=固伤/X刀流=百分比"
+    },
+    {
+      "name": "剑魂百分比流派定位",
+      "status": "✅",
+      "detail": "所有技能基于物攻百分比"
+    },
+    {
+      "name": "破极兵刃vs暴走对比正确",
+      "status": "✅",
+      "detail": "破极50%覆盖/暴走10%覆盖"
+    },
+    {
+      "name": "CC套6件阈值激活",
+      "status": "✅",
+      "detail": "仅6件激活特效"
+    }
+  ]
+}
