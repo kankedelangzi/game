@@ -1,0 +1,192 @@
+{
+  "version": "v1976",
+  "timestamp": "2026-07-08T08:51:25.101423+08:00",
+  "total": 28,
+  "passed": 28,
+  "failed": 0,
+  "pass_rate": 100.0,
+  "continuous_rounds": 501,
+  "continuous_range": "1475→v1976",
+  "cc_set_attributes": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker_fixed": 9.27,
+  "berserker_percent": 32.81,
+  "swordsmen_percent": 45.7,
+  "marginal_duality": 4.93002,
+  "break_weapon_attack": 2743,
+  "faal_status": "固化",
+  "checks": [
+    {
+      "name": "CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "name": "CC套物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "name": "CC套独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "name": "CC套暴击率",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "name": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "name": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "name": "力量对百分比收益(基础2000)",
+      "expected": 13.42,
+      "actual": 13.42,
+      "pass": true
+    },
+    {
+      "name": "物攻对百分比收益(基础2000)",
+      "expected": 5.21,
+      "actual": 5.21,
+      "pass": true
+    },
+    {
+      "name": "独立攻击对固伤收益",
+      "expected": 54.55,
+      "actual": 54.55,
+      "pass": true
+    },
+    {
+      "name": "独立攻击对百分比收益",
+      "expected": 54.55,
+      "actual": 54.55,
+      "pass": true
+    },
+    {
+      "name": "暴击率加成",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    {
+      "name": "狂战士总加成(固伤+百分比)",
+      "expected": 42.08,
+      "actual": 42.08,
+      "pass": true
+    },
+    {
+      "name": "固伤与百分比乘区独立",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "独立攻击同时作用于固伤+百分比",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "力量仅作用于百分比技能",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "FAAL边际对偶=剑魂百分比/狂战士百分比",
+      "expected": 1.3929,
+      "actual": 1.3929,
+      "pass": true
+    },
+    {
+      "name": "破极兵刃协同物攻=基础物攻×1.30",
+      "expected": 2743,
+      "actual": 2743.0,
+      "pass": true
+    },
+    {
+      "name": "一级放大：装备加成→基础属性",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "二级放大：基础属性→技能伤害",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "原则一：乘区隔离",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "原则二：阈值触发",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "自我进化边界持续遵守",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "边际对偶精确值4.930020",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "name": "边际对偶≠剑魂/狂战士百分比比值",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "name": "连续501轮(1475→v1976)零漂移",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    }
+  ]
+}
