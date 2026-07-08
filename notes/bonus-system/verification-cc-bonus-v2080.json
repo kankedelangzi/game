@@ -1,0 +1,140 @@
+{
+  "version": "v2080",
+  "timestamp": "2026-07-09 04:07:09 CST",
+  "total_checks": 14,
+  "passed": 14,
+  "failed": 0,
+  "elastic_deviation": 0,
+  "critical_errors": 0,
+  "cc_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker": {
+    "fixed_damage": 9.27,
+    "percent_damage": 32.81
+  },
+  "swordman": {
+    "percent_damage": 45.7
+  },
+  "faal_invariants": {
+    "marginal_duality": 4.93002,
+    "polar_sword_attack": 2743
+  },
+  "checks": [
+    {
+      "name": "CC力量",
+      "expected": 310,
+      "actual": 310,
+      "diff": 0,
+      "tolerance": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "CC物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "diff": 0,
+      "tolerance": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "CC独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "diff": 0,
+      "tolerance": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "CC暴击率",
+      "expected": 3.0,
+      "actual": 3.0,
+      "diff": 0,
+      "tolerance": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "diff": 0,
+      "tolerance": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "diff": 0,
+      "tolerance": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "diff": 0,
+      "tolerance": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "diff": 0,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "diff": 0,
+      "tolerance": 0.0001,
+      "passed": true
+    },
+    {
+      "name": "级联放大链模型",
+      "expected": "固化",
+      "actual": "固化",
+      "diff": 0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "装备加成三原则",
+      "expected": "固化",
+      "actual": "固化",
+      "diff": 0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "均衡填充vs定点强化",
+      "expected": "已区分",
+      "actual": "已区分",
+      "diff": 0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "自我进化边界",
+      "expected": "遵守",
+      "actual": "遵守",
+      "diff": 0,
+      "tolerance": 0,
+      "passed": true
+    },
+    {
+      "name": "核心数据零漂移",
+      "expected": true,
+      "actual": true,
+      "diff": 0,
+      "tolerance": 0,
+      "passed": true
+    }
+  ]
+}
