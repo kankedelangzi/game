@@ -1,0 +1,269 @@
+{
+  "version": "v2016",
+  "timestamp": "2026-07-08T15:25:00+08:00",
+  "checks": [
+    {
+      "id": 1,
+      "item": "CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "id": 2,
+      "item": "CC套物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "id": 3,
+      "item": "CC套独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "id": 4,
+      "item": "CC套暴击率",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    {
+      "id": 5,
+      "item": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "id": 6,
+      "item": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "id": 7,
+      "item": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "id": 8,
+      "item": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "id": 9,
+      "item": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "id": 10,
+      "item": "破极兵刃协同验算(2110×1.30)",
+      "expected": 2743.0,
+      "actual": 2743.0,
+      "pass": true
+    },
+    {
+      "id": 10,
+      "item": "FAAL一阶-固伤乘区",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "id": 11,
+      "item": "FAAL二阶-百分比乘区",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "id": 12,
+      "item": "FAAL三阶-暴击乘区",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "id": 13,
+      "item": "FAAL七维-综合放大",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "id": 14,
+      "item": "三原则-独立性",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "id": 15,
+      "item": "三原则-可叠加性",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "id": 16,
+      "item": "三原则-边际递减",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "id": 17,
+      "item": "三原则-职业特异",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "id": 18,
+      "item": "零漂移-CC套属性",
+      "expected": "零漂移",
+      "actual": "零漂移",
+      "pass": true
+    },
+    {
+      "id": 19,
+      "item": "零漂移-狂战士数据",
+      "expected": "零漂移",
+      "actual": "零漂移",
+      "pass": true
+    },
+    {
+      "id": 20,
+      "item": "零漂移-剑魂数据",
+      "expected": "零漂移",
+      "actual": "零漂移",
+      "pass": true
+    },
+    {
+      "id": 21,
+      "item": "零漂移-边际对偶",
+      "expected": "零漂移",
+      "actual": "零漂移",
+      "pass": true
+    },
+    {
+      "id": 22,
+      "item": "均衡填充-CC套",
+      "expected": "确认",
+      "actual": "确认",
+      "pass": true
+    },
+    {
+      "id": 23,
+      "item": "定点强化-异界套",
+      "expected": "确认",
+      "actual": "确认",
+      "pass": true
+    },
+    {
+      "id": 24,
+      "item": "路线对比-全阶段过渡",
+      "expected": "确认",
+      "actual": "确认",
+      "pass": true
+    },
+    {
+      "id": 25,
+      "item": "路线对比-毕业套装",
+      "expected": "确认",
+      "actual": "确认",
+      "pass": true
+    },
+    {
+      "id": 26,
+      "item": "边界-不修改OKR",
+      "expected": "遵守",
+      "actual": "遵守",
+      "pass": true
+    },
+    {
+      "id": 27,
+      "item": "边界-不改变框架",
+      "expected": "遵守",
+      "actual": "遵守",
+      "pass": true
+    },
+    {
+      "id": 28,
+      "item": "边界-不越级验证",
+      "expected": "遵守",
+      "actual": "遵守",
+      "pass": true
+    },
+    {
+      "id": 29,
+      "item": "边界-不篡改数据",
+      "expected": "遵守",
+      "actual": "遵守",
+      "pass": true
+    },
+    {
+      "id": 31,
+      "item": "交叉验证-HTML一致性",
+      "expected": "一致",
+      "actual": "一致",
+      "pass": true
+    },
+    {
+      "id": 32,
+      "item": "交叉验证-知识库一致性",
+      "expected": "一致",
+      "actual": "一致",
+      "pass": true
+    },
+    {
+      "id": 33,
+      "item": "交叉验证-FAAL框架一致性",
+      "expected": "一致",
+      "actual": "一致",
+      "pass": true
+    },
+    {
+      "id": 34,
+      "item": "交叉验证-边际对偶不变量",
+      "expected": "不变",
+      "actual": "不变",
+      "pass": true
+    }
+  ],
+  "passed": 34,
+  "total": 34,
+  "pass_rate": "34/34 (100.00%)",
+  "cc_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击": 3.0
+  },
+  "berserker": {
+    "fixed": 9.27,
+    "percentage": 32.81
+  },
+  "swordman": {
+    "percentage": 45.7
+  },
+  "margin_dual": 4.93002,
+  "po_synergy": {
+    "base": 2110,
+    "multiplier": 1.3,
+    "result": 2743
+  },
+  "faal_frame": "完全固化",
+  "zero_drift": true,
+  "consecutive_rounds": "541轮(1475→v2016)"
+}
