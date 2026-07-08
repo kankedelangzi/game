@@ -1,0 +1,220 @@
+{
+  "version": "v2014",
+  "timestamp": "2026-07-08T14:55:00+0800",
+  "continuous_rounds": 539,
+  "round_range": "1475→v2014",
+  "passed": 32,
+  "total": 32,
+  "pass_rate": 100.0,
+  "cc_set_match": "4/4精确匹配",
+  "cc_attrs": {
+    "力量": "+310",
+    "物理攻击": "+110",
+    "独立攻击": "+120",
+    "暴击率": "+3%"
+  },
+  "berserker_fixed_bonus": "+9.27%",
+  "berserker_pct_bonus": "+32.81%",
+  "swordsman_pct_bonus": "+45.70%",
+  "marginal_duality": 4.93002,
+  "ppr_phys_atk": 2743,
+  "faal_frozen": true,
+  "cascade_model_frozen": true,
+  "equip_principle_frozen": true,
+  "evolution_boundary_ok": true,
+  "core_data_drift": "零漂移",
+  "checks": [
+    {
+      "item": "CC套-力量",
+      "expected": 310,
+      "actual": 310,
+      "status": "PASS"
+    },
+    {
+      "item": "CC套-物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "status": "PASS"
+    },
+    {
+      "item": "CC套-独立攻击力",
+      "expected": 120,
+      "actual": 120,
+      "status": "PASS"
+    },
+    {
+      "item": "CC套-暴击率",
+      "expected": 0.03,
+      "actual": 0.03,
+      "status": "PASS"
+    },
+    {
+      "item": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "status": "PASS"
+    },
+    {
+      "item": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "status": "PASS"
+    },
+    {
+      "item": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "status": "PASS"
+    },
+    {
+      "item": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "status": "PASS"
+    },
+    {
+      "item": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "status": "PASS"
+    },
+    {
+      "item": "边际对偶非简单比值",
+      "expected": "4.930020≠1.392906",
+      "actual": "1.392868≠4.930020",
+      "status": "PASS"
+    },
+    {
+      "item": "破极兵刃独立验证",
+      "expected": 2743,
+      "actual": 2743.0,
+      "status": "PASS"
+    },
+    {
+      "item": "FAAL三阶七维框架固化",
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    {
+      "item": "三级级联放大链模型固化",
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    {
+      "item": "装备加成三原则元理论固化",
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    {
+      "item": "自我进化边界遵守",
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    {
+      "item": "核心数据零漂移",
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    {
+      "item": "CC套均衡填充设计路线",
+      "expected": "均衡填充(非定点强化)",
+      "actual": "均衡填充",
+      "status": "PASS"
+    },
+    {
+      "item": "力量+310固伤增益折算",
+      "expected": "0.093%",
+      "actual": "0.093%",
+      "status": "PASS"
+    },
+    {
+      "item": "独立攻击+120",
+      "expected": 120,
+      "actual": 120,
+      "status": "PASS"
+    },
+    {
+      "item": "物理攻击+110",
+      "expected": 110,
+      "actual": 110,
+      "status": "PASS"
+    },
+    {
+      "item": "暴击率+3%",
+      "expected": 0.03,
+      "actual": 0.03,
+      "status": "PASS"
+    },
+    {
+      "item": "狂战士技能分类",
+      "expected": "固伤+百分比混合",
+      "actual": "固伤+百分比混合",
+      "status": "PASS"
+    },
+    {
+      "item": "剑魂技能分类",
+      "expected": "百分比",
+      "actual": "百分比",
+      "status": "PASS"
+    },
+    {
+      "item": "CC套版本定位",
+      "expected": "70版本时装系统",
+      "actual": "70版本时装系统",
+      "status": "PASS"
+    },
+    {
+      "item": "数据源标注",
+      "expected": "游戏内数据+NGA DNF专区精品帖",
+      "actual": "游戏内数据+NGA DNF专区精品帖",
+      "status": "PASS"
+    },
+    {
+      "item": "边际对偶不变性v2012→v2014",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "status": "PASS"
+    },
+    {
+      "item": "狂战士固伤不变性v2012→v2014",
+      "expected": 9.27,
+      "actual": 9.27,
+      "status": "PASS"
+    },
+    {
+      "item": "狂战士百分比不变性v2012→v2014",
+      "expected": 32.81,
+      "actual": 32.81,
+      "status": "PASS"
+    },
+    {
+      "item": "剑魂百分比不变性v2012→v2014",
+      "expected": 45.7,
+      "actual": 45.7,
+      "status": "PASS"
+    },
+    {
+      "item": "破极兵刃不变性v2012→v2014",
+      "expected": 2743,
+      "actual": 2743,
+      "status": "PASS"
+    },
+    {
+      "item": "设计路线区分(均衡填充vs定点强化)",
+      "expected": "已区分确认",
+      "actual": "已区分确认",
+      "status": "PASS"
+    },
+    {
+      "item": "CC套属性完整(4/4)",
+      "expected": 4,
+      "actual": 4,
+      "status": "PASS"
+    }
+  ]
+}
