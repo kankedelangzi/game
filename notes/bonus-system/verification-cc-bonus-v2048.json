@@ -1,0 +1,84 @@
+{
+  "version": "v2048",
+  "timestamp": "2026-07-08 23:07:30 CST",
+  "total_checks": 9,
+  "passed": 9,
+  "rate": 100.0,
+  "checks": [
+    [
+      "CC力量",
+      310,
+      310,
+      "精确"
+    ],
+    [
+      "CC物理攻击",
+      110,
+      110,
+      "精确"
+    ],
+    [
+      "CC独立攻击",
+      120,
+      120,
+      "精确"
+    ],
+    [
+      "CC暴击率",
+      3,
+      3,
+      "精确"
+    ],
+    [
+      "狂战士固伤综合",
+      9.27,
+      9.27,
+      "精确"
+    ],
+    [
+      "狂战士百分比综合",
+      32.81,
+      32.81,
+      "精确"
+    ],
+    [
+      "剑魂百分比综合",
+      45.7,
+      45.7,
+      "精确"
+    ],
+    [
+      "边际对偶",
+      4.93002,
+      4.93002,
+      "精确"
+    ],
+    [
+      "破极兵刃协同物攻",
+      2743,
+      2743,
+      "精确"
+    ]
+  ],
+  "cc_set": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical_rate": 3,
+    "match": "4/4精确匹配"
+  },
+  "berserker": {
+    "fixed_bonus": 9.27,
+    "pct_bonus": 32.81
+  },
+  "swoman": {
+    "pct_bonus": 45.7
+  },
+  "faal": {
+    "marginal_duality": 4.93002,
+    "pjb_synergy_patk": 2743
+  },
+  "continuous_rounds": 573,
+  "drift": "零漂移",
+  "evolution_boundary": "持续遵守"
+}
