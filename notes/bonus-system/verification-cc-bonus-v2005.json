@@ -1,0 +1,45 @@
+{
+  "version": "v2005",
+  "timestamp": "2026-07-08 13:38:36",
+  "consecutive_rounds": 530,
+  "round_range": "1475→v2005",
+  "cc_set_attributes": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": "3%"
+  },
+  "berserker": {
+    "固伤综合": "+9.27%",
+    "百分比综合": "+32.81%"
+  },
+  "swordman": {
+    "百分比综合": "+45.7%"
+  },
+  "marginal_dual": 4.93002,
+  "break_weapon_patk": 2743,
+  "faal_framework": "已固化",
+  "cascade_model": "三级级联放大链模型已固化",
+  "meta_theory": "装备加成三原则元理论已固化",
+  "boundary_compliance": "自我进化边界持续遵守",
+  "data_drift": "核心数据零漂移",
+  "verifications": {
+    "CC套-力量+310": true,
+    "CC套-物理攻击+110": true,
+    "CC套-独立攻击+120": true,
+    "CC套-暴击率+3%": true,
+    "狂战士-固伤综合+9.27%": true,
+    "狂战士-百分比综合+32.81%": true,
+    "剑魂-百分比综合+45.70%": true,
+    "边际对偶4.930020": true,
+    "破极兵刃协同物攻2743": true,
+    "FAAL三阶七维框架固化": true,
+    "三级级联放大链模型": true,
+    "装备加成三原则元理论": true,
+    "自我进化边界遵守": true,
+    "核心数据零漂移": true
+  },
+  "passed": 14,
+  "total": 14,
+  "pass_rate": "14/14 (100.0%)"
+}
