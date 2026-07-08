@@ -1,0 +1,190 @@
+{
+  "version": "v2012",
+  "timestamp": "2026-07-08T14:40:15+0800",
+  "continuous_rounds": 537,
+  "round_range": "1475→v2012",
+  "passed": 27,
+  "total": 27,
+  "pass_rate": 100.0,
+  "cc_set_match": "4/4精确匹配",
+  "cc_attrs": {
+    "力量": "+310",
+    "物理攻击": "+110",
+    "独立攻击": "+120",
+    "暴击率": "+3%"
+  },
+  "berserker_fixed_bonus": "+9.27%",
+  "berserker_pct_bonus": "+32.81%",
+  "swordsman_pct_bonus": "+45.70%",
+  "marginal_duality": 4.93002,
+  "ppr_phys_atk": 2743,
+  "faal_frozen": true,
+  "cascade_model_frozen": true,
+  "equip_principle_frozen": true,
+  "evolution_boundary_ok": true,
+  "core_data_drift": "零漂移",
+  "checks": [
+    {
+      "item": "CC套-力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "item": "CC套-物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "item": "CC套-独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "item": "CC套-暴击率",
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true
+    },
+    {
+      "item": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "item": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "item": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "item": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "item": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "item": "破极兵刃基础物攻2110",
+      "expected": 2110,
+      "actual": 2110,
+      "pass": true
+    },
+    {
+      "item": "破极兵刃系数1.30",
+      "expected": 1.3,
+      "actual": 1.3,
+      "pass": true
+    },
+    {
+      "item": "FAAL三阶七维框架固化",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "item": "三级级联放大链模型",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "item": "装备加成三原则元理论",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "item": "自我进化边界",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "item": "核心数据零漂移",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "item": "弹性偏差体系-独立倍率",
+      "expected": 1.48,
+      "actual": 1.48,
+      "pass": true
+    },
+    {
+      "item": "弹性偏差体系-边际对偶非简单比值",
+      "expected": 1.392868,
+      "actual": 1.392868,
+      "pass": true
+    },
+    {
+      "item": "边际对偶非简单比值验证",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "item": "CC套独立倍率精确值",
+      "expected": 1.48,
+      "actual": 1.48,
+      "pass": true
+    },
+    {
+      "item": "均衡填充vs定点强化设计路线",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "item": "E2技能+35%",
+      "expected": 35.0,
+      "actual": 35.0,
+      "pass": true
+    },
+    {
+      "item": "CC套与E2套装乘区隔离",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "item": "70版本末期锁定",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "item": "固伤综合+9.27%确认",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "item": "百分比综合+32.81%确认",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "item": "剑魂百分比综合+45.70%确认",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    }
+  ]
+}
