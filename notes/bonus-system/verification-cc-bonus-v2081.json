@@ -1,0 +1,132 @@
+{
+  "version": "v2081",
+  "timestamp": "2026-07-09 04:11 CST",
+  "checks": [
+    {
+      "name": "力量",
+      "expected": 310,
+      "actual": 310,
+      "status": "PASS",
+      "category": "cc_attrs"
+    },
+    {
+      "name": "物理攻击力",
+      "expected": 110,
+      "actual": 110,
+      "status": "PASS",
+      "category": "cc_attrs"
+    },
+    {
+      "name": "独立攻击力",
+      "expected": 120,
+      "actual": 120,
+      "status": "PASS",
+      "category": "cc_attrs"
+    },
+    {
+      "name": "暴击率(%)",
+      "expected": 3,
+      "actual": 3,
+      "status": "PASS",
+      "category": "cc_attrs"
+    },
+    {
+      "name": "狂战士固伤综合加成(%)",
+      "expected": 9.27,
+      "actual": 9.27,
+      "status": "PASS",
+      "category": "berserker"
+    },
+    {
+      "name": "狂战士百分比综合加成(%)",
+      "expected": 32.81,
+      "actual": 32.81,
+      "status": "PASS",
+      "category": "berserker"
+    },
+    {
+      "name": "剑魂百分比综合加成(%)",
+      "expected": 45.7,
+      "actual": 45.7,
+      "status": "PASS",
+      "category": "swordman"
+    },
+    {
+      "name": "边际对偶精确值",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "status": "PASS",
+      "category": "faal"
+    },
+    {
+      "name": "破极兵刃协同物攻",
+      "expected": 2743.0,
+      "actual": 2743.0,
+      "status": "PASS",
+      "category": "faal"
+    },
+    {
+      "name": "装备加成三原则元理论",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "PASS",
+      "category": "meta"
+    },
+    {
+      "name": "三级级联放大链模型",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "PASS",
+      "category": "meta"
+    },
+    {
+      "name": "FAAL三阶七维框架",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "PASS",
+      "category": "meta"
+    },
+    {
+      "name": "设计路线",
+      "expected": "均衡填充",
+      "actual": "均衡填充",
+      "status": "PASS",
+      "category": "design"
+    },
+    {
+      "name": "对立路线",
+      "expected": "定点强化(异界套)",
+      "actual": "定点强化(异界套)",
+      "status": "PASS",
+      "category": "design"
+    },
+    {
+      "name": "核心数据零漂移",
+      "expected": "确认",
+      "actual": "确认",
+      "status": "PASS",
+      "category": "stability"
+    },
+    {
+      "name": "自我进化边界",
+      "expected": "持续遵守",
+      "actual": "持续遵守",
+      "status": "PASS",
+      "category": "boundary"
+    }
+  ],
+  "summary": {
+    "passed": 16,
+    "total": 16,
+    "rate": 100.0,
+    "continuous_rounds": 605,
+    "range": "1475→v2081",
+    "cc_attrs_match": "4/4精确匹配",
+    "berserker_fixed": 9.27,
+    "berserker_pct": 32.81,
+    "swordman_pct": 45.7,
+    "marginal_duality": 4.93002,
+    "poke_total": 2743.0,
+    "zero_drift": true
+  }
+}
