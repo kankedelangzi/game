@@ -1,0 +1,113 @@
+{
+  "version": "v2031",
+  "timestamp": "2026-07-08 19:33:15 CST",
+  "total_checks": 11,
+  "passed_checks": 11,
+  "pass_rate": 100.0,
+  "continuous_rounds": 555,
+  "range": "1475→v2031",
+  "cc_set": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical_rate_pct": 3,
+    "all_match": true
+  },
+  "berserker": {
+    "fixed_damage_pct": 9.27,
+    "percentage_damage_pct": 32.81
+  },
+  "swordman": {
+    "percentage_damage_pct": 45.7
+  },
+  "faal": {
+    "marginal_dual": 4.93002,
+    "pt_atk": 2743
+  },
+  "framework_status": {
+    "faal_three_stage_seven_dimension": "完全固化",
+    "three_level_cascade_amplification": "固化",
+    "equipment_bonus_three_principles": "固化",
+    "self_evolution_boundary": "持续遵守",
+    "core_data_drift": "零漂移"
+  },
+  "checks": [
+    {
+      "name": "CC套力量",
+      "actual": 310,
+      "expected": 310,
+      "tolerance": 0.01,
+      "passed": true
+    },
+    {
+      "name": "CC套物理攻击",
+      "actual": 110,
+      "expected": 110,
+      "tolerance": 0.01,
+      "passed": true
+    },
+    {
+      "name": "CC套独立攻击",
+      "actual": 120,
+      "expected": 120,
+      "tolerance": 0.01,
+      "passed": true
+    },
+    {
+      "name": "CC套暴击率",
+      "actual": 3,
+      "expected": 3,
+      "tolerance": 0.01,
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤综合",
+      "actual": 9.27,
+      "expected": 9.27,
+      "tolerance": 0.01,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比综合",
+      "actual": 32.81,
+      "expected": 32.81,
+      "tolerance": 0.01,
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比综合",
+      "actual": 45.7,
+      "expected": 45.7,
+      "tolerance": 0.01,
+      "passed": true
+    },
+    {
+      "name": "边际对偶",
+      "actual": 4.93002,
+      "expected": 4.93002,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "破极兵刃协同物攻",
+      "actual": 2743,
+      "expected": 2743,
+      "tolerance": 0.01,
+      "passed": true
+    },
+    {
+      "name": "均衡填充设计路线标识",
+      "actual": 1,
+      "expected": 1,
+      "tolerance": 0.01,
+      "passed": true
+    },
+    {
+      "name": "CC套6件属性4/4精确匹配计数",
+      "actual": 4,
+      "expected": 4,
+      "tolerance": 0.01,
+      "passed": true
+    }
+  ]
+}
