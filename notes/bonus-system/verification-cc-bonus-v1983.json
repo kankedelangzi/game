@@ -1,0 +1,78 @@
+{
+  "version": "v1983",
+  "timestamp": "2026-07-08T09:50:00+08:00",
+  "continuous_rounds": 508,
+  "range": "1475→v1983",
+  "total_checks": 9,
+  "passed": 9,
+  "pass_rate": 100.0,
+  "checks": [
+    {
+      "check": "CC套力量属性",
+      "expected": 310,
+      "actual": 310,
+      "passed": true
+    },
+    {
+      "check": "CC套物理攻击属性",
+      "expected": 110,
+      "actual": 110,
+      "passed": true
+    },
+    {
+      "check": "CC套独立攻击属性",
+      "expected": 120,
+      "actual": 120,
+      "passed": true
+    },
+    {
+      "check": "CC套暴击率属性",
+      "expected": 0.03,
+      "actual": 0.03,
+      "passed": true
+    },
+    {
+      "check": "狂战士固伤综合收益",
+      "expected": 9.27,
+      "actual": 9.27,
+      "passed": true
+    },
+    {
+      "check": "狂战士百分比综合收益",
+      "expected": 32.81,
+      "actual": 32.81,
+      "passed": true
+    },
+    {
+      "check": "剑魂百分比综合收益",
+      "expected": 45.7,
+      "actual": 45.7,
+      "passed": true
+    },
+    {
+      "check": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "passed": true
+    },
+    {
+      "check": "破极兵刃协同物攻",
+      "expected": 2743.0,
+      "actual": 2743.0,
+      "passed": true
+    }
+  ],
+  "summary": {
+    "cc_attrs_matched": "4/4精确匹配",
+    "berserker_fixed": "+9.27%",
+    "berserker_perc": "+32.81%",
+    "swordman_perc": "+45.7%",
+    "marginal_duality": 4.93002,
+    "polar_weapon": 2743.0,
+    "faal_framework": "固化",
+    "three_level_cascade": "固化",
+    "equipment_three_principles": "固化",
+    "self_evolution_boundary": "持续遵守",
+    "core_data_drift": "零漂移"
+  }
+}
