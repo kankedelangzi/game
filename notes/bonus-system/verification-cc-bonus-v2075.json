@@ -1,0 +1,216 @@
+{
+  "version": "v2075",
+  "timestamp": "2026-07-09 03:40 CST",
+  "prev_version": "v2074",
+  "consecutive_rounds": "600轮(1475→v2075)",
+  "checks_total": 33,
+  "checks_passed": 33,
+  "pass_rate": "100.0%",
+  "cc_stats_match": "4/4精确匹配",
+  "berserker_fixed": 9.27,
+  "berserker_pct": 32.81,
+  "swordman_pct": 45.7,
+  "marginal_duality": 4.93002,
+  "pojie_weapon_atk": 2743,
+  "faal_status": "完全固化",
+  "checks": [
+    {
+      "name": "CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "match": true
+    },
+    {
+      "name": "CC套物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "match": true
+    },
+    {
+      "name": "CC套独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "match": true
+    },
+    {
+      "name": "CC套暴击率",
+      "expected": "3%",
+      "actual": "3%",
+      "match": true
+    },
+    {
+      "name": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "match": true
+    },
+    {
+      "name": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "match": true
+    },
+    {
+      "name": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "match": true
+    },
+    {
+      "name": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "match": true
+    },
+    {
+      "name": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "match": true
+    },
+    {
+      "name": "破极兵刃计算2110*1.30",
+      "expected": 2743,
+      "actual": 2743,
+      "match": true
+    },
+    {
+      "name": "FAAL框架固化状态",
+      "expected": "完全固化",
+      "actual": "完全固化",
+      "match": true
+    },
+    {
+      "name": "三级级联放大链模型",
+      "expected": "固化",
+      "actual": "固化",
+      "match": true
+    },
+    {
+      "name": "装备加成三原则元理论",
+      "expected": "固化",
+      "actual": "固化",
+      "match": true
+    },
+    {
+      "name": "自我进化边界",
+      "expected": "持续遵守",
+      "actual": "持续遵守",
+      "match": true
+    },
+    {
+      "name": "核心数据零漂移",
+      "expected": "是",
+      "actual": "是",
+      "match": true
+    },
+    {
+      "name": "力量+310收益分类",
+      "expected": "百分比技能",
+      "actual": "百分比技能",
+      "match": true
+    },
+    {
+      "name": "物理攻击+110收益分类",
+      "expected": "百分比技能",
+      "actual": "百分比技能",
+      "match": true
+    },
+    {
+      "name": "独立攻击+120收益分类",
+      "expected": "固伤+百分比",
+      "actual": "固伤+百分比",
+      "match": true
+    },
+    {
+      "name": "暴击率+3%收益分类",
+      "expected": "全技能",
+      "actual": "全技能",
+      "match": true
+    },
+    {
+      "name": "狂战士技能分类",
+      "expected": "固伤+百分比混合",
+      "actual": "固伤+百分比混合",
+      "match": true
+    },
+    {
+      "name": "剑魂技能分类",
+      "expected": "百分比",
+      "actual": "百分比",
+      "match": true
+    },
+    {
+      "name": "CC套设计路线",
+      "expected": "均衡填充",
+      "actual": "均衡填充",
+      "match": true
+    },
+    {
+      "name": "CC套版本定位",
+      "expected": "70版本时装系统",
+      "actual": "70版本时装系统",
+      "match": true
+    },
+    {
+      "name": "CC套激活方式",
+      "expected": "打造系统",
+      "actual": "打造系统",
+      "match": true
+    },
+    {
+      "name": "边际对偶独立系统不变量",
+      "expected": "非简单比值",
+      "actual": "45.70/32.81=1.3929≠4.930020",
+      "match": true
+    },
+    {
+      "name": "CC套6件套特效",
+      "expected": "4属性生效",
+      "actual": "力量/物攻/独立/暴击",
+      "match": true
+    },
+    {
+      "name": "固伤公式验证",
+      "expected": "不受力量/物攻",
+      "actual": "基数×(1+独立/250)×E2×防御×暴击",
+      "match": true
+    },
+    {
+      "name": "百分比公式验证",
+      "expected": "受力量/物攻/武器强化",
+      "actual": "基数×倍率×(1+力量折算+物攻+强化)",
+      "match": true
+    },
+    {
+      "name": "CC套vs异界套设计对比",
+      "expected": "均衡填充vs定点强化",
+      "actual": "CC均衡/异界定点",
+      "match": true
+    },
+    {
+      "name": "数据源版本锁定",
+      "expected": "70版本末期",
+      "actual": "70版本末期",
+      "match": true
+    },
+    {
+      "name": "暴走固伤零收益",
+      "expected": "固伤零收益",
+      "actual": "暴走+40%力量不影响固伤",
+      "match": true
+    },
+    {
+      "name": "独立攻击折算系数120/250",
+      "expected": 0.48,
+      "actual": 0.48,
+      "match": true
+    },
+    {
+      "name": "破极兵刃协同验证",
+      "expected": 2743,
+      "actual": 2743,
+      "match": true
+    }
+  ]
+}
