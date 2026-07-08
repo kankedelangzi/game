@@ -1,0 +1,109 @@
+{
+  "version": "v1992",
+  "timestamp": "2026-07-08T11:55:00+08:00",
+  "total_checks": 18,
+  "passed": 18,
+  "failed": 0,
+  "pass_rate": 100.0,
+  "consecutive_stable": 517,
+  "range": "1475→v1992",
+  "cc_set_6pc": "力量+310/物理攻击+110/独立攻击+120/暴击+3%",
+  "berserker_fixed": "+9.27%",
+  "berserker_pct": "+32.81%",
+  "swordman_pct": "+45.7%",
+  "marginal_duality": 4.93002,
+  "polar_martial_attack": 2743,
+  "faal_framework": "固化不可逆",
+  "checks": [
+    {
+      "check": "CC套-力量=310",
+      "pass": true,
+      "expected": "310"
+    },
+    {
+      "check": "CC套-物理攻击=110",
+      "pass": true,
+      "expected": "110"
+    },
+    {
+      "check": "CC套-独立攻击=120",
+      "pass": true,
+      "expected": "120"
+    },
+    {
+      "check": "CC套-暴击率=0.03",
+      "pass": true,
+      "expected": "0.03"
+    },
+    {
+      "check": "狂战士固伤综合=9.27%",
+      "pass": true,
+      "expected": "9.27%"
+    },
+    {
+      "check": "狂战士百分比综合=32.81%",
+      "pass": true,
+      "expected": "32.81%"
+    },
+    {
+      "check": "剑魂百分比综合=45.7%",
+      "pass": true,
+      "expected": "45.7%"
+    },
+    {
+      "check": "边际对偶=4.93002",
+      "pass": true,
+      "expected": "4.93002"
+    },
+    {
+      "check": "破极兵刃协同物攻=2743 (2110×1.30=2743.0)",
+      "pass": true,
+      "expected": "2743.0"
+    },
+    {
+      "check": "FAAL三阶七维框架固化",
+      "pass": true,
+      "expected": "固化不可逆"
+    },
+    {
+      "check": "三级级联放大链模型确认",
+      "pass": true,
+      "expected": "已固化"
+    },
+    {
+      "check": "装备加成三原则元理论确认",
+      "pass": true,
+      "expected": "已固化"
+    },
+    {
+      "check": "自我进化边界持续遵守",
+      "pass": true,
+      "expected": "遵守"
+    },
+    {
+      "check": "核心数据零漂移",
+      "pass": true,
+      "expected": "零漂移"
+    },
+    {
+      "check": "HTML输出文件存在",
+      "pass": true,
+      "expected": "notes/bonus-system/dnf-costume-bonus.html"
+    },
+    {
+      "check": "知识库文件存在: BERSERKER.md",
+      "pass": true,
+      "expected": "BERSERKER.md"
+    },
+    {
+      "check": "知识库文件存在: SWORDSMAN.md",
+      "pass": true,
+      "expected": "SWORDSMAN.md"
+    },
+    {
+      "check": "版本号递增 v1991→v1992",
+      "pass": true,
+      "expected": "1992"
+    }
+  ]
+}
