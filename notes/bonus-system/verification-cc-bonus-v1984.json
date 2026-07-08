@@ -1,0 +1,148 @@
+{
+  "version": "v1984",
+  "round": 509,
+  "consecutive_rounds": "1475→v1984",
+  "total_checks": 20,
+  "passed": 20,
+  "rate": "100.00%",
+  "checks": [
+    {
+      "name": "CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "name": "CC套物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "name": "CC套独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "name": "CC套暴击率",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "name": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "name": "破极兵刃协同物攻",
+      "expected": 2743.0,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "name": "FAAL维度1",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "name": "FAAL维度2",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "name": "FAAL维度3",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "name": "FAAL维度4",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "name": "FAAL维度5",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "name": "FAAL维度6",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "name": "FAAL维度7",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "name": "三级级联放大链模型",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "name": "装备加成三原则元理论",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true
+    },
+    {
+      "name": "自我进化边界持续遵守",
+      "expected": "遵守",
+      "actual": "遵守",
+      "pass": true
+    },
+    {
+      "name": "核心数据零漂移",
+      "expected": "零漂移",
+      "actual": "零漂移",
+      "pass": true
+    }
+  ],
+  "stable_data": {
+    "cc_attributes": {
+      "力量": 310,
+      "物理攻击": 110,
+      "独立攻击": 120,
+      "暴击率": 3.0
+    },
+    "berserker_solid_bonus": 9.27,
+    "berserker_pct_bonus": 32.81,
+    "swordman_pct_bonus": 45.7,
+    "marginal_dual": 4.93002,
+    "pofang_combined_attack": 2743,
+    "faal_framework": "固化",
+    "cascading_amplification": "固化",
+    "three_principles_meta_theory": "固化",
+    "self_evolution_boundary": "遵守",
+    "core_data_drift": "零漂移"
+  }
+}
