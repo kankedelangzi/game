@@ -1,0 +1,89 @@
+{
+  "version": "v2089",
+  "timestamp": "2026-07-09 05:15:38",
+  "total": 9,
+  "passed": 7,
+  "rate": 77.78,
+  "continuous_rounds": 613,
+  "checks": [
+    {
+      "check": "CC套-力量加成",
+      "expected": 310,
+      "actual": 310,
+      "pass": true,
+      "source": "DNF Wiki / 70版本时装图鉴"
+    },
+    {
+      "check": "CC套-物理攻击加成",
+      "expected": 110,
+      "actual": 110,
+      "pass": true,
+      "source": "DNF Wiki / 70版本时装图鉴"
+    },
+    {
+      "check": "CC套-独立攻击加成",
+      "expected": 120,
+      "actual": 120,
+      "pass": true,
+      "source": "DNF Wiki / 70版本时装图鉴"
+    },
+    {
+      "check": "CC套-暴击率加成",
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true,
+      "source": "DNF Wiki / 70版本时装图鉴"
+    },
+    {
+      "check": "狂战士-固伤综合收益",
+      "expected": "9.27%",
+      "actual": "9.27%",
+      "pass": true,
+      "detail": "独立攻击+8.00% × 暴击+1.18%",
+      "source": "FORMULA.md固伤公式 / BERSERKER.md毕业面板"
+    },
+    {
+      "check": "狂战士-百分比综合收益",
+      "expected": "32.81%",
+      "actual": "40.58%",
+      "pass": false,
+      "detail": "力量+31.70% × 物攻+5.50% × 暴击+1.18%",
+      "source": "FORMULA.md百分比公式 / BERSERKER.md毕业面板"
+    },
+    {
+      "check": "剑魂-百分比综合收益",
+      "expected": "45.70%",
+      "actual": "49.31%",
+      "pass": false,
+      "detail": "力量+40.26% × 物攻+5.21% × 暴击+1.18%",
+      "source": "FORMULA.md百分比公式 / SWORDSMAN.md毕业面板"
+    },
+    {
+      "check": "FAAL-边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true,
+      "source": "FAAL三阶七维框架 / v2078固化值"
+    },
+    {
+      "check": "破极兵刃-协同物攻",
+      "expected": 2743.0,
+      "actual": 2743.0,
+      "pass": true,
+      "source": "SWORDSMAN.md破极兵刃+30%物攻"
+    }
+  ],
+  "core_data": {
+    "cc_set_6piece": {
+      "strength": 310,
+      "physical_attack": 110,
+      "independent_attack": 120,
+      "critical_rate": 0.03
+    },
+    "berserker_fixed_composite": 9.27,
+    "berserker_pct_composite": 40.58,
+    "swordmaster_pct_composite": 49.31,
+    "marginal_dual": 4.93002,
+    "pojj_synergy": 2743.0
+  }
+}

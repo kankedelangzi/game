@@ -1,0 +1,82 @@
+{
+  "version": "v2092",
+  "timestamp": "2026-07-09 05:29 CST",
+  "checks": [
+    {
+      "name": "CC套-力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true,
+      "precision": 0
+    },
+    {
+      "name": "CC套-物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true,
+      "precision": 0
+    },
+    {
+      "name": "CC套-独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true,
+      "precision": 0
+    },
+    {
+      "name": "CC套-暴击率",
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true,
+      "precision": 0.0001
+    },
+    {
+      "name": "狂战士-固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true,
+      "precision": 0.01
+    },
+    {
+      "name": "狂战士-百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true,
+      "precision": 0.01
+    },
+    {
+      "name": "剑魂-百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true,
+      "precision": 0.01
+    },
+    {
+      "name": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true,
+      "precision": 1e-06
+    },
+    {
+      "name": "破极兵刃-协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true,
+      "precision": 0
+    }
+  ],
+  "summary": "9/9 passed (100.0%)",
+  "cc_set_attributes": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical_rate": 0.03
+  },
+  "berserker_fixed_comprehensive": 9.27,
+  "berserker_pct_comprehensive": 32.81,
+  "swordman_pct_comprehensive": 45.7,
+  "marginal_dual": 4.93002,
+  "pp_break_phy_attk": 2743,
+  "consecutive_rounds": "616 (1475→v2092)"
+}
