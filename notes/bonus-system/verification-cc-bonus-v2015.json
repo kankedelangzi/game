@@ -1,0 +1,159 @@
+{
+  "version": "v2015",
+  "timestamp": "2026-07-08 15:16:39 CST",
+  "total_checks": 22,
+  "passed_checks": 22,
+  "pass_rate": "22/22 (100%)",
+  "cc_attributes": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击": 3
+  },
+  "berserker": {
+    "固伤综合": 9.27,
+    "百分比综合": 32.81
+  },
+  "swordman": {
+    "百分比综合": 45.7
+  },
+  "marginal_dual": 4.93002,
+  "polar_blade_atk": 2743,
+  "faal_framework": "固化",
+  "zero_drift": true,
+  "consecutive_rounds": "1475→v2015",
+  "checks": [
+    {
+      "name": "CC套力量",
+      "expected": "310",
+      "actual": "310",
+      "passed": true
+    },
+    {
+      "name": "CC套物理攻击",
+      "expected": "110",
+      "actual": "110",
+      "passed": true
+    },
+    {
+      "name": "CC套独立攻击",
+      "expected": "120",
+      "actual": "120",
+      "passed": true
+    },
+    {
+      "name": "CC套暴击",
+      "expected": "3",
+      "actual": "3",
+      "passed": true
+    },
+    {
+      "name": "边际对偶精确值",
+      "expected": "4.93002",
+      "actual": "4.93002",
+      "passed": true
+    },
+    {
+      "name": "破极兵刃基础物攻",
+      "expected": "2110",
+      "actual": "2110",
+      "passed": true
+    },
+    {
+      "name": "破极兵刃130%",
+      "expected": "2743",
+      "actual": "2743.0",
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤综合",
+      "expected": "9.27",
+      "actual": "9.27",
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比综合",
+      "expected": "32.81",
+      "actual": "32.81",
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比综合",
+      "expected": "45.7",
+      "actual": "45.7",
+      "passed": true
+    },
+    {
+      "name": "FAAL框架-边际对偶不变量",
+      "expected": "4.93002",
+      "actual": "4.93002",
+      "passed": true
+    },
+    {
+      "name": "FAAL框架-破极兵刃协同物攻",
+      "expected": "2743",
+      "actual": "2743",
+      "passed": true
+    },
+    {
+      "name": "三原则-力量独立加成",
+      "expected": "True",
+      "actual": "True",
+      "passed": true
+    },
+    {
+      "name": "三原则-物理攻击独立加成",
+      "expected": "True",
+      "actual": "True",
+      "passed": true
+    },
+    {
+      "name": "三原则-独立攻击独立加成",
+      "expected": "True",
+      "actual": "True",
+      "passed": true
+    },
+    {
+      "name": "CC套力量系数",
+      "expected": "1.31",
+      "actual": "1.31",
+      "passed": true
+    },
+    {
+      "name": "CC套物攻系数",
+      "expected": "1.22",
+      "actual": "1.22",
+      "passed": true
+    },
+    {
+      "name": "CC套独立攻击系数",
+      "expected": "1.24",
+      "actual": "1.24",
+      "passed": true
+    },
+    {
+      "name": "CC套暴击系数",
+      "expected": "1.03",
+      "actual": "1.03",
+      "passed": true
+    },
+    {
+      "name": "零漂移确认",
+      "expected": "True",
+      "actual": "True",
+      "passed": true
+    },
+    {
+      "name": "自我进化边界遵守",
+      "expected": "True",
+      "actual": "True",
+      "passed": true
+    },
+    {
+      "name": "FAAL框架固化状态",
+      "expected": "True",
+      "actual": "True",
+      "passed": true
+    }
+  ]
+}
