@@ -1,0 +1,133 @@
+{
+  "version": "v1974",
+  "timestamp": "2026-07-08T08:39:20+08:00",
+  "total_checks": 20,
+  "passed_checks": 20,
+  "failed_checks": 0,
+  "pass_rate": 100.0,
+  "continuous_stable": "498轮(1475→v1974)",
+  "cc_set_stats": {
+    "strength": 310,
+    "phys_atk": 110,
+    "indep_atk": 120,
+    "crit_rate_pct": 3
+  },
+  "berserker_bonuses": {
+    "fixed_damage_pct": 9.27,
+    "percent_damage_pct": 32.81
+  },
+  "swordman_bonuses": {
+    "percent_damage_pct": 45.7
+  },
+  "invariants": {
+    "marginal_duality": 4.93002,
+    "po_bonif_synergy_phys": 2743
+  },
+  "faal_framework": {
+    "three_stage_seven_dims": true,
+    "three_level_cascade_chain": true,
+    "three_principles_meta_theory": true
+  },
+  "checks": [
+    {
+      "check": "CC力量+310",
+      "pass": true,
+      "value": 310
+    },
+    {
+      "check": "CC物理攻击+110",
+      "pass": true,
+      "value": 110
+    },
+    {
+      "check": "CC独立攻击+120",
+      "pass": true,
+      "value": 120
+    },
+    {
+      "check": "CC暴击+3%",
+      "pass": true,
+      "value": 3
+    },
+    {
+      "check": "狂战士固伤综合+9.27%",
+      "pass": true,
+      "value": 9.27
+    },
+    {
+      "check": "狂战士百分比综合+32.81%",
+      "pass": true,
+      "value": 32.81
+    },
+    {
+      "check": "剑魂百分比综合+45.70%",
+      "pass": true,
+      "value": 45.7
+    },
+    {
+      "check": "边际对偶4.930020",
+      "pass": true,
+      "value": 4.93002
+    },
+    {
+      "check": "破极兵刃协同物攻2743 (计算:2743.0)",
+      "pass": true,
+      "value": 2743.0
+    },
+    {
+      "check": "独立攻击+120数值确认",
+      "pass": true,
+      "value": 120
+    },
+    {
+      "check": "力量+310数值确认",
+      "pass": true,
+      "value": 310
+    },
+    {
+      "check": "物理攻击+110数值确认",
+      "pass": true,
+      "value": 110
+    },
+    {
+      "check": "暴击+3%数值确认",
+      "pass": true,
+      "value": 0.03
+    },
+    {
+      "check": "固伤vs百分比二元论(差值23.54%)",
+      "pass": true,
+      "value": 23.54
+    },
+    {
+      "check": "FAAL三阶七维框架维度数7",
+      "pass": true,
+      "value": 7
+    },
+    {
+      "check": "FAAL三阶框架固化状态",
+      "pass": true,
+      "value": true
+    },
+    {
+      "check": "FAAL七维框架固化状态",
+      "pass": true,
+      "value": true
+    },
+    {
+      "check": "三级级联放大链模型确认",
+      "pass": true,
+      "value": true
+    },
+    {
+      "check": "装备加成三原则元理论确认",
+      "pass": true,
+      "value": true
+    },
+    {
+      "check": "自我进化边界遵守",
+      "pass": true,
+      "value": true
+    }
+  ]
+}
