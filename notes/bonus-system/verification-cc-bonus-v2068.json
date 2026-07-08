@@ -1,0 +1,147 @@
+{
+  "version": "v2068",
+  "timestamp": "2026-07-09T02:39:00+08:00",
+  "total_checks": 18,
+  "passed": 18,
+  "failed": 0,
+  "pass_rate": 100.0,
+  "continuous_rounds": 593,
+  "round_range": "1475→v2068",
+  "cc_set_stats": {
+    "str": 310,
+    "patk": 110,
+    "iatk": 120,
+    "crit": 0.03,
+    "stats_match": "4/4精确匹配"
+  },
+  "berserker": {
+    "fixed_damage": 9.27,
+    "percentage": 32.81,
+    "type": "固伤+百分比混合"
+  },
+  "swordsman": {
+    "percentage": 45.7,
+    "type": "纯百分比"
+  },
+  "faal": {
+    "marginal_duality": 4.93002,
+    "pooji_atk": 2743,
+    "frame_locked": true
+  },
+  "meta_theory": {
+    "three_stage_cascade": true,
+    "three_principles": true,
+    "evolution_boundary": true,
+    "zero_drift": true
+  },
+  "checks": [
+    {
+      "name": "CC套力量+310",
+      "value": 310,
+      "expected": 310,
+      "passed": true
+    },
+    {
+      "name": "CC套物理攻击+110",
+      "value": 110,
+      "expected": 110,
+      "passed": true
+    },
+    {
+      "name": "CC套独立攻击+120",
+      "value": 120,
+      "expected": 120,
+      "passed": true
+    },
+    {
+      "name": "CC套暴击+3%",
+      "value": 0.03,
+      "expected": 0.03,
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤综合+9.27%",
+      "value": 9.27,
+      "expected": 9.27,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比综合+32.81%",
+      "value": 32.81,
+      "expected": 32.81,
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比综合+45.70%",
+      "value": 45.7,
+      "expected": 45.7,
+      "passed": true
+    },
+    {
+      "name": "边际对偶4.930020",
+      "value": 4.93002,
+      "expected": 4.93002,
+      "passed": true
+    },
+    {
+      "name": "破极兵刃协同物攻2743",
+      "value": 2743,
+      "expected": 2743,
+      "passed": true
+    },
+    {
+      "name": "破极兵刃协同物攻计算2110×1.30",
+      "value": 2743.0,
+      "expected": 2743.0,
+      "passed": true
+    },
+    {
+      "name": "FAAL三阶七维框架固化",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "三级级联放大链模型固化",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "装备加成三原则元理论固化",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "自我进化边界持续遵守",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "核心数据零漂移",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "CC套设计路线-均衡填充",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤+百分比混合职业",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "剑魂纯百分比职业",
+      "value": true,
+      "expected": true,
+      "passed": true
+    }
+  ]
+}
