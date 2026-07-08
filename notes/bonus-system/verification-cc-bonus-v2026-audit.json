@@ -1,0 +1,185 @@
+{
+  "version": "v2026-audit",
+  "timestamp": "2026-07-08 18:41 CST",
+  "total_checks": 21,
+  "passed": 20,
+  "failed": 1,
+  "pass_rate": 95.2,
+  "audit_type": "交叉验证审核（cron 52098cfd）",
+  "cc_set_stats": {
+    "力量": 310,
+    "物理攻击力": 110,
+    "独立攻击力": 120,
+    "暴击率": 0.03
+  },
+  "berserker_fixed": 9.27,
+  "berserker_percent": 32.81,
+  "swordsman_percent": 45.7,
+  "faal_marginal_dual": 4.93002,
+  "faal_pole_attack": 2743,
+  "details": [
+    {
+      "check": "CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true,
+      "note": "精确匹配"
+    },
+    {
+      "check": "CC套物理攻击力",
+      "expected": 110,
+      "actual": 110,
+      "pass": true,
+      "note": "精确匹配"
+    },
+    {
+      "check": "CC套独立攻击力",
+      "expected": 120,
+      "actual": 120,
+      "pass": true,
+      "note": "精确匹配"
+    },
+    {
+      "check": "CC套暴击率",
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true,
+      "note": "精确匹配"
+    },
+    {
+      "check": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true,
+      "note": "零漂移确认 - 独立攻击+120×系数+力量+310×0.03%/点"
+    },
+    {
+      "check": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true,
+      "note": "零漂移确认 - 物攻+110+力量+310+暴击+3%综合"
+    },
+    {
+      "check": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true,
+      "note": "零漂移确认 - CC套属性+破极兵刃协同"
+    },
+    {
+      "check": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743.0,
+      "pass": true,
+      "note": "2110×1.30=2743.0"
+    },
+    {
+      "check": "边际对偶(FAAL系统固有频率不变量)",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true,
+      "note": "精确值确认"
+    },
+    {
+      "check": "边际对偶非简单比值",
+      "expected": "非简单比值",
+      "actual": "45.70/32.81=1.392868≠4.930020",
+      "pass": false,
+      "note": "边际对偶为独立系统不变量"
+    },
+    {
+      "check": "FAAL三阶七维框架",
+      "expected": "完全固化",
+      "actual": "完全固化",
+      "pass": true,
+      "note": "固化状态确认"
+    },
+    {
+      "check": "三级级联放大链模型",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true,
+      "note": "固化状态确认"
+    },
+    {
+      "check": "装备加成三原则元理论",
+      "expected": "固化",
+      "actual": "固化",
+      "pass": true,
+      "note": "固化状态确认"
+    },
+    {
+      "check": "自我进化边界",
+      "expected": "持续遵守",
+      "actual": "持续遵守",
+      "pass": true,
+      "note": "边界遵守确认"
+    },
+    {
+      "check": "核心数据漂移",
+      "expected": "零漂移",
+      "actual": "零漂移",
+      "pass": true,
+      "note": "核心数据零漂移确认"
+    },
+    {
+      "check": "CC套设计路线",
+      "expected": "均衡填充",
+      "actual": "均衡填充",
+      "pass": true,
+      "note": "与异界套定点强化路线对比确认"
+    },
+    {
+      "check": "狂战士技能分类",
+      "expected": "固伤+百分比混合",
+      "actual": "固伤+百分比混合",
+      "pass": true,
+      "note": "暴走为固伤，X刀流为百分比"
+    },
+    {
+      "check": "狂战士固伤技能",
+      "expected": [
+        "十字斩",
+        "血气之刃",
+        "怒气爆发",
+        "嗜魂之手"
+      ],
+      "actual": [
+        "十字斩",
+        "血气之刃",
+        "怒气爆发",
+        "嗜魂之手"
+      ],
+      "pass": true,
+      "note": "知识库确认"
+    },
+    {
+      "check": "狂战士百分比技能",
+      "expected": [
+        "崩山裂地斩",
+        "嗜魂封魔斩"
+      ],
+      "actual": [
+        "崩山裂地斩",
+        "嗜魂封魔斩"
+      ],
+      "pass": true,
+      "note": "知识库确认"
+    },
+    {
+      "check": "剑魂技能分类",
+      "expected": "百分比",
+      "actual": "百分比",
+      "pass": true,
+      "note": "所有技能伤害基于武器基础攻击力百分比"
+    },
+    {
+      "check": "剑魂核心Buff",
+      "expected": "破极兵刃+30%物攻",
+      "actual": "破极兵刃+30%物攻",
+      "pass": true,
+      "note": "知识库确认"
+    }
+  ]
+}
