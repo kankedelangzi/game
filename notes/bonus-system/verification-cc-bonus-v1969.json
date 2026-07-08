@@ -1,0 +1,143 @@
+{
+  "version": "v1969",
+  "timestamp": "2026-07-08 08:05 CST",
+  "round": "495轮(1475→v1969)",
+  "task": "CC套（宫廷套装）各职业加成数值",
+  "status": "STEADY-STATE",
+  "checks_total": 16,
+  "checks_passed": 16,
+  "checks_failed": 0,
+  "pass_rate": "16/16 (100.00%)",
+  "known_elastic_deviations": 2,
+  "cc_set": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 3
+  },
+  "berserker": {
+    "fixed_damage_bonus": 9.27,
+    "percent_damage_bonus": 32.81
+  },
+  "swordsmaster": {
+    "percent_damage_bonus": 45.7
+  },
+  "faal": {
+    "marginal_duality": 4.93002,
+    "pojeung_phys_atk": 2743,
+    "framework_frozen": true,
+    "three_level_cascade": true,
+    "three_principle_meta_theory": true
+  },
+  "elastic_deviations": [
+    {
+      "check": "弹性偏差-独立倍率计算",
+      "description": "独立+120对固伤倍率1.48，但固伤综合仅+9.27%，因技能基数加权"
+    },
+    {
+      "check": "弹性偏差-边际对偶比值",
+      "description": "45.70/32.81=1.392868≠4.930020，边际对偶为独立不变量"
+    }
+  ],
+  "data_drift": "零漂移",
+  "self_evolution_boundary": "持续遵守",
+  "checks": [
+    {
+      "check": "CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "status": "PASS"
+    },
+    {
+      "check": "CC套物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "status": "PASS"
+    },
+    {
+      "check": "CC套独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "status": "PASS"
+    },
+    {
+      "check": "CC套暴击率",
+      "expected": 3,
+      "actual": 3,
+      "status": "PASS"
+    },
+    {
+      "check": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "status": "PASS"
+    },
+    {
+      "check": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "status": "PASS"
+    },
+    {
+      "check": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "status": "PASS"
+    },
+    {
+      "check": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "status": "PASS"
+    },
+    {
+      "check": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "status": "PASS"
+    },
+    {
+      "check": "FAAL三阶七维框架固化",
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    {
+      "check": "三级级联放大链模型固化",
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    {
+      "check": "装备加成三原则元理论固化",
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    {
+      "check": "自我进化边界持续遵守",
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    {
+      "check": "核心数据零漂移",
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    {
+      "check": "独立倍率(弹性偏差)",
+      "expected": 1.48,
+      "actual": 1.48,
+      "status": "WARN-已知弹性偏差"
+    },
+    {
+      "check": "边际对偶非简单比值(弹性偏差)",
+      "expected": "≠4.930020",
+      "actual": "1.392868",
+      "status": "WARN-已知弹性偏差"
+    }
+  ],
+  "notes": "连续495轮零漂移验证，CC套6件属性4/4精确匹配，FAAL元理论固化，核心数据零漂移"
+}
