@@ -1,0 +1,25 @@
+{
+  "version": "v2070",
+  "timestamp": "2026-07-09 02:54 CST",
+  "total_checks": 27,
+  "passed": 27,
+  "failed": 0,
+  "pass_rate": "27/27 (100.00%)",
+  "consecutive_rounds": "595轮(1475→v2070)",
+  "cc_stats": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 3.0
+  },
+  "berserker_fixed_gain": 9.27,
+  "berserker_percent_gain": 32.81,
+  "swordman_percent_gain": 45.7,
+  "marginal_dual": 4.93002,
+  "polar_attack": 2743,
+  "faal_framework": "固化",
+  "cascade_model": "固化",
+  "equip_theory": "固化",
+  "self_evolution_boundary": "遵守",
+  "zero_drift": "确认"
+}
