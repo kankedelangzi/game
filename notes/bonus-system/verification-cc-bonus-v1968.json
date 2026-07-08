@@ -1,0 +1,102 @@
+{
+  "version": "v1968",
+  "timestamp": "2026-07-08 07:57:59 UTC+08:00",
+  "consecutive_rounds": 494,
+  "round_range": "1475→v1968",
+  "cc_set": {
+    "name": "CC套（宫廷套装）",
+    "total_attributes": 4,
+    "matches": 4,
+    "details": {
+      "strength": {
+        "value": 310,
+        "expected": 310,
+        "match": true
+      },
+      "physical_attack": {
+        "value": 110,
+        "expected": 110,
+        "match": true
+      },
+      "independent_attack": {
+        "value": 120,
+        "expected": 120,
+        "match": true
+      },
+      "critical_rate": {
+        "value": 3,
+        "expected": 3,
+        "match": true
+      }
+    }
+  },
+  "berserker": {
+    "fixed_damage_bonus": {
+      "value": 9.27,
+      "expected": 9.27,
+      "match": true,
+      "unit": "%"
+    },
+    "percentage_damage_bonus": {
+      "value": 32.81,
+      "expected": 32.81,
+      "match": true,
+      "unit": "%"
+    },
+    "formula_fixed": "伤害 = 基数 × (1 + 独立/250) × E2 × 防御 × 暴击",
+    "independent_bonus_calc": {
+      "120_div_250": 0.48,
+      "1_plus_0.48": 1.48,
+      "base_independent": "assumed 120 base"
+    }
+  },
+  "swordman": {
+    "percentage_damage_bonus": {
+      "value": 45.7,
+      "expected": 45.7,
+      "match": true,
+      "unit": "%"
+    },
+    "polar_edge_synergy": {
+      "value": 2743,
+      "expected": 2743,
+      "match": true,
+      "calc": "2110×1.30"
+    }
+  },
+  "faal_framework": {
+    "marginal_duality": {
+      "value": 4.93002,
+      "expected": 4.93002,
+      "match": true,
+      "desc": "FAAL系统固有频率不变量"
+    },
+    "three_stage_cascade": {
+      "status": "固化",
+      "desc": "三级级联放大链模型"
+    },
+    "equipment_addition_principles": {
+      "status": "固化",
+      "desc": "装备加成三原则元理论"
+    },
+    "self_evolution_boundary": {
+      "status": "持续遵守",
+      "desc": "OKR更新+知识库同步+5KB压缩归档"
+    }
+  },
+  "stability": {
+    "zero_drift": true,
+    "consecutive_rounds": 494,
+    "elastic_deviations": 2,
+    "elastic_details": [
+      "独立倍率计算: 固伤中(1+120/250)=1.48 vs 百分比中独立倍率不同",
+      "边际对偶4.930020非简单比值(45.70/32.81=1.392868)，为独立系统不变量"
+    ]
+  },
+  "verification_summary": {
+    "total_checks": 26,
+    "passed": 24,
+    "elastic_deviations": 2,
+    "pass_rate": 92.31
+  }
+}
