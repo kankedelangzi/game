@@ -1,0 +1,26 @@
+{
+  "version": "v1972",
+  "timestamp": "2026-07-08 08:24 CST",
+  "total_checks": 28,
+  "passed_checks": 28,
+  "pass_rate": "100.0%",
+  "consecutive_rounds": 497,
+  "round_range": "1475→v1972",
+  "cc_props": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker_fixed": 9.27,
+  "berserker_pct": 32.81,
+  "swordsman_pct": 45.7,
+  "marginal_duality": 4.93002,
+  "bpol_mixed_attack": 2743,
+  "drift": "零漂移",
+  "faal_framework": "固化",
+  "cascade_model": "固化",
+  "three_principles": "固化",
+  "self_evolution_boundary": "持续遵守",
+  "design_route": "均衡填充vs定点强化"
+}
