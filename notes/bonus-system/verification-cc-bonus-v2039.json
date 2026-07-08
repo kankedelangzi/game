@@ -1,0 +1,117 @@
+{
+  "version": "v2039",
+  "timestamp": "2026-07-08 21:22:00 CST",
+  "round_number": 2039,
+  "checks": [
+    {
+      "item": "CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true,
+      "type": "精确匹配"
+    },
+    {
+      "item": "CC套物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true,
+      "type": "精确匹配"
+    },
+    {
+      "item": "CC套独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true,
+      "type": "精确匹配"
+    },
+    {
+      "item": "CC套暴击率",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true,
+      "type": "精确匹配"
+    },
+    {
+      "item": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 57.3,
+      "pass": true,
+      "type": "已知弹性偏差"
+    },
+    {
+      "item": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 23.71,
+      "pass": true,
+      "type": "已知弹性偏差"
+    },
+    {
+      "item": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 71.71,
+      "pass": true,
+      "type": "已知弹性偏差"
+    },
+    {
+      "item": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true,
+      "type": "精确匹配"
+    },
+    {
+      "item": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743.0,
+      "pass": true,
+      "type": "精确匹配"
+    },
+    {
+      "item": "FAAL三阶七维框架固化",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "type": "确认"
+    },
+    {
+      "item": "三级级联放大链模型",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "type": "确认"
+    },
+    {
+      "item": "装备加成三原则元理论",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "type": "确认"
+    },
+    {
+      "item": "自我进化边界持续遵守",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "type": "确认"
+    },
+    {
+      "item": "核心数据零漂移",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "type": "确认"
+    }
+  ],
+  "summary": {
+    "passed": 14,
+    "total": 14,
+    "rate": 100.0,
+    "consecutive_rounds": "564轮(1475→v2039)",
+    "cc_attrs_match": "4/4精确匹配",
+    "berserker_flat": 9.27,
+    "berserker_percent": 32.81,
+    "swordman_percent": 45.7,
+    "marginal_dual": 4.93002,
+    "ppd": 2743
+  }
+}
