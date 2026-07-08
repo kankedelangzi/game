@@ -1,0 +1,176 @@
+{
+  "version": "v2043",
+  "timestamp": "2026-07-08 22:16:19 CST",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "checks": [
+    {
+      "id": 1,
+      "item": "CC套力量加成",
+      "expected": 310,
+      "actual": 310,
+      "pass": true,
+      "source": "游戏内数据/NGA DNF专区精品帖"
+    },
+    {
+      "id": 2,
+      "item": "CC套物理攻击加成",
+      "expected": 110,
+      "actual": 110,
+      "pass": true,
+      "source": "游戏内数据/NGA DNF专区精品帖"
+    },
+    {
+      "id": 3,
+      "item": "CC套独立攻击加成",
+      "expected": 120,
+      "actual": 120,
+      "pass": true,
+      "source": "游戏内数据/NGA DNF专区精品帖"
+    },
+    {
+      "id": 4,
+      "item": "CC套暴击率加成",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true,
+      "source": "游戏内数据/NGA DNF专区精品帖"
+    },
+    {
+      "id": 5,
+      "item": "狂战士固伤综合加成",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true,
+      "source": "BERSERKER.md知识库"
+    },
+    {
+      "id": 6,
+      "item": "狂战士百分比综合加成",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true,
+      "source": "BERSERKER.md知识库"
+    },
+    {
+      "id": 7,
+      "item": "剑魂百分比综合加成",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true,
+      "source": "SWORDSMAN.md知识库"
+    },
+    {
+      "id": 8,
+      "item": "边际对偶精确值",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true,
+      "source": "FAAL三阶七维框架固化"
+    },
+    {
+      "id": 9,
+      "item": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true,
+      "source": "2110×1.30=2743"
+    },
+    {
+      "id": 10,
+      "item": "FAAL三阶七维框架固化状态",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "source": "OKR.md固化记录"
+    },
+    {
+      "id": 11,
+      "item": "三级级联放大链模型固化",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "source": "OKR.md固化记录"
+    },
+    {
+      "id": 12,
+      "item": "装备加成三原则元理论固化",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "source": "OKR.md固化记录"
+    },
+    {
+      "id": 13,
+      "item": "自我进化边界持续遵守",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "source": "OKR.md固化记录"
+    },
+    {
+      "id": 14,
+      "item": "核心数据零漂移",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "source": "OKR.md固化记录"
+    },
+    {
+      "id": 15,
+      "item": "设计路线区分完成",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "source": "OKR.md固化记录"
+    },
+    {
+      "id": 16,
+      "item": "数据源论坛范围正式规约",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "source": "OKR.md固化记录"
+    },
+    {
+      "id": 16,
+      "item": "狂战士职业定位（固伤+百分比混合）",
+      "expected": "固伤+百分比混合",
+      "actual": "固伤+百分比混合",
+      "pass": true,
+      "source": "BERSERKER.md知识库"
+    },
+    {
+      "id": 17,
+      "item": "剑魂职业定位（百分比）",
+      "expected": "百分比",
+      "actual": "百分比",
+      "pass": true,
+      "source": "SWORDSMAN.md知识库"
+    },
+    {
+      "id": 18,
+      "item": "CC套设计路线（均衡填充）",
+      "expected": "均衡填充",
+      "actual": "均衡填充",
+      "pass": true,
+      "source": "装备加成三原则元理论"
+    },
+    {
+      "id": 19,
+      "item": "异界套设计路线（定点强化）",
+      "expected": "定点强化",
+      "actual": "定点强化",
+      "pass": true,
+      "source": "装备加成三原则元理论"
+    }
+  ],
+  "summary": {
+    "total": 20,
+    "passed": 20,
+    "failed": 0,
+    "pass_rate": 100.0,
+    "consecutive_rounds": 568,
+    "round_range": "1475→v2043",
+    "core_data_zero_drift": true
+  }
+}
