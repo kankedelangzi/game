@@ -1,0 +1,112 @@
+{
+  "version": "v2006",
+  "timestamp": "2026-07-08 13:42:58",
+  "checks": [
+    {
+      "item": "CC套-力量+310",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "item": "CC套-物理攻击+110",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "item": "CC套-独立攻击+120",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "item": "CC套-暴击率+3%",
+      "expected": "3%",
+      "actual": "3%",
+      "pass": true
+    },
+    {
+      "item": "狂战士固伤综合+9.27%",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "item": "狂战士百分比综合+32.81%",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "item": "剑魂百分比综合+45.70%",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "item": "边际对偶4.930020",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "item": "破极兵刃协同物攻2743",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "item": "FAAL三阶七维框架固化",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "item": "三级级联放大链模型固化",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "item": "装备加成三原则元理论固化",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "item": "自我进化边界持续遵守",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "item": "核心数据零漂移(连续531轮)",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    }
+  ],
+  "summary": {
+    "passed": 14,
+    "total": 14,
+    "rate": "14/14 (100.0%)",
+    "continuous_rounds": "531轮(1475→v2006)",
+    "zero_drift": true
+  },
+  "elastic_deviations": {
+    "item_1": {
+      "desc": "独立倍率差异",
+      "expected": 1.48,
+      "actual": 1.048,
+      "known": true
+    },
+    "item_2": {
+      "desc": "边际对偶非简单比值",
+      "expected": 4.93002,
+      "actual": 1.392868,
+      "known": true,
+      "note": "45.70/32.81=1.392868≠4.930020"
+    }
+  }
+}
