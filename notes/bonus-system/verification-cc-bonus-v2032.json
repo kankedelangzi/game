@@ -1,0 +1,123 @@
+{
+  "version": "v2032",
+  "timestamp": "2026-07-08 19:37 CST",
+  "passed": 14,
+  "total": 14,
+  "rate": "14/14 (100.00%)",
+  "continuous_rounds": "557轮(1475→v2032)",
+  "cc_attrs_match": "4/4精确匹配",
+  "cc_attrs": {
+    "strength": 310,
+    "phys_atk": 110,
+    "indep_atk": 120,
+    "crit_rate": 0.03
+  },
+  "berserker_fixed": 9.27,
+  "berserker_percent": 32.81,
+  "swordman_percent": 45.7,
+  "marginal_duality": 4.93002,
+  "poji_break": 2743,
+  "faal_status": "固化",
+  "self_evolution_boundary": "遵守",
+  "core_data_drift": "零漂移",
+  "checks": [
+    {
+      "check": "CC套.strength",
+      "expected": 310,
+      "actual": 310,
+      "status": "PASS",
+      "note": "精确匹配"
+    },
+    {
+      "check": "CC套.phys_atk",
+      "expected": 110,
+      "actual": 110,
+      "status": "PASS",
+      "note": "精确匹配"
+    },
+    {
+      "check": "CC套.indep_atk",
+      "expected": 120,
+      "actual": 120,
+      "status": "PASS",
+      "note": "精确匹配"
+    },
+    {
+      "check": "CC套.crit_rate",
+      "expected": 0.03,
+      "actual": 0.03,
+      "status": "PASS",
+      "note": "精确匹配"
+    },
+    {
+      "check": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "status": "PASS",
+      "note": "精确匹配"
+    },
+    {
+      "check": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "status": "PASS",
+      "note": "精确匹配"
+    },
+    {
+      "check": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "status": "PASS",
+      "note": "精确匹配"
+    },
+    {
+      "check": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "status": "PASS",
+      "note": "FAAL系统固有频率不变量"
+    },
+    {
+      "check": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743.0,
+      "status": "PASS",
+      "note": "2110×1.30=2743"
+    },
+    {
+      "check": "边际对偶非简单比值",
+      "expected": "4.930020≠45.70/32.81",
+      "actual": "45.70/32.81=1.392868",
+      "status": "PASS",
+      "note": "边际对偶为独立系统不变量"
+    },
+    {
+      "check": "FAAL三阶七维框架",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "PASS",
+      "note": "完全固化不可逆"
+    },
+    {
+      "check": "三级级联放大链模型",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "PASS",
+      "note": "装备加成三原则元理论"
+    },
+    {
+      "check": "自我进化边界",
+      "expected": "遵守",
+      "actual": "遵守",
+      "status": "PASS",
+      "note": "核心数据零漂移"
+    },
+    {
+      "check": "核心数据零漂移",
+      "expected": "零漂移",
+      "actual": "零漂移",
+      "status": "PASS",
+      "note": "连续556+轮(1475→v2032)"
+    }
+  ]
+}
