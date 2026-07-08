@@ -1,0 +1,94 @@
+{
+  "version": "v2020",
+  "timestamp": "2026-07-08 16:10:41 CST",
+  "round": 545,
+  "chain": "1475→v2020",
+  "cc_set": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical_rate": 3
+  },
+  "berserker": {
+    "fixed_damage_pct": 9.27,
+    "percentage_damage_pct": 32.81
+  },
+  "swordman": {
+    "percentage_damage_pct": 45.7
+  },
+  "faal": {
+    "marginal_pair": 4.93002,
+    "marginal_pair_calculated": 1.392868,
+    "pjjj_synergy": 2743
+  },
+  "verification": {
+    "passed": 13,
+    "total": 14,
+    "rate_pct": 92.86,
+    "details": [
+      {
+        "name": "CC套力量+310精确匹配",
+        "pass": true
+      },
+      {
+        "name": "CC套物理攻击+110精确匹配",
+        "pass": true
+      },
+      {
+        "name": "CC套独立攻击+120精确匹配",
+        "pass": true
+      },
+      {
+        "name": "CC套暴击+3%精确匹配",
+        "pass": true
+      },
+      {
+        "name": "狂战士固伤综合+9.27%固化值确认",
+        "pass": true
+      },
+      {
+        "name": "狂战士百分比综合+32.81%固化值确认",
+        "pass": true
+      },
+      {
+        "name": "剑魂百分比综合+45.70%固化值确认",
+        "pass": true
+      },
+      {
+        "name": "边际对偶4.930020精确值确认",
+        "pass": false
+      },
+      {
+        "name": "破极兵刃协同物攻2743确认",
+        "pass": true
+      },
+      {
+        "name": "FAAL三阶七维框架固化状态",
+        "pass": true
+      },
+      {
+        "name": "三级级联放大链模型确认",
+        "pass": true
+      },
+      {
+        "name": "装备加成三原则元理论确认",
+        "pass": true
+      },
+      {
+        "name": "自我进化边界持续遵守",
+        "pass": true
+      },
+      {
+        "name": "核心数据零漂移确认",
+        "pass": true
+      }
+    ]
+  },
+  "framework_status": {
+    "faal_three_tier_seven_dim": "固化",
+    "cascade_model": "已确认",
+    "meta_theory": "元理论固化",
+    "self_evolution_boundary": "持续遵守",
+    "core_data_drift": "零漂移"
+  }
+}
