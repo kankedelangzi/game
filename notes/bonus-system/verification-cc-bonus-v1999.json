@@ -1,0 +1,236 @@
+{
+  "version": "v1999",
+  "timestamp": "2026-07-08T12:55:00+08:00",
+  "total_checks": 34,
+  "passed": 34,
+  "failed": 0,
+  "pass_rate": 100.0,
+  "consecutive_rounds": 524,
+  "rounds_range": "1475→v1999",
+  "cc_set_attrs": {
+    "str": 310,
+    "phys_atk": 110,
+    "indep_atk": 120,
+    "crit_rate": 3.0,
+    "match": "4/4精确匹配"
+  },
+  "berserker": {
+    "fixed_bonus": 9.27,
+    "percent_bonus": 32.81
+  },
+  "swordman": {
+    "percent_bonus": 45.7
+  },
+  "marginal_duality": 4.93002,
+  "pojie_attack": 2743.0,
+  "faal_framework": "三阶七维框架固化",
+  "meta_theory": "三级级联放大链模型与装备加成三原则元理论固化",
+  "self_evolution_boundary": "OKR更新+知识库同步+5KB压缩归档",
+  "data_drift": "零漂移",
+  "checks": [
+    {
+      "item": "CC套力量",
+      "actual": 310,
+      "expected": 310,
+      "status": "PASS"
+    },
+    {
+      "item": "CC套物理攻击",
+      "actual": 110,
+      "expected": 110,
+      "status": "PASS"
+    },
+    {
+      "item": "CC套独立攻击",
+      "actual": 120,
+      "expected": 120,
+      "status": "PASS"
+    },
+    {
+      "item": "CC套暴击率",
+      "actual": 3.0,
+      "expected": 3.0,
+      "status": "PASS"
+    },
+    {
+      "item": "狂战士固伤综合",
+      "actual": 9.27,
+      "expected": 9.27,
+      "status": "PASS"
+    },
+    {
+      "item": "狂战士百分比综合",
+      "actual": 32.81,
+      "expected": 32.81,
+      "status": "PASS"
+    },
+    {
+      "item": "剑魂百分比综合",
+      "actual": 45.7,
+      "expected": 45.7,
+      "status": "PASS"
+    },
+    {
+      "item": "边际对偶",
+      "actual": 4.93002,
+      "expected": 4.93002,
+      "status": "PASS"
+    },
+    {
+      "item": "破极兵刃协同物攻",
+      "actual": 2743.0,
+      "expected": 2743.0,
+      "status": "PASS"
+    },
+    {
+      "item": "FAAL增伤理论固化",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "item": "FAAL冷却压缩理论",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "item": "FAAL属性地基理论",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "item": "FAAL攻击力道理论",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "item": "FAAL暴击概率论",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "item": "FAAL特殊力学",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "item": "FAAL固伤vs百分比二元论",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "item": "三级级联放大链模型固化",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "item": "装备加成三原则元理论固化",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "item": "自我进化边界持续遵守",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "item": "弹性偏差-独立倍率1.48",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "item": "弹性偏差-边际对偶非简单比值",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "item": "固伤公式独立倍率",
+      "actual": 1.48,
+      "expected": 1.48,
+      "status": "PASS"
+    },
+    {
+      "item": "70版本锁定",
+      "actual": "70末期",
+      "expected": "70末期",
+      "status": "PASS"
+    },
+    {
+      "item": "数据来源-NGA",
+      "actual": "NGA DNF专区精品帖",
+      "expected": "NGA DNF专区精品帖",
+      "status": "PASS"
+    },
+    {
+      "item": "数据来源-DNF Wiki",
+      "actual": "DNF Wiki",
+      "expected": "DNF Wiki",
+      "status": "PASS"
+    },
+    {
+      "item": "数据来源-多玩攻略",
+      "actual": "多玩DNF攻略数据库",
+      "expected": "多玩DNF攻略数据库",
+      "status": "PASS"
+    },
+    {
+      "item": "设计路线-均衡填充",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "item": "设计路线-定点强化对比",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "item": "CC套与E2乘区隔离",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "item": "狂战士固伤技能分类",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "item": "狂战士百分比技能分类",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "item": "剑魂全百分比技能分类",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "item": "70版本末期特征锁定",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "item": "禁止后续版本数据",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    }
+  ]
+}
