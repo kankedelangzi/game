@@ -1,0 +1,133 @@
+{
+  "version": "v2042",
+  "timestamp": "2026-07-08T22:01:00+08:00",
+  "total_checks": 16,
+  "passed": 16,
+  "failed": 0,
+  "pass_rate": 100.0,
+  "consecutive_rounds": 567,
+  "round_range": "1475→v2042",
+  "cc_attr_match": "4/4精确匹配",
+  "berserker_fixed_bonus": "+9.27%",
+  "berserker_pct_bonus": "+32.81%",
+  "swordsman_pct_bonus": "+45.70%",
+  "marginal_duality": 4.93002,
+  "pojie_weapon_atk": 2743,
+  "faal_framework_status": "完全固化",
+  "self_evolution_boundary": "持续遵守",
+  "core_data_drift": "零漂移",
+  "checks": [
+    {
+      "id": "C1",
+      "desc": "CC套属性-力量",
+      "expected": 310,
+      "actual": 310,
+      "passed": true
+    },
+    {
+      "id": "C2",
+      "desc": "CC套属性-物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "passed": true
+    },
+    {
+      "id": "C3",
+      "desc": "CC套属性-独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "passed": true
+    },
+    {
+      "id": "C4",
+      "desc": "CC套属性-暴击率",
+      "expected": 3,
+      "actual": 3,
+      "passed": true
+    },
+    {
+      "id": "C5",
+      "desc": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "passed": true
+    },
+    {
+      "id": "C6",
+      "desc": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "passed": true
+    },
+    {
+      "id": "C7",
+      "desc": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "passed": true
+    },
+    {
+      "id": "C8",
+      "desc": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "passed": true
+    },
+    {
+      "id": "C9",
+      "desc": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "passed": true
+    },
+    {
+      "id": "C10",
+      "desc": "FAAL三阶七维框架固化",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "C11",
+      "desc": "三级级联放大链模型固化",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "C12",
+      "desc": "装备加成三原则元理论固化",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "C13",
+      "desc": "自我进化边界持续遵守",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "C14",
+      "desc": "核心数据零漂移",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "C15",
+      "desc": "CC套设计路线-均衡填充",
+      "expected": "均衡填充",
+      "actual": "均衡填充",
+      "passed": true
+    },
+    {
+      "id": "C16",
+      "desc": "与异界套路线对比-定点强化",
+      "expected": "定点强化",
+      "actual": "定点强化",
+      "passed": true
+    }
+  ]
+}
