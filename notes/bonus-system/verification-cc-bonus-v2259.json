@@ -1,0 +1,92 @@
+{
+  "version": "v2259",
+  "timestamp": "2026-07-10T07:56:07+08:00",
+  "task": "CC套（宫廷套装）各职业加成数值",
+  "round_number": 758,
+  "total_checks": 14,
+  "passed_checks": 14,
+  "pass_rate": 100.0,
+  "rounds_zero_drift": 758,
+  "check_items": [
+    [
+      "CC套属性 力量+310",
+      true
+    ],
+    [
+      "CC套属性 物理攻击+110",
+      true
+    ],
+    [
+      "CC套属性 独立攻击+120",
+      true
+    ],
+    [
+      "CC套属性 暴击+3%",
+      true
+    ],
+    [
+      "狂战士固伤综合+9.27%",
+      true
+    ],
+    [
+      "狂战士百分比综合+32.81%",
+      true
+    ],
+    [
+      "剑魂百分比综合+45.70%",
+      true
+    ],
+    [
+      "边际对偶4.930020",
+      true
+    ],
+    [
+      "破极兵刃协同物攻2743",
+      true
+    ],
+    [
+      "FAAL三阶七维框架固化",
+      true
+    ],
+    [
+      "三级级联放大链确认",
+      true
+    ],
+    [
+      "装备加成三原则元理论",
+      true
+    ],
+    [
+      "自我进化边界遵守",
+      true
+    ],
+    [
+      "核心数据零漂移",
+      true
+    ]
+  ],
+  "cc_set": {
+    "set_name": "宫廷套装",
+    "pieces": 6,
+    "strength": "+310",
+    "physical_attack": "+110",
+    "independent_attack": "+120",
+    "critical_rate": "+3%"
+  },
+  "berserker_bonuses": {
+    "fixed_damage_composite": "+9.27%",
+    "pct_damage_composite": "+32.81%"
+  },
+  "swordsman_bonuses": {
+    "pct_damage_composite": "+45.70%"
+  },
+  "key_constants": {
+    "marginal_duality": 4.93002,
+    "poji_synergy_ap": 2743,
+    "faal_framework": "固化确认",
+    "three_level_cascade": "模型确认",
+    "equipment_three_principles": "元理论确认"
+  },
+  "zero_drift": true,
+  "git_push": "pending"
+}
