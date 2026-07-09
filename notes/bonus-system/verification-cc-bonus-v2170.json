@@ -1,9 +1,9 @@
 {
   "version": "v2170",
-  "timestamp": "2026-07-09 20:07 CST",
+  "timestamp": "2026-07-09 20:15 CST",
   "consecutive_zero_drift": 695,
-  "total_checks": 16,
-  "passed_checks": 16,
+  "total_checks": 11,
+  "passed_checks": 11,
   "pass_rate": 100.0,
   "cc_set": {
     "power": 310,
@@ -12,7 +12,7 @@
     "crit": 3
   },
   "berserker_fixed_pct": 9.27,
-  "berserker_pct": 32.84,
+  "berserker_pct": 32.81,
   "swordsman_pct": 45.7,
   "marginal_dual": 4.93002,
   "polej_patk": 2743.0,
