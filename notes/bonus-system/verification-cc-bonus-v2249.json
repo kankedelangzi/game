@@ -1,0 +1,34 @@
+{
+  "version": "v2249",
+  "timestamp": "2026-07-10 06:42:00",
+  "status": "stable",
+  "passed": 14,
+  "total": 14,
+  "round": 749,
+  "driftRounds": "749 (1475→v2249)",
+  "ccSet": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击": 3,
+    "match": "4/4 precise"
+  },
+  "berserker": {
+    "fixedDmgBonus": 0.0927,
+    "percentDmgBonus": 0.3281
+  },
+  "swordman": {
+    "percentDmgBonus": 0.457
+  },
+  "marginalDuality": 4.93002,
+  "poJiWeapon": {
+    "physicalAtk": 2743,
+    "baseAtk": 2110,
+    "multiplier": 1.3
+  },
+  "faalFramework": "三阶七维固化",
+  "cascadeChain": "三级级联放大链模型",
+  "equipThreePrinciples": "装备加成三原则元理论",
+  "selfEvolutionBoundary": "持续遵守",
+  "coreDataZeroDrift": true
+}
