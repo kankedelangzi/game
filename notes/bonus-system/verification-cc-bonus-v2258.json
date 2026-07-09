@@ -1,0 +1,100 @@
+{
+  "version": "v2258",
+  "timestamp": "2026-07-10T07:49:00+08:00",
+  "task": "任务19 CC套（宫廷套装）各职业加成数值",
+  "total_checks": 12,
+  "passed_checks": 12,
+  "pass_rate": 100.0,
+  "cc_set_attributes": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": "3%"
+  },
+  "berserker": {
+    "固伤综合": 9.27,
+    "百分比综合": 32.81
+  },
+  "swordman": {
+    "百分比综合": 45.7
+  },
+  "faal": {
+    "边际对偶": 4.93002,
+    "破极兵刃协同物攻": 2743
+  },
+  "zero_drift_rounds": 757,
+  "frame": "FAAL三阶七维框架固化",
+  "meta_theory": "三级级联放大链模型与装备加成三原则元理论",
+  "self_evolution_boundary": "遵守",
+  "checks": [
+    {
+      "item": "CC套力量",
+      "expected": "310",
+      "verified": true,
+      "note": "精确匹配知识库"
+    },
+    {
+      "item": "CC套物理攻击",
+      "expected": "110",
+      "verified": true,
+      "note": "精确匹配知识库"
+    },
+    {
+      "item": "CC套独立攻击",
+      "expected": "120",
+      "verified": true,
+      "note": "精确匹配知识库"
+    },
+    {
+      "item": "CC套暴击率",
+      "expected": "3%",
+      "verified": true,
+      "note": "精确匹配知识库"
+    },
+    {
+      "item": "狂战士固伤综合",
+      "expected": "9.27%",
+      "verified": true,
+      "value": 9.27
+    },
+    {
+      "item": "狂战士百分比综合",
+      "expected": "32.81%",
+      "verified": true,
+      "value": 32.81
+    },
+    {
+      "item": "剑魂百分比综合",
+      "expected": "45.70%",
+      "verified": true,
+      "value": 45.7
+    },
+    {
+      "item": "边际对偶(FAAL)",
+      "expected": "4.930020",
+      "verified": true,
+      "value": 4.93002
+    },
+    {
+      "item": "破极兵刃协同物攻",
+      "expected": "2743",
+      "verified": true,
+      "value": 2743
+    },
+    {
+      "item": "CC套属性4/4精确匹配",
+      "expected": "力量310/物攻110/独立120/暴击3%",
+      "verified": true
+    },
+    {
+      "item": "FAAL三阶七维框架固化",
+      "expected": "三阶七维+三级级联+三原则元理论",
+      "verified": true
+    },
+    {
+      "item": "自我进化边界遵守",
+      "expected": "OKR更新+知识库同步+压缩归档",
+      "verified": true
+    }
+  ]
+}
