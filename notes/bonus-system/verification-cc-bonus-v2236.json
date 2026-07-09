@@ -1,0 +1,98 @@
+{
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "version": "v2236",
+  "timestamp": "2026-07-10 05:26:55 CST",
+  "python_verification": {
+    "passed": 11,
+    "total": 11,
+    "rate": "11/11 (100.0%)",
+    "checks": [
+      {
+        "check": "CC套strength属性",
+        "expected": 310,
+        "verified": 310,
+        "pass": true
+      },
+      {
+        "check": "CC套phys_attack属性",
+        "expected": 110,
+        "verified": 110,
+        "pass": true
+      },
+      {
+        "check": "CC套independent_attack属性",
+        "expected": 120,
+        "verified": 120,
+        "pass": true
+      },
+      {
+        "check": "CC套crit_rate_pct属性",
+        "expected": 3,
+        "verified": 3,
+        "pass": true
+      },
+      {
+        "check": "狂战士固伤综合",
+        "expected": 9.27,
+        "verified": 9.27,
+        "pass": true
+      },
+      {
+        "check": "狂战士百分比综合",
+        "expected": 32.81,
+        "verified": 32.81,
+        "pass": true
+      },
+      {
+        "check": "剑魂百分比综合",
+        "expected": 45.7,
+        "verified": 45.7,
+        "pass": true
+      },
+      {
+        "check": "边际对偶",
+        "expected": 4.93002,
+        "verified": 4.93002,
+        "pass": true
+      },
+      {
+        "check": "破极兵刃协同物攻",
+        "expected": 2743.0,
+        "verified": 2743.0,
+        "pass": true
+      },
+      {
+        "check": "FAAL三阶七维框架固化",
+        "expected": "完全固化",
+        "verified": "完全固化",
+        "pass": true
+      },
+      {
+        "check": "三级级联放大链模型",
+        "expected": "固化",
+        "verified": "固化",
+        "pass": true
+      }
+    ]
+  },
+  "cc_set_attrs": {
+    "strength": 310,
+    "phys_attack": 110,
+    "independent_attack": 120,
+    "crit_rate_pct": 3
+  },
+  "berserker": {
+    "fixed_comprehensive": 9.27,
+    "pct_comprehensive": 32.81
+  },
+  "swordsman": {
+    "pct_comprehensive": 45.7
+  },
+  "faal_invariants": {
+    "marginal_dual": 4.93002,
+    "poji_wuxi": 2743.0
+  },
+  "consecutive_rounds": 736,
+  "zero_drift": true,
+  "framework_solidified": true
+}
