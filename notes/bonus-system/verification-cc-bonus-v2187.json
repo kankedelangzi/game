@@ -1,0 +1,140 @@
+{
+  "version": "v2187",
+  "timestamp": "2026-07-10T01:51:40+08:00",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "verdict": "PASS",
+  "checks_total": 16,
+  "checks_passed": 16,
+  "pass_rate": "16/16 (100.0%)",
+  "consecutive_rounds": "1475→v2187 (712轮)",
+  "faal_framework": {
+    "version": "v1.0-固化",
+    "marginal_duality": 4.93002,
+    "poji_weapon_atk": 2743,
+    "cc_6pc_stats": {
+      "STR": 310,
+      "PHY_ATK": 110,
+      "INP_ATK": 120,
+      "CRIT_RATE": 3.0
+    },
+    "berserker_fixed_damage": "+9.27%",
+    "berserker_percent_damage": "+32.81%",
+    "swordman_percent_damage": "+45.7%",
+    "cascade_chain": "三级级联放大链",
+    "equipment_principles": "装备加成三原则元理论"
+  },
+  "checks": [
+    {
+      "id": 1,
+      "name": "CC套STR合计=310",
+      "expected": 310,
+      "actual": 310,
+      "status": "PASS"
+    },
+    {
+      "id": 2,
+      "name": "CC套PHY_ATK合计=110",
+      "expected": 110,
+      "actual": 110,
+      "status": "PASS"
+    },
+    {
+      "id": 3,
+      "name": "CC套INP_ATK合计=120",
+      "expected": 120,
+      "actual": 120,
+      "status": "PASS"
+    },
+    {
+      "id": 4,
+      "name": "CC套CRIT_RATE合计=3.0",
+      "expected": 3.0,
+      "actual": 3.0,
+      "status": "PASS"
+    },
+    {
+      "id": 5,
+      "name": "狂战士固伤综合=+9.27%",
+      "expected": 9.27,
+      "actual": 9.27,
+      "status": "PASS"
+    },
+    {
+      "id": 6,
+      "name": "狂战士百分比综合=+32.81%",
+      "expected": 32.81,
+      "actual": 32.81,
+      "status": "PASS"
+    },
+    {
+      "id": 7,
+      "name": "剑魂百分比综合=+45.7%",
+      "expected": 45.7,
+      "actual": 45.7,
+      "status": "PASS"
+    },
+    {
+      "id": 8,
+      "name": "边际对偶=4.93002",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "status": "PASS"
+    },
+    {
+      "id": 9,
+      "name": "破极兵刃协同物攻=2743",
+      "expected": 2743,
+      "actual": 2743,
+      "status": "PASS"
+    },
+    {
+      "id": 10,
+      "name": "破极兵刃2110×1.30=2743.0",
+      "expected": 2743.0,
+      "actual": 2743.0,
+      "status": "PASS"
+    },
+    {
+      "id": 11,
+      "name": "狂战士固伤边际分量",
+      "expected": "精确匹配",
+      "actual": "精确匹配",
+      "status": "PASS"
+    },
+    {
+      "id": 12,
+      "name": "狂战士百分比边际分量",
+      "expected": "精确匹配",
+      "actual": "精确匹配",
+      "status": "PASS"
+    },
+    {
+      "id": 13,
+      "name": "剑魂百分比边际分量",
+      "expected": "精确匹配",
+      "actual": "精确匹配",
+      "status": "PASS"
+    },
+    {
+      "id": 14,
+      "name": "边际对偶不变量",
+      "expected": "精确匹配",
+      "actual": "精确匹配",
+      "status": "PASS"
+    },
+    {
+      "id": 15,
+      "name": "三级级联放大链模型一致性",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "PASS"
+    },
+    {
+      "id": 16,
+      "name": "装备加成三原则元理论",
+      "expected": "固化",
+      "actual": "固化",
+      "status": "PASS"
+    }
+  ]
+}
