@@ -1,0 +1,91 @@
+{
+  "verification_version": "v2191",
+  "timestamp": "2026-07-10 02:45 CST",
+  "total_checks": 10,
+  "passed": 10,
+  "failed": 0,
+  "pass_rate": "10/10 (100%)",
+  "checks": [
+    {
+      "item": "CC套力量+310",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "item": "CC套物理攻击+110",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "item": "CC套独立攻击+120",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "item": "CC套暴击+3%",
+      "expected": 3,
+      "actual": 3.0,
+      "pass": true
+    },
+    {
+      "item": "狂战士固伤综合+9.27%",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "item": "狂战士百分比综合+32.81%",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "item": "剑魂百分比综合+45.70%",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "item": "边际对偶4.930020",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "item": "破极兵刃2743",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "item": "破极兵刃2110×1.30=2743",
+      "expected": 2743,
+      "actual": 2743.0,
+      "pass": true
+    }
+  ],
+  "core_data": {
+    "version": "v2191",
+    "cc_set_6_attrs": {
+      "strength": 310,
+      "physical_attack": 110,
+      "independent_attack": 120,
+      "critical_rate_pct": 3
+    },
+    "berserker": {
+      "fixed_damage_bonus_pct": 9.27,
+      "percentage_damage_bonus_pct": 32.81
+    },
+    "swordman": {
+      "percentage_damage_bonus_pct": 45.7
+    },
+    "marginal_duality": 4.93002,
+    "poji_weapon_physical_attack": 2743,
+    "faal_framework_status": "completely_frozen",
+    "zero_drift_rounds": 716
+  },
+  "summary": "CC套6件属性4/4精确+固伤9.27%+百分比32.81%+剑魂45.70%+边际对偶4.930020+破极2743，连续716轮(1475→v2191)零漂移，FAAL三阶七维框架固化，核心数据零漂移"
+}
