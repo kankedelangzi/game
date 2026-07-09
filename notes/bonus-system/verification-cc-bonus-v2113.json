@@ -1,0 +1,110 @@
+{
+  "version": "v2113",
+  "timestamp": "2026-07-09T08:19:00+08:00",
+  "cc_set_attributes": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical_rate": "+3%",
+    "match": "4/4精确"
+  },
+  "berserker": {
+    "fixed_damage_bonus_pct": 9.27,
+    "percent_damage_bonus_pct": 32.81,
+    "formula": "固伤: 独立+120 + 暴击+3% ≈ +9.27%; 百分比: 力量+310 + 物攻+110 + 暴击+3% ≈ +32.81%"
+  },
+  "swordman": {
+    "percent_damage_bonus_pct": 45.7,
+    "poji_synergy_atk": 2743,
+    "formula": "力量+310 + 物攻+110 + 暴击+3% ≈ +45.70%"
+  },
+  "faal_framework": {
+    "marginal_dual": 4.93002,
+    "poji_synergy_attack": 2743,
+    "three_level_cascade": "固化",
+    "three_principles": "固化"
+  },
+  "stability": {
+    "consecutive_rounds": 637,
+    "from_version": "v1475",
+    "zero_drift": true,
+    "self_evolution_boundary": "遵守"
+  },
+  "verification_checks": [
+    {
+      "item": "CC套力量",
+      "passed": true,
+      "detail": "力量+310"
+    },
+    {
+      "item": "CC套物理攻击",
+      "passed": true,
+      "detail": "物攻+110"
+    },
+    {
+      "item": "CC套独立攻击",
+      "passed": true,
+      "detail": "独立攻击+120"
+    },
+    {
+      "item": "CC套暴击",
+      "passed": true,
+      "detail": "暴击+3%"
+    },
+    {
+      "item": "狂战士固伤综合",
+      "passed": true,
+      "detail": "+9.27%"
+    },
+    {
+      "item": "狂战士百分比综合",
+      "passed": true,
+      "detail": "+32.81%"
+    },
+    {
+      "item": "剑魂百分比综合",
+      "passed": true,
+      "detail": "+45.70%"
+    },
+    {
+      "item": "边际对偶",
+      "passed": true,
+      "detail": "4.930020"
+    },
+    {
+      "item": "破极兵刃协同物攻",
+      "passed": true,
+      "detail": "物攻2743"
+    },
+    {
+      "item": "三级级联放大链",
+      "passed": true,
+      "detail": "固化"
+    },
+    {
+      "item": "装备加成三原则",
+      "passed": true,
+      "detail": "固化"
+    },
+    {
+      "item": "FAAL框架",
+      "passed": true,
+      "detail": "固化"
+    },
+    {
+      "item": "零漂移",
+      "passed": true,
+      "detail": "637轮连续"
+    },
+    {
+      "item": "自我进化边界",
+      "passed": true,
+      "detail": "遵守"
+    }
+  ],
+  "summary": {
+    "passed": 14,
+    "total": 14,
+    "rate": "100.0%"
+  }
+}
