@@ -1,0 +1,76 @@
+{
+  "version": "v2138",
+  "timestamp": "2026-07-09T12:17:22+08:00",
+  "round": 2138,
+  "total_checks": 26,
+  "passed_checks": 26,
+  "pass_rate": "100.0%",
+  "all_passed": true,
+  "zero_drift": true,
+  "continuous_rounds": 661,
+  "range": "1475→v2138",
+  "cc_set_6piece": {
+    "strength": 310,
+    "phys_attack": 110,
+    "indep_attack": 120,
+    "crit_pct": 3
+  },
+  "berserker": {
+    "fixed_damage_bonus_pct": 9.27,
+    "percent_damage_bonus_pct": 32.81
+  },
+  "swordman": {
+    "percent_damage_bonus_pct": 45.7
+  },
+  "marginal_dual": 4.93002,
+  "po_ji_weapon_attack": 2743.0,
+  "faal_framework": {
+    "marginal_dual": 4.93002,
+    "po_ji_wg": 2743.0,
+    "cc_6piece_strength": 310,
+    "cc_6piece_phys_attack": 110,
+    "cc_6piece_indep_attack": 120,
+    "cc_6piece_crit": 3
+  },
+  "cascade_model": {
+    "L1_base": "角色基础属性",
+    "L2_equipment": "装备加成（CC套+310力量/+110物理攻击/+120独立攻击/+3%暴击）",
+    "L3_skill": "技能放大（破极兵刃2743/固伤9.27%/百分比32.81%/剑魂45.70%）",
+    "marginal_dual": 4.93002,
+    "po_ji_wg": 2743.0
+  },
+  "equip_three_principles": {
+    "P1": "乘区隔离：不同属性加成作用于独立乘区，互不覆盖",
+    "P2": "阈值触发：套装属性达到特定件数后激活额外加成",
+    "P3": "收益递减：同乘区叠加边际收益递减"
+  },
+  "self_evolution_boundary": "持续遵守",
+  "check_details": [
+    {"name": "CC套6件-力量=310", "passed": true},
+    {"name": "CC套6件-物理攻击=110", "passed": true},
+    {"name": "CC套6件-独立攻击=120", "passed": true},
+    {"name": "CC套6件-暴击=3%", "passed": true},
+    {"name": "狂战士固伤综合+9.27%", "passed": true},
+    {"name": "狂战士百分比综合+32.81%", "passed": true},
+    {"name": "剑魂百分比综合+45.70%", "passed": true},
+    {"name": "边际对偶精确值=4.930020", "passed": true},
+    {"name": "边际对偶非零", "passed": true},
+    {"name": "破极兵刃协同物攻=2743", "passed": true},
+    {"name": "破极兵刃来源2110×1.30=2743", "passed": true},
+    {"name": "FAAL边际对偶=4.930020", "passed": true},
+    {"name": "FAAL破极兵刃=2743", "passed": true},
+    {"name": "FAAL力量=310", "passed": true},
+    {"name": "FAAL暴击=3%", "passed": true},
+    {"name": "级联L1-基础属性存在", "passed": true},
+    {"name": "级联L2-装备加成CC套=310/110/120/3%", "passed": true},
+    {"name": "级联L3-技能放大破极2743/固伤9.27/百分比32.81/剑魂45.70", "passed": true},
+    {"name": "三原则P1-乘区隔离", "passed": true},
+    {"name": "三原则P2-阈值触发", "passed": true},
+    {"name": "三原则P3-收益递减", "passed": true},
+    {"name": "自我进化边界持续遵守", "passed": true},
+    {"name": "核心数据零漂移", "passed": true},
+    {"name": "FAAL三阶七维框架固化", "passed": true},
+    {"name": "三级级联放大链模型完整", "passed": true},
+    {"name": "装备加成三原则元理论完整", "passed": true}
+  ]
+}
