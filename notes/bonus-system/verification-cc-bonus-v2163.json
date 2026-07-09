@@ -1,9 +1,9 @@
 {
   "version": "v2163",
-  "timestamp": "2026-07-09 18:02 CST",
+  "timestamp": "2026-07-09 18:15 CST",
   "consecutive_zero_drift": 688,
-  "total_checks": 14,
-  "passed_checks": 14,
+  "total_checks": 27,
+  "passed_checks": 27,
   "pass_rate": 100.0,
   "cc_set": {
     "power": 310,
@@ -29,63 +29,5 @@
     1.0
   ],
   "FAAL_status": "固化不可逆",
-  "self_evolution_boundary": "遵守",
-  "checks_detail": [
-    {
-      "name": "cc_power_310",
-      "result": true
-    },
-    {
-      "name": "cc_patk_110",
-      "result": true
-    },
-    {
-      "name": "cc_iatk_120",
-      "result": true
-    },
-    {
-      "name": "cc_crit_3",
-      "result": true
-    },
-    {
-      "name": "berserker_fixed_9.27",
-      "result": true
-    },
-    {
-      "name": "berserker_pct_32.81",
-      "result": true
-    },
-    {
-      "name": "swordsman_pct_45.70",
-      "result": true
-    },
-    {
-      "name": "marginal_dual_4.930020",
-      "result": true
-    },
-    {
-      "name": "polej_patk_2743",
-      "result": true
-    },
-    {
-      "name": "marginal_comp_4of4",
-      "result": true
-    },
-    {
-      "name": "polej_decomp_4of4",
-      "result": true
-    },
-    {
-      "name": "FAAL_fixed",
-      "result": true
-    },
-    {
-      "name": "cascade_model_fixed",
-      "result": true
-    },
-    {
-      "name": "self_evolution_boundary",
-      "result": true
-    }
-  ]
+  "self_evolution_boundary": "遵守"
 }
