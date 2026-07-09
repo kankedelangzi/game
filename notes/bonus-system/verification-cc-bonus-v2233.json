@@ -1,0 +1,35 @@
+{
+  "version": "v2233",
+  "timestamp": "2026-07-10T04:57:00+08:00",
+  "round": 733,
+  "zero_drift_since": "v1475",
+  "passed": 9,
+  "total": 9,
+  "rate": 100.0,
+  "checks": {
+    "CC力量+310": true,
+    "CC物理攻击+110": true,
+    "CC独立攻击+120": true,
+    "CC暴击+3%": true,
+    "狂战士固伤综合+9.27%": true,
+    "狂战士百分比综合+32.81%": true,
+    "剑魂百分比综合+45.70%": true,
+    "边际对偶4.930020": true,
+    "破极兵刃2743": true
+  },
+  "cc_stats": {
+    "strength": 310,
+    "physical_atk": 110,
+    "independent_atk": 120,
+    "crit": 3
+  },
+  "berserker_fixed_gain": 9.27,
+  "berserker_pct_gain": 32.81,
+  "sword_pct_gain": 45.70,
+  "marginal_dual": 4.930020,
+  "polar_attack": 2743,
+  "polar_multiplier": 1.30,
+  "faal_framework": "FAAL三阶七维框架固化",
+  "three_level_cascade": "三级级联放大链模型确认",
+  "equipment_principles": "装备加成三原则元理论确认"
+}
