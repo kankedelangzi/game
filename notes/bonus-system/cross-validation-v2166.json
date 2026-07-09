@@ -1,0 +1,17 @@
+{
+  "version": "v2166",
+  "audit_type": "交叉验证审核",
+  "timestamp": "2026-07-09T16:50:00+08:00",
+  "checks_passed": 7,
+  "checks_total": 8,
+  "pass_rate": "7/8 (87.5%)",
+  "conclusion": "需修正",
+  "cc_attributes_match": "4/4精确",
+  "berserker_fixed_pct": 9.27,
+  "berserker_pct": 32.81,
+  "swordman_pct": 45.7,
+  "polar_weapon_physical": 2743,
+  "polar_weapon_calc": 2743,
+  "marginal_duality": 4.93002,
+  "notes": "弹性偏差：狂战士固伤/百分比综合和剑魂百分比综合含简化模型假设，属已知弹性偏差范围"
+}
