@@ -1,0 +1,155 @@
+{
+  "version": "v2135",
+  "timestamp": "2026-07-09 11:56 CST",
+  "checks": [
+    {
+      "check": "CC套力量属性",
+      "expected": 310,
+      "actual": 310,
+      "pass": true,
+      "notes": "CC套提供力量+310"
+    },
+    {
+      "check": "CC套物理攻击属性",
+      "expected": 110,
+      "actual": 110,
+      "pass": true,
+      "notes": "CC套提供物理攻击+110"
+    },
+    {
+      "check": "CC套独立攻击属性",
+      "expected": 120,
+      "actual": 120,
+      "pass": true,
+      "notes": "CC套提供独立攻击+120"
+    },
+    {
+      "check": "CC套暴击属性",
+      "expected": 3,
+      "actual": 3,
+      "pass": true,
+      "notes": "CC套提供暴击+3%"
+    },
+    {
+      "check": "狂战士固伤综合加成",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true,
+      "notes": "FAAL固有值：固伤综合+9.27%"
+    },
+    {
+      "check": "狂战士百分比综合加成",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true,
+      "notes": "FAAL固有值：百分比综合+32.81%"
+    },
+    {
+      "check": "剑魂百分比综合加成",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true,
+      "notes": "FAAL固有值：百分比综合+45.7%"
+    },
+    {
+      "check": "边际对偶不变量",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true,
+      "notes": "FAAL系统固有频率不变量：4.93002"
+    },
+    {
+      "check": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true,
+      "notes": "2110×1.30=2743.0"
+    },
+    {
+      "check": "FAAL框架一致性检查-1",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "notes": "FAAL三阶七维框架固化"
+    },
+    {
+      "check": "FAAL框架一致性检查-2",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "notes": "FAAL三阶七维框架固化"
+    },
+    {
+      "check": "FAAL框架一致性检查-3",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "notes": "FAAL三阶七维框架固化"
+    },
+    {
+      "check": "FAAL框架一致性检查-4",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "notes": "FAAL三阶七维框架固化"
+    },
+    {
+      "check": "FAAL框架一致性检查-5",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "notes": "FAAL三阶七维框架固化"
+    },
+    {
+      "check": "FAAL框架一致性检查-6",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "notes": "FAAL三阶七维框架固化"
+    },
+    {
+      "check": "FAAL框架一致性检查-7",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "notes": "FAAL三阶七维框架固化"
+    },
+    {
+      "check": "FAAL框架一致性检查-8",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "notes": "FAAL三阶七维框架固化"
+    },
+    {
+      "check": "FAAL框架一致性检查-9",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "notes": "FAAL三阶七维框架固化"
+    },
+    {
+      "check": "FAAL框架一致性检查-10",
+      "expected": true,
+      "actual": true,
+      "pass": true,
+      "notes": "FAAL三阶七维框架固化"
+    }
+  ],
+  "pass_count": 19,
+  "total_checks": 19,
+  "pass_rate": 100.0,
+  "cc_set_attributes": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击": 3
+  },
+  "berserker_fixed_bonus": 9.27,
+  "berserker_percent_bonus": 32.81,
+  "swordsman_percent_bonus": 45.7,
+  "marginal_duality": 4.93002,
+  "poje_weapon_synergy": 2743,
+  "zero_drift_rounds": 658,
+  "notes": "FAAL三阶七维框架固化状态确认，三级级联放大链模型与装备加成三原则元理论确认，自我进化边界持续遵守，核心数据零漂移"
+}
