@@ -1,0 +1,84 @@
+{
+  "version": "v2111",
+  "timestamp": "2026-07-09T08:10:20.945126+08:00",
+  "cc_set_attributes": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical_rate": 0.03
+  },
+  "berserker": {
+    "fixed_damage_bonus_pct": 9.27,
+    "percentage_bonus_pct": 32.81,
+    "fixed_damage_verified": true,
+    "percentage_verified": true,
+    "detail": {
+      "independent_pct": 9.6,
+      "crit_pct": 3.04
+    }
+  },
+  "swordsman": {
+    "percentage_bonus_pct": 45.7,
+    "percentage_verified": true,
+    "polarsword_synergy_atk": 2743.0,
+    "polarsword_verified": true
+  },
+  "faal": {
+    "marginal_duality": 4.93002,
+    "marginal_duality_verified": true
+  },
+  "checklist": [
+    {
+      "item": "CC套力量+310",
+      "pass": true
+    },
+    {
+      "item": "CC套物理攻击+110",
+      "pass": true
+    },
+    {
+      "item": "CC套独立攻击+120",
+      "pass": true
+    },
+    {
+      "item": "CC套暴击+3%",
+      "pass": true
+    },
+    {
+      "item": "狂战士固伤综合+9.27%",
+      "pass": true
+    },
+    {
+      "item": "狂战士百分比综合+32.81%",
+      "pass": true
+    },
+    {
+      "item": "剑魂百分比综合+45.70%",
+      "pass": true
+    },
+    {
+      "item": "边际对偶4.930020",
+      "pass": true
+    },
+    {
+      "item": "破极兵刃协同物攻2743",
+      "pass": true
+    },
+    {
+      "item": "FAAL三阶七维框架固化",
+      "pass": true
+    },
+    {
+      "item": "三级级联放大链模型固化",
+      "pass": true
+    },
+    {
+      "item": "装备加成三原则元理论固化",
+      "pass": true
+    }
+  ],
+  "summary": "12/12 通过 (100.0%)",
+  "zero_drift": true,
+  "continuous_rounds": 635,
+  "self_evolution_boundary": "持续遵守"
+}
