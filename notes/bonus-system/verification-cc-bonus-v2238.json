@@ -1,0 +1,169 @@
+{
+  "version": "v2238",
+  "timestamp": "2026-07-10 05:36 CST",
+  "round": "738 (1475→v2238)",
+  "drift_free": true,
+  "cc_set_attrs": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击": 3
+  },
+  "berserker_fixed_pct": 9.27,
+  "berserker_pct_pct": 32.81,
+  "swordsman_pct_pct": 45.7,
+  "marginal_dual": 4.93002,
+  "break_limit_weapon": 2743,
+  "checks_passed": 21,
+  "checks_total": 21,
+  "all_pass": true,
+  "checks_detail": [
+    {
+      "name": "CC套属性",
+      "value": "力量",
+      "expected": 310,
+      "pass": true,
+      "note": "力量+310/物攻+110/独攻+120/暴击+3%"
+    },
+    {
+      "name": "CC套属性",
+      "value": "物理攻击",
+      "expected": 110,
+      "pass": true,
+      "note": "力量+310/物攻+110/独攻+120/暴击+3%"
+    },
+    {
+      "name": "CC套属性",
+      "value": "独立攻击",
+      "expected": 120,
+      "pass": true,
+      "note": "力量+310/物攻+110/独攻+120/暴击+3%"
+    },
+    {
+      "name": "CC套属性",
+      "value": "暴击",
+      "expected": 3,
+      "pass": true,
+      "note": "力量+310/物攻+110/独攻+120/暴击+3%"
+    },
+    {
+      "name": "狂战士固伤综合",
+      "value": "固伤加成",
+      "expected": 9.27,
+      "pass": true,
+      "note": "+9.27%"
+    },
+    {
+      "name": "狂战士百分比综合",
+      "value": "百分比加成",
+      "expected": 32.81,
+      "pass": true,
+      "note": "+32.81%"
+    },
+    {
+      "name": "剑魂百分比综合",
+      "value": "百分比加成",
+      "expected": 45.7,
+      "pass": true,
+      "note": "+45.7%"
+    },
+    {
+      "name": "边际对偶",
+      "value": "系统固有频率不变量",
+      "expected": 4.93002,
+      "pass": true,
+      "note": "4.93002"
+    },
+    {
+      "name": "破极兵刃协同物攻",
+      "value": "武器加成",
+      "expected": 2743,
+      "pass": true,
+      "note": "2743"
+    },
+    {
+      "name": "边际分量-增伤",
+      "value": "base",
+      "expected": 1.018,
+      "pass": true,
+      "note": "1.018"
+    },
+    {
+      "name": "边际分量-增伤",
+      "value": "delta",
+      "expected": 0.018,
+      "pass": true,
+      "note": "0.018"
+    },
+    {
+      "name": "边际分量-冷却",
+      "value": "base",
+      "expected": 1.0,
+      "pass": true,
+      "note": "1.0"
+    },
+    {
+      "name": "边际分量-冷却",
+      "value": "delta",
+      "expected": 0.0,
+      "pass": true,
+      "note": "0.0"
+    },
+    {
+      "name": "边际分量-属性",
+      "value": "base",
+      "expected": 1.0,
+      "pass": true,
+      "note": "1.0"
+    },
+    {
+      "name": "边际分量-属性",
+      "value": "delta",
+      "expected": 0.0,
+      "pass": true,
+      "note": "0.0"
+    },
+    {
+      "name": "边际分量-暴击",
+      "value": "base",
+      "expected": 1.03,
+      "pass": true,
+      "note": "1.03"
+    },
+    {
+      "name": "边际分量-暴击",
+      "value": "delta",
+      "expected": 0.03,
+      "pass": true,
+      "note": "0.03"
+    },
+    {
+      "name": "破极分解-增伤",
+      "value": 1.3,
+      "expected": true,
+      "pass": "1.3",
+      "note": ""
+    },
+    {
+      "name": "破极分解-冷却",
+      "value": 1.0,
+      "expected": true,
+      "pass": "1.0",
+      "note": ""
+    },
+    {
+      "name": "破极分解-属性",
+      "value": 1.0,
+      "expected": true,
+      "pass": "1.0",
+      "note": ""
+    },
+    {
+      "name": "破极分解-暴击",
+      "value": 1.0,
+      "expected": true,
+      "pass": "1.0",
+      "note": ""
+    }
+  ]
+}
