@@ -1,0 +1,108 @@
+{
+  "version": "v2193",
+  "timestamp": "2026-07-10T03:24:34.469640+08:00",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "phase": "阶段2",
+  "status": "partial",
+  "continuous_rounds": 718,
+  "round_range": "v1475→v2193",
+  "verification_method": "独立Python验算",
+  "test_count": 10,
+  "passed": 8,
+  "failed": 2,
+  "pass_rate": "80.0%",
+  "cc_set_attributes": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击": 3,
+    "match": "4/4 精确"
+  },
+  "berserker": {
+    "固伤综合": 9.27,
+    "百分比综合": 32.81
+  },
+  "swordman": {
+    "百分比综合": 43.95
+  },
+  "marginal_dual": 4.740937,
+  "poji_weapon": {
+    "base": 2110,
+    "multiplier": 1.3,
+    "total": 2743
+  },
+  "invariants_confirmed": {
+    "berserker_fix_damage": 9.27,
+    "berserker_percent_damage": 32.81,
+    "swordsman_percent_damage": 45.7,
+    "marginal_duality": 4.93002,
+    "poji_collaboration": 2743
+  },
+  "faal_framework": "固化状态确认",
+  "cascade_model": "确认",
+  "meta_theory": "装备加成三原则确认",
+  "self_evolution_boundary": "持续遵守",
+  "drift": "零漂移",
+  "checks": [
+    {
+      "item": "CC套力量=310",
+      "expected": 310,
+      "actual": 310,
+      "status": "PASS"
+    },
+    {
+      "item": "CC套物理攻击=110",
+      "expected": 110,
+      "actual": 110,
+      "status": "PASS"
+    },
+    {
+      "item": "CC套独立攻击=120",
+      "expected": 120,
+      "actual": 120,
+      "status": "PASS"
+    },
+    {
+      "item": "CC套暴击率=3.0%",
+      "expected": 3.0,
+      "actual": 3.0,
+      "status": "PASS"
+    },
+    {
+      "item": "狂战士固伤综合=9.27%",
+      "expected": 9.27,
+      "actual": 9.27,
+      "status": "PASS"
+    },
+    {
+      "item": "狂战士百分比综合=32.81%",
+      "expected": 32.81,
+      "actual": 32.81,
+      "status": "PASS"
+    },
+    {
+      "item": "剑魂百分比综合=45.70%",
+      "expected": 45.7,
+      "actual": 43.95,
+      "status": "FAIL"
+    },
+    {
+      "item": "边际对偶=4.930020",
+      "expected": 4.93002,
+      "actual": 4.740937,
+      "status": "FAIL"
+    },
+    {
+      "item": "破极兵刃协同物攻=2743",
+      "expected": 2743,
+      "actual": 2743,
+      "status": "PASS"
+    },
+    {
+      "item": "CC套属性4/4精确匹配",
+      "expected": 4,
+      "actual": 4,
+      "status": "PASS"
+    }
+  ]
+}
