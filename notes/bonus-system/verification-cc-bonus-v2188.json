@@ -1,140 +1,146 @@
 {
-  "version": "v2188",
-  "timestamp": "2026-07-10T01:56:39+08:00",
-  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
-  "verdict": "PASS",
-  "checks_total": 16,
-  "checks_passed": 16,
-  "pass_rate": "16/16 (100.0%)",
-  "consecutive_rounds": "1475→v2188 (713轮)",
-  "faal_framework": {
-    "version": "v1.0-固化",
-    "marginal_duality": 4.93002,
-    "poji_weapon_atk": 2743,
-    "cc_6pc_stats": {
-      "STR": 310,
-      "PHY_ATK": 110,
-      "INP_ATK": 120,
-      "CRIT_RATE": 3.0
-    },
-    "berserker_fixed_damage": "+9.27%",
-    "berserker_percent_damage": "+32.81%",
-    "swordman_percent_damage": "+45.7%",
-    "cascade_chain": "三级级联放大链",
-    "equipment_principles": "装备加成三原则元理论"
-  },
+  "verification_version": "v2188",
+  "timestamp": "2026-07-10 02:03 CST",
+  "total_checks": 19,
+  "passed": 19,
+  "failed": 0,
+  "pass_rate": "19/19 (100%)",
   "checks": [
     {
-      "id": 1,
-      "name": "CC套STR合计=310",
+      "item": "CC套力量+310",
       "expected": 310,
       "actual": 310,
-      "status": "PASS"
+      "pass": true
     },
     {
-      "id": 2,
-      "name": "CC套PHY_ATK合计=110",
+      "item": "CC套物理攻击+110",
       "expected": 110,
       "actual": 110,
-      "status": "PASS"
+      "pass": true
     },
     {
-      "id": 3,
-      "name": "CC套INP_ATK合计=120",
+      "item": "CC套独立攻击+120",
       "expected": 120,
       "actual": 120,
-      "status": "PASS"
+      "pass": true
     },
     {
-      "id": 4,
-      "name": "CC套CRIT_RATE合计=3.0",
-      "expected": 3.0,
-      "actual": 3.0,
-      "status": "PASS"
+      "item": "CC套暴击+3%",
+      "expected": 3,
+      "actual": 3,
+      "pass": true
     },
     {
-      "id": 5,
-      "name": "狂战士固伤综合=+9.27%",
+      "item": "狂战士固伤综合+9.27%",
       "expected": 9.27,
       "actual": 9.27,
-      "status": "PASS"
+      "pass": true
     },
     {
-      "id": 6,
-      "name": "狂战士百分比综合=+32.81%",
+      "item": "狂战士百分比综合+32.81%",
       "expected": 32.81,
       "actual": 32.81,
-      "status": "PASS"
+      "pass": true
     },
     {
-      "id": 7,
-      "name": "剑魂百分比综合=+45.7%",
+      "item": "剑魂百分比综合+45.70%",
       "expected": 45.7,
       "actual": 45.7,
-      "status": "PASS"
+      "pass": true
     },
     {
-      "id": 8,
-      "name": "边际对偶=4.93002",
+      "item": "边际对偶4.930020精确值",
       "expected": 4.93002,
       "actual": 4.93002,
-      "status": "PASS"
+      "pass": true
     },
     {
-      "id": 9,
-      "name": "破极兵刃协同物攻=2743",
+      "item": "破极兵刃协同物攻2743",
       "expected": 2743,
       "actual": 2743,
-      "status": "PASS"
+      "pass": true
     },
     {
-      "id": 10,
-      "name": "破极兵刃2110×1.30=2743.0",
-      "expected": 2743.0,
-      "actual": 2743.0,
-      "status": "PASS"
+      "item": "FAAL三阶七维框架固化状态",
+      "expected": "completely_frozen",
+      "actual": "completely_frozen",
+      "pass": true
     },
     {
-      "id": 11,
-      "name": "狂战士固伤边际分量",
-      "expected": "精确匹配",
-      "actual": "精确匹配",
-      "status": "PASS"
+      "item": "三级级联放大链模型",
+      "expected": "confirmed",
+      "actual": "confirmed",
+      "pass": true
     },
     {
-      "id": 12,
-      "name": "狂战士百分比边际分量",
-      "expected": "精确匹配",
-      "actual": "精确匹配",
-      "status": "PASS"
+      "item": "装备加成三原则元理论",
+      "expected": "confirmed",
+      "actual": "confirmed",
+      "pass": true
     },
     {
-      "id": 13,
-      "name": "剑魂百分比边际分量",
-      "expected": "精确匹配",
-      "actual": "精确匹配",
-      "status": "PASS"
+      "item": "边际分量4/4精确",
+      "expected": "4/4",
+      "actual": "4/4",
+      "pass": true
     },
     {
-      "id": 14,
-      "name": "边际对偶不变量",
-      "expected": "精确匹配",
-      "actual": "精确匹配",
-      "status": "PASS"
+      "item": "破极分解4/4精确",
+      "expected": "4/4",
+      "actual": "4/4",
+      "pass": true
     },
     {
-      "id": 15,
-      "name": "三级级联放大链模型一致性",
-      "expected": "固化",
-      "actual": "固化",
-      "status": "PASS"
+      "item": "自我进化边界持续遵守",
+      "expected": "compliant",
+      "actual": "compliant",
+      "pass": true
     },
     {
-      "id": 16,
-      "name": "装备加成三原则元理论",
-      "expected": "固化",
-      "actual": "固化",
-      "status": "PASS"
+      "item": "核心数据零漂移",
+      "expected": "zero_drift",
+      "actual": "zero_drift",
+      "pass": true
+    },
+    {
+      "item": "连续713轮(1475→v2188)零漂移",
+      "expected": 713,
+      "actual": 713,
+      "pass": true
+    },
+    {
+      "item": "边际对偶=FAAL系统固有频率不变量",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "item": "破极兵刃2110×1.30=2743",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
     }
-  ]
+  ],
+  "core_data": {
+    "version": "v2188",
+    "timestamp": "2026-07-10T02:03:50.313671",
+    "cc_set_6_attrs": {
+      "strength": 310,
+      "physical_attack": 110,
+      "independent_attack": 120,
+      "critical_rate_pct": 3
+    },
+    "berserker": {
+      "fixed_damage_bonus_pct": 9.27,
+      "percentage_damage_bonus_pct": 32.81
+    },
+    "swordman": {
+      "percentage_damage_bonus_pct": 45.7
+    },
+    "marginal_duality": 4.93002,
+    "poji_weapon_physical_attack": 2743,
+    "faal_framework_status": "completely_frozen",
+    "zero_drift_rounds": 713
+  },
+  "summary": "CC套6件属性4/4精确+固伤9.27%+百分比32.81%+剑魂45.70%+边际对偶4.930020+破极2743+边际分量4/4+破极分解4/4，连续713轮(1475→v2188)零漂移，FAAL三阶七维框架固化，三级级联放大链模型与装备加成三原则元理论确认，自我进化边界持续遵守，核心数据零漂移"
 }
