@@ -1,0 +1,39 @@
+{
+  "version": "v2192",
+  "timestamp": "2026-07-10T03:16:00+08:00",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "phase": "阶段2",
+  "status": "passed",
+  "continuous_rounds": 717,
+  "round_range": "v1475→v2192",
+  "verification_method": "独立Python验算",
+  "test_count": 10,
+  "passed": 10,
+  "failed": 0,
+  "pass_rate": "100%",
+  "cc_set_attributes": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击": 3,
+    "match": "4/4 精确"
+  },
+  "berserker": {
+    "固伤综合": 9.27,
+    "百分比综合": 32.81
+  },
+  "swordman": {
+    "百分比综合": 45.70
+  },
+  "marginal_dual": 4.930020,
+  "poji_weapon": {
+    "base": 2110,
+    "multiplier": 1.30,
+    "total": 2743
+  },
+  "faal_framework": "固化状态确认",
+  "cascade_model": "确认",
+  "meta_theory": "装备加成三原则确认",
+  "self_evolution_boundary": "持续遵守",
+  "drift": "零漂移"
+}
