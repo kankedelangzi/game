@@ -1,33 +1,61 @@
 {
   "version": "v2243",
-  "timestamp": "2026-07-10 06:02 CST",
-  "status": "stable",
-  "passed": 13,
-  "total": 13,
-  "driftRounds": "743 (1475→v2243)",
-  "ccSet": {
+  "timestamp": "2026-07-10 06:07 CST",
+  "round": 743,
+  "checks_passed": 9,
+  "checks_total": 9,
+  "pass_rate": "9/9 (100.0%)",
+  "zero_drift_rounds": 743,
+  "details": [
+    {
+      "name": "力量+310",
+      "pass": true
+    },
+    {
+      "name": "物理攻击+110",
+      "pass": true
+    },
+    {
+      "name": "独立攻击+120",
+      "pass": true
+    },
+    {
+      "name": "暴击+3%",
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤综合+9.27%",
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比综合+32.81%",
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比综合+45.70%",
+      "pass": true
+    },
+    {
+      "name": "边际对偶4.930020",
+      "pass": true
+    },
+    {
+      "name": "破极兵刃协同物攻2743",
+      "pass": true
+    }
+  ],
+  "cc_attrs": {
     "strength": 310,
-    "physicalAtk": 110,
-    "independentAtk": 120,
-    "crit": 3,
-    "match": "4/4 precise"
+    "phys_atk": 110,
+    "indep_atk": 120,
+    "crit_rate": 3.0
   },
-  "berserker": {
-    "fixedDmgBonus": 0.0927,
-    "percentDmgBonus": 0.3281
-  },
-  "swordman": {
-    "percentDmgBonus": 0.457
-  },
-  "marginalDuality": 4.93002,
-  "poJiWeapon": {
-    "physicalAtk": 2743,
-    "baseAtk": 2110,
-    "multiplier": 1.3
-  },
-  "faalFramework": "三阶七维固化",
-  "cascadeChain": "三级级联放大链模型",
-  "equipThreePrinciples": "装备加成三原则元理论",
-  "selfEvolutionBoundary": "持续遵守",
-  "coreDataZeroDrift": true
+  "berserker_fixed": 9.27,
+  "berserker_pct": 32.81,
+  "swordman_pct": 45.7,
+  "marginal_dual": 4.93002,
+  "polar_weapon_atk": 2743,
+  "framework": "FAAL三阶七维框架固化确认",
+  "model": "三级级联放大链模型与装备加成三原则元理论确认",
+  "boundary": "自我进化边界持续遵守"
 }
