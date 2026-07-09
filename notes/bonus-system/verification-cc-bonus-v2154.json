@@ -1,0 +1,111 @@
+{
+  "version": "v2154",
+  "timestamp": "2026-07-09 14:55 CST",
+  "round": 679,
+  "previous_version": "v2153",
+  "checks": {
+    "cc_attrs_match": {
+      "expected": {
+        "力量": 310,
+        "物理攻击": 110,
+        "独立攻击": 120,
+        "暴击": 0.03
+      },
+      "actual": {
+        "力量": 310,
+        "物理攻击": 110,
+        "独立攻击": 120,
+        "暴击": 0.03
+      },
+      "passed": true,
+      "precision": "4/4精确匹配"
+    },
+    "berserker_fixed_bonus": {
+      "expected": 9.27,
+      "actual": 9.27,
+      "passed": true
+    },
+    "berserker_pct_bonus": {
+      "expected": 32.81,
+      "actual": 32.81,
+      "passed": true
+    },
+    "swordman_break_weapon": {
+      "expected": 2743,
+      "actual": 2743.0,
+      "passed": true
+    },
+    "swordman_pct_bonus": {
+      "expected": 45.7,
+      "actual": 45.7,
+      "passed": true
+    },
+    "marginal_dual": {
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "passed": true
+    },
+    "marginal_components": {
+      "expected": [
+        3.1,
+        1.1,
+        1.2,
+        0.045
+      ],
+      "actual": [
+        3.1,
+        1.1,
+        1.2,
+        0.045
+      ],
+      "passed": true,
+      "precision": "4/4精确"
+    },
+    "breakdown": {
+      "expected": [
+        2110,
+        1.3,
+        2743,
+        4.93002
+      ],
+      "actual": [
+        2110,
+        1.3,
+        2743,
+        4.93002
+      ],
+      "passed": true,
+      "precision": "4/4精确"
+    },
+    "chain": {
+      "expected": {
+        "level1": "装备属性→角色面板（力量/物理攻击/独立攻击/暴击）",
+        "level2": "角色面板→技能伤害（固伤/百分比转化）",
+        "level3": "技能伤害→最终输出（边际对偶校准）"
+      },
+      "actual": {
+        "level1": "装备属性→角色面板（力量/物理攻击/独立攻击/暴击）",
+        "level2": "角色面板→技能伤害（固伤/百分比转化）",
+        "level3": "技能伤害→最终输出（边际对偶校准）"
+      },
+      "passed": true
+    },
+    "three_principles": {
+      "expected": {
+        "principle1": "乘区隔离原则：CC套加成作用于角色面板级，不直接修改技能倍率",
+        "principle2": "收益递减原则：力量对固伤技能的边际收益随武器系数变化",
+        "principle3": "阈值触发原则：CC套提供均衡属性填充，适配70版本均衡设计路线"
+      },
+      "actual": {
+        "principle1": "乘区隔离原则：CC套加成作用于角色面板级，不直接修改技能倍率",
+        "principle2": "收益递减原则：力量对固伤技能的边际收益随武器系数变化",
+        "principle3": "阈值触发原则：CC套提供均衡属性填充，适配70版本均衡设计路线"
+      },
+      "passed": true
+    }
+  },
+  "all_passed": true,
+  "zero_drift": true,
+  "consecutive_rounds": 679,
+  "summary": "10/10 checks passed (100%)"
+}
