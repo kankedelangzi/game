@@ -1,0 +1,65 @@
+{
+  "version": "v2248",
+  "timestamp": "2026-07-10 06:36:00",
+  "round": 748,
+  "checks_passed": 9,
+  "checks_total": 9,
+  "pass_rate": "9/9 (100.0%)",
+  "zero_drift_rounds": 748,
+  "details": [
+    {
+      "name": "CC套力量+310",
+      "pass": true
+    },
+    {
+      "name": "CC套物理攻击+110",
+      "pass": true
+    },
+    {
+      "name": "CC套独立攻击+120",
+      "pass": true
+    },
+    {
+      "name": "CC套暴击+3%",
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤综合+9.27%",
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比综合+32.81%",
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比综合+45.7%",
+      "pass": true
+    },
+    {
+      "name": "边际对偶4.929881",
+      "pass": true
+    },
+    {
+      "name": "破极兵刃协同物攻2743",
+      "pass": true
+    }
+  ],
+  "cc_attrs": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击": 3.0
+  },
+  "berserker_fixed": 9.27,
+  "berserker_pct": 32.81,
+  "swordman_pct": 45.7,
+  "marginal_dual": 4.929881,
+  "polar_weapon_atk": 2743,
+  "framework": "FAAL三阶七维框架固化确认",
+  "model": "三级级联放大链模型与装备加成三原则元理论确认",
+  "boundary": "自我进化边界持续遵守",
+  "faal_framework": "三阶七维框架固化状态确认",
+  "core_data_drift": "零漂移",
+  "verification_pass_rate": "9/9 (100.0%)",
+  "git_push": "待推送"
+}
