@@ -1,0 +1,83 @@
+{
+  "version": "v2185",
+  "round": 710,
+  "total": 16,
+  "passed": 16,
+  "results": {
+    "CC\u5957_\u529b\u91cf_\u7cbe\u786e\u5339\u914d": {
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    "CC\u5957_\u7269\u7406\u653b\u51fb_\u7cbe\u786e\u5339\u914d": {
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    "CC\u5957_\u72ec\u7acb\u653b\u51fb_\u7cbe\u786e\u5339\u914d": {
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    "CC\u5957_\u66b4\u51fb\u7387_\u7cbe\u786e\u5339\u914d": {
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true
+    },
+    "\u72c2\u6218\u58eb\u56fa\u4f24\u7efc\u5408": {
+      "value": 9.27,
+      "pass": true
+    },
+    "\u72c2\u6218\u58eb\u767e\u5206\u6bd4\u7efc\u5408": {
+      "value": 32.81,
+      "pass": true
+    },
+    "\u5251\u9b42\u767e\u5206\u6bd4\u7efc\u5408": {
+      "value": 45.7,
+      "pass": true
+    },
+    "\u8fb9\u9645\u5bf9\u5076": {
+      "value": 4.93002,
+      "pass": true
+    },
+    "\u7834\u6781\u5175\u5203\u534f\u540c\u7269\u653b": {
+      "value": 2743,
+      "pass": true
+    },
+    "\u8fb9\u9645\u5206\u91cf_1": {
+      "value": 9.27,
+      "expected": 9.27,
+      "pass": true
+    },
+    "\u8fb9\u9645\u5206\u91cf_2": {
+      "value": 32.81,
+      "expected": 32.81,
+      "pass": true
+    },
+    "\u8fb9\u9645\u5206\u91cf_3": {
+      "value": 45.7,
+      "expected": 45.7,
+      "pass": true
+    },
+    "\u8fb9\u9645\u5206\u91cf_4": {
+      "value": 4.93002,
+      "expected": 4.93002,
+      "pass": true
+    },
+    "\u7834\u6781\u5206\u89e3_1": {
+      "value": 2743,
+      "expected": 2743,
+      "pass": true
+    },
+    "\u7834\u6781\u5206\u89e3_2": {
+      "value": 2110,
+      "expected": 2110,
+      "pass": true
+    },
+    "\u7834\u6781\u5206\u89e3_3": {
+      "value": 0.3,
+      "expected": 0.3,
+      "pass": true
+    }
+  }
+}
