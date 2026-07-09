@@ -1,0 +1,104 @@
+{
+  "version": "v2252",
+  "timestamp": "2026-07-10T06:57:48.503163",
+  "round": 752,
+  "continuous_zero_drift": 752,
+  "drift_from": 1475,
+  "checks": [
+    {
+      "name": "CC力量",
+      "passed": true
+    },
+    {
+      "name": "CC物理攻击",
+      "passed": true
+    },
+    {
+      "name": "CC独立攻击",
+      "passed": true
+    },
+    {
+      "name": "CC暴击率",
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤综合加成",
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比综合加成",
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比综合加成",
+      "passed": true
+    },
+    {
+      "name": "边际对偶4.930020",
+      "passed": true
+    },
+    {
+      "name": "破极兵刃协同物攻2743",
+      "passed": true
+    },
+    {
+      "name": "边际分量M1_固伤边际",
+      "passed": true
+    },
+    {
+      "name": "边际分量M2_百分比边际",
+      "passed": true
+    },
+    {
+      "name": "边际分量M3_剑魂边际",
+      "passed": true
+    },
+    {
+      "name": "边际分量M4_边际对偶",
+      "passed": true
+    },
+    {
+      "name": "破极分解基础物攻",
+      "passed": true
+    },
+    {
+      "name": "破极分解破极比例",
+      "passed": true
+    },
+    {
+      "name": "破极分解协同物攻",
+      "passed": true
+    },
+    {
+      "name": "破极分解计算验证",
+      "passed": true
+    }
+  ],
+  "summary": "17/17 Python独立验算通过（100%）",
+  "cc_attrs": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": "3%"
+  },
+  "berserker": {
+    "固伤综合加成": 0.0927,
+    "百分比综合加成": 0.3281
+  },
+  "swordsmen": {
+    "百分比综合加成": 0.457
+  },
+  "faal_duality": 4.93002,
+  "poji_breakdown": {
+    "基础物攻": 2110,
+    "破极比例": 0.3,
+    "协同物攻": 2743,
+    "计算验证": "2110×1.3=2743"
+  },
+  "marginal": {
+    "M1_固伤边际": 0.0927,
+    "M2_百分比边际": 0.3281,
+    "M3_剑魂边际": 0.457,
+    "M4_边际对偶": 4.93002
+  }
+}
