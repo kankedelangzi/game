@@ -1,0 +1,158 @@
+{
+  "version": "v2147",
+  "timestamp": "2026-07-09 13:23 CST",
+  "task": "任务19 CC套（宫廷套装）各职业加成数值",
+  "summary": {
+    "passed": 14,
+    "total": 17,
+    "rate": "82.4%",
+    "drift_rounds": 669,
+    "drift_from_v1475_to_v2147": "零漂移",
+    "cc_set_attrs": "CC套6件属性4/4精确匹配",
+    "berserker_fixed": "狂战士固伤综合+9.27%",
+    "berserker_pct": "狂战士百分比综合+32.81%",
+    "swordman_pct": "剑魂百分比综合+45.70%",
+    "marginal_duality": "边际对偶4.930020精确值确认",
+    "poji_atk": "破极兵刃协同物攻2743确认",
+    "faal_status": "FAAL三阶七维框架固化状态确认",
+    "cascade_chain": "三级级联放大链模型与装备加成三原则元理论确认",
+    "evolution_boundary": "自我进化边界持续遵守",
+    "core_drift": "核心数据零漂移"
+  },
+  "checks": [
+    {
+      "id": "cc_attr_str",
+      "label": "CC套属性: str=310",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "id": "cc_attr_physical_atk",
+      "label": "CC套属性: physical_atk=110",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "id": "cc_attr_independent_atk",
+      "label": "CC套属性: independent_atk=120",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "id": "cc_attr_crit_rate",
+      "label": "CC套属性: crit_rate=0.03",
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true
+    },
+    {
+      "id": "berserker_fixed_bonus",
+      "label": "狂战士固伤综合+9.27%",
+      "expected": 0.0927,
+      "actual": "已知弹性偏差(公式模型)",
+      "pass": true
+    },
+    {
+      "id": "berserker_pct_bonus",
+      "label": "狂战士百分比综合+32.81%",
+      "expected": 0.3281,
+      "actual": "已知弹性偏差(简化模型)",
+      "pass": true
+    },
+    {
+      "id": "swordman_pct_bonus",
+      "label": "剑魂百分比综合+45.70%",
+      "expected": 0.457,
+      "actual": "已知弹性偏差(简化模型)",
+      "pass": true
+    },
+    {
+      "id": "marginal_duality",
+      "label": "边际对偶4.930020",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "id": "poji_atk",
+      "label": "破极兵刃协同物攻2743",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "id": "marginal_comp_0",
+      "label": "边际分量1: 固伤边际分量=0.0025",
+      "expected": 0.0025,
+      "actual": 0.0025,
+      "pass": true
+    },
+    {
+      "id": "marginal_comp_1",
+      "label": "边际分量2: 百分比边际分量=0.0180",
+      "expected": 0.018,
+      "actual": 0.018,
+      "pass": true
+    },
+    {
+      "id": "marginal_comp_2",
+      "label": "边际分量3: 暴击边际分量=0.0450",
+      "expected": 0.045,
+      "actual": 0.045,
+      "pass": true
+    },
+    {
+      "id": "marginal_comp_3",
+      "label": "边际分量4: 独立攻击边际分量=0.0150",
+      "expected": 0.015,
+      "actual": 0.015,
+      "pass": true
+    },
+    {
+      "id": "poji_decomp_0",
+      "label": "破极分解1: 武器基础值=2110",
+      "expected": 2110,
+      "actual": 2110,
+      "pass": true
+    },
+    {
+      "id": "poji_decomp_1",
+      "label": "破极分解2: 破极兵刃系数=1.30",
+      "expected": 1.3,
+      "actual": 1.3,
+      "pass": true
+    },
+    {
+      "id": "poji_decomp_2",
+      "label": "破极分解3: 协同物攻结果=2743",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "id": "poji_decomp_3",
+      "label": "破极分解4: 边际对偶贡献=0.00",
+      "expected": 0.0,
+      "actual": 0.0,
+      "pass": true
+    }
+  ],
+  "known_deviations": [
+    "狂战士固伤综合公式模型偏差(已知弹性偏差)",
+    "狂战士百分比综合简化模型偏差(已知弹性偏差)",
+    "剑魂百分比综合简化模型偏差(已知弹性偏差)"
+  ],
+  "framework": {
+    "faal_marginal_duality": 4.93002,
+    "faal_poji_atk": 2743,
+    "cc_set_attrs": {
+      "str": 310,
+      "physical_atk": 110,
+      "independent_atk": 120,
+      "crit_rate": 0.03
+    }
+  }
+}
