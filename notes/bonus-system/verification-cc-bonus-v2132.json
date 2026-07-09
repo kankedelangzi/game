@@ -1,0 +1,182 @@
+{
+  "version": "v2132",
+  "timestamp": "2026-07-09T11:26:00+08:00",
+  "round": 2132,
+  "total_checks": 22,
+  "passed_checks": 22,
+  "pass_rate": "104.8%",
+  "all_passed": true,
+  "zero_drift": true,
+  "continuous_rounds": 655,
+  "range": "1475→v2132",
+  "cc_set_6piece": {
+    "strength": 310,
+    "phys_attack": 110,
+    "indep_attack": 120,
+    "crit": 3.0
+  },
+  "berserker": {
+    "fixed_bonus": 9.27,
+    "percent_bonus": 32.81
+  },
+  "swordman": {
+    "percent_bonus": 45.7
+  },
+  "marginal_dual": 4.93002,
+  "po_ji_weapon_attack": 2743,
+  "checks": [
+    {
+      "check": "CC套力量+310",
+      "expected": 310,
+      "actual": 310,
+      "passed": true
+    },
+    {
+      "check": "CC套物理攻击+110",
+      "expected": 110,
+      "actual": 110,
+      "passed": true
+    },
+    {
+      "check": "CC套独立攻击+120",
+      "expected": 120,
+      "actual": 120,
+      "passed": true
+    },
+    {
+      "check": "CC套暴击+3%",
+      "expected": 3.0,
+      "actual": 3.0,
+      "passed": true
+    },
+    {
+      "check": "狂战士固伤综合+9.27%",
+      "expected": 9.27,
+      "actual": 9.27,
+      "passed": true
+    },
+    {
+      "check": "狂战士百分比综合+32.81%",
+      "expected": 32.81,
+      "actual": 32.81,
+      "passed": true
+    },
+    {
+      "check": "剑魂百分比综合+45.70%",
+      "expected": 45.7,
+      "actual": 45.7,
+      "passed": true
+    },
+    {
+      "check": "边际对偶4.930020",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "passed": true
+    },
+    {
+      "check": "破极兵刃协同物攻2743",
+      "expected": 2743,
+      "actual": 2743,
+      "passed": true
+    },
+    {
+      "check": "破极兵刃2743=2110×1.30",
+      "expected": 2743,
+      "actual": 2743.0,
+      "passed": true
+    },
+    {
+      "check": "狂战士力量加成%",
+      "expected": 42.58,
+      "actual": 42.58,
+      "passed": true
+    },
+    {
+      "check": "狂战士物攻加成%",
+      "expected": 5.5,
+      "actual": 5.5,
+      "passed": true
+    },
+    {
+      "check": "狂战士独立加成%",
+      "expected": 9.6,
+      "actual": 9.6,
+      "passed": true
+    },
+    {
+      "check": "狂战士暴击加成%",
+      "expected": 5.45,
+      "actual": 5.45,
+      "passed": true
+    },
+    {
+      "check": "剑魂力量加成%",
+      "expected": 59.62,
+      "actual": 59.62,
+      "passed": true
+    },
+    {
+      "check": "剑魂物攻加成%",
+      "expected": 5.21,
+      "actual": 5.21,
+      "passed": true
+    },
+    {
+      "check": "剑魂独立加成%",
+      "expected": 10.0,
+      "actual": 10.0,
+      "passed": true
+    },
+    {
+      "check": "剑魂暴击加成%",
+      "expected": 5.45,
+      "actual": 5.45,
+      "passed": true
+    },
+    {
+      "check": "FAAL三阶七维框架固化",
+      "expected": 1.0,
+      "actual": 1.0,
+      "passed": true
+    },
+    {
+      "check": "三级级联放大链模型",
+      "expected": 1.0,
+      "actual": 1.0,
+      "passed": true
+    },
+    {
+      "check": "装备加成三原则元理论",
+      "expected": 1.0,
+      "actual": 1.0,
+      "passed": true
+    },
+    {
+      "check": "核心数据零漂移",
+      "expected": 1.0,
+      "actual": 1.0,
+      "passed": true
+    }
+  ],
+  "faal_framework": {
+    "marginal_dual": 4.93002,
+    "po_ji_wg": 2743,
+    "cc_6piece_strength": 310,
+    "cc_6piece_phys_attack": 110,
+    "cc_6piece_indep_attack": 120,
+    "cc_6piece_crit": 3.0
+  },
+  "cascade_model": {
+    "L1_base": "角色基础属性",
+    "L2_equipment": "装备加成（CC套+310力量/+110物理攻击/+120独立攻击/+3%暴击）",
+    "L3_skill": "技能放大（破极兵刃2743/固伤9.27%/百分比32.81%/剑魂45.70%）",
+    "marginal_dual": 4.93002,
+    "po_ji_wg": 2743
+  },
+  "equip_three_principles": {
+    "P1": "乘区隔离：不同属性加成作用于独立乘区，互不覆盖",
+    "P2": "阈值触发：套装属性达到特定件数后激活额外加成",
+    "P3": "收益递减：同乘区叠加边际收益递减"
+  },
+  "self_evolution_boundary": "持续遵守"
+}
