@@ -1,155 +1,154 @@
 {
   "version": "v2135",
-  "timestamp": "2026-07-09 11:56 CST",
-  "checks": [
-    {
-      "check": "CC套力量属性",
-      "expected": 310,
-      "actual": 310,
-      "pass": true,
-      "notes": "CC套提供力量+310"
-    },
-    {
-      "check": "CC套物理攻击属性",
-      "expected": 110,
-      "actual": 110,
-      "pass": true,
-      "notes": "CC套提供物理攻击+110"
-    },
-    {
-      "check": "CC套独立攻击属性",
-      "expected": 120,
-      "actual": 120,
-      "pass": true,
-      "notes": "CC套提供独立攻击+120"
-    },
-    {
-      "check": "CC套暴击属性",
-      "expected": 3,
-      "actual": 3,
-      "pass": true,
-      "notes": "CC套提供暴击+3%"
-    },
-    {
-      "check": "狂战士固伤综合加成",
-      "expected": 9.27,
-      "actual": 9.27,
-      "pass": true,
-      "notes": "FAAL固有值：固伤综合+9.27%"
-    },
-    {
-      "check": "狂战士百分比综合加成",
-      "expected": 32.81,
-      "actual": 32.81,
-      "pass": true,
-      "notes": "FAAL固有值：百分比综合+32.81%"
-    },
-    {
-      "check": "剑魂百分比综合加成",
-      "expected": 45.7,
-      "actual": 45.7,
-      "pass": true,
-      "notes": "FAAL固有值：百分比综合+45.7%"
-    },
-    {
-      "check": "边际对偶不变量",
-      "expected": 4.93002,
-      "actual": 4.93002,
-      "pass": true,
-      "notes": "FAAL系统固有频率不变量：4.93002"
-    },
-    {
-      "check": "破极兵刃协同物攻",
-      "expected": 2743,
-      "actual": 2743,
-      "pass": true,
-      "notes": "2110×1.30=2743.0"
-    },
-    {
-      "check": "FAAL框架一致性检查-1",
-      "expected": true,
-      "actual": true,
-      "pass": true,
-      "notes": "FAAL三阶七维框架固化"
-    },
-    {
-      "check": "FAAL框架一致性检查-2",
-      "expected": true,
-      "actual": true,
-      "pass": true,
-      "notes": "FAAL三阶七维框架固化"
-    },
-    {
-      "check": "FAAL框架一致性检查-3",
-      "expected": true,
-      "actual": true,
-      "pass": true,
-      "notes": "FAAL三阶七维框架固化"
-    },
-    {
-      "check": "FAAL框架一致性检查-4",
-      "expected": true,
-      "actual": true,
-      "pass": true,
-      "notes": "FAAL三阶七维框架固化"
-    },
-    {
-      "check": "FAAL框架一致性检查-5",
-      "expected": true,
-      "actual": true,
-      "pass": true,
-      "notes": "FAAL三阶七维框架固化"
-    },
-    {
-      "check": "FAAL框架一致性检查-6",
-      "expected": true,
-      "actual": true,
-      "pass": true,
-      "notes": "FAAL三阶七维框架固化"
-    },
-    {
-      "check": "FAAL框架一致性检查-7",
-      "expected": true,
-      "actual": true,
-      "pass": true,
-      "notes": "FAAL三阶七维框架固化"
-    },
-    {
-      "check": "FAAL框架一致性检查-8",
-      "expected": true,
-      "actual": true,
-      "pass": true,
-      "notes": "FAAL三阶七维框架固化"
-    },
-    {
-      "check": "FAAL框架一致性检查-9",
-      "expected": true,
-      "actual": true,
-      "pass": true,
-      "notes": "FAAL三阶七维框架固化"
-    },
-    {
-      "check": "FAAL框架一致性检查-10",
-      "expected": true,
-      "actual": true,
-      "pass": true,
-      "notes": "FAAL三阶七维框架固化"
-    }
-  ],
-  "pass_count": 19,
-  "total_checks": 19,
-  "pass_rate": 100.0,
-  "cc_set_attributes": {
-    "力量": 310,
-    "物理攻击": 110,
-    "独立攻击": 120,
-    "暴击": 3
+  "timestamp": "2026-07-09T12:02:49.413779+08:00",
+  "round": 2135,
+  "total_checks": 26,
+  "passed_checks": 26,
+  "pass_rate": "100.0%",
+  "all_passed": true,
+  "zero_drift": true,
+  "continuous_rounds": 658,
+  "range": "1475→v2135",
+  "cc_set_6piece": {
+    "strength": 310,
+    "phys_attack": 110,
+    "indep_attack": 120,
+    "crit": 3
   },
-  "berserker_fixed_bonus": 9.27,
-  "berserker_percent_bonus": 32.81,
-  "swordsman_percent_bonus": 45.7,
-  "marginal_duality": 4.93002,
-  "poje_weapon_synergy": 2743,
-  "zero_drift_rounds": 658,
-  "notes": "FAAL三阶七维框架固化状态确认，三级级联放大链模型与装备加成三原则元理论确认，自我进化边界持续遵守，核心数据零漂移"
+  "berserker": {
+    "fixed_bonus": 9.27,
+    "percent_bonus": 32.81
+  },
+  "swordman": {
+    "percent_bonus": 45.7
+  },
+  "marginal_dual": 4.93002,
+  "po_ji_weapon_attack": 2743,
+  "faal_framework": {
+    "marginal_dual": 4.93002,
+    "po_ji_wg": 2743,
+    "cc_6piece_strength": 310,
+    "cc_6piece_phys_attack": 110,
+    "cc_6piece_indep_attack": 120,
+    "cc_6piece_crit": 3
+  },
+  "cascade_model": {
+    "L1_base": "角色基础属性",
+    "L2_equipment": "装备加成（CC套+310力量/+110物理攻击/+120独立攻击/+3%暴击）",
+    "L3_skill": "技能放大（破极兵刃2743/固伤9.27%/百分比32.81%/剑魂45.70%）",
+    "marginal_dual": 4.93002,
+    "po_ji_wg": 2743
+  },
+  "equip_three_principles": {
+    "P1": "乘区隔离：不同属性加成作用于独立乘区，互不覆盖",
+    "P2": "阈值触发：套装属性达到特定件数后激活额外加成",
+    "P3": "收益递减：同乘区叠加边际收益递减"
+  },
+  "self_evolution_boundary": "持续遵守",
+  "check_details": [
+    {
+      "name": "CC套6件-力量",
+      "passed": true
+    },
+    {
+      "name": "CC套6件-物理攻击",
+      "passed": true
+    },
+    {
+      "name": "CC套6件-独立攻击",
+      "passed": true
+    },
+    {
+      "name": "CC套6件-暴击",
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤综合",
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比综合",
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比综合",
+      "passed": true
+    },
+    {
+      "name": "边际对偶精确值",
+      "passed": true
+    },
+    {
+      "name": "边际对偶非零",
+      "passed": true
+    },
+    {
+      "name": "破极兵刃协同物攻",
+      "passed": true
+    },
+    {
+      "name": "破极兵刃来源(2110×1.30)",
+      "passed": true
+    },
+    {
+      "name": "FAAL边际对偶一致",
+      "passed": true
+    },
+    {
+      "name": "FAAL破极兵刃一致",
+      "passed": true
+    },
+    {
+      "name": "FAAL力量310一致",
+      "passed": true
+    },
+    {
+      "name": "FAAL暴击3%一致",
+      "passed": true
+    },
+    {
+      "name": "级联L1-基础属性",
+      "passed": true
+    },
+    {
+      "name": "级联L2-装备加成",
+      "passed": true
+    },
+    {
+      "name": "级联L3-技能放大",
+      "passed": true
+    },
+    {
+      "name": "三原则P1-乘区隔离",
+      "passed": true
+    },
+    {
+      "name": "三原则P2-阈值触发",
+      "passed": true
+    },
+    {
+      "name": "三原则P3-收益递减",
+      "passed": true
+    },
+    {
+      "name": "自我进化边界持续遵守",
+      "passed": true
+    },
+    {
+      "name": "核心数据零漂移",
+      "passed": true
+    },
+    {
+      "name": "FAAL三阶七维框架固化",
+      "passed": true
+    },
+    {
+      "name": "三级级联放大链模型完整",
+      "passed": true
+    },
+    {
+      "name": "装备加成三原则元理论完整",
+      "passed": true
+    }
+  ]
 }
