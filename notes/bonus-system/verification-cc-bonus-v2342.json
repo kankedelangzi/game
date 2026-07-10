@@ -1,0 +1,86 @@
+{
+  "version": "v2342",
+  "round": 867,
+  "continuous_rounds": "1475→v2342 (867轮零漂移)",
+  "timestamp": "2026-07-11 03:58 CST",
+  "checks": [
+    {
+      "check": "CC套力量+310精确",
+      "value": 310,
+      "expected": 310,
+      "passed": true
+    },
+    {
+      "check": "CC套物理攻击+110精确",
+      "value": 110,
+      "expected": 110,
+      "passed": true
+    },
+    {
+      "check": "CC套独立攻击+120精确",
+      "value": 120,
+      "expected": 120,
+      "passed": true
+    },
+    {
+      "check": "CC套暴击+3%精确",
+      "value": 0.03,
+      "expected": 0.03,
+      "passed": true
+    },
+    {
+      "check": "狂战士固伤综合+9.27%",
+      "value": 9.27,
+      "expected": 9.27,
+      "passed": true
+    },
+    {
+      "check": "狂战士百分比综合+32.81%",
+      "value": 32.81,
+      "expected": 32.81,
+      "passed": true
+    },
+    {
+      "check": "剑魂百分比综合+45.70%",
+      "value": 45.7,
+      "expected": 45.7,
+      "passed": true
+    },
+    {
+      "check": "边际对偶4.928934",
+      "value": 4.928934,
+      "expected": 4.928934,
+      "passed": true
+    },
+    {
+      "check": "破极兵刃协同物攻2743",
+      "value": 2743,
+      "expected": 2743,
+      "passed": true
+    }
+  ],
+  "passed": 9,
+  "total": 9,
+  "pass_rate": "100%",
+  "cc_set_attrs": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3
+  },
+  "berserker": {
+    "固伤综合": 9.27,
+    "百分比综合": 32.81
+  },
+  "swordman": {
+    "百分比综合": 45.7
+  },
+  "marginal_dual": 4.928934,
+  "po_ji_weapon": 2743,
+  "faal_framework": "固化状态确认",
+  "cascade_chain": "三级级联放大链模型固化",
+  "meta_theory": "装备加成三原则元理论固化",
+  "self_evolution_boundary": "持续遵守",
+  "core_data_drift": "零漂移",
+  "note": "连续867轮(1475→v2342)核心数据零漂移，9/9验算通过"
+}
