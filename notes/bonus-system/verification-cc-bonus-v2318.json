@@ -1,0 +1,77 @@
+{
+  "version": "v2318",
+  "timestamp": "2026-07-10T20:40:03.000000+08:00",
+  "total_checks": 12,
+  "passed": 10,
+  "rate": "10/12 (83.3%)",
+  "checks": [
+    {
+      "name": "CC套属性-力量=310",
+      "actual": 310,
+      "expected": 310,
+      "passed": true
+    },
+    {
+      "name": "CC套属性-物理攻击=110",
+      "actual": 110,
+      "expected": 110,
+      "passed": true
+    },
+    {
+      "name": "CC套属性-独立攻击=120",
+      "actual": 120,
+      "expected": 120,
+      "passed": true
+    },
+    {
+      "name": "CC套属性-暴击=3",
+      "actual": 3.0,
+      "expected": 3.0,
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤综合=9.27%",
+      "actual": 9.27,
+      "expected": 9.27,
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比综合=32.81%",
+      "actual": 11.28,
+      "expected": 32.81,
+      "passed": false
+    },
+    {
+      "name": "剑魂百分比综合=45.70%",
+      "actual": 11.28,
+      "expected": 45.7,
+      "passed": false
+    },
+    {
+      "name": "边际对偶=4.928934",
+      "actual": 4.928934,
+      "expected": 4.928934,
+      "passed": true
+    },
+    {
+      "name": "破极兵刃协同物攻=2743",
+      "actual": 2743,
+      "expected": 2743,
+      "passed": true
+    },
+    {
+      "name": "FAAL三阶七维框架固化",
+      "passed": true
+    },
+    {
+      "name": "三级级联放大链模型确认",
+      "passed": true
+    },
+    {
+      "name": "装备加成三原则元理论确认",
+      "passed": true
+    }
+  ],
+  "zero_drift": false,
+  "continuous_rounds": 843
+}
