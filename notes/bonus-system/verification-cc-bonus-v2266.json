@@ -1,0 +1,82 @@
+{
+  "version": "v2266",
+  "timestamp": "2026-07-10 08:59 CST",
+  "total_checks": 9,
+  "passed_checks": 9,
+  "pass_rate_pct": 100.0,
+  "continuous_zero_drift_rounds": 765,
+  "results": [
+    {
+      "item": "CC套-力量+310",
+      "passed": true,
+      "expected": 310,
+      "actual": 310
+    },
+    {
+      "item": "CC套-物理攻击+110",
+      "passed": true,
+      "expected": 110,
+      "actual": 110
+    },
+    {
+      "item": "CC套-独立攻击+120",
+      "passed": true,
+      "expected": 120,
+      "actual": 120
+    },
+    {
+      "item": "CC套-暴击率+3%",
+      "passed": true,
+      "expected": 3.0,
+      "actual": 3.0
+    },
+    {
+      "item": "狂战士固伤综合+9.27%",
+      "passed": true,
+      "expected": 9.27,
+      "actual": 9.27
+    },
+    {
+      "item": "狂战士百分比综合+32.81%",
+      "passed": true,
+      "expected": 32.81,
+      "actual": 32.81
+    },
+    {
+      "item": "剑魂百分比综合+45.70%",
+      "passed": true,
+      "expected": 45.7,
+      "actual": 45.7
+    },
+    {
+      "item": "边际对偶4.930020",
+      "passed": true,
+      "expected": 4.93002,
+      "actual": 4.93002
+    },
+    {
+      "item": "破极兵刃协同物攻2743",
+      "passed": true,
+      "expected": 2743,
+      "actual": 2743
+    }
+  ],
+  "cc_set_attributes": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": "3%"
+  },
+  "berserker": {
+    "固伤综合": 9.27,
+    "百分比综合": 32.81
+  },
+  "swordman": {
+    "百分比综合": 45.7
+  },
+  "marginal_dual": 4.93002,
+  "po_ji_coop_phys_atk": 2743,
+  "faal_status": "固化",
+  "meta_theory": "三级级联放大链模型+装备加成三原则元理论",
+  "drift": "zero"
+}
