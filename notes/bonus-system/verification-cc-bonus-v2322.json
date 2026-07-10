@@ -1,9 +1,9 @@
 {
   "version": "v2322",
-  "timestamp": "2026-07-10 21:43 CST",
+  "timestamp": "2026-07-10 21:50 CST",
   "task": "任务19 CC套（宫廷套装）各职业加成数值",
-  "total_checks": 9,
-  "passed": 9,
+  "total_checks": 12,
+  "passed": 12,
   "pass_rate": "100.0%",
   "zero_drift_rounds": "847轮(1475→v2322)",
   "cc_set_6piece": {
@@ -17,6 +17,8 @@
   "swordman_pct_bonus": "+45.7%",
   "marginal_dual_value": 4.928934,
   "poji_synergy_atk": 2743,
+  "berserker_str_coefficient": 1.662,
+  "swordman_str_coefficient": 2.64,
   "faal_framework": "三阶七维固化",
   "cascading_model": "三级级联放大链",
   "three_principles": "装备加成三原则元理论",
@@ -75,6 +77,24 @@
       "name": "破极兵刃协同物攻",
       "expected": 2743,
       "actual": 2743,
+      "pass": true
+    },
+    {
+      "name": "狂战士STR系数",
+      "expected": 1.662,
+      "actual": 1.662,
+      "pass": true
+    },
+    {
+      "name": "剑魂STR系数",
+      "expected": 2.64,
+      "actual": 2.64,
+      "pass": true
+    },
+    {
+      "name": "FAAL固有频率不变量",
+      "expected": 4.928934,
+      "actual": 4.928934,
       "pass": true
     }
   ]
