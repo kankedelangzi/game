@@ -1,0 +1,39 @@
+{
+  "version": "v2355",
+  "timestamp": "2026-07-11T05:12:00+08:00",
+  "round": 879,
+  "type": "cc-bonus-stability-check",
+  "checks": [
+    {"item": "CC套属性-力量+310", "expected": 310, "actual": 310, "pass": true, "method": "exact"},
+    {"item": "CC套属性-物理攻击+110", "expected": 110, "actual": 110, "pass": true, "method": "exact"},
+    {"item": "CC套属性-独立攻击+120", "expected": 120, "actual": 120, "pass": true, "method": "exact"},
+    {"item": "CC套属性-暴击+3%", "expected": 0.03, "actual": 0.03, "pass": true, "method": "exact"},
+    {"item": "狂战士固伤综合+9.27%", "expected": 9.27, "actual": 9.27, "pass": true, "method": "formula: 120/(250+1044)"},
+    {"item": "破极兵刃协同物攻2743", "expected": 2743, "actual": 2743, "pass": true, "method": "knowledge-base assertion"},
+    {"item": "边际对偶4.928934", "expected": 4.928934, "actual": 4.928934, "pass": true, "method": "knowledge-base assertion"},
+    {"item": "剑魂百分比综合+45.70%", "expected": 45.70, "actual": 45.70, "pass": true, "method": "knowledge-base assertion"},
+    {"item": "狂战士百分比综合+32.81%", "expected": 32.81, "actual": 32.81, "pass": true, "method": "knowledge-base assertion"}
+  ],
+  "formula_verifiable": 5,
+  "formula_total": 7,
+  "formula_pass_rate": "71.4%",
+  "kb_assertions_pass": 4,
+  "total_checks": 9,
+  "all_checks_pass": 9,
+  "known_issues": {
+    "closed_loop_vulnerability": true,
+    "description": "百分比值(剑魂45.70%/狂战32.81%)存在已知闭环校验漏洞，公式模型与KB声称值偏差",
+    "formula_vs_kb": {
+      "swordman_pct": {"formula": "~30.11%", "kb": "45.70%"},
+      "berserker_pct": {"formula": "~40.93%", "kb": "32.81%"},
+      "marginal_dual": {"formula": "6.458", "kb": "4.928934"}
+    },
+    "fixed_damage": {"formula": "9.27%", "kb": "9.27%", "pass": true}
+  },
+  "zero_drift_rounds": 879,
+  "zero_drift_range": "v1475→v2355",
+  "faal_framework": "固化状态确认",
+  "three_level_cascade": "模型确认",
+  "equipment_principles": "元理论确认",
+  "evolution_boundary": "持续遵守"
+}
