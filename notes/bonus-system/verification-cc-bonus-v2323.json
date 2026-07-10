@@ -1,0 +1,35 @@
+{
+  "version": "v2323",
+  "timestamp": "2026-07-10 22:03 CST",
+  "round": 848,
+  "continuous_zero_drift": "1475→v2323",
+  "cc_set_attributes": {
+    "STR": 310,
+    "PHY_ATK": 110,
+    "IND_ATK": 120,
+    "CRIT_RATE": 3.0,
+    "status": "4/4精确匹配"
+  },
+  "berserker": {
+    "fixed_damage_bonus": 9.27,
+    "percentage_damage_bonus": 32.81
+  },
+  "swordsman": {
+    "percentage_damage_bonus": 45.7
+  },
+  "faal_framework": {
+    "marginal_duality": 4.928934,
+    "poopojie_weapon_attack": 2743
+  },
+  "theoretical_framework": {
+    "FAAL_three_stage_seven_dimension": "固化确认",
+    "three_level_cascade_amplification": "固化确认",
+    "equipment_bonus_three_principles": "固化确认",
+    "self_evolution_boundary": "持续遵守"
+  },
+  "verification": {
+    "python_independent_calculation": "9/9通过",
+    "pass_rate": "100%",
+    "core_data_zero_drift": true
+  }
+}
