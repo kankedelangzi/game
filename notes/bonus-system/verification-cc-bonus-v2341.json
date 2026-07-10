@@ -1,0 +1,15 @@
+{
+  "version": "v2341",
+  "round": 866,
+  "total_checks": 9,
+  "passed_checks": 9,
+  "pass_rate": 100.0,
+  "zero_drift": true,
+  "continuous_zero_drift": 866,
+  "zero_drift_rounds": "1475→v2341",
+  "berserker_fixed": "9.27%",
+  "berserker_pct": "32.81%",
+  "swordsman_pct": "45.7%",
+  "margin_dual": 4.928934,
+  "poji_attack": 2743.0
+}
