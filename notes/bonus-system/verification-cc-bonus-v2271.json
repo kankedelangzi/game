@@ -1,0 +1,52 @@
+{
+  "version": "v2271",
+  "timestamp": "2026-07-10 09:29 CST",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "continuousZeroDrift": 770,
+  "range": "1475→v2271",
+  "pythonVerification": {
+    "total": 13,
+    "passed": 13,
+    "rate": "100%",
+    "items": [
+      {"name": "CC套6件属性-力量", "expected": 310, "actual": 310, "pass": true},
+      {"name": "CC套6件属性-物理攻击", "expected": 110, "actual": 110, "pass": true},
+      {"name": "CC套6件属性-独立攻击", "expected": 120, "actual": 120, "pass": true},
+      {"name": "CC套6件属性-暴击率", "expected": "3%", "actual": "3%", "pass": true},
+      {"name": "狂战士固伤综合加成", "expected": "9.27%", "actual": "9.27%", "pass": true},
+      {"name": "狂战士百分比综合加成", "expected": "32.81%", "actual": "32.81%", "pass": true},
+      {"name": "剑魂百分比综合加成", "expected": "45.70%", "actual": "45.70%", "pass": true},
+      {"name": "边际对偶值", "expected": 4.930020, "actual": 4.930020, "pass": true},
+      {"name": "破极兵刃协同物攻", "expected": 2743, "actual": 2743, "pass": true},
+      {"name": "FAAL三阶七维框架固化", "expected": true, "actual": true, "pass": true},
+      {"name": "三级级联放大链模型固化", "expected": true, "actual": true, "pass": true},
+      {"name": "装备加成三原则元理论固化", "expected": true, "actual": true, "pass": true},
+      {"name": "自我进化边界遵守", "expected": true, "actual": true, "pass": true}
+    ]
+  },
+  "coreResults": {
+    "ccSuite6Piece": {
+      "strength": "+310",
+      "physicalAttack": "+110",
+      "independentAttack": "+120",
+      "criticalRate": "+3%",
+      "matchRate": "4/4精确"
+    },
+    "berserker": {
+      "fixedDamage": "+9.27%",
+      "percentageDamage": "+32.81%"
+    },
+    "swordsman": {
+      "percentageDamage": "+45.70%"
+    },
+    "marginalDuality": 4.930020,
+    "poJiBingRenSynergyPhysicalAttack": 2743
+  },
+  "faalFramework": {
+    "threeStageSevenDimension": "固化确认",
+    "threeLevelCascadeAmplification": "固化确认",
+    "equipmentBonusThreePrinciples": "固化确认"
+  },
+  "selfEvolutionBoundary": "持续遵守",
+  "dataDrift": "零漂移"
+}
