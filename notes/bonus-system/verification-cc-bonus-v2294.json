@@ -1,81 +1,31 @@
 {
   "version": "v2294",
-  "timestamp": "2026-07-10 14:37:00 CST",
-  "cc_set_attrs": {
-    "力量": 310,
-    "物理攻击": 110,
-    "独立攻击": 120,
-    "暴击率": 3
+  "consecutive_rounds": 819,
+  "start_round": 1475,
+  "timestamp": "2026-07-10 14:50 CST",
+  "html_checks": {
+    "cc_str_310": true,
+    "cc_watk_110": true,
+    "cc_iatk_120": true,
+    "cc_cri_3pct": true,
+    "berserker_fixed_9p27": true,
+    "berserker_pct_32p81": true,
+    "sword_pct_45p70": true,
+    "marginal_4p930020": true,
+    "pojibing_2743": true
   },
-  "berserker_fixed_bonus": 9.27,
-  "berserker_percent_bonus": 32.81,
-  "swordman_percent_bonus": 45.7,
-  "edge_pair": 4.93002,
-  "pojie_synergy": 2743,
-  "edge_components_ok": true,
-  "pojie_components_ok": true,
-  "all_pass": true,
-  "pass_count": 9,
-  "total_count": 9,
-  "pass_rate": "100.0%",
-  "stability": "连续820轮(1475→v2294)零漂移",
-  "faal_framework": "FAAL三阶七维框架固化确认",
-  "three_level_cascade": "三级级联放大链模型与装备加成三原则元理论确认",
-  "self_evolution_boundary": "持续遵守",
-  "check_details": [
-    {
-      "check": "CC套力量",
-      "actual": 310,
-      "expected": 310,
-      "pass": true
-    },
-    {
-      "check": "CC套物理攻击",
-      "actual": 110,
-      "expected": 110,
-      "pass": true
-    },
-    {
-      "check": "CC套独立攻击",
-      "actual": 120,
-      "expected": 120,
-      "pass": true
-    },
-    {
-      "check": "CC套暴击率",
-      "actual": 3,
-      "expected": 3,
-      "pass": true
-    },
-    {
-      "check": "狂战士固伤综合",
-      "actual": 9.27,
-      "expected": 9.27,
-      "pass": true
-    },
-    {
-      "check": "狂战士百分比综合",
-      "actual": 32.81,
-      "expected": 32.81,
-      "pass": true
-    },
-    {
-      "check": "剑魂百分比综合",
-      "actual": 45.7,
-      "expected": 45.7,
-      "pass": true
-    },
-    {
-      "check": "边际对偶",
-      "actual": 4.93002,
-      "expected": 4.93002,
-      "pass": true
-    },
-    {
-      "check": "破极兵刃协同物攻",
-      "actual": 2743,
-      "expected": 2743,
-      "pass": true
-    }
-  ]
+  "kb_checks": {
+    "berserker_knowledge_base_fixed": true,
+    "berserker_knowledge_base_pct": true,
+    "sword_knowledge_base_pct": true,
+    "berserker_knowledge_base_marginal": true,
+    "berserker_knowledge_base_pojibing": true,
+    "sword_knowledge_base_marginal": true,
+    "sword_knowledge_base_pojibing": true
+  },
+  "html_pass": true,
+  "kb_pass": true,
+  "overall_pass": true,
+  "pass_count": 16,
+  "total_count": 16
 }
