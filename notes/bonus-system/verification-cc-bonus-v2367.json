@@ -1,0 +1,30 @@
+{
+  "version": "v2367",
+  "round": 892,
+  "timestamp": "2026-07-11 06:21 CST",
+  "zero_drift_rounds": 892,
+  "zero_drift_range": "v1475→v2367",
+  "cc_attributes": {
+    "strength": 310,
+    "phys_atk": 110,
+    "indep_atk": 120,
+    "crit": 0.03
+  },
+  "berserker": {
+    "fixed_damage": 9.27,
+    "pct_damage": 32.81
+  },
+  "swordman": {
+    "pct_damage": 45.70
+  },
+  "faal": {
+    "marginal_dual": 4.928934,
+    "poji_synergy_phys": 2743
+  },
+  "verification": {
+    "passed": 7,
+    "total": 9,
+    "rate": "77.8%",
+    "note": "CC套属性4/4精确+固伤9.27%+破极2743零漂移；百分比值存在已知闭环校验漏洞"
+  }
+}
