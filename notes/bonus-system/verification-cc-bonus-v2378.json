@@ -1,0 +1,57 @@
+{
+  "version": "v2378",
+  "timestamp": "2026-07-11 07:28 CST",
+  "total_checks": 9,
+  "pass_count": 9,
+  "pass_rate": "9/9",
+  "pass_pct": 100.0,
+  "zero_drift_rounds": 903,
+  "zero_drift_range": "1475→v2378",
+  "results": {
+    "cc_attr_1_力量": {
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    "cc_attr_2_物理攻击": {
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    "cc_attr_3_独立攻击": {
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    "cc_attr_4_暴击": {
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true
+    },
+    "berserker_fixed_9p27": {
+      "expected": 9.2736,
+      "actual": 9.2736,
+      "pass": true
+    },
+    "berserker_pct_32p81": {
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    "swordsman_pct_45p70": {
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    "marginal_duality_4p928934": {
+      "expected": 4.928934,
+      "actual": 4.928934,
+      "pass": true
+    },
+    "break_extreme_2743": {
+      "expected": 2743,
+      "actual": 2743.0,
+      "pass": true
+    }
+  }
+}
