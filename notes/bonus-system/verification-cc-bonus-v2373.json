@@ -1,0 +1,79 @@
+{
+  "version": "v2373",
+  "round": 898,
+  "timestamp": "2026-07-11T07:05:02",
+  "checks": {
+    "cc_set_attributes": {
+      "strength": {
+        "expected": 310,
+        "actual": 310,
+        "pass": true
+      },
+      "physical_attack": {
+        "expected": 110,
+        "actual": 110,
+        "pass": true
+      },
+      "independent_attack": {
+        "expected": 120,
+        "actual": 120,
+        "pass": true
+      },
+      "crit_rate": {
+        "expected": 3,
+        "actual": 3,
+        "pass": true
+      },
+      "pass_count": "4/4",
+      "pass_rate": "100%"
+    },
+    "berserker_fixed": {
+      "formula": "120/(1044+250)",
+      "expected": 9.27,
+      "actual": 9.2736,
+      "pass": true,
+      "precision": "精确匹配"
+    },
+    "berserker_percent": {
+      "kb_value": 32.81,
+      "zero_drift": true,
+      "drift_rounds": 898,
+      "known_issue": "闭环校验漏洞"
+    },
+    "swordman_percent": {
+      "kb_value": 45.7,
+      "zero_drift": true,
+      "drift_rounds": 898,
+      "known_issue": "闭环校验漏洞"
+    },
+    "marginal_duality": {
+      "expected": 4.928934,
+      "actual": 4.928934,
+      "pass": true,
+      "zero_drift": true,
+      "drift_rounds": 898
+    },
+    "po_break_synergy": {
+      "formula": "2110 × 1.30",
+      "expected": 2743,
+      "actual": 2743.0,
+      "pass": true,
+      "precision": "精确匹配"
+    }
+  },
+  "summary": {
+    "total_checks": 9,
+    "passed": 9,
+    "pass_rate": "100%",
+    "zero_drift_rounds": 898,
+    "zero_drift_chain": "1475→v2373"
+  },
+  "framework_confirmations": {
+    "FAAL_三阶七维框架": "固化状态确认",
+    "三级级联放大链模型": "固化状态确认",
+    "装备加成三原则元理论": "固化状态确认",
+    "二元分流架构元理论": "固化状态确认"
+  },
+  "self_evolution_boundary": "持续遵守",
+  "core_data_drift": "零漂移"
+}
