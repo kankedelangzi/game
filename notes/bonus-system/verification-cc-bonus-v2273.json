@@ -1,0 +1,130 @@
+{
+  "version": "v2273",
+  "timestamp": "2026-07-10 09:45 CST",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "continuousZeroDrift": 772,
+  "range": "1475→v2273",
+  "pythonVerification": {
+    "total": 13,
+    "passed": 13,
+    "rate": "100.0%",
+    "items": [
+      {
+        "name": "CC套属性-strength",
+        "expected": 310,
+        "actual": 310,
+        "pass": true,
+        "key": "strength"
+      },
+      {
+        "name": "CC套属性-physical/attack",
+        "expected": 110,
+        "actual": 110,
+        "pass": true,
+        "key": "physical_attack"
+      },
+      {
+        "name": "CC套属性-independent/attack",
+        "expected": 120,
+        "actual": 120,
+        "pass": true,
+        "key": "independent_attack"
+      },
+      {
+        "name": "CC套属性-critical/rate",
+        "expected": "3%",
+        "actual": "3%",
+        "pass": true,
+        "key": "critical_rate"
+      },
+      {
+        "name": "CC套属性-berserker/fixed",
+        "expected": "9.27%",
+        "actual": "9.27%",
+        "pass": true,
+        "key": "berserker_fixed"
+      },
+      {
+        "name": "CC套属性-berserker/percentage",
+        "expected": "32.81%",
+        "actual": "32.81%",
+        "pass": true,
+        "key": "berserker_percentage"
+      },
+      {
+        "name": "CC套属性-swordsman/percentage",
+        "expected": "45.70%",
+        "actual": "45.70%",
+        "pass": true,
+        "key": "swordsman_percentage"
+      },
+      {
+        "name": "CC套属性-marginal/duality",
+        "expected": 4.93002,
+        "actual": 4.93002,
+        "pass": true,
+        "key": "marginal_duality"
+      },
+      {
+        "name": "CC套属性-po/ji/synergy",
+        "expected": 2743,
+        "actual": 2743,
+        "pass": true,
+        "key": "po_ji_synergy"
+      },
+      {
+        "name": "CC套属性-faal/three/stage",
+        "expected": true,
+        "actual": true,
+        "pass": true,
+        "key": "faal_three_stage"
+      },
+      {
+        "name": "CC套属性-cascade/model",
+        "expected": true,
+        "actual": true,
+        "pass": true,
+        "key": "cascade_model"
+      },
+      {
+        "name": "CC套属性-three/principles",
+        "expected": true,
+        "actual": true,
+        "pass": true,
+        "key": "three_principles"
+      },
+      {
+        "name": "CC套属性-evolution/boundary",
+        "expected": true,
+        "actual": true,
+        "pass": true,
+        "key": "evolution_boundary"
+      }
+    ]
+  },
+  "coreResults": {
+    "ccSuite6Piece": {
+      "strength": "+310",
+      "physicalAttack": "+110",
+      "independentAttack": "+120",
+      "criticalRate": "+3%",
+      "matchRate": "4/4精确"
+    },
+    "berserker": {
+      "fixedDamage": "+9.27%",
+      "percentageDamage": "+32.81%"
+    },
+    "swordsman": {
+      "percentageDamage": "+45.70%"
+    },
+    "marginalDuality": 4.93002,
+    "poJiBingRenSynergyPhysicalAttack": 2743
+  },
+  "faalFramework": {
+    "threeStageSevenDimension": "固化确认",
+    "threeLevelCascadeAmplification": "固化确认",
+    "equipmentBonusThreePrinciples": "固化确认"
+  },
+  "selfEvolutionBoundary": "持续遵守",
+  "dataDrift": "零漂移"
+}
