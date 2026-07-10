@@ -1,0 +1,31 @@
+{
+  "version": "v2365",
+  "round": 890,
+  "checks_passed": 9,
+  "checks_total": 9,
+  "pass_rate": 100.0,
+  "zero_drift_rounds": 890,
+  "drift_start": "v1475",
+  "timestamp": "2026-07-11 06:11 CST",
+  "cc_set_attributes": {
+    "str": 310,
+    "phys_atk": 110,
+    "indp_atk": 120,
+    "crit_rate": 3
+  },
+  "berserker": {
+    "fixed_damage": 9.27,
+    "percentage_damage": 32.81
+  },
+  "swordsman": {
+    "percentage_damage": 45.7
+  },
+  "marginal_dual": 4.928934,
+  "poji_wpn_synergy": 2743.0,
+  "faal_framework": "固化",
+  "cascade_amplification_model": "固化",
+  "equipment_bonus_three_principles": "固化",
+  "dual_stream_architecture": "固化",
+  "self_evolution_boundary": "持续遵守",
+  "known_vulnerability": "百分比值存在已知闭环校验漏洞（公式值vs KB值偏差）"
+}
