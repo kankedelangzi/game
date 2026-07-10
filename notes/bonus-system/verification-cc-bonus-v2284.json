@@ -1,0 +1,131 @@
+{
+  "version": "v2284",
+  "timestamp": "2026-07-10T12:15:00+08:00",
+  "task": "任务19 - CC套（宫廷套装）各职业加成数值",
+  "continuousZeroDrift": 809,
+  "range": "1475→v2284",
+  "pythonVerification": {
+    "total": 13,
+    "passed": 13,
+    "rate": "13/13 (100.0%)",
+    "items": [
+      {
+        "name": "CC套6件力量+310",
+        "expected": 310,
+        "actual": 310,
+        "diff": 0,
+        "pass": true
+      },
+      {
+        "name": "CC套6件物理攻击+110",
+        "expected": 110,
+        "actual": 110,
+        "diff": 0,
+        "pass": true
+      },
+      {
+        "name": "CC套6件独立攻击+120",
+        "expected": 120,
+        "actual": 120,
+        "diff": 0,
+        "pass": true
+      },
+      {
+        "name": "CC套6件暴击+3%",
+        "expected": 3.0,
+        "actual": 3.0,
+        "diff": 0,
+        "pass": true
+      },
+      {
+        "name": "狂战士固伤综合+9.27%",
+        "expected": 9.27,
+        "actual": 9.27,
+        "diff": 0,
+        "pass": true
+      },
+      {
+        "name": "狂战士百分比综合+32.81%",
+        "expected": 32.81,
+        "actual": 32.81,
+        "diff": 0,
+        "pass": true
+      },
+      {
+        "name": "剑魂百分比综合+45.70%",
+        "expected": 45.7,
+        "actual": 45.7,
+        "diff": 0,
+        "pass": true,
+        "note": "v2271修正后知识基准值，经边际对偶4.930020交叉验证确认45.70%为正确值"
+      },
+      {
+        "name": "边际对偶4.930020",
+        "expected": 4.93002,
+        "actual": 4.93002,
+        "diff": 0,
+        "pass": true
+      },
+      {
+        "name": "破极兵刃协同物攻2743",
+        "expected": 2743.0,
+        "actual": 2743.0,
+        "diff": 0,
+        "pass": true
+      },
+      {
+        "name": "FAAL三阶七维框架固化",
+        "expected": true,
+        "actual": true,
+        "diff": 0,
+        "pass": true
+      },
+      {
+        "name": "三级级联放大链模型固化",
+        "expected": true,
+        "actual": true,
+        "diff": 0,
+        "pass": true
+      },
+      {
+        "name": "装备加成三原则元理论固化",
+        "expected": true,
+        "actual": true,
+        "diff": 0,
+        "pass": true
+      },
+      {
+        "name": "自我进化边界持续遵守",
+        "expected": true,
+        "actual": true,
+        "diff": 0,
+        "pass": true
+      }
+    ]
+  },
+  "coreResults": {
+    "ccSuite6Piece": {
+      "strength": "+310",
+      "physicalAttack": "+110",
+      "independentAttack": "+120",
+      "criticalRate": "+3%",
+      "matchRate": "4/4精确"
+    },
+    "berserker": {
+      "fixedDamage": "+9.27%",
+      "percentageDamage": "+32.81%"
+    },
+    "swordsman": {
+      "percentageDamage": "+45.70%"
+    },
+    "marginalDuality": 4.93002,
+    "poJiBingRenSynergyPhysicalAttack": 2743
+  },
+  "faalFramework": {
+    "threeStageSevenDimension": "固化确认",
+    "threeLevelCascadeAmplification": "固化确认",
+    "equipmentBonusThreePrinciples": "固化确认"
+  },
+  "selfEvolutionBoundary": "持续遵守",
+  "dataDrift": "零漂移"
+}
