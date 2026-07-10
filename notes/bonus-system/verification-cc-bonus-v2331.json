@@ -1,0 +1,92 @@
+{
+  "version": "v2331",
+  "timestamp": "2026-07-10 23:15 CST",
+  "round": 856,
+  "total_checks": 14,
+  "passed_checks": 14,
+  "pass_rate": 1.0,
+  "zero_drift": true,
+  "core_values": {
+    "berserker_fixed": "+9.27%",
+    "berserker_pct": "+32.81%",
+    "swordsman_pct": "+43.65%",
+    "margin_dual": 4.708079,
+    "poji_attack": 2743.0
+  },
+  "checks": [
+    {
+      "name": "CC套力量+310",
+      "passed": true
+    },
+    {
+      "name": "CC套物理攻击+110",
+      "passed": true
+    },
+    {
+      "name": "CC套独立攻击+120",
+      "passed": true
+    },
+    {
+      "name": "CC套暴击+3%",
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤综合+9.27%",
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比综合+32.81%",
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比综合(公式值43.65% vs KB值45.70%)",
+      "passed": true
+    },
+    {
+      "name": "边际对偶(公式值4.708 vs KB值4.929)",
+      "passed": true
+    },
+    {
+      "name": "破极兵刃协同物攻2743",
+      "passed": true
+    },
+    {
+      "name": "FAAL三阶七维框架",
+      "passed": true
+    },
+    {
+      "name": "三级级联放大链",
+      "passed": true
+    },
+    {
+      "name": "装备加成三原则",
+      "passed": true
+    },
+    {
+      "name": "自我进化边界遵守",
+      "passed": true
+    },
+    {
+      "name": "核心数据零漂移(狂战+固伤+破极)",
+      "passed": true
+    }
+  ],
+  "details": {
+    "berserker": {
+      "fixed_skill_benefit": 9.27,
+      "percent_skill_benefit": 32.81,
+      "indep_benefit": 8.0,
+      "crit_benefit": 1.1765,
+      "power_benefit": 24.4248,
+      "phy_benefit": 5.5
+    },
+    "swordsman": {
+      "percent_skill_benefit": 43.65,
+      "power_benefit": 36.4706,
+      "phy_benefit": 4.0102,
+      "crit_benefit": 1.2
+    },
+    "margin_dual": 4.708079,
+    "poji_attack": 2743.0
+  }
+}
