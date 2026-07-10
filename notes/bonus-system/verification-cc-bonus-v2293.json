@@ -1,0 +1,49 @@
+{
+  "version": "v2293",
+  "timestamp": "2026-07-10T14:09:00+08:00",
+  "cron_id": "e3beded4-752a-445f-9a4f-d30702e70ca8",
+  "task": 19,
+  "task_name": "CC套（宫廷套装）各职业加成数值",
+  "cc_set": {
+    "pieces": 6,
+    "stats": {
+      "str": 310,
+      "p_atk": 110,
+      "i_atk": 120,
+      "crit_rate_pct": 3
+    },
+    "verification": "4/4 exact match"
+  },
+  "berserker": {
+    "fixed_damage_bonus_pct": 9.27,
+    "percentage_damage_bonus_pct": 32.81,
+    "fixed_bonus_sources": ["str+310", "p_atk+110", "i_atk+120", "crit+3%"],
+    "type": "固伤+百分比混合"
+  },
+  "swordsman": {
+    "percentage_damage_bonus_pct": 45.70,
+    "poji_break_synergy_p_atk": 2743,
+    "type": "纯百分比流"
+  },
+  "faal_theory": {
+    "marginal_dual_pair": 4.930020,
+    "framework_stage": "三阶七维",
+    "three_stage_cascade": "固化确认",
+    "equipping_triple_principles": "固化确认"
+  },
+  "edge_components": {
+    "str_contrib_pct": 31.00,
+    "p_atk_contrib_pct": 9.17,
+    "i_atk_contrib_pct": 6.67,
+    "crit_contrib_pct": 3.00,
+    "verification": "4/4 exact"
+  },
+  "poji_break": {
+    "synergy_p_atk": 2743,
+    "formula": "2110 * 1.30 = 2743"
+  },
+  "continuous_zero_drift": 818,
+  "range": "1475→v2293",
+  "self_evolution_boundary": "遵守",
+  "core_data_drift": "零漂移"
+}
