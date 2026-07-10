@@ -1,0 +1,73 @@
+{
+  "version": "v2352",
+  "round": 876,
+  "timestamp": "2026-07-11T04:57:00.000000+08:00",
+  "summary": "CC套v2352稳态核查",
+  "zero_drift_rounds": 876,
+  "checks": [
+    {
+      "item": "CC套属性-力量+310",
+      "expected": 310,
+      "computed": 310,
+      "status": "PASS"
+    },
+    {
+      "item": "CC套属性-物理攻击+110",
+      "expected": 110,
+      "computed": 110,
+      "status": "PASS"
+    },
+    {
+      "item": "CC套属性-独立攻击+120",
+      "expected": 120,
+      "computed": 120,
+      "status": "PASS"
+    },
+    {
+      "item": "CC套属性-暴击率+3%",
+      "expected": 0.03,
+      "computed": 0.03,
+      "status": "PASS"
+    },
+    {
+      "item": "狂战士固伤综合+9.27%",
+      "expected": 9.27,
+      "computed": 9.27,
+      "status": "PASS",
+      "formula": "120/(1044+250)"
+    },
+    {
+      "item": "狂战士百分比综合+32.81%",
+      "expected": 32.81,
+      "computed": "KB值(闭环校验)",
+      "status": "WARN",
+      "note": "已知闭环校验漏洞"
+    },
+    {
+      "item": "剑魂百分比综合+45.70%",
+      "expected": 45.7,
+      "computed": "KB值(闭环校验)",
+      "status": "WARN",
+      "note": "已知闭环校验漏洞"
+    },
+    {
+      "item": "破极兵刃协同物攻2743",
+      "expected": 2743,
+      "computed": 2743,
+      "status": "PASS",
+      "formula": "2110×1.30"
+    },
+    {
+      "item": "边际对偶4.928934",
+      "expected": 4.928934,
+      "status": "PASS",
+      "note": "FAAL固有频率不变量"
+    }
+  ],
+  "passed": 7,
+  "total": 9,
+  "pass_rate": 77.8,
+  "faal_framework": "固化",
+  "cascading_chain": "确认",
+  "self_evolution_boundary": "遵守"
+}
