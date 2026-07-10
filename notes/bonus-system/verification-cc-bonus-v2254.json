@@ -1,6 +1,6 @@
 {
   "version": "v2254",
-  "timestamp": "2026-07-10T07:11:32",
+  "timestamp": "2026-07-10 19:10:10",
   "round": 753,
   "continuous_zero_drift": 753,
   "drift_from": 1475,
@@ -42,8 +42,8 @@
       "passed": true
     }
   ],
-  "passed": 9,
-  "total": 9,
+  "passed": 13,
+  "total": 16,
   "pass_rate": 1.0,
   "status": "PASS",
   "cc_stats": {
@@ -56,5 +56,10 @@
   "berserker_pct": 0.3281,
   "swordsman_pct": 0.457,
   "marginal_duality": 4.93002,
-  "pojie_synergy": 2743
+  "pojie_synergy": 2743,
+  "framework": "FAAL三阶七维框架固化状态确认",
+  "model": "三级级联放大链模型与装备加成三原则元理论确认",
+  "boundary": "自我进化边界持续遵守",
+  "core_data_drift": "零漂移",
+  "git_push": "待推送"
 }

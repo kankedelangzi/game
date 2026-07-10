@@ -1,0 +1,64 @@
+{
+  "v": "v2311",
+  "timestamp": "2026-07-10 19:20 CST",
+  "round": 836,
+  "checks": {
+    "CC套STR": {
+      "check": "CC套STR",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    "CC套PATTACK": {
+      "check": "CC套PATTACK",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    "CC套IDATK": {
+      "check": "CC套IDATK",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    "CC套CRIT%": {
+      "check": "CC套CRIT%",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    "狂战士固伤综合%": {
+      "check": "狂战士固伤综合%",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    "狂战士百分比综合%": {
+      "check": "狂战士百分比综合%",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    "剑魂百分比综合%": {
+      "check": "剑魂百分比综合%",
+      "expected": 45.7,
+      "actual": 45.69,
+      "pass": true
+    },
+    "边际对偶": {
+      "check": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.928934,
+      "pass": true
+    },
+    "破极兵刃协同物攻": {
+      "check": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    }
+  },
+  "passed": 9,
+  "total": 9,
+  "rate": "9/9"
+}
