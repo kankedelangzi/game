@@ -1,0 +1,49 @@
+{
+  "version": "v2347",
+  "round": 871,
+  "continuous_rounds": "1475→v2347",
+  "checks": {
+    "CC力量+310": {
+      "pass": true,
+      "value": 310
+    },
+    "CC物理攻击+110": {
+      "pass": true,
+      "value": 110
+    },
+    "CC独立攻击+120": {
+      "pass": true,
+      "value": 120
+    },
+    "CC暴击+3%": {
+      "pass": true,
+      "value": 3
+    },
+    "狂战士固伤+9.27%": {
+      "pass": true,
+      "value": 9.27
+    },
+    "狂战士百分比+32.81%": {
+      "pass": false,
+      "value": 40.93
+    },
+    "剑魂百分比+45.70%": {
+      "pass": false,
+      "value": 40.93
+    },
+    "破极兵刃协同物攻2743": {
+      "pass": true,
+      "value": 2743
+    },
+    "边际对偶4.928934": {
+      "pass": true,
+      "value": 4.928934
+    }
+  },
+  "summary": "7/9 passed (78%)",
+  "all_pass": false,
+  "zero_drift": true,
+  "berserker_fixed_detail": "120/1294=9.27%",
+  "berserker_pct_detail": "40.93%",
+  "swordsman_pct_detail": "40.93%"
+}
