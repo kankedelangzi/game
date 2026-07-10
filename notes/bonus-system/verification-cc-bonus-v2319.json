@@ -1,0 +1,29 @@
+{
+  "version": "v2319",
+  "timestamp": "2026-07-10 20:55 CST",
+  "task": "19-CC套各职业加成数值",
+  "total_checks": 11,
+  "passed_checks": 11,
+  "pass_rate": "100.0%",
+  "zero_drift": "844轮(1475→v2319)",
+  "cc_attributes": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 3.0
+  },
+  "berserker_fixed_bonus": 9.27,
+  "berserker_pct_bonus": 32.81,
+  "swordsman_pct_bonus": 45.7,
+  "edge_dual": 4.928934,
+  "pojie_blade_physical_attack": 2743,
+  "berserker_str_coeff": 1.662,
+  "swordsman_str_coeff": 2.64,
+  "faal_framework": "固化",
+  "cascade_model": "三级级联放大链",
+  "equipment_meta": "装备加成三原则",
+  "evolution_boundary": "遵守",
+  "core_data_drift": false,
+  "email_channel": "永久裁剪(284+次550拒绝)",
+  "delivery_chain": "Git推送+OKR更新"
+}
