@@ -1,0 +1,31 @@
+{
+  "version": "v2295",
+  "consecutive_rounds": 820,
+  "start_round": 1475,
+  "timestamp": "2026-07-10 15:06 CST",
+  "html_checks": {
+    "cc_str_310": true,
+    "cc_watk_110": true,
+    "cc_iatk_120": true,
+    "cc_cri_3pct": true,
+    "berserker_fixed_9p27": true,
+    "berserker_pct_32p81": true,
+    "sword_pct_45p70": true,
+    "marginal_4p930020": true,
+    "pojibing_2743": true
+  },
+  "kb_checks": {
+    "berserker_knowledge_base_fixed": true,
+    "berserker_knowledge_base_pct": true,
+    "sword_knowledge_base_pct": true,
+    "berserker_knowledge_base_marginal": true,
+    "berserker_knowledge_base_pojibing": true,
+    "sword_knowledge_base_marginal": true,
+    "sword_knowledge_base_pojibing": true
+  },
+  "html_pass": true,
+  "kb_pass": true,
+  "overall_pass": true,
+  "pass_count": 16,
+  "total_count": 16
+}
