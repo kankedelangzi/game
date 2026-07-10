@@ -1,0 +1,35 @@
+{
+  "version": "v2315",
+  "timestamp": "2026-07-10T12:11:00Z",
+  "round": 840,
+  "drift_chain": "840 rounds zero drift (1475→v2315)",
+  "cc_attrs": {
+    "STR": 310,
+    "PAtk": 110,
+    "IndPAtk": 120,
+    "CritRate": 3.0
+  },
+  "berserker": {
+    "fixed_bonus_pct": 9.27,
+    "pct_bonus_pct": 32.81,
+    "weapon_str_coeff": 1.662
+  },
+  "swordman": {
+    "pct_bonus_pct": 45.70,
+    "weapon_str_coeff": 2.64
+  },
+  "faal": {
+    "marginal_duality": 4.928934,
+    "pojing_coordinated_attack": 2743
+  },
+  "verification_checks": 9,
+  "passed": 9,
+  "pass_rate": "100%",
+  "framework": {
+    "FAAL_three_stage_seven_dim": "固化状态确认",
+    "three_tier_cascade_amplification": "模型确认",
+    "equipment_bonus_three_principles_meta": "元理论确认",
+    "self_evolution_boundary": "持续遵守"
+  },
+  "notes": "核心数据零漂移，CC套6件属性4/4精确匹配"
+}
