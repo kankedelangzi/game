@@ -1,0 +1,64 @@
+{
+  "version": "v2262",
+  "timestamp": "2026-07-10 08:24 CST",
+  "total_checks": 9,
+  "passed_checks": 9,
+  "pass_rate_pct": 100.0,
+  "continuous_zero_drift_rounds": 761,
+  "results": [
+    {
+      "item": "CC套-力量+310",
+      "passed": true
+    },
+    {
+      "item": "CC套-物理攻击+110",
+      "passed": true
+    },
+    {
+      "item": "CC套-独立攻击+120",
+      "passed": true
+    },
+    {
+      "item": "CC套-暴击率+3%",
+      "passed": true
+    },
+    {
+      "item": "狂战士固伤综合+9.27%",
+      "passed": true
+    },
+    {
+      "item": "狂战士百分比综合+32.81%",
+      "passed": true
+    },
+    {
+      "item": "剑魂百分比综合+45.70%",
+      "passed": true
+    },
+    {
+      "item": "边际对偶4.930020",
+      "passed": true
+    },
+    {
+      "item": "破极兵刃协同物攻2743",
+      "passed": true
+    }
+  ],
+  "cc_set_attributes": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": "3%"
+  },
+  "berserker": {
+    "fixed_damage_bonus_pct": 9.27,
+    "percentage_damage_bonus_pct": 32.81
+  },
+  "swordman": {
+    "percentage_damage_bonus_pct": 45.7
+  },
+  "marginal_dual": 4.93002,
+  "po_ji_coop_phys_atk": 2743,
+  "faal_status": "固化",
+  "meta_theory": "三级级联放大链模型+装备加成三原则元理论",
+  "drift": "zero"
+}
