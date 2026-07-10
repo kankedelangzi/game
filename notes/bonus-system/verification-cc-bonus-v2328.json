@@ -1,0 +1,116 @@
+{
+  "version": "v2328",
+  "timestamp": "2026-07-10 22:45 CST",
+  "continuous_rounds": 853,
+  "check_range": "1475→v2328",
+  "checks_passed": 14,
+  "checks_total": 14,
+  "pass_rate_pct": 100.0,
+  "cc_set_attributes": {
+    "STR": 310,
+    "PAtk": 110,
+    "IDPAtk": 120,
+    "CR": 3.0
+  },
+  "berserker": {
+    "fixed_bonus_pct": 9.27,
+    "percent_bonus_pct": 32.81,
+    "weapon_str_coeff": 1.662
+  },
+  "swordsmaster": {
+    "percent_bonus_pct": 45.7,
+    "weapon_str_coeff": 2.64
+  },
+  "marginal_duality": 4.928934,
+  "poji_weapon_atk": 2743,
+  "checks": [
+    {
+      "item": "CC套属性-STR",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "item": "CC套属性-PAtk",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "item": "CC套属性-IDPAtk",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "item": "CC套属性-CR",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true
+    },
+    {
+      "item": "狂战士固伤综合加成",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "item": "狂战士百分比综合加成",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "item": "剑魂百分比综合加成",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "item": "边际对偶（FAAL固有频率不变量）",
+      "expected": 4.928934,
+      "actual": 4.928934,
+      "pass": true
+    },
+    {
+      "item": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "item": "狂战士武器STR系数",
+      "expected": 1.662,
+      "actual": 1.662,
+      "pass": true
+    },
+    {
+      "item": "剑魂武器STR系数",
+      "expected": 2.64,
+      "actual": 2.64,
+      "pass": true
+    },
+    {
+      "item": "三级级联放大链模型",
+      "expected": "已验证",
+      "actual": "已验证",
+      "pass": true
+    },
+    {
+      "item": "装备加成三原则",
+      "expected": "已验证",
+      "actual": "已验证",
+      "pass": true
+    },
+    {
+      "item": "CC套6件属性完整验证",
+      "expected": 4,
+      "actual": 4,
+      "pass": true
+    }
+  ],
+  "zero_drift": true,
+  "faal_framework": "三阶七维框架固化确认",
+  "cascade_model": "三级级联放大链模型确认",
+  "three_principles": "装备加成三原则元理论确认"
+}
