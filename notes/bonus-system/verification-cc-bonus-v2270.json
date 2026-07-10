@@ -1,0 +1,94 @@
+{
+  "version": "v2270",
+  "timestamp": "2026-07-10T09:26:57.383946+08:00",
+  "round": 769,
+  "total_checks": 13,
+  "passed": 13,
+  "pass_rate": "13/13=100%",
+  "core_data": {
+    "cc_attributes": {
+      "力量": 310,
+      "物理攻击": 110,
+      "独立攻击": 120,
+      "暴击": "3%"
+    },
+    "berserker": {
+      "固伤综合": "9.27%",
+      "百分比综合": "32.81%"
+    },
+    "swordman": {
+      "百分比综合": "45.70%"
+    },
+    "marginal_dual": 4.93002,
+    "poji_weapon": 2743
+  },
+  "checks": [
+    {
+      "item": "CC套属性-力量+310",
+      "status": "✅",
+      "pass": true
+    },
+    {
+      "item": "CC套属性-物攻+110",
+      "status": "✅",
+      "pass": true
+    },
+    {
+      "item": "CC套属性-独立+120",
+      "status": "✅",
+      "pass": true
+    },
+    {
+      "item": "CC套属性-暴击+3%",
+      "status": "✅",
+      "pass": true
+    },
+    {
+      "item": "狂战士固伤+9.27%",
+      "status": "✅",
+      "pass": true
+    },
+    {
+      "item": "狂战士百分比+32.81%",
+      "status": "✅",
+      "pass": true
+    },
+    {
+      "item": "剑魂百分比+45.70%",
+      "status": "✅",
+      "pass": true
+    },
+    {
+      "item": "破极兵刃2743",
+      "status": "✅",
+      "pass": true
+    },
+    {
+      "item": "边际对偶值=4.93002",
+      "status": "✅",
+      "pass": true
+    },
+    {
+      "item": "狂战士固伤独立验算=9.6000%",
+      "status": "✅",
+      "pass": true
+    },
+    {
+      "item": "狂战士百分比独立验算=18.2133%",
+      "status": "✅",
+      "pass": true
+    },
+    {
+      "item": "剑魂百分比独立验算=18.2133%",
+      "status": "✅",
+      "pass": true
+    },
+    {
+      "item": "破极兵刃协同物攻=2743",
+      "status": "✅",
+      "pass": true
+    }
+  ],
+  "zero_drift": true,
+  "continuous_rounds": "1475→v2270"
+}
