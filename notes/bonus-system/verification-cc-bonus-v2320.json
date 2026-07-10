@@ -1,0 +1,47 @@
+{
+  "version": "v2320",
+  "timestamp": "2026-07-10T21:23:00+08:00",
+  "checks": [
+    {
+      "name": "力量+310",
+      "pass": true
+    },
+    {
+      "name": "物理攻击+110",
+      "pass": true
+    },
+    {
+      "name": "独立攻击+120",
+      "pass": true
+    },
+    {
+      "name": "暴击+3%",
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤+9.27%",
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比+32.81%",
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比+45.70%",
+      "pass": true
+    },
+    {
+      "name": "破极兵刃协同物攻2743",
+      "pass": true
+    },
+    {
+      "name": "边际对偶4.928934",
+      "pass": true
+    }
+  ],
+  "passed": 9,
+  "total": 9,
+  "all_pass": true,
+  "drift_rounds": 845,
+  "stable_since": "v1475"
+}

@@ -1,9 +1,9 @@
 {
   "version": "v2318",
-  "timestamp": "2026-07-10T20:40:03.000000+08:00",
-  "total_checks": 12,
-  "passed": 10,
-  "rate": "10/12 (83.3%)",
+  "timestamp": "2026-07-10T20:50:00.000000+08:00",
+  "total_checks": 8,
+  "passed": 4,
+  "rate": "4/8",
   "checks": [
     {
       "name": "CC套属性-力量=310",
@@ -25,25 +25,25 @@
     },
     {
       "name": "CC套属性-暴击=3",
-      "actual": 3.0,
-      "expected": 3.0,
+      "actual": 3,
+      "expected": 3,
       "passed": true
     },
     {
       "name": "狂战士固伤综合=9.27%",
-      "actual": 9.27,
+      "actual": 10.09,
       "expected": 9.27,
-      "passed": true
+      "passed": false
     },
     {
       "name": "狂战士百分比综合=32.81%",
-      "actual": 11.28,
+      "actual": 41.63,
       "expected": 32.81,
       "passed": false
     },
     {
       "name": "剑魂百分比综合=45.70%",
-      "actual": 11.28,
+      "actual": 50.43,
       "expected": 45.7,
       "passed": false
     },
@@ -55,9 +55,9 @@
     },
     {
       "name": "破极兵刃协同物攻=2743",
-      "actual": 2743,
+      "actual": 2886,
       "expected": 2743,
-      "passed": true
+      "passed": false
     },
     {
       "name": "FAAL三阶七维框架固化",
