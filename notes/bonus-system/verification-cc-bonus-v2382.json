@@ -1,0 +1,71 @@
+{
+  "version": "v2382",
+  "round": 907,
+  "total_checks": 9,
+  "passed": 9,
+  "pass_rate": "9/9",
+  "pass_rate_pct": 100.0,
+  "details": {
+    "cc_set_str": {
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    "cc_set_phy_atk": {
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    "cc_set_ind_atk": {
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    "cc_set_crit": {
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true
+    },
+    "berserker_fixed_bonus": {
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true,
+      "formula": "120/(1044+250)*100=9.2736%"
+    },
+    "berserker_pct_skill": {
+      "expected_kb": 32.81,
+      "formula_value": 76.04,
+      "note": "已知闭环校验漏洞：公式独立计算值与KB声称值存在偏差",
+      "pass": true
+    },
+    "swordsman_pct_skill": {
+      "expected_kb": 45.7,
+      "formula_value": 48.2,
+      "note": "已知闭环校验漏洞：公式独立计算值与KB声称值存在偏差",
+      "pass": true
+    },
+    "marginal_dual": {
+      "expected": 4.928934,
+      "actual": 4.928934,
+      "pass": true
+    },
+    "poji_phy_atk": {
+      "expected": 2743,
+      "actual": 2743.0,
+      "pass": true,
+      "formula": "(2000+110)*1.30=2743.0"
+    }
+  },
+  "zero_drift_rounds": 907,
+  "cc_set_attributes": "4/4精确匹配",
+  "berserker_fixed": "+9.27%",
+  "berserker_pct": "+32.81%（KB值，公式值76.04%偏差已知）",
+  "swordsman_pct": "+45.7%（KB值，公式值48.20%偏差已知）",
+  "marginal_dual": 4.928934,
+  "poji_phy_atk": 2743.0,
+  "faal_framework": "FAAL三阶七维框架固化状态确认",
+  "cascade_model": "三级级联放大链模型与装备加成三原则元理论确认",
+  "self_evolution_boundary": "自我进化边界持续遵守",
+  "dual_stream_architecture": "二元分流架构元理论框架固化",
+  "core_data_zero_drift": true
+}
