@@ -1,0 +1,28 @@
+{
+  "version": "v2286",
+  "timestamp": "2026-07-10T04:39:00Z",
+  "round": 811,
+  "consecutive_zero_drift": 811,
+  "cc_set_attributes": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate_pct": 3.0,
+    "4_of_4_exact_match": true
+  },
+  "berserker": {
+    "fixed_damage_total_pct": 9.27,
+    "percent_damage_total_pct": 32.81
+  },
+  "swordsmen": {
+    "percent_damage_total_pct": 45.7
+  },
+  "marginal_dual": 4.93002,
+  "poji_synergy_attack": 2743,
+  "poji_formula": "2110×1.30=2743",
+  "faal_framework": "stabilized",
+  "three_level_cascade": "stabilized",
+  "equipment_bonus_principles": "stabilized",
+  "self_evolution_boundary": "observed",
+  "core_data_drift": "zero"
+}
