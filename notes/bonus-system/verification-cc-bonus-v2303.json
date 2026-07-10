@@ -1,0 +1,36 @@
+{
+  "version": "v2303",
+  "timestamp": "2026-07-10 16:09:31 CST",
+  "cc_set": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical_rate": 3.0
+  },
+  "berserker": {
+    "fixed_damage_bonus_pct": 9.27,
+    "pct_damage_bonus_pct": 32.81
+  },
+  "swordsman": {
+    "pct_damage_bonus_pct": 45.7
+  },
+  "faal": {
+    "marginal_dual": 4.93002,
+    "polar_attack_synergy": 2743.0
+  },
+  "marginal_components": {
+    "固伤边际": 4.93002,
+    "百分比边际": 4.93002,
+    "剑魂边际": 4.93002,
+    "破极边际": 4.93002
+  },
+  "polar_breakdown": {
+    "基准物攻": 2110,
+    "破极加成(%)": 30.0,
+    "协同物攻": 2743
+  },
+  "pass_count": 9,
+  "total_checks": 9,
+  "zero_drift": true,
+  "drift_chain_rounds": 828
+}

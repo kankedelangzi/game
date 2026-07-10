@@ -116,9 +116,9 @@ print("  ✅ 狂战士百分比收益验算通过")
 print("\n【4】剑魂百分比收益验算")
 print("-" * 40)
 
-# 基础面板（破极后）
-swordsman_base = {"力量": 600, "物理攻击": 2600, "暴击率": 0.50}
-swordsman_cc = {"力量": 600 + 310, "物理攻击": 2600 + 110, "暴击率": 0.50 + 0.03}
+# 基础面板（破极后）— v2271修正：物理攻击基准2000（非2600）
+swordsman_base = {"力量": 600, "物理攻击": 2000, "暴击率": 0.50}
+swordsman_cc = {"力量": 600 + 310, "物理攻击": 2000 + 110, "暴击率": 0.50 + 0.03}
 
 # 力量收益
 str_old_s = 1 + swordsman_base["力量"] / 250
@@ -139,14 +139,14 @@ crit_benefit_s = crit_new_s / crit_old_s - 1
 swordsman_total = (1 + str_benefit_s) * (1 + phy_benefit_s) * (1 + crit_benefit_s) - 1
 
 print(f"  力量收益: +{str_benefit_s*100:.2f}% (预期: +36.50%)")
-print(f"  物理攻击收益: +{phy_benefit_s*100:.2f}% (预期: +4.23%)")
+print(f"  物理攻击收益: +{phy_benefit_s*100:.2f}% (预期: +5.50%)")
 print(f"  暴击收益: +{crit_benefit_s*100:.2f}% (预期: +1.20%)")
-print(f"  百分比综合收益: +{swordsman_total*100:.2f}% (预期: +43.95%)")
+print(f"  百分比综合收益: +{swordsman_total*100:.2f}% (预期: +45.70%)")
 
 assert abs(str_benefit_s - 0.3647) < 0.001, f"力量收益错误: {str_benefit_s}"
-assert abs(phy_benefit_s - 0.0423) < 0.001, f"物理攻击收益错误: {phy_benefit_s}"
+assert abs(phy_benefit_s - 0.055) < 0.001, f"物理攻击收益错误: {phy_benefit_s}"
 assert abs(crit_benefit_s - 0.012) < 0.001, f"暴击收益错误: {crit_benefit_s}"
-assert abs(swordsman_total - 0.4395) < 0.001, f"百分比综合收益错误: {swordsman_total}"
+assert abs(swordsman_total - 0.4570) < 0.001, f"百分比综合收益错误: {swordsman_total}"
 print("  ✅ 剑魂百分比收益验算通过")
 
 # ============================================================
@@ -156,8 +156,8 @@ print("\n【5】边际对偶验证 - 系统固有频率")
 print("-" * 40)
 
 ratio = swordsman_total / berserker_fixed_total
-print(f"  剑魂百分比/狂战士固伤收益倍数 = {ratio:.2f}倍 (预期: 4.74倍)")
-assert abs(ratio - 4.74) < 0.1, f"系统固有频率错误: {ratio}"
+print(f"  剑魂百分比/狂战士固伤收益倍数 = {ratio:.6f}倍 (预期: 4.930020倍)")
+assert abs(ratio - 4.930020) < 0.001, f"系统固有频率错误: {ratio}"
 print("  ✅ 边际对偶验证通过")
 
 # ============================================================
