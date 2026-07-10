@@ -1,0 +1,27 @@
+{
+  "version": "v2265",
+  "timestamp": "2026-07-10T08:44:00+08:00",
+  "summary": "9/9 passed (100.0%)",
+  "continuous_rounds": 764,
+  "continuous_from": "v1475",
+  "continuous_to": "v2265",
+  "zero_drift": true,
+  "checks": [
+    {"check": "CC套力量", "expected": 310, "actual": 310, "pass": true},
+    {"check": "CC套物理攻击", "expected": 110, "actual": 110, "pass": true},
+    {"check": "CC套独立攻击", "expected": 120, "actual": 120, "pass": true},
+    {"check": "CC套暴击率", "expected": 3, "actual": 3, "pass": true},
+    {"check": "狂战士固伤综合", "expected": 9.27, "actual": 9.27, "pass": true},
+    {"check": "狂战士百分比综合", "expected": 32.81, "actual": 32.81, "pass": true},
+    {"check": "剑魂百分比综合", "expected": 45.7, "actual": 45.7, "pass": true},
+    {"check": "边际对偶", "expected": 4.93002, "actual": 4.93002, "pass": true},
+    {"check": "破极兵刃协同物攻", "expected": 2743, "actual": 2743, "pass": true}
+  ],
+  "core_data": {
+    "cc_set_6piece": {"力量": 310, "物理攻击": 110, "独立攻击": 120, "暴击率": 3},
+    "berserker": {"固伤综合": 9.27, "百分比综合": 32.81},
+    "swordman": {"百分比综合": 45.7},
+    "marginal_duality": 4.93002,
+    "polka_attack": 2743
+  }
+}
