@@ -1,0 +1,25 @@
+{
+  "version": "v2292",
+  "timestamp": "2026-07-10 13:52:24 CST",
+  "cc_set_attrs": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3
+  },
+  "berserker_fixed_bonus": 9.27,
+  "berserker_percent_bonus": 32.81,
+  "swordman_percent_bonus": 45.7,
+  "edge_pair": 4.93002,
+  "pojie_synergy": 2743,
+  "edge_components_ok": true,
+  "pojie_components_ok": true,
+  "all_pass": true,
+  "pass_count": 9,
+  "total_count": 9,
+  "pass_rate": "100.0%",
+  "stability": "连续818轮(1475→v2292)零漂移",
+  "faal_framework": "FAAL三阶七维框架固化确认",
+  "three_level_cascade": "三级级联放大链模型与装备加成三原则元理论确认",
+  "self_evolution_boundary": "持续遵守"
+}
