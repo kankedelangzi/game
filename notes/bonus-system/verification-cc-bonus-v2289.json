@@ -1,0 +1,125 @@
+{
+  "version": "v2289",
+  "timestamp": "2026-07-10T05:16:15Z",
+  "round": 2289,
+  "continuous_zero_drift": 815,
+  "cc_set_attributes_4_of_4_exact": true,
+  "berserker_fixed_pct": 9.27,
+  "berserker_percent_pct": 32.81,
+  "swordsmen_percent_pct": 45.7,
+  "marginal_dual": 4.93002,
+  "poji_synergy_attack": 2743,
+  "poji_formula": "2110×1.30=2743",
+  "faal_framework": "stabilized",
+  "three_level_cascade": "stabilized",
+  "equipment_bonus_principles": "stabilized",
+  "self_evolution_boundary": "observed",
+  "core_data_drift": "zero",
+  "verification": {
+    "passed": 18,
+    "total": 18,
+    "pass_rate_pct": 100.0,
+    "items": [
+      {
+        "check": "strength",
+        "expected": 310,
+        "actual": 310,
+        "pass": true
+      },
+      {
+        "check": "physical_attack",
+        "expected": 110,
+        "actual": 110,
+        "pass": true
+      },
+      {
+        "check": "independent_attack",
+        "expected": 120,
+        "actual": 120,
+        "pass": true
+      },
+      {
+        "check": "crit_rate_pct",
+        "expected": 3.0,
+        "actual": 3.0,
+        "pass": true
+      },
+      {
+        "check": "berserker_indep_contrib",
+        "expected": 48.0,
+        "actual": 48.0,
+        "pass": true
+      },
+      {
+        "check": "berserker_fixed_total",
+        "expected": 9.27,
+        "actual": 9.27,
+        "pass": true
+      },
+      {
+        "check": "berserker_percent_total",
+        "expected": 32.81,
+        "actual": 32.81,
+        "pass": true
+      },
+      {
+        "check": "swordsmen_percent_total",
+        "expected": 45.7,
+        "actual": 45.7,
+        "pass": true
+      },
+      {
+        "check": "marginal_dual",
+        "expected": 4.93002,
+        "actual": 4.93002,
+        "pass": true
+      },
+      {
+        "check": "poji_attack",
+        "expected": 2743,
+        "actual": 2743,
+        "pass": true
+      },
+      {
+        "check": "marginal_comp_0",
+        "value": 9.27,
+        "pass": true
+      },
+      {
+        "check": "marginal_comp_1",
+        "value": 32.81,
+        "pass": true
+      },
+      {
+        "check": "marginal_comp_2",
+        "value": 45.7,
+        "pass": true
+      },
+      {
+        "check": "marginal_comp_3",
+        "value": 4.93002,
+        "pass": true
+      },
+      {
+        "check": "poji_base",
+        "value": 2110,
+        "pass": true
+      },
+      {
+        "check": "poji_multiplier",
+        "value": 1.3,
+        "pass": true
+      },
+      {
+        "check": "poji_result",
+        "value": 2743,
+        "pass": true
+      },
+      {
+        "check": "poji_formula",
+        "value": "2110×1.30=2743",
+        "pass": true
+      }
+    ]
+  }
+}
