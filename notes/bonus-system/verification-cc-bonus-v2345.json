@@ -1,0 +1,67 @@
+{
+  "version": "v2345",
+  "timestamp": "2026-07-11T04:13:00+08:00",
+  "checks": [
+    {
+      "name": "CC套属性1 - 力量",
+      "expected": 310,
+      "actual": 310,
+      "match": true
+    },
+    {
+      "name": "CC套属性2 - 物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "match": true
+    },
+    {
+      "name": "CC套属性3 - 独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "match": true
+    },
+    {
+      "name": "CC套属性4 - 暴击率",
+      "expected": 3,
+      "actual": 3,
+      "match": true
+    },
+    {
+      "name": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "match": true
+    },
+    {
+      "name": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "match": true
+    },
+    {
+      "name": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "match": true
+    },
+    {
+      "name": "边际对偶值",
+      "expected": 4.928934,
+      "actual": 4.928934,
+      "match": true
+    },
+    {
+      "name": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "match": true
+    }
+  ],
+  "passed": 9,
+  "total": 9,
+  "pass_rate": 100.0,
+  "zero_drift_rounds": 869,
+  "zero_drift_from": "v1475",
+  "zero_drift_to": "v2345",
+  "status": "PASS"
+}
