@@ -1,0 +1,158 @@
+{
+  "summary": {
+    "version": "v2296",
+    "date": "2026-07-10 15:20 CST",
+    "total_checks": 9,
+    "kb_checks": 7,
+    "all_passed": true,
+    "checks_passed": 9,
+    "checks_total": 9,
+    "consecutive_zero_drift": 821,
+    "zero_drift_from": "v1475",
+    "core_data": {
+      "cc_set": {
+        "力量": 310,
+        "物理攻击": 110,
+        "独立攻击": 120,
+        "暴击": "3%"
+      },
+      "berserker": {
+        "固伤综合": "+9.27%",
+        "百分比综合": "+32.81%"
+      },
+      "swordsman": {
+        "百分比综合": "+45.70%"
+      },
+      "marginal_dual": 4.93002,
+      "poji_physics_atk": 2743
+    },
+    "faal_framework_confirmed": true,
+    "three_level_chain_confirmed": true,
+    "equipment_three_principles_confirmed": true,
+    "self_evolution_boundary_respected": true,
+    "core_data_zero_drift": true
+  },
+  "detailed_results": [
+    {
+      "check": "CC力量",
+      "expected": 310,
+      "actual": 310,
+      "unit": "points",
+      "passed": true
+    },
+    {
+      "check": "CC物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "unit": "points",
+      "passed": true
+    },
+    {
+      "check": "CC独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "unit": "points",
+      "passed": true
+    },
+    {
+      "check": "CC暴击",
+      "expected": 3.0,
+      "actual": 3.0,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "check": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "check": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "check": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "unit": "%",
+      "passed": true
+    },
+    {
+      "check": "边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "unit": "value",
+      "passed": true
+    },
+    {
+      "check": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "unit": "points",
+      "passed": true
+    },
+    {
+      "check": "KB一致性-berserker_str_bonus",
+      "expected": "confirmed",
+      "actual": "1.24",
+      "unit": "",
+      "passed": true
+    },
+    {
+      "check": "KB一致性-berserker_ind_atk_ratio",
+      "expected": "confirmed",
+      "actual": "0.06",
+      "unit": "",
+      "passed": true
+    },
+    {
+      "check": "KB一致性-swordsman_poji_ratio",
+      "expected": "confirmed",
+      "actual": "1.3",
+      "unit": "",
+      "passed": true
+    },
+    {
+      "check": "KB一致性-marginal_dual_stable",
+      "expected": "confirmed",
+      "actual": "True",
+      "unit": "",
+      "passed": true
+    },
+    {
+      "check": "KB一致性-cc_set_exact_match",
+      "expected": "confirmed",
+      "actual": "True",
+      "unit": "",
+      "passed": true
+    },
+    {
+      "check": "KB一致性-chain_amplification",
+      "expected": "confirmed",
+      "actual": "三级级联放大链",
+      "unit": "",
+      "passed": true
+    },
+    {
+      "check": "KB一致性-faal_framework",
+      "expected": "confirmed",
+      "actual": "FAAL三阶七维框架固化",
+      "unit": "",
+      "passed": true
+    }
+  ],
+  "kb_consistency": {
+    "berserker_str_bonus": 1.24,
+    "berserker_ind_atk_ratio": 0.06,
+    "swordsman_poji_ratio": 1.3,
+    "marginal_dual_stable": true,
+    "cc_set_exact_match": true,
+    "chain_amplification": "三级级联放大链",
+    "faal_framework": "FAAL三阶七维框架固化"
+  }
+}
