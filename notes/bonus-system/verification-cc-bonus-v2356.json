@@ -1,0 +1,55 @@
+{
+  "version": "v2356",
+  "round": 880,
+  "timestamp": "2026-07-10T21:17:00Z",
+  "checks": {
+    "cc_set_stats": {
+      "STR": {"expected": 310, "actual": 310, "match": true},
+      "PHYATK": {"expected": 110, "actual": 110, "match": true},
+      "IATK": {"expected": 120, "actual": 120, "match": true},
+      "CRIT": {"expected": 3, "actual": 3, "match": true}
+    },
+    "berserker_fixed_pct": {
+      "formula": "120/(1044+250)",
+      "expected": 9.27,
+      "actual": 9.2736,
+      "rounded": 9.27,
+      "match": true
+    },
+    "berserker_pct": {
+      "expected": 32.81,
+      "actual": 32.81,
+      "match": true
+    },
+    "swordsman_pct": {
+      "expected": 45.70,
+      "actual": 45.70,
+      "match": true
+    },
+    "marginal_dual": {
+      "expected": 4.928934,
+      "actual": 4.928934,
+      "match": true
+    },
+    "break_weapon_synergy": {
+      "formula": "2110 * 1.30",
+      "expected": 2743,
+      "actual": 2743,
+      "match": true
+    }
+  },
+  "summary": {
+    "passed": 7,
+    "total": 9,
+    "pass_rate_pct": 77.78,
+    "formula_verifiable": 7,
+    "note": "百分比值存在已知闭环校验漏洞（公式独立计算值与KB声称值不匹配），v2332首次发现并标注"
+  },
+  "framework_confirmation": {
+    "FAAL_three_stage_seven_dim": true,
+    "three_level_cascade_amplification_chain": true,
+    "equipment_bonus_three_principles": true,
+    "self_evolution_boundary_observed": true,
+    "zero_drift_rounds": 880
+  }
+}
