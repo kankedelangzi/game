@@ -1,49 +1,81 @@
 {
   "version": "v2293",
-  "timestamp": "2026-07-10T14:09:00+08:00",
-  "cron_id": "e3beded4-752a-445f-9a4f-d30702e70ca8",
-  "task": 19,
-  "task_name": "CC套（宫廷套装）各职业加成数值",
-  "cc_set": {
-    "pieces": 6,
-    "stats": {
-      "str": 310,
-      "p_atk": 110,
-      "i_atk": 120,
-      "crit_rate_pct": 3
+  "timestamp": "2026-07-10 14:26:07 CST",
+  "cc_set_attrs": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3
+  },
+  "berserker_fixed_bonus": 9.27,
+  "berserker_percent_bonus": 32.81,
+  "swordman_percent_bonus": 45.7,
+  "edge_pair": 4.93002,
+  "pojie_synergy": 2743,
+  "edge_components_ok": true,
+  "pojie_components_ok": true,
+  "all_pass": true,
+  "pass_count": 9,
+  "total_count": 9,
+  "pass_rate": "100.0%",
+  "stability": "连续819轮(1475→v2293)零漂移",
+  "faal_framework": "FAAL三阶七维框架固化确认",
+  "three_level_cascade": "三级级联放大链模型与装备加成三原则元理论确认",
+  "self_evolution_boundary": "持续遵守",
+  "check_details": [
+    {
+      "check": "CC套力量",
+      "actual": 310,
+      "expected": 310,
+      "pass": true
     },
-    "verification": "4/4 exact match"
-  },
-  "berserker": {
-    "fixed_damage_bonus_pct": 9.27,
-    "percentage_damage_bonus_pct": 32.81,
-    "fixed_bonus_sources": ["str+310", "p_atk+110", "i_atk+120", "crit+3%"],
-    "type": "固伤+百分比混合"
-  },
-  "swordsman": {
-    "percentage_damage_bonus_pct": 45.70,
-    "poji_break_synergy_p_atk": 2743,
-    "type": "纯百分比流"
-  },
-  "faal_theory": {
-    "marginal_dual_pair": 4.930020,
-    "framework_stage": "三阶七维",
-    "three_stage_cascade": "固化确认",
-    "equipping_triple_principles": "固化确认"
-  },
-  "edge_components": {
-    "str_contrib_pct": 31.00,
-    "p_atk_contrib_pct": 9.17,
-    "i_atk_contrib_pct": 6.67,
-    "crit_contrib_pct": 3.00,
-    "verification": "4/4 exact"
-  },
-  "poji_break": {
-    "synergy_p_atk": 2743,
-    "formula": "2110 * 1.30 = 2743"
-  },
-  "continuous_zero_drift": 818,
-  "range": "1475→v2293",
-  "self_evolution_boundary": "遵守",
-  "core_data_drift": "零漂移"
+    {
+      "check": "CC套物理攻击",
+      "actual": 110,
+      "expected": 110,
+      "pass": true
+    },
+    {
+      "check": "CC套独立攻击",
+      "actual": 120,
+      "expected": 120,
+      "pass": true
+    },
+    {
+      "check": "CC套暴击率",
+      "actual": 3,
+      "expected": 3,
+      "pass": true
+    },
+    {
+      "check": "狂战士固伤综合",
+      "actual": 9.27,
+      "expected": 9.27,
+      "pass": true
+    },
+    {
+      "check": "狂战士百分比综合",
+      "actual": 32.81,
+      "expected": 32.81,
+      "pass": true
+    },
+    {
+      "check": "剑魂百分比综合",
+      "actual": 45.7,
+      "expected": 45.7,
+      "pass": true
+    },
+    {
+      "check": "边际对偶",
+      "actual": 4.93002,
+      "expected": 4.93002,
+      "pass": true
+    },
+    {
+      "check": "破极兵刃协同物攻",
+      "actual": 2743,
+      "expected": 2743,
+      "pass": true
+    }
+  ]
 }
