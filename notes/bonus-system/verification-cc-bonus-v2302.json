@@ -1,0 +1,83 @@
+{
+  "version": "v2302",
+  "timestamp": "2026-07-10 15:49 CST",
+  "cc_set_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3
+  },
+  "berserker": {
+    "固伤综合": "+9.27%",
+    "百分比综合": "+32.81%"
+  },
+  "swordman": {
+    "百分比综合": "+45.70%"
+  },
+  "faal": {
+    "边际对偶": 4.93002,
+    "破极兵刃协同物攻": 2743
+  },
+  "stability": {
+    "consecutive_rounds": 827,
+    "drift": false,
+    "cc_6件属性": "4/4精确匹配"
+  },
+  "checks": [
+    {
+      "name": "cc_attr_力量",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "name": "cc_attr_物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "name": "cc_attr_独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "name": "cc_attr_暴击率",
+      "expected": 3,
+      "actual": 3,
+      "pass": true
+    },
+    {
+      "name": "berserker_fixed",
+      "expected": "+9.27%",
+      "actual": "+9.27%",
+      "pass": true
+    },
+    {
+      "name": "berserker_pct",
+      "expected": "+32.81%",
+      "actual": "+32.81%",
+      "pass": true
+    },
+    {
+      "name": "swordman_pct",
+      "expected": "+45.70%",
+      "actual": "+45.70%",
+      "pass": true
+    },
+    {
+      "name": "marginal_dual",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "name": "pjba_watk",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    }
+  ],
+  "summary": "9/9 passed (100.0%), 827 rounds zero-drift"
+}
