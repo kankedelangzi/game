@@ -1,0 +1,55 @@
+{
+  "v": "v2310",
+  "timestamp": "2026-07-10 19:04 CST",
+  "round": 835,
+  "checks": {
+    "cc_attr_str": {
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    "cc_attr_phy": {
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    "cc_attr_indep": {
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    "cc_attr_crit": {
+      "expected": 0.03,
+      "actual": 0.03,
+      "pass": true
+    },
+    "berserker_fixed": {
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    "berserker_pct": {
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    "swordman_pct": {
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    "marginal_dual": {
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    "pokou_synergy": {
+      "expected": 2743.0,
+      "actual": 2743.0,
+      "pass": true
+    }
+  },
+  "passed": 9,
+  "total": 9,
+  "rate": "9/9"
+}
