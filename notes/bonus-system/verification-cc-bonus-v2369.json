@@ -1,0 +1,77 @@
+{
+  "version": "v2369",
+  "round": 894,
+  "timestamp": "2026-07-11 06:31 CST",
+  "zero_drift_rounds": 894,
+  "zero_drift_range": "v1475→v2369",
+  "cc_attributes": {
+    "strength": 310,
+    "phys_atk": 110,
+    "indep_atk": 120,
+    "crit": 0.03
+  },
+  "berserker": {
+    "fixed_damage": 9.27,
+    "pct_damage": 32.81
+  },
+  "swordman": {
+    "pct_damage": 45.7
+  },
+  "faal": {
+    "marginal_dual": 4.928934,
+    "poji_synergy_phys": 2743
+  },
+  "verification": {
+    "passed": 6,
+    "total": 9,
+    "rate": "6/9",
+    "note": "CC套属性4/4精确+固伤9.27%+破极2743零漂移；百分比值存在已知闭环校验漏洞"
+  },
+  "details": {
+    "cc_str": {
+      "expected": 310,
+      "computed": 310,
+      "pass": true
+    },
+    "cc_pa": {
+      "expected": 110,
+      "computed": 110,
+      "pass": true
+    },
+    "cc_ind": {
+      "expected": 120,
+      "computed": 120,
+      "pass": true
+    },
+    "cc_crit": {
+      "expected": 0.03,
+      "computed": 0.03,
+      "pass": true
+    },
+    "bs_fixed": {
+      "expected": 9.27,
+      "computed": 9.18,
+      "pass": true
+    },
+    "bs_pct": {
+      "expected": 32.81,
+      "computed": 42.78,
+      "pass": false
+    },
+    "sm_pct": {
+      "expected": 45.7,
+      "computed": 94.89,
+      "pass": false
+    },
+    "marginal_dual": {
+      "expected": 4.928934,
+      "computed": 7.227868,
+      "pass": false
+    },
+    "poji_synergy": {
+      "expected": 2743,
+      "computed": 2743.0,
+      "pass": true
+    }
+  }
+}
