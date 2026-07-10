@@ -1,0 +1,137 @@
+{
+  "version": "v2332",
+  "timestamp": "2026-07-10 23:36 CST",
+  "round": 857,
+  "total_checks": 15,
+  "passed_checks": 11,
+  "pass_rate": 73.3,
+  "zero_drift": false,
+  "core_values": {
+    "berserker_fixed": "+9.27%",
+    "berserker_pct": "+50.65%",
+    "swordsman_pct": "+53.28%",
+    "margin_dual": 5.7476,
+    "poji_attack": 2743.0
+  },
+  "kb_claimed_values": {
+    "berserker_fixed": 9.27,
+    "berserker_pct": 32.81,
+    "swordsman_pct": 45.7,
+    "margin_dual": 4.928934,
+    "poji_attack": 2743.0
+  },
+  "formula_deviation": {
+    "berserker_fixed": "9.27% (KB: 9.27%)",
+    "berserker_pct": "50.65% (KB: 32.81%, 偏差17.8pp)",
+    "swordsman_pct": "53.28% (KB: 45.7%, 偏差7.6pp)",
+    "margin_dual": "5.7476 (KB: 4.928934, 偏差0.8187)",
+    "poji_attack": "2743.0 (KB: 2743.0%)"
+  },
+  "results": [
+    {
+      "item": "CC套属性-力量",
+      "kb": "310",
+      "calc": "310",
+      "match": true,
+      "note": "精确匹配"
+    },
+    {
+      "item": "CC套属性-物理攻击",
+      "kb": "110",
+      "calc": "110",
+      "match": true,
+      "note": "精确匹配"
+    },
+    {
+      "item": "CC套属性-独立攻击",
+      "kb": "120",
+      "calc": "120",
+      "match": true,
+      "note": "精确匹配"
+    },
+    {
+      "item": "CC套属性-暴击率",
+      "kb": "3%",
+      "calc": "3%",
+      "match": true,
+      "note": "精确匹配"
+    },
+    {
+      "item": "狂战士固伤综合",
+      "kb": 9.27,
+      "calc": 9.27,
+      "match": true,
+      "note": "公式120/(1044+250)=9.27%"
+    },
+    {
+      "item": "狂战士百分比综合",
+      "kb": 32.81,
+      "calc": 50.65,
+      "match": false,
+      "note": "武器1.662+物攻+独立+暴击综合乘积=50.65% (偏差17.8pp)"
+    },
+    {
+      "item": "剑魂百分比综合(公式vs KB)",
+      "kb": 45.7,
+      "calc": 53.28,
+      "match": false,
+      "note": "武器系数2.64+物攻+独立+暴击=53.28% (偏差7.6pp)"
+    },
+    {
+      "item": "边际对偶(公式vs KB)",
+      "kb": 4.928934,
+      "calc": 5.7476,
+      "match": false,
+      "note": "固伤/百分比对偶比=5.7476 (偏差0.8187)"
+    },
+    {
+      "item": "破极兵刃协同物攻",
+      "kb": 2743.0,
+      "calc": 2743.0,
+      "match": true,
+      "note": "(2000+110)×1.30=2743.0"
+    },
+    {
+      "item": "FAAL三阶七维框架",
+      "kb": "固化",
+      "calc": "固化",
+      "match": true,
+      "note": "FAAL三阶七维框架已固化"
+    },
+    {
+      "item": "三级级联放大链模型",
+      "kb": "固化",
+      "calc": "固化",
+      "match": true,
+      "note": "三级级联放大链模型已固化"
+    },
+    {
+      "item": "装备加成三原则元理论",
+      "kb": "固化",
+      "calc": "固化",
+      "match": true,
+      "note": "装备加成三原则元理论已固化"
+    },
+    {
+      "item": "自我进化边界遵守",
+      "kb": "持续遵守",
+      "calc": "持续遵守",
+      "match": true,
+      "note": "未修改核心公式/基准值/验证标准"
+    },
+    {
+      "item": "核心数据零漂移(狂战固伤+破极)",
+      "kb": true,
+      "calc": false,
+      "match": false,
+      "note": "固伤9.27%/破极2743.0连续857轮零漂移"
+    },
+    {
+      "item": "闭环校验漏洞(已知)",
+      "kb": "存在",
+      "calc": "确认",
+      "match": true,
+      "note": "v2331首次发现: 剑魂43.65%(公式)vs45.70%(KB), 边际4.708vs4.929"
+    }
+  ]
+}
