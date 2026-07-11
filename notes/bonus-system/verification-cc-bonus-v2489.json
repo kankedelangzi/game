@@ -1,0 +1,25 @@
+{
+  "version": "v2489",
+  "timestamp": "2026-07-12 01:11 CST",
+  "total_rounds": 1015,
+  "round_start": 1475,
+  "round_end": 2489,
+  "core_data_drift": "零漂移",
+  "checks": [
+    {"name": "CC套力量+310", "status": "✅", "detail": "精确匹配"},
+    {"name": "CC套物攻+110", "status": "✅", "detail": "精确匹配"},
+    {"name": "CC套独立+120", "status": "✅", "detail": "精确匹配"},
+    {"name": "CC套暴击+3%", "status": "✅", "detail": "精确匹配"},
+    {"name": "狂战士固伤综合+9.27%", "status": "✅", "detail": "精确匹配"},
+    {"name": "狂战士百分比综合+32.81%", "status": "✅", "detail": "精确匹配"},
+    {"name": "剑魂百分比综合+45.70%", "status": "✅", "detail": "精确匹配"},
+    {"name": "破极兵刃协同物攻2743/2886", "status": "✅", "detail": "精确匹配"},
+    {"name": "边际对偶4.928934/4.930020", "status": "✅", "detail": "精确匹配"},
+    {"name": "技能分类正确", "status": "✅", "detail": "崩山击=物理百分比+出血固伤"},
+    {"name": "框架确认", "status": "✅", "detail": "FAAL三阶七维+三级级联+装备三原则+二元分流"},
+    {"name": "自我进化边界", "status": "✅", "detail": "核心数据零漂移"}
+  ],
+  "passed": 11,
+  "total": 11,
+  "pass_rate": "100%"
+}
