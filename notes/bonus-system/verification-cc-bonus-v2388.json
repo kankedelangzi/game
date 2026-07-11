@@ -1,0 +1,101 @@
+{
+  "version": "v2388",
+  "timestamp": "2026-07-11T08:34:30+08:00",
+  "round": 913,
+  "zero_drift_rounds": "913(1475→v2388)",
+  "cc_set": {
+    "str": 310,
+    "matk": 110,
+    "idat": 120,
+    "crit": 3.0
+  },
+  "berserker": {
+    "fixed_bonus_pct": 9.27,
+    "pct_bonus_pct": 32.81
+  },
+  "swordman": {
+    "pct_bonus_pct": 45.7
+  },
+  "marginal_dual": 4.928934,
+  "poji_atk": 2743,
+  "checks": [
+    {
+      "item": "CC套力量",
+      "expected": 310,
+      "actual": 310,
+      "diff": 0,
+      "pass": true,
+      "status": "✅ PASS"
+    },
+    {
+      "item": "CC套物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "diff": 0,
+      "pass": true,
+      "status": "✅ PASS"
+    },
+    {
+      "item": "CC套独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "diff": 0,
+      "pass": true,
+      "status": "✅ PASS"
+    },
+    {
+      "item": "CC套暴击率",
+      "expected": 3.0,
+      "actual": 3.0,
+      "diff": 0,
+      "pass": true,
+      "status": "✅ PASS"
+    },
+    {
+      "item": "狂战士-固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "diff": 0.0,
+      "pass": true,
+      "status": "✅ PASS"
+    },
+    {
+      "item": "狂战士-百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "diff": 0.0,
+      "pass": true,
+      "status": "✅ PASS"
+    },
+    {
+      "item": "剑魂-百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "diff": 0.0,
+      "pass": true,
+      "status": "✅ PASS"
+    },
+    {
+      "item": "边际对偶倍数",
+      "expected": 4.928934,
+      "actual": 4.928934,
+      "diff": 0.0,
+      "pass": true,
+      "status": "✅ PASS"
+    },
+    {
+      "item": "破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "diff": 0,
+      "pass": true,
+      "status": "✅ PASS"
+    }
+  ],
+  "summary": {
+    "total": 9,
+    "passed": 9,
+    "failed": 0,
+    "rate": 100.0
+  }
+}
