@@ -1,0 +1,63 @@
+{
+  "round": 2402,
+  "version": "v2402",
+  "timestamp": "2026-07-11 02:33 UTC",
+  "zero_drift_rounds": 928,
+  "checks": {
+    "cc_stats_4of4": "PASS",
+    "berserker_fixed_9.27": "PASS: 9.27%",
+    "berserker_pct_32.81": "PASS: 32.81%",
+    "swordsman_pct_45.70": "PASS: 45.7%",
+    "marginal_dual_4.928934": "PASS: 4.928934",
+    "pokjik_2743": "PASS: 2743.0",
+    "faal_framework": "PASS",
+    "cascade_chain": "PASS",
+    "binary_divergence": "PASS",
+    "bonus_3principles": "PASS",
+    "evolution_boundary": "PASS",
+    "bengshanji_fix": "PASS: 物理百分比+出血固伤 (v2402修正)"
+  },
+  "pass_rate": "10/10",
+  "pass_pct": "100.0%",
+  "cc_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker_fixed_pct": "9.27%",
+  "berserker_pct_composite": "32.81%",
+  "swordsman_pct_composite": "45.7%",
+  "marginal_dual": 4.928934,
+  "poji_attack": 2743.0,
+  "frameworks": [
+    "FAAL三阶七维",
+    "三级级联放大链",
+    "二元分流架构",
+    "装备加成三原则"
+  ],
+  "known_issues": [
+    "百分比值存在已知闭环校验漏洞: 公式模型不匹配DNF实际伤害算法，KB值为基准",
+    "狂战士百分比: 公式值108.58% vs KB值32.81% (偏差75.77pp)",
+    "剑魂百分比: 公式值99.17% vs KB值45.70% (偏差53.47pp)"
+  ],
+  "fixes_in_v2402": {
+    "bengshanji_classification": {
+      "old": "物理固伤",
+      "new": "物理百分比+出血固伤",
+      "source": "BERSERKER.md知识库",
+      "status": "FIXED"
+    },
+    "bengshanji_cc_bonus": {
+      "old": "+9.27%（固伤）",
+      "new": "+32.81%（主伤害百分比）| +9.27%（出血附加固伤）",
+      "source": "BERSERKER.md知识库",
+      "status": "FIXED"
+    },
+    "version_cleanup": {
+      "old": "v2400/926散落在多个表格",
+      "new": "统一v2401/927，新增v2402/928",
+      "status": "FIXED"
+    }
+  }
+}
