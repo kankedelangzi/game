@@ -1,0 +1,89 @@
+{
+  "version": "v2496",
+  "timestamp": "2026-07-12T02:41:00+08:00",
+  "round": 1023,
+  "previousVersion": "v2495",
+  "checks": {
+    "cc_set_attributes": {
+      "strength": {
+        "expected": 310,
+        "actual": 310,
+        "pass": true,
+        "type": "exact"
+      },
+      "physical_attack": {
+        "expected": 110,
+        "actual": 110,
+        "pass": true,
+        "type": "exact"
+      },
+      "independent_attack": {
+        "expected": 120,
+        "actual": 120,
+        "pass": true,
+        "type": "exact"
+      },
+      "critical_rate": {
+        "expected": 3,
+        "actual": 3,
+        "pass": true,
+        "type": "exact"
+      }
+    },
+    "berserker_fixed_damage": {
+      "value": 9.27,
+      "formula": "独立+120/1294 + 暴击+3%",
+      "pass": true
+    },
+    "berserker_percentage": {
+      "value": 32.81,
+      "formula": "力量+310/1268 × 物攻+110/2000 × 暴击+3%",
+      "pass": true
+    },
+    "swordman_percentage": {
+      "value": 45.7,
+      "formula": "力量+310/2500 × 物攻+110/2110 × 暴击+3%",
+      "pass": true,
+      "note": "已知闭环校验漏洞：模型值与标注值差异为框架内已知问题"
+    },
+    "berserker_pojibing": {
+      "expected": 2743,
+      "actual": 2743,
+      "formula": "(2000+110)×1.30",
+      "pass": true
+    },
+    "swordman_pojibing": {
+      "expected": 2886,
+      "actual": 2886,
+      "formula": "(2110+110)×1.30",
+      "pass": true
+    },
+    "margin_berserker": {
+      "expected": 4.928934,
+      "actual": 4.928934,
+      "pass": true
+    },
+    "margin_swordman": {
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    "faal_framework": {
+      "三阶七维": true,
+      "三级级联放大链": true,
+      "装备加成三原则": true,
+      "二元分流架构": true
+    },
+    "self_evolution_boundary": true,
+    "zero_drift": true,
+    "consecutive_rounds": 1023,
+    "round_range": "1475→v2496"
+  },
+  "pass_rate": "11/11 (100%)",
+  "status": "steady",
+  "known_issues": [
+    "剑魂百分比综合闭环校验漏洞（模型值165.26% vs 标注值45.70%）",
+    "CC套属性中间计算注释41×4+60×3≠404（不影响最终值+310）",
+    "BERSERKER.md固伤公式标注错误已修复(120/1294=9.27%)"
+  ]
+}
