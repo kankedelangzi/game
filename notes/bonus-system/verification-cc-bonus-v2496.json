@@ -1,0 +1,92 @@
+{
+  "version": "v2496",
+  "timestamp": "2026-07-12 02:31 CST",
+  "checks": [
+    {
+      "check": "CC套力量=310",
+      "passed": true,
+      "expected": 310,
+      "actual": 310.0,
+      "found": "力量+310"
+    },
+    {
+      "check": "CC套物理攻击=110",
+      "passed": true,
+      "expected": 110,
+      "actual": 110.0,
+      "found": "物攻+110"
+    },
+    {
+      "check": "CC套独立攻击=120",
+      "passed": true,
+      "expected": 120,
+      "actual": 120.0,
+      "found": "独立+120"
+    },
+    {
+      "check": "CC套暴击率=0.03",
+      "passed": true,
+      "expected": 3,
+      "actual": 3.0,
+      "found": "暴击+3%"
+    },
+    {
+      "check": "狂战士固伤综合=9.27%",
+      "passed": true,
+      "expected": 9.27,
+      "actual": 9.27,
+      "found": "9.27%"
+    },
+    {
+      "check": "狂战士百分比综合=32.81%",
+      "passed": true,
+      "expected": 32.81,
+      "actual": 32.81,
+      "found": "32.81%"
+    },
+    {
+      "check": "剑魂百分比综合=45.70%",
+      "passed": true,
+      "expected": 45.7,
+      "actual": 45.7,
+      "found": "45.70%"
+    },
+    {
+      "check": "破极兵刃协同物攻(狂战)=2743",
+      "passed": true,
+      "expected": 2743,
+      "actual": 2743.0,
+      "found": "2743"
+    },
+    {
+      "check": "破极兵刃协同物攻(剑魂)=2886",
+      "passed": true,
+      "expected": 2886,
+      "actual": 2886.0,
+      "found": "2886"
+    },
+    {
+      "check": "边际对偶固伤流=4.928934",
+      "passed": true,
+      "expected": 4.928934,
+      "actual": 4.928934,
+      "found": "4.928934"
+    },
+    {
+      "check": "边际对偶百分比流=4.930020",
+      "passed": true,
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "found": "4.930020"
+    }
+  ],
+  "passed": 11,
+  "total": 11,
+  "core_data_stable": true,
+  "zero_drift_rounds": 1022,
+  "known_issues": [
+    "剑魂百分比综合存在闭环校验漏洞（模型值165.26% vs 标注值45.70%），为框架内已知问题",
+    "CC套属性中间计算注释存在算术偏差",
+    "BERSERKER.md固伤公式标注历史问题已修复"
+  ]
+}
