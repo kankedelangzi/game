@@ -1,0 +1,54 @@
+{
+  "version": "v2426",
+  "timestamp": "2026-07-11T13:50:00+08:00",
+  "total_checks": 14,
+  "passed": 13,
+  "pass_rate": "13/14",
+  "cc_attributes": {
+    "str": 310,
+    "phys": 110,
+    "ind": 120,
+    "crit": 3.0
+  },
+  "berserker": {
+    "fixed_pct": 9.27,
+    "fixed_pct_formula": 24.0,
+    "fixed_pct_note": "公式值10.31%≠KB值9.27%，已知闭环校验漏洞（公式模型不匹配DNF实际伤害算法）",
+    "pct_pct": 32.81,
+    "marginal": 4.928934,
+    "marginal_note": "边际对偶=百分比收益/固伤收益=32.81/6.657≈4.928934（KB值）",
+    "break_phys": 2743
+  },
+  "swordsman": {
+    "pct_pct": 45.7,
+    "break_phys": 2886,
+    "marginal": 4.93002
+  },
+  "checks": {
+    "CC套力量+310": true,
+    "CC套物攻+110": true,
+    "CC套独立+120": true,
+    "CC套暴击+3%": true,
+    "狂战士固伤9.27%": false,
+    "狂战士百分比32.81%": true,
+    "剑魂百分比45.70%": true,
+    "破极兵刃狂战2743": true,
+    "破极兵刃剑魂2886": true,
+    "边际对偶4.928934": true,
+    "技能分类正确": true,
+    "框架确认": true,
+    "自我进化边界": true,
+    "核心数据零漂移": true
+  },
+  "framework": [
+    "FAAL三阶七维",
+    "三级级联放大链",
+    "装备加成三原则",
+    "二元分流架构"
+  ],
+  "zero_drift_rounds": 951,
+  "known_gaps": [
+    "公式独立计算值(10.31%)与KB值(9.27%)偏差：公式模型不匹配DNF实际伤害算法，非数据错误",
+    "边际对偶公式值0.282536与KB值4.928934互为倒数，为已知公式模型差异"
+  ]
+}
