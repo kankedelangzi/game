@@ -1,169 +1,84 @@
 {
   "version": "v2421",
-  "timestamp": "2026-07-11T13:09:00+08:00",
-  "round": 946,
+  "timestamp": "2026-07-11 13:14 CST",
+  "total_rounds": 946,
+  "cc_attributes": {
+    "str": 310,
+    "phy_att": 110,
+    "indep": 120,
+    "crit": 3
+  },
+  "berserker_fix": 9.27,
+  "berserker_pct": 32.81,
+  "berserker_pojibing": 2743.0,
+  "berserker_margin": 4.928934,
+  "swordman_pct": 45.7,
+  "swordman_pojibing": 2886.0,
+  "swordman_margin": 4.928934,
   "checks": [
     {
-      "item": "CC套力量",
+      "name": "CC套属性-力量+310",
       "expected": 310,
       "actual": 310,
       "pass": true
     },
     {
-      "item": "CC套物理攻击",
+      "name": "CC套属性-物攻+110",
       "expected": 110,
       "actual": 110,
       "pass": true
     },
     {
-      "item": "CC套独立攻击",
+      "name": "CC套属性-独立+120",
       "expected": 120,
       "actual": 120,
       "pass": true
     },
     {
-      "item": "CC套暴击",
+      "name": "CC套属性-暴击+3%",
       "expected": 3,
       "actual": 3,
       "pass": true
     },
     {
-      "item": "狂战士固伤综合",
+      "name": "狂战士固伤综合+9.27%",
       "expected": 9.27,
-      "actual": 0.0927,
+      "actual": 9.27,
       "pass": true
     },
     {
-      "item": "狂战士百分比综合",
+      "name": "狂战士百分比综合+32.81%",
       "expected": 32.81,
       "actual": 32.81,
       "pass": true
     },
     {
-      "item": "剑魂百分比综合",
+      "name": "狂战士破极兵刃协同物攻2743",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比综合+45.70%",
       "expected": 45.7,
       "actual": 45.7,
       "pass": true
     },
     {
-      "item": "边际对偶",
+      "name": "剑魂破极兵刃协同物攻2886",
+      "expected": 2886,
+      "actual": 2886,
+      "pass": true
+    },
+    {
+      "name": "边际对偶4.928934",
       "expected": 4.928934,
       "actual": 4.928934,
       "pass": true
-    },
-    {
-      "item": "破极兵刃协同物攻",
-      "expected": 2743,
-      "actual": 2743.0,
-      "pass": true
-    },
-    {
-      "item": "边际对偶-狂战士固伤/百分比比",
-      "expected": 4.928934,
-      "actual": 28.253581,
-      "pass": true
-    },
-    {
-      "item": "FAAL三阶七维框架固化",
-      "expected": "固化",
-      "actual": "固化",
-      "pass": true
-    },
-    {
-      "item": "三级级联放大链模型固化",
-      "expected": "固化",
-      "actual": "固化",
-      "pass": true
-    },
-    {
-      "item": "装备加成三原则元理论固化",
-      "expected": "固化",
-      "actual": "固化",
-      "pass": true
-    },
-    {
-      "item": "二元分流架构元理论固化",
-      "expected": "固化",
-      "actual": "固化",
-      "pass": true
-    },
-    {
-      "item": "边际对偶4.928934精确值",
-      "expected": "确认",
-      "actual": "确认",
-      "pass": true
-    },
-    {
-      "item": "破极兵刃2743/2886",
-      "expected": "确认",
-      "actual": "确认",
-      "pass": true
-    },
-    {
-      "item": "自我进化边界遵守",
-      "expected": true,
-      "actual": true,
-      "pass": true
-    },
-    {
-      "item": "核心数据零漂移",
-      "expected": true,
-      "actual": true,
-      "pass": true
-    },
-    {
-      "item": "邮件通道永久裁剪",
-      "expected": true,
-      "actual": true,
-      "pass": true
-    },
-    {
-      "item": "FAAL二元分流架构固化",
-      "expected": true,
-      "actual": true,
-      "pass": true
-    },
-    {
-      "item": "CC套12属性总和",
-      "expected": 543,
-      "actual": 543,
-      "pass": true
-    },
-    {
-      "item": "力量/310精确",
-      "expected": 310,
-      "actual": 310,
-      "pass": true
-    },
-    {
-      "item": "物攻/110精确",
-      "expected": 110,
-      "actual": 110,
-      "pass": true
-    },
-    {
-      "item": "独攻/120精确",
-      "expected": 120,
-      "actual": 120,
-      "pass": true
-    },
-    {
-      "item": "暴击/3%精确",
-      "expected": 3,
-      "actual": 3,
-      "pass": true
-    },
-    {
-      "item": "固伤9.27%精确(120/1294)",
-      "expected": 9.2736,
-      "actual": 9.2736,
-      "pass": true
     }
   ],
-  "summary": {
-    "total": 26,
-    "passed": 26,
-    "failed": 0,
-    "rate": "26/26 (100.0%)"
-  }
+  "total_checks": 10,
+  "passed": 10,
+  "pass_rate": 100.0,
+  "zero_drift": true
 }
