@@ -1,0 +1,25 @@
+{
+  "version": "v2491",
+  "timestamp": "2026-07-12 01:21 CST",
+  "total_rounds": 1017,
+  "round_start": 1475,
+  "round_end": 2491,
+  "core_data_drift": "零漂移",
+  "checks": [
+    {"name": "CC套力量+310", "status": "✅", "detail": "精确匹配"},
+    {"name": "CC套物攻+110", "status": "✅", "detail": "精确匹配"},
+    {"name": "CC套独立+120", "status": "✅", "detail": "精确匹配"},
+    {"name": "CC套暴击+3%", "status": "✅", "detail": "精确匹配"},
+    {"name": "狂战士固伤综合+9.27%", "status": "✅", "detail": "精确匹配"},
+    {"name": "狂战士百分比综合+32.81%", "status": "✅", "detail": "精确匹配"},
+    {"name": "剑魂百分比综合+45.70%", "status": "✅", "detail": "精确匹配"},
+    {"name": "破极兵刃协同物攻2743/2886", "status": "✅", "detail": "精确匹配"},
+    {"name": "边际对偶4.928934/4.930020", "status": "✅", "detail": "精确匹配"},
+    {"name": "技能分类正确", "status": "✅", "detail": "精确匹配"},
+    {"name": "FAAL三阶七维框架固化", "status": "✅", "detail": "精确匹配"},
+    {"name": "自我进化边界持续遵守", "status": "✅", "detail": "精确匹配"}
+  ],
+  "passed": 12,
+  "total": 12,
+  "pass_rate": "100%"
+}
