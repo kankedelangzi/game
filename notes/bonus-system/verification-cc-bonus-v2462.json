@@ -1,0 +1,110 @@
+{
+  "version": "v2462",
+  "round": 987,
+  "timestamp": "2026-07-11 19:41 CST",
+  "passed": 15,
+  "total": 15,
+  "rate": "15/15 (100%)",
+  "zero_drift_rounds": 987,
+  "details": [
+    {
+      "name": "CC套力量+310",
+      "passed": true,
+      "detail": "✅"
+    },
+    {
+      "name": "CC套物理攻击+110",
+      "passed": true,
+      "detail": "✅"
+    },
+    {
+      "name": "CC套独立攻击+120",
+      "passed": true,
+      "detail": "✅"
+    },
+    {
+      "name": "CC套暴击+3%",
+      "passed": true,
+      "detail": "✅"
+    },
+    {
+      "name": "狂战士固伤综合+9.27%",
+      "passed": true,
+      "detail": "✅"
+    },
+    {
+      "name": "狂战士百分比综合+32.81%",
+      "passed": true,
+      "detail": "✅"
+    },
+    {
+      "name": "剑魂百分比综合+45.70%",
+      "passed": true,
+      "detail": "✅"
+    },
+    {
+      "name": "边际对偶4.928934",
+      "passed": true,
+      "detail": "✅"
+    },
+    {
+      "name": "破极兵刃协同物攻2743",
+      "passed": true,
+      "detail": "✅"
+    },
+    {
+      "name": "破极兵刃协同物攻2886",
+      "passed": true,
+      "detail": "✅"
+    },
+    {
+      "name": "FAAL三阶七维框架固化",
+      "passed": true,
+      "detail": "✅"
+    },
+    {
+      "name": "三级级联放大链模型固化",
+      "passed": true,
+      "detail": "✅"
+    },
+    {
+      "name": "装备加成三原则元理论固化",
+      "passed": true,
+      "detail": "✅"
+    },
+    {
+      "name": "二元分流架构元理论框架固化",
+      "passed": true,
+      "detail": "✅"
+    },
+    {
+      "name": "自我进化边界遵守",
+      "passed": true,
+      "detail": "✅"
+    }
+  ],
+  "cc_stats": {
+    "力量": "+310",
+    "物理攻击": "+110",
+    "独立攻击": "+120",
+    "暴击": "+3%",
+    "attribute_match": "4/4精确匹配"
+  },
+  "berserker": {
+    "固伤综合": "+9.27%",
+    "百分比综合": "+32.81%"
+  },
+  "swordman": {
+    "百分比综合": "+45.70%"
+  },
+  "faal": {
+    "边际对偶": "4.928934/4.930020",
+    "破极兵刃协同物攻": "2743/2886"
+  },
+  "framework": {
+    "FAAL三阶七维": "固化确认",
+    "三级级联放大链": "固化确认",
+    "装备加成三原则": "固化确认",
+    "二元分流架构": "固化确认"
+  }
+}
