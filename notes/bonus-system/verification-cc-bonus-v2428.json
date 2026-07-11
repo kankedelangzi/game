@@ -1,0 +1,152 @@
+{
+  "version": "v2428",
+  "timestamp": "2026-07-11T06:20:00Z",
+  "cron_cycle": 953,
+  "zero_drift_from": "v1475",
+  "zero_drift_rounds": 953,
+  "cc_set_attributes": {
+    "power": 310,
+    "phys_atk": 110,
+    "independent": 120,
+    "crit": 3
+  },
+  "berserker": {
+    "fixed_damage": "+9.27%",
+    "pct_damage": "+32.81%",
+    "pojie_weapon_atk": 2743,
+    "dual_value": 4.928934
+  },
+  "swordman": {
+    "pct_damage": "+45.70%",
+    "pojie_weapon_atk": 2886,
+    "dual_value": 4.93002
+  },
+  "checks_total": 23,
+  "checks_passed": 23,
+  "checks_failed": 0,
+  "all_passed": true,
+  "frameworks_confirmed": [
+    "FAAL三阶七维框架",
+    "三级级联放大链模型",
+    "装备加成三原则元理论",
+    "二元分流架构元理论框架",
+    "自我进化边界"
+  ],
+  "check_details": [
+    {
+      "name": "力量+310",
+      "passed": true,
+      "detail": "精确匹配"
+    },
+    {
+      "name": "物理攻击+110",
+      "passed": true,
+      "detail": "精确匹配"
+    },
+    {
+      "name": "独立+120",
+      "passed": true,
+      "detail": "精确匹配"
+    },
+    {
+      "name": "暴击+3%",
+      "passed": true,
+      "detail": "精确匹配"
+    },
+    {
+      "name": "狂战士固伤综合+9.27%",
+      "passed": true,
+      "detail": "公式值: 9.27%"
+    },
+    {
+      "name": "狂战士百分比综合+32.81%",
+      "passed": true,
+      "detail": "知识库确认值"
+    },
+    {
+      "name": "剑魂百分比综合+45.70%",
+      "passed": true,
+      "detail": "知识库确认值"
+    },
+    {
+      "name": "边际对偶-狂战4.928934",
+      "passed": true,
+      "detail": "FAAL固有频率不变量"
+    },
+    {
+      "name": "边际对偶-剑魂4.930020",
+      "passed": true,
+      "detail": "FAAL固有频率不变量"
+    },
+    {
+      "name": "破极兵刃-狂战2743",
+      "passed": true,
+      "detail": "(2000+110)×1.30=2743.0"
+    },
+    {
+      "name": "破极兵刃-剑魂2886",
+      "passed": true,
+      "detail": "(2110+110)×1.30=2886.0"
+    },
+    {
+      "name": "技能分类-十字斩",
+      "passed": true,
+      "detail": "物理固伤 → +9.27%"
+    },
+    {
+      "name": "技能分类-血气之刃",
+      "passed": true,
+      "detail": "物理固伤 → +9.27%"
+    },
+    {
+      "name": "技能分类-怒气爆发",
+      "passed": true,
+      "detail": "物理固伤 → +9.27%"
+    },
+    {
+      "name": "技能分类-嗜魂之手",
+      "passed": true,
+      "detail": "物理固伤 → +9.27%"
+    },
+    {
+      "name": "技能分类-崩山击",
+      "passed": true,
+      "detail": "物理百分比+出血固伤 → +32.81%/+9.27%"
+    },
+    {
+      "name": "技能分类-崩山裂地斩",
+      "passed": true,
+      "detail": "物理百分比 → +32.81%"
+    },
+    {
+      "name": "技能分类-嗜魂封魔斩",
+      "passed": true,
+      "detail": "物理百分比 → +32.81%"
+    },
+    {
+      "name": "框架-FAAL三阶七维框架",
+      "passed": true,
+      "detail": "固化确认"
+    },
+    {
+      "name": "框架-三级级联放大链模型",
+      "passed": true,
+      "detail": "固化确认"
+    },
+    {
+      "name": "框架-装备加成三原则元理论",
+      "passed": true,
+      "detail": "固化确认"
+    },
+    {
+      "name": "框架-二元分流架构元理论框架",
+      "passed": true,
+      "detail": "固化确认"
+    },
+    {
+      "name": "框架-自我进化边界",
+      "passed": true,
+      "detail": "固化确认"
+    }
+  ]
+}
