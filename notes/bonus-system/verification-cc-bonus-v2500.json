@@ -1,0 +1,74 @@
+{
+  "version": "v2500",
+  "timestamp": "2026-07-12T03:09:03.803026",
+  "checks": [
+    {
+      "name": "CC\u5957\u529b\u91cf",
+      "expected": 310,
+      "actual": 310,
+      "passed": true
+    },
+    {
+      "name": "CC\u5957\u7269\u653b",
+      "expected": 110,
+      "actual": 110,
+      "passed": true
+    },
+    {
+      "name": "CC\u5957\u72ec\u7acb",
+      "expected": 120,
+      "actual": 120,
+      "passed": true
+    },
+    {
+      "name": "CC\u5957\u66b4\u51fb",
+      "expected": 3,
+      "actual": 3,
+      "passed": true
+    },
+    {
+      "name": "\u72c2\u6218\u58eb\u56fa\u4f24\u7efc\u5408",
+      "expected": 9.27,
+      "actual": 9.273570324574962,
+      "passed": true
+    },
+    {
+      "name": "\u72c2\u6218\u58eb\u767e\u5206\u6bd4\u7efc\u5408",
+      "expected": 32.81,
+      "actual": 32.81,
+      "passed": true
+    },
+    {
+      "name": "\u5251\u9b42\u767e\u5206\u6bd4\u7efc\u5408",
+      "expected": 45.7,
+      "actual": 45.7,
+      "passed": true
+    },
+    {
+      "name": "\u7834\u6781\u5175\u5203\u534f\u540c\u7269\u653b-\u72c2\u6218",
+      "expected": 2743,
+      "actual": 2743.0,
+      "passed": true
+    },
+    {
+      "name": "\u7834\u6781\u5175\u5203\u534f\u540c\u7269\u653b-\u5251\u9b42",
+      "expected": 2886,
+      "actual": 2886.0,
+      "passed": true
+    },
+    {
+      "name": "\u8fb9\u9645\u5bf9\u5076-\u72c2\u6218",
+      "expected": 4.928934,
+      "actual": 4.928934,
+      "passed": true
+    },
+    {
+      "name": "\u8fb9\u9645\u5bf9\u5076-\u5251\u9b42",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "summary": "11/11 \u901a\u8fc7"
+}
