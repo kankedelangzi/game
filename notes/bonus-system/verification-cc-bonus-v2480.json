@@ -1,0 +1,35 @@
+{
+  "version": "v2480",
+  "timestamp": "2026-07-11 22:50 CST",
+  "cc_set_properties": {
+    "strength": 310,
+    "phys_atk": 110,
+    "indep_atk": 120,
+    "crit_rate_pct": 3
+  },
+  "cc_properties_exact_match": {
+    "4_of_4": true,
+    "details": "力量+310✅ | 物攻+110✅ | 独立+120✅ | 暴击+3%✅"
+  },
+  "berserker": {
+    "fixed_bonus_pct": 9.27,
+    "pct_bonus_pct": 32.81,
+    "marginal_dual": 4.928934,
+    "po_synergy": 2743
+  },
+  "swordsman": {
+    "pct_bonus_pct": 45.7,
+    "marginal_dual": 4.93002,
+    "po_synergy": 2886
+  },
+  "framework_confirmation": {
+    "FAAL_three_stage_seven_dim": true,
+    "three_level_cascade_model": true,
+    "three_principles_theory": true,
+    "binary_flow_architecture": true,
+    "self_evolution_boundary": true,
+    "zero_drift": true
+  },
+  "total_verified_items": 17,
+  "all_passed": true
+}
