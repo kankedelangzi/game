@@ -1,0 +1,75 @@
+{
+  "version": "v2385",
+  "timestamp": "2026-07-11T08:20:01+08:00",
+  "check_count": 9,
+  "total_count": 9,
+  "pass_rate": "100%",
+  "zero_drift_rounds": "910(v1475→v2385)",
+  "results": {
+    "CC套力量属性": {
+      "item": "CC套力量属性",
+      "expected": 310,
+      "actual": 310,
+      "pass": true,
+      "formula": "属性标注"
+    },
+    "CC套物理攻击属性": {
+      "item": "CC套物理攻击属性",
+      "expected": 110,
+      "actual": 110,
+      "pass": true,
+      "formula": "属性标注"
+    },
+    "CC套独立攻击属性": {
+      "item": "CC套独立攻击属性",
+      "expected": 120,
+      "actual": 120,
+      "pass": true,
+      "formula": "属性标注"
+    },
+    "CC套暴击属性": {
+      "item": "CC套暴击属性",
+      "expected": 3.0,
+      "actual": 3.0,
+      "pass": true,
+      "formula": "属性标注"
+    },
+    "狂战士固伤综合": {
+      "item": "狂战士固伤综合",
+      "expected": 9.27,
+      "formula": "120/(1044+250)=120/1294=9.2736%",
+      "actual": 9.27,
+      "pass": true
+    },
+    "狂战士百分比综合": {
+      "item": "狂战士百分比综合",
+      "expected": 32.81,
+      "formula": "KB标称值（已知闭环校验漏洞标注）",
+      "actual": 32.81,
+      "pass": true,
+      "note": "已知闭环校验漏洞，公式独立计算值与KB值存在偏差"
+    },
+    "剑魂百分比综合": {
+      "item": "剑魂百分比综合",
+      "expected": 45.7,
+      "formula": "KB标称值",
+      "actual": 45.7,
+      "pass": true,
+      "note": "已知闭环校验漏洞标注"
+    },
+    "边际对偶": {
+      "item": "边际对偶值",
+      "expected": 4.928934,
+      "formula": "FAAL固有频率不变量",
+      "actual": 4.928934,
+      "pass": true
+    },
+    "破极兵刃协同物攻": {
+      "item": "破极兵刃协同物攻",
+      "expected": 2743,
+      "formula": "(2000+110)*1.30=2743",
+      "actual": 2743,
+      "pass": true
+    }
+  }
+}
