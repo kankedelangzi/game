@@ -1,0 +1,27 @@
+{
+    "version": "v2409",
+    "round": 935,
+    "timestamp": "2026-07-11 11:14 CST",
+    "checks_total": 9,
+    "checks_passed": 9,
+    "pass_rate": "100.0%",
+    "core_data": {
+        "berserker_solid": "+9.27%",
+        "berserker_pct": "+32.81%",
+        "swordsman_pct": "+45.70%",
+        "marginal_duality": 4.93002,
+        "break_weapon": 2743
+    },
+    "checks_detail": {
+        "cc_6_stats_power": true,
+        "cc_6_stats_phys_atk": true,
+        "cc_6_stats_indep_atk": true,
+        "cc_6_stats_crit_rate": true,
+        "berserker_solid_formula": true,
+        "berserker_pct_exact": true,
+        "swordsman_pct_exact": true,
+        "marginal_duality": true,
+        "break_weapon_synergy": true
+    },
+    "zero_drift_rounds": 935
+}
