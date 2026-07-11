@@ -1,0 +1,29 @@
+{
+  "version": "v2432",
+  "timestamp": "2026-07-11T06:55:00",
+  "cc_attrs": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击": 3
+  },
+  "berserker_gushang_pct": 9.27,
+  "berserker_baifenhbi_pct": 32.81,
+  "swordsman_baifenhbi_pct": 45.7,
+  "bianjie_avg": 4.928934,
+  "berserker_poji": 2743,
+  "swordsman_poji": 2886,
+  "checks": {
+    "CC属性匹配": true,
+    "狂战固伤": true,
+    "狂战百分比": true,
+    "剑魂百分比": true,
+    "边际对偶": true,
+    "破极狂战": true,
+    "破极剑魂": true
+  },
+  "all_passed": true,
+  "total_checks": 7,
+  "passed_checks": 7,
+  "zero_drift_rounds": 957
+}
