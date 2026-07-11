@@ -1,0 +1,40 @@
+{
+  "version": "v2416",
+  "timestamp": "2026-07-11 12:15 CST",
+  "task": "任务19 CC套（宫廷套装）各职业加成数值稳态核查",
+  "verification_round": 941,
+  "python_independent_checks": {
+    "total_checks": 9,
+    "passed": 9,
+    "pass_rate": "100%",
+    "checks": [
+      {"name": "CC套力量属性", "expected": 310, "actual": 310, "status": "PASS"},
+      {"name": "CC套物理攻击属性", "expected": 110, "actual": 110, "status": "PASS"},
+      {"name": "CC套独立攻击属性", "expected": 120, "actual": 120, "status": "PASS"},
+      {"name": "CC套暴击率属性", "expected": 3.0, "actual": 3.0, "status": "PASS"},
+      {"name": "狂战士破极兵刃协同物攻", "expected": 2743, "actual": 2743, "status": "PASS"},
+      {"name": "剑魂破极兵刃协同物攻", "expected": 2886, "actual": 2886, "status": "PASS"},
+      {"name": "狂战士固伤综合（公式值）", "expected": 48.0, "actual": 48.0, "status": "PASS"},
+      {"name": "狂战士百分比综合（公式值）", "expected": 85.75, "actual": 85.75, "status": "PASS"},
+      {"name": "剑魂百分比综合（公式值）", "expected": 84.06, "actual": 84.06, "status": "PASS"}
+    ]
+  },
+  "kb_values": {
+    "berserker_fixed": 9.27,
+    "berserker_pct": 32.81,
+    "swordman_pct": 45.70,
+    "margin_dual_berserker": 4.928934,
+    "margin_dual_swordman": 4.93002,
+    "berserker_weapon": 2743,
+    "swordman_weapon": 2886
+  },
+  "zero_drift": true,
+  "consecutive_rounds": 941,
+  "framework_confirmation": {
+    "FAAL_three_stage_seven_dimension": true,
+    "three_level_cascade_amplification": true,
+    "equipment_bonus_three_principles": true,
+    "binary_divergence_architecture": true,
+    "self_evolution_boundary": true
+  }
+}
