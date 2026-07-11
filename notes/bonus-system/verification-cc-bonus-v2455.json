@@ -1,0 +1,81 @@
+{
+  "version": "v2455",
+  "rounds_zero_drift": 980,
+  "drift_range": "v1475→v2455",
+  "timestamp": "2026-07-11 18:27 CST",
+  "results": {
+    "cc_attr_strength": {
+      "expected": 404,
+      "match": true
+    },
+    "cc_attr_strength_actual": {
+      "expected": 310,
+      "match": true
+    },
+    "cc_attr_phys_atk": {
+      "expected": 100,
+      "match": true
+    },
+    "cc_attr_phys_atk_actual": {
+      "expected": 110,
+      "match": true
+    },
+    "cc_attr_indep_atk": {
+      "expected": 120,
+      "match": true
+    },
+    "cc_attr_crit": {
+      "expected": 3,
+      "match": true
+    },
+    "berserker_fixed_dmg": {
+      "expected": 9.27,
+      "actual": 9.27,
+      "match": true
+    },
+    "berserker_pct_dmg": {
+      "expected": 32.81,
+      "actual": 32.81,
+      "match": true
+    },
+    "swordman_pct_dmg": {
+      "expected": 45.7,
+      "actual": 45.7,
+      "match": true
+    },
+    "berserker_poji_atk": {
+      "expected": 2743,
+      "actual": 2743,
+      "match": true
+    },
+    "swordman_poji_atk": {
+      "expected": 2886,
+      "actual": 2886,
+      "match": true
+    },
+    "margin_duo_berserker": {
+      "expected": 4.928934,
+      "actual": 4.928934,
+      "match": true
+    },
+    "margin_duo_swordman": {
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "match": true
+    }
+  },
+  "skill_classifications": {
+    "十字斩": "物理固伤",
+    "血气之刃": "物理固伤",
+    "怒气爆发": "物理固伤",
+    "嗜魂之手": "物理固伤",
+    "崩山击": "物理百分比+出血固伤",
+    "崩山裂地斩": "物理百分比",
+    "嗜魂封魔斩": "物理百分比",
+    "拔刀斩": "物理百分比",
+    "破空击": "物理百分比",
+    "升龙击": "物理百分比",
+    "大剑极星流": "物理百分比"
+  },
+  "summary": "13/13 verified (100.0%)"
+}
