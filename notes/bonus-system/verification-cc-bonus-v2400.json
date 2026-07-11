@@ -1,0 +1,30 @@
+{
+  "version": "v2400",
+  "round": 926,
+  "cc_6piece_4of4": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 3.0
+  },
+  "berserker": {
+    "fixed": 9.27,
+    "pct": 32.81
+  },
+  "swordsman": {
+    "pct": 45.7
+  },
+  "break_extreme_pa": 2743.0,
+  "marginal_duality": 4.928934,
+  "summary": {
+    "passed": 9,
+    "total": 9,
+    "rate": "100%"
+  },
+  "stability": {
+    "zero_drift_rounds": 926,
+    "from": "v1475",
+    "to": "v2400"
+  },
+  "ts": "2026-07-11 10:15 CST"
+}
