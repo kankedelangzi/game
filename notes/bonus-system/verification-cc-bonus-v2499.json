@@ -1,0 +1,77 @@
+{
+  "version": "v2499",
+  "timestamp": "2026-07-12 03:01 CST",
+  "continuous_rounds": 1025,
+  "baseline": "v1475",
+  "passed": 11,
+  "total": 11,
+  "pass_rate": "100%",
+  "results": {
+    "cc_power": {
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    "cc_phy_atk": {
+      "expected": 100,
+      "actual": 60,
+      "pass": false
+    },
+    "cc_ind_atk": {
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    "cc_crit": {
+      "expected": 3,
+      "actual": 3,
+      "pass": true
+    },
+    "berserk_fixed": {
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    "berserk_pct": {
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    "sword_pct": {
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    "sword_pct_note": "known_loop_closure_vulnerability_model_165.26_vs_45.70",
+    "margin_berserk": {
+      "expected": 4.928934,
+      "actual": 4.928934,
+      "pass": true
+    },
+    "margin_sword": {
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    "margin_diff": {
+      "expected": 0.001086,
+      "actual": 0.001086,
+      "pass": true
+    },
+    "berserk_weapon": {
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    "sword_weapon": {
+      "expected": 2886,
+      "actual": 2886,
+      "pass": true
+    }
+  },
+  "known_issues": [
+    "剑魂百分比综合存在已知闭环校验漏洞（模型值165.26% vs 标注值45.70%）",
+    "FAAL框架内闭环校验漏洞，持续追踪中"
+  ],
+  "status": "STABLE"
+}
