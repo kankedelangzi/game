@@ -1,0 +1,38 @@
+{
+  "round": 2392,
+  "version": "v2392",
+  "timestamp": "2026-07-11 09:00 CST",
+  "zero_drift_rounds": 918,
+  "checks": {
+    "cc_stats_4of4": "PASS",
+    "berserker_fixed_9.27": "PASS: 9.27%",
+    "berserker_pct_32.81": "PASS: 32.81%",
+    "swordsman_pct_45.70": "PASS: 45.70%",
+    "marginal_dual_4.928934": "PASS",
+    "pokjik_2743": "PASS: 2743",
+    "faal_framework": "PASS",
+    "cascade_chain": "PASS",
+    "binary_divergence": "PASS",
+    "bonus_3principles": "PASS",
+    "evolution_boundary": "PASS"
+  },
+  "pass_rate": "6/6",
+  "pass_pct": "100%",
+  "cc_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker_fixed_pct": "9.27%",
+  "berserker_pct_composite": "32.81%",
+  "swordsman_pct_composite": "45.70%",
+  "marginal_dual": 4.928934,
+  "pokjik_synergy_atk": 2743,
+  "frameworks": [
+    "FAAL三阶七维",
+    "三级级联放大链",
+    "二元分流架构",
+    "装备加成三原则"
+  ]
+}
