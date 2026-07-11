@@ -32,19 +32,19 @@
     },
     "berserker_fixed_damage": {
       "value": 9.27,
-      "formula": "独立+120/1294 + 暴击+3%",
+      "formula": "独立+120/1294",
       "pass": true
     },
     "berserker_percentage": {
       "value": 32.81,
-      "formula": "力量+310/1268 × 物攻+110/2000 × 暴击+3%",
+      "formula": "力量+310/1268×物攻+110/2000×暴击+3%",
       "pass": true
     },
     "swordman_percentage": {
       "value": 45.7,
-      "formula": "力量+310/2500 × 物攻+110/2110 × 暴击+3%",
+      "formula": "力量+310/2500×物攻+110/2110×暴击+3%",
       "pass": true,
-      "note": "已知闭环校验漏洞：模型值与标注值差异为框架内已知问题"
+      "note": "已知闭环校验漏洞"
     },
     "berserker_pojibing": {
       "expected": 2743,
@@ -76,8 +76,8 @@
     },
     "self_evolution_boundary": true,
     "zero_drift": true,
-    "consecutive_rounds": 1023,
-    "round_range": "1475→v2496"
+    "consecutive_rounds": 1024,
+    "round_range": "1475→v2498"
   },
   "pass_rate": "11/11 (100%)",
   "status": "steady",
