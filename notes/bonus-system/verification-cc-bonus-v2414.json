@@ -1,0 +1,101 @@
+{
+  "version": "v2414",
+  "timestamp": "2026-07-11T12:00:00+0800",
+  "round": 939,
+  "drift_chain": "1475→v2414",
+  "cc_stats_verification": {
+    "str": 310,
+    "phy_atk": 110,
+    "independent": 120,
+    "crit": 0.03
+  },
+  "berserker": {
+    "fixed_damage_pct": 9.27,
+    "percentage_damage_pct": 32.81,
+    "phb_phy_atk": 2743,
+    "marginal_duality": 4.928934
+  },
+  "swordsman": {
+    "percentage_damage_pct": 45.7,
+    "phb_phy_atk": 2886,
+    "marginal_duality": 4.93002
+  },
+  "framework": {
+    "marginal_duality_berserker": 4.928934,
+    "marginal_duality_swordsman": 4.93002,
+    "zero_drift_runs": 939
+  },
+  "verification": {
+    "total": 11,
+    "passed": 11,
+    "rate": "11/11 (100%)",
+    "details": [
+      {
+        "name": "CC力量",
+        "ok": true,
+        "value": 310,
+        "expected": 310
+      },
+      {
+        "name": "CC物攻",
+        "ok": true,
+        "value": 110,
+        "expected": 110
+      },
+      {
+        "name": "CC独立",
+        "ok": true,
+        "value": 120,
+        "expected": 120
+      },
+      {
+        "name": "CC暴击",
+        "ok": true,
+        "value": 0.03,
+        "expected": 0.03
+      },
+      {
+        "name": "狂战固伤%",
+        "ok": true,
+        "value": 9.27,
+        "expected": 9.27
+      },
+      {
+        "name": "狂战百分比%",
+        "ok": true,
+        "value": 32.81,
+        "expected": 32.81
+      },
+      {
+        "name": "狂战破极",
+        "ok": true,
+        "value": 2743,
+        "expected": 2743
+      },
+      {
+        "name": "狂战边际",
+        "ok": true,
+        "value": 4.928934,
+        "expected": 4.928934
+      },
+      {
+        "name": "剑魂百分比%",
+        "ok": true,
+        "value": 45.7,
+        "expected": 45.7
+      },
+      {
+        "name": "剑魂破极",
+        "ok": true,
+        "value": 2886,
+        "expected": 2886
+      },
+      {
+        "name": "剑魂边际",
+        "ok": true,
+        "value": 4.93002,
+        "expected": 4.93002
+      }
+    ]
+  }
+}
