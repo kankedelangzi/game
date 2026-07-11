@@ -1,0 +1,72 @@
+{
+  "version": "v2415",
+  "timestamp": "2026-07-11T12:05:00+08:00",
+  "round": 940,
+  "rounds_range": "v1475→v2415",
+  "results": {
+    "cc_set_attributes": {
+      "power": {"expected": 310, "actual": 310, "pass": true},
+      "physical_attack": {"expected": 110, "actual": 110, "pass": true},
+      "independent": {"expected": 120, "actual": 120, "pass": true},
+      "critical_rate": {"expected": 3, "actual": 3, "pass": true},
+      "match": "4/4"
+    },
+    "berserker_fixed_bonus": {
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true,
+      "formula": "120/(250+120)"
+    },
+    "berserker_percent_bonus": {
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    "berserker_po_attack": {
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true,
+      "formula": "(2000+110)×1.30"
+    },
+    "swordsman_percent_bonus": {
+      "expected": 45.70,
+      "actual": 45.70,
+      "pass": true
+    },
+    "swordsman_po_attack": {
+      "expected": 2886,
+      "actual": 2886,
+      "pass": true,
+      "formula": "(2110+110)×1.30"
+    },
+    "marginal_pair": {
+      "berserker": {"expected": 4.928934, "actual": 4.928934, "pass": true},
+      "swordsman": {"expected": 4.930020, "actual": 4.930020, "pass": true}
+    }
+  },
+  "framework_checks": {
+    "FAAL三阶七维框架": true,
+    "三级级联放大链模型": true,
+    "装备加成三原则元理论": true,
+    "二元分流架构元理论框架": true,
+    "自我进化边界遵守": true,
+    "核心数据零漂移": true
+  },
+  "skill_classification": {
+    "崩山击": "物理百分比+出血固伤",
+    "十字斩": "物理固伤",
+    "血气之刃": "物理固伤",
+    "怒气爆发": "物理固伤",
+    "嗜魂之手": "物理固伤",
+    "崩山裂地斩": "物理百分比",
+    "嗜魂封魔斩": "物理百分比",
+    "拔刀斩": "物理百分比",
+    "破空击": "物理百分比",
+    "升龙击": "物理百分比",
+    "大剑极星流": "物理百分比"
+  },
+  "total_passed": 11,
+  "total_checks": 11,
+  "pass_rate": "100%",
+  "zero_drift_continuous": true
+}
