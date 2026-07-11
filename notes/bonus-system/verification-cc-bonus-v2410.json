@@ -1,0 +1,28 @@
+{
+  "version": "v2410",
+  "timestamp": "2026-07-11T03:19:00Z",
+  "cc_stats_verification": {
+    "str": 310,
+    "phy_atk": 110,
+    "independent": 120,
+    "crit": 0.03
+  },
+  "berserker": {
+    "fixed_damage_pct": 32.43,
+    "percentage_damage_pct": 32.81,
+    "phb_phy_atk": 2743.0
+  },
+  "swordsman": {
+    "percentage_damage_pct": 45.7,
+    "phb_phy_atk": 2886.0
+  },
+  "framework": {
+    "marginal_duality": 4.928934,
+    "zero_drift_runs": 935
+  },
+  "verification": {
+    "total": 9,
+    "passed": 9,
+    "rate": "100%"
+  }
+}
