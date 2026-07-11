@@ -1,7 +1,7 @@
 {
-  "version": "v2438",
-  "timestamp": "2026-07-11 16:05 CST",
-  "drift_rounds": 963,
+  "version": "v2440",
+  "timestamp": "2026-07-11 16:15 CST",
+  "drift_rounds": 965,
   "passed": 5,
   "total": 7,
   "all_pass": false,
@@ -34,6 +34,9 @@
       "name": "破极剑魂2886",
       "pass": true
     }
+  ],
+  "known_issues": [
+    "百分比闭环校验漏洞(公式值与KB值偏差): 狂战士60.26% vs KB 32.81%, 剑魂65.38% vs KB 45.70%"
   ],
   "values": {
     "cc_attrs": {
