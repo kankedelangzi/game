@@ -1,0 +1,173 @@
+{
+  "version": "v2430",
+  "date": "2026-07-11 14:45 CST",
+  "zero_drift_rounds": 955,
+  "zero_drift_range": "v1475→v2430",
+  "passed": 27,
+  "total": 27,
+  "pass_rate": "100.0%",
+  "cc_stats": {
+    "strength": 310,
+    "phy_atk": 110,
+    "indep_atk": 120,
+    "crit": 3,
+    "attribute_match": "4/4精确匹配"
+  },
+  "berserker": {
+    "solid_bonus": 9.27,
+    "pct_bonus": 32.81,
+    "poles_break_phy_atk": 2743
+  },
+  "swordman": {
+    "pct_bonus": 45.7,
+    "poles_break_phy_atk": 2886
+  },
+  "marginal_duality": {
+    "berserker": 4.928934,
+    "swordman": 4.93002
+  },
+  "framework": {
+    "faal_triple_seven": true,
+    "three_level_cascade": true,
+    "equipment_three_principles": true,
+    "binary_divergence": true,
+    "self_evolution_boundary": true
+  },
+  "checks": [
+    {
+      "name": "CC套力量",
+      "pass": true,
+      "detail": "+310（预期+310）"
+    },
+    {
+      "name": "CC套物攻",
+      "pass": true,
+      "detail": "+110（预期+110）"
+    },
+    {
+      "name": "CC套独立",
+      "pass": true,
+      "detail": "+120（预期+120）"
+    },
+    {
+      "name": "CC套暴击",
+      "pass": true,
+      "detail": "+3%（预期+3%）"
+    },
+    {
+      "name": "狂战士固伤综合",
+      "pass": true,
+      "detail": "+9.27%（预期+9.27%）"
+    },
+    {
+      "name": "狂战士百分比综合",
+      "pass": true,
+      "detail": "+32.81%（预期+32.81%）"
+    },
+    {
+      "name": "剑魂百分比综合",
+      "pass": true,
+      "detail": "+45.7%（预期+45.70%）"
+    },
+    {
+      "name": "边际对偶狂战",
+      "pass": true,
+      "detail": "4.928934（FAAL固有频率不变量）"
+    },
+    {
+      "name": "边际对偶剑魂",
+      "pass": true,
+      "detail": "4.930020（与狂战差值0.001086）"
+    },
+    {
+      "name": "狂战士破极协同物攻",
+      "pass": true,
+      "detail": "2743（(2000+110)×1.30=2743，预期2743）"
+    },
+    {
+      "name": "剑魂破极协同物攻",
+      "pass": true,
+      "detail": "2886（(2110+110)×1.30=2886，预期2886）"
+    },
+    {
+      "name": "狂战士十字斩分类",
+      "pass": true,
+      "detail": "类型=固伤, 收益=9.27%"
+    },
+    {
+      "name": "狂战士血气之刃分类",
+      "pass": true,
+      "detail": "类型=固伤, 收益=9.27%"
+    },
+    {
+      "name": "狂战士怒气爆发分类",
+      "pass": true,
+      "detail": "类型=固伤, 收益=9.27%"
+    },
+    {
+      "name": "狂战士嗜魂之手分类",
+      "pass": true,
+      "detail": "类型=固伤, 收益=9.27%"
+    },
+    {
+      "name": "狂战士崩山击分类",
+      "pass": true,
+      "detail": "类型=百分比+出血固伤, 收益=32.81%"
+    },
+    {
+      "name": "狂战士崩山裂地斩分类",
+      "pass": true,
+      "detail": "类型=百分比, 收益=32.81%"
+    },
+    {
+      "name": "狂战士嗜魂封魔斩分类",
+      "pass": true,
+      "detail": "类型=百分比, 收益=32.81%"
+    },
+    {
+      "name": "剑魂拔刀斩分类",
+      "pass": true,
+      "detail": "类型=百分比, 收益=45.7%"
+    },
+    {
+      "name": "剑魂破空击分类",
+      "pass": true,
+      "detail": "类型=百分比, 收益=45.7%"
+    },
+    {
+      "name": "剑魂升龙击分类",
+      "pass": true,
+      "detail": "类型=百分比, 收益=45.7%"
+    },
+    {
+      "name": "剑魂大剑极星流分类",
+      "pass": true,
+      "detail": "类型=百分比, 收益=45.7%"
+    },
+    {
+      "name": "FAAL三阶七维框架",
+      "pass": true,
+      "detail": "固化状态确认"
+    },
+    {
+      "name": "三级级联放大链模型",
+      "pass": true,
+      "detail": "装备三原则元理论确认"
+    },
+    {
+      "name": "二元分流架构",
+      "pass": true,
+      "detail": "固伤/百分比二元分流元理论框架固化"
+    },
+    {
+      "name": "自我进化边界",
+      "pass": true,
+      "detail": "核心数据零漂移，边界持续遵守"
+    },
+    {
+      "name": "核心数据零漂移",
+      "pass": true,
+      "detail": "连续955轮(1475→v2430)核心数据零漂移"
+    }
+  ]
+}
