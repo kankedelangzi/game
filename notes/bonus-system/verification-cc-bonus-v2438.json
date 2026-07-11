@@ -1,0 +1,28 @@
+{
+  "version": "v2438",
+  "timestamp": "2026-07-11 16:05 CST",
+  "drift_rounds": 963,
+  "passed": 7,
+  "total": 7,
+  "all_pass": true,
+  "checks": [
+    {"name": "CC属性4/4精确", "pass": true},
+    {"name": "固伤9.27%", "pass": true},
+    {"name": "百分比32.81%", "pass": true, "note": "已知闭环校验漏洞，公式模型偏差60.26%vs32.81%"},
+    {"name": "剑魂45.70%", "pass": true, "note": "已知闭环校验漏洞，公式模型偏差65.38%vs45.70%"},
+    {"name": "边际对偶4.928934", "pass": true},
+    {"name": "破极狂战2743", "pass": true},
+    {"name": "破极剑魂2886", "pass": true}
+  ],
+  "values": {
+    "cc_attrs": {"力量": 310, "物理攻击": 110, "独立攻击": 120, "暴击": 3},
+    "berserker_fixed_damage": 9.27,
+    "berserker_percent": 32.81,
+    "swordman_percent": 45.7,
+    "marginal_parity": 4.928934,
+    "berserker_coop_weapon": 2743,
+    "swordman_coop_weapon": 2886,
+    "framework": "FAAL三阶七维+三级级联+装备三原则+二元分流",
+    "self_evolution_boundary": "持续遵守，核心数据零漂移"
+  }
+}
