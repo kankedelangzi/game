@@ -1,0 +1,85 @@
+{
+  "version": "v2403",
+  "round": 929,
+  "zero_drift_from": 1475,
+  "zero_drift_total": 929,
+  "timestamp": "2026-07-11T10:40:25.536367",
+  "passed": 13,
+  "total": 13,
+  "rate": "13/13 (100.0%)",
+  "cc_attributes": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "crit_rate": 3.0
+  },
+  "berserker": {
+    "fixed_damage": 9.27,
+    "pct_damage": 32.81,
+    "marginal_duality": 4.928934,
+    "pojo_synergy": 2743
+  },
+  "swordman": {
+    "pct_damage": 45.7
+  },
+  "checks": [
+    {
+      "name": "cc_str=310",
+      "ok": true
+    },
+    {
+      "name": "cc_phy=110",
+      "ok": true
+    },
+    {
+      "name": "cc_ind=120",
+      "ok": true
+    },
+    {
+      "name": "cc_cri=3.0",
+      "ok": true
+    },
+    {
+      "name": "bers_fixed=9.27",
+      "ok": true
+    },
+    {
+      "name": "bers_pct=32.81",
+      "ok": true
+    },
+    {
+      "name": "swor_pct=45.7",
+      "ok": true
+    },
+    {
+      "name": "marginal=4.928934",
+      "ok": true
+    },
+    {
+      "name": "pojo=2743",
+      "ok": true
+    },
+    {
+      "name": "FAAL三阶七维框架",
+      "ok": true
+    },
+    {
+      "name": "三级级联放大链模型",
+      "ok": true
+    },
+    {
+      "name": "装备加成三原则元理论",
+      "ok": true
+    },
+    {
+      "name": "二元分流架构",
+      "ok": true
+    }
+  ],
+  "framework": [
+    "FAAL三阶七维框架固化",
+    "三级级联放大链模型确认",
+    "装备加成三原则元理论确认",
+    "二元分流架构元理论框架固化"
+  ]
+}
