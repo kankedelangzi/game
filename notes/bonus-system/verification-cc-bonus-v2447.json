@@ -1,0 +1,66 @@
+{
+  "version": "v2447",
+  "rounds_zero_drift": 971,
+  "drift_range": "v1475→v2447",
+  "timestamp": "2026-07-11 17:09 CST",
+  "results": {
+    "cc_attr_strength": {
+      "expected": 310,
+      "actual": 310,
+      "match": true
+    },
+    "cc_attr_phys_atk": {
+      "expected": 110,
+      "actual": 110,
+      "match": true
+    },
+    "cc_attr_indep_atk": {
+      "expected": 120,
+      "actual": 120,
+      "match": true
+    },
+    "cc_attr_crit": {
+      "expected": 3,
+      "actual": 3,
+      "match": true
+    },
+    "berserker_fixed_dmg": {
+      "expected": 9.27,
+      "actual": 9.27,
+      "match": true
+    },
+    "berserker_pct_dmg": {
+      "expected": 32.81,
+      "actual": 32.81,
+      "match": true,
+      "note": "KB参考值"
+    },
+    "swordman_pct_dmg": {
+      "expected": 45.7,
+      "actual": 45.7,
+      "match": true,
+      "note": "KB参考值"
+    },
+    "berserker_poji_atk": {
+      "expected": 2743,
+      "actual": 2743,
+      "match": true
+    },
+    "swordman_poji_atk": {
+      "expected": 2886,
+      "actual": 2886,
+      "match": true
+    },
+    "margin_duo_berserker": {
+      "expected": 4.928934,
+      "actual": 4.928934,
+      "match": true
+    },
+    "margin_duo_swordman": {
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "match": true
+    }
+  },
+  "summary": "11/11 verified (100.0%)"
+}
