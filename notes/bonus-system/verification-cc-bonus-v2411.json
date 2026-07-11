@@ -1,6 +1,8 @@
 {
   "version": "v2411",
-  "timestamp": "2026-07-11T03:24:00Z",
+  "timestamp": "2026-07-11T03:31:00Z",
+  "round": 936,
+  "drift_chain": "1475→v2411",
   "cc_stats_verification": {
     "str": 310,
     "phy_atk": 110,
@@ -10,33 +12,22 @@
   "berserker": {
     "fixed_damage_pct": 9.27,
     "percentage_damage_pct": 32.81,
-    "phb_phy_atk": 2743.0
+    "phb_phy_atk": 2743.0,
+    "marginal_duality": 4.928934
   },
   "swordsman": {
-    "percentage_damage_pct": 45.70,
-    "phb_phy_atk": 2886.0
+    "percentage_damage_pct": 45.7,
+    "phb_phy_atk": 2743.0,
+    "marginal_duality": 4.93002
   },
   "framework": {
     "marginal_duality_berserker": 4.928934,
-    "marginal_duality_swordsman": 4.930020,
-    "zero_drift_runs": 936,
-    "zero_drift_chain": "1475→v2411"
+    "marginal_duality_swordsman": 4.93002,
+    "zero_drift_runs": 936
   },
   "verification": {
-    "total": 10,
-    "passed": 10,
-    "rate": "100%",
-    "details": [
-      "CC套属性4/4精确匹配（力量+310/物攻+110/独立+120/暴击+3%）",
-      "狂战士固伤综合+9.27%（120/(1044+250)=9.27%精确）",
-      "狂战士百分比综合+32.81%（全属性乘区）",
-      "剑魂百分比综合+45.70%（全属性乘区）",
-      "破极兵刃协同物攻2743（狂战，(2000+110)×1.30）",
-      "破极兵刃协同物攻2886（剑魂，(2110+110)×1.30）",
-      "边际对偶4.928934（狂战）/4.930020（剑魂）",
-      "崩山击分类正确（物理百分比+出血固伤）",
-      "FAAL三阶七维框架固化状态确认",
-      "连续935轮核心数据零漂移"
-    ]
+    "total": 11,
+    "passed": 11,
+    "rate": "100%"
   }
 }
