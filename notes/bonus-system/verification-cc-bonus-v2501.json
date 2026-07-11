@@ -135,6 +135,7 @@
       "detail": "升龙击=百分比"
     }
   ],
-  "zero_drift_rounds": 1028,
-  "from_version": "v1475"
+  "zero_drift_rounds": 1029,
+  "from_version": "v1475",
+  "last_verification": "2026-07-12T06:34:00+08:00 (cron v2502)"
 }
