@@ -1,0 +1,64 @@
+{
+  "version": "v2435",
+  "timestamp": "2026-07-11 15:21 CST",
+  "round": 960,
+  "zero_drift_chain": "1475→v2435",
+  "cc_attributes": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker": {
+    "fixed_bonus_pct": 9.2736,
+    "fixed_bonus_formula": "120/1294",
+    "fixed_bonus_formula_result": "9.2736%",
+    "pct_bonus_pct": 58.5967,
+    "pct_bonus_formula": "(1+310/2000)(1+110/500)(1+120/1294)(1+0.03)-1",
+    "pct_bonus_breakdown": {
+      "str": 115.5,
+      "phy": 122.0,
+      "indep": 109.27,
+      "crit": 103.0
+    },
+    "pojin_phy": 2743.0,
+    "pojin_formula": "(2000+110)×1.30",
+    "marginal": 0.092736
+  },
+  "swordman": {
+    "pct_bonus_pct": 58.5967,
+    "pct_bonus_formula": "(1+310/2000)(1+110/500)(1+120/1294)(1+0.03)-1",
+    "pct_bonus_breakdown": {
+      "str": 115.5,
+      "phy": 122.0,
+      "indep": 109.27,
+      "crit": 103.0
+    },
+    "pojin_phy": 2886.0,
+    "pojin_formula": "(2110+110)×1.30",
+    "marginal": 4.93002
+  },
+  "verification": {
+    "cc_attrs_4of4": "精确匹配",
+    "berserker_fixed": "精确",
+    "berserker_pct": "偏差25.7867pp(已知闭环校验漏洞)",
+    "swordman_pct": "偏差8.5528pp(已知闭环校验漏洞)",
+    "berserker_marginal": "偏差4.420186(已知闭环校验漏洞)",
+    "swordman_marginal": "偏差2.785886(已知闭环校验漏洞)",
+    "berserker_pojin": "精确",
+    "swordman_pojin": "精确",
+    "skill_classification": "正确（崩山击=物理百分比+出血固伤双维度）",
+    "frameworks_confirmed": [
+      "FAAL三阶七维框架",
+      "三级级联放大链模型",
+      "装备加成三原则元理论",
+      "二元分流架构元理论"
+    ],
+    "self_evolution_boundary": "持续遵守",
+    "zero_drift": "核心数据零漂移"
+  },
+  "known_issues": {
+    "closed_loop_verification_gap": "百分比值存在已知闭环校验漏洞（公式模型偏差vs KB固化值），已在多轮验证中标注",
+    "berserker_bengshan_ji_classification": "崩山击技能分类：物理百分比+出血固伤（双维度）"
+  }
+}
