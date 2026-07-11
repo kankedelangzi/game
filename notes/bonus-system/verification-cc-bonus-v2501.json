@@ -1,0 +1,140 @@
+{
+  "version": "v2501",
+  "total_checks": 19,
+  "passed": 19,
+  "failed": 0,
+  "pass_rate": "19/19 (100.0%)",
+  "checks": [
+    {
+      "name": "CC套属性-力量",
+      "expected": 310,
+      "passed": true,
+      "detail": "力量=310"
+    },
+    {
+      "name": "CC套属性-物理攻击",
+      "expected": 110,
+      "passed": true,
+      "detail": "物理攻击=110"
+    },
+    {
+      "name": "CC套属性-独立攻击",
+      "expected": 120,
+      "passed": true,
+      "detail": "独立攻击=120"
+    },
+    {
+      "name": "CC套属性-暴击",
+      "expected": 3,
+      "passed": true,
+      "detail": "暴击=3"
+    },
+    {
+      "name": "狂战士固伤综合",
+      "expected": 9.27,
+      "actual": 9.27,
+      "passed": true,
+      "detail": "+9.27% (独立+120/1294)"
+    },
+    {
+      "name": "狂战士百分比综合",
+      "expected": 32.81,
+      "actual": 32.81,
+      "passed": true,
+      "detail": "+32.81% 全属性乘区"
+    },
+    {
+      "name": "剑魂百分比综合",
+      "expected": 45.7,
+      "actual": 45.7,
+      "passed": true,
+      "detail": "+45.7% 全属性乘区"
+    },
+    {
+      "name": "狂战士破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743,
+      "passed": true,
+      "detail": "(2000+110)×1.30 = 2743.0"
+    },
+    {
+      "name": "剑魂破极兵刃协同物攻",
+      "expected": 2886,
+      "actual": 2886,
+      "passed": true,
+      "detail": "(2110+110)×1.30 = 2886.0"
+    },
+    {
+      "name": "狂战士边际对偶",
+      "expected": 4.928934,
+      "actual": 4.928934,
+      "passed": true,
+      "detail": "边际对偶 = 4.928934"
+    },
+    {
+      "name": "剑魂边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "passed": true,
+      "detail": "边际对偶 = 4.93002"
+    },
+    {
+      "name": "技能分类-十字斩",
+      "expected": "固伤",
+      "actual": "固伤",
+      "passed": true,
+      "detail": "十字斩=固伤"
+    },
+    {
+      "name": "技能分类-血气之刃",
+      "expected": "固伤",
+      "actual": "固伤",
+      "passed": true,
+      "detail": "血气之刃=固伤"
+    },
+    {
+      "name": "技能分类-怒气爆发",
+      "expected": "固伤",
+      "actual": "固伤",
+      "passed": true,
+      "detail": "怒气爆发=固伤"
+    },
+    {
+      "name": "技能分类-嗜魂之手",
+      "expected": "固伤",
+      "actual": "固伤",
+      "passed": true,
+      "detail": "嗜魂之手=固伤"
+    },
+    {
+      "name": "技能分类-崩山击",
+      "expected": "百分比+固伤(出血)",
+      "actual": "百分比+固伤(出血)",
+      "passed": true,
+      "detail": "崩山击=百分比+固伤(出血)"
+    },
+    {
+      "name": "技能分类-拔刀斩",
+      "expected": "百分比",
+      "actual": "百分比",
+      "passed": true,
+      "detail": "拔刀斩=百分比"
+    },
+    {
+      "name": "技能分类-破空击",
+      "expected": "百分比",
+      "actual": "百分比",
+      "passed": true,
+      "detail": "破空击=百分比"
+    },
+    {
+      "name": "技能分类-升龙击",
+      "expected": "百分比",
+      "actual": "百分比",
+      "passed": true,
+      "detail": "升龙击=百分比"
+    }
+  ],
+  "zero_drift_rounds": 1028,
+  "from_version": "v1475"
+}
