@@ -1,0 +1,22 @@
+{
+  "version": "v2419",
+  "timestamp": "2026-07-11 12:58 CST",
+  "total_rounds": 944,
+  "cc_attributes": {
+    "strength": 310,
+    "phy_attack": 110,
+    "indep_attack": 120,
+    "crit": 3
+  },
+  "berserker_fix": 9.27,
+  "berserker_pct": 32.81,
+  "berserker_pojibing": 2743,
+  "berserker_margin": 21.167742,
+  "swordman_pct": 45.7,
+  "swordman_pojibing": 2886,
+  "swordman_margin": 29.483871,
+  "zero_drift": true,
+  "total_checks": 10,
+  "passed": 10,
+  "pass_rate": 100.0
+}
