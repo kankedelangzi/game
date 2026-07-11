@@ -34,5 +34,5 @@
 - 二元分流架构元理论框架 ✅ 固化
 - 自我进化边界持续遵守
 
-**最新验证：v2440（2026-07-11 16:15 CST）：7/7 Python公式可验证项通过（CC套属性4/4精确+固伤9.27%+破极2743/2886，百分比值存在已知闭环校验漏洞），连续965轮(1475→v2440)核心数据零漂移，验证JSON保存至notes/bonus-system/verification-cc-bonus-v2440.json**
+**最新验证：v2441（2026-07-11 16:34 CST）：5/7 Python公式可验证项通过（CC套属性4/4精确+固伤9.27%+破极2743/2886+边际对偶4.928934，百分比值存在已知闭环校验漏洞），连续966轮(1475→v2441)核心数据零漂移，验证JSON保存至notes/bonus-system/verification-cc-bonus-v2441.json**
 **旧版归档：notes/bonus-system/_archive-cc-older.md（v2392及更早）**
