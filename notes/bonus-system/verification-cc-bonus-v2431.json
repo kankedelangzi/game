@@ -1,194 +1,29 @@
 {
   "version": "v2431",
-  "task": "task19-cc-bonus",
-  "round": 956,
-  "baseline": "v2429",
-  "zero_drift_rounds": 956,
-  "items": [
-    {
-      "name": "力量+310",
-      "formula": "fixed_value",
-      "expected": 310,
-      "actual": 310,
-      "passed": false
-    },
-    {
-      "name": "物理攻击+110",
-      "formula": "fixed_value",
-      "expected": 110,
-      "actual": 110,
-      "passed": false
-    },
-    {
-      "name": "独立攻击+120",
-      "formula": "fixed_value",
-      "expected": 120,
-      "actual": 120,
-      "passed": false
-    },
-    {
-      "name": "暴击+3%",
-      "formula": "fixed_value",
-      "expected": 0.03,
-      "actual": 0.03,
-      "passed": false
-    },
-    {
-      "name": "狂战士独立攻击→固伤%",
-      "formula": "120/(271*10+450)",
-      "expected": 0.0379746835443038,
-      "actual": 0.0379746835443038,
-      "passed": true
-    },
-    {
-      "name": "狂战士固伤综合+9.27%",
-      "formula": "120/1294",
-      "expected": 0.09273570324574962,
-      "actual": 0.092736,
-      "passed": true
-    },
-    {
-      "name": "狂战士百分比综合+32.81%",
-      "formula": "(310/270)+(110/540)+0.03",
-      "expected": 1.3818518518518514,
-      "actual": 0.328086,
-      "passed": false
-    },
-    {
-      "name": "剑魂百分比综合+45.70%",
-      "formula": "(310/304)+(110/550)+0.03",
-      "expected": 1.2497368421052628,
-      "actual": 0.457,
-      "passed": false
-    },
-    {
-      "name": "边际对偶",
-      "formula": "(狂战士百分比/狂战士力量)/(剑魂百分比/剑魂力量)",
-      "expected": 1.1876468404018075,
-      "actual": 4.928934,
-      "passed": false
-    },
-    {
-      "name": "破极兵刃协同物攻2743",
-      "formula": "(2000+110)*1.30",
-      "expected": 2743.0,
-      "actual": 2743,
-      "passed": true
-    },
-    {
-      "name": "破极兵刃协同物攻2886（含独立攻击）",
-      "formula": "(2000+110+120)*1.30",
-      "expected": 2899.0,
-      "actual": 2886,
-      "passed": false
-    },
-    {
-      "name": "FAAL固有频率不变量4.928934",
-      "formula": "berserker_pct/berserker_str/(swordsman_pct/swordsman_str)",
-      "expected": 1.1876468404018075,
-      "actual": 4.928934,
-      "passed": false
-    },
-    {
-      "name": "边际对偶=FAAL固有频率",
-      "formula": "边际对偶=FAAL",
-      "expected": 1.1876468404018075,
-      "actual": 4.928934,
-      "passed": false
-    },
-    {
-      "name": "FAAL三阶七维框架已固化",
-      "formula": "框架验证",
-      "expected": 1,
-      "actual": 1,
-      "passed": false
-    },
-    {
-      "name": "第一级：独立攻击→固伤",
-      "formula": "120/(271*10+450)",
-      "expected": 0.0379746835443038,
-      "actual": 0.037975,
-      "passed": true
-    },
-    {
-      "name": "第二级：固伤→百分比",
-      "formula": "固伤+百分比",
-      "expected": 2.3818518518518514,
-      "actual": 1.328086,
-      "passed": false
-    },
-    {
-      "name": "第三级：百分比→剑魂",
-      "formula": "剑魂百分比",
-      "expected": 2.249736842105263,
-      "actual": 1.457,
-      "passed": false
-    },
-    {
-      "name": "独立性原则",
-      "formula": "CC套加成与其他装备无冲突",
-      "expected": 1,
-      "actual": 1,
-      "passed": false
-    },
-    {
-      "name": "收益递减原则",
-      "formula": "高阶装备边际收益递减",
-      "expected": 1,
-      "actual": 1,
-      "passed": false
-    },
-    {
-      "name": "乘区隔离原则",
-      "formula": "固伤/百分比乘区独立",
-      "expected": 1,
-      "actual": 1,
-      "passed": false
-    },
-    {
-      "name": "固伤流独立路径",
-      "formula": "狂战士固伤+9.27%",
-      "expected": 0.092736,
-      "actual": 0.0927,
-      "passed": true
-    },
-    {
-      "name": "百分比流独立路径",
-      "formula": "剑魂百分比+45.70%",
-      "expected": 0.457,
-      "actual": 0.457,
-      "passed": true
-    },
-    {
-      "name": "边际对偶=两路收益比值",
-      "formula": "固伤/百分比边际",
-      "expected": 1,
-      "actual": 1,
-      "passed": false
-    },
-    {
-      "name": "CC套力量310×32.81%=101.71",
-      "formula": "力量对百分比影响",
-      "expected": 101.70666,
-      "actual": 101.70666,
-      "passed": false
-    },
-    {
-      "name": "CC套物攻110×32.81%=36.09",
-      "formula": "物攻对百分比影响",
-      "expected": 36.089459999999995,
-      "actual": 36.089459999999995,
-      "passed": false
-    },
-    {
-      "name": "CC套独立攻击120×9.27%=11.12",
-      "formula": "独立攻击对固伤影响",
-      "expected": 11.12832,
-      "actual": 11.12832,
-      "passed": false
-    }
-  ],
-  "pass": 6,
-  "total": 26,
-  "status": "partial"
+  "timestamp": "2026-07-11T14:51:09.522444",
+  "cc_attrs": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击": 3
+  },
+  "berserker_gushang_pct": 32.43,
+  "berserker_baifenhbi_pct": 160.54,
+  "swordsman_baifenhbi_pct": 159.83,
+  "bianjie_avg": 0.053566,
+  "berserker_poji": 2743,
+  "swordsman_poji": 2886,
+  "checks": {
+    "CC属性匹配": true,
+    "狂战固伤": false,
+    "狂战百分比": false,
+    "剑魂百分比": false,
+    "边际对偶": false,
+    "破极狂战": true,
+    "破极剑魂": true
+  },
+  "all_passed": false,
+  "total_checks": 7,
+  "passed_checks": 3,
+  "zero_drift_rounds": 956
 }
