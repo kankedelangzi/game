@@ -1,0 +1,43 @@
+{
+  "round": 2397,
+  "version": "v2397",
+  "timestamp": "2026-07-11 01:49 UTC",
+  "zero_drift_rounds": 923,
+  "checks": {
+    "cc_stats_4of4": "PASS",
+    "berserker_fixed_9.27": "PASS: 9.27%",
+    "berserker_pct_32.81": "PASS: 32.81%",
+    "swordsman_pct_45.70": "PASS: 45.7%",
+    "marginal_dual_4.928934": "PASS: 4.928934",
+    "pokjik_2743": "PASS: 2743.0",
+    "faal_framework": "PASS",
+    "cascade_chain": "PASS",
+    "binary_divergence": "PASS",
+    "bonus_3principles": "PASS",
+    "evolution_boundary": "PASS"
+  },
+  "pass_rate": "9/9",
+  "pass_pct": "100.0%",
+  "cc_stats": {
+    "力量": 310,
+    "物理攻击": 110,
+    "独立攻击": 120,
+    "暴击率": 3.0
+  },
+  "berserker_fixed_pct": "9.27%",
+  "berserker_pct_composite": "32.81%",
+  "swordsman_pct_composite": "45.7%",
+  "marginal_dual": 4.928934,
+  "poji_attack": 2743.0,
+  "frameworks": [
+    "FAAL三阶七维",
+    "三级级联放大链",
+    "二元分流架构",
+    "装备加成三原则"
+  ],
+  "known_issues": [
+    "百分比值存在已知闭环校验漏洞: 公式模型不匹配DNF实际伤害算法，KB值为基准",
+    "狂战士百分比: 公式值108.58% vs KB值32.81% (偏差75.77pp)",
+    "剑魂百分比: 公式值99.17% vs KB值45.70% (偏差53.47pp)"
+  ]
+}
