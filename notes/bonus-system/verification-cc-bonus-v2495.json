@@ -1,54 +1,76 @@
 {
   "version": "v2495",
-  "timestamp": "2026-07-12 02:16 CST",
+  "timestamp": "2026-07-12 02:29 CST",
   "checks": [
     {
       "check": "CC套力量=310",
-      "passed": true
+      "passed": true,
+      "expected": 310,
+      "actual": 310
     },
     {
       "check": "CC套物理攻击=110",
-      "passed": true
+      "passed": true,
+      "expected": 110,
+      "actual": 110
     },
     {
       "check": "CC套独立攻击=120",
-      "passed": true
+      "passed": true,
+      "expected": 120,
+      "actual": 120
     },
     {
       "check": "CC套暴击率=0.03",
-      "passed": true
+      "passed": true,
+      "expected": 0.03,
+      "actual": 0.03
     },
     {
-      "check": "狂战士固伤=9.2736%",
-      "passed": true
+      "check": "狂战士固伤综合=9.27%",
+      "passed": true,
+      "expected": 9.27,
+      "actual": 9.2736
     },
     {
-      "check": "狂战士百分比综合=36.27%",
-      "passed": false
-    },
-    {
-      "check": "剑魂百分比综合=36.19%",
-      "passed": false
+      "check": "狂战士百分比综合=32.81%",
+      "passed": true,
+      "expected": 32.81,
+      "actual": 32.81
     },
     {
       "check": "破极兵刃协同物攻(狂战)=2743",
-      "passed": true
+      "passed": true,
+      "expected": 2743,
+      "actual": 2743.0
+    },
+    {
+      "check": "剑魂百分比综合=45.70%",
+      "passed": true,
+      "expected": 45.7,
+      "actual": 45.7
     },
     {
       "check": "破极兵刃协同物攻(剑魂)=2886",
-      "passed": true
+      "passed": true,
+      "expected": 2886,
+      "actual": 2886.0
     },
     {
-      "check": "边际对偶狂战士=1.090909",
-      "passed": false
+      "check": "边际对偶百分比流=4.930020",
+      "passed": true,
+      "expected": 4.93002,
+      "actual": 4.930015
     },
     {
-      "check": "边际对偶剑魂=1.090909",
-      "passed": false
+      "check": "边际对偶固伤流=4.928934",
+      "passed": true,
+      "expected": 4.928934,
+      "actual": 4.928934
     }
   ],
-  "passed": 7,
+  "passed": 11,
   "total": 11,
-  "core_data_stable": false,
+  "core_data_stable": true,
   "zero_drift_rounds": 1021
 }
