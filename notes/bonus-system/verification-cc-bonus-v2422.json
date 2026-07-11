@@ -1,0 +1,90 @@
+{
+  "version": "v2422",
+  "timestamp": "2026-07-11 13:20:18 CST",
+  "total_rounds": 947,
+  "cc_attributes": {
+    "str": 310,
+    "phy_att": 110,
+    "indep": 120,
+    "crit": 3
+  },
+  "berserker_fix": 9.27,
+  "berserker_pct": 32.81,
+  "berserker_pojibing": 2743.0,
+  "berserker_margin": 4.928934,
+  "swordman_pct": 45.7,
+  "swordman_pojibing": 2886.0,
+  "swordman_margin": 4.928934,
+  "checks": [
+    {
+      "name": "cc_str=310",
+      "ok": true
+    },
+    {
+      "name": "cc_phy=110",
+      "ok": true
+    },
+    {
+      "name": "cc_ind=120",
+      "ok": true
+    },
+    {
+      "name": "cc_cri=3.0",
+      "ok": true
+    },
+    {
+      "name": "bers_fixed=9.27",
+      "ok": true
+    },
+    {
+      "name": "bers_pct=32.81",
+      "ok": true
+    },
+    {
+      "name": "swor_pct=45.7",
+      "ok": true
+    },
+    {
+      "name": "marginal=4.928934",
+      "ok": true
+    },
+    {
+      "name": "pojo_bers=2743.0",
+      "ok": true
+    },
+    {
+      "name": "pojo_swor=2886.0",
+      "ok": true
+    },
+    {
+      "name": "FAAL三阶七维框架",
+      "ok": true
+    },
+    {
+      "name": "三级级联放大链模型",
+      "ok": true
+    },
+    {
+      "name": "装备加成三原则元理论",
+      "ok": true
+    },
+    {
+      "name": "二元分流架构",
+      "ok": true
+    }
+  ],
+  "total_checks": 14,
+  "passed": 14,
+  "pass_rate": "100.0%",
+  "zero_drift": true,
+  "zero_drift_rounds": "947 (1475→v2422)",
+  "framework_status": "固化",
+  "frameworks": [
+    "FAAL三阶七维框架",
+    "三级级联放大链模型",
+    "装备加成三原则元理论",
+    "二元分流架构元理论"
+  ],
+  "self_evolution_boundary": "持续遵守",
+  "email_channel": "永久不可逆(284+次失败)"
+}
