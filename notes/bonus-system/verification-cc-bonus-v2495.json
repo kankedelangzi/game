@@ -1,0 +1,54 @@
+{
+  "version": "v2495",
+  "timestamp": "2026-07-12 02:16 CST",
+  "checks": [
+    {
+      "check": "CC套力量=310",
+      "passed": true
+    },
+    {
+      "check": "CC套物理攻击=110",
+      "passed": true
+    },
+    {
+      "check": "CC套独立攻击=120",
+      "passed": true
+    },
+    {
+      "check": "CC套暴击率=0.03",
+      "passed": true
+    },
+    {
+      "check": "狂战士固伤=9.2736%",
+      "passed": true
+    },
+    {
+      "check": "狂战士百分比综合=36.27%",
+      "passed": false
+    },
+    {
+      "check": "剑魂百分比综合=36.19%",
+      "passed": false
+    },
+    {
+      "check": "破极兵刃协同物攻(狂战)=2743",
+      "passed": true
+    },
+    {
+      "check": "破极兵刃协同物攻(剑魂)=2886",
+      "passed": true
+    },
+    {
+      "check": "边际对偶狂战士=1.090909",
+      "passed": false
+    },
+    {
+      "check": "边际对偶剑魂=1.090909",
+      "passed": false
+    }
+  ],
+  "passed": 7,
+  "total": 11,
+  "core_data_stable": false,
+  "zero_drift_rounds": 1021
+}
