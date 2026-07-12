@@ -1,0 +1,84 @@
+{
+  "version": "v2502",
+  "audit_time": "2026-07-12 13:24 CST",
+  "total_checks": 10,
+  "passed": 9,
+  "failed": 1,
+  "pass_rate": "9/10 (90.0%)",
+  "checks": [
+    {
+      "name": "CC套-力量",
+      "expected": 310,
+      "actual": 310,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "CC套-物理攻击",
+      "expected": 110,
+      "actual": 110,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "CC套-独立攻击",
+      "expected": 120,
+      "actual": 120,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "CC套-暴击",
+      "expected": 3,
+      "actual": 3,
+      "passed": true,
+      "diff": 0
+    },
+    {
+      "name": "狂战士固伤综合(%)",
+      "expected": 9.27,
+      "actual": 9.273570324574962,
+      "passed": true,
+      "diff": 0.00357
+    },
+    {
+      "name": "狂战士破极兵刃协同物攻",
+      "expected": 2743,
+      "actual": 2743.0,
+      "passed": true,
+      "diff": 0.0
+    },
+    {
+      "name": "剑魂破极兵刃协同物攻",
+      "expected": 2886,
+      "actual": 2886.0,
+      "passed": true,
+      "diff": 0.0
+    },
+    {
+      "name": "狂战士边际对偶",
+      "expected": 4.928934,
+      "actual": 4.928934,
+      "passed": true,
+      "diff": 0.0
+    },
+    {
+      "name": "剑魂边际对偶",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "passed": true,
+      "diff": 0.0
+    },
+    {
+      "name": "技能分类通过率",
+      "expected": 8,
+      "actual": 11,
+      "passed": false,
+      "diff": 3
+    }
+  ],
+  "known_issues": [
+    "HTML stat-card注释: 41×4+60×3=404应为344，+310最终值正确",
+    "剑魂百分比综合闭环校验漏洞(165.26% vs 45.70%)，持续追踪中"
+  ]
+}
