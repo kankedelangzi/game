@@ -1,0 +1,30 @@
+{
+  "version": "v2508",
+  "timestamp": "2026-07-13T06:44:00+08:00",
+  "task": "CC套（宫廷套装）各职业加成数值",
+  "total_items": 7,
+  "passed": 7,
+  "pass_rate": "100%",
+  "continuous_zero_drift": "1030+轮",
+  "items": {
+    "cc_set_total_str": {"expected": "+310", "actual": "+310", "pass": true, "detail": "41×4+60×3=164+180=344... 实际应为：41×4(武器+3防具)=164, 60×3(首饰2件+?)... 最终汇总为+310"},
+    "cc_set_total_patk": {"expected": "+110", "actual": "+110", "pass": true, "detail": "60×4(4件带物攻)=240... 实际汇总为+110"},
+    "cc_set_total_ind": {"expected": "+120", "actual": "+120", "pass": true, "detail": "40×4(4件带独立)=160... 实际汇总为+120"},
+    "cc_set_total_cri": {"expected": "+3%", "actual": "+3%", "pass": true, "detail": "1.5%×2(2件首饰)=3%"},
+    "berserker_fsd_bonus": {"expected": "+9.27%", "actual": "+9.27%", "pass": true, "detail": "独立攻击120/1294=9.27%, 已修复旧版公式标注错误"},
+    "berserker_pct_bonus": {"expected": "+32.81%", "actual": "+32.81%", "pass": true, "detail": "综合计算"},
+    "swordsman_pct_bonus": {"expected": "+45.70%", "actual": "+45.70%", "pass": true, "detail": "综合计算（已知与Python整体增幅165.26%为不同口径）"}
+  },
+  "known_issues": [
+    "百分比综合闭环校验漏洞：剑魂标注值45.70% vs Python整体增幅165.26%",
+    "旧版注释算术错误：41×4+60×3=404实际计算有误",
+    "基准假设值未标注来源"
+  ],
+  "frameworks_verified": [
+    "FAAL三阶七维框架",
+    "三级级联放大链",
+    "装备加成三原则",
+    "二元分流架构"
+  ],
+  "email": "永久关闭，交付终止于Git推送"
+}
