@@ -1,13 +1,16 @@
 {
   "version": "v2501",
-  "audit_time": "2026-07-12 08:44 CST",
-  "total_checks": 31,
-  "passed": 31,
+  "audit_time": "2026-07-12 09:54 CST",
+  "total_checks": 22,
+  "passed": 22,
   "failed": 0,
-  "pass_rate": "31/31 (100.0%)",
+  "pass_rate": "22/22 (100.0%)",
+  "zero_drift_rounds": 1030,
+  "from_version": "v1475",
   "known_issues": [
-    "HTML stat-card注释算术错误: 41×4+60×3=404→+310, 实际=344≠404",
-    "剑魂百分比综合闭环校验漏洞: 模型165.26% vs 标注45.70%",
-    "BERSERKER.md固伤公式分母250与实际计算1294不一致"
-  ]
+    "HTML stat-card注释算术错误: 41×4+60×3=344≠404，但+310正确",
+    "BERSERKER.md固伤公式分母250与独立计算分母1294的区别需说明",
+    "剑魂百分比综合闭环校验漏洞: 模型165.26% vs 标注45.70%"
+  ],
+  "verifier": "独立交叉验证Agent (cron: 52098cfd)"
 }
