@@ -1,0 +1,141 @@
+{
+  "timestamp": "2026-07-12T18:04:00+08:00",
+  "version": "v2501",
+  "items_verified": 22,
+  "items_passed": 22,
+  "pass_rate": "100.0%",
+  "items": [
+    {
+      "name": "CC套-力量",
+      "value": "310",
+      "expected": 310,
+      "status": "PASS"
+    },
+    {
+      "name": "CC套-物理攻击",
+      "value": "110",
+      "expected": 110,
+      "status": "PASS"
+    },
+    {
+      "name": "CC套-独立攻击",
+      "value": "120",
+      "expected": 120,
+      "status": "PASS"
+    },
+    {
+      "name": "CC套-暴击",
+      "value": "3",
+      "expected": 3,
+      "status": "PASS"
+    },
+    {
+      "name": "狂战士固伤综合",
+      "value": "9.27",
+      "expected": 9.27,
+      "status": "PASS"
+    },
+    {
+      "name": "狂战士百分比综合",
+      "value": "32.81",
+      "expected": 32.81,
+      "status": "PASS"
+    },
+    {
+      "name": "剑魂百分比综合",
+      "value": "45.7",
+      "expected": 45.7,
+      "status": "PASS"
+    },
+    {
+      "name": "狂战士破极兵刃协同物攻",
+      "value": "2743",
+      "expected": 2743,
+      "status": "PASS"
+    },
+    {
+      "name": "剑魂破极兵刃协同物攻",
+      "value": "2886",
+      "expected": 2886,
+      "status": "PASS"
+    },
+    {
+      "name": "狂战士边际对偶",
+      "value": "4.928934",
+      "expected": 4.928934,
+      "status": "PASS"
+    },
+    {
+      "name": "剑魂边际对偶",
+      "value": "4.93002",
+      "expected": 4.93002,
+      "status": "PASS"
+    },
+    {
+      "name": "技能分类-十字斩",
+      "value": "物理固伤",
+      "expected": "物理固伤",
+      "status": "PASS"
+    },
+    {
+      "name": "技能分类-血气之刃",
+      "value": "物理固伤",
+      "expected": "物理固伤",
+      "status": "PASS"
+    },
+    {
+      "name": "技能分类-怒气爆发",
+      "value": "物理固伤",
+      "expected": "物理固伤",
+      "status": "PASS"
+    },
+    {
+      "name": "技能分类-嗜魂之手",
+      "value": "物理固伤",
+      "expected": "物理固伤",
+      "status": "PASS"
+    },
+    {
+      "name": "技能分类-崩山击",
+      "value": "物理百分比+出血固伤",
+      "expected": "物理百分比+出血固伤",
+      "status": "PASS"
+    },
+    {
+      "name": "技能分类-崩山裂地斩",
+      "value": "物理百分比",
+      "expected": "物理百分比",
+      "status": "PASS"
+    },
+    {
+      "name": "技能分类-嗜魂封魔斩",
+      "value": "物理百分比",
+      "expected": "物理百分比",
+      "status": "PASS"
+    },
+    {
+      "name": "技能分类-拔刀斩",
+      "value": "物理百分比",
+      "expected": "物理百分比",
+      "status": "PASS"
+    },
+    {
+      "name": "技能分类-破空击",
+      "value": "物理百分比",
+      "expected": "物理百分比",
+      "status": "PASS"
+    },
+    {
+      "name": "技能分类-升龙击",
+      "value": "物理百分比",
+      "expected": "物理百分比",
+      "status": "PASS"
+    },
+    {
+      "name": "技能分类-大剑极星流",
+      "value": "物理百分比",
+      "expected": "物理百分比",
+      "status": "PASS"
+    }
+  ]
+}
